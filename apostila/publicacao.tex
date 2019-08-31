@@ -1,0 +1,111 @@
+\documentclass[%
+%%% PARA ESCOLHER O ESTILO TIRE O SIMBOLO %(COMENTÁRIO)
+%SemVinculoColorido,
+%SemFormatacaoCapitulo,
+%SemFolhaAprovacao,
+%SemImagens,
+%CitacaoNumerica, %% o padrão é citação tipo autor-data
+%PublicacaoDissOuTese, %% (é também o "default") com ficha catal. e folha de aprovação em branco. Caso tenha lista de símbolos e lista de siglas e abreviaturas retirar os comentários dos arquivos siglas.tex e abreviaturasesiglas.tex. Retirar também os comentários indicados nesse arquivo, nos includes
+%PublicacaoArtigoOuRelatorio, %% texto sequencial, sem quebra de páginas nem folhas em branco
+PublicacaoProposta, %% igual tese/dissertação, mas sem ficha catal. e fol. de aprov.
+%PublicacaoLivro, %% com capítulos
+%PublicacaoLivro,SemFormatacaoCapitulo, %% sem capítulos
+english,portuguese %% para os documentos em Português com abstract.tex em Inglês
+%portuguese,english %% para os documentos em Inglês com abstract.tex em Português
+,LogoINPE% comentar essa linha para fazer aparecer o logo do Governo
+,CCBYNC	% as opções de licença são: CCBY, CCBYSA, CCBYND, CCBYNC, CCBYNCSA, CCBYNCND, GPLv3 e INPECopyright
+]{tdiinpe}
+%]{../../../../../iconet.com.br/banon/2008/03.25.01.19/doc/tdiinpe}
+
+% PARA EXIBIR EM ARIAL TIRAR O COMENTÁRIO DAS DUAS LINHAS SEGUINTES
+%\renewcommand{\rmdefault}{phv} % Arial
+%\renewcommand{\sfdefault}{phv} % Arial
+
+% PARA PUBLICAÇÕES EM INGLÊS:
+% renomear o arquivo: abnt-alf.bst para abnt-alfportuguese.bst
+% renomear o arquivo: abnt-alfenglish.bst para abnt-alf.bst
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Pacotes já previamente carregados:      %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% ifthen,calc,graphicx,color,inputenc,babel,hyphenat,array,setspace, %
+%%% bigdelim,multirow,supertabular,tabularx,longtable,lastpage,lscape, %
+%%% rotate,caption2,amsmath,amssymb,amsthm,subfigure,tocloft,makeidx,  %
+%%% eso-pic,calligra,hyperref,ae,fontenc                               %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% insira neste campo, comandos de LaTeX %%%
+%%% \usepackage{_exemplo_}
+% etc.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\watermark{Revisão No. ##} %% use o comando \watermark para identificar a versão de seu documento
+%% comente este comando quando for gerar a versão final
+
+% Pacotes Extras
+\input{./meus_pacotes}
+
+\input{./configuracao} %% faça as modificações pertinentes no arquivo configuracao.tex
+
+\input{./minhas_macros}
+
+\makeindex  %% não alterar, gera INDEX, caso haja algum termo indexado no texto
+
+\begin{document} %% início do documento %% não mexer
+
+%\marcaRegistrada{}	% comando opcional usado para informar abaixo da ficha catalográfica sobre marca registrada
+\marcaRegistrada{Informar aqui sobre marca registrada (a modificação desta linha deve ser feita no arquivo publicacao.tex).}
+
+\maketitle  %% não alterar, gera páginas obrigatórias (folha de rosto, ficha catalográfica e folha de aprovação), automaticamente
+
+%%% Comente as linhas opcionais abaixo caso não as deseje
+\include{./docs/epigrafe} %% Opcional
+\include{./docs/dedicatoria} %% Opcional
+\include{./docs/agradecimentos} %% Opcional
+\include{./docs/resumo} %% obrigatório
+\include{./docs/abstract} %% obrigatório
+
+\includeListaFiguras %% obrigatório caso haja mais de 3 figuras, gerado automaticamente
+\includeListaTabelas %% obrigatório caso haja mais de 3 tabelas, gerado automaticamente
+\includeListaExercicios
+
+%\include{./docs/abreviaturasesiglas} %% opcional %% altere o arquivo siglaseabreviaturas.tex
+
+%\include{./docs/simbolos} %% opcional %% altere o arquivo simbolos.tex
+
+\includeSumario  %% obrigatório, gerado automaticamente
+
+\include{./docs/lista_exercicios}
+
+\inicioIntroducao %% não altere este comando
+
+\include{./docs/capitulo1} %% 1o capítulo, começo do texto
+
+\include{./docs/capitulo2} %% 2o capítulo
+
+\include{./docs/capitulo3} %% 3o capítulo
+
+\include{./docs/capitulo4} %% 4o capítulo
+
+%% insira quantos capítulos desejar com o seguinte comando:
+%\include{_pasta_do_arquivo_/_meu_arquivo_} %%sem a extensão
+%% note que deverá haver um arquivo _meu_arquivo_.tex (com extensão) no diretório _pasta_do_arquivo_
+
+%\include{./docs/conclusao}
+
+%% Bibliografia %% não alterar %% obrigatório %testebib
+\bibliography{./bib/referencia} %% aponte para seu arquivo de bibliografia no formato bibtex (p.ex: referencia.bib)
+
+%\include{./docs/glossario} %% insira os termos do glossário no arquivo glossario.tex %% opcional
+
+%\inicioApendice %% opcional, comente esta linha e a seguintes se não houver apendice(s)
+%\include{./docs/apendice1} %% insira apendices tal qual capítulos acima
+
+\inicioAnexo
+\include{./docs/anexoA}
+\include{./docs/anexoB}
+\include{./docs/anexoC}
+%\include{./docs/anexo2}
+
+\inicioIndice
+\include{./docs/contracapa}
+\end{document}

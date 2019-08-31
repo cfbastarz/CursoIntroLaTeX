@@ -1,0 +1,41 @@
+%\documentclass[a4paper]{article}
+%\usepackage{amsmath}
+%\usepackage{pstricks}
+%\usepackage{pst-plot}
+%\usepackage{pst-3dplot}
+%\usepackage[margin=1cm]{geometry}
+%\usepackage{graphicx}
+%\pagestyle{empty}
+%
+%
+%\usepackage{pst-exa}
+%\pagestyle{empty}
+\newenvironment{postscript}{}{}
+\providecommand\IncludeGraphics[2][]{}
+%\begin{document}
+%\begin{pspicture}(-1,-5.5)(11.5,7.75)
+\begin{pspicture}(-2,-5)(11.5,2.5)
+\psset{unit=0.5}
+\psset{Alpha=55,Beta=25}
+\pstThreeDSquare[fillcolor=lightgray,fillstyle=solid,opacity=0.3](-3,-2,0)(0,28,0)(6,0,0)
+\parametricplotThreeD[xPlotpoints=200,%
+linecolor=black,linestyle=solid,plotstyle=curve](0,720)%
+{0 t 180 div 6 mul t sin 2.5 mul}
+\parametricplotThreeD[xPlotpoints=200,linecolor=gray,%
+linestyle=solid,plotstyle=curve](0,720)%
+{t sin 2.5 mul t 180 div 6 mul 0}
+\pstThreeDSquare[fillcolor=lightgray,fillstyle=solid,opacity=0.3](0,-2,-3)(0,28,0)(0,0,6)
+\pstThreeDLine(0,0,0)(0,24.5,0)
+\psset{arrows=->,linewidth=0.5pt}
+\parametricplotThreeD[yPlotpoints=44,linecolor=gray](0,2.5)(10,710)%
+{u sin t mul u 180 div 6 mul 0}
+\parametricplotThreeD[linecolor=black,yPlotpoints=44](0,2.5)(10,710)%
+{0 u 180 div 6 mul u sin t mul}
+
+\pstThreeDCoor[yMax=27,nameX=$z$,nameY=$x$,nameZ=$y$,yMin=-3,xMin=0,zMin=0,linecolor=black]
+\pstThreeDLine[linewidth=1pt]{->}(0,-5,0)(0,-3,0)
+\pstThreeDPut(0,-4,0.5){$c$}
+%\pstPlanePut[plane=yz](0,0.35,2){$\vec{E}$}
+%\pstPlanePut[plane=xy](1.5,0.35,0){\rotatebox{90}{$\vec{H}$}}
+\end{pspicture}
+%\end{document}

@@ -1,0 +1,264 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Anexo
+%Este anexo foi incluido para explicar como incluir um anexo no estilo, não existia no original desta tese.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\renewcommand{\thechapter}{}%
+\chapter{ANEXO B - SÍMBOLOS MATEMÁTICOS MAIS COMUNS} %% Título do anexo sempre em maiúsculas. Trocar A por B no próximo anexo e etc
+\label{anexoB} %% Rótulo aplicado caso queira referir-se a este tópico em qualquer lugar do texto. Trocar A por B no próximo anexo e etc
+\renewcommand{\thechapter}{B}%		% trocar A por B no próximo anexo e etc
+
+As tabelas de símbolos matemáticos contidas neste Anexo, foram originalmente preparadas por L. Kocbach, baseadas no documento original de David Carlisle da Universidade de Manchester. O documento LaTeX original contendo estas tabelas, pode ser obtido em \url{http://web.ift.uib.no/Teori/KURS/WRK/TeX/symALL.html}.
+
+% REF: http://web.ift.uib.no/Teori/KURS/WRK/TeX/symALL.html
+
+% Math-mode symbol & verbatim
+\def\W#1#2{$#1{#2}$ &\tt\string#1\string{#2\string}}
+\def\X#1{$#1$ &\tt\string#1}
+\def\Y#1{$\big#1$ &\tt\string#1}
+\def\Z#1{\tt\string#1}
+
+% A non-floating table environment.
+%\makeatletter
+%\renewenvironment{table}%
+%   {\vskip\intextsep\parskip\z@
+%    \vbox\bgroup\centering\def\@captype{table}}%
+%   {\egroup\vskip\intextsep}
+%\makeatother
+
+% All the tables are \label'ed in case this document ever gets some
+% explanatory text written, however there are no \refs as yet. To save
+% LaTeX-ing the file twice we go:
+%\renewcommand{\label}[1]{}
+
+\begin{table}[H]
+\caption{Alfabeto Grego (Maiúsculas e Minúsculas)}
+\label{tab:alfa_grego}
+%\begin{tabular}{*8l}
+\begin{tabular}{p{1cm} p{2cm} p{1cm} p{2cm} p{1cm} p{2cm} p{1cm} p{2cm}}
+\hline
+\hline
+\\[0.2em]
+\X\alpha        &\X\theta       &\X o           &\X\tau         \\[0.5em]
+\X\beta         &\X\vartheta    &\X\pi          &\X\upsilon     \\[0.5em]
+\X\gamma        &\X\gamma       &\X\varpi       &\X\phi         \\[0.5em]
+\X\delta        &\X\kappa       &\X\rho         &\X\varphi      \\[0.5em]
+\X\epsilon      &\X\lambda      &\X\varrho      &\X\chi         \\[0.5em]
+\X\varepsilon   &\X\mu          &\X\sigma       &\X\psi         \\[0.5em]
+\X\zeta         &\X\nu          &\X\varsigma    &\X\omega       \\[0.5em]
+\X\eta          &\X\xi                                          \\[0.5em]
+                                                                \\[0.5em]
+\X\Gamma        &\X\Lambda      &\X\Sigma       &\X\Psi         \\[0.5em]
+\X\Delta        &\X\Xi          &\X\Upsilon     &\X\Omega       \\[0.5em]
+\X\Theta        &\X\Pi          &\X\Phi
+\\[0.5em]
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\caption{Símbolos de Operações Binárias}
+\label{tab:oper_bin}
+%\begin{tabular}{*8l}
+\begin{tabular}{p{1cm} p{2cm} p{1cm} p{2cm} p{1cm} p{2cm} p{1cm} p{2cm}}
+\hline
+\hline
+\\[0.2em]
+\X\pm           &\X\cap         &\X\diamond             &\X\oplus     \\[0.5em]
+\X\mp           &\X\cup         &\X\bigtriangleup       &\X\ominus    \\[0.5em]
+\X\times        &\X\uplus       &\X\bigtriangledown     &\X\otimes    \\[0.5em]
+\X\div          &\X\sqcap       &\X\triangleleft        &\X\oslash    \\[0.5em]
+\X\ast          &\X\sqcup       &\X\triangleright       &\X\odot      \\[0.5em]
+\X\star         &\X\vee         &\X\lhd$^b$             &\X\bigcirc   \\[0.5em]
+\X\circ         &\X\wedge       &\X\rhd$^b$             &\X\dagger    \\[0.5em]
+\X\bullet       &\X\setminus    &\X\unlhd$^b$           &\X\ddagger   \\[0.5em]
+\X\cdot         &\X\wr          &\X\unrhd$^b$           &\X\amalg     \\[0.5em]
+\X+             &\X- 
+\\[0.5em]
+\hline
+\end{tabular}
+
+$^b$ Not predefined in a format based on {\tt basefont.tex}.
+     Use one of the style options\\
+     {\tt oldlfont}, {\tt newlfont}, {\tt amsfonts} or {\tt amssymb}.
+
+\end{table}
+
+\begin{table}[H]
+\caption{Símbolos Relacionais}
+\label{tab:simb_rel}
+%\begin{tabular}{*8l}
+\begin{tabular}{p{1cm} p{2cm} p{1cm} p{2cm} p{1cm} p{2cm} p{1cm} p{2cm}}
+\hline
+\hline
+\\[0.2em]
+\X\leq          &\X\geq         &\X\equiv       &\X\models      \\[0.5em]
+\X\prec         &\X\succ        &\X\sim         &\X\perp        \\[0.5em]
+\X\preceq       &\X\succeq      &\X\simeq       &\X\mid         \\[0.5em]
+\X\ll           &\X\gg          &\X\asymp       &\X\parallel    \\[0.5em]
+\X\subset       &\X\supset      &\X\approx      &\X\bowtie      \\[0.5em]
+\X\subseteq     &\X\supseteq    &\X\cong        &\X\Join$^b$    \\[0.5em]
+\X\sqsubset$^b$ &\X\sqsupset$^b$&\X\neq         &\X\smile       \\[0.5em]
+\X\sqsubseteq   &\X\sqsupseteq  &\X\doteq       &\X\frown       \\[0.5em]
+\X\in           &\X\ni          &\X\propto      &\X=            \\[0.5em]
+\X\vdash        &\X\dashv       &\X<            &\X>            \\[0.5em]
+\X: 
+\\[0.5em]
+\hline
+\end{tabular}
+
+$^b$ Not predefined in a format based on {\tt basefont.tex}.
+     Use one of the style options\\
+     {\tt oldlfont}, {\tt newlfont}, {\tt amsfonts} or {\tt amssymb}.
+
+\end{table}
+
+\begin{table}[H]
+\caption{Símbolos de Puntuação Ortográfica}
+\label{tab:simb_punct}
+\begin{tabular}{*{5}{lp{3.2em}}}
+\hline
+\hline
+\X,     &\X;    &\X\colon       &\X\ldotp       &\X\cdotp \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\caption{Setas e Flechas}
+\label{tab:set_flec}
+\begin{tabular}{*6l}
+\hline
+\hline
+\X\leftarrow            &\X\longleftarrow       &\X\uparrow     \\
+\X\Leftarrow            &\X\Longleftarrow       &\X\Uparrow     \\
+\X\rightarrow           &\X\longrightarrow      &\X\downarrow   \\
+\X\Rightarrow           &\X\Longrightarrow      &\X\Downarrow   \\
+\X\leftrightarrow       &\X\longleftrightarrow  &\X\updownarrow \\
+\X\Leftrightarrow       &\X\Longleftrightarrow  &\X\Updownarrow \\
+\X\mapsto               &\X\longmapsto          &\X\nearrow     \\
+\X\hookleftarrow        &\X\hookrightarrow      &\X\searrow     \\
+\X\leftharpoonup        &\X\rightharpoonup      &\X\swarrow     \\
+\X\leftharpoondown      &\X\rightharpoondown    &\X\nwarrow     \\
+\X\rightleftharpoons    &\X\leadsto$^b$ \\
+\hline
+\end{tabular}
+
+$^b$ Not predefined in a format based on {\tt basefont.tex}.
+     Use one of the style options\\
+     {\tt oldlfont}, {\tt newlfont}, {\tt amsfonts} or {\tt amssymb}.
+
+\end{table}
+
+\begin{table}[H]
+\caption{Outros Símbolos}
+\label{tab:outros_simbs}
+\begin{tabular}{*8l}
+\hline
+\hline
+\X\ldots        &\X\cdots       &\X\vdots       &\X\ddots       \\
+\X\aleph        &\X\prime       &\X\forall      &\X\infty       \\
+\X\hbar         &\X\emptyset    &\X\exists      &\X\Box$^b$     \\
+\X\imath        &\X\nabla       &\X\neg         &\X\Diamond$^b$ \\
+\X\jmath        &\X\surd        &\X\flat        &\X\triangle    \\
+\X\ell          &\X\top         &\X\natural     &\X\clubsuit    \\
+\X\wp           &\X\bot         &\X\sharp       &\X\diamondsuit \\
+\X\Re           &\X\|           &\X\backslash   &\X\heartsuit   \\
+\X\Im           &\X\angle       &\X\partial     &\X\spadesuit   \\
+\X\mho$^b$      &\X.            &\X| \\
+\hline
+\end{tabular}
+
+$^b$ Not predefined in a format based on {\tt basefont.tex}.
+     Use one of the style options\\
+     {\tt oldlfont}, {\tt newlfont}, {\tt amsfonts} or {\tt amssymb}.
+
+\end{table}
+
+\begin{table}[H]
+\caption{Símbolos na Escala das Variáveis}
+\label{tab:simb_esc_var}
+\begin{tabular}{*6l}
+\hline
+\hline
+\X\sum          &\X\bigcap      &\X\bigodot     \\
+\X\prod         &\X\bigcup      &\X\bigotimes   \\
+\X\coprod       &\X\bigsqcup    &\X\bigoplus    \\
+\X\int          &\X\bigvee      &\X\biguplus    \\
+\X\oint         &\X\bigwedge \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\caption{Símbolos Logarítmicos e Trigonométricos}
+\label{tab:sim_log_trig}
+\begin{tabular}{*8l}
+\hline
+\hline
+\Z\arccos &\Z\cos  &\Z\csc &\Z\exp &
+           \Z\ker    &\Z\limsup &\Z\min &\Z\sinh \\
+\Z\arcsin &\Z\cosh &\Z\deg &\Z\gcd &
+           \Z\lg     &\Z\ln     &\Z\Pr  &\Z\sup  \\
+\Z\arctan &\Z\cot  &\Z\det &\Z\hom &
+           \Z\lim    &\Z\log    &\Z\sec &\Z\tan  \\
+\Z\arg    &\Z\coth &\Z\dim &\Z\inf &
+           \Z\liminf &\Z\max    &\Z\sin &\Z\tanh \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\caption{Delimitadores}
+\label{tab:delimitadores}
+\begin{tabular}{*8l}
+\hline
+\hline
+\X(             &\X)            &\X\uparrow     &\X\Uparrow     \\
+\X[             &\X]            &\X\downarrow   &\X\Downarrow   \\
+\X\{            &\X\}           &\X\updownarrow &\X\Updownarrow \\
+\X\lfloor       &\X\rfloor      &\X\lceil       &\X\rceil       \\
+\X\langle       &\X\rangle      &\X/            &\X\backslash   \\
+\X|             &\X\| \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\caption{Delimitadores Grandes}
+\label{tab:ldels}
+\begin{tabular}{*8l}
+\hline
+\hline
+\Y\rmoustache&  \Y\lmoustache&  \Y\rgroup&      \Y\lgroup\\[5pt]
+\Y\arrowvert&   \Y\Arrowvert&   \Y\bracevert \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\caption{Acentos Matemáticos}
+\label{tab:acentos}
+\begin{tabular}{*{10}l}
+\hline
+\hline
+\W\hat{a}     &\W\acute{a}  &\W\bar{a}    &\W\dot{a}    &\W\breve{a}\\
+\W\check{a}   &\W\grave{a}  &\W\vec{a}    &\W\ddot{a}   &\W\tilde{a}\\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\caption{Algumas Outras Construções}
+\label{tab:outos_simbs}
+\begin{tabular}{*4l}
+\hline
+\hline
+\W\widetilde{abc}       &\W\widehat{abc}                        \\
+\W\overleftarrow{abc}   &\W\overrightarrow{abc}                 \\
+\W\overline{abc}        &\W\underline{abc}                      \\
+\W\overbrace{abc}       &\W\underbrace{abc}                     \\[5pt]
+\W\sqrt{abc}            &$\sqrt[n]{abc}$&\verb|\sqrt[n]{abc}|   \\
+$f'$&\verb|f'|          &$\frac{abc}{xyz}$&\verb|\frac{abc}{xyz}| \\
+\hline
+\end{tabular}
+\end{table}
