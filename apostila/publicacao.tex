@@ -41,6 +41,10 @@ english,portuguese %% para os documentos em Português com abstract.tex em Ingl�
 %\watermark{Revisão No. ##} %% use o comando \watermark para identificar a versão de seu documento
 %% comente este comando quando for gerar a versão final
 
+% Engana o pacote tcolorbox no carregamento do inputenc
+% (https://tex.stackexchange.com/questions/370262/how-to-adapt-tcolorbox-with-xelatex)
+\makeatletter\@namedef{ver@inputenc.sty}{}\makeatother
+
 % Pacotes Extras
 \input{./meus_pacotes}
 
@@ -74,7 +78,7 @@ english,portuguese %% para os documentos em Português com abstract.tex em Ingl�
 
 \includeSumario  %% obrigatório, gerado automaticamente
 
-\include{./docs/lista_exercicios}
+%\include{./docs/lista_exercicios}
 
 \inicioIntroducao %% não altere este comando
 

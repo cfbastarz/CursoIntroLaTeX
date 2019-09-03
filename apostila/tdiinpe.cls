@@ -195,7 +195,7 @@
 \fi
 
 \RequirePackage{color} %% essencial %% aplicar cores no texto
-\RequirePackage[utf8]{inputenc} %% essencial 
+%\RequirePackage[utf8]{inputenc} %% essencial 
 
 \RequirePackage{float}	%% acrescentado por gjfb em 2012-10-19 seguindo recomendação do Fabio Dall Cortivo
 

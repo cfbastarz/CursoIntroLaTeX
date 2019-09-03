@@ -1,7 +1,7 @@
 \chapter{Parte III - Estilo do INPE}
 \label{cap:parteIII}
 
-O INPE desenvolveu um estilo próprio para a publicação de teses, dissertações e relatórios. Este estilo está disponível para edição na linguagem de marcação LaTeX, além dos editores WYSIWYG \textit{Microsoft Word} e \textit{LibreOffice}. Este capítulo trata da aplicação do estilo do INPE no ambiente da linguagem de marcação LaTeX.
+O INPE desenvolveu um estilo próprio para a publicação de teses, dissertações e relatórios. Este estilo está disponível para edição na linguagem de marcação \LaTeX{}, além dos editores WYSIWYG \textit{Microsoft Word} e \textit{LibreOffice}. Este capítulo trata da aplicação do estilo do INPE no ambiente da linguagem de marcação \LaTeX{}.
 
 \section{Estilo do INPE para Dissertações e Teses}
 
@@ -10,12 +10,12 @@ O estilo do INPE compreende um conjunto de arquivos que contém instruções e i
 \subsection*{Obtendo o Estilo}
 \label{sec:obter}
 
-É possível obter uma cópia do estilo do INPE a partir de duas formas distintas. A primeira, é entrar no \textit{site} da biblioteca do INPE, a partir do endereço \url{http://www.inpe.br/biblioteca/}. Na página, no menu lateral, clique em ``Como Publicar?'' e depois em ``em LaTeX'' (Figura \ref{fig:biblio_pub_latex}). Na página, no \textit{frame} da direita, uma página irá se abrir com as instruções ``Publicar usando estilo em LaTeX''. A página contém instruções sobre todo o processo de publicação de documentos submetidos à revisão pelo SID. Para obter uma cópia \textit{offline} do pacote com o estilo do INPE em LaTeX, clique no link \href{http://mtc-m16c.sid.inpe.br/archive.cgi/sid.inpe.br/iris@1905/2005/08.25.14.01}{``download do estilo baixando o arquivo archive.zip''} que está na ``OPÇÃO 3 (compilação no próprio computador)''. Na mesma página, há instruções sobre a instalação de um compilador LaTeX, que também podem ser encontradas no Capítulo \ref{cap:parteI} deste documento.
+É possível obter uma cópia do estilo do INPE a partir de duas formas distintas. A primeira, é entrar no \textit{site} da biblioteca do INPE, a partir do endereço \url{http://www.inpe.br/biblioteca/}. Na página, no menu lateral, clique em ``Como Publicar?'' e depois em ``em \LaTeX{}'' (Figura \ref{fig:biblio_pub_latex}). Na página, no \textit{frame} da direita, uma página irá se abrir com as instruções ``Publicar usando estilo em \LaTeX{}''. A página contém instruções sobre todo o processo de publicação de documentos submetidos à revisão pelo SID. Para obter uma cópia \textit{offline} do pacote com o estilo do INPE em \LaTeX{}, clique no link \href{http://mtc-m16c.sid.inpe.br/archive.cgi/sid.inpe.br/iris@1905/2005/08.25.14.01}{``download do estilo baixando o arquivo archive.zip''} que está na ``OPÇÃO 3 (compilação no próprio computador)''. Na mesma página, há instruções sobre a instalação de um compilador \LaTeX{}, que também podem ser encontradas no Capítulo \ref{cap:parteI} deste documento.
 
 \begin{figure}[H]
     \centering
     \includegraphics[scale=0.5]{./figs/biblio_pub_latex.png}
-    \caption{Obtenção do estilo LaTeX do INPE a partir do \textit{site} da Biblioteca do INPE.}
+    \caption{Obtenção do estilo \LaTeX{} do INPE a partir do \textit{site} da Biblioteca do INPE.}
     \label{fig:biblio_pub_latex}
 \end{figure}
 
@@ -26,12 +26,12 @@ Com o arquivo ``archive.zip'' no seu computador, descompacte-o em um local aprop
 \subsection{Estrutura e Organização}
 \label{sec:estrut}
 
-O estilo do INPE é fornecido pelo arquivo ``tdiinpevx-x.x.cls''. Dentro deste arquivo há uma série de instruções da linguagem LaTeX que determinam o estilo das referências, dos capítulos, dos títulos, tabelas, imagens etc (Figura \ref{fig:estrut}).
+O estilo do INPE é fornecido pelo arquivo ``tdiinpevx-x.x.cls''. Dentro deste arquivo há uma série de instruções da linguagem \LaTeX{} que determinam o estilo das referências, dos capítulos, dos títulos, tabelas, imagens etc (Figura \ref{fig:estrut}).
 
 \begin{figure}[H]
     \centering
     \includegraphics[scale=0.4]{./figs/estrutura_estilo_inpe.png}
-    \caption{Estrutura e organização do estilo LaTeX do INPE.}
+    \caption{Estrutura e organização do estilo \LaTeX{} do INPE.}
     \label{fig:estrut}
 \end{figure}
 
@@ -120,15 +120,15 @@ Na lista de arquivos acima, observe que a maioria deles são temporários, i.e.,
 \subsection{Compilação do Documento}
 \label{sec:compilacao}
 
-Para compilar o documento é necessário ter algum compilador o LaTeX instalado localmente ou utilizar algum serviço \textit{online} como o \href{https://www.overleaf.com/}{Overleaf}. Para a compilação local, o usuário poderá fazer uso dos \textit{scripts} que se encontram na distribuição:
+Para compilar o documento é necessário ter algum compilador o \LaTeX{} instalado localmente ou utilizar algum serviço \textit{online} como o \href{https://www.overleaf.com/}{Overleaf}. Para a compilação local, o usuário poderá fazer uso dos \textit{scripts} que se encontram na distribuição:
 
 \begin{itemize}
     \item \textbf{criapublicacaozip}: \textit{script} que empacota o documento final (``publicacao.pdf'') para publicação;
-    \item \textbf{latin2tex.sh}: \textit{script} que converte acentos latinos para a marcação da linguagem LaTeX;
-    \item \textbf{tex2latin.sh}: \textit{script} que converte acentos com marcação LaTeX para acentos latinos;
+    \item \textbf{latin2tex.sh}: \textit{script} que converte acentos latinos para a marcação da linguagem \LaTeX{};
+    \item \textbf{tex2latin.sh}: \textit{script} que converte acentos com marcação \LaTeX{} para acentos latinos;
     \item \textbf{pdftohtmlB}: converte um documento PDF em HTML;
     \item \textbf{livreto4.sh}: gera um livreto de quatro folhas no formato A4;
-    \item \textbf{execpub.sh}: gera o documento de saída (``publicacao.pdf'') utilizando o compilador LaTeX. 
+    \item \textbf{execpub.sh}: gera o documento de saída (``publicacao.pdf'') utilizando o compilador \LaTeX{}. 
 \end{itemize}
 
 Para compilar, siga os seguintes passos:
@@ -205,12 +205,12 @@ No comando acima, observe que o nome do arquivo a ser compilado deve ser informa
 
 Para finalmente compilar o documento principal ``publicacao.tex'', siga o exemplo abaixo. Observe que apenas este comando é necessário para gerar o arquivo PDF final (``publicacao.pdf'').
 
-\textbf{4.} Execute o \textit{script} ``execpub.sh'', com dois argumentos:
+\textbf{5.} Execute o \textit{script} ``execpub.sh'', com dois argumentos:
 \begin{commandshell}
 ./execpub.sh publicacao pdf
 \end{commandshell}
 
-Muitos exemplos estão disponíveis na internet, assim como arquivos LaTeX escritos há muito tempo e que podem fazer uso de codificações diferentes. Isso pode acarretar na incorreta renderização de caracteres especiais, como acentos. Na Figura \ref{fig:leiame} o arquivo leiame do estilo do INPE (assim como vários dos outros arquivos), foram criados e salvo na codificação ISO-8859-2 (frequentemente utilizado pelos sistemas operacionais até poucos anos atrás). Com a padronização do sistema \textit{Portable Operating System Interface} (POSIX) para UTF-8, pode tornar-se necessário abrir estes arquivos com algum editor de textos (como o Gedit no Linux ou o Textedit no Mac OS) e utilizar a opção ``Salvar como...'' para salvar os arquivos no formato UTF-8. 
+Muitos exemplos estão disponíveis na internet, assim como arquivos \LaTeX{} escritos há muito tempo e que podem fazer uso de codificações diferentes. Isso pode acarretar na incorreta renderização de caracteres especiais, como acentos. Na Figura \ref{fig:leiame} o arquivo leiame do estilo do INPE (assim como vários dos outros arquivos), foram criados e salvo na codificação ISO-8859-2 (frequentemente utilizado pelos sistemas operacionais até poucos anos atrás). Com a padronização do sistema \textit{Portable Operating System Interface} (POSIX) para UTF-8, pode tornar-se necessário abrir estes arquivos com algum editor de textos (como o Gedit no Linux ou o Textedit no Mac OS) e utilizar a opção ``Salvar como...'' para salvar os arquivos no formato UTF-8. 
 
 \begin{figure}[H]
 \centering
@@ -248,12 +248,14 @@ Muitos exemplos estão disponíveis na internet, assim como arquivos LaTeX escri
 %\end{figure}
 
 \begin{marker}
-Utilize o comando {\tt iconv} para converter arquivos salvos em codificações diferentes da UTF-8. Para converter um arquivo salvo na codificação ISO-8859-2 para UTF-8, pode-se utilizar o seguinte comando:\\
+Utilize o comando {\tt iconv} para converter arquivos salvos em codificações diferentes da UTF-8. Para converter um arquivo salvo na codificação ISO-8859-2 para UTF-8, pode-se utilizar o seguinte comando:
+\medskip
 \begin{commandshell}
 iconv -f ISO-8859-9 -t UTF-8 arquivo.tex > novo_arquivo.tex
 \end{commandshell}
-\\
-Para mais informações sobre como utilizar o comando {\tt iconv}, digite o comando:\\
+\medskip
+Para mais informações sobre como utilizar o comando {\tt iconv}, digite o comando:
+\smallskip
 \begin{commandshell}
 iconv --help
 \end{commandshell}

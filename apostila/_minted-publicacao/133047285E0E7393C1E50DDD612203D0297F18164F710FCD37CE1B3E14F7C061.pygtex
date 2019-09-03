@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{\PYGZbs{}renewcommand}\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}labelenumi}\PYG{n+nb}{\PYGZcb{}\PYGZob{}}\PYG{k}{\PYGZbs{}arabic}\PYG{n+nb}{\PYGZob{}}enumi\PYG{n+nb}{\PYGZcb{}\PYGZcb{}}
+\end{Verbatim}

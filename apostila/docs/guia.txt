@@ -1,0 +1,24 @@
+No curso de LaTeX, acho que uma boa idéia é utilizar o próprio overleaf como editor. Assim evito ter que necessariamente solicitar a instalação do Linux e do Latex nas máquinas.
+
+Ver exemplos aqui: https://github.com/jdleesmiller/latex-course
+
+- Uma alternativa é usar o Jupyter notebook para aprender o Latex - esta pode ser uma boa alternativa para entender primeiro alguns comandos de marcação do latex, e depois passar para o overleaf e os seus ambientes!
+
+Começo com exemplos simples
+
+Citar as vantagens e desvantagens do overleaf
+
+Depois avanço para o template do inpe
+- explico como ele está organizado e onde deve-se editar
+- incluir orientações sobre como carregar novos pacotes
+
+Incluir orientações sobre como usar o um editor offline, no mac, linux e windows.
+
+Helena sugeriu fazer no primeiro dia:
+Manhã: comandos gerais (posso usar um jupyter notebook no google colab);
+Tarde: exercicios de formatação de texto reproduzindo um exemplo (incluir o beamer)
+No segundo dia:
+Manhã: apresentar a estrutura do template do INPE (onde estão as configurações, como atualizar e como carregar no overleaf);
+Tarde: dar dicas e exemplos de figuras complexas e outros (revisão, balões de comentários etc) em cima do template.
+
+Não esquecer das ferramentas online (criar tabelas etc) e de manipulação de referências (online e desktop).

@@ -10,31 +10,97 @@ Antes de iniciarmos com as estruturas textuais, é necessário compreender como 
 
 Ao longo das próximas seções, o usuário irá aprender sobre os diversos aspectos da linguagem com vários exemplos, que foram obtidos a partir de várias fontes disponíveis na internet, em fóruns de discussões sobre a linguagem e manuais, disponíveis em diferentes sites. Os exemplos dados são apresentados em caixas destacadas, em que os comando apresentados vem acompanhados dos seus respectivos resultados.
 
-Além disso, ao final do Capítulo \ref{cap:parteII}, há uma série de exercício que o usuário deve realizar a fim de fixar o aprendizado dos comandos aprendidos. Em cada exercício, o usuário deverá reproduzir um exemplo, cujas respostas (comandos LaTeX utilizados) são apropriadamente apresentados em uma seção em anexo ao documento principal.
+Além disso, ao final do Capítulo \ref{cap:parteII}, há uma série de exercício que o usuário deve realizar a fim de fixar o aprendizado dos comandos aprendidos. Em cada exercício, o usuário deverá reproduzir um exemplo, cujas respostas (comandos \LaTeX{} utilizados) são apropriadamente apresentados em uma seção em anexo ao documento principal.
 
 No trecho de código a seguir é mostrado um documento \LaTeX{}, escrito da forma mais simples:
 
 % Usar os pangramas de https://pt.wikipedia.org/wiki/Pangrama
 
-\begin{texexptitled}[text only]{Um documento LaTeX mínimo}{exe_doc}
-$\backslash$\mintinline{latex}{documentclass{article}}\\
-$\backslash$\mintinline{latex}{begin{document}}\\
+%\begin{texexptitled}[text only]{Um documento LaTeX mínimo}{exe_doc}
+%$\backslash$\mintinline{latex}{documentclass{article}}\\
+%$\backslash$\mintinline{latex}{begin{document}}\\
+%
+%The quick brown fox jumps over the lazy dog.\\
+%
+%$\backslash$\mintinline{latex}{end{document}}
+%\end{texexptitled}
 
-The quick brown fox jumps over the lazy dog.\\
+%[breakable,center lower,enhanced,middle=2mm,listing side text]
+%\begin{texexptitled}[breakable,center lower,enhanced jigsaw,middle=2mm,listing side comment,righthand width=6cm,compilable listing,run latex,run dvips,run ps2pdf,pdf comment,freeze pdf,comment style={raster columns=1}]{Um documento LaTeX mínimo}{exe_doc}
+\begin{texexptitled}[breakable,center lower,enhanced jigsaw,middle=2mm,listing side comment,righthand width=6cm,compilable listing,run latex,run dvips,run ps2pdf,pdf comment,freeze pdf,comment style={raster columns=1}]{Um documento \LaTeX{} mínimo}{exe_doc}
+\documentclass{article}
+\usepackage[utf8]{inputenc}
 
-$\backslash$\mintinline{latex}{end{document}}
+\title{Um Documento \LaTeX{} mínimo utilizando a classe {\tt article}}
+\author{Carlos Frederico Bastarz}
+\date{September 2019}
+
+\begin{document}
+
+\maketitle
+
+\section{Seção}
+
+\lipsum[1]
+
+\subsection{Subseção}
+
+\lipsum[2]
+
+\end{document}
 \end{texexptitled}
+
+%%[breakable,center lower,enhanced,middle=2mm,listing side text]
+%\begin{tcblisting}{enhanced jigsaw,
+%title={Um documento LaTeX mínimo},
+%fonttitle=\small\sffamily\bfseries,
+%colframe=MaterialBlue900,
+%colback=white,
+%listing options={
+%style=tcblatex,
+%texcsstyle=*\color{red!70!black}},
+%lower separated=false,
+%middle=2mm,
+%listing side comment,
+%righthand width=6cm,
+%compilable listing,
+%run latex,run dvips,run ps2pdf,pdf comment,freeze pdf,
+%comment style={raster columns=1},%,graphics options={viewport=0.25in 3.7in 1.5in 5.5in}},
+%}
+%\documentclass{article}
+%\usepackage[utf8]{inputenc}
+%\usepackage{lipsum}
+%
+%\title{Um Documento LaTeX mínimo utilizando a classe {\tt article}}
+%\author{Carlos Frederico Bastarz}
+%\date{September 2019}
+%
+%\begin{document}
+%
+%\maketitle
+%
+%\section{Introdução}
+%\lipsum[1]
+%
+%\subsection{Desenvolvimento}
+%\lipsum[2]
+%
+%\subsection{Conclusão}
+%\lipsum[3]
+%
+%\end{document}
+%\end{tcblisting}
 
 % TEXTO EM DUAS COLUNAS
 
-\begin{texexptitled}[listing and comment,righthand width=3cm,lower separated=false,middle=1mm,pdf comment={./snippets/teste_merge.pdf},comment style={raster columns=4,graphics pages={1,2,3,4,5,6,7,8,10,11,12,13},colframe=blue,drop fuzzy shadow}]{Um documento LaTeX mínimo}{exe_doc}
-$\backslash$\mintinline{latex}{documentclass{article}}\\
-$\backslash$\mintinline{latex}{begin{document}}\\
-
-The quick brown fox jumps over the lazy dog.\\
-
-$\backslash$\mintinline{latex}{end{document}}
-\end{texexptitled}
+%\begin{texexptitled}[listing and comment,righthand width=3cm,lower separated=false,middle=1mm,pdf comment={./snippets/teste_merge.pdf},comment style={raster columns=4,graphics pages={1,2,3,4,5,6,7,8,10,11,12,13},colframe=blue,drop fuzzy shadow}]{Um documento LaTeX mínimo}{exe_doc}
+%$\backslash$\mintinline{latex}{documentclass{article}}\\
+%$\backslash$\mintinline{latex}{begin{document}}\\
+%
+%The quick brown fox jumps over the lazy dog.\\
+%
+%$\backslash$\mintinline{latex}{end{document}}
+%\end{texexptitled}
 
 %% \tcbuselibrary{skins,raster}
 %\begin{tcblisting}{colback=red!5!white,colframe=red!75!black,listing and comment,
@@ -45,7 +111,11 @@ $\backslash$\mintinline{latex}{end{document}}
 %This is a \LaTeX\ example.
 %\end{tcblisting}
 
-No Exemplo \ref{exe_doc} acima, observe que um documento LaTeX possui uma estrutura específica que se inicia com um descrição do tipo de documento dado pelo comando \mintinline{latex}{documentclass} (indicando que o documento tem o formato de \textit{article}, i.e., um artigo). Tudo o que é escrito entre esta instrução e a próxima ({\tt document}), é chamada de ``preâmbulo''. Nesta seção podem ser carregados pacotes específicos da linguagem que permitem o uso de diferentes ambientes além de outros tipos de marcação. Em seguida, inicia-se o ambiente principal do LaTeX, que é o \mintinline{latex}{document}. Entre as palavras reservadas \mintinline{latex}{begin} e \mintinline{latex}{end}, o documento em si é escrito. Documentos LaTeX, independente da sua classe (que pode ser \textit{book}, \textit{report}, \textit{article} e \textit{letter}), podem ser muito simples ou complexos. O estilo para Teses e Dissertações do INPE (apresentado no Capítulo \ref{cap:parteIII}), é um exemplo de documento complexo que inclui estilo e formatação próprios.
+No Exemplo \ref{exe_doc} acima, observe que um documento \LaTeX{} possui uma estrutura específica que se inicia com um descrição do tipo de documento dado pelo comando \mintinline{latex}{documentclass} (indicando que o documento tem o formato de \textit{article}, i.e., um artigo). Tudo o que é escrito entre esta instrução e a próxima ({\tt document}), é chamada de ``preâmbulo''. Nesta seção podem ser carregados pacotes específicos da linguagem que permitem o uso de diferentes ambientes além de outros tipos de marcação. Em seguida, inicia-se o ambiente principal do \LaTeX{}, que é o \mintinline{latex}{document}. Entre as palavras reservadas \mintinline{latex}{begin} e \mintinline{latex}{end}, o documento em si é escrito. Documentos \LaTeX{}, independente da sua classe (que pode ser \textit{book}, \textit{report}, \textit{article} e \textit{letter}), podem ser muito simples ou complexos. O estilo para Teses e Dissertações do INPE (apresentado no Capítulo \ref{cap:parteIII}), é um exemplo de documento complexo que inclui estilo e formatação próprios.
+
+\begin{marker}
+  Na \textit{internet} é muito comum encontrar exemplos simplificados de documentos. Ao procurar por estes exemplos em inglês, utilize a palavra-chave \textit{Minimal Working Example} ou MWE.
+\end{marker}
 
 %% CRIAR UM SNIPPET E USAR O EXEMPLO ABAIXO
 %\begin{listing}[ht]
@@ -59,7 +129,7 @@ Nas próximas seções, iremos tratar dos diversos marcadores que podem ser util
 \subsection{Caracteres e símbolos especiais}
 \label{sec:carac_especiais}
 
-No LaTeX há 10 tipos de caracteres especiais. São eles:
+No \LaTeX{} há 10 tipos de caracteres especiais. São eles:
 
 \begin{multicols}{5}
     \begin{enumerate}
@@ -80,7 +150,7 @@ No LaTeX há 10 tipos de caracteres especiais. São eles:
 
 Às vezes é necessários utilizá-los ao longo do texto, e então, faz necessário ``escapá-los''. Há duas formas de fazer isso. 1) Escapando-os ou; 2) Utilizando comandos especiais.
 
-Na primeira forma, basta utilizar a barra invertida ``$\backslash\backslash$''. Na segunda, pode-se utilizar comandos específicos do LaTeX. 
+Na primeira forma, basta utilizar a barra invertida ``$\backslash\backslash$''. Na segunda, pode-se utilizar comandos específicos do \LaTeX{}. 
 
 %Exemplos:
 %
@@ -110,13 +180,13 @@ $\backslash$ \\
 \end{texexptitled}
 
 \begin{marker}
-  No Exemplo \ref{exe_caracesp}, o marcador \mintinline{latex}{\\} pula uma linha.
+  No Exemplo \ref{exe_caracesp}, o marcador \mintinline{latex}{\\} pula uma linha. Pode-se também utilizar o comando \mintinline{latex}{\newline}.
 \end{marker}
 
 \subsection{Acentos}
 \label{sec:acentos}
 
-No LaTeX, os acentos podem ser escritos de forma literal, i.e., diretamente nas palavras sem a necessidade de marcadores especiais, desde que os pacotes necessários estejam carregados. O \textit{babel} é um pacote do LaTeX que fornece os formatos de marcação e linguagem adequados para a acentuação de, por exemplo, caracteres latinos acentuados. Para digitar acentos de forma natural, é necessário carregar os pacotes a seguir, no preâmbulo do documento:
+No \LaTeX{}, os acentos podem ser escritos de forma literal, i.e., diretamente nas palavras sem a necessidade de marcadores especiais, desde que os pacotes necessários estejam carregados. O \textit{babel} é um pacote do \LaTeX{} que fornece os formatos de marcação e linguagem adequados para a acentuação de, por exemplo, caracteres latinos acentuados. Para digitar acentos de forma natural, é necessário carregar os pacotes a seguir, no preâmbulo do documento:
 
 \begin{itemize}
     \item \mintinline{latex}{\usepackage[brazilian]{babel}}
@@ -125,14 +195,14 @@ No LaTeX, os acentos podem ser escritos de forma literal, i.e., diretamente nas 
 \end{itemize}
 
 \begin{marker}
-  No estilo do INPE, os pacotes relacionados acima já estão pré-carregados.
+  No estilo do INPE, os pacotes relacionados acima já estão pré-carregados. Porém, se o usuário utilizar o compilador \XeLaTeX{}, encontrará erros enquanto o pacote estiver carregado.
 \end{marker}
 
 Entretanto, em algumas situações é necessário marcar-se os acentos de forma explícita (e.g., na edição de um arquivo de referências do BibTeX).
 
 No Exemplo \ref{exe_acentos} a seguir, são mostrados os acentos mais comuns.
 
-\begin{texexptitled}[breakable,center lower,enhanced,middle=2mm,listing side text]{Uso de acentos latinos no LaTeX}{exe_acentos}
+\begin{texexptitled}[breakable,center lower,enhanced,middle=2mm,listing side text]{Uso de acentos latinos no \LaTeX{}}{exe_acentos}
 \'a \'A \'e \'E \'i \'I \'o \'O \'u \'U
 \\
 \^a \^A \~a \~A \`a \`A \~o \~O
@@ -175,14 +245,15 @@ Com o pacote \mintinline{latex}{ulem}, pode-se riscar as palavras (forma mais co
 \sout{palavra riscada}
 \end{texexptitled}
 
+% ARRUMAR O EXEMPLO ABAIXO, COLOCANDO EXPRESSÕES MATEMÁTICAS
 \begin{texexptitled}[breakable,center lower,enhanced,middle=2mm,listing side text]{Marcação com o pacote \mintinline{latex}{cancel}}{exe_cancel}
-\cancel{palavra cancelada} \\
-\bcancel{palavra cancelada} \\
-\xcancel{palavra cancelada} \\
-\cancelto{valor}{expressao}
+$\cancel{palavra cancelada}$
+$\bcancel{palavra cancelada}$
+$\xcancel{palavra cancelada}$
+$\cancelto{valor}{expressao}$
 \end{texexptitled}
 
-No LaTeX, ao longo de um parágrafo, é possível alterar o tamanho da fonte. Por padrão há 10 tamanhos de letra que podem ser utilizados.
+No \LaTeX{}, ao longo de um parágrafo, é possível alterar o tamanho da fonte. Por padrão há 10 tamanhos de letra que podem ser utilizados.
 
 \begin{texexptitled}[breakable,center lower,enhanced,middle=2mm,listing side text]{Tamanhos de fontes}{exe_tamfonte}
 \Huge Huge \\
@@ -199,7 +270,7 @@ No LaTeX, ao longo de um parágrafo, é possível alterar o tamanho da fonte. Po
 
 Para alterar o tamanho de uma fonte localmente, basta fazer \mintinline{latex}{\large large}.
 
-No LaTeX é possível também alterar o tipo da fonte. Alguns estilos incluem fontes no estilo \mintinline{latex}{\texttt{}} (máquina de escrever), \mintinline{latex}{\textsf{}} (com serifa) e \mintinline{latex}{\textrm{}} (sem serifa).
+No \LaTeX{} é possível também alterar o tipo da fonte. Alguns estilos incluem fontes no estilo \mintinline{latex}{\texttt{}} (máquina de escrever), \mintinline{latex}{\textsf{}} (com serifa) e \mintinline{latex}{\textrm{}} (sem serifa).
 
 \begin{texexptitled}[breakable,center lower,enhanced,middle=2mm]{Alguns tipos de fontes}{exe_font}
 \texttt{Typewriter Font} | 
@@ -218,13 +289,13 @@ No LaTeX é possível também alterar o tipo da fonte. Alguns estilos incluem fo
 \subsection{Títulos e seções}
 \label{sec:tit_secs}
 
-No LaTeX, é possível organizar o texto utilizando seções em até 7 níveis.
+No \LaTeX{}, é possível organizar o texto utilizando seções em até 7 níveis.
 
 % Dica dos expaçamentos: https://tex.stackexchange.com/questions/10535/how-to-force-a-table-into-page-width/56552
 \begin{table}[ht]
-\caption{Títulos e Seções de um documento LaTeX.}
+\caption{Títulos e Seções de um documento \LaTeX{}.}
 \begin{center}
-    \begin{tabular}{p{5cm}p{5cm}c{5cm}}
+    \begin{tabular}{p{5cm}p{5cm}c}
     \hline
     \\[-0.5em]
     \textbf{Seção} & \textbf{Comando}              & \textbf{Nível} \\
@@ -250,7 +321,7 @@ No LaTeX, é possível organizar o texto utilizando seções em até 7 níveis.
 \label{tab:tit_secs}
 \end{table}
 
-Na Seção \ref{sec:intro_latex} foram mostradas as diferentes classes padrão disponíveis para documentos LaTeX. Observe que as partes de conteúdo marcadas como \mintinline{latex}{\part} e \mintinline{latex}{chapter} estão disponíveis apenas para as classes \mintinline{latex}{report} e \mintinline{latex}{book}.
+Na Seção \ref{sec:intro_latex} foram mostradas as diferentes classes padrão disponíveis para documentos \LaTeX{}. Observe que as partes de conteúdo marcadas como \mintinline{latex}{\part} e \mintinline{latex}{chapter} estão disponíveis apenas para as classes \mintinline{latex}{report} e \mintinline{latex}{book}.
 
 \subsection{Cores e Paletas de Cores}
 \label{sec:pal_cores}
@@ -312,7 +383,7 @@ Assim como em qualquer editor de textos WYSIWYG, as cores do texto podem ser alt
 Além de modificar a cor das fontes, é possível também marcá-las de forma que o fundo fique colorido.
 
 \begin{texexptitled}[breakable,center lower,enhanced,middle=2mm]{Texto com fundo colorido}{exe_cor3}
-\textit{The \colorbox{pink}{quick} \colorbox{magenta}{brown} fox jumps \colorbox{green}{over} the lazy \colorbox{blue}{dog}.}
+\textit{The \colorbox{pink}{quick} \colorbox{magenta}{brown} fox jumps \colorbox{green}{over} the lazy \colorbox{blue}{\color{white}{dog}}.}
 \end{texexptitled}
 
 Você pode escolher, por exemplo, utilizar a patela de cores do projeto ``Solarized''. Para utilizá-la, basta carregar o pacote \mintinline{latex}{\usepackage{solarized}}. A paleta de cores do ``Solarized'' é a seguinte:
@@ -414,7 +485,7 @@ As cores básicas do pacote {xcolor-material} são as seguintes (além do branco
 Na paleta de cores mostrada acima, ``d.'' foi utilizado para abreviar a palavra \textit{deep} e ``l.'' foi utilizada para abreviar a palavra \textit{light}. Para utilizar as cores do pacote {\tt xcolor-material}, é necessário utilizá-las da seguinte forma: a cor \textit{Deep Purple} deve ser referenciada como ``MaterialDeepPurple'', ou seja, a palavra reservada ``Material'' deve preceder o nome da cor, que por sua vez, deve ser indicada com a primeira letra em caixa alta.
 
 \begin{marker}
-  Pode ser necessário incluir o arquivo {\tt xcolor-material.sty} à sua distribuição LaTeX. Veja a página do pacote para mais informações (\url{https://www.ctan.org/pkg/xcolor-material}).
+  Pode ser necessário incluir o arquivo {\tt xcolor-material.sty} à sua distribuição \LaTeX{}. Veja a página do pacote para mais informações (\url{https://www.ctan.org/pkg/xcolor-material}).
 \end{marker}
 
 Se for necessário, é possível definir qualquer cor utilizando códigos HTML, \textit{Red Green Blue} (RGB) ou \textit{Cyan Magenta Yellow Black} (CMYK) utilizando o comando \mintinline{latex}{\definecolor}.
@@ -444,14 +515,14 @@ Veja outras opções de paletas e cores em \href{http://latexcolor.com}{LaTeXCol
 \subsection{Medidas}
 \label{sec:medidas}
 
-As medidas na linguagem LaTeX podem ser apresentadas em unidades diversas. Você pode misturá-las e isso pode ocorrer quando você reutiliza algum código que produz uma formatação específica que você gostaria de criar e acabou encontrando na internet. A Tabela \ref{tab:medidas} a seguir, mostra as unidades mais comuns. Vale ressaltar, entretanto, que a unidade padrão é o ponto e que o comprimento padrão é \mintinline{latex}{1 pt}:
+As medidas na linguagem \LaTeX{} podem ser apresentadas em unidades diversas. Você pode misturá-las e isso pode ocorrer quando você reutiliza algum código que produz uma formatação específica que você gostaria de criar e acabou encontrando na internet. A Tabela \ref{tab:medidas} a seguir, mostra as unidades mais comuns. Vale ressaltar, entretanto, que a unidade padrão é o ponto e que o comprimento padrão é \mintinline{latex}{1 pt}:
 
 \begin{table}[H]
 \centering
-\caption{Unidades de Medidas mais Comuns no LaTeX.}
+\caption{Unidades de Medidas mais Comuns no \LaTeX{}.}
 \label{tab:medidas}
 %\begin{center}
-    \begin{tabular}{p{3cm}c{3cm}c{5cm}}
+    \begin{tabular}{p{3cm}cc}
     \hline
     \\[-0.5em]
     \textbf{Abreviação} & \textbf{Definição} & \textbf{Valor em Pontos} \\
@@ -477,13 +548,12 @@ As medidas na linguagem LaTeX podem ser apresentadas em unidades diversas. Você
 %\label{tab:medidas}
 \end{table}
 
-Em documentos escritos na linguagem LaTeX, é possível especificar as medidas utilizando os valores nas unidades indicadas na tabela acima e também utilizando algumas macros. Estas macros são, especificamente, representam algumas medidas padrão na linguagem e são apresentadas na Tabela \ref{tab:meds_padrao} abaixo.
+Em documentos escritos na linguagem \LaTeX{}, é possível especificar as medidas utilizando os valores nas unidades indicadas na tabela acima e também utilizando algumas macros. Estas macros são, especificamente, representam algumas medidas padrão na linguagem e são apresentadas na Tabela \ref{tab:meds_padrao} abaixo.
 
 \begin{table}[H]
 \centering
-\caption{Algumas Macros de Medidas do LaTeX.}
+\caption{Algumas Macros de Medidas do \LaTeX{}.}
 \label{tab:meds_padrao}
-%\begin{center}
     \begin{tabular}{p{5cm}p{8cm}}
     \hline
     \\[-0.5em]
@@ -510,7 +580,7 @@ Em documentos escritos na linguagem LaTeX, é possível especificar as medidas u
     \\[-0.5em]
     \mintinline{latex}{\paperheight}     & Altura de uma página \\
     \\[-0.5em]
-    \mintinline{latex}{\parindent}       & Identação de um parágrafo \\
+    \mintinline{latex}{\parindent}       & Indentação de um parágrafo \\
     \\[-0.5em]
     \mintinline{latex}{\parskip}         & Espaçamento extra entre parágrafos \\
     \\[-0.5em]
@@ -526,11 +596,37 @@ Em documentos escritos na linguagem LaTeX, é possível especificar as medidas u
     \\[-0.5em]
     \hline
     \end{tabular}
-%\end{center}
-%\label{tab:medidas}
 \end{table}
 
-No LaTeX, um comprimento é um número real seguido por uma unidade de media, o qual pode ser modificado por um valor ou uma macro. 
+No \LaTeX{}, um comprimento é um número real seguido por uma unidade de media, o qual pode ser modificado por um valor ou uma macro. 
+
+Além de medidas padrão, o \LaTeX{} também fornece macros que permitem adicionar espaçamentos (horizontais e verticais), que podem fazer uso das medidas relacionadas na Tabela \ref{tab:meds_padrao}. Veja a Tabela \ref{tab:espacamentos} a seguir:
+
+\begin{table}[H]
+\centering
+\caption{Algumas Macros de Espaçamento do \LaTeX{}.}
+\label{tab:espacamentos}
+    \begin{tabular}{p{5cm}p{8cm}}
+    \hline
+    \\[-0.5em]
+    \textbf{Macro} & \textbf{Descrição} \\
+    \\[-0.5em]
+    \hline
+    \hline
+    \\[-0.5em]
+    \mintinline{latex}{\hspace}          & Adiciona espaço horizontal (pode utilizar qualquer unidade da Tabela \ref{tab:medidas}, incluindo valores negativos) \\
+    \\[-0.5em]
+    \mintinline{latex}{\vspace}          & Adiciona espaço vertical (pode utilizar qualquer unidade da Tabela \ref{tab:medidas}, incluindo valores negativos)\\
+    \\[-0.5em]
+    \mintinline{latex}{\smallskip}       & Equivalente a \mintinline{latex}{\vspace{smallskipamount}}, onde {\tt smallskipamount} é relativo ao estilo do documento \\
+    \\[-0.5em]
+    \mintinline{latex}{\medskip}         & Equivalente a \mintinline{latex}{\vspace{medskipamount}}, onde {\tt medskipamount} é relativo ao estilo do documento \\
+    \\[-0.5em]
+    \mintinline{latex}{\bigskip}         & Equivalente a \mintinline{latex}{\vspace{bigskipamount}}, onde {\tt bigskipamount} é relativo ao estilo do documento \\
+    \\[-0.5em]
+    \hline
+    \end{tabular}
+\end{table}
 
 %% INCLUIR ALGUNS EXEMPLOS DE USO DOS COMANDOS DA TABELA ACIMA.
 
@@ -555,7 +651,7 @@ Veja mais detalhes, informações e exemplos em \url{https://en.wikibooks.org/wi
 \subsection{Parágrafos}
 \label{sec:paragrafos}
 
-Os parágrafos no LaTeX são blocos de texto separados por uma ou mais linhas. Para iniciar um parágrafo, basta pular uma linha. Uma outra forma de separar parágrafos, é através da utilização de duas barras invertidas (\mintinline{latex}{\\}). Observe as diferenças entre os exemplos a seguir.
+Os parágrafos no \LaTeX{} são blocos de texto separados por uma ou mais linhas. Para iniciar um parágrafo, basta pular uma linha. Uma outra forma de separar parágrafos, é através da utilização de duas barras invertidas (\mintinline{latex}{\\}). Observe as diferenças entre os exemplos a seguir.
 
 \begin{texexptitled}[breakable,enhanced,middle=2mm]{Parágrafos Contíguos}{exe_par1}
 \lipsumsentence[1-4] 
@@ -576,7 +672,7 @@ Os parágrafos no LaTeX são blocos de texto separados por uma ou mais linhas. P
 \subsubsection*{Posição e espaçamento}
 \label{sec:pos_espac}
 
-Boa parte dos elementos de um texto podem ser, basicamente, posicionados à esquerda, ao centro ou à direita. O LaTeX possui marcadores especiais para estes posicionamentos, que podem ser utilizados não apenas nos parágrafos, mas também com figuras e tabelas.
+Boa parte dos elementos de um texto podem ser, basicamente, posicionados à esquerda, ao centro ou à direita. O \LaTeX{} possui marcadores especiais para estes posicionamentos, que podem ser utilizados não apenas nos parágrafos, mas também com figuras e tabelas.
 
 \begin{texexptitled}[breakable,enhanced,middle=2mm]{Parágrafos centralizados \par Utilizando o ambiente \mintinline{latex}{center}}{exe_par4}
 \begin{center}
@@ -633,7 +729,7 @@ Espaçamentos horizontais e verticais são dados pelos marcadores \mintinline{la
 
 Notas de rodapé podem ser inseridas com o marcador \mintinline{latex}{\footnote{}} após a palavra a qual se quer referir. Nos exemplos a seguir, vamos usar o pangrama\footnotemark{} ``\textit{À noite, vovô Kowalsky vê o ímã cair no pé do pinguim queixoso e vovó põe açúcar no chá de tâmaras do jabuti feliz\footnotemark{}}''. O Exemplo \ref{exe_rodape1} mostra como utilizar o marcador \mintinline{latex}{\footnote{}}:
 
-\begin{texexptitled}[breakable,enhanced,middle=2mm]{Nota de rodapé utilizando o marcador \mintinline{latex}{\footnote}}{exe_rodape1}
+\begin{texexptitled}[breakable,enhanced,middle=2mm]{Nota de rodapé utilizando o marcador {\tt footnote}}{exe_rodape1}
 À noite, vovô Kowalsky\footnote{Esta é uma nota de rodapé.} vê o ímã cair no pé do pinguim queixoso e vovó põe açúcar no chá de tâmaras do jabuti feliz\footnote{Este é uma outra nota de rodapé}.
 \end{texexptitled}
 
@@ -643,40 +739,81 @@ Notas de rodapé podem ser inseridas com o marcador \mintinline{latex}{\footnote
 
 No Exemplo \ref{exe_rodape1}, foram incluídas duas notas de rodapé. Elas são ordenadas sequencialmente ao final da página em que foram inseridas.
 
-Outra forma de incluir notas de rodapé, é a partir da utilização dos marcadores \mintinline{latex}{\footnotemark} e \mintinline{latex}{\footnotetext}. O primeiro, insere o marcador na posição desejada, e o segundo, insere o texto referente àquele marcador. Esta forma é mais clara, pois destacam-se os comandos e marcadores fora do parágrafo que se está escrevendo, deixando-o mais limpo. Veja o Exemplo \ref{exe_rodape2} a seguir:
+Outra forma de incluir notas de rodapé, é a partir da utilização dos marcadores {\tt footnotemark} e {\tt footnotetext}. O primeiro, insere o marcador na posição desejada, e o segundo, insere o texto referente àquele marcador. Esta forma é mais clara, pois destacam-se os comandos e marcadores fora do parágrafo que se está escrevendo, deixando-o mais limpo. Por outro lado, este par de comandos não necessariamente utiliza um contador automático, visto que é possível indicar manualmente o índice da nota de rodapé. Veja o Exemplo \ref{exe_rodape2} a seguir:
 
-\begin{texexptitled}[breakable,enhanced,middle=2mm]{Nota de rodapé utilizando os marcadores \mintinline{latex}{\footnotemark} e \minitable{latex}{\footnotetext}}{exe_rodape2}
-À noite, vovô Kowalsky vê o ímã\footnotemark{} cair no pé do pinguim queixoso\footnotemark{} e vovó põe açúcar no chá de tâmaras do jabuti feliz.
+\begin{texexptitled}[breakable,enhanced,middle=2mm]{Nota de rodapé utilizando os marcadores {\tt footnotemark} e {\tt footnotetext}}{exe_rodape2}
+À noite, vovô Kowalsky vê o ímã\footnotemark[1] cair no pé do pinguim queixoso\footnotemark[2] e vovó põe açúcar no chá de tâmaras do jabuti feliz.
 
-\footnotetext{Esta é uma nota de rodapé.}
-\footnotetext{Esta é uma outra nota de rodapé.}
+\footnotetext[1]{Esta é uma nota de rodapé.}
+\footnotetext[2]{Esta é uma outra nota de rodapé.}
 \end{texexptitled}
 
-Um problema bastante comum com notas de rodapé no LaTeX ao se utilizar os marcadores \mintinline{latex}{\footenotemark} e \mintinline{latex}{\footnotetext}, é que os índices de marcação podem se repetir nas notas de rodapé. Veja no Exemplo \ref{exe_rodape3}:
+Observe no Exemplo \ref{exe_rodape2} que os índices 1 e 2 são indicados como argumentos dos comandos {\tt footenotemark} e {\tt footenotetext}. Estes argumentos devem ser numéricos e o seu estilo é apenas alterado com a definição de um novo estilo (veja como fazer isso no Exemplo \ref{exe_rodape4} a diante).
 
-\begin{texexptitled}[breakable,enhanced,middle=2mm]{Nota de rodapé utilizando o marcado \mintinline{latex}{\footnote}}{exe_rodape3}
-À noite, vovô Kowalsky\footnote{Esta é uma nota de rodapé.} vê o ímã cair no pé do pinguim queixoso e vovó põe açúcar no chá de tâmaras do jabuti feliz\footnote{Este é uma outra nota de rodapé}.
-\end{texexptitled}
+%Um problema bastante comum com notas de rodapé no LaTeX ao se utilizar os marcadores \mintinline{latex}{\footenotemark} e \mintinline{latex}{\footnotetext}, é que os índices de marcação podem se repetir nas notas de rodapé. Veja no Exemplo \ref{exe_rodape3}:
+%
+%\begin{texexptitled}[breakable,enhanced,middle=2mm]{Nota de rodapé utilizando o marcador {\tt footnote}}{exe_rodape3}
+%À noite, vovô Kowalsky\footnote{Esta é uma nota de rodapé.} vê o ímã cair no pé do pinguim queixoso e vovó põe açúcar no chá de tâmaras do jabuti feliz\footnote{Este é uma outra nota de rodapé}.
+%\end{texexptitled}
 
 %\begin{texexptitled}[breakable,enhanced,middle=2mm]{Nota de rodapé utilizando o marcado \mintinline{latex}{\footnote{}}}{exe_rodape1}
 %À noite, vovô Kowalsky\footnote{Esta é uma nota de rodapé.} vê o ímã cair no pé do pinguim queixoso e vovó põe açúcar no chá de tâmaras do jabuti feliz\footnote{Este é uma outra nota de rodapé}.
 %\end{texexptitled}
 
-No Exemplo \ref{exe_rodape1}, observe que o estilo aplicado à nota de rodapé é alfabético. É possível alterar o estilo de numeração renovando o marcador {\tt footnote}, e.g, \mintinline{latex}{\renewcommand{\thefootnote}{\roman{footnote}}}. Neste caso, a opção {\tt roman} indica que o estilo de numeração dos índices dos marcadores será em algarismos romanos:
+Nos Exemplos \ref{exe_rodape1} e \ref{exe_rodape2}, observe que o estilo aplicado à nota de rodapé é alfabético. É possível alterar o estilo de numeração renovando o marcador {\tt footnote}, e.g, \mintinline{latex}{\renewcommand{\thefootnote}{\roman{footnote}}}. Neste caso, a opção {\tt roman} indica que o estilo de numeração dos índices será dado em algarismos romanos:
 
-\renewcommand{\thefootnote}{\roman{footnote}}
+%\renewcommand{\thefootnote}{\roman{footnote}}
+\renewcommand{\thefootnote}{\Roman{footnote}}
 
 \begin{texexptitled}[breakable,enhanced,middle=2mm]{Nota de rodapé com referência numérica}{exe_rodape4}
-À noite, vovô Kowalsky vê o ímã\footnotemark{} cair no pé do pinguim queixoso\footnotemark{} e vovó põe açúcar\footnote{Esta é mais uma nota de rodapé} no chá de tâmaras do jabuti feliz.
+\renewcommand{\thefootnote}{\Roman{footnote}}
 
-\footnotetext{Esta é uma nota de rodapé.}
-\footnotetext{Esta é uma outra nota de rodapé.}
+À noite, vovô Kowalsky vê o ímã\footnote{Esta é uma nota de rodapé} cair no pé do pinguim queixoso\footnote{Esta é mais uma nota de rodapé} e vovó põe açúcar\footnote{Esta é mais uma outra nota de rodapé} no chá de tâmaras do jabuti feliz.
 \end{texexptitled}
+
+% REF: https://en.wikibooks.org/wiki/LaTeX/Footnotes_and_Margin_Notes
+Outros estilos de indexação das notas de rodapé estão resumidos na Tabela \ref{tab:estilos_notas_rodape} e podem ser utilizados para substituir a palavra {\tt estilo} no comando \mintinline{latex}{\renewcommand{\thefootnote}{\estilo{footnote}}}.
+
+\begin{table}[H]
+\centering
+\caption{Alguns estilos de notas de rodapé.}
+\label{tab:estilos_notas_rodape}
+    \begin{tabular}{p{3cm}p{8cm}}
+    \hline
+    \\[-0.5em]
+    \textbf{Comando} & \textbf{Descrição} \\
+    \\[-0.5em]
+    \hline
+    \hline
+    \\[-0.5em]
+    {\tt arabic} & Produz índices com números arábicos (e.g., 1, 2, 3, ...)\\
+    \\[-0.5em]
+    {\tt roman} & Produz índices com algarismos romanos em caixa baixa (e.g., i, ii, iii, ...)\\
+    \\[-0.5em]
+    {\tt Roman} & Produz índices com algarismos romanos em caixa alta (e.g., I, II, III, ...)\\
+    \\[-0.5em]
+    {\tt alph}  & Produz índices alfabéticos em caixa baixa (e.g., a, b, c, ...)\\
+    \\[-0.5em]
+    {\tt Alph}  & Produz índices alfabéticos em caixa alta (e.g., A, B, C, ...)\\
+    \\[-0.5em]
+    {\tt fnsymbol} & Produz uma sequência de símbolos \\
+    \hline
+    \end{tabular}
+\end{table}
+
+%\begin{texexptitled}[breakable,enhanced,middle=2mm]{Nota de rodapé com referência numérica}{exe_rodape4}
+%\renewcommand{\thefootnote}{\roman{footnote}}
+%
+%À noite, vovô Kowalsky vê o ímã\footnotemark[1] cair no pé do pinguim queixoso\footnotemark[2] e vovó põe açúcar\footnote{Esta é mais uma nota de rodapé} no chá de tâmaras do jabuti feliz.
+%
+%\footnotetext[1]{Esta é uma nota de rodapé.}
+%\footnotetext[2]{Esta é uma outra nota de rodapé.}
+%\end{texexptitled}
 
 \subsubsection*{Listas}
 \label{sec:listas}
 
-Listas ordenadas e não ordenadas podem ser facilmente criadas no LaTeX dentro de ambientes específicos. Listas não ordenadas são criadas dentro do ambiente \mintinline{latex}{itemize} e listas ordenadas são criadas dentro do ambiente \mintinline{latex}{enumerate}.
+Listas ordenadas e não ordenadas podem ser facilmente criadas no \LaTeX{} dentro de ambientes específicos. Listas não ordenadas são criadas dentro do ambiente \mintinline{latex}{itemize} e listas ordenadas são criadas dentro do ambiente \mintinline{latex}{enumerate}.
 
 No Exemplo \ref{exe_lista1}, tem-se uma lista simples não ordenada.
 
@@ -805,7 +942,7 @@ No Exemplo \ref{exe_lista5} a seguir, alteramos o estilo de ordenamento do Níve
 \subsection{Figuras}% (ambientes figure e subfigure)}
 \label{sec:figuras}
 
-Figuras podem ser incluídas em um documento LaTeX de formas variadas. Dependendo da complexidade da informação apresentada, ambientes específicos devem ser utilizados para organizar não apenas a apresentação, mas também a redação do documento.
+Figuras podem ser incluídas em um documento \LaTeX{} de formas variadas. Dependendo da complexidade da informação apresentada, ambientes específicos devem ser utilizados para organizar não apenas a apresentação, mas também a redação do documento.
 
 Uma figura pode ser incluída de forma simples utilizando o marcador \mintinline{latex}{\includegraphics[]{}}.
 
@@ -828,7 +965,7 @@ No Exemplo \ref{exe_fig1}, observe que o marcador \mintinline{latex}{\includegra
 \subsection{Formatos de Figuras}
 \label{sec:form_figs}
 
-Figuras podem ser incorporadas a partir de diferentes formatos em um documento LaTeX. Os formatos preferenciais, entretanto, são o PDF e o EPS. Estes formatos são vetoriais e permitem, por exemplo, a impressão em alta resolução das figuras.
+Figuras podem ser incorporadas a partir de diferentes formatos em um documento \LaTeX{}. Os formatos preferenciais, entretanto, são o PDF e o EPS. Estes formatos são vetoriais e permitem, por exemplo, a impressão em alta resolução das figuras.
 
 É possível converter formatos como o PNG, GIF e JPEG para os formatos PDF e EPS. Para tanto, recomenda-se a utilização do programa \textit{Imagemagick} para esta conversão. Conversores online também podem ser utiizados para esta finalidade.
 
@@ -856,7 +993,7 @@ Veja a página \url{http://www.fmwconcepts.com/imagemagick/index.php} com divers
 \subsubsection*{Ambientes de figuras}
 \label{sec:amb_figs}
 
-A forma mais simples de incluir figuras em um documento LaTeX, é a partir do comando \mintinline{latex}{\includegraphics[]{}}. Observe que este comando (assim como a maioria dos comandos e marcadores da linguagem) possui uma seção de opções (ou argumentos) que são indicados entre os colchetes e o caminho para a imagem em si, que é informada entre as chaves. O Exemplo \ref{exe_incgraphs} mostra um exemplo simples:
+A forma mais simples de incluir figuras em um documento \LaTeX{}, é a partir do comando \mintinline{latex}{\includegraphics[]{}}. Observe que este comando (assim como a maioria dos comandos e marcadores da linguagem) possui uma seção de opções (ou argumentos) que são indicados entre os colchetes e o caminho para a imagem em si, que é informada entre as chaves. O Exemplo \ref{exe_incgraphs} mostra um exemplo simples:
 
 \begin{texexptitled}[breakable,enhanced,middle=2mm]{Incorporando uma figura com o comando \mintinline{latex}{\includegraphics[]{}}}{exe_incgraphs}
 \includegraphics[width=3cm]{example-image-a}
@@ -865,7 +1002,7 @@ A forma mais simples de incluir figuras em um documento LaTeX, é a partir do co
 Observe, entretando, que apenas inserimos uma figura, mas não definimos uma posição relativa ao parágrafo ou à página. Para isso, é necessário incorporar o comando \mintinline{latex}{\includegraphics[]{}} dentro de um ambiente específico que permita o seu posicionamento relativo. Este ambiente, é o ambiente {\tt figure}. O Exemplo \ref{exe_ambfig} mostra um exemplo com o ambiente {\tt figure}:
 
 \begin{texexptitled}[breakable,enhanced,middle=2mm]{Incorporando uma figura com o comando \mintinline{latex}{\includegraphics[]{}} dentro do ambiente {\tt figure}}{exe_ambfig}
-\begin{figure}[h]
+\begin{figure}[H]
 \includegraphics[width=3cm]{example-image-a}
 \end{figure}
 \end{texexptitled}
@@ -894,7 +1031,7 @@ O ambiente {\tt figure} deve ser configurado para possuir uma das seguintes posi
     \\[-0.5em]
     {\tt p} & Posiciona o ambiente em uma ``página'' separada ({\tt p} vem do inglês \textit{page}) \\
     \\[-0.5em]
-    {\tt !} & Força o LaTeX a usar a posição textual onde o ambiente se encontra (e.g., {\tt h!}) \\
+    {\tt !} & Força o \LaTeX{} a usar a posição textual onde o ambiente se encontra (e.g., {\tt h!}) \\
     \\[-0.5em]
     {\tt H} & Posiciona o ambiente precisamente no local em que se encontra (depende do pacote {\tt float} e é equivalente a {\tt h!}) \\
     \\[-0.5em]
@@ -963,7 +1100,7 @@ No Exemplo \ref{exe_wrapfig}, observe que o ambiente {\tt wrapfigure} aceita as 
 
 %FALTA: INSERIR CODIGOS
 
-Figuras no LaTeX podem ser desenhadas utilizando pacotes específicos. As figuras podem ser incorporadas a partir de arquivos .tex separados ou desenhadas em ambientes apropriados. O pacote TikZ é um pacote do LaTeX orientado para a construção de diagramas. Com ele você pode criar diferentes tipos de gráficos, grafos, diagramas etc, que são alinhados com o formato SVG. Com o pacote pstricks, é possível criar imagens vetoriais complexas utilizando o interpretador do \textit{GhostScript}. A diferença entre estes dois pacotes está mais relacionada com a forma como os seus resultados são interpretados e as suas imagens renderizadas dentro do documento LaTeX. %https://tex.stackexchange.com/questions/60778/fundamental-differences-pstricks-tikz-pgf-and-others
+Figuras no \LaTeX{} podem ser desenhadas utilizando pacotes específicos. As figuras podem ser incorporadas a partir de arquivos .tex separados ou desenhadas em ambientes apropriados. O pacote TikZ é um pacote do \LaTeX{} orientado para a construção de diagramas. Com ele você pode criar diferentes tipos de gráficos, grafos, diagramas etc, que são alinhados com o formato SVG. Com o pacote pstricks, é possível criar imagens vetoriais complexas utilizando o interpretador do \textit{GhostScript}. A diferença entre estes dois pacotes está mais relacionada com a forma como os seus resultados são interpretados e as suas imagens renderizadas dentro do documento \LaTeX{}. %https://tex.stackexchange.com/questions/60778/fundamental-differences-pstricks-tikz-pgf-and-others
 
 \subsubsection*{TikZ}
 
@@ -1021,7 +1158,7 @@ A página \url{https://tug.org/PSTricks/main.cgi?file=index} apresenta muitos ex
 
 Equações podem ser digitadas diretamente em parágrafos (de forma \textit{inline}) utilizando um par de \$'s como delimitadores. Por exemplo, equação $ax^2 + bx + c = 0$ pode ser digitada como \mintinline{latex}{$ax^2 + bx + c = 0$} no meio de uma frase ou parágrafo.
 
-No LaTeX é possível inserir praticamente todos os símbolos relacionados às ciências exatas. No Anexo \ref{anexoB} há uma lista destes símbolos, os quais poderão ser utilizados para a realizações dos exercícios da Seção \ref{sec:exercicios}.
+No \LaTeX{} é possível inserir praticamente todos os símbolos relacionados às ciências exatas. No Anexo \ref{anexoB} há uma lista destes símbolos, os quais poderão ser utilizados para a realizações dos exercícios da Seção \ref{sec:exercicios}.
 
 %\begin{texexptitled}[breakable,center lower,enhanced,middle=2mm,listing side text]{Alguns símbolos matemáticos}{exe_mat_simbs}
 %
@@ -1049,13 +1186,11 @@ Para digitar equações em blocos, há ambientes próprios para casos variados, 
 O ambiente \mintinline{latex}{equation} é o ambiente de equação mais comum:
 
 %\begin{equation}
-%  \label{apI_eq:1}
 %  J(\mathbf{x}) = \frac{1}{2}(\mathbf{x} - \mathbf{x}^{b})^{T}\mathbf{B}^{-1}(\mathbf{x} - \mathbf{x}^{b}) + \frac{1}{2}[\mathbf{y}^{o} - \textit{H}(\mathbf{x})]^{T}\mathbf{R}^{-1}[\mathbf{y}^{o} - \textit{H}(\mathbf{x})]
 %\end{equation}
 
 \begin{texexptitled}[breakable,center lower,enhanced,middle=2mm]{Ambiente \mintinline{latex}{equation}}{exe_ambeq1}
 \begin{equation*}
-\label{apI_eq:1}
 J(\mathbf{x}) = \frac{1}{2}(\mathbf{x} - \mathbf{x}^{b})^{T}\mathbf{B}^{-1}(\mathbf{x} - \mathbf{x}^{b}) + \frac{1}{2}[\mathbf{y}^{o} - \textit{H}(\mathbf{x})]^{T}\mathbf{R}^{-1}[\mathbf{y}^{o} - \textit{H}(\mathbf{x})]
 \end{equation*}
 \end{texexptitled}
@@ -1063,7 +1198,6 @@ J(\mathbf{x}) = \frac{1}{2}(\mathbf{x} - \mathbf{x}^{b})^{T}\mathbf{B}^{-1}(\mat
 Quando for necessário alinhar equações, pode-se utilizar o ambiente \mintinline{latex}{align}:
 
 %\begin{align}
-%  \label{apI_eq:3}
 %  \mathbf{y}^{o} - \textit{H}(\mathbf{x}) & = \mathbf{y}^{o} - \textit{H}[\mathbf{x}^{b} + (\mathbf{x} - \mathbf{x}^{b})] \\
 %  \label{apI_eq:4}
 %  \mathbf{y}^{o} - \textit{H}(\mathbf{x}) & = \mathbf{y}^{o} - \textit{H}(\mathbf{x}^{b}) - \textit{H}(\mathbf{x} - \mathbf{x}^{b})
@@ -1071,7 +1205,6 @@ Quando for necessário alinhar equações, pode-se utilizar o ambiente \mintinli
 
 \begin{texexptitled}[breakable,center lower,enhanced,middle=2mm]{Ambiente \mintinline{latex}{align}}{exe_ambeq2}
 \begin{align*}
-\label{apI_eq:3}
 \mathbf{y}^{o} - \textit{H}(\mathbf{x}) & = \mathbf{y}^{o} - \textit{H}[\mathbf{x}^{b} + (\mathbf{x} - \mathbf{x}^{b})] \\
 \label{apI_eq:4}
 \mathbf{y}^{o} - \textit{H}(\mathbf{x}) & = \mathbf{y}^{o} - \textit{H}(\mathbf{x}^{b}) - \textit{H}(\mathbf{x} - \mathbf{x}^{b})
@@ -1083,7 +1216,7 @@ Observe no exemplo acima, que as equações estão alinhadas pelo sinal de \mint
 \subsection{Tabelas}
 \label{sec:tabs}
 
-Tabelas são os elementos do texto que resumem e organizam informações que podem ser referenciadas no texto. No LaTeX, tabelas são escritas em ambientes específicos, que podem, dependendo da necessidade, ajustar automaticamente o seu conteúdo aos limites das dimensões do texto. Antes de apresentar os ambientes mais comuns de tabelas, salienta-se que a construção de tabelas pode se tornar uma tarefa um pouco mais complicada do que parece, principalmente se a tabela em questão possuir muitas células mescladas. Portanto, prefira construir tabelas de forma simples e clara, como a tabela do Exemplo \ref{exe_tab1}.
+Tabelas são os elementos do texto que resumem e organizam informações que podem ser referenciadas no texto. No \LaTeX{}, tabelas são escritas em ambientes específicos, que podem, dependendo da necessidade, ajustar automaticamente o seu conteúdo aos limites das dimensões do texto. Antes de apresentar os ambientes mais comuns de tabelas, salienta-se que a construção de tabelas pode se tornar uma tarefa um pouco mais complicada do que parece, principalmente se a tabela em questão possuir muitas células mescladas. Portanto, prefira construir tabelas de forma simples e clara, como a tabela do Exemplo \ref{exe_tab1}.
 
 \begin{texexptitled}[breakable,center lower,enhanced,middle=2mm]{Exemplo de uma tabela simples}{exe_tab1}
 \begin{tabular}{c c}
@@ -1099,7 +1232,7 @@ L5C1 & L5C2 \\
 \end{tabular}
 \end{texexptitled}
 
-Na tabela do Exemplo \ref{exe_tab1}, tem-se apenas duas colunas e algumas linhas. Para separar o conteúdo, utilizou-se apenas linhas horizontais para separar o cabeçalho, i.e., os nomes das colunas, do conteúdo. Pode-se, melhorar o aspecto do espaçamento das linhas utilizando o comando \mintinline{latex}{\\[-0.5em]}. Lembre-se que a instrução \mintinline{latex}{\\} pula uma linha; o argumento desta instrução, i.e., \mintinline{latex}{[-0.5em]} indica que o espaço de uma linha deve ser recuado em $-0.5em$. Na Tabela \ref{tab:medidas} que a unidade {\tt em} refere-se à altura do caractere ``M'' da fonte em uso, isso garante que o espaçamento será sempre consistente independente do estilo da fonte em uso. Veja o Exemplo \ref{exe:tab2} a seguir:
+Na tabela do Exemplo \ref{exe_tab1}, tem-se apenas duas colunas e algumas linhas. Para separar o conteúdo, utilizou-se apenas linhas horizontais para separar o cabeçalho, i.e., os nomes das colunas, do conteúdo. Pode-se, melhorar o aspecto do espaçamento das linhas utilizando o comando \mintinline{latex}{\\[-0.5em]}. Lembre-se que a instrução \mintinline{latex}{\\} pula uma linha; o argumento desta instrução, i.e., \mintinline{latex}{[-0.5em]} indica que o espaço de uma linha deve ser recuado em $-0.5em$. Na Tabela \ref{tab:medidas} que a unidade {\tt em} refere-se à altura do caractere ``M'' da fonte em uso, isso garante que o espaçamento será sempre consistente independente do estilo da fonte em uso. Veja o Exemplo \ref{exe_tab2} a seguir:
 
 \begin{texexptitled}[breakable,center lower,enhanced,middle=2mm]{Exemplo de uma tabela simples (Altura das Linhas)}{exe_tab2}
 \begin{tabular}{l r}
@@ -1153,7 +1286,7 @@ L5C1 & L5C2 \\
   Observe no Exemplo \ref{exe_tab3}, que o conteúdo das colunas foi marcado como {\tt p} (do inglês \textit{paragraph}). Nessa forma mais simples de se especificar a largura das colunas, não é possível posicionar o texto de outra forma.
 \end{marker}
 
-Assim como as tabelas produzidas em editores WYSIWYG, no LaTeX também é possível mesclar células (na direção das colunas ou das linhas). Para isso, utiliza-sem os comandos \mintinline{latex}{\multicolumn} para mesclar colunas e \mintinline{latex}{\multirow} para mesclar linhas. Veja o Exemplo \ref{exe_tab4} a seguir:
+Assim como as tabelas produzidas em editores WYSIWYG, no \LaTeX{} também é possível mesclar células (na direção das colunas ou das linhas). Para isso, utiliza-sem os comandos \mintinline{latex}{\multicolumn} para mesclar colunas e \mintinline{latex}{\multirow} para mesclar linhas. Veja o Exemplo \ref{exe_tab4} a seguir:
 
 \begin{texexptitled}[breakable,center lower,enhanced,middle=2mm]{Exemplo de uma tabela simples}{exe_tab4}
 \begin{tabular}{|p{3cm}|p{3cm}|p{3cm}|p{3cm}|}
@@ -1189,7 +1322,7 @@ Com relação ao ambiente {\tt tabular}, tem-se duas variações do mesmo, os am
 \end{tabular}
 \end{texexptitled}
 
-Já no Exemplo \ref{exe_tab6}, a tabela gerada com o ambiente {\tt tabular*} possui largura fixa, e o seu limite é a largura do parágrafo no qual está inserida (por isso o marcado {\tt \textwidth}). Observe que o conteúdo da tabela se ajusta à largura fixa.
+Já no Exemplo \ref{exe_tab6}, a tabela gerada com o ambiente {\tt tabular*} possui largura fixa, e o seu limite é a largura do parágrafo no qual está inserida (por isso o marcador {\tt textwidth}). Observe que o conteúdo da tabela se ajusta à largura fixa.
 
 \begin{texexptitled}[breakable,center lower,enhanced,middle=2mm]{Exemplo de uma tabela simples  utilizando o ambiente {\tt tabular*}}{exe_tab6}
 \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}|l|c|r|}
@@ -1238,7 +1371,7 @@ Mary Johnson & 4 & 5  \\
 % Dicas úteis para estilizar tabelas: https://inf.ethz.ch/personal/markusp/teaching/guides/guide-tables.pdf
 
 \begin{marker}
-    Você pode utilizar editores online para construir tabelas simples no LaTeX. Tenha em mente que tabelas muito complexas são difíceis de manipular e atualizar. Veja o site \url{https://www.tablesgenerator.com/} e \url{https://www.latex-tables.com} para mais informações.
+    Você pode utilizar editores online para construir tabelas simples no \LaTeX{}. Tenha em mente que tabelas muito complexas são difíceis de manipular e atualizar. Veja o site \url{https://www.tablesgenerator.com/} e \url{https://www.latex-tables.com} para mais informações.
 \end{marker}
 
 \subsection{Outros ambientes}
@@ -1252,12 +1385,12 @@ Mary Johnson & 4 & 5  \\
 
 %Fonte: https://pt.overleaf.com/learn/latex/Code_listing
 
-Muitas vezes, dependendo do tipo de documento que se está produzindo, faz-se necessário a inserção de códigos que representam um determinado processo. Um exemplo, é quando se quer mostrar um código escrito em alguma linguagem de programação. O LaTeX possui alguns pacotes que permitem destacar a seção de código inserida, em ambientes específicos. O ambiente {\tt verbatim} é o mais simples de ser utilizado, e poder ser aplicado para destacar algum tipo de texto. Algumas peculiaridades do ambiente, é que ele ``escapa'' os comandos da linguagem. Veja no Exemplo \ref{exe_list1} um exemplo.
+Muitas vezes, dependendo do tipo de documento que se está produzindo, faz-se necessário a inserção de códigos que representam um determinado processo. Um exemplo, é quando se quer mostrar um código escrito em alguma linguagem de programação. O \LaTeX{} possui alguns pacotes que permitem destacar a seção de código inserida, em ambientes específicos. O ambiente {\tt verbatim} é o mais simples de ser utilizado, e poder ser aplicado para destacar algum tipo de texto. Algumas peculiaridades do ambiente, é que ele ``escapa'' os comandos da linguagem. Veja no Exemplo \ref{exe_list1} um exemplo.
 
 \begin{texexptitled}[breakable,center lower,enhanced,middle=2mm]{Exemplo de uso do ambiente {\tt verbatim para destacar texto}}{exe_list1}
 \begin{verbatim}
-Text enclosed inside \texttt{verbatim} environment is
-printed directly and all \LaTeX{} commands are ignored.
+Um texto delimitado pelo ambiente \texttt{verbatim} é renderizado 
+diretamente e os comandos \LaTeX{} são ignorados.
 \end{verbatim}
 \end{texexptitled}
 
@@ -1265,8 +1398,8 @@ No Exemplo \ref{exe_list2}, utilizou-se o mesmo ambiente do Exemplo \ref{exe_lis
 
 \begin{texexptitled}[breakable,center lower,enhanced,middle=2mm]{Exemplo de uso do ambiente {\tt verbatim} para destacar texto}{exe_list2}
 \begin{verbatim*}
-Text enclosed inside \texttt{verbatim} environment is
-printed directly and all \LaTeX{} commands are ignored.
+Um texto delimitado pelo ambiente \texttt{verbatim} é renderizado 
+diretamente e os comandos \LaTeX{} são ignorados.
 \end{verbatim*}
 \end{texexptitled}
 
@@ -1310,9 +1443,11 @@ def incmatrix(genl1,genl2):
 
 Outro ambiente que pode ser usado para listar código é o {\tt minted}. Veja o exemplo a seguir:
 
-\begin{texexptitled}[breakable,center lower,enhanced,middle=2mm]{Exemplo da apresentação de um código escrito em linguagem Python utilizando o pacote {\tt minted}}{exe_list4}
+\begin{texexptitled}[breakable,center lower,enhanced,middle=2mm,boxsep=5mm]{Exemplo da apresentação de um código escrito em linguagem Python utilizando o pacote {\tt minted}}{exe_list4}
 \begin{minted}[bgcolor=white,
                frame=lines,
+               linenos,
+               bgcolor=MaterialGrey100,
                framesep=2mm]{python}
 import numpy as np
  
@@ -1424,7 +1559,7 @@ No Exemplo \ref{exe:ref2}, observe que o comando {\tt cite} marca a citação co
 %\end{texexptitled}
 
 \begin{marker}
-  Deve-se ter cautela na edição manual do arquivo {\tt referencia.bib} do estilo do INPE. Este arquivo não aceita acentos naturais, i.e., acentos latinos devem ser marcados no estilo do LaTeX (veja mais detalhes na Seção \ref{sec:acentos}. Além disso, é recomendável que o usuário edite a referência, removendo espaços em brancos e remarcando os acentos, quando necessário.
+  Deve-se ter cautela na edição manual do arquivo {\tt referencia.bib} do estilo do INPE. Este arquivo não aceita acentos naturais, i.e., acentos latinos devem ser marcados no estilo do \LaTeX{} (veja mais detalhes na Seção \ref{sec:acentos}. Além disso, é recomendável que o usuário edite a referência, removendo espaços em brancos e remarcando os acentos, quando necessário.
 \end{marker}
 
 \subsubsection*{Estilos de Referências}
@@ -1453,23 +1588,23 @@ Atualmente a maioria das revistas fornecem as referências em diferentes formato
 \subsection{Macros e Comandos}
 \label{sec:mac_cmd}
 
-No LaTeX é possível definir \textit{macros}, que são um conjunto de instruções específicas para facilitar a formatação do documento. Além das \textit{macros}, é possível também redefinir comando do LaTeX, de forma que os comandos originais sejam executados de forma mais simples e customizada.
+No \LaTeX{} é possível definir \textit{macros}, que são um conjunto de instruções específicas para facilitar a formatação do documento. Além das \textit{macros}, é possível também redefinir comando do \LaTeX{}, de forma que os comandos originais sejam executados de forma mais simples e customizada.
 
 % Exemplo: redefinir o comando arraystretch de forma que a distância entre as linhas seja sempre um pouco maior (em comparação com o original): \renewcommand{\arraystretch}{1.2}
 
 \subsection{Editores}
 \label{sec:editores}
 
-Muitos editores podem ser utilizados para editar documentos LaTeX. A escolha de um editor é particular, mas pode ser associada à forma como o usuário está mais habituado a digitar. Por exemplo, se o usuário gosta de utilizar o editor \href{https://www.vim.org}{VIM}, pode escolher instalar algumas extensões para este editor, a fim de torná-lo apto para a edição de documentos LaTeX. Outras escolhas de editores, podem incluir editores locais (como o próprio VIM, disponível para o Windows, Linux e Mac OS X) ou editores online. Editores locais podem variar de acordo com o sistema operacional em uso, embora muitos projetos \textit{open source} tenham executáveis para os sistemas operacionais mais utilizados. Em relação aos editores online, estes podem ser mais vantajosos por não dependerem do tipo de sistema operacional, mas apenas de uma conexão com a internet e um navegador compatível. Outra vantagem dos editores online, é o fato de que estes podem ser integrados a outros serviços, como o \href{https://dropbox.com}{Dropbox}.
+Muitos editores podem ser utilizados para editar documentos \LaTeX{}. A escolha de um editor é particular, mas pode ser associada à forma como o usuário está mais habituado a digitar. Por exemplo, se o usuário gosta de utilizar o editor \href{https://www.vim.org}{VIM}, pode escolher instalar algumas extensões para este editor, a fim de torná-lo apto para a edição de documentos \LaTeX{}. Outras escolhas de editores, podem incluir editores locais (como o próprio VIM, disponível para o Windows, Linux e Mac OS X) ou editores online. Editores locais podem variar de acordo com o sistema operacional em uso, embora muitos projetos \textit{open source} tenham executáveis para os sistemas operacionais mais utilizados. Em relação aos editores online, estes podem ser mais vantajosos por não dependerem do tipo de sistema operacional, mas apenas de uma conexão com a internet e um navegador compatível. Outra vantagem dos editores online, é o fato de que estes podem ser integrados a outros serviços, como o \href{https://dropbox.com}{Dropbox}.
 
-Nas duas seções a seguir, são apresentados alguns editores selecionados para a edição de documentos LaTeX.
+Nas duas seções a seguir, são apresentados alguns editores selecionados para a edição de documentos \LaTeX{}.
 
 \subsubsection*{Editores locais}
 \label{sec:ed_local}
 
-Para compilar um documento LaTeX localmente, dependendo do sistema operacional em uso, há várias opções de editores. Por simplicidade, iremos escolher o editor TexMaker, disponível para os sistemas operacional \textit{Windows}, Linux e Mac OS.
+Para compilar um documento \LaTeX{} localmente, dependendo do sistema operacional em uso, há várias opções de editores. Por simplicidade, iremos escolher o editor TexMaker, disponível para os sistemas operacional \textit{Windows}, Linux e Mac OS.
 
-Se a escolha do usuário for a linha de comando, utilizando um editor como o VIM, os documentos em LaTeX podem ser compilados utilizando uma sequência de comandos como a seguir:
+Se a escolha do usuário for a linha de comando, utilizando um editor como o VIM, os documentos em \LaTeX{} podem ser compilados utilizando uma sequência de comandos como a seguir:
 
 No caso do estilo do INPE para teses, dissertações e relatórios (mais detalhes no Caítulo \ref{cap:parteIII}), pode-se utilizar o \textit{script} {\tt execpub.sh} para facilitar o processo de compilação. O que este \textit{script} faz é executar a sequência de comando do exemplo anterior, realizando mais alguns procedimentos para a renderização correta das referências com o estilo do INPE. 
 
@@ -1480,7 +1615,7 @@ No caso do estilo do INPE para teses, dissertações e relatórios (mais detalhe
 \subsubsection*{Editores online}
 \label{sec:ed_online}
 
-O Overleaf é um editor LaTeX online que pode ser utilizado para escrita colaborativa. O estilo do INPE está disponível na plataforma online e pode ser carregado para a escrita de teses e dissertações a partir de endereço \url{https://www.overleaf.com/latex/templates/inpe-thesis-template/scdyfqzhbycc#.Wrj8gH8h2Uk}. Para acessar, é necessário que o usuário crie uma conta para o acesso. Esta é a forma recomendada para a criação de documentos LaTeX, especialmente se o usuário ainda não está familiarizado com documentos mais complexos como o estilo do INPE.
+O Overleaf é um editor \LaTeX{} online que pode ser utilizado para escrita colaborativa. O estilo do INPE está disponível na plataforma online e pode ser carregado para a escrita de teses e dissertações a partir de endereço \url{https://www.overleaf.com/latex/templates/inpe-thesis-template/scdyfqzhbycc#.Wrj8gH8h2Uk}. Para acessar, é necessário que o usuário crie uma conta para o acesso. Esta é a forma recomendada para a criação de documentos \LaTeX{}, especialmente se o usuário ainda não está familiarizado com documentos mais complexos como o estilo do INPE.
 
 %\begin{dica}{Dica \#3}
 %  Ao utilizar o Overleaf, você irá perceber que a compilação do documento pode levar mais tempo quando muitas figuras são incluídas. Experimente comentar as seções do texto que já foram revistas para acelerar a compilação.
@@ -1527,7 +1662,7 @@ O Overleaf é um editor LaTeX online que pode ser utilizado para escrita colabor
 \section{Exercícios}
 \label{sec:exercicios}
 
-Para colocar em prática os comandos de marcação do $\LaTeX$, realize os exercícios a seguir. As respostas estão no Anexo \ref{anexoA}. Cada exercício contém um link para o anexo, que irá lhe direcionar para a resposta correta. Para fazer os exercícios, você pode utilizar um editor local (instalado em seu computador) ou um editor online, como o \href{https://pt.overleaf.com/project}{Overleaf}.
+Para colocar em prática os comandos de marcação do \LaTeX{}, realize os exercícios a seguir. As respostas estão no Anexo \ref{anexoA}. Cada exercício contém um link para o anexo, que irá lhe direcionar para a resposta correta. Para fazer os exercícios, você pode utilizar um editor local (instalado em seu computador) ou um editor online, como o \href{https://pt.overleaf.com/project}{Overleaf}.
 
 Para a realização dos exercícios, utilize os exemplos dados ao longo das seções do Capítulo \ref{cap:parteII}. Utilize também as tabelas do Anexo \ref{anexoB}.
 
@@ -1585,15 +1720,19 @@ Im sp\"{a}teren Mittelalter regierten F\"{u}rsten einen Fleckenteppichvon Einzel
 \label{sec:exec_macros_1_par}
 
 \begin{texercise}{Ex4}
-\begin{tcboutputlisting}
-\newcommand{\headingline}[1]{%
-    \begin{center}\Large\bfseries #1\end{center}}
-\end{tcboutputlisting}
-\tcbuselistingtext%
+    \begin{tcboutputlisting}
+        \newcommand{\headingline}[1]{%
+            \begin{center}\Large\bfseries #1\end{center}}
+        \end{tcboutputlisting}
+
+        \tcbuselistingtext%
+
 Crie uma nova macro \verb+\headingline+ que produza o seguinte resultado:\par\smallskip
-\begin{tcbwritetemp}
-\headingline{Título muito importante}
-\end{tcbwritetemp}\tcbusetemplisting\tcbusetemp%
+
+    \begin{tcbwritetemp}
+        \headingline{Título muito importante}
+    \end{tcbwritetemp}
+    \tcbusetemplisting\tcbusetemp%
 \end{texercise}
 
 \subsection*{Macros com 2 parâmetros}
@@ -1714,7 +1853,7 @@ Crie uma nova macro \verb+\headingline+ que produza o seguinte resultado:\par\sm
 \tcbuselistingtext%
 \end{texercise}
 
-\begin{texercise}{Ex_Eq8}\textit{Escreva um código LaTeX para mostrar a identidade da soma de dois ângulos}:\par\smallskip%
+\begin{texercise}{Ex_Eq8}\textit{Escreva um código \LaTeX{} para mostrar a identidade da soma de dois ângulos}:\par\smallskip%
 \begin{tcboutputlisting}
     \begin{center}
         \begin{equation*}
@@ -1725,7 +1864,7 @@ Crie uma nova macro \verb+\headingline+ que produza o seguinte resultado:\par\sm
 \tcbuselistingtext%
 \end{texercise}
 
-\begin{texercise}{Ex_Eq9}\textit{Escreva um código LaTeX para mostrar a integral indefinida}:\par\smallskip%
+\begin{texercise}{Ex_Eq9}\textit{Escreva um código \LaTeX{} para mostrar a integral indefinida}:\par\smallskip%
 \begin{tcboutputlisting}
     \begin{center}
         \begin{equation*}
@@ -1736,7 +1875,7 @@ Crie uma nova macro \verb+\headingline+ que produza o seguinte resultado:\par\sm
 \tcbuselistingtext%
 \end{texercise}
 
-\begin{texercise}{Ex_Eq10}\textit{Escreva um código LaTeX para mostrar a equação de Navier-Stokes para um fluxo incompressível}:\par\smallskip%
+\begin{texercise}{Ex_Eq10}\textit{Escreva um código \LaTeX{} para mostrar a equação de Navier-Stokes para um fluxo incompressível}:\par\smallskip%
 \begin{tcboutputlisting}
     \begin{center}
         \begin{equation*}
@@ -1747,7 +1886,7 @@ Crie uma nova macro \verb+\headingline+ que produza o seguinte resultado:\par\sm
 \tcbuselistingtext%
 \end{texercise}
 
-\begin{texercise}{Ex_Eq11}\textit{Escreva um código LaTeX para mostrar o Teorema de Green}:\par\smallskip%
+\begin{texercise}{Ex_Eq11}\textit{Escreva um código \LaTeX{} para mostrar o Teorema de Green}:\par\smallskip%
 \begin{tcboutputlisting}
     \begin{center}
         \begin{equation*}
@@ -1758,7 +1897,7 @@ Crie uma nova macro \verb+\headingline+ que produza o seguinte resultado:\par\sm
 \tcbuselistingtext%
 \end{texercise}
 
-\begin{texercise}{Ex_Eq12}\textit{Escreva um código LaTeX para mostrar o Teorema dos Números Primos}:\par\smallskip%
+\begin{texercise}{Ex_Eq12}\textit{Escreva um código \LaTeX{} para mostrar o Teorema dos Números Primos}:\par\smallskip%
 \begin{tcboutputlisting}
     \begin{center}
         \begin{equation*}
@@ -1769,7 +1908,7 @@ Crie uma nova macro \verb+\headingline+ que produza o seguinte resultado:\par\sm
 \tcbuselistingtext%
 \end{texercise}
 
-\begin{texercise}{Ex_Eq13}\textit{Escreva um código LaTeX para mostrar a fórmula geral da série de Taylor}:\par\smallskip%
+\begin{texercise}{Ex_Eq13}\textit{Escreva um código \LaTeX{} para mostrar a fórmula geral da série de Taylor}:\par\smallskip%
 \begin{tcboutputlisting}
     \begin{center}
         \begin{equation*}
@@ -1780,7 +1919,7 @@ Crie uma nova macro \verb+\headingline+ que produza o seguinte resultado:\par\sm
 \tcbuselistingtext%
 \end{texercise}
 
-\begin{texercise}{Ex_Eq14}\textit{Escreva um código LaTeX para mostrar o Teorema de Stokes}:\par\smallskip%
+\begin{texercise}{Ex_Eq14}\textit{Escreva um código \LaTeX{} para mostrar o Teorema de Stokes}:\par\smallskip%
 \begin{tcboutputlisting}
     \begin{center}
         \begin{equation*}
@@ -1791,7 +1930,7 @@ Crie uma nova macro \verb+\headingline+ que produza o seguinte resultado:\par\sm
 \tcbuselistingtext%
 \end{texercise}
 
-\begin{texercise}{Ex_Eq15}\textit{Escreva um código LaTeX para mostrar a propriedade adjunta do produto tensorial}:\par\smallskip%
+\begin{texercise}{Ex_Eq15}\textit{Escreva um código \LaTeX{} para mostrar a propriedade adjunta do produto tensorial}:\par\smallskip%
 \begin{tcboutputlisting}
     \begin{center}
         \begin{equation*}
@@ -1802,7 +1941,7 @@ Crie uma nova macro \verb+\headingline+ que produza o seguinte resultado:\par\sm
 \tcbuselistingtext%
 \end{texercise}
   
-\begin{texercise}{Ex_Eq16}\textit{Escreva um código LaTeX para mostrar a definição da transformada de Laplace}:\par\smallskip%
+\begin{texercise}{Ex_Eq16}\textit{Escreva um código \LaTeX{} para mostrar a definição da transformada de Laplace}:\par\smallskip%
 \begin{tcboutputlisting}
     \begin{center}
         \begin{equation*}
@@ -1813,7 +1952,7 @@ Crie uma nova macro \verb+\headingline+ que produza o seguinte resultado:\par\sm
 \tcbuselistingtext%
 \end{texercise}
   
-\begin{texercise}{Ex_Eq17}\textit{Escreva um código LaTeX para mostrar a fórmula da inversa de uma matriz}:\par\smallskip%
+\begin{texercise}{Ex_Eq17}\textit{Escreva um código \LaTeX{} para mostrar a fórmula da inversa de uma matriz}:\par\smallskip%
 \begin{tcboutputlisting}
     \begin{center}
         \begin{equation*}
@@ -1832,7 +1971,7 @@ Crie uma nova macro \verb+\headingline+ que produza o seguinte resultado:\par\sm
 \tcbuselistingtext%
 \end{texercise}
   
-\begin{texercise}{Ex_Eq18}\textit{Escreva um código LaTeX para mostrar a fórmula do produto infinito}:\par\smallskip%
+\begin{texercise}{Ex_Eq18}\textit{Escreva um código \LaTeX{} para mostrar a fórmula do produto infinito}:\par\smallskip%
 \begin{tcboutputlisting}
     \begin{center}
         \begin{equation*}
