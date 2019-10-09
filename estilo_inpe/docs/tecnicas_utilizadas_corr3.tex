@@ -62,7 +62,7 @@ A Figura~\ref{lorenzespec}(b) apresenta o espectro de potências associado à vari
 
 \begin{figure}[ht]
 \centering 
-\resizebox{7.2cm}{!}{\includegraphics{Figuras/lorenzst.png}} \resizebox{7.2cm}{!}{\includegraphics{Figuras/lorenzespectrogrid.png}} \\  \resizebox{7.2cm}{!}{\includegraphics{Figuras/lorenzautocorrgrid.png}} 
+\resizebox{7.2cm}{!}{\includegraphics{figs/lorenzst.png}} \resizebox{7.2cm}{!}{\includegraphics{figs/lorenzespectrogrid.png}} \\  \resizebox{7.2cm}{!}{\includegraphics{figs/lorenzautocorrgrid.png}} 
 \caption{(a) Série temporal caótica da variável $x$ que é parte da solução do sistema~(\ref{eqsistemalorenzpart}). (b) Espectro de potência para a série temporal representada em (a). (c) Função de autocorrelação para a série temporal representada em (a).}
 \label{lorenzespec}
 \end{figure}
@@ -98,7 +98,7 @@ A primeira tentativa de reconstruir um atrator caótico por meio da evolução de u
 
 \begin{figure}[ht]
 \centering 
-\resizebox{15cm}{!}{\includegraphics{Figuras/lorenzpack1.png}\includegraphics{Figuras/lorenzpack2.png}}
+\resizebox{15cm}{!}{\includegraphics{figs/lorenzpack1.png}\includegraphics{figs/lorenzpack2.png}}
 \caption{Atrator de Lorenz para o Sistema~(\ref{eqsistemalorenzpart}). (a) Atrator original. (b) Atrator reconstruído pelo método das derivadas.}
 \label{lorenzdiff}
 \end{figure}
@@ -144,7 +144,7 @@ com $\alpha=1,\ldots,M$. As constantes $m,\tau,N,M$ relacionam-se por $N=M+(m-1)
 
 \begin{figure}[ht]
 \centering 
-\resizebox{7.2cm}{!}{\includegraphics{Figuras/lorenzatraso1.png}} \resizebox{7.2cm}{!}{\includegraphics{Figuras/lorenzatraso2.png}} \\  \resizebox{7.2cm}{!}{\includegraphics{Figuras/lorenzatraso3.png}} 
+\resizebox{7.2cm}{!}{\includegraphics{figs/lorenzatraso1.png}} \resizebox{7.2cm}{!}{\includegraphics{figs/lorenzatraso2.png}} \\  \resizebox{7.2cm}{!}{\includegraphics{figs/lorenzatraso3.png}} 
 \caption{Exemplo da influência do passo na reconstrução do atrator de Lorenz associado ao Sistema~(\ref{eqsistemalorenzpart}). (a) passo muito pequeno ($\tau=1$). (b) passo adequado ($\tau=12$). (c) passo muito grande ($\tau=50$).}
 \label{figlorenzpasso}
 \end{figure}
@@ -155,7 +155,7 @@ A sensibilidade do processo de reconstrução relativamente ao passo pode ser esti
 
 \begin{figure}[ht]
 \centering 
-\resizebox{7.2cm}{!}{\includegraphics{Figuras/lorenzreconstbi1.png}} \resizebox{7.2cm}{!}{\includegraphics{Figuras/lorenzreconstbi12.png}} \\  \resizebox{7.2cm}{!}{\includegraphics{Figuras/lorenzreconstbi50.png}} 
+\resizebox{7.2cm}{!}{\includegraphics{figs/lorenzreconstbi1.png}} \resizebox{7.2cm}{!}{\includegraphics{figs/lorenzreconstbi12.png}} \\  \resizebox{7.2cm}{!}{\includegraphics{figs/lorenzreconstbi50.png}} 
 \caption{Gráfico de primeiro retorno a partir da variável $x$ que é parte da solução do Sistema~(\ref{eqsistemalorenzpart}). (a) $\tau=1$. (b) $\tau=12$. (c) $\tau=50$.}
 \label{figlorenzprimeiroret}
 \end{figure}
@@ -225,7 +225,7 @@ A Figura~\ref{figatratorhipot} ilustra o atrator de Lorenz imerso em espaços de 
 
 \begin{figure}[ht]
 \centering 
-\resizebox{15cm}{!}{\includegraphics{Figuras/lorenzproj1.png}\includegraphics{Figuras/lorenzproj2.png}}
+\resizebox{15cm}{!}{\includegraphics{figs/lorenzproj1.png}\includegraphics{figs/lorenzproj2.png}}
 \caption{Efeito da imersão do atrator de Lorenz em espaços de diferentes dimensionalidades. (a) A imersão no espaço de fase bidimensional ocorre um falso cruzamento (marcado com um ponto em preto). (b) O atrator é completamente representado no espaço tridimensional.} 
 \label{figatratorhipot}
 \end{figure}
@@ -234,7 +234,7 @@ A Figura~\ref{figlorenzdimensoes}(b) mostra a correlação integral da série tempo
 
 \begin{figure}[ht]
 \centering 
-\resizebox{7.2cm}{!}{\includegraphics{Figuras/lorenzst.png}} \resizebox{7.2cm}{!}{\includegraphics{Figuras/lorenzcorrelint2.png}} \\  \resizebox{7.2cm}{!}{\includegraphics{Figuras/lorenzdimcorrel2.png}} 
+\resizebox{7.2cm}{!}{\includegraphics{figs/lorenzst.png}} \resizebox{7.2cm}{!}{\includegraphics{figs/lorenzcorrelint2.png}} \\  \resizebox{7.2cm}{!}{\includegraphics{figs/lorenzdimcorrel2.png}} 
 \caption{(a) Série temporal obtida a partir da integração do Sistema~(\ref{eqsistemalorenzpart}). (b) Correlação integral da série em (a) com $m=1$ a $10$. (c) Dimensão de correlação de $D_{2}\langle2.105\rangle$ para a série de Lorenz (curva -o- em azul) e dimensão de correlação infinita para uma série aleatória (curva -*- em preto)}
 \label{figlorenzdimensoes}
 \end{figure}
@@ -247,11 +247,11 @@ Em contrapartida, \citeonline{provenzalesmith/92} apresentam alguns testes que p
 
 O primeiro de tais testes é denominado ``teste surrogate'' e consiste em considerar a distribuição das fases de Fourier de uma série temporal. Desta forma, é aplicada a transformada de Fourier (conforme a Equação~(\ref{eqfourierdis})) na série em estudo. Em seguida, suas fases são embaralhadas uniformemente e é aplicada a transformada de Fourier inversa. A série temporal obtida com este processo é aleatória, já que o surrogate destrói as correlações existentes na série temporal que lhe deu origem, porém seu espectro de potência é similar ao da série original. Se a convergência de $D_{2}$ é determinada apenas pela forma do espectro (ou equivalentemente pela função de autocorrelação), então os resultados não são afetados pelo embaralhamento das fases. A invariância do valor de $D_{2}$ sobre as fases embaralhadas sugere fortemente que tais estimativas não indicam uma dinâmica caótica~\cite{provenzalesmith/92}. 
 
-A Figura~\ref{figlorenzsurrogate}(a) mostra a série temporal obtida a partir do surrogate da série temporal em $x$ de Lorenz, a Figura~\ref{figlorenzsurrogate}(b) mostra a correlação integral obtida para dimensões de imersão que variam de $1$ a $10$ e finalmente a Figura~\ref{figlorenzsurrogate}(c) apresenta a dimensão de correlação, $D_{2}$, associada. A aparência da série temporal com surrogate é completamente diferente da apresentada na Figura~\ref{figlorenzdimensoes}(a) e os respectivos valores de $D_{2}$ são também bastante distintos (ver Figuras~\ref{figlorenzsurrogate}(c) e \ref{figlorenzdimensoes}(c)). Foram feitas $5$ realizações análogas à descrita acima, e pode-se observar que a dimensão de correlação $D_{2}$ em todos os casos não satura. Esse comportamento sugere fortemente a existência de uma dinâmica de baixa dimensão na série temporal de Lorenz. %Desta forma, em uma série temporal arbitrária, a constatação de um comportamento similar ao encontrado acima \textit{sugere} fortemente a existência de um atrator caótico associado~\cite{provenzalesmith/92}. 
+A Figura~\ref{figlorenzsurrogate}(a) mostra a série temporal obtida a partir do surrogate da série temporal em $x$ de Lorenz, a Figura~\ref{figlorenzsurrogate}(b) mostra a correlação integral obtida para dimensões de imersão que variam de $1$ a $10$ e finalmente a Figura~\ref{figlorenzsurrogate}(c) apresenta a dimensão de correlação, $D_{2}$, associada. A aparência da série temporal com surrogate é completamente diferente da apresentada na Figura~\ref{figlorenzdimensoes}(a) e os respectivos valores de $D_{2}$ são também bastante distintos (ver figs~\ref{figlorenzsurrogate}(c) e \ref{figlorenzdimensoes}(c)). Foram feitas $5$ realizações análogas à descrita acima, e pode-se observar que a dimensão de correlação $D_{2}$ em todos os casos não satura. Esse comportamento sugere fortemente a existência de uma dinâmica de baixa dimensão na série temporal de Lorenz. %Desta forma, em uma série temporal arbitrária, a constatação de um comportamento similar ao encontrado acima \textit{sugere} fortemente a existência de um atrator caótico associado~\cite{provenzalesmith/92}. 
 
 \begin{figure}[ht]
 \centering 
-\resizebox{7.2cm}{!}{\includegraphics{Figuras/lorenzxsurr.png}} \resizebox{7.2cm}{!}{\includegraphics{Figuras/lorenzcorrelint2surr.png}} \\  \resizebox{7.2cm}{!}{\includegraphics{Figuras/lorenzdimcorrelsurr2.png}} 
+\resizebox{7.2cm}{!}{\includegraphics{figs/lorenzxsurr.png}} \resizebox{7.2cm}{!}{\includegraphics{figs/lorenzcorrelint2surr.png}} \\  \resizebox{7.2cm}{!}{\includegraphics{figs/lorenzdimcorrelsurr2.png}} 
 \caption{(a) Série temporal de Lorenz em $x$ com fase embaralhada. (b) Correlação integral da série em (a) com $m=1$ a $10$. (c) Dimensão de correlação da série em (a) e dimensão de correlação infinita para uma série aleatória}
 \label{figlorenzsurrogate}
 \end{figure}
@@ -262,7 +262,7 @@ A Figura~\ref{figlorenzdiff}(a) apresenta a primeira diferença $\Delta x(t)=x(t+
 
 \begin{figure}[ht]
 \centering 
-\resizebox{7.2cm}{!}{\includegraphics{Figuras/lorenzdiff2.png}} \resizebox{7.2cm}{!}{\includegraphics{Figuras/lorenzcorrelintdiff2.png}} \\  \resizebox{7.2cm}{!}{\includegraphics{Figuras/lorenzdimcorreldiff2.png}} 
+\resizebox{7.2cm}{!}{\includegraphics{figs/lorenzdiff2.png}} \resizebox{7.2cm}{!}{\includegraphics{figs/lorenzcorrelintdiff2.png}} \\  \resizebox{7.2cm}{!}{\includegraphics{figs/lorenzdimcorreldiff2.png}} 
 \caption{(a) Série temporal gerada a partir da primeira diferença da série temporal $x$ de Lorenz. (b) Correlação integral da série em (a) com $m=1$ a $10$. (c) Dimensão de correlação da série em (a) e dimensão de correlação infinita para uma série aleatória.}
 \label{figlorenzdiff}
 \end{figure}
@@ -284,7 +284,7 @@ admite que o mesmo se encontre em um \textit{estado estacionário}\footnote{Sob o
 O critério de estacionaridade utilizada nesta dissertação emprega janelas de dados deslizantes ao longo de uma série. Ou seja, dada uma série temporal~(\ref{eqserietemp}), pode-se definir como janelas de dados deslizantes todos os subconjuntos de amostras subseqüentes possíveis, de comprimento $L$ (conforme Figura~\ref{figestaciogeral}). Testes que envolvem tais janelas procuram analisar e quantificar as propriedades que se alteram ao longo da série temporal, como a média e a variância, com base em um determinado intervalo de confiança~\cite{alvaro/01}.
 
 % \begin{figure}[ht]
-% \centering \resizebox{15cm}{!}{\includegraphics{Figuras/figestacionaria.png}}
+% \centering \resizebox{15cm}{!}{\includegraphics{figs/figestacionaria.png}}
 % \caption{Janelas de dados deslizantes} 
 % \FONTE{\cite{alvaro/01}}
 % \label{figestaciogeral}
@@ -292,7 +292,7 @@ O critério de estacionaridade utilizada nesta dissertação emprega janelas de dad
 
 \begin{figure}[!ht]
 \begin{center}
-\resizebox{12cm}{!}{\input{Figuras/estacionariaxfig2.pdftex_t}}
+\resizebox{12cm}{!}{\input{figs/estacionariaxfig2.pdftex_t}}
 \caption{Janelas de dados deslizantes} 
 \end{center}
 \label{figestaciogeral}
@@ -325,7 +325,7 @@ Diversos métodos têm sido propostos para estimar esses expoentes em séries tempo
 onde $M$ é o número total de vezes que um novo vizinho foi escolhido próximo à trajetória de referência.
 
 \begin{figure}[ht]
-\centering \resizebox{13cm}{!}{\includegraphics{Figuras/wolf.png}}
+\centering \resizebox{13cm}{!}{\includegraphics{figs/wolf.png}}
 \caption{Representação esquemática do método proposto por \citeonline{wolf/85}. O maior expoente de Lyapunov é estimado a partir da taxa de crescimento dos segmentos $L_i$. Quando o comprimento do segmento que liga dois pontos próximos do atrator excede um certo valor $\epsilon$, um novo vizinho é escolhido de forma a minimizar o ângulo $\theta_i$.}
 \FONTE{Adaptada de \citeonline{wolf/85}}
 \label{figferraralyap}
@@ -334,7 +334,7 @@ onde $M$ é o número total de vezes que um novo vizinho foi escolhido próximo à t
 Através do método descrito acima é possível obter uma aproximação numérica para o maior expoente de Lyapunov, $\lambda_1$, calculado a partir da série temporal em $x$ de Lorenz. Pode-se observar que a aproximação obtida é satisfatória já que o maior expoente de Lyapunov, obtido diretamente do Sistema de EDO's (\ref{eqsistemalorenz}) é aproximadamente $2.16$ \cite{wolf/85}, enquanto que o obtido com base no algoritmo de \citeonline{wolf/85} é $2.18\pm0.01$.
 
 \begin{figure}[ht]
-\centering \resizebox{13cm}{!}{\includegraphics{Figuras/lorenzlyap3cond.png}}
+\centering \resizebox{13cm}{!}{\includegraphics{figs/lorenzlyap3cond.png}}
 \caption{Convergência do maior expoente de Lyapunov ($\lambda_1$) associado à componente $x$ do atrator de Lorenz, com base no algoritmo desenvolvido por \citeonline{wolf/85}. A curva azul corresponde à condição inicial $(5,5,5)$, a curva vermelha corresponde à condição inicial $(5.01,5,5)$ e a curva preta corresponde à condição inicial $(5,10,5)$}
 \label{figlorenzlyap}
 \end{figure}
@@ -358,14 +358,14 @@ A Figura~\ref{figrpsistemas} apresenta PRs para um sistema estocástico, um siste
 
 \begin{figure}[ht]
 \centering 
-\resizebox{7.2cm}{!}{\includegraphics{Figuras/ruidorp.png}} \resizebox{7.2cm}{!}{\includegraphics{Figuras/senorp.png}} \\  \resizebox{7.2cm}{!}{\includegraphics{Figuras/lorenzrp.png}} 
+\resizebox{7.2cm}{!}{\includegraphics{figs/ruidorp.png}} \resizebox{7.2cm}{!}{\includegraphics{figs/senorp.png}} \\  \resizebox{7.2cm}{!}{\includegraphics{figs/lorenzrp.png}} 
 \caption{(a) PR para um sistema estocástico (ruído uniformemente distribuído) com $m=1$ e $\varepsilon=0.09994$ . (b) PR para a função seno com $m=1$ e $\varepsilon=0.2$. (c) PR correspondente à componente em $x$ do atrator de Lorenz com $m=6$ e $\varepsilon=4.9344$. O valor de $\varepsilon$ utilizados nos casos (a) e (b) correspondem à $10\%$ das variâncias associadas, e no caso (c) à $10\%$ do diâmetro do espaço de fase~\cite{thielromano/04}.}
 \label{figrpsistemas}
 \end{figure}
 
 % \begin{figure}[ht]
 % \centering 
-% \resizebox{13cm}{!}{\includegraphics{Figuras/lorenzdet.png}\includegraphics{Figuras/lorenzembardet.png}}
+% \resizebox{13cm}{!}{\includegraphics{figs/lorenzdet.png}\includegraphics{figs/lorenzembardet.png}}
 % \caption{Atrator de Lorenz para o sistema~(\ref{eqsistemalorenzpart}). (a) Atrator original. (b) Atrator reconstruído pelo método das derivadas.}
 % \label{lorenzdiff}
 % \end{figure}

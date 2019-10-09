@@ -53,7 +53,7 @@
 %Este mapa é um sistema dinâmico autônomo, discreto e unidimensional, isto é, caracterizado por uma única variável de estado $x\in \mathds{R}$. O parâmetro $\lambda$ define o tipo de resposta do sistema, ou seja, a iteração do mapa (\ref{equalogis1}) para diferentes valores de $\lambda$ pode conduzir à soluções estáveis, periódicas ou irregulares, como as apresentadas na Figura~\ref{figuralogis}. Em $(a)$, observa-se uma solução estável. Em $(b)$ e $(c)$, têm-se soluções periódicas de períodos $2$ e $4$ respectivamente. Já em $(d)$, observa-se uma seqüência determinística e aperiódica, característica de \textit{sistemas caóticos}.
 %
 %\begin{figure}[ht]
-%\centering \resizebox{15cm}{!}{\includegraphics{Figuras/logistico1.png}\includegraphics{Figuras/logistico2.png}}\\ \resizebox{15cm}{!}{\includegraphics{Figuras/logistico3.png} \includegraphics{Figuras/logistico4.png}}
+%\centering \resizebox{15cm}{!}{\includegraphics{figs/logistico1.png}\includegraphics{figs/logistico2.png}}\\ \resizebox{15cm}{!}{\includegraphics{figs/logistico3.png} \includegraphics{figs/logistico4.png}}
 %\caption{Séries temporais obtidas a partir da iteração do mapa~(\ref{equalogis1}) com condição inicial fixa $x_{0}=0.01$ e para valores de $\lambda$ dados, respectivamente por $2.75$, $3.4$, $3.5$ e $4.0$.}
 %\label{figuralogis}
 %\end{figure}
@@ -62,7 +62,7 @@
 %
 %\begin{figure}[ht]
 %\centering
-%\resizebox{15cm}{!}{\includegraphics{Figuras/logisticoci.png}\includegraphics{Figuras/logisticocidiff.png}}
+%\resizebox{15cm}{!}{\includegraphics{figs/logisticoci.png}\includegraphics{figs/logisticocidiff.png}}
 %\caption{(a) Séries temporais obtidas pela iteração do mapa~(\ref{equalogis1}) para valores muito próximos de $x_0$. A curva em azul corresponde à órbita gerada com condição inicial $x_{0}=0.01$, enquanto que a curva em vermelho corresponde à órbita gerada com condição inicial $x_{0}=0.010001$. (b) as diferenças associadas às duas órbitas.}
 %\label{figuralogis2}
 %\end{figure}
@@ -84,7 +84,7 @@
 %
 %\begin{figure}[ht]
 %\centering
-%\resizebox{15cm}{!}{\includegraphics{Figuras/henon.png}\includegraphics{Figuras/henonamp1.png}}\\ \resizebox{15cm}{!}{\includegraphics{Figuras/henonamp2.png} \includegraphics{Figuras/henonamp3.png}}
+%\resizebox{15cm}{!}{\includegraphics{figs/henon.png}\includegraphics{figs/henonamp1.png}}\\ \resizebox{15cm}{!}{\includegraphics{figs/henonamp2.png} \includegraphics{figs/henonamp3.png}}
 %\caption{Autosimilaridade do atrator de Hénon. Os pequenos quadrados indicam as regiões de ampliação. (a) $10^3$ iterações. (b) $10^5$ iterações. (c) $10^6$ iterações. (d) $10^7$ iterações.}
 %\label{figurahenonsimilar}
 %\end{figure}
@@ -111,8 +111,8 @@
 %A Figura~\ref{fighenonlyapunov} apresenta a evolução ao longo do tempo dos expoentes de Lyapunov associados ao Sistema~(\ref{eqhenon}) com condição inicial $(x_{0},y_{0})=(1,1)$. Pode-se observar que um destes expoentes é positivo e dado por $\lambda_{1}=0.42$. Aproximações para os expoentes de Lyapunov, com condições iniciais diferentes, tendem para o mesmo valor $\lambda_{1}$, já que o Sistema~(\ref{eqhenon}) é ergódico. Esse comportamento parece indicar que o sistema apresenta dinâmica caótica.
 %
 %\begin{figure}[ht]
-%\centering \resizebox{10cm}{!}{\includegraphics{Figuras/henonlyapunov.png}} 
-%\centering \resizebox{13cm}{!}{\includegraphics{Figuras/henonlyapunovgrid.png}} 
+%\centering \resizebox{10cm}{!}{\includegraphics{figs/henonlyapunov.png}} 
+%\centering \resizebox{13cm}{!}{\includegraphics{figs/henonlyapunovgrid.png}} 
 %\caption{Expoentes de Lyapunov associados ao mapa de Hénon (\ref{eqhenon}) com $a=1.4$ e $b=0.3$.}
 %\label{fighenonlyapunov}
 %\end{figure}
@@ -120,7 +120,7 @@
 %O artigo clássico de \citeonline{lor/63} foi um dos primeiros trabalhos a descrever movimentos caóticos a partir de um sistema de EDO's, como uma aproximação para a dinâmica de uma camada de fluido convectiva. Suponha que esta camada seja mais quente na base do que no topo (conforme a Figura~\ref{figconveclorenz}), e que a diferença de temperatura $\Delta t$ seja suficiente grande. Sob estas condições o ar mais quente se eleva, deslocando o ar mais frio que está por cima, provocando um movimento convectivo permanente. Se a diferença de temperatura aumentar ainda mais, o escoamento convectivo permanente é perturbado e se instala um movimento turbulento mais complicado~\cite{boyce/99}.
 %
 %\begin{figure}[ht]
-%\centering \resizebox{13cm}{!}{\includegraphics{Figuras/rolo.png}} 
+%\centering \resizebox{13cm}{!}{\includegraphics{figs/rolo.png}} 
 %\caption{Movimento convectivo de uma camada de fluido, com diferença de temperatura $\Delta t$ entre a placa inferior e a superior que o delimita.}
 %\FONTE{Adaptada de \citeonline{argyris/94}.}
 %\label{figconveclorenz}
@@ -145,7 +145,7 @@
 %
 %\begin{figure}[ht]
 %\centering 
-%\resizebox{15cm}{!}{\includegraphics{Figuras/lorenzst.png}\includegraphics{Figuras/lorenzstci.png}}
+%\resizebox{15cm}{!}{\includegraphics{figs/lorenzst.png}\includegraphics{figs/lorenzstci.png}}
 %\caption{Séries temporais obtidas a partir da integração do Sistema~(\ref{eqsistemalorenzpart}). (a) condição inicial de $(5,5,5)$. (b) condição inicial da curva em azul é de $(5,5,5)$ enquanto que a da curva em vermelho é de $(5.01,5,5)$.}
 %\label{figlorenzx}
 %\end{figure}
@@ -153,7 +153,7 @@
 %A Figura~\ref{figlorenzatratorproj} apresenta uma trajetória que principia em $(5,5,5)$ no espaço de fase tridimensional, que se desenvolve em um atrator caótico cuja dimensão de capacidade é de aproximadamente $2.16$~\cite{argyris/94}, como também suas projeções nos planos $xy$, $xz$ e $yz$. Pode-se observar que a trajetória sobre o atrator nunca repete o mesmo caminho; contudo, ela está confinada (atraída) em uma região limitada do espaço de fase. Tal trajetória se alterna sobre um dos dois lóbulos, onde cada um deles contém um ponto crítico instável, e este processo é repetido indefinidamente.
 %
 %\begin{figure}[ht]
-%\centering \resizebox{13cm}{!}{\includegraphics{Figuras/lorenzatratorproj.png} } 
+%\centering \resizebox{13cm}{!}{\includegraphics{figs/lorenzatratorproj.png} } 
 %\caption{O atrator caótico de Lorenz com condição inicial $(5,5,5)$, e suas projeções nos planos $xy$ e $xz$ e $yz$.}
 %\label{figlorenzatratorproj}
 %\end{figure}
@@ -161,7 +161,7 @@
 %Segundo \citeonline{wolf/85} os expoentes de Lyapunov associados ao Sistema~(\ref{eqsistemalorenz}) (com $\sigma=16$ e $b=4.0$ e $r=45.92$) são dados por
 %$\lambda_{1}=2.16$, $\lambda_{2}=0$ e $\lambda_{3}=-32.4$. Desta forma, a dinâmica caótica presente nesse sistema parece se confirmar pela presença de um expoente de Lyapunov positivo~\cite{wolf/85}.
 %
-%Quando as equações que governam um sistema dinâmico são conhecidas, o estudo das características de suas soluções e de seus invariantes podem revelar comportamentos complexos e interessantes. Porém, em situações reais raramente se dispõe de um conjunto de equações diferenciais ou mesmo um mapa que descreva o comportamento do sistema. Em geral, monitora-se uma única variável, a partir de um experimento que se sabe de antemão depender de outras variáveis. Desta forma, obtém-se uma série temporal de medidas semelhantes às exibidas pelas Figuras~(\ref{figlorenzx}) ou (\ref{figuralogis}) (admitindo-se o não-conhecimento de suas equações) e não se tem acesso às outras variáveis relevantes. A análise de séries temporais com base na teoria de sistemas dinâmicos é um dos temas centrais do Capítulo~\ref{caputiltecnicas}.
+%Quando as equações que governam um sistema dinâmico são conhecidas, o estudo das características de suas soluções e de seus invariantes podem revelar comportamentos complexos e interessantes. Porém, em situações reais raramente se dispõe de um conjunto de equações diferenciais ou mesmo um mapa que descreva o comportamento do sistema. Em geral, monitora-se uma única variável, a partir de um experimento que se sabe de antemão depender de outras variáveis. Desta forma, obtém-se uma série temporal de medidas semelhantes às exibidas pelas figs~(\ref{figlorenzx}) ou (\ref{figuralogis}) (admitindo-se o não-conhecimento de suas equações) e não se tem acesso às outras variáveis relevantes. A análise de séries temporais com base na teoria de sistemas dinâmicos é um dos temas centrais do Capítulo~\ref{caputiltecnicas}.
 %
 % 
 %\section{Turbulência}
@@ -172,8 +172,8 @@
 %O primeiro esboço de um fluxo turbulento, com diversos graus de realismo, foi feito por Leonardo da Vinci no século XV (conforme Figura~\ref{figleonardo}). Para ele o movimento da água em ``redemoinhos'' era devido em parte à sua corrente principal, como também por movimentos contrários e aleatórios. Da Vinci nomeou tal fenômeno de ``la turbolenza''~\cite{richter/70}. 
 %
 %\begin{figure}[ht]
-%\centering \resizebox{13cm}{!}{\includegraphics{Figuras/DaVinci3.png}}
-%\centering \resizebox{10cm}{!}{\includegraphics{Figuras/DaVincipb.png}} opcao preto e branco!!!
+%\centering \resizebox{13cm}{!}{\includegraphics{figs/DaVinci3.png}}
+%\centering \resizebox{10cm}{!}{\includegraphics{figs/DaVincipb.png}} opcao preto e branco!!!
 %\caption{Ilustração de Leonardo da Vinci de um fluxo em redemoinhos.}
 %\FONTE{\citeonline{ecke/05}}
 %\label{figleonardo}
@@ -204,7 +204,7 @@
 %Acredita-se que as equações de Navier-Stokes contêm toda a informação sobre o escoamento turbulento. Embora o problema físico possa em princípio ser completamente revelado pela solução dessas equações, dadas as condições iniciais e de contorno, há uma grande dificuldade devido à sua natureza não-linear~\cite{welter/06}. Mesmo que fosse possível obter uma solução completa de um escoamento turbulento, onde o campo de velocidades $u(x,t)$ pudesse ser conhecido com exatidão em cada ponto do espaço e a cada instante de tempo, esse tipo de conhecimento seria inaplicável devido à dificuldade de armazenagem e processamento da enorme quantidade de informação. Assim, devido os graus de liberdade envolvidos em um escoamento turbulento serem muito grandes,\footnote{Segundo \citeonline{lulandlif/59}, o número de graus de liberdade em um escoamento turbulento é proporcional a $R_{e}^{9/4}$, onde $R_{e}$ é denominado número de Reynolds.} uma das abordagens mais utilizadas é o tratamento estatístico das quantidades de interesse.
 %
 %\begin{figure}[ht]
-%\centering \resizebox{15cm}{!}{\includegraphics{Figuras/vulcaoturb.png}}
+%\centering \resizebox{15cm}{!}{\includegraphics{figs/vulcaoturb.png}}
 %\caption{(a) A estrutura turbulenta de uma erupção vulcânica do Monte St. Helens, (b) ampliação por um fator de $2$, (c) ampliação por outro fator de $2$. 
 %A escala característica da coluna de fumaça é de aproximadamente $5$ Km. }
 %\FONTE{\citeonline{ecke/05}}
@@ -235,7 +235,7 @@
 %Em (d), $10^2<R_{e}<10^5$, as fileiras de vórtices tornam-se irregulares e surge um fluxo turbulento, porém ainda laminar fora dele. Em (e), $R_{e}>10^5$, a região torna-se composta de uma grande variedade de vórtices em tamanho e direção, ou seja, o estágio da turbulência completamente desenvolvida. Acima de um certo valor crítico de $R_{e}$, no intervalo $10^5<R_{e}<10^6$, o fluxo no contorno do cilindro também torna-se turbulento.
 %
 %\begin{figure}[ht]
-%\centering \resizebox{9cm}{!}{\includegraphics{Figuras/reynoldstomomasa.png}}
+%\centering \resizebox{9cm}{!}{\includegraphics{figs/reynoldstomomasa.png}}
 %\caption{Mudança no padrão do fluxo de acordo com o número de Reynolds $R_{e}$.}
 %\FONTE{\citeonline{tomomasa/2000}}
 %\label{reynolds1}
@@ -260,7 +260,7 @@
 %A Figura~\ref{figvelocidadevert} apresenta a evolução de uma variável turbulenta ao longo do tempo, amostrada à $60$Hz. Pode-se observar, que mesmo à uma taxa de amostragem alta, não é possível observar uma variação suave de tal variável com o tempo. O mesmo comportamento é esperado com respeito ao espaço.
 %
 %\begin{figure}[ht]
-%\centering \resizebox{13cm}{!}{\includegraphics{Figuras/velocidadevert.png}}
+%\centering \resizebox{13cm}{!}{\includegraphics{figs/velocidadevert.png}}
 %\caption{Evolução temporal de uma variável turbulenta amostrada à $60$Hz.}
 %\label{figvelocidadevert}
 %\end{figure}
@@ -273,7 +273,7 @@
 %
 %
 %\begin{figure}[ht]
-%\centering \resizebox{13cm}{!}{\includegraphics{Figuras/espectroesboco4.pdf}}
+%\centering \resizebox{13cm}{!}{\includegraphics{figs/espectroesboco4.pdf}}
 %\caption{Representação esquemática do espectro da ECT em escala $\log$-$\log$.}
 %\FONTE{Adaptada de \citeonline{garratt/92}}
 %\label{espectroesboco}
@@ -281,7 +281,7 @@
 %
 % \begin{figure}[!ht]
 % \begin{center}
-% \resizebox{13cm}{!}{\input{Figuras/espectroesboco5.pdftex_t}}
+% \resizebox{13cm}{!}{\input{figs/espectroesboco5.pdftex_t}}
 % \caption{Representação esquemática do espectro da ECT em escala $\log$-$\log$.}
 % \FONTE{Adaptada de Garrat~\cite{garratt/92}}
 % \label{espectroesboco}
@@ -321,7 +321,7 @@
 %Fernando
 %
 %\begin{figure}[ht]
-%\centering \resizebox{13cm}{!}{\includegraphics{Figuras/bolzan.pdf}}
+%\centering \resizebox{13cm}{!}{\includegraphics{figs/bolzan.pdf}}
 %\caption{PDF's das diferenças de velocidade longitudinal dentro da copa da Floresta Amazônica, para valores de $\Delta r=4,40,400$ e $4000$.}
 %\FONTE{\citeonline{bolzan/00}}
 %\label{figpdfintermitente}
