@@ -1,0 +1,135 @@
+\subsection{As equações de Lorenz}
+O artigo clássico de Eduard N. Lorenz \cite{lor/63} foi um dos primeiros trabalhos a descrever movimentos caóticos a partir de um sistema de equações diferenciais ordinárias, como uma aproximação para a dinâmica de uma camada de fluido convectiva. Suponha que esta camada seja mais quente na base do que no topo (conforme a Figura~\ref{figconveclorenz}), e que a diferença de temperatura $\Delta t$ seja suficiente grande. Sob estas condições o ar mais quente se eleva, deslocando o ar mais frio que está por cima, e provoca um movimento convectivo permanente. Se a diferença de temperatura aumentar ainda mais, o escoamento convectivo permanente é perturbado e se instala um movimento turbulento mais complicado \cite{boyce/99}.
+
+\begin{figure}[ht]
+\centering \resizebox{12cm}{!}{\includegraphics{Figuras/roloconveclorenz.png}} 
+\caption{Movimento convectivo de uma camada de fluido, com diferença de temperatura $\Delta t$ entre a placa inferior e a superior que o delimita.}
+\label{figconveclorenz}
+\end{figure}
+
+Ao investigar este fenômeno, Lorenz foi levado, por um processo cuja descrição não é o enfoque deste trabalho, ao sistema autônomo não-linear 
+
+\begin{equation}
+\begin{array}{ccc} dx/dt & = & \sigma(-x+y) \\ dy/dt & = & rx-y-xz \\ dz/dt & = & -bz+xy \end{array}
+\label{eqsistemalorenz}
+\end{equation}
+
+As Equações~\ref{eqsistemalorenz} são comumente denominadas equações de Lorenz. Pode-se observar que a segunda e a terceira equações envolvem não-linearidades quadráticas. A variável $x$, está relacionada à intensidade do movimento do fluido, enquanto as variáveis $y$ e $z$ estão relacionadas a variações de temperatura nas direções horizontal e vertical. As equações de Lorenz também envolvem três parâmetros $\sigma$, $r$ e $b$, todos reais e positivos. Os parâmetros $\sigma$ e $b$ dependem do material e das propriedades geométricas da camada fluida. No caso da atmosfera, valores razoáveis destes parâmetros são 
+$\sigma=10$ e $b=8/3$. O parâmetro $r$, por outro lado, é proporcional à diferença de temperatura $\Delta t$. Desta forma, surge uma questão natural de como a natureza das soluções da Equação~\ref{eqsistemalorenz} se altera quando o parâmetro $r$ assume diferentes valores.
+
+A primeira etapa ao se analisar as equações de Lorenz é localizar os pontos críticos pela resolução do sistema de equações algébricas
+
+\begin{equation}
+\begin{array}{ccc} \sigma(-x+y) & = & 0 \\ rx-y-xz & = & 0 \\ -bz+xy & = & 0 \end{array}
+\label{eqsistemalorenz1}
+\end{equation}
+
+Pela primeira equação tem-se que $y=x$. Então, com a eliminação de $y$ na segunda e terceira equação obtém-se
+
+\begin{equation}
+x(r-1-z)=0
+\label{eqsistemalorenz2}
+\end{equation}
+
+\begin{equation}
+-bz+x^2=0
+\label{eqsistemalorenz3}
+\end{equation}
+
+Uma forma de satisfazer a Equação~\ref{eqsistemalorenz2} é escolher $x=0$. Segue que $y=0$ e, da Equação~\ref{eqsistemalorenz3}, que $z=0$. Ou então, pode-se ter a solução da Equação~\ref{eqsistemalorenz2} com $z=r-1$. Então a Equação~\ref{eqsistemalorenz3} leva a $x=\pm\sqrt{b(r-1)}$ e então $y=\pm\sqrt{b(r-1)}$. Note que estas expressões para $x$ e $y$ só são reais quando $r\geq1$. Assim, $P_{1}=(0,0,0)$ é um ponto crítico para todos os valores de $r$, e é o único ponto crítico para $r<1$. No entanto, se $r>1$, existirão também dois outros pontos críticos, ou sejam, $P_{2}=(\sqrt{b(r-1)},\sqrt{b(r-1)},r-1)$ e $P_{3}=(-\sqrt{b(r-1)},-\sqrt{b(r-1)},r-1)$. Observe que os três pontos críticos coincidem quando $r=1$. À medida que $r$ aumenta, passando pelo valor um, o ponto crítico $P_{1}$ na origem se \textit{bifurca} e os pontos críticos $P_{2}$ e $P_{3}$ aparecem.
+
+O passo seguinte é analisar o comportamento local das soluções na vizinhança de cada ponto crítico. Embora boa parte da análise possa ser realizada com valores arbitrários de $\sigma$ e $b$, serão adotados os valores a $\sigma=10$ e $b=8/3$. Nas vizinhanças da origem (ponto crítico $P_{1}$) o sistema linear correspondente é
+
+\begin{equation}
+\left(\begin{array}{ccc}x \\ y \\ z \end{array}\right)'=
+\left(\begin{array}{ccc}-10 & 10 & 0  \\ r & -1 & 0 \\ 0 & 0 & -8/3 \end{array}\right)
+\left(\begin{array}{ccc}x \\ y \\ z \end{array}\right)
+\label{eqsistemalinearizado}
+\end{equation}
+
+Os autovalores são determinados pela equação
+
+\begin{equation}
+\left|\begin{array}{ccc}-10-\lambda & 10 & 0  \\ r & -1-\lambda & 0 \\ 0 & 0 & -8/3-\lambda \end{array}\right|=-(8/3+\lambda)[\lambda^2+11\lambda-10(r-1)]=0
+\label{eqmatrizautovalor}
+\end{equation}
+
+Portanto
+
+\begin{equation}
+\lambda_{1}=-\frac{8}{3}, \;\;\;\;\; \lambda_{2}=\frac{-11-\sqrt{81+40r}}{2}, \;\;\;\;\; \lambda_{3}=\frac{-11+\sqrt{81+40r}}{2}
+\label{eqpontoscriticos}
+\end{equation}
+
+Todos os três autovalores são negativos quando $r<1$; por exemplo, quando $r=1/2$, os autovalores são $\lambda_{1}=-8/3$, $\lambda_{2}=-10.52494$ e $\lambda_{3}=-0.47506$. Então, a origem é assintoticamente estável neste domínio de $r$, não só para a aproximação linear dada pelo sistema~\ref{eqsistemalinearizado}, mas também para o sistema original~\ref{eqsistemalorenz}. No entanto, $\lambda_{3}$ muda de sinal quando $r=1$ e é positivo para $r>1$. O valor $r=1$ corresponde ao início do escoamento convectivo no problema físico que foi descrito anteriormente. A origem é instável para $r>1$; todas as soluções que principiam nas vizinhanças da origem tendem a aumentar, exceto as que estão no plano determinado pelos autovetores associados a $\lambda_{1}$ e $\lambda_{2}$ (ou, no caso do sistema não-linear~\ref{eqsistemalorenz}, as que estão em uma certa superfície tangente a este plano na origem).
+
+Um procedimento necessário é analisar as vizinhanças do ponto crítico $P_{2}=(\sqrt{b(r-1)},\sqrt{b(r-1)},r-1)$ para $r>1$. Se $u$, $v$ e $w$ forem perturbações do ponto crítico nas direções $x$, $y$ e $z$, respectivamente, então o sistema linear correspondente é
+
+\begin{equation}
+\left(\begin{array}{ccc}u \\ v \\ w \end{array}\right)'=
+\left(\begin{array}{ccc}-10 & 10 & 0  \\ r & -1 & -\sqrt{8(r-1)/3} \\ \sqrt{8(r-1)/3} & \sqrt{8(r-1)/3} & -8/3 \end{array}\right)
+\left(\begin{array}{ccc}u \\ v \\ w \end{array}\right)
+\label{eqsistemalinearizadop2}
+\end{equation}
+
+Os autovalores da matriz dos coeficientes da Equação~\ref{eqsistemalinearizadop2} são determinados pela equação
+
+\begin{equation}
+3\lambda^3+41\lambda^2+8(r+10)\lambda+160(r-1)=0
+\label{eqequacaoraizesp2}
+\end{equation}
+que é obtida por um cálculo algébrico direto cujas etapas se omitem. As soluções da Equação~\ref{eqequacaoraizesp2} dependem de $r$ da seguinte forma:
+
+\begin{itemize}
+\item Para $1<r<r_{1}\thickapprox1.3456$, existem três autovalores reais negativos.
+\item Para $r_{1}<r<r_{2}\thickapprox24.737$, existe um autovalor real negativo e dois autovalores complexo com a parte real negativa.
+\item Para $r_{2}<r$, há um autovalor real negativo e dois autovalores complexos com parte real positiva.
+\end{itemize}
+
+Os mesmos resultados se obtêm no caso do ponto crítico $P_{3}$. Assim, há diferentes situações.
+
+\begin{itemize}
+\item Para $0<r<1$, o único ponto crítico é $P_{1}$ e é um ponto assintoticamente estável. Todas as soluções se aproximam deste ponto (a origem) quando $t\rightarrow\infty$.
+\item Para $1<r<r_{1}$, os pontos críticos $P_{2}$ e $P_{3}$ são assintoticamente estáveis e $P_{1}$ é instável. Todas as soluções vizinhas aos pontos aproximam-se exponencialmente de $P_{2}$ ou de $P_{3}$.
+\item Para $r_{1}<r<r_{2}$, os pontos críticos $P_{2}$ e $P_{3}$ são assintoticamente estáveis e $P_{1}$ é instável. Todas as soluções nas vizinhanças aproximam-se de um dos pontos $P_{2}$ ou $P_{3}$; a maior parte delas espirala para o ponto crítico.
+\item Para $r_{2}<r$, todos os três pontos críticos são instáveis. A maioria das soluções vizinhas a $P_{2}$ ou a $P_{3}$, espiralam-se para longe do ponto crítico. 
+\end{itemize}
+
+O estudo qualitativo das soluções do sistema~\ref{eqsistemalorenz} prossegue considerando as soluções com $r$ um pouco maior que $r_{2}$. Neste caso, $P_{1}$ tem um autovalor positivo e cada ponto $P_{2}$ e $P_{3}$ tem um par de autovalores complexos com a parte real positiva. Uma trajetória só pode se aproximar de qualquer destes pontos críticos sobre curvas muito particulares. O menor desvio em relação a estas curvas provoca o afastamento da trajetória em relação ao ponto crítico. Uma vez que nenhum dos pontos críticos é estável, poderia parecer que a maior parte das trajetórias tenderia ao infinito, para grandes valores de $t$. Porém, todas as trajetórias se mantêm limitadas quando $t\rightarrow\infty$. Na realidade, todas as soluções aproximam-se terminalmente de um conjunto limite de pontos que tem o volume zero. Na realidade, a afirmação é válida não apenas para $r>r_{2}$, mas para todos os valores positivos de $r$.
+
+A Figura~\ref{figlorenzx} apresenta um gráfico de valores calculados de $x$ em função de $t$, para uma solução típica com $r>r_{2}$. Note que a solução oscila entre valores positivos e negativos de uma maneira aparentemente errática. Na realidade, o gráfico de $x$ contra $t$ assemelha-se ao de uma oscilação aleatória, embora as equações de Lorenz sejam inteiramente determinísticas e a solução seja completamente determinada pelas condições iniciais. Não obstante, a solução aparenta, também, uma certa \textit{regularidade}, pois a freqüência e a amplitude das oscilações são essencialmente constantes no tempo.
+
+\begin{figure}[ht]
+\centering \resizebox{10cm}{!}{\includegraphics{Figuras/lorenzseriex.png}} 
+\caption{Gráficos de $x$ em função de $t$ de uma solução das equações de Lorenz com $r=28$ e condição inicial $(5,5,5)$.}
+\label{figlorenzx}
+\end{figure}
+
+As soluções das equações de Lorenz são também muito sensíveis a perturbações nas condições iniciais. A Figura~\ref{figlorenzxci} mostra os gráficos dos valores calculados de $x$ contra $t$ para duas soluções cujos pontos iniciais são $(5,5,5)$ e $(5.01,5,5)$. A curva tracejada é a mesma que está na Figura~\ref{figlorenzx}, e a curva cheia principia em um ponto muito próximo do início daquela. As duas soluções ficam bastante próximas uma da outra, até $t$ nas vizinhanças de $10$, e depois são bastante diferentes. Na realidade, parecem não ter qualquer relação mútua. Esta propriedade atraiu particularmente a atenção de Lorenz, no seu trabalho original sobre as equações, e o levou a concluir que a provável impossibilidade de se terem previsões a longo prazo das condições meteorológicas.
+
+\begin{figure}[ht]
+\centering \resizebox{10cm}{!}{\includegraphics{Figuras/lorenzseriexci.png}} 
+\caption{Curvas de $x$ em função de $t$ de duas soluções vizinhas das equações de Lorenz com $r=28$; a condição inicial da curva tracejada é $(5,5,5)$ e a da curva cheia é $(5.01,5,5)$}
+\label{figlorenzxci}
+\end{figure}
+
+O conjunto atrator, neste caso, embora tenha volume nulo, tem também uma estrutura bastante complicada e é denominado de atrator estranho. O termo caótico tornou-se de uso geral para descrever soluções como as que aparecem nas Figuras~\ref{figlorenzx} e \ref{figlorenzxci}.
+
+A fim de determinar como e quando se cria o atrator estranho, é elucidativo investigar soluções para valores menores de $r$. Com $r=21$, as soluções que principiam em três condições iniciais diferentes aparecem na Figura~~\ref{figlorenzxtriplo}. Para a condição inicial $(3,8,0)$ a solução começa a convergir para o ponto $P_{3}$ quase que imediatamente (conforme a Figura~\ref{figlorenzxtriplo}a). Na segunda condição inicial $(5,5,5)$ há um intervalo bem curto de comportamento transiente e depois a solução converge para $P_{2}$; ver Figura~\ref{figlorenzxtriplo}b. No entanto, como mostra a Figura~\ref{figlorenzxtriplo}c, a partir da terceira condição inicial $(5,5,10)$ há um intervalo muito mais dilatado de comportamento caótico transiente antes da solução convergir para $P_{2}$. À medida que $r$ cresce, a duração do comportamento transiente caótico também aumenta. Quando $r=r_{3}\thickapprox24.06$, os transientes caóticos parecem continuar indefinidamente e nasce então o atrator estranho.
+
+\begin{figure}[ht]
+\centering 
+\resizebox{6cm}{!}{\includegraphics{Figuras/figlorenzxtriplo1.png}} \resizebox{6cm}{!}{\includegraphics{Figuras/figlorenzxtriplo2.png}} \\  \resizebox{6cm}{!}{\includegraphics{Figuras/figlorenzxtriplo3.png}} 
+\caption{Gráficos de $x$ contra $t$ de três soluções das equações de Lorenz com $r=21$. As condições iniciais tomadas foram (3,8,0), (5,5,5) e (5,5,10).}
+\label{figlorenzxtriplo}
+\end{figure}
+
+A Figura~\ref{figlorenzatratorproj} apresenta uma trajetória que principia em $(5,5,5)$ no espaço de fase tridimensional, que se desenvolve em um atrator estranho, como também suas projeções nos planos $xy$, $xz$ e $yz$. Pode-se observar que a trajetória sobre o atrator nunca repete o mesmo caminho; contudo, ela está confinada (atraída) a uma região limitada do espaço de fase. Tal trajetória alterna sobre um dos dois pontos fixos instáveis $P_{2}$ e $P_{3}$ e este processo é repetido indefinidamente. As projeções deste atrator cruzam-se indefinidamente, mas isto não ocorre com as trajetórias reais no espaço tridimensional, em virtude do teorema geral da unicidade. Os cruzamentos aparentes são provocados, exclusivamente, pelo caráter bidimensional das figuras.
+
+\begin{figure}[ht]
+\centering \resizebox{12cm}{!}{\includegraphics{Figuras/atratorlorenzcomprojecoes.png} } 
+\caption{O atrator de Lorenz com $r=28$ e condição inicial $(5,5,5)$, e suas projeções nos planos $xy$ e $xz$ e $yz$}
+\label{figlorenzatratorproj}
+\end{figure}
+
+A sensibilidade das soluções a perturbações dos dados iniciais tem também conseqüência nos cálculos numéricos, como os que aqui foram exibidos. Incrementos diferentes, algoritmos numéricos diferentes, ou até mesmo a execução de um mesmo algoritmo em máquinas diferentes, introduzirão pequenas diferenças nas soluções calculadas que podem levar a grandes desvios. Por exemplo, a seqüência exata de ciclos positivos e negativos, na solução calculada depende fortemente da precisão do algoritmo numérico e da sua implementação, e também das condições iniciais. No entanto. a aparência geral da solução e a estrutura dos conjuntos atratores não dependem destes fatores. Neste estudo foi utilizado o método Runge-Kutta de quarta ordem com passo de integração $0.01$.

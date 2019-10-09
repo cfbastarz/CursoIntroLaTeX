@@ -1,0 +1,99 @@
+%%%%%%%%%%%%%%%%%%%CAPA%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\serieinpe{INPE-NNNNN-TDI/NNNN} %% não mais usado
+
+\titulo{Escrever o título no idioma em que foi escrito a publicação}
+\title{Escrever o título em Inglês para publicações escritas em Português e em Português para publicações escritas em Inglês} %% 
+\author{Nome Completo do Autor1\\Nome Completo do Autor2} %% coloque o nome do(s) autor(es)
+\descriccao{Tese de Doutorado ou Dissertação de Mestrado do Curso de Pós-Graduação em Nome do Curso, orientada pelo(a) Dr(a). Nome do Orientador(a), aprovada em dd de mês por extenso de aaaa.}
+\repositorio{aa/bb/cc/dd} %% repositório onde está depositado este documento - na omissão, será preenchido pelo SID
+\tipoDaPublicacao{TDI}	%% tipo da publicação (NTC, RPQ, PRP, MAN, PUD, TDI, TAE e PRE) na ausência do número de série INPE, caso contrário deixar vazio
+\IBI{xx/yy} %% IBI (exemplo: J8LNKAN8PW/36CT2G2) quando existir, caso contrário o nome do repositório onde está depositado o documento
+
+\date{AAAA}%ano da publicação
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%VERSO DA CAPA%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\tituloverso{\vspace{-0.9cm}\textbf{\PublicadoPor:}}
+\descriccaoverso{Instituto Nacional de Pesquisas Espaciais - INPE\\
+Gabinete do Diretor (GB)\\
+Serviço de Informação e Documentação (SID)\\
+Caixa Postal 515 - CEP 12.245-970\\
+São José dos Campos - SP - Brasil\\
+Tel.:(012) 3945-6923/6921\\
+Fax: (012) 3945-6919\\
+E-mail: {\url{pubtc@sid.inpe.br}}
+}
+
+\descriccaoversoA{\textbf{\ConselhoDeEditoracao:}\\
+\textbf{\Presidente:}\\
+Marciana Leite Ribeiro - Serviço de Informação e Documentação (SID)\\
+\textbf{\Membros:}\\
+Dr. Gerald Jean Francis Banon - Coordenação Observação da Terra (OBT)\\
+Dr. Amauri Silva Montes - Coordenação Engenharia e Tecnologia Espaciais (ETE)\\
+Dr. André de Castro Milone - Coordenação Ciências Espaciais e Atmosféricas (CEA)\\
+Dr. Joaquim José Barroso de Castro -  Centro de Tecnologias Espaciais (CTE)\\
+Dr. Manoel Alonso Gan - Centro de Previsão de Tempo e Estudos Climáticos (CPT)\\
+Drª Maria do Carmo de Andrade Nono - Conselho de Pós-Graduação\\
+Dr. Plínio Carlos Alvalá - Centro de Ciência do Sistema Terrestre (CST)\\
+\textbf{\BibliotecaDigital:}\\
+Dr. Gerald Jean Francis Banon - Coordenação de Observação da Terra (OBT)\\
+Clayton Martins Pereira - Serviço de Informação e Documentação (SID)\\
+%Jefferson Andrade Ancelmo - Serviço de Informação e Documentação (SID)\\
+%Simone A. Del-Ducca Barbedo - Serviço de Informação e Documentação (SID)\\
+%Deicy Farabello - Centro de Previsão de Tempo  e Estudos Climáticos (CPT)\\
+\textbf{\RevisaoNormalizacaoDocumentaria:}\\
+Simone Angélica Del Ducca Barbedo - Serviço de Informação e Documentação (SID) \\
+%Marilúcia Santos Melo Cid - Serviço de Informação e Documentação (SID)\\
+Yolanda Ribeiro da Silva Souza - Serviço de Informação e Documentação (SID)\\
+\textbf{\EditoracaoEletronica:}\\
+Marcelo de Castro Pazos - Serviço de Informação e Documentação (SID)\\
+André Luis Dias Fernandes - Serviço de Informação e Documentação (SID)\\
+}
+
+%%%%%%%%%%%%%%%%%%%FOLHA DE ROSTO
+
+%%%%%%%%%%%%%%%FICHA CATALOGRÁFICA
+%% NÃO PREENCHER - SERÁ PREENCHIDO PELO SID
+
+\cutterFICHAC{Cutter}
+\autorUltimoNomeFICHAC{Sobrenome, Nomes} %% exemplo: Fuckner, Marcus André
+\autorFICHAC {Nome Completo do Autor1; Nome Completo do Autor2} %% Campo opcional (se não usado prevalece \author)
+\tituloFICHAC{Titulo da publicação}
+\instituicaosigla{INPE}
+\instituicaocidade{São José dos Campos}
+\paginasFICHAC{\pageref{numeroDePáginasDoPretexto} + \pageref{LastPage}} %% número total de páginas
+%\serieinpe{INPE-00000-TDI/0000} %% não mais usado
+\palavraschaveFICHAC{1.~Palavra chave. 2.~Palavra chave 3.~Palavra chave. 4.~Palavra chave. 5.~Palavra chave  I.~\mbox{Título}.} %% recomenda-se pelo menos 5 palavras-chaves - \mbox{} é para evitar hifenização 
+\numeroCDUFICHAC{000.000} %% número do CDU 
+
+% Nota da ficha (para TD)
+\tipoTD{Dissertação ou Tese} % Dissertação ou Tese
+\cursoFA{Mestrado ou Doutorado em Nome do Curso}
+\instituicaoDefesa{Instituto Nacional de Pesquisas Espaciais}
+\anoDefesa{AAAA} % ano de defesa 
+\nomeAtributoOrientadorFICHAC{Orientador}	% pode ser: Orientador, Orientadora ou Orientadores
+\valorAtributoOrientadorFICHAC{José da Silva} % nome(s) completo(s)
+
+%%%%%%%%%%%%%%%FOLHA DE APROVAÇAO PELA BANCA EXAMINADORA
+\tituloFA{\textbf{ATENÇÃO! A FOLHA DE APROVAÇÃO SERÁ INCLUIDA POSTERIORMENTE.}}
+%\cursoFA{\textbf{}}
+\candidatoOUcandidataFA{}
+\dataAprovacaoFA{}
+\membroA{}{}{}
+\membroB{}{}{}
+\membroC{}{}{}
+\membroD{}{}{}
+\membroE{}{}{}
+\membroF{}{}{}
+\membroG{}{}{}
+\ifpdf
+
+%%%%%%%%%%%%%%NÍVEL DE COMPRESSÃO {0 -- 9}
+\pdfcompresslevel 9
+\fi
+%%% define em 80% a largura das figuras %%%
+\newlength{\mylenfig} 
+\setlength{\mylenfig}{0.8\textwidth}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%COMANDOS PESSOAIS
+\newcommand{\vetor}[1]{\mathit{\mathbf{#1}}}
