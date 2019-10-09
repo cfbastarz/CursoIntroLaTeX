@@ -63,17 +63,17 @@
     after upper={\par\hfill\textcolor{white}%
         {\itshape Resposta na página~\pageref{solution:#1}}},
     lowerbox=ignored,
-    savelowerto=respostas/exercise-\thetcbcounter.tex,
-    record={\string\solution{#1}{respostas/exercise-\thetcbcounter.tex}},
+    savelowerto=docs/respostas/exercise-\thetcbcounter.tex,
+    record={\string\solution{#1}{docs/respostas/exercise-\thetcbcounter.tex}},
     #2
 }
 
 % Esta é a lista de exercícios
 \newtcolorbox[auto counter,number within=section,list inside=exam]{texercise}[4][]{%
     texercisestyle,
-    listing file={respostas/texercise\thetcbcounter.tex},
+    listing file={docs/respostas/texercise\thetcbcounter.tex},
     label={exe:#2},
-    record={\string\processsol{respostas/texercise\thetcbcounter.tex}{#2}},
+    record={\string\processsol{docs/respostas/texercise\thetcbcounter.tex}{#2}},
     title={Exercício \thetcbcounter\hfill\mdseries Resposta na página \pageref{sol:#2}},
     list text={\vspace{-1em}\hspace{1mm} #3 - resposta na página \pageref{sol:#2}}, #1)}
     
