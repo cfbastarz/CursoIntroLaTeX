@@ -1,7 +1,7 @@
 #!/bin/sed -f
 #
 # latin2tex - script sed que converte acentos latin para comandos TeX
-# Copyright (C) 2002 Rafael ¡vila
+# Copyright (C) 2002 Rafael √Åvila
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -22,60 +22,60 @@
 # uso: tex2latin < in.latin > out.tex
 # baseado no script `tex2latin' de Elgio Schlemer
 #
-# a vers„o mais recente de ambos pode ser encontrada em
+# a vers√£o mais recente de ambos pode ser encontrada em
 # http://www.inf.ufrgs.br/utug/download
 
 # Vogais, acento agudo
-s/·/{\\'a}/g
-s/È/{\\'e}/g
-s/Ì/{\\'\\i}/g
-s/Û/{\\'o}/g
-s/˙/{\\'u}/g
+s/√°/{\\'a}/g
+s/√©/{\\'e}/g
+s/√≠/{\\'\\i}/g
+s/√≥/{\\'o}/g
+s/√∫/{\\'u}/g
 
-s/¡/{\\'A}/g
-s/…/{\\'E}/g
-s/Õ/{\\'I}/g
-s/”/{\\'O}/g
-s/⁄/{\\'U}/g
+s/√Å/{\\'A}/g
+s/√â/{\\'E}/g
+s/√ç/{\\'I}/g
+s/√ì/{\\'O}/g
+s/√ö/{\\'U}/g
 
 # Vogais, acento crase
-s/‡/{\\`a}/g
-s/Ë/{\\`e}/g
-s/Ï/{\\`i}/g
-s/Û/{\\`o}/g
-s/˘/{\\`u}/g
+s/√†/{\\`a}/g
+s/√®/{\\`e}/g
+s/√¨/{\\`i}/g
+s/√≥/{\\`o}/g
+s/√π/{\\`u}/g
 
-s/¿/{\\`A}/g
-s/»/{\\`E}/g
-s/Ã/{\\`I}/g
-s/“/{\\`O}/g
-s/Ÿ/{\\`U}/g
+s/√Ä/{\\`A}/g
+s/√à/{\\`E}/g
+s/√å/{\\`I}/g
+s/√í/{\\`O}/g
+s/√ô/{\\`U}/g
 
 # Vogais, til
-s/„/{\\~a}/g
-s/ı/{\\~o}/g
-s/Ò/{\\~n}/g
+s/√£/{\\~a}/g
+s/√µ/{\\~o}/g
+s/√±/{\\~n}/g
 
-s/√/{\\~A}/g
-s/’/{\\~O}/g
-s/—/{\\~N}/g
+s/√É/{\\~A}/g
+s/√ï/{\\~O}/g
+s/√ë/{\\~N}/g
 
 # Cedilha
-s/Á/{\\c{c}}/g
-s/Á/{\\c{c}}/g
-s/«/{\\c{C}}/g
-s/«/{\\c{C}}/g
+s/√ß/{\\c{c}}/g
+s/√ß/{\\c{c}}/g
+s/√á/{\\c{C}}/g
+s/√á/{\\c{C}}/g
 
 # Vogais, acento cincunflexo
-s/‚/{\\^a}/g
-s/Í/{\\^e}/g
-s/Ó/{\\^i}/g
-s/Ù/{\\^o}/g
-s/˚/{\\^u}/g
+s/√¢/{\\^a}/g
+s/√™/{\\^e}/g
+s/√Æ/{\\^i}/g
+s/√¥/{\\^o}/g
+s/√ª/{\\^u}/g
 
-s/¬/{\\^A}/g
-s/ /{\\^E}/g
-s/Œ/{\\^I}/g
-s/‘/{\\^O}/g
-s/€/{\\^U}/g
+s/√Ç/{\\^A}/g
+s/√ä/{\\^E}/g
+s/√é/{\\^I}/g
+s/√î/{\\^O}/g
+s/√õ/{\\^U}/g
 

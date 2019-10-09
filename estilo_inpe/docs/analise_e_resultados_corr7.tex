@@ -1,97 +1,97 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\chapter{ANÁLISE E RESULTADOS}
+\chapter{ANÃLISE E RESULTADOS}
 \label{capanaliseseresults}
 
-A possível natureza caótica da turbulência na camada limite atmosférica, no interior e acima da copa da floresta é investigada. Com base na aplicação de diversas ferramentas
-%(já descritas no Capítulo~\ref{caputiltecnicas}) 
-nas séries temporais em estudo, o objetivo deste trabalho é determinar se tais séries incluem componentes determinísticas que podem ser descritas (individualmente) por um sistema dinâmico de baixa dimensão, que se desenvolve em um atrator caótico.
+A possÃ­vel natureza caÃ³tica da turbulÃªncia na camada limite atmosfÃ©rica, no interior e acima da copa da floresta Ã© investigada. Com base na aplicaÃ§Ã£o de diversas ferramentas
+%(jÃ¡ descritas no CapÃ­tulo~\ref{caputiltecnicas}) 
+nas sÃ©ries temporais em estudo, o objetivo deste trabalho Ã© determinar se tais sÃ©ries incluem componentes determinÃ­sticas que podem ser descritas (individualmente) por um sistema dinÃ¢mico de baixa dimensÃ£o, que se desenvolve em um atrator caÃ³tico.
 
 
 \section{Estacionaridade}
-Primeiramente, as séries temporais em estudo foram submetidas ao teste de estacionaridade.
-% já descrito na Seção~\ref{subsecestacio}. 
-A Tabela~\ref{tabelatempestacionaria} apresenta a classificação destas séries em estacionárias ou não estacionárias. Neste teste foram utilizadas janelas de dados deslizantes variáveis, a saber, $L=100,500$ e $1000$. Desta forma, as análises subseqüentes serão feitas apenas com as séries do tipo estacionárias.
+Primeiramente, as sÃ©ries temporais em estudo foram submetidas ao teste de estacionaridade.
+% jÃ¡ descrito na SeÃ§Ã£o~\ref{subsecestacio}. 
+A Tabela~\ref{tabelatempestacionaria} apresenta a classificaÃ§Ã£o destas sÃ©ries em estacionÃ¡rias ou nÃ£o estacionÃ¡rias. Neste teste foram utilizadas janelas de dados deslizantes variÃ¡veis, a saber, $L=100,500$ e $1000$. Desta forma, as anÃ¡lises subseqÃ¼entes serÃ£o feitas apenas com as sÃ©ries do tipo estacionÃ¡rias.
 
 \begin{table}[!ht]
 \begin{center}
-\caption{Análise da estacionaridade para as séries temporais de temperatura e velocidade do vento em diferentes períodos do dia e níveis da copa.}
+\caption{AnÃ¡lise da estacionaridade para as sÃ©ries temporais de temperatura e velocidade do vento em diferentes perÃ­odos do dia e nÃ­veis da copa.}
 \begin{tabular}{c c c}
 \hline 
-\textbf{Série temporal} & \textbf{Estacionaridade} \\
+\textbf{SÃ©rie temporal} & \textbf{Estacionaridade} \\
 \hline
-tS1200 & estacionária \\
-tI1200 & estacionária \\
-tS2300 & não-estacionária \\
-tI2300 & estacionária \\
-tM1200 & estacionária \\
-wS1200 & estacionária \\
-tM2300 & não-estacionária \\
+tS1200 & estacionÃ¡ria \\
+tI1200 & estacionÃ¡ria \\
+tS2300 & nÃ£o-estacionÃ¡ria \\
+tI2300 & estacionÃ¡ria \\
+tM1200 & estacionÃ¡ria \\
+wS1200 & estacionÃ¡ria \\
+tM2300 & nÃ£o-estacionÃ¡ria \\
 \hline
 \end{tabular}
 \label{tabelatempestacionaria}
 \end{center}
 \end{table}
 
-\section{Decomposição dos Dados}
+\section{DecomposiÃ§Ã£o dos Dados}
 
-Com o objetivo de investigar o papel das estruturas coerentes na existência (ou não) de caos na atmosfera, decidiu-se selecionar dentre o conjunto de séries disponíveis uma que apresentasse sinais nítidos da presença de estruturas coerentes em rampa e em seguida decompor a mesma (denominada de série total) em duas partes: uma parte dita coerente (baixas freqüências) e uma parte incoerente (altas freqüências). A parte coerente é caracterizada apenas pelas estruturas coerentes em rampa presentes na série total, enquanto que a parte incoerente é caracterizada pelas flutuações aparentemente aleatórias da mesma série. 
+Com o objetivo de investigar o papel das estruturas coerentes na existÃªncia (ou nÃ£o) de caos na atmosfera, decidiu-se selecionar dentre o conjunto de sÃ©ries disponÃ­veis uma que apresentasse sinais nÃ­tidos da presenÃ§a de estruturas coerentes em rampa e em seguida decompor a mesma (denominada de sÃ©rie total) em duas partes: uma parte dita coerente (baixas freqÃ¼Ãªncias) e uma parte incoerente (altas freqÃ¼Ãªncias). A parte coerente Ã© caracterizada apenas pelas estruturas coerentes em rampa presentes na sÃ©rie total, enquanto que a parte incoerente Ã© caracterizada pelas flutuaÃ§Ãµes aparentemente aleatÃ³rias da mesma sÃ©rie. 
 
-Desta forma, se a ocorrência de uma dinâmica de baixa dimensão na série temporal total estiver relacionada à presença de estruturas coerentes, é de se esperar que essa mesma dinâmica se manifeste também na série coerente, e que contrariamente, a série incoerente esteja associada à uma dinâmica de alta dimensão. Por inspeção visual, a série escolhida para as análises subseqüentes corresponde àquela que apresenta estruturas coerentes em rampa, a saber, a série de temperatura medida no nível superior da copa às 12 horas (tS1200), conforme a parte superior da Figura~\ref{docs/figseriestempdiur}. 
+Desta forma, se a ocorrÃªncia de uma dinÃ¢mica de baixa dimensÃ£o na sÃ©rie temporal total estiver relacionada Ã  presenÃ§a de estruturas coerentes, Ã© de se esperar que essa mesma dinÃ¢mica se manifeste tambÃ©m na sÃ©rie coerente, e que contrariamente, a sÃ©rie incoerente esteja associada Ã  uma dinÃ¢mica de alta dimensÃ£o. Por inspeÃ§Ã£o visual, a sÃ©rie escolhida para as anÃ¡lises subseqÃ¼entes corresponde Ã quela que apresenta estruturas coerentes em rampa, a saber, a sÃ©rie de temperatura medida no nÃ­vel superior da copa Ã s 12 horas (tS1200), conforme a parte superior da Figura~\ref{docs/figseriestempdiur}. 
 
-%\subsection{Decomposição dos dados}
+%\subsection{DecomposiÃ§Ã£o dos dados}
 
-Inicialmente, a série temporal total (tS1200) foi decomposta em suas partes coerente e incoerente, por meio da filtragem com Wavelet de Haar~\cite{katul/94}, que é um tipo de ondeleta-mãe discreta, definida por
+Inicialmente, a sÃ©rie temporal total (tS1200) foi decomposta em suas partes coerente e incoerente, por meio da filtragem com Wavelet de Haar~\cite{katul/94}, que Ã© um tipo de ondeleta-mÃ£e discreta, definida por
 
 \begin{equation}
 \left\{ \begin{array}{rrr} 1, &  & 0\leq t < 1/2 \\
                   -1, &  & 1/2\leq t < 1 \\
-		   0, &  & \mbox{caso contrário}
+		   0, &  & \mbox{caso contrÃ¡rio}
 \end{array} 
 \right.
 \label{eqwavelethaar}
 \end{equation} 
 
-Esta categoria de ondaletas é utilizada para detectar variações bruscas nos sinais, e trabalha com sinais temporais que tenham comprimentos da ordem da potência de dois mais próxima, ou seja, $2^{f}=s$, onde $s$ é o comprimento total da série, e $f$ é o número de freqüências possíveis para a decomposição. 
+Esta categoria de ondaletas Ã© utilizada para detectar variaÃ§Ãµes bruscas nos sinais, e trabalha com sinais temporais que tenham comprimentos da ordem da potÃªncia de dois mais prÃ³xima, ou seja, $2^{f}=s$, onde $s$ Ã© o comprimento total da sÃ©rie, e $f$ Ã© o nÃºmero de freqÃ¼Ãªncias possÃ­veis para a decomposiÃ§Ã£o. 
 
-O comprimento da série em estudo é de $s=108.000$ pontos. Desta forma, não há um número exato de decomposições em freqüências, já que $f=16$ resulta em $s=65.536$ pontos e $f=17$ resulta em $s=131.072$ pontos. A estratégia utilizada foi completar o início da série temporal com zeros até que a freqüência $f=17$ fosse alcançada. 
+O comprimento da sÃ©rie em estudo Ã© de $s=108.000$ pontos. Desta forma, nÃ£o hÃ¡ um nÃºmero exato de decomposiÃ§Ãµes em freqÃ¼Ãªncias, jÃ¡ que $f=16$ resulta em $s=65.536$ pontos e $f=17$ resulta em $s=131.072$ pontos. A estratÃ©gia utilizada foi completar o inÃ­cio da sÃ©rie temporal com zeros atÃ© que a freqÃ¼Ãªncia $f=17$ fosse alcanÃ§ada. 
  
-Ainda não há na literatura um consenso de qual seja a melhor função ondeleta a ser utilizada para a decomposição e filtragem de uma série temporal. O que comumente se aceita é que a função ondeleta possua um formato característico próximo das características encontradas na série temporal. Isso explica o fato da Wavelet de Haar ter sido escolhida para a decomposição da série temporal de temperatura.  
+Ainda nÃ£o hÃ¡ na literatura um consenso de qual seja a melhor funÃ§Ã£o ondeleta a ser utilizada para a decomposiÃ§Ã£o e filtragem de uma sÃ©rie temporal. O que comumente se aceita Ã© que a funÃ§Ã£o ondeleta possua um formato caracterÃ­stico prÃ³ximo das caracterÃ­sticas encontradas na sÃ©rie temporal. Isso explica o fato da Wavelet de Haar ter sido escolhida para a decomposiÃ§Ã£o da sÃ©rie temporal de temperatura.  
 
-A Figura~\ref{figfiltrotS0681200} mostra a série temporal total, a série temporal coerente (soma das baixas freqüências da série total) e a série temporal incoerente (soma das altas freqüências da série total), respectivamente. Após a filtragem da série total, $23072$ pontos iniciais foram descartados das séries total, coerente e incoerente; tal valor corresponde ao número de zeros inseridos na série total antes do procedimento de filtragem. É importante ressaltar que a soma da série coerente com a série incoerente resulta a série total, o que já era esperado.
+A Figura~\ref{figfiltrotS0681200} mostra a sÃ©rie temporal total, a sÃ©rie temporal coerente (soma das baixas freqÃ¼Ãªncias da sÃ©rie total) e a sÃ©rie temporal incoerente (soma das altas freqÃ¼Ãªncias da sÃ©rie total), respectivamente. ApÃ³s a filtragem da sÃ©rie total, $23072$ pontos iniciais foram descartados das sÃ©ries total, coerente e incoerente; tal valor corresponde ao nÃºmero de zeros inseridos na sÃ©rie total antes do procedimento de filtragem. Ã‰ importante ressaltar que a soma da sÃ©rie coerente com a sÃ©rie incoerente resulta a sÃ©rie total, o que jÃ¡ era esperado.
 
 \begin{figure}[ht]
-	\caption{Séries temporal total, coerente e incoerente.}
-	\vspace{0mm}	% acrescentar o espaçamento vertical apropriado entre o título e a borda superior da figura
+	\caption{SÃ©ries temporal total, coerente e incoerente.}
+	\vspace{0mm}	% acrescentar o espaÃ§amento vertical apropriado entre o tÃ­tulo e a borda superior da figura
 	\begin{center}
 		\resizebox{13cm}{!}{\includegraphics{docs/figs/filtrocoltS0681200.png}}		
 	\end{center}
-	\vspace{-2mm}	% acrescentar o espaçamento vertical apropriado entre a borda inferior da figura e a legenda ou a fonte quando não há legenda (o valor pode ser negativo para subir)
-	\legenda{Sinal total (superior), soma das nove primeiras freqüências (meio), soma das sete últimas freqüências (inferior).}	% legenda - para deixar sem legenda usar comando \legenda{} (nunca deve-se comentar o comando \legenda)
+	\vspace{-2mm}	% acrescentar o espaÃ§amento vertical apropriado entre a borda inferior da figura e a legenda ou a fonte quando nÃ£o hÃ¡ legenda (o valor pode ser negativo para subir)
+	\legenda{Sinal total (superior), soma das nove primeiras freqÃ¼Ãªncias (meio), soma das sete Ãºltimas freqÃ¼Ãªncias (inferior).}	% legenda - para deixar sem legenda usar comando \legenda{} (nunca deve-se comentar o comando \legenda)
 	\label{figfiltrotS0681200}
-	\FONTE{Produção do autor.}	% fonte consultada (elemento obrigatório, mesmo que seja produção do próprio autor)
+	\FONTE{ProduÃ§Ã£o do autor.}	% fonte consultada (elemento obrigatÃ³rio, mesmo que seja produÃ§Ã£o do prÃ³prio autor)
 \end{figure}
 
-\section{Caracterizando a turbulência acima da copa da floresta Amazônica}
+\section{Caracterizando a turbulÃªncia acima da copa da floresta AmazÃ´nica}
 
-O objetivo desta seção é verificar se as séries total, coerente e incoerente possuem as características típicas da turbulência plenamente desenvolvida, a saber, espectros de potência do tipo Kolmogorov e intermitência nas pequenas escalas. Aproveita-se para ilustrar o papel crucial das estruturas coerentes no transporte de propriedades (quantidade de movimento, calor, etc.) através da copa da floresta.
+O objetivo desta seÃ§Ã£o Ã© verificar se as sÃ©ries total, coerente e incoerente possuem as caracterÃ­sticas tÃ­picas da turbulÃªncia plenamente desenvolvida, a saber, espectros de potÃªncia do tipo Kolmogorov e intermitÃªncia nas pequenas escalas. Aproveita-se para ilustrar o papel crucial das estruturas coerentes no transporte de propriedades (quantidade de movimento, calor, etc.) atravÃ©s da copa da floresta.
 
-\subsection{Espectros de potência}
+\subsection{Espectros de potÃªncia}
 
-Os espectros de potência das séries temporais total, coerente e incoerente foram estimados usando FFT (ver Figura~\ref{figespectrotS0681200}). Os resultados mostram que as inclinações desses espectros no SI (em escala $\log$-$\log$) coincidem com a lei dos $-5/3$ de Kolmogorov. Esta observação demonstra que o fenômeno da turbulência está presente na série total, o que era esperado, mas também nas séries coerente e incoerente. Em especial, pode-se afirmar que a série incoerente está mais relacionada à turbulência de pequena escala do que a algum tipo de ruído. Este comportamento é consistente com outros estudos que utilizaram a mesma abordagem de separação de um fluxo turbulento em uma parte coerente e outra incoerente~\cite{farge/01}.
+Os espectros de potÃªncia das sÃ©ries temporais total, coerente e incoerente foram estimados usando FFT (ver Figura~\ref{figespectrotS0681200}). Os resultados mostram que as inclinaÃ§Ãµes desses espectros no SI (em escala $\log$-$\log$) coincidem com a lei dos $-5/3$ de Kolmogorov. Esta observaÃ§Ã£o demonstra que o fenÃ´meno da turbulÃªncia estÃ¡ presente na sÃ©rie total, o que era esperado, mas tambÃ©m nas sÃ©ries coerente e incoerente. Em especial, pode-se afirmar que a sÃ©rie incoerente estÃ¡ mais relacionada Ã  turbulÃªncia de pequena escala do que a algum tipo de ruÃ­do. Este comportamento Ã© consistente com outros estudos que utilizaram a mesma abordagem de separaÃ§Ã£o de um fluxo turbulento em uma parte coerente e outra incoerente~\cite{farge/01}.
 
 \begin{figure}[ht]
-	\caption{Espectros de potência das séries temporais total, coerente e incoerente.}
-	\vspace{0mm}	% acrescentar o espaçamento vertical apropriado entre o título e a borda superior da figura
+	\caption{Espectros de potÃªncia das sÃ©ries temporais total, coerente e incoerente.}
+	\vspace{0mm}	% acrescentar o espaÃ§amento vertical apropriado entre o tÃ­tulo e a borda superior da figura
 	\begin{center}
 		\resizebox{15cm}{!}{\includegraphics{docs/figs/tS0681200espectro.png}\includegraphics{docs/figs/ctS0681200espectro.png}}\\ \resizebox{7.5cm}{!}{\includegraphics{docs/figs/itS0681200espectro.png}}		
 	\end{center}
-	\vspace{2mm}	% acrescentar o espaçamento vertical apropriado entre a borda inferior da figura e a legenda ou a fonte quando não há legenda (o valor pode ser negativo para subir)
-	\legenda{Em azul espectro de potência da série temporal total, em vermelho da série temporal coerente e em rosa da série temporal incoerente. Observe que as inclinações de todos os espectros no SI (em escala $\log$-$\log$) coincidem com a lei dos $-5/3$ de Kolmogorov. O espectro de potência associado a série incoerente possui uma inclinação adicional de $2.7$, que pode estar associada a um artefato numérico.}	% legenda - para deixar sem legenda usar comando \legenda{} (nunca deve-se comentar o comando \legenda)
+	\vspace{2mm}	% acrescentar o espaÃ§amento vertical apropriado entre a borda inferior da figura e a legenda ou a fonte quando nÃ£o hÃ¡ legenda (o valor pode ser negativo para subir)
+	\legenda{Em azul espectro de potÃªncia da sÃ©rie temporal total, em vermelho da sÃ©rie temporal coerente e em rosa da sÃ©rie temporal incoerente. Observe que as inclinaÃ§Ãµes de todos os espectros no SI (em escala $\log$-$\log$) coincidem com a lei dos $-5/3$ de Kolmogorov. O espectro de potÃªncia associado a sÃ©rie incoerente possui uma inclinaÃ§Ã£o adicional de $2.7$, que pode estar associada a um artefato numÃ©rico.}	% legenda - para deixar sem legenda usar comando \legenda{} (nunca deve-se comentar o comando \legenda)
 	\label{figespectrotS0681200}
-	\FONTE{Produção do autor.}	% fonte consultada (elemento obrigatório, mesmo que seja produção do próprio autor)
+	\FONTE{ProduÃ§Ã£o do autor.}	% fonte consultada (elemento obrigatÃ³rio, mesmo que seja produÃ§Ã£o do prÃ³prio autor)
 \end{figure}
 
-\subsection{Intermitência}
+\subsection{IntermitÃªncia}
 
-A detecção do fenômeno intermitente foi feita a partir das diferenças das séries de temperatura total, coerente e incoerente (medida às $12$ horas no nível superior) em várias escalas $r_{i}$ com $i=1,\ldots4$. Desta forma, as FDP's foram obtidas com base na distribuição estatística das diferenças $\Delta T_{r_{i}}=T(x+\Delta r_{i})-T(x)$. Os valores assumidos por $\Delta r_{i}$ são dados respectivamente por $1,10,100$ e $1000$, que para dados amostrados à $60$ Hz correspondem a $\Delta T_{t_{i}}$ de aproximadamente $0.0167,0.1667,1.6667$ e $16.6667$ segundos, respectivamente.
+A detecÃ§Ã£o do fenÃ´meno intermitente foi feita a partir das diferenÃ§as das sÃ©ries de temperatura total, coerente e incoerente (medida Ã s $12$ horas no nÃ­vel superior) em vÃ¡rias escalas $r_{i}$ com $i=1,\ldots4$. Desta forma, as FDP's foram obtidas com base na distribuiÃ§Ã£o estatÃ­stica das diferenÃ§as $\Delta T_{r_{i}}=T(x+\Delta r_{i})-T(x)$. Os valores assumidos por $\Delta r_{i}$ sÃ£o dados respectivamente por $1,10,100$ e $1000$, que para dados amostrados Ã  $60$ Hz correspondem a $\Delta T_{t_{i}}$ de aproximadamente $0.0167,0.1667,1.6667$ e $16.6667$ segundos, respectivamente.

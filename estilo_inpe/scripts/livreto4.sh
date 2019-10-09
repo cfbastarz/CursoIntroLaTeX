@@ -6,10 +6,10 @@
 #__INFO__MARK_BEGIN__
 ################################################################################
 #
-#   Nenhuma parte deste script pode ser copiada ou utilizada sem a prévia 
-#   aceitação do autor.
+#   Nenhuma parte deste script pode ser copiada ou utilizada sem a prÃ©via 
+#   aceitaÃ§Ã£o do autor.
 #   
-#   Data da última alteração: 31/05/2005.
+#   Data da Ãºltima alteraÃ§Ã£o: 31/05/2005.
 #
 #   Alan Wilter SID-INPE/MCT - alan@sid.inpe.br
 #

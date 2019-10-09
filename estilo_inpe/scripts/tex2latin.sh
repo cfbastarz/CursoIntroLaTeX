@@ -18,12 +18,12 @@
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 #
 # Elgio Schlemer  02/Out/2001
-# Exemplo:   "\'a"  ->  "б"
+# Exemplo:   "\'a"  ->  "ГЎ"
 #
 # Nao remove as { } opcionais.
-#             Exemplo:  "{\'a}" ->  "{б}"
+#             Exemplo:  "{\'a}" ->  "{ГЎ}"
 #
-# Forma de execuзгo:
+# Forma de execuГ§ГЈo:
 # cat arquivo.tex | tex2latin
 # Joga na saida padrao o arquivo convertido
 #
@@ -31,62 +31,62 @@
 # tex2latin arquivo.tex
 # Converte arquivo.tex e joga o resultado na saida padrao.
 #
-# ATENCAO: JAMAIS FAЗA:
+# ATENCAO: JAMAIS FAГ‡A:
 #           tex2latin arquivo.tex > arquivo.tex
 #           cat arquivo.tex | tex2latin > arquivo.tex
 # Isto farah voce PERDER o arquivo!!!
 
 # Vogais, acento agudo
-s/\\'a/б/g
-s/\\'e/й/g
-s/\\'\\i/н/g
-s/\\'o/у/g
-s/\\'u/ъ/g
+s/\\'a/ГЎ/g
+s/\\'e/Г©/g
+s/\\'\\i/Г­/g
+s/\\'o/Гі/g
+s/\\'u/Гє/g
 
-s/\\'A/Б/g
-s/\\'E/Й/g
-s/\\'I/Н/g
-s/\\'O/У/g
-s/\\'U/Ъ/g
+s/\\'A/ГЃ/g
+s/\\'E/Г‰/g
+s/\\'I/ГЌ/g
+s/\\'O/Г“/g
+s/\\'U/Гљ/g
 
 # Vogais, acento crase
-s/\\`a/а/g
-s/\\`e/и/g
-s/\\`i/м/g
-s/\\`o/у/g
-s/\\`u/щ/g
+s/\\`a/Г /g
+s/\\`e/ГЁ/g
+s/\\`i/Г¬/g
+s/\\`o/Гі/g
+s/\\`u/Г№/g
 
-s/\\`A/А/g
-s/\\`E/И/g
-s/\\`I/М/g
-s/\\`O/Т/g
-s/\\`U/Щ/g
+s/\\`A/ГЂ/g
+s/\\`E/Г€/g
+s/\\`I/ГЊ/g
+s/\\`O/Г’/g
+s/\\`U/Г™/g
 
 # Vogais, til
-s/\\~a/г/g
-s/\\~o/х/g
-s/\\~n/с/g
+s/\\~a/ГЈ/g
+s/\\~o/Гµ/g
+s/\\~n/Г±/g
 
-s/\\~A/Г/g
-s/\\~O/Х/g
-s/\\~N/С/g
+s/\\~A/Гѓ/g
+s/\\~O/Г•/g
+s/\\~N/Г‘/g
 
 # Cedilha
-s/\\c c/з/g
-s/\\c{c}/з/g
-s/\\c C/З/g
-s/\\c{C}/З/g
+s/\\c c/Г§/g
+s/\\c{c}/Г§/g
+s/\\c C/Г‡/g
+s/\\c{C}/Г‡/g
 
 # Vogais, acento cincunflexo
-s/\\^a/в/g
-s/\\^e/к/g
-s/\\^i/о/g
-s/\\^o/ф/g
-s/\\^u/ы/g
+s/\\^a/Гў/g
+s/\\^e/ГЄ/g
+s/\\^i/Г®/g
+s/\\^o/Гґ/g
+s/\\^u/Г»/g
 
-s/\\^A/В/g
-s/\\^E/К/g
-s/\\^I/О/g
-s/\\^O/Ф/g
-s/\\^U/Ы/g
+s/\\^A/Г‚/g
+s/\\^E/ГЉ/g
+s/\\^I/ГЋ/g
+s/\\^O/Г”/g
+s/\\^U/Г›/g
 

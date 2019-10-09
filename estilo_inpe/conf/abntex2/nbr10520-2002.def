@@ -11,7 +11,7 @@
 %\CVSExtract$Id: nbr10520-2002.def,v 1.2 2003/10/13 09:42:13 gweber Exp $
 %\CVSFile{nbr}{\space Definicoes para abntcite (NBR10520:2002)}
 
-%infelizmente a norma removeu as opções [] e () para citações
+%infelizmente a norma removeu as opÃ§Ãµes [] e () para citaÃ§Ãµes
 %em superscrito
 \ifx\AbntCitetype\AbntCitetypeALF
 \else

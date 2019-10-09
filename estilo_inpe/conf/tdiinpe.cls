@@ -1,15 +1,15 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % tdiinpe.cls
-% Classe INPE para teses e dissertacoes e outras publicaÁıes
+% Classe INPE para teses e dissertacoes e outras publica√ß√µes
 %
 %*     Instituto Nacional de Pesquisas Espaciais (INPE)                         *% 
-%*     Copyright 2002-2015 © MCTI/INPE                                          *%
+%*     Copyright 2002-2015 ¬© MCTI/INPE                                          *%
 %*     Ao reusar o tdiinpe.cls por favor,                                       *%
 %*     - mencione que o original foi desenvolvido pelo MCTI/INPE                *%
-%*       e È acessÌvel em: http://urlib.net/J8LNKAN8PW/32Q543H                  *%
-%*     - indique de uma maneira razo·vel quais foram as alteraÁıes efetuadas    *%
+%*       e √© acess√≠vel em: http://urlib.net/J8LNKAN8PW/32Q543H                  *%
+%*     - indique de uma maneira razo√°vel quais foram as altera√ß√µes efetuadas    *%
 %*     - renomeie este arquivo ou o deposite na plataforma URLib                *%
-%*       para ele receber uma identificaÁ„o prÛpria como a de cima              *%
+%*       para ele receber uma identifica√ß√£o pr√≥pria como a de cima              *%
 %
 % Desenvolvedores passados:
 % Bruno A.F. Roth (roth@lit.inpe.br) [10/04/2002] +55(12)3945 6312
@@ -57,102 +57,102 @@
 %\ProvidesClass{tdiinpe}[2018/09/21 v1.35]
 \ProvidesClass{tdiinpe}[2019/04/02 v1.36]
 
-% modificaÁoes (mais acima, mais atual) - ˙ltima modificaÁ„o: 02 de abril de 2019
-% - Troca de: COMISS√O DO CONSELHO DE EDITORA«√O E PRESERVA«√ODA PRODU«√O INTELECTUAL DO INPE (DE/DIR-544, por CONSELHO DE EDITORA«√O E PRESERVA«√O DA PRODU«√OINTELECTUAL DO INPE - CEPPII (PORTARIA No176/2018/SEI-INPE) (AndrÈ Fernandes 2019-04-02)
-% - inclus„o do commando \financiamento para informar abaixo da ficha catalogr·fica sobre a(s) fonte(s) financiador(es) (banon 2018-09-21)
+% modifica√ßoes (mais acima, mais atual) - √∫ltima modifica√ß√£o: 02 de abril de 2019
+% - Troca de: COMISS√ÉO DO CONSELHO DE EDITORA√á√ÉO E PRESERVA√á√ÉODA PRODU√á√ÉO INTELECTUAL DO INPE (DE/DIR-544, por CONSELHO DE EDITORA√á√ÉO E PRESERVA√á√ÉO DA PRODU√á√ÉOINTELECTUAL DO INPE - CEPPII (PORTARIA No176/2018/SEI-INPE) (Andr√© Fernandes 2019-04-02)
+% - inclus√£o do commando \financiamento para informar abaixo da ficha catalogr√°fica sobre a(s) fonte(s) financiador(es) (banon 2018-09-21)
 %   o comando \financiamento{xxx} deve ser colocado depois de \begin{documment} e antes de \maketitle
-%   onde xxx È o texto referente ‡(s) fonte(s) financiador(es).
-% - modificaÁ„o do cÛdigo do comando \FONTE para que as fontes curtas fiquem centralizadas (gjfb - banon 2016-07-24)
-% - introduÁ„o do campo \autorFICHAC para ter os nomes dos autores separados por (;) na ficha catalogr·fica (ex: Nome Completo do Autor1; Nome Completo do Autor2). Campo opcional (se n„o usado prevalece \author - observaÁ„o: se h· mais de um autor, o campo \author deve ser preenchido assim: Nome Completo do Autor1\\Nome Completo do Autor2). A possibilidade de ausÍncia do campo \autorFICHAC È pr·tico quando a obra tem apenas um autor. Nesse caso basta preencher apenas o campo \author. (banon 2015-11-16)
-% - introduÁ„o da opÁ„o de copyright: GPLv3 (banon 2015-06-10)
-% - inclus„o da palavra COMISS√O/COMMISSION no comando \ConselhoDeEditoracao (clayton 2015-01-29)
-% - inclus„o do commando \marcaRegistrada para informar abaixo da ficha catalogr·fica sobre marca registrada.
+%   onde xxx √© o texto referente √†(s) fonte(s) financiador(es).
+% - modifica√ß√£o do c√≥digo do comando \FONTE para que as fontes curtas fiquem centralizadas (gjfb - banon 2016-07-24)
+% - introdu√ß√£o do campo \autorFICHAC para ter os nomes dos autores separados por (;) na ficha catalogr√°fica (ex: Nome Completo do Autor1; Nome Completo do Autor2). Campo opcional (se n√£o usado prevalece \author - observa√ß√£o: se h√° mais de um autor, o campo \author deve ser preenchido assim: Nome Completo do Autor1\\Nome Completo do Autor2). A possibilidade de aus√™ncia do campo \autorFICHAC √© pr√°tico quando a obra tem apenas um autor. Nesse caso basta preencher apenas o campo \author. (banon 2015-11-16)
+% - introdu√ß√£o da op√ß√£o de copyright: GPLv3 (banon 2015-06-10)
+% - inclus√£o da palavra COMISS√ÉO/COMMISSION no comando \ConselhoDeEditoracao (clayton 2015-01-29)
+% - inclus√£o do commando \marcaRegistrada para informar abaixo da ficha catalogr√°fica sobre marca registrada.
 %   o comando \marcaRegistrada{xxx} deve ser colocado depois de \begin{documment} e antes de \maketitle
-%   onde xxx È o texto referente ‡ marca registrada.
-% - alteraÁ„o de \newcommand{\FONTE} para assegurar o alinhamento do fonte com a legenda (banon 2014-07-23)
-%   para figuras o posicionamento de tÌtulo, legenda e fonte segue as trÍs regras abaixo: 
+%   onde xxx √© o texto referente √† marca registrada.
+% - altera√ß√£o de \newcommand{\FONTE} para assegurar o alinhamento do fonte com a legenda (banon 2014-07-23)
+%   para figuras o posicionamento de t√≠tulo, legenda e fonte segue as tr√™s regras abaixo: 
 %   1. As legendas curtas ficam centralizadas - As legendas longas ficam justificadas.
-%   2. O fonte segue a mesma regra quando n„o tem legenda. Quando tem legenda, ele fica alinhado com a legenda.
-%   3. A segunda linha de um fonte longo e as demais linhas (se houver) ficam alinhadas apÛs a palavra Fonte:.
-% - introduÁ„o das opÁıes de copyright: CCBY, CCBYSA, CCBYND e CCBYNCND (banon 2014-06-08)
-% - correÁ„o do comando \keywords - agora as palavras-chave em InglÍs (no Abstract) aparecem onde apareciam as palavras-chave em PortuguÍs (banon 2014-03-20)
-% - criaÁ„o do comando \legenda para uso nas figuras (banon 2014-01-17)
-% - adequaÁ„o ‡ norma ABNT 14724-2011 na quest„o das ilustraÁıes - agora o tÌtulo da figura fica acima da figura (banon 2014-01-17)
-% - reposicionamento do comando \normalsize para retornar para normalsize depois da folha da ficha catalogr·fica (banon 2013-12-24)
-% - inclus„o do comando \nomepagina para a traduÁ„o autom·tica P·g. / Page nas listas de figuras e tabelas, e no sum·rio (banon 2013-10-29)
-% - exibiÁ„o do copyright (termos de uso) quando @includeFC È false - ˙til com usa-se a opÁ„o PublicacaoArtigoOuRelatorio
-%   e acerto no posicionamento do cutter da ficha catalogr·fica (banon 2013-10-07)
-% - introduÁ„o do comando \usepackage{lmodern} para permitir o copiar/colar com acentuaÁ„o no pdf (sugest„o encaminhada por Jo„o Victor Cal Garcia (c4ll1b4n@gmail.com) e Cesar Strauss (cstrauss@cea.inpe.br) - implementada por banon em 2013-09-02)
-% - remoÁ„o do comando \raggedright nas definiÁıes do comando \licenca para evitar a perda
-%   da justificaÁ„o no resto do texto (banon 2013-05-29)
-% - introduÁ„o das opÁıes de copyright: INPECopyright, CCBYNCSA e CCBYNC (banon 2013-05-22)
-% - remoÁ„o do comando \hspace{2mm} em \titlerule*[0.82pc]{.}\hspace{2mm}\contentspage}
-%   com isto o n˙mero das p·ginas, no sum·rio, dos ApÍndices e Anexos com tÌtulos de mais
-%   de uma linha se mantÍm alinhado a direita
-% - adiÁ„o de pacotes/opÁıes para inclus„o de figuras tanto em png, pdf, jpg, ps, eps, etc...
-%   seguindo recomendaÁ„o do Fabio Dall Cortivo (banon 2012-10-19)
-% - adiÁ„o do pacote \RequirePackage{float}	seguindo recomendaÁ„o do Fabio Dall Cortivo (banon 2012-10-19)
-% - redefiniÁ„o das margens superior e inferior (passando de 3.5cm para 3cm) (banon 2011-12-06)
-% - recolocaÁ„o da @descriccao na segunda metade da mancha conforme norma ABNT de 2011 (banon 2011-12-06)
-% - inclus„o do comando \pagenumbering{roman} no inÌcio do comando \AtBeginDocument{}
-%   de forma a usar estilo romano desde a capa porque MakeIndex supıe que a numeraÁ„o romana precede ar·bica*
-%   (n„o deve comeÁar com ar·bica se continuar com romana; neste caso o MakeIndex se perde nas referÍncias ‡s
-%   p·ginas ar·bicas de valores inferiores ao n˙mero m·ximo de p·ginas romanas)
+%   2. O fonte segue a mesma regra quando n√£o tem legenda. Quando tem legenda, ele fica alinhado com a legenda.
+%   3. A segunda linha de um fonte longo e as demais linhas (se houver) ficam alinhadas ap√≥s a palavra Fonte:.
+% - introdu√ß√£o das op√ß√µes de copyright: CCBY, CCBYSA, CCBYND e CCBYNCND (banon 2014-06-08)
+% - corre√ß√£o do comando \keywords - agora as palavras-chave em Ingl√™s (no Abstract) aparecem onde apareciam as palavras-chave em Portugu√™s (banon 2014-03-20)
+% - cria√ß√£o do comando \legenda para uso nas figuras (banon 2014-01-17)
+% - adequa√ß√£o √† norma ABNT 14724-2011 na quest√£o das ilustra√ß√µes - agora o t√≠tulo da figura fica acima da figura (banon 2014-01-17)
+% - reposicionamento do comando \normalsize para retornar para normalsize depois da folha da ficha catalogr√°fica (banon 2013-12-24)
+% - inclus√£o do comando \nomepagina para a tradu√ß√£o autom√°tica P√°g. / Page nas listas de figuras e tabelas, e no sum√°rio (banon 2013-10-29)
+% - exibi√ß√£o do copyright (termos de uso) quando @includeFC √© false - √∫til com usa-se a op√ß√£o PublicacaoArtigoOuRelatorio
+%   e acerto no posicionamento do cutter da ficha catalogr√°fica (banon 2013-10-07)
+% - introdu√ß√£o do comando \usepackage{lmodern} para permitir o copiar/colar com acentua√ß√£o no pdf (sugest√£o encaminhada por Jo√£o Victor Cal Garcia (c4ll1b4n@gmail.com) e Cesar Strauss (cstrauss@cea.inpe.br) - implementada por banon em 2013-09-02)
+% - remo√ß√£o do comando \raggedright nas defini√ß√µes do comando \licenca para evitar a perda
+%   da justifica√ß√£o no resto do texto (banon 2013-05-29)
+% - introdu√ß√£o das op√ß√µes de copyright: INPECopyright, CCBYNCSA e CCBYNC (banon 2013-05-22)
+% - remo√ß√£o do comando \hspace{2mm} em \titlerule*[0.82pc]{.}\hspace{2mm}\contentspage}
+%   com isto o n√∫mero das p√°ginas, no sum√°rio, dos Ap√™ndices e Anexos com t√≠tulos de mais
+%   de uma linha se mant√™m alinhado a direita
+% - adi√ß√£o de pacotes/op√ß√µes para inclus√£o de figuras tanto em png, pdf, jpg, ps, eps, etc...
+%   seguindo recomenda√ß√£o do Fabio Dall Cortivo (banon 2012-10-19)
+% - adi√ß√£o do pacote \RequirePackage{float}	seguindo recomenda√ß√£o do Fabio Dall Cortivo (banon 2012-10-19)
+% - redefini√ß√£o das margens superior e inferior (passando de 3.5cm para 3cm) (banon 2011-12-06)
+% - recoloca√ß√£o da @descriccao na segunda metade da mancha conforme norma ABNT de 2011 (banon 2011-12-06)
+% - inclus√£o do comando \pagenumbering{roman} no in√≠cio do comando \AtBeginDocument{}
+%   de forma a usar estilo romano desde a capa porque MakeIndex sup√µe que a numera√ß√£o romana precede ar√°bica*
+%   (n√£o deve come√ßar com ar√°bica se continuar com romana; neste caso o MakeIndex se perde nas refer√™ncias √†s
+%   p√°ginas ar√°bicas de valores inferiores ao n√∫mero m√°ximo de p√°ginas romanas)
 %   * ver http://www.tex.ac.uk/tex-archive/indexing/makeindex/doc/makeindex.pdf p.6 (banon 2011-10-09)
 % - \titlerule*[1pc]{.}\contentspage} ficou \titlerule*[0.82pc]{.}\hspace{2mm}\contentspage}
-%   com isto o pontilhado no apÍndice e no anexo ficou mais parecido com o resto do sum·rio (banon 2011-03-17)
-% - opÁ„o a4paper foi removido das opÁıes do pacote hyperref por n„o ser mais usada por este pacote (banon 2010-10-07)
-% - introduÁ„o do comando \scriptsize na frente de \@repositorio-\@tipoDaPublicacao  na ficha catalogr·fica
-%   para diminuir o comprimento da cadÈia de caracteres de forma a couber numa sÛ linha (banon 2010-08-31)
-% - introduÁ„o da opc„o LogoINPE, o uso dessa opÁ„o permite que o logo do INPE seja usado no lugar do logo do Governo (banon 2010-06-21)
-% - introduÁ„o na capa e folha de rosto, do nome de repositÛrio como n˙mero de serie (banon 2010-05-01)
-% - criaÁ„o do comando \tipoDaPublicacao
-% - remoÁ„o do comando \serieinpe
-% - modificaÁ„o do valor de \ConselhoDeEditoracao (banon 2010-05-01)
-% - modificaÁ„o do valor de \avisoDeOriginal (banon 2010-05-01)
+%   com isto o pontilhado no ap√™ndice e no anexo ficou mais parecido com o resto do sum√°rio (banon 2011-03-17)
+% - op√ß√£o a4paper foi removido das op√ß√µes do pacote hyperref por n√£o ser mais usada por este pacote (banon 2010-10-07)
+% - introdu√ß√£o do comando \scriptsize na frente de \@repositorio-\@tipoDaPublicacao  na ficha catalogr√°fica
+%   para diminuir o comprimento da cad√©ia de caracteres de forma a couber numa s√≥ linha (banon 2010-08-31)
+% - introdu√ß√£o da opc√£o LogoINPE, o uso dessa op√ß√£o permite que o logo do INPE seja usado no lugar do logo do Governo (banon 2010-06-21)
+% - introdu√ß√£o na capa e folha de rosto, do nome de reposit√≥rio como n√∫mero de serie (banon 2010-05-01)
+% - cria√ß√£o do comando \tipoDaPublicacao
+% - remo√ß√£o do comando \serieinpe
+% - modifica√ß√£o do valor de \ConselhoDeEditoracao (banon 2010-05-01)
+% - modifica√ß√£o do valor de \avisoDeOriginal (banon 2010-05-01)
 % - troca do valor FIGURE por Figure em \figurename (banon 2010-04-14)
 % - troca do valor TABLE por Table em \tablename (banon 2010-04-14)
 % - troca do nome de marcador de COAT por COVER (banon 2010-02-03)
-% - inclus„o da opÁ„o filecolor=bblue na chamada do pacote hyperref (banon 2009-11-10)
-% - inclus„o dos pacotes titlesec e titletoc para retirar o n˙mero (letra) dos ApÍndices e Anexos (ainda permanece nos book marks)
+% - inclus√£o da op√ß√£o filecolor=bblue na chamada do pacote hyperref (banon 2009-11-10)
+% - inclus√£o dos pacotes titlesec e titletoc para retirar o n√∫mero (letra) dos Ap√™ndices e Anexos (ainda permanece nos book marks)
 %	usando os comandos \titleformat, \titlespacing e \titlecontents nos comandos \inicioApendice e \inicioAnexo
-% - modificaÁ„o do \FONTE com inclus„o de comando \vspace para fazer subir o Fonte  (banon 2009-10-07)
-% - modificaÁ„o do \includeSumario com inclus„o do comando \label{numeroDeP·ginasDoPretexto}
-%   para fazer referÍncia na ficha catalogr·fica n˙mero de p·ginas do pretexto (banon 2009-09-27)
-% - modificaÁ„o do \maketitle para usar estilo romano na paginaÁ„o do pretexto,
-%   do \pretexto para colocar paginaÁ„o no pretexto,
-%   do \inicioIntroducao para comeÁar a contar em ar·bico na introduÁ„o,
-%   do \abreviaturasesiglas para retirar a lista de abreviaturas e siglas do sum·rio,
-%   do \simbolos para retirar a lista de sÌmbolos do sum·rio,
-%   do \cftafterloftitle para retirar List of Figures do sum·rio,
-%   do \cftafterlottitle para retirar List of Tables do sum·rio (banon 2009-09-22)
-% - correÁ„o tamanho do fonte de footnotesize para normalsize, para o corpo do documento (ver linha 855) (Banon)
-% - inclus„o na ficha catalogr·fica do orientador e colocaÁ„o do cutter na frente do tÌtulo (Banon e Viveca)
-% - inclus„o da vers„o em InglÍs do verso da capa (Banon e Marinalva)
-% - inserÁ„o do pacote textcase para poder manter algum trecho do tÌtulo em min˙sculo usando \NoCaseChange{}
-% - novo fonte para a TÌtulo/Legenda de figuras - ver opÁıes do pacote caption2 (Banon)
-% - nova ficha catalogr·fica para teses e dissertaÁıes (Banon)
-% - nova capa e nova ficha catalogr·fica + aviso de direitos autorais (Banon)
-% - adoÁ„o do label referbiblio para citar a parte ReferÍncias Bibliogr·ficas
-% - inclus„o do pacote amsthm
-% - atualizaÁ„o do script execpub.sh
-% - inclus„o dos scripts latin2tex.sh e tex2latin.sh
-% - inclus„o do pacote subfigure
-% - inclus„o da funÁ„o watermark para identificaÁ„o de documentos 
-% - espaÁamento no itemize corrigido
-% - correÁao em \anexo, para ficar independente de haver ou n„o apÍndice
+% - modifica√ß√£o do \FONTE com inclus√£o de comando \vspace para fazer subir o Fonte  (banon 2009-10-07)
+% - modifica√ß√£o do \includeSumario com inclus√£o do comando \label{numeroDeP√°ginasDoPretexto}
+%   para fazer refer√™ncia na ficha catalogr√°fica n√∫mero de p√°ginas do pretexto (banon 2009-09-27)
+% - modifica√ß√£o do \maketitle para usar estilo romano na pagina√ß√£o do pretexto,
+%   do \pretexto para colocar pagina√ß√£o no pretexto,
+%   do \inicioIntroducao para come√ßar a contar em ar√°bico na introdu√ß√£o,
+%   do \abreviaturasesiglas para retirar a lista de abreviaturas e siglas do sum√°rio,
+%   do \simbolos para retirar a lista de s√≠mbolos do sum√°rio,
+%   do \cftafterloftitle para retirar List of Figures do sum√°rio,
+%   do \cftafterlottitle para retirar List of Tables do sum√°rio (banon 2009-09-22)
+% - corre√ß√£o tamanho do fonte de footnotesize para normalsize, para o corpo do documento (ver linha 855) (Banon)
+% - inclus√£o na ficha catalogr√°fica do orientador e coloca√ß√£o do cutter na frente do t√≠tulo (Banon e Viveca)
+% - inclus√£o da vers√£o em Ingl√™s do verso da capa (Banon e Marinalva)
+% - inser√ß√£o do pacote textcase para poder manter algum trecho do t√≠tulo em min√∫sculo usando \NoCaseChange{}
+% - novo fonte para a T√≠tulo/Legenda de figuras - ver op√ß√µes do pacote caption2 (Banon)
+% - nova ficha catalogr√°fica para teses e disserta√ß√µes (Banon)
+% - nova capa e nova ficha catalogr√°fica + aviso de direitos autorais (Banon)
+% - ado√ß√£o do label referbiblio para citar a parte Refer√™ncias Bibliogr√°ficas
+% - inclus√£o do pacote amsthm
+% - atualiza√ß√£o do script execpub.sh
+% - inclus√£o dos scripts latin2tex.sh e tex2latin.sh
+% - inclus√£o do pacote subfigure
+% - inclus√£o da fun√ß√£o watermark para identifica√ß√£o de documentos 
+% - espa√ßamento no itemize corrigido
+% - corre√ßao em \anexo, para ficar independente de haver ou n√£o ap√™ndice
 % - PublicacaoProposta omite serieinpe
-% - possibilidade de gerar docs em ps, dvi e html, alÈm do PDF. (beta)
-% - definido environment epicap para fazer epÌgrafes em capÌtulos
-% - opcao de citacao: CitacaoNumerica, padr„o È tipo autor-data
-% - inserido os macros da ABNTeX para citaÁ„o e referÍncias segundo a ABNT     
-% - inserÁ„o de facilidades para longtables (em landscape inclusive)
-% - modificaÁ„o no cÛdigo da funÁ„o \FONTE
+% - possibilidade de gerar docs em ps, dvi e html, al√©m do PDF. (beta)
+% - definido environment epicap para fazer ep√≠grafes em cap√≠tulos
+% - opcao de citacao: CitacaoNumerica, padr√£o √© tipo autor-data
+% - inserido os macros da ABNTeX para cita√ß√£o e refer√™ncias segundo a ABNT     
+% - inser√ß√£o de facilidades para longtables (em landscape inclusive)
+% - modifica√ß√£o no c√≥digo da fun√ß√£o \FONTE
 % - tipos de doc: PublicacaoDissOuTese, PublicacaoArtigoOuRelatorio, PublicacaoProposta, PublicacaoLivro
 % - criado ambiente citacao (= quote modificado)
 % - sai citacao, entra epigrafe
 % - azul mais escuro para os links
-% - numeraÁ„o de p·ginas totais autom·tica na ficha catalogr·fica
+% - numera√ß√£o de p√°ginas totais autom√°tica na ficha catalogr√°fica
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%% inicio da implementacao para dvi, html e pdf
@@ -181,11 +181,11 @@
 \RequirePackage{titlesec}% needed for \titleformat and \titlespacing - acrescentado por gjfb em 2009-10-11
 \RequirePackage{titletoc}% needed for \titlecontents - acrescentado por gjfb em 2009-10-11
 
-\RequirePackage[overload]{textcase} %% para poder deixar algum texto em min˙scula no tÌtulo usando \NoCaseChange{}
+\RequirePackage[overload]{textcase} %% para poder deixar algum texto em min√∫scula no t√≠tulo usando \NoCaseChange{}
 \RequirePackage{ifthen} %% essencial %% operador de condicionais
-\RequirePackage{calc} %% essencial %% operaÁıes matem·ticas
+\RequirePackage{calc} %% essencial %% opera√ß√µes matem√°ticas
 
-%\RequirePackage{graphicx} %% essencial %% para inserir figuras - comentado por gjfb em 2012-10-19 para tornar tdiinpe mais geral usando o cÛdigo logo abaixo
+%\RequirePackage{graphicx} %% essencial %% para inserir figuras - comentado por gjfb em 2012-10-19 para tornar tdiinpe mais geral usando o c√≥digo logo abaixo
 \ifpdf
   \RequirePackage[pdftex]{graphicx} %% essencial %% para inserir figuras
   \RequirePackage[pdftex]{graphics}
@@ -204,32 +204,32 @@
 \RequirePackage{color} %% essencial %% aplicar cores no texto
 \RequirePackage[latin1]{inputenc} %% essencial
 
-\RequirePackage{float}	%% acrescentado por gjfb em 2012-10-19 seguindo recomendaÁ„o do Fabio Dall Cortivo
+\RequirePackage{float}	%% acrescentado por gjfb em 2012-10-19 seguindo recomenda√ß√£o do Fabio Dall Cortivo
 
-\RequirePackage{babel} %% essencial %% docs em v·rios idiomas
+\RequirePackage{babel} %% essencial %% docs em v√°rios idiomas
 
-\RequirePackage{hyphenat} %% essencial %% hifenizaÁ„o
+\RequirePackage{hyphenat} %% essencial %% hifeniza√ß√£o
 \RequirePackage{array} %% essencial %% variante para arranjos e tabelas 
-\RequirePackage{setspace} %% essencial %% define espaÁos entre linhas no texto
+\RequirePackage{setspace} %% essencial %% define espa√ßos entre linhas no texto
 \RequirePackage{bigdelim} %% essencial %% para uso de tabelas
 \RequirePackage{multirow} %% essencial %% para uso de tabelas
 \RequirePackage{supertabular} %% essencial %% para uso de tabelas
 \RequirePackage{tabularx} %% essencial %% para uso de tabelas
 \RequirePackage{longtable} %% essencial %% para uso de tabelas
-\RequirePackage{lastpage} %% cuidado com o uso do endfloat %% d· o num. de p·g. total do doc.
-\RequirePackage{lscape} %% essencial %% p·gina em orientaÁ„o paisagem (landscape)
+\RequirePackage{lastpage} %% cuidado com o uso do endfloat %% d√° o num. de p√°g. total do doc.
+\RequirePackage{lscape} %% essencial %% p√°gina em orienta√ß√£o paisagem (landscape)
 \RequirePackage{rotate} %% essencial %% roda floats (figuras, tabelas)
 %% \RequirePackage[hang,sf,bf,footnotesize]{caption2} %% ABNT %% essencial
-%% variaÁ„o: \RequirePackage[hang]{caption2}
+%% varia√ß√£o: \RequirePackage[hang]{caption2}
 \RequirePackage[hang,small]{caption2}
-\RequirePackage{amsmath,amssymb,amsthm} %% essencial %% para linguagem matem·tica
+\RequirePackage{amsmath,amssymb,amsthm} %% essencial %% para linguagem matem√°tica
 
 \RequirePackage{subfigure} %% essencial %% fazer subfiguras
-\RequirePackage[subfigure]{tocloft} %% faz sum·rios e listas - needed for \cftchapindent
-\RequirePackage{makeidx} %% essencial %% faz o ÕNDICE
+\RequirePackage[subfigure]{tocloft} %% faz sum√°rios e listas - needed for \cftchapindent
+\RequirePackage{makeidx} %% essencial %% faz o √çNDICE
 \RequirePackage{eso-pic}
 \newif\ifcalligra
-\IfFileExists{calligra.sty} %% carrega fonte estilo caligr·fico, se houver
+\IfFileExists{calligra.sty} %% carrega fonte estilo caligr√°fico, se houver
 {\RequirePackage{calligra} \calligratrue}{\calligrafalse}
 
 %% opcoes de cores
@@ -239,11 +239,11 @@
 \definecolor{bblue}{rgb}{0,0,.4} %% tom azul mais escuro
 
 %% Ativa bibliografia explicita (abnt-verbatim-entry) no formato bibtex
-%% incompatÌvel com o backref.sty por enquanto (ou um ou outro)
+%% incompat√≠vel com o backref.sty por enquanto (ou um ou outro)
 \gdef\@ativapbr{true} %% true or false : ativa pagebackref
 \ifHTML\gdef\@ativapbr{false}\fi
 %\RequirePackage[debug,a4paper,pagebackref=\@ativapbr,breaklinks,bookmarksopen=true,colorlinks=true,linkcolor=bblue,citecolor=bblue,urlcolor=bblue,filecolor=bblue,bookmarksnumbered=true,hyperindex=true,verbose=true]{hyperref} %% essential %% gera pdf/dvi com links
-\RequirePackage[debug,pagebackref=\@ativapbr,breaklinks,bookmarksopen=true,colorlinks=true,linkcolor=bblue,citecolor=bblue,urlcolor=bblue,filecolor=bblue,bookmarksnumbered=true,hyperindex=true,verbose=true]{hyperref} %% essential %% gera pdf/dvi com links	% opÁ„o a4paper retirada em 2010-10-07 por gjfb por n„o ser mais usada pelo pacote hyperref
+\RequirePackage[debug,pagebackref=\@ativapbr,breaklinks,bookmarksopen=true,colorlinks=true,linkcolor=bblue,citecolor=bblue,urlcolor=bblue,filecolor=bblue,bookmarksnumbered=true,hyperindex=true,verbose=true]{hyperref} %% essential %% gera pdf/dvi com links	% op√ß√£o a4paper retirada em 2010-10-07 por gjfb por n√£o ser mais usada pelo pacote hyperref
 
 \ifpdf
   \RequirePackage{ae} %% essencial %% fontes para pdf
@@ -251,7 +251,7 @@
   \RequirePackage[T1]{fontenc}
 \fi
 
-\usepackage{lmodern}	% permite o copiar/colar com acentuaÁ„o a partir do pdf
+\usepackage{lmodern}	% permite o copiar/colar com acentua√ß√£o a partir do pdf
 
 \DeclareOption*{} %% para tirar warnings de options passadas pela classe tdiinpe para report
 
@@ -268,7 +268,7 @@
 	\def\@urlcolor{black}
 }
 
-%%% default for this documentclass = Tese ou DissertaÁ„o
+%%% default for this documentclass = Tese ou Disserta√ß√£o
 
 \gdef\@docSemFormatacaoCapitulo{true}
 \gdef\@includeFCNotasOrientadorTD{true}
@@ -320,7 +320,7 @@
 	\gdef\@includeFC{true}
 	\gdef\@includeFA{false}
 	\gdef\@folhaembranco{true}
-	\gdef\@docSemFormatacaoCapitulo{false}	% com capÌtulo  
+	\gdef\@docSemFormatacaoCapitulo{false}	% com cap√≠tulo  
 }
 
 \DeclareOption{SemFormatacaoCapitulo}{%
@@ -385,9 +385,9 @@
 
 \ProcessOptions
 
-%%% Pacote da ABNTeX para referÍncias dentro das normas %%%
+%%% Pacote da ABNTeX para refer√™ncias dentro das normas %%%
 \gdef\@sepbr{no} %% yes ou no para pagebackref em abnt-verbatim-entry
-\@ifpackageloaded{backref}{}{\gdef\@sepbr{yes}} %% backref n„o È compatÌvel com abnt-verbatim-entry ainda
+\@ifpackageloaded{backref}{}{\gdef\@sepbr{yes}} %% backref n√£o √© compat√≠vel com abnt-verbatim-entry ainda
 \ifHTML\gdef\@sepbr{no}
 \gdef\@tipocitacao{num}
 \else\fi
@@ -413,7 +413,7 @@
 %\setlength{\textheight}{24cm}
 %\setlength{\textwidth}{16cm}
 
-%%% usa o package geometry para definir as dimensıes do documento
+%%% usa o package geometry para definir as dimens√µes do documento
 %\RequirePackage[a4paper,left=3.0cm,right=3.0cm,%
 %top=3.5cm,bottom=3.5cm]{geometry}	% comentado por gjfb em 2011-12-06
 
@@ -439,8 +439,8 @@ top=3cm,bottom=3cm]{geometry}	% acrescentado por gjfb em 2011-12-06
 \onehalfspacing
 \AtBeginDocument{\setlength{\parskip}{\parsinpe}}
 \setlength{\parindent}{0pt}
-\frenchspacing %N„o pıe um espaco adicional apÛs ponto final.
-\sloppy %forÁa que todas as linhas fiquem dentro das margens.
+\frenchspacing %N√£o p√µe um espaco adicional ap√≥s ponto final.
+\sloppy %for√ßa que todas as linhas fiquem dentro das margens.
 
 %footnoterule 	
 \renewcommand{\footnoterule}{\vspace*{-3pt}%
@@ -510,41 +510,41 @@ top=3cm,bottom=3cm]{geometry}	% acrescentado por gjfb em 2011-12-06
 \newcommand{\nomeresumo}{RESUMO}%
 \newcommand{\nomekeywords}{Keywords}%
 \newcommand{\nomepalavraschave}{Palavras-chave}%
-\newcommand{\nomeepigrafe}{EPÕGRAFE}%
-\newcommand{\nomededicatoria}{DEDICAT”RIA}%
+\newcommand{\nomeepigrafe}{EP√çGRAFE}%
+\newcommand{\nomededicatoria}{DEDICAT√ìRIA}%
 \newcommand{\nomethank}{AGRADECIMENTOS}%
-\newcommand{\nomeglossarios}{GLOSS¡RIO}
+\newcommand{\nomeglossarios}{GLOSS√ÅRIO}
 \newcommand{\nomeabreviaturasesiglas}{LISTA DE ABREVIATURAS E SIGLAS}
-\newcommand{\nomefichacatalografica}{FICHA CATALOGR¡FICA}
+\newcommand{\nomefichacatalografica}{FICHA CATALOGR√ÅFICA}
 \newcommand{\termosdeuso}{TERMOS DE USO}	% acrescentado por gjfb em 2013-10-07
-\newcommand{\nomefolhadeaprovacao}{FOLHA DE APROVA«√O}
-\renewcommand{\refname}{REFER NCIAS BIBLIOGR¡FICAS}
+\newcommand{\nomefolhadeaprovacao}{FOLHA DE APROVA√á√ÉO}
+\renewcommand{\refname}{REFER√äNCIAS BIBLIOGR√ÅFICAS}
 \renewcommand{\figurename}{Figura}% %awss
 \renewcommand{\tablename}{Tabela}% %awss
-\renewcommand{\indexname}{ÕNDICE}%
+\renewcommand{\indexname}{√çNDICE}%
 \newcommand{\nomecontracapa}{CONTRACAPA}%
-\renewcommand{\appendixname}{AP NDICE}
-\renewcommand{\contentsname}{SUM¡RIO} %awss
-\newcommand{\nomepagina}{P·g.} % gjfb
+\renewcommand{\appendixname}{AP√äNDICE}
+\renewcommand{\contentsname}{SUM√ÅRIO} %awss
+\newcommand{\nomepagina}{P√°g.} % gjfb
 \renewcommand{\listtablename}{LISTA DE TABELAS} %awss
 \renewcommand{\listfigurename}{LISTA DE FIGURAS} %awss
 \newcommand{\nomeanexo}{ANEXO}
 \newcommand\anexoautorefname{Anexo}%
-\newcommand{\listsimbname}{LISTA DE SÕMBOLOS}
+\newcommand{\listsimbname}{LISTA DE S√çMBOLOS}
 \newcommand{\FONTEname}{Fonte}
 %\newcommand{\avisoDeOriginal}{Registro do documento original:}	% comentado por gjfb em 2010-05-01
 \newcommand{\avisoDeOriginal}{URL do documento original:}	% acrescentado por gjfb em 2010-05-01
-\newcommand{\cardCaption}{Dados Internacionais de CatalogaÁ„o na PublicaÁ„o (CIP)}
+\newcommand{\cardCaption}{Dados Internacionais de Cataloga√ß√£o na Publica√ß√£o (CIP)}
 \newcommand{\PublicadoPor}{Publicado por}
-%\newcommand{\ConselhoDeEditoracao}{CONSELHO DE EDITORA«√O}	% comentado por gjfb em 2010-05-01
-%\newcommand{\ConselhoDeEditoracao}{CONSELHO DE EDITORA«√O E PRESERVA«√O DA PRODU«√O INTELECTUAL DO INPE (RE/DIR-204)}	% acrescentado por gjfb em 2010-05-01
-%\newcommand{\ConselhoDeEditoracao}{COMISS√O DO CONSELHO DE EDITORA«√O E PRESERVA«√O DA PRODU«√O INTELECTUAL DO INPE (DE/DIR-544)}	% acrescentado por cmp em 2015-01-29
-\newcommand{\ConselhoDeEditoracao}{CONSELHO DE EDITORA«√O E PRESERVA«√O DA PRODU«√O INTELECTUAL DO INPE - CEPPII (PORTARIA N∫ 176/2018/SEI-INPE)}	% acrescentado por aldf em 2019-04-02
+%\newcommand{\ConselhoDeEditoracao}{CONSELHO DE EDITORA√á√ÉO}	% comentado por gjfb em 2010-05-01
+%\newcommand{\ConselhoDeEditoracao}{CONSELHO DE EDITORA√á√ÉO E PRESERVA√á√ÉO DA PRODU√á√ÉO INTELECTUAL DO INPE (RE/DIR-204)}	% acrescentado por gjfb em 2010-05-01
+%\newcommand{\ConselhoDeEditoracao}{COMISS√ÉO DO CONSELHO DE EDITORA√á√ÉO E PRESERVA√á√ÉO DA PRODU√á√ÉO INTELECTUAL DO INPE (DE/DIR-544)}	% acrescentado por cmp em 2015-01-29
+\newcommand{\ConselhoDeEditoracao}{CONSELHO DE EDITORA√á√ÉO E PRESERVA√á√ÉO DA PRODU√á√ÉO INTELECTUAL DO INPE - CEPPII (PORTARIA N¬∫ 176/2018/SEI-INPE)}	% acrescentado por aldf em 2019-04-02
 \newcommand{\Presidente}{Presidente}
 \newcommand{\Membros}{Membros}
 \newcommand{\BibliotecaDigital}{BIBLIOTECA DIGITAL}
-\newcommand{\RevisaoNormalizacaoDocumentaria}{REVIS√O E NORMALIZA«√O DOCUMENT¡RIA}
-\newcommand{\EditoracaoEletronica}{EDITORA«√O ELETR‘NICA}
+\newcommand{\RevisaoNormalizacaoDocumentaria}{REVIS√ÉO E NORMALIZA√á√ÉO DOCUMENT√ÅRIA}
+\newcommand{\EditoracaoEletronica}{EDITORA√á√ÉO ELETR√îNICA}
 }}{
 %%% English definitions %%%
 \AtBeginDocument{
@@ -587,7 +587,7 @@ top=3cm,bottom=3cm]{geometry}	% acrescentado por gjfb em 2011-12-06
 %\newcommand{\ConselhoDeEditoracao}{EDITORIAL COMMITTEE}	% comentado por gjfb em 2010-05-01
 %\newcommand{\ConselhoDeEditoracao}{BOARD OF PUBLISHING AND PRESERVATION OF INPE INTELLECTUAL PRODUCTION (RE/DIR-204)}	% acrescentado por gjfb em 2010-05-01
 %\newcommand{\ConselhoDeEditoracao}{COMMISSION OF BOARD OF PUBLISHING AND PRESERVATION OF INPE INTELLECTUAL PRODUCTION (DE/DIR-544)}	% acrescentado por cmp em 2015-01-29
-\newcommand{\ConselhoDeEditoracao}{BOARD OF PUBLISHING AND PRESERVATION OF INPE INTELLECTUAL PRODUCTION - CEPPII (PORTARIA N∫ 176/2018/SEI-INPE)}	% acrescentado por aldf em 2019-04-02 
+\newcommand{\ConselhoDeEditoracao}{BOARD OF PUBLISHING AND PRESERVATION OF INPE INTELLECTUAL PRODUCTION - CEPPII (PORTARIA N¬∫ 176/2018/SEI-INPE)}	% acrescentado por aldf em 2019-04-02 
 \newcommand{\Presidente}{Chairperson}
 \newcommand{\Membros}{Members}
 \newcommand{\BibliotecaDigital}{DIGITAL LIBRARY}
@@ -596,15 +596,15 @@ top=3cm,bottom=3cm]{geometry}	% acrescentado por gjfb em 2011-12-06
 }
 }
 
-% se mais de uma opÁ„o de copyright, ent„o prevalece a mais restritiva
+% se mais de uma op√ß√£o de copyright, ent√£o prevalece a mais restritiva
 \ifthenelse{\equal{\@INPECopyright}{true}}{%
 % INPE copyright
 	\newcommand{\licenca}{Copyright \copyright\ \@date\ do MCTI/INPE.
-	Nenhuma parte desta publicaÁ„o pode ser reproduzida, armazenada em um sistema de recuperaÁ„o,
-	ou transmitida sob qualquer forma ou por qualquer meio, eletrÙnico, mec‚nico,
-	fotogr·fico, reprogr·fico, de microfilmagem ou outros, sem a permiss„o
-	escrita do INPE, com exceÁ„o de qualquer material
-	fornecido especificamente com o propÛsito de ser entrado e executado
+	Nenhuma parte desta publica√ß√£o pode ser reproduzida, armazenada em um sistema de recupera√ß√£o,
+	ou transmitida sob qualquer forma ou por qualquer meio, eletr√¥nico, mec√¢nico,
+	fotogr√°fico, reprogr√°fico, de microfilmagem ou outros, sem a permiss√£o
+	escrita do INPE, com exce√ß√£o de qualquer material
+	fornecido especificamente com o prop√≥sito de ser entrado e executado
 	num sistema computacional, para o uso exclusivo do leitor da obra.}
 	
 	\newcommand{\license}{Copyright \copyright\ \@date\ by MCTI/INPE.
@@ -618,41 +618,41 @@ top=3cm,bottom=3cm]{geometry}	% acrescentado por gjfb em 2011-12-06
 % Creative Commons
 	\ifthenelse{\equal{\@CCBY}{true}}{%
 % CC-BY
-		\newcommand{\licenca}{\href{http://creativecommons.org/licenses/by/3.0/}{\includegraphics[width=2cm]{conf/figs/CCBY.png}}\par Esta obra foi licenciada sob uma LicenÁa \href{http://creativecommons.org/licenses/by/3.0/deed.pt_BR}{Creative Commons AtribuiÁ„o 3.0 N„o Adaptada}.}	% adicionado por gjfb em 2014-06-08
+		\newcommand{\licenca}{\href{http://creativecommons.org/licenses/by/3.0/}{\includegraphics[width=2cm]{conf/figs/CCBY.png}}\par Esta obra foi licenciada sob uma Licen√ßa \href{http://creativecommons.org/licenses/by/3.0/deed.pt_BR}{Creative Commons Atribui√ß√£o 3.0 N√£o Adaptada}.}	% adicionado por gjfb em 2014-06-08
 		\newcommand{\license}{This work is licensed under a \href{http://creativecommons.org/licenses/by/3.0/}{Creative Commons Attribution 3.0 Unported} License.}
 	}{
 		\ifthenelse{\equal{\@CCBYSA}{true}}{%
 % CC-BY-SA
-			\newcommand{\licenca}{\href{http://creativecommons.org/licenses/by-sa/3.0/}{\includegraphics[width=2cm]{conf/figs/CCBYSA.png}}\par Esta obra foi licenciada sob uma LicenÁa \href{http://creativecommons.org/licenses/by-nc-sa/3.0/deed.pt_BR}{Creative Commons AtribuiÁ„o-CompartilhaIgual 3.0 N„o Adaptada}.}	% adicionado por gjfb em 2014-06-08
+			\newcommand{\licenca}{\href{http://creativecommons.org/licenses/by-sa/3.0/}{\includegraphics[width=2cm]{conf/figs/CCBYSA.png}}\par Esta obra foi licenciada sob uma Licen√ßa \href{http://creativecommons.org/licenses/by-nc-sa/3.0/deed.pt_BR}{Creative Commons Atribui√ß√£o-CompartilhaIgual 3.0 N√£o Adaptada}.}	% adicionado por gjfb em 2014-06-08
 			\newcommand{\license}{This work is licensed under a \href{http://creativecommons.org/licenses/by-sa/3.0/}{Creative Commons Attribution-ShareAlike 3.0 Unported} License.}
 		}{
 			\ifthenelse{\equal{\@CCBYND}{true}}{%
 % CC-BY-ND
-				\newcommand{\licenca}{\href{http://creativecommons.org/licenses/by-nd/3.0/}{\includegraphics[width=2cm]{conf/figs/CCBYND.png}}\par Esta obra foi licenciada sob uma LicenÁa \href{http://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR}{Creative Commons AtribuiÁ„o-SemDerivaÁıes 3.0 N„o Adaptada}.}	% adicionado por gjfb em 2014-06-08
+				\newcommand{\licenca}{\href{http://creativecommons.org/licenses/by-nd/3.0/}{\includegraphics[width=2cm]{conf/figs/CCBYND.png}}\par Esta obra foi licenciada sob uma Licen√ßa \href{http://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR}{Creative Commons Atribui√ß√£o-SemDeriva√ß√µes 3.0 N√£o Adaptada}.}	% adicionado por gjfb em 2014-06-08
 				\newcommand{\license}{This work is licensed under a \href{http://creativecommons.org/licenses/by-nd/3.0/}{Creative Commons Attribution-NoDerivs 3.0 Unported} License.}
 			}{
 				\ifthenelse{\equal{\@CCBYNC}{true}}{%
 % CC-BY-NC
-%					\newcommand{\licenca}{\raggedright{\href{http://creativecommons.org/licenses/by-nc/3.0/}{\includegraphics[width=2cm]{conf/figs/CCBYNC.png}}}\par Esta obra foi licenciada sob uma LicenÁa \href{http://creativecommons.org/licenses/by-nc/3.0/deed.pt_BR}{Creative Commons AtribuiÁ„o-N„oComercial 3.0 N„o Adaptada}.}	% comentado por gjfb em 2013-05-29 - todo resto do texto deixa de ser justificado
-					\newcommand{\licenca}{\href{http://creativecommons.org/licenses/by-nc/3.0/}{\includegraphics[width=2cm]{conf/figs/CCBYNC.png}}\par Esta obra foi licenciada sob uma LicenÁa \href{http://creativecommons.org/licenses/by-nc/3.0/deed.pt_BR}{Creative Commons AtribuiÁ„o-N„oComercial 3.0 N„o Adaptada}.}	% adicionado por gjfb em 2013-05-29
+%					\newcommand{\licenca}{\raggedright{\href{http://creativecommons.org/licenses/by-nc/3.0/}{\includegraphics[width=2cm]{conf/figs/CCBYNC.png}}}\par Esta obra foi licenciada sob uma Licen√ßa \href{http://creativecommons.org/licenses/by-nc/3.0/deed.pt_BR}{Creative Commons Atribui√ß√£o-N√£oComercial 3.0 N√£o Adaptada}.}	% comentado por gjfb em 2013-05-29 - todo resto do texto deixa de ser justificado
+					\newcommand{\licenca}{\href{http://creativecommons.org/licenses/by-nc/3.0/}{\includegraphics[width=2cm]{conf/figs/CCBYNC.png}}\par Esta obra foi licenciada sob uma Licen√ßa \href{http://creativecommons.org/licenses/by-nc/3.0/deed.pt_BR}{Creative Commons Atribui√ß√£o-N√£oComercial 3.0 N√£o Adaptada}.}	% adicionado por gjfb em 2013-05-29
 					\newcommand{\license}{This work is licensed under a \href{http://creativecommons.org/licenses/by-nc/3.0/}{Creative Commons Attribution-NonCommercial 3.0 Unported} License.}
 				}{
 					\ifthenelse{\equal{\@CCBYNCSA}{true}}{%
 % CC-BY-NC-SA
-%						\newcommand{\licenca}{\raggedright{\href{http://creativecommons.org/licenses/by-nc-sa/3.0/}{\includegraphics[width=2cm]{conf/figs/CCBYNCSA.png}}}\par Esta obra foi licenciada sob uma LicenÁa \href{http://creativecommons.org/licenses/by-nc-sa/3.0/deed.pt_BR}{Creative Commons AtribuiÁ„o-N„oComercial-CompartilhaIgual 3.0 N„o Adaptada}.}	% comentado por gjfb em 2013-05-29 - todo resto do texto deixa de ser justificado
-						\newcommand{\licenca}{\href{http://creativecommons.org/licenses/by-nc-sa/3.0/}{\includegraphics[width=2cm]{conf/figs/CCBYNCSA.png}}\par Esta obra foi licenciada sob uma LicenÁa \href{http://creativecommons.org/licenses/by-nc-sa/3.0/deed.pt_BR}{Creative Commons AtribuiÁ„o-N„oComercial-CompartilhaIgual 3.0 N„o Adaptada}.}	% adicionado por gjfb em 2013-05-29
+%						\newcommand{\licenca}{\raggedright{\href{http://creativecommons.org/licenses/by-nc-sa/3.0/}{\includegraphics[width=2cm]{conf/figs/CCBYNCSA.png}}}\par Esta obra foi licenciada sob uma Licen√ßa \href{http://creativecommons.org/licenses/by-nc-sa/3.0/deed.pt_BR}{Creative Commons Atribui√ß√£o-N√£oComercial-CompartilhaIgual 3.0 N√£o Adaptada}.}	% comentado por gjfb em 2013-05-29 - todo resto do texto deixa de ser justificado
+						\newcommand{\licenca}{\href{http://creativecommons.org/licenses/by-nc-sa/3.0/}{\includegraphics[width=2cm]{conf/figs/CCBYNCSA.png}}\par Esta obra foi licenciada sob uma Licen√ßa \href{http://creativecommons.org/licenses/by-nc-sa/3.0/deed.pt_BR}{Creative Commons Atribui√ß√£o-N√£oComercial-CompartilhaIgual 3.0 N√£o Adaptada}.}	% adicionado por gjfb em 2013-05-29
 						\newcommand{\license}{This work is licensed under a \href{http://creativecommons.org/licenses/by-nc-sa/3.0/}{Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported} License.}
 					}{
 						\ifthenelse{\equal{\@CCBYNCND}{true}}{%
 % CC-BY-NC-ND
-							\newcommand{\licenca}{\href{http://creativecommons.org/licenses/by-nc-nd/3.0/}{\includegraphics[width=2cm]{conf/figs/CCBYNCND.png}}\par Esta obra foi licenciada sob uma LicenÁa \href{http://creativecommons.org/licenses/by-nc-nd/3.0/deed.pt_BR}{Creative Commons AtribuiÁ„o-N„oComercial-SemDerivaÁıes 3.0 N„o Adaptada}.}	% adicionado por gjfb em 2014-06-08
+							\newcommand{\licenca}{\href{http://creativecommons.org/licenses/by-nc-nd/3.0/}{\includegraphics[width=2cm]{conf/figs/CCBYNCND.png}}\par Esta obra foi licenciada sob uma Licen√ßa \href{http://creativecommons.org/licenses/by-nc-nd/3.0/deed.pt_BR}{Creative Commons Atribui√ß√£o-N√£oComercial-SemDeriva√ß√µes 3.0 N√£o Adaptada}.}	% adicionado por gjfb em 2014-06-08
 							\newcommand{\license}{This work is licensed under a \href{http://creativecommons.org/licenses/by-nc-nd/3.0/}{Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported} License.}
 		
 						}{
 							\ifthenelse{\equal{\@GPLv3}{true}}{%
 % GPLv3
-% GPLv3.png deve ser uma cÛpia de: https://gnu.org/graphics/gplv3-88x31.png
-								\newcommand{\licenca}{\href{https://gnu.org/licenses/gpl-3.0.en.html}{\includegraphics[width=2cm]{conf/figs/GPLv3.pdf}}\par Esta obra foi licenciada sob uma LicenÁa \href{https://gnu.org/licenses/gpl-3.0.en.html}{GNU General Public License - Vers„o 3}.}	% adicionado por gjfb em 2015-06-10
+% GPLv3.png deve ser uma c√≥pia de: https://gnu.org/graphics/gplv3-88x31.png
+								\newcommand{\licenca}{\href{https://gnu.org/licenses/gpl-3.0.en.html}{\includegraphics[width=2cm]{conf/figs/GPLv3.pdf}}\par Esta obra foi licenciada sob uma Licen√ßa \href{https://gnu.org/licenses/gpl-3.0.en.html}{GNU General Public License - Vers√£o 3}.}	% adicionado por gjfb em 2015-06-10
 								\newcommand{\license}{This work is licensed under a \href{https://gnu.org/licenses/gpl-3.0.en.html}{GNU General Public License - Version 3}.}
 		
 							}{
@@ -675,7 +675,7 @@ top=3cm,bottom=3cm]{geometry}	% acrescentado por gjfb em 2011-12-06
 
 \renewcommand{\chapter}{
 	\ifthenelse{\equal{\@folhaembranco}{true}}{
-		\if@openright\cleardoublepage\else\clearpage\fi %% faz capitulo comeÁar em folha impar (coloca folha em branco)
+		\if@openright\cleardoublepage\else\clearpage\fi %% faz capitulo come√ßar em folha impar (coloca folha em branco)
 	}{\vspace{\baselsinpe}}
 	\thispagestyle{\estilonum} %% define estilo de num. na pag. das partes 
 	\global\@topnum\z@
@@ -713,7 +713,7 @@ top=3cm,bottom=3cm]{geometry}	% acrescentado por gjfb em 2011-12-06
 
 \newcommand*{\cutterFICHAC}[1]{\gdef\@cutterFICHAC{#1}}
 \newcommand*{\autorUltimoNomeFICHAC}[1]{\gdef\@autorUltimoNomeFICHAC{#1}}
-\newcommand*{\autorAbreviadoFICHAC}[1]{\gdef\@autorAbreviadoFICHAC{#1}}	% n„o usado nesse .cls
+\newcommand*{\autorAbreviadoFICHAC}[1]{\gdef\@autorAbreviadoFICHAC{#1}}	% n√£o usado nesse .cls
 \newcommand*{\autorFICHAC}[1]{\gdef\@autorFICHAC{#1}}	% acrescentado por gjfb em 2015-11-16
 \newcommand*{\tituloFICHAC}[1]{\gdef\@tituloFICHAC{#1}}
 \newcommand*{\paginasFICHAC}[1]{\gdef\@paginasFICHAC{#1}}
@@ -770,41 +770,41 @@ top=3cm,bottom=3cm]{geometry}	% acrescentado por gjfb em 2011-12-06
   \clearemptydoublepage %% coloca folha em branco
 	}{\vspace{\baselsinpe}}
 %  \thispagestyle{empty}
-  \thispagestyle{plain}% para colocar paginaÁ„o no pretexto
+  \thispagestyle{plain}% para colocar pagina√ß√£o no pretexto
 }
 
 %%%% Modified by AWSS 10/05/05 begin
 %%% incluir Sumario
 \newcommand{\includeSumario}{%
-	\pagestyle{plain}% para colocar paginaÁ„o no sum·rio
+	\pagestyle{plain}% para colocar pagina√ß√£o no sum√°rio
 	\pretexto%
 	
 	{\pdfbookmark[0]{\contentsname}{contentsname}}
 	
 	\tableofcontents%
 
-%	\addtocontents{toc}{\protect\thispagestyle{empty}}% retirar paginaÁ„o na primeira p·gina
-	\label{numeroDeP·ginasDoPretexto}	% ˙ltima p·gina do sum·rio - usado na ficha catalogr·fica para indicar o n˙mero de p·ginas do pretexto - acrescentado por gjfb em 2009-09-27
+%	\addtocontents{toc}{\protect\thispagestyle{empty}}% retirar pagina√ß√£o na primeira p√°gina
+	\label{numeroDeP√°ginasDoPretexto}	% √∫ltima p√°gina do sum√°rio - usado na ficha catalogr√°fica para indicar o n√∫mero de p√°ginas do pretexto - acrescentado por gjfb em 2009-09-27
 	\pretexto}
 
 %%% incluir Lista de Figuras sem page num no sumario
 \newcommand{\includeListaFiguras}{%
 %	\pagestyle{empty}
-	\pagestyle{plain}% para colocar paginaÁ„o na lista de figuras
+	\pagestyle{plain}% para colocar pagina√ß√£o na lista de figuras
 	\refstepcounter{section}
 	\pretexto%
 	\listoffigures%
-%	\addtocontents{lof}{\protect\thispagestyle{empty}}% retirar paginaÁ„o na primeira p·gina
+%	\addtocontents{lof}{\protect\thispagestyle{empty}}% retirar pagina√ß√£o na primeira p√°gina
 	\pretexto}
 
 %%% incluir Lista de Tabelas sem page num no sumario
 \newcommand{\includeListaTabelas}{%
 %	\pagestyle{empty}
-	\pagestyle{plain}% para colocar paginaÁ„o na lista de tabelas
+	\pagestyle{plain}% para colocar pagina√ß√£o na lista de tabelas
 	\refstepcounter{section}
 	\pretexto%
 	\listoftables%
-%	\addtocontents{lot}{\protect\thispagestyle{empty}}% retirar paginaÁ„o na primeira p·gina
+%	\addtocontents{lot}{\protect\thispagestyle{empty}}% retirar pagina√ß√£o na primeira p√°gina
 	\pretexto}
 % end AWSS
 
@@ -857,7 +857,7 @@ top=3cm,bottom=3cm]{geometry}	% acrescentado por gjfb em 2011-12-06
 %%% Comando \legenda por gjfb em 2014-01-17 - fim
 
 %%% estilo de paragrafo especial para o \FONTE com margem adequada a partir do caption
-\def\tamfonte{\captionfont{\FONTEname: }}  %% observe o espaco, ¥:¥ eh o separador
+\def\tamfonte{\captionfont{\FONTEname: }}  %% observe o espaco, ≈Ω:≈Ω eh o separador
 %%% comando \FONTE
 
 \ifHTML
@@ -897,7 +897,7 @@ top=3cm,bottom=3cm]{geometry}	% acrescentado por gjfb em 2011-12-06
 				\setlength{\tempboxC}{0pt}
 				\vspace{24pt}
 				
-% acrescentado por gjfb em 2016-07-24 para as fontes curtas fiquem centralizadas (mesmo cÛdigo que para as figuras)					
+% acrescentado por gjfb em 2016-07-24 para as fontes curtas fiquem centralizadas (mesmo c√≥digo que para as figuras)					
 						\setlength{\tempboxCalc}{\linewidth}
 						\settowidth{\tempboxD}{\tamfonte\captionfont#1}
 						\addtolength{\tempboxCalc}{-\tempboxD}
@@ -906,7 +906,7 @@ top=3cm,bottom=3cm]{geometry}	% acrescentado por gjfb em 2011-12-06
 						}{% fonte curta
 							\setlength{\tempboxCalc}{\tempboxCalc/2}
 						}
-% acrescentado por gjfb em 2016-07-24 para as fontes curtas fiquem centralizadas (mesmo cÛdigo que para as figuras) - fim	
+% acrescentado por gjfb em 2016-07-24 para as fontes curtas fiquem centralizadas (mesmo c√≥digo que para as figuras) - fim	
 
 						
 %				\ifthenelse{\tempboxCalc = 0}{	% comentado por gjfb em 2016-07-24
@@ -927,13 +927,13 @@ top=3cm,bottom=3cm]{geometry}	% acrescentado por gjfb em 2011-12-06
 				\setlength{\tempboxC}{0pt}
 				\setlength{\tempboxCalc}{0pt}
 			}
-%			%% figure	% comentado por gjfb em 2014-01-17 - para quando o tÌtulo deve ficar debaixo da figura
-			{% figure - new ABNT Norm 14724-2011 - acrescentado por gjfb em 2014-07-23 - para quando o tÌtulo deve ficar acima da figura - novo cÛdigo para o alinhamento do fonte com a legenda 
+%			%% figure	% comentado por gjfb em 2014-01-17 - para quando o t√≠tulo deve ficar debaixo da figura
+			{% figure - new ABNT Norm 14724-2011 - acrescentado por gjfb em 2014-07-23 - para quando o t√≠tulo deve ficar acima da figura - novo c√≥digo para o alinhamento do fonte com a legenda 
 %				\sbox{\tempbox}{\tamlabel}\setlength{\tempboxA}{\wd\tempbox}	% comentado por gjfb em 2014-07-23
-				\setlength{\tempboxA}{0pt}	% acrescentado por gjfb em 2014-07-23 - para quando o tÌtulo deve ficar acima da figura - novo cÛdigo para o alinhamento do fonte com a legenda
+				\setlength{\tempboxA}{0pt}	% acrescentado por gjfb em 2014-07-23 - para quando o t√≠tulo deve ficar acima da figura - novo c√≥digo para o alinhamento do fonte com a legenda
 				%\typeout{-------------------------------------------------------A\the\tempboxA}
 %				\sbox{\tempbox}{\tamtexto}\setlength{\tempboxB}{\wd\tempbox}	% comentado por gjfb em 2014-07-23
-				\sbox{\tempbox}{\tamtextolegenda}\setlength{\tempboxB}{\wd\tempbox}	% acrescentado por gjfb em 2014-07-23 - para quando o tÌtulo deve ficar acima da figura - novo cÛdigo para o alinhamento do fonte com a legenda
+				\sbox{\tempbox}{\tamtextolegenda}\setlength{\tempboxB}{\wd\tempbox}	% acrescentado por gjfb em 2014-07-23 - para quando o t√≠tulo deve ficar acima da figura - novo c√≥digo para o alinhamento do fonte com a legenda
 				%\typeout{-------------------------------------------------------B\the\tempboxB}
 				\setlength{\tempboxCalc}{\linewidth}
 				%\typeout{------------------------------------------------------ L\the\tempboxCalc}
@@ -944,13 +944,13 @@ top=3cm,bottom=3cm]{geometry}	% acrescentado por gjfb em 2011-12-06
 				\ifthenelse{\tempboxCalc < 0}{% legenda longa
 					\setlength{\tempboxCalc}{\tempboxA}	% 0pt
 				}{% legenda curta
-					\ifthenelse{\tempboxB > 0}{% legenda n„o vazia
+					\ifthenelse{\tempboxB > 0}{% legenda n√£o vazia
 						\setlength{\tempboxCalc}{\linewidth}
 						\addtolength{\tempboxCalc}{-\tempboxB}
 						\setlength{\tempboxCalc}{\tempboxCalc/2 + \tempboxA}
 						\vspace{-2mm}
 					}{% legenda vazia
-%%% c·lculo de \tempboxCalc (margem esquerda do fonte) quando a legenda est· vazia
+%%% c√°lculo de \tempboxCalc (margem esquerda do fonte) quando a legenda est√° vazia
 						\setlength{\tempboxCalc}{\linewidth}
 						\settowidth{\tempboxD}{\tamfonte\captionfont#1}
 %						\gdef\tamtextofonte{\tamfonte\captionfont#1}
@@ -961,7 +961,7 @@ top=3cm,bottom=3cm]{geometry}	% acrescentado por gjfb em 2011-12-06
 						}{% fonte curta
 							\setlength{\tempboxCalc}{\tempboxCalc/2}
 						}
-%%% c·lculo de \tempboxCalc (margem esquerda do fonte) quando a legenda est· vazia - fim
+%%% c√°lculo de \tempboxCalc (margem esquerda do fonte) quando a legenda est√° vazia - fim
 						\vspace{-6mm}
 					}
 				}
@@ -974,8 +974,8 @@ top=3cm,bottom=3cm]{geometry}	% acrescentado por gjfb em 2011-12-06
 				\setlength{\tempboxCalc}{0pt}
 			}
 
-		% cÛdigo abaixo comentado por gjfb em 2014-07-23 - ver novo cÛdigo acima					
-		%	{% figure - new ABNT Norm 14724-2011 - acrescentado por gjfb em 2014-01-17 - para quando o tÌtulo deve ficar acima da figura
+		% c√≥digo abaixo comentado por gjfb em 2014-07-23 - ver novo c√≥digo acima					
+		%	{% figure - new ABNT Norm 14724-2011 - acrescentado por gjfb em 2014-01-17 - para quando o t√≠tulo deve ficar acima da figura
 		%	\setlength{\tempboxCalc}{0pt}
 		%	\setlength{\tempboxC}{0pt}
 		%	\vspace{24pt}
@@ -998,7 +998,7 @@ top=3cm,bottom=3cm]{geometry}	% acrescentado por gjfb em 2011-12-06
 		%	\setlength{\tempboxCalc}{0pt}
 		%	}
 		
-		%	{% figure	% comentado por gjfb em 2014-01-17 - para quando o tÌtulo deve ficar debaixo da figura
+		%	{% figure	% comentado por gjfb em 2014-01-17 - para quando o t√≠tulo deve ficar debaixo da figura
 		%	\ifthenelse{\tempboxCalc = 0}{
 		%		\settowidth{\tempboxC}{\tamfonte}
 		%		\addtolength{\tempboxCalc}{\tempboxC}
@@ -1018,11 +1018,11 @@ top=3cm,bottom=3cm]{geometry}	% acrescentado por gjfb em 2011-12-06
 %%% comando para avisar do inicio do texto do documento
 \newcommand{\inicioIntroducao}{%
 	\pretexto
-	\pagenumbering{arabic}% para comeÁar a contar em ar·bico a partir da introduÁ„o, comeÁando com n˙mero 1 - acrescentado por gjfb em 2009-09-14
+	\pagenumbering{arabic}% para come√ßar a contar em ar√°bico a partir da introdu√ß√£o, come√ßando com n√∫mero 1 - acrescentado por gjfb em 2009-09-14
 	\pagestyle{\estilonum}%
 }
 
-%%% comando para avisar do inicio do ApÍndice
+%%% comando para avisar do inicio do Ap√™ndice
 
 \newcommand{\inicioApendice}{
 
@@ -1043,7 +1043,7 @@ top=3cm,bottom=3cm]{geometry}	% acrescentado por gjfb em 2011-12-06
 	{\normalfont\normalsize\bfseries}
 	{}
 %	{\normalfont\normalsize\bfseries\titlerule*[1pc]{.}\contentspage}	% comentado por gjfb em 2011-03-17
-%	{\normalfont\normalsize\bfseries\titlerule*[0.82pc]{.}\hspace{2mm}\contentspage}	% acrescentado por gjfb em 2011-03-17 - comentado por gjfb em 2012-10-19 pois n„o funciona com tÌtulo de mais de uma linha
+%	{\normalfont\normalsize\bfseries\titlerule*[0.82pc]{.}\hspace{2mm}\contentspage}	% acrescentado por gjfb em 2011-03-17 - comentado por gjfb em 2012-10-19 pois n√£o funciona com t√≠tulo de mais de uma linha
 	{\normalfont\normalsize\bfseries\titlerule*[0.82pc]{.}\contentspage}	% acrescentado por gjfb em 2012-10-19
 
 	\setlength{\labelsep}{\sepitem}
@@ -1074,7 +1074,7 @@ top=3cm,bottom=3cm]{geometry}	% acrescentado por gjfb em 2011-12-06
 	{\normalfont\normalsize\bfseries}
 	{}
 %	{\normalfont\normalsize\bfseries\titlerule*[1pc]{.}\contentspage}	% comentado por gjfb em 2011-03-17
-%	{\normalfont\normalsize\bfseries\titlerule*[0.82pc]{.}\hspace{2mm}\contentspage}	% acrescentado por gjfb em 2011-03-17 - comentado por gjfb em 2012-10-19 pois n„o funciona com tÌtulo de mais de uma linha
+%	{\normalfont\normalsize\bfseries\titlerule*[0.82pc]{.}\hspace{2mm}\contentspage}	% acrescentado por gjfb em 2011-03-17 - comentado por gjfb em 2012-10-19 pois n√£o funciona com t√≠tulo de mais de uma linha
 	{\normalfont\normalsize\bfseries\titlerule*[0.82pc]{.}\contentspage}	% acrescentado por gjfb em 2012-10-19
 
   \setlength{\labelsep}{\sepitem}
@@ -1112,7 +1112,7 @@ top=3cm,bottom=3cm]{geometry}	% acrescentado por gjfb em 2011-12-06
 %%% codigo para possiveis problemas de caption e float
 %%% testar melhor
 
-\pagenumbering{roman}% para usar estilo romano desde a capa porque MakeIndex supıe que a numeraÁ„o romana precede ar·bica (n„o deve comeÁar com ar·bica se continuar com romana; neste caso o MakeIndex se perde nas referÍncias ‡ p·ginas ar·bicas de valores inferiores ao n˙mero m·ximo de p·ginas romanas) - acrescentado por gjfb em 2011-10-09
+\pagenumbering{roman}% para usar estilo romano desde a capa porque MakeIndex sup√µe que a numera√ß√£o romana precede ar√°bica (n√£o deve come√ßar com ar√°bica se continuar com romana; neste caso o MakeIndex se perde nas refer√™ncias √† p√°ginas ar√°bicas de valores inferiores ao n√∫mero m√°ximo de p√°ginas romanas) - acrescentado por gjfb em 2011-10-09
 
 \makeatletter
 \newcommand{\@ldtable}{}
@@ -1136,7 +1136,7 @@ pdfkeywords ={\@palavraschaveFICHAC},
 pdfauthor = {\@author},
 }
 %%%%%%%%%%%%%%%%%CAPA%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%A CAPA e seu VERSO s„o obrigatÛrios nas publicaÁıes mas n„o devem ser somados ao total de p·ginas na FICHA CATALOGR¡FICA e na contagem para iniciar a paginaÁ„o do trabalho.
+%A CAPA e seu VERSO s√£o obrigat√≥rios nas publica√ß√µes mas n√£o devem ser somados ao total de p√°ginas na FICHA CATALOGR√ÅFICA e na contagem para iniciar a pagina√ß√£o do trabalho.
 
 \newlength{\metade@largura}	% acrescentado por gjfb em 2011-12-06
 \setlength{\metade@largura}{0.5\linewidth}	% acrescentado por gjfb em 2011-12-06
@@ -1178,10 +1178,10 @@ pdfauthor = {\@author},
   {\vspace*{\stretch{0}}{\@descriccaoversoA\par}}
 \end{titlepage}%
 %%%%%%%%%%%%%%%%%%%%%%FOLHA DE ROSTO %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% As p·ginas s„o contadas em roman a partir da FOLHA DE ROSTO 
+% As p√°ginas s√£o contadas em roman a partir da FOLHA DE ROSTO 
 
-\pagenumbering{roman}% para usar estilo romano na paginaÁ„o do pretexto - descomentado por gjfb em 2009-09-14
-%\setcounter{page}{1}% este comando n„o È necess·rio porque pagenumbering j· inicializa a 1
+\pagenumbering{roman}% para usar estilo romano na pagina√ß√£o do pretexto - descomentado por gjfb em 2009-09-14
+%\setcounter{page}{1}% este comando n√£o √© necess√°rio porque pagenumbering j√° inicializa a 1
 
 \pdfbookmark[0]{\nomefolhaderosto}{FOLHA DE ROSTO}
 
@@ -1216,7 +1216,7 @@ pdfauthor = {\@author},
 \pagestyle{plain}%
 
 \ifthenelse{\equal{\@includeFC}{true}}{
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ficha Catalogr·fica
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ficha Catalogr√°fica
 
 	\footnotesize	% used by \settowidth below
 	\newlength{\cutter@width}
@@ -1243,7 +1243,7 @@ pdfauthor = {\@author},
 	\newlength{\quarta@coluna}
 	\settowidth{\quarta@coluna}{123}
 	
-	% primeiraLinha - n„o mais usado
+	% primeiraLinha - n√£o mais usado
 	\newenvironment{primeiraLinha}{%
 		\begin{list}{}{%
 			\setlength{\leftmargin}{\decimaterceira@coluna}
@@ -1258,7 +1258,7 @@ pdfauthor = {\@author},
 		\end{list}
 	}%
 
-% primeiraLinha2 - vers„o anterior - n„o usado
+% primeiraLinha2 - vers√£o anterior - n√£o usado
 	\newenvironment{primeiraLinha2}{%
 		\begin{list}{}{%
 			\setlength{\labelsep}{0pt}%
@@ -1360,7 +1360,7 @@ pdfauthor = {\@author},
 		
 		\@financiamento	% acrescentado por gjfb em 2018-09-21
 		
-%		\normalsize		% retornar para normalsize - comentado por gjfb em 2013-12-24 - nesta posiÁ„o este comando est· sem efeito
+%		\normalsize		% retornar para normalsize - comentado por gjfb em 2013-12-24 - nesta posi√ß√£o este comando est√° sem efeito
 	}
 }	% fim da ficha
 {
@@ -1380,10 +1380,10 @@ pdfauthor = {\@author},
 		
 		\@financiamento	% acrescentado por gjfb em 2018-09-21
 		
-%		\normalsize		% retornar para normalsize - comentado por gjfb em 2013-12-24 - nesta posiÁ„o este comando est· sem efeito
+%		\normalsize		% retornar para normalsize - comentado por gjfb em 2013-12-24 - nesta posi√ß√£o este comando est√° sem efeito
 	}
 }	% fim dos termos de uso
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%FOLHA DE APROVA«AO PELA BANCA EXAMINADORA
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%FOLHA DE APROVA√áAO PELA BANCA EXAMINADORA
 
 \normalsize		% retornar para normalsize - acrescentado por gjfb em 2013-12-24
 
@@ -1449,15 +1449,15 @@ pdfauthor = {\@author},
 	
 	
 	\begin{flushleft}
-		%\normalfont\normalsize{\@candidatoOUcandidataFA:\space\@author}%incluir o coment·rio dessa linha quando montar publicaÁ„o que contenha folha de aprovaÁ„o
-		\normalfont\normalsize{}%retirar o coment·rio dessa linha quando montar publicaÁ„o que n„o contenha folha de aprovaÁ„o
+		%\normalfont\normalsize{\@candidatoOUcandidataFA:\space\@author}%incluir o coment√°rio dessa linha quando montar publica√ß√£o que contenha folha de aprova√ß√£o
+		\normalfont\normalsize{}%retirar o coment√°rio dessa linha quando montar publica√ß√£o que n√£o contenha folha de aprova√ß√£o
 	\end{flushleft}
 	
 	\vspace*{\stretch{1}}
 	
 	\begin{flushright}
-		%\normalfont\normalsize{\@instituicaocidade, \@dataAprovacaoFA.}%incluir esta linha quando montar trabalho que contem a folha de aprovaÁ„o
-		\normalfont\normalsize{}%retirar esta linha quando montar trabalho que contem a folha de aprovaÁ„o
+		%\normalfont\normalsize{\@instituicaocidade, \@dataAprovacaoFA.}%incluir esta linha quando montar trabalho que contem a folha de aprova√ß√£o
+		\normalfont\normalsize{}%retirar esta linha quando montar trabalho que contem a folha de aprova√ß√£o
 	\end{flushright}
 }{}
 }
@@ -1543,9 +1543,9 @@ pdfauthor = {\@author},
 \newenvironment{simbolos}{%
 \refstepcounter{section}
 	\pretexto%
-	\pdfbookmark[0]{\listsimbname}{listsimbname}% necess·rio quando n„o faz parte da tabela de conteudos - acrescentado por gjfb em 2009-09-14
-%	{\addtocontents{toc}{\cftpagenumbersoff{chapter}}}% para retirar p·gina no sum·rio - comentado por gjfb em 2009-09-14
-%	{\addcontentsline{toc}{chapter}{\listsimbname}}% para colocar lista de sÌmbolos no sum·rio - comentado por gjfb em 2009-09-14
+	\pdfbookmark[0]{\listsimbname}{listsimbname}% necess√°rio quando n√£o faz parte da tabela de conteudos - acrescentado por gjfb em 2009-09-14
+%	{\addtocontents{toc}{\cftpagenumbersoff{chapter}}}% para retirar p√°gina no sum√°rio - comentado por gjfb em 2009-09-14
+%	{\addcontentsline{toc}{chapter}{\listsimbname}}% para colocar lista de s√≠mbolos no sum√°rio - comentado por gjfb em 2009-09-14
 	\begin{singlespace}%
 		{\centering\normalfont\normalsize\bfseries\MakeUppercase\listsimbname\\*[\baselsdefault]}%
 		\vspace{1cm}
@@ -1561,9 +1561,9 @@ pdfauthor = {\@author},
 \newenvironment{abreviaturasesiglas}{%
 \refstepcounter{section}
 	\pretexto%
-	\pdfbookmark[0]{\nomeabreviaturasesiglas}{nomeabreviaturasesiglas}% necess·rio quando n„o faz parte da tabela de conteudos - acrescentado por gjfb em 2009-09-14
-%	{\addtocontents{toc}{\cftpagenumbersoff{chapter}}}% para retirar p·gina no sum·rio - comentado por gjfb em 2009-09-14
-%	{\addcontentsline{toc}{chapter}{\nomeabreviaturasesiglas}}% para colocar lista de abreviaturas e siglas no sum·rio - comentado por gjfb em 2009-09-14
+	\pdfbookmark[0]{\nomeabreviaturasesiglas}{nomeabreviaturasesiglas}% necess√°rio quando n√£o faz parte da tabela de conteudos - acrescentado por gjfb em 2009-09-14
+%	{\addtocontents{toc}{\cftpagenumbersoff{chapter}}}% para retirar p√°gina no sum√°rio - comentado por gjfb em 2009-09-14
+%	{\addcontentsline{toc}{chapter}{\nomeabreviaturasesiglas}}% para colocar lista de abreviaturas e siglas no sum√°rio - comentado por gjfb em 2009-09-14
 	\begin{singlespace}%
 		{\centering\normalfont\normalsize\bfseries\MakeUppercase\space\nomeabreviaturasesiglas\\*[\baselsdefault]}%
 		\vspace{1cm}
@@ -1634,7 +1634,7 @@ pdfauthor = {\@author},
      {\normalfont\normalsize\bfseries}}
 
 
-%%%%%%%%%%%%%%%%%%%% - Sum·rio:
+%%%%%%%%%%%%%%%%%%%% - Sum√°rio:
 \setlength{\cftbeforetoctitleskip}{3pt}
 \renewcommand{\cfttoctitlefont}{%
 	\hfill\normalfont\normalsize\bfseries\MakeUppercase}
@@ -1686,7 +1686,7 @@ pdfauthor = {\@author},
 \renewcommand{\cftpartpagefont}{\normalfont\normalsize\bfseries}
 
 \renewcommand{\cftsecfont}{\normalfont\normalsize}
-%\renewcommand{\cftsecaftersnum}{\ -} para retirar o hÌfen comente
+%\renewcommand{\cftsecaftersnum}{\ -} para retirar o h√≠fen comente
 \renewcommand{\cftsecpagefont}{\normalfont\normalsize}
 
 \renewcommand{\cftsubsecfont}{\normalfont\normalsize}
@@ -1711,7 +1711,7 @@ pdfauthor = {\@author},
 \renewcommand{\cftloftitlefont}{%
 	\hfill\normalfont\normalsize\bfseries\MakeUppercase}
 \renewcommand{\cftafterloftitle}{%
-	\pdfbookmark[0]{\listfigurename}{listfigurename}% necess·rio quando n„o faz parte da tabela de conteudos - acrescentado por gjfb em 2009-09-14
+	\pdfbookmark[0]{\listfigurename}{listfigurename}% necess√°rio quando n√£o faz parte da tabela de conteudos - acrescentado por gjfb em 2009-09-14
 %	\addtocontents{toc}{\cftpagenumbersoff{chapter}}% comentado por gjfb em 2009-09-14
 %	\addcontentsline{toc}{chapter}{\listfigurename}% comentado por gjfb em 2009-09-14
 %	\hfill\mbox{}\\[\parsinpe]\mbox{}\hfill\underline{\normalfont\normalsize\bfseries P\'ag.}% comentado por gjfb em 2013-10-29
@@ -1731,7 +1731,7 @@ pdfauthor = {\@author},
 \renewcommand{\cftlottitlefont}{
 	\hfill\normalfont\normalsize\bfseries\MakeUppercase}
 \renewcommand{\cftafterlottitle}{%
-	\pdfbookmark[0]{\listtablename}{listtablename}% necess·rio quando n„o faz parte da tabela de conteudos - acrescentado por gjfb em 2009-09-14
+	\pdfbookmark[0]{\listtablename}{listtablename}% necess√°rio quando n√£o faz parte da tabela de conteudos - acrescentado por gjfb em 2009-09-14
 %	\addtocontents{toc}{\cftpagenumbersoff{chapter}}% comentado por gjfb em 2009-09-14
 %	\addcontentsline{toc}{chapter}{\listtablename}% comentado por gjfb em 2009-09-14
 %	\hfill\mbox{}\\[\parsinpe]\mbox{}\hfill\underline{\normalfont\normalsize\bfseries P\'ag.}% comentado por gjfb em 2013-10-29
@@ -1791,13 +1791,13 @@ pdfauthor = {\@author},
                 \let\item\@idxitem
 }{\if@restonecol\onecolumn\else\clearpage\fi}
 
-%%%%%% CitaÁ„o (citacao) %%%%%%%%
+%%%%%% Cita√ß√£o (citacao) %%%%%%%%
 \newenvironment{citacao}
                {\begin{spacing}{1}\footnotesize\list{}{\leftmargin=4cm \rightmargin=0cm}
                \item\relax}
                {\endlist\end{spacing}\vspace\parskip}
 
-%%%%%% EpÌgrafe nos CapÌtulos %%%%%% opcional
+%%%%%% Ep√≠grafe nos Cap√≠tulos %%%%%% opcional
 \newcommand{\epicap}[2]{
  \vspace{\baselsinpe}
                {\list{}{\listparindent 2em%
@@ -1810,7 +1810,7 @@ pdfauthor = {\@author},
  \vspace{\baselsinpe}
 }
 
-%%%%%% Watermark / Marca d'·gua %%%%%%
+%%%%%% Watermark / Marca d'√°gua %%%%%%
 \newcommand{\watermark}[1]{
  \AddToShipoutPicture{%
   \AtTextCenter{%

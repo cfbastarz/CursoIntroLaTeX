@@ -1,53 +1,53 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Anexo
-%Este anexo foi incluido para explicar como incluir um anexo no estilo, n„o existia no original desta tese
+%Este anexo foi incluido para explicar como incluir um anexo no estilo, n√£o existia no original desta tese
 %exceto algumas tabelas que foram modificadas
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \renewcommand{\thechapter}{}%
-\chapter{ANEXO B - EXEMPLOS DE FIGURAS E TABELAS NO \LaTeX} %% TÌtulo do anexo sempre em mai˙sculas.
-\label{anexoB} %% RÛtulo aplicado caso queira referir-se a este tÛpico em qualquer lugar do texto.
+\chapter{ANEXO B - EXEMPLOS DE FIGURAS E TABELAS NO \LaTeX} %% T√≠tulo do anexo sempre em mai√∫sculas.
+\label{anexoB} %% R√≥tulo aplicado caso queira referir-se a este t√≥pico em qualquer lugar do texto.
 \renewcommand{\thechapter}{B}%
 
-\section{docs/figs} %% TÌtulo de secÁ„o sempre com as primeiras letras em mai˙sculas.
+\section{docs/figs} %% T√≠tulo de sec√ß√£o sempre com as primeiras letras em mai√∫sculas.
 \label{anexo2}
 
 \begin{figure}[ht]
-	\caption{Exemplo de figura com tÌtulo curto.}
-	\vspace{6mm}	% acrescentar o espaÁamento vertical apropriado entre o tÌtulo e a borda superior da figura
+	\caption{Exemplo de figura com t√≠tulo curto.}
+	\vspace{6mm}	% acrescentar o espa√ßamento vertical apropriado entre o t√≠tulo e a borda superior da figura
 	\begin{center}
     	\includegraphics[width=\mylenfig]{./docs/figs/gpa.pdf}  
 	\end{center}
-	\vspace{4mm}	% acrescentar o espaÁamento vertical apropriado entre a borda inferior da figura e a legenda ou a fonte quando n„o h· legenda (o valor pode ser negativo para subir)
+	\vspace{4mm}	% acrescentar o espa√ßamento vertical apropriado entre a borda inferior da figura e a legenda ou a fonte quando n√£o h√° legenda (o valor pode ser negativo para subir)
 	\legenda{Exemplo de legenda curta.}	% legenda - opcional
 	\label{figgpa1}
-	\FONTE{\citeonline{lba/06}.}	% fonte consultada (elemento obrigatÛrio, mesmo que seja produÁ„o do prÛprio autor)
+	\FONTE{\citeonline{lba/06}.}	% fonte consultada (elemento obrigat√≥rio, mesmo que seja produ√ß√£o do pr√≥prio autor)
 \end{figure}
 
 \begin{figure}[!h]
-	\caption{Figura com tÌtulo que ocupa mais de uma linha, alinhar as demais com a primeira
-letra depois do hÌfen.}
-%o ajuste do tÌtulo È feito automaticamente pelo \LaTeX\ caso este ocupe mais de uma linha.}
-	\vspace{6mm}	% acrescentar o espaÁamento vertical apropriado entre o tÌtulo e a borda superior da figura
+	\caption{Figura com t√≠tulo que ocupa mais de uma linha, alinhar as demais com a primeira
+letra depois do h√≠fen.}
+%o ajuste do t√≠tulo √© feito automaticamente pelo \LaTeX\ caso este ocupe mais de uma linha.}
+	\vspace{6mm}	% acrescentar o espa√ßamento vertical apropriado entre o t√≠tulo e a borda superior da figura
 	\begin{center}
     	\includegraphics[width=\mylenfig]{./docs/figs/gpa.pdf}  
 	\end{center}
-	\vspace{4mm}	% acrescentar o espaÁamento vertical apropriado entre a borda inferior da figura e a legenda ou a fonte quando n„o h· legenda (o valor pode ser negativo para subir)
+	\vspace{4mm}	% acrescentar o espa√ßamento vertical apropriado entre a borda inferior da figura e a legenda ou a fonte quando n√£o h√° legenda (o valor pode ser negativo para subir)
 	\legenda{Exemplo de legenda que ocupa mais de uma linha, alinhar as demais com a primeira
 letra da primeira linha.}	% legenda - opcional
 %o \LaTeX\ alinha o texto automaticamente.
 	\label{figgpa2}
 	\FONTE{Se o texto da fonte for longo e ocupar mais de uma linha as demais ficam alinhadas
-	com a palavra fonte. Adaptada de \citeonline{mauri:2003}.}	% fonte consultada (elemento obrigatÛrio, mesmo que seja produÁ„o do prÛprio autor)
+	com a palavra fonte. Adaptada de \citeonline{mauri:2003}.}	% fonte consultada (elemento obrigat√≥rio, mesmo que seja produ√ß√£o do pr√≥prio autor)
 %o \LaTeX\ alinha o texto automaticamente.
 \end{figure}
 
 \clearpage
 \section{Tabelas} 
 
-\begin{table}[!ht]%[htbp] %opÁıes de colocaÁ„o da tabela no texto
+\begin{table}[!ht]%[htbp] %op√ß√µes de coloca√ß√£o da tabela no texto
   \begin{center}	% use sempre um ambiente para as tabelas
-									% (opÁıes: center (recomendado), flushright, flushleft)
-									% N√O USE \centering com TABELAS se houver \FONTE!	
+									% (op√ß√µes: center (recomendado), flushright, flushleft)
+									% N√ÉO USE \centering com TABELAS se houver \FONTE!	
   \caption{Exemplo de tabela, com fonte.}
     \begin{tabular}{l|l|c|c|r|r}
 			\hline % desenha uma linha horizontal
@@ -57,14 +57,14 @@ letra da primeira linha.}	% legenda - opcional
 			\hline % desenha uma linha horizontal
     \end{tabular}
     \end{center}
- \FONTE{Coloque a fonte de referÍncia aqui, se houver.}
+ \FONTE{Coloque a fonte de refer√™ncia aqui, se houver.}
 \end{table}
 
-% \hhline{|--|} \multicolumn{2}{|c|}{continuaÁ„o da p·gina anterior} \\
+% \hhline{|--|} \multicolumn{2}{|c|}{continua√ß√£o da p√°gina anterior} \\
 % \hhline{|--|} \endhead % ate aqui eh definicao do "head" da pagina 
 %   % dois em diante
-% \hhline{|--|} \multicolumn{2}{|c|}{continua para prÛxima p·gina} \\
-% \hhline{|--|} \endfoot % ate aqui eh definicao do "foot" exceto ultima p·gina
+% \hhline{|--|} \multicolumn{2}{|c|}{continua para pr√≥xima p√°gina} \\
+% \hhline{|--|} \endfoot % ate aqui eh definicao do "foot" exceto ultima p√°gina
 % \hhline{|b:=:=:b|} \endlastfoot % ate aqui eh definicao do "foot" 
 %   % da ultima pagina
 
@@ -97,7 +97,7 @@ letra da primeira linha.}	% legenda - opcional
     \FONTE{Coloque a fonte longa longa longa longa longa longa longa longa longa longa aqui, se houver.}
 \end{table}
 
-% Exemplos de 2 tabelas avanÁadas 
+% Exemplos de 2 tabelas avan√ßadas 
 
 \begin{table}[ht!]
 \caption{Outro exemplo de tabela}
@@ -154,12 +154,12 @@ letra da primeira linha.}	% legenda - opcional
 
 \setlongtables
 \begin{longtable}[c]{c|c|c|c|c|c}
-\caption{Exemplo de tabela longa que atravessa v·rias p·ginas.}\label{tab:longas}\\
+\caption{Exemplo de tabela longa que atravessa v√°rias p√°ginas.}\label{tab:longas}\\
 \hline
 \textbf{Campo1} & \textbf{Campo2} & \textbf{Campo3} & \textbf{Campo4} & \textbf{Campo5} & \textbf{Campo6} \\
 \hline\hline
 \endfirsthead
-\caption[]{ContinuaÁ„o} \\
+\caption[]{Continua√ß√£o} \\
 \hline
 \textbf{Campo1} & \textbf{Campo2} & \textbf{Campo3} & \textbf{Campo4} & \textbf{Campo5} & \textbf{Campo6} \\
 \hline\hline
@@ -246,24 +246,24 @@ letra da primeira linha.}	% legenda - opcional
 	campo1 & campo2 & campo3 & campo4 & campo5 & campo6 \\
 \hline
 \end{longtable}
-% o comando \FONTE{} n„o pode ser usado neste caso
+% o comando \FONTE{} n√£o pode ser usado neste caso
 \vspace{-8mm}
 \begin{center}
-	Fonte: ReferÍncia a fonte da tabela.
+	Fonte: Refer√™ncia a fonte da tabela.
 \end{center}
 
 
-A \autoref{tab:longa} È um exemplo de tabela no modo paisagem e que ocupa tambÈm v·rias p·ginas.
+A \autoref{tab:longa} √© um exemplo de tabela no modo paisagem e que ocupa tamb√©m v√°rias p√°ginas.
 
 \setlongtables
 \begin{landscape}
 \begin{longtable}[c]{c|c|c|c|c|c|c|c|c|c}
-\caption{Exemplo de tabela longa, em paisagem, que atravessa v·rias p·ginas.}\label{tab:longa}\\
+\caption{Exemplo de tabela longa, em paisagem, que atravessa v√°rias p√°ginas.}\label{tab:longa}\\
 \hline
 \textbf{BOX1} & \textbf{BOX2} & \textbf{BOX3} & \textbf{BOX4} & \textbf{BOX5} & \textbf{BOX6} & \textbf{BOX7} & \textbf{BOX8} & \textbf{BOX9} & \textbf{BOX10} \\
 \hline\hline
 \endfirsthead
-\caption[]{Conclus„o}\\
+\caption[]{Conclus√£o}\\
 \hline
 \textbf{BOX1} & \textbf{BOX2} & \textbf{BOX3} & \textbf{BOX4} & \textbf{BOX5} & \textbf{BOX6} & \textbf{BOX7} & \textbf{BOX8} & \textbf{BOX9} & \textbf{BOX10} \\
 \hline\hline
@@ -304,8 +304,8 @@ A \autoref{tab:longa} È um exemplo de tabela no modo paisagem e que ocupa tambÈm
 \hline
 \end{longtable}
 \vspace{-8mm}
-% o comando \FONTE{} n„o pode ser usado neste caso
+% o comando \FONTE{} n√£o pode ser usado neste caso
 \begin{center}
-	Fonte: ReferÍncia a fonte da tabela.
+	Fonte: Refer√™ncia a fonte da tabela.
 \end{center}
 \end{landscape}

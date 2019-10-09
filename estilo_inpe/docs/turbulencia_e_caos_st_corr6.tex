@@ -1,189 +1,189 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-%\chapter{SISTEMAS DINÂMICOS CAÓTICOS E TURBULÊNCIA}  
+%\chapter{SISTEMAS DINÃ‚MICOS CAÃ“TICOS E TURBULÃŠNCIA}  
 %\label{caprevibiblio}
 %
-%Este capítulo aborda as principais características apresentadas por sistemas dinâmicos não-lineares caóticos. São ainda apresentadas as características gerais da turbulência, como também alguns temas de grande relevância nesta área, como o fenômeno da intermitência e as estruturas coerentes. Finalmente, é exposta uma perspectiva adicional para a compreensão do fenômeno turbulento com base na teoria de sistemas dinâmicos, mais especificamente por meio de atratores caóticos.
+%Este capÃ­tulo aborda as principais caracterÃ­sticas apresentadas por sistemas dinÃ¢micos nÃ£o-lineares caÃ³ticos. SÃ£o ainda apresentadas as caracterÃ­sticas gerais da turbulÃªncia, como tambÃ©m alguns temas de grande relevÃ¢ncia nesta Ã¡rea, como o fenÃ´meno da intermitÃªncia e as estruturas coerentes. Finalmente, Ã© exposta uma perspectiva adicional para a compreensÃ£o do fenÃ´meno turbulento com base na teoria de sistemas dinÃ¢micos, mais especificamente por meio de atratores caÃ³ticos.
 %
-%\section{Sistemas Dinâmicos Caóticos}
+%\section{Sistemas DinÃ¢micos CaÃ³ticos}
 %\label{seccaos}
 %
-%\subsection{Introdução}
+%\subsection{IntroduÃ§Ã£o}
 %
-%O estudo de modelos lineares criou paradigmas que se enraizaram  na tradição histórica. O determinismo estrito é um bom exemplo disto e pode ser bem representado pelo pensamento de Laplace: ``Devemos ver o estado presente do universo como o efeito do seu estado anterior, e como a causa daquele que virá. Uma inteligência que, em qualquer instante dado, soubesse todas as forças pela qual o mundo natural se move e a posição de cada uma de suas partes componentes, e que tivesse também a capacidade de submeter todos estes dados à análise matemática, poderia englobar na mesma fórmula os movimentos dos maiores objetos do universo e àqueles dos menores átomos: nada seria incerto para ele, e o futuro, assim como o passado, estaria presente diante de seus olhos''~\cite{gleick/87}.
+%O estudo de modelos lineares criou paradigmas que se enraizaram  na tradiÃ§Ã£o histÃ³rica. O determinismo estrito Ã© um bom exemplo disto e pode ser bem representado pelo pensamento de Laplace: ``Devemos ver o estado presente do universo como o efeito do seu estado anterior, e como a causa daquele que virÃ¡. Uma inteligÃªncia que, em qualquer instante dado, soubesse todas as forÃ§as pela qual o mundo natural se move e a posiÃ§Ã£o de cada uma de suas partes componentes, e que tivesse tambÃ©m a capacidade de submeter todos estes dados Ã  anÃ¡lise matemÃ¡tica, poderia englobar na mesma fÃ³rmula os movimentos dos maiores objetos do universo e Ã queles dos menores Ã¡tomos: nada seria incerto para ele, e o futuro, assim como o passado, estaria presente diante de seus olhos''~\cite{gleick/87}.
 %
-%No final do século XIX, Poincaré estudava o problema da dinâmica de três corpos, quando concluiu que o acaso deveria se contrapor ao determinismo estrito de Laplace: ``Uma causa muito diminuta, que nos escapa, determina um efeito considerável, que não podemos deixar de ver, e então dizemos que este efeito é devido ao acaso. Se pudéssemos conhecer exatamente as leis da natureza e a situação do universo no instante inicial, seríamos capazes de prever exatamente a situação deste mesmo universo no instante subseqüente. Mas mesmo quando as leis naturais já não tivessem mais segredo para nós, só poderíamos conhecer a situação inicial aproximadamente. Se isto nos permite antecipar a situação subseqüente com o mesmo grau de aproximação, ficamos satisfeitos, dizemos que o fenômeno foi previsto, que é governado por leis. Mas nem sempre isto ocorre: pode acontecer que diferenças mínimas nas condições iniciais produzam diferenças muito grandes no fenômeno final: um erro mínimo nas primeiras produziria um erro enorme neste último. A previsão torna-se impossível e temos o fenômeno do acaso''~\cite{gleick/87}.
+%No final do sÃ©culo XIX, PoincarÃ© estudava o problema da dinÃ¢mica de trÃªs corpos, quando concluiu que o acaso deveria se contrapor ao determinismo estrito de Laplace: ``Uma causa muito diminuta, que nos escapa, determina um efeito considerÃ¡vel, que nÃ£o podemos deixar de ver, e entÃ£o dizemos que este efeito Ã© devido ao acaso. Se pudÃ©ssemos conhecer exatamente as leis da natureza e a situaÃ§Ã£o do universo no instante inicial, serÃ­amos capazes de prever exatamente a situaÃ§Ã£o deste mesmo universo no instante subseqÃ¼ente. Mas mesmo quando as leis naturais jÃ¡ nÃ£o tivessem mais segredo para nÃ³s, sÃ³ poderÃ­amos conhecer a situaÃ§Ã£o inicial aproximadamente. Se isto nos permite antecipar a situaÃ§Ã£o subseqÃ¼ente com o mesmo grau de aproximaÃ§Ã£o, ficamos satisfeitos, dizemos que o fenÃ´meno foi previsto, que Ã© governado por leis. Mas nem sempre isto ocorre: pode acontecer que diferenÃ§as mÃ­nimas nas condiÃ§Ãµes iniciais produzam diferenÃ§as muito grandes no fenÃ´meno final: um erro mÃ­nimo nas primeiras produziria um erro enorme neste Ãºltimo. A previsÃ£o torna-se impossÃ­vel e temos o fenÃ´meno do acaso''~\cite{gleick/87}.
 %
-%Apesar da clara visão de Poincaré a respeito da imprevisibilidade em alguns sistemas, foi só em $1963$, quando Lorenz desenvolvia estudos sobre problemas atmosféricos, que se retomou a idéia do acaso na \textit{análise de sistemas físicos de baixa dimensão}. Contando com o auxílio de um computador, Lorenz observou que uma pequena variação nas condições iniciais poderia acarretar grandes diferenças na evolução do sistema~\cite{lor/63}. Este fenômeno ficou conhecido como efeito borboleta, como uma alusão de que se uma borboleta batesse suas asas em algum lugar do planeta, poderia alterar a resposta de um sistema físico do outro lado da Terra. Tratava-se de um sistema totalmente determinístico cujos resultados poderiam ser imprevisíveis se as condições de medida não pudessem ser determinadas com precisão infinita. Iniciava-se o moderno estudo do caos, cujas idéias básicas haviam sido lançadas por Poincaré. 
+%Apesar da clara visÃ£o de PoincarÃ© a respeito da imprevisibilidade em alguns sistemas, foi sÃ³ em $1963$, quando Lorenz desenvolvia estudos sobre problemas atmosfÃ©ricos, que se retomou a idÃ©ia do acaso na \textit{anÃ¡lise de sistemas fÃ­sicos de baixa dimensÃ£o}. Contando com o auxÃ­lio de um computador, Lorenz observou que uma pequena variaÃ§Ã£o nas condiÃ§Ãµes iniciais poderia acarretar grandes diferenÃ§as na evoluÃ§Ã£o do sistema~\cite{lor/63}. Este fenÃ´meno ficou conhecido como efeito borboleta, como uma alusÃ£o de que se uma borboleta batesse suas asas em algum lugar do planeta, poderia alterar a resposta de um sistema fÃ­sico do outro lado da Terra. Tratava-se de um sistema totalmente determinÃ­stico cujos resultados poderiam ser imprevisÃ­veis se as condiÃ§Ãµes de medida nÃ£o pudessem ser determinadas com precisÃ£o infinita. Iniciava-se o moderno estudo do caos, cujas idÃ©ias bÃ¡sicas haviam sido lanÃ§adas por PoincarÃ©. 
 %
-%\subsection{Sistemas dinâmicos}
+%\subsection{Sistemas dinÃ¢micos}
 %
-%Um \textit{sistema dinâmico} é um sistema que evolui a cada instante de acordo com um conjunto de regras fixas que determinam como um estado do sistema se altera para um outro. Dois tipos principais de sistemas dinâmicos são encontrados em aplicações: aqueles nos quais a variável tempo é contínua ($t\in \mathds{R}$) e aqueles nos quais a variável tempo é discreta ($t\in \mathds{N}$).
+%Um \textit{sistema dinÃ¢mico} Ã© um sistema que evolui a cada instante de acordo com um conjunto de regras fixas que determinam como um estado do sistema se altera para um outro. Dois tipos principais de sistemas dinÃ¢micos sÃ£o encontrados em aplicaÃ§Ãµes: aqueles nos quais a variÃ¡vel tempo Ã© contÃ­nua ($t\in \mathds{R}$) e aqueles nos quais a variÃ¡vel tempo Ã© discreta ($t\in \mathds{N}$).
 %
-%Um \textit{sistema dinâmico contínuo} pode ser descrito por equações diferenciais ordinárias (EDO's) ou parciais (EDP's). Para o caso de uma ou mais EDO's, tal sistema assume a forma
+%Um \textit{sistema dinÃ¢mico contÃ­nuo} pode ser descrito por equaÃ§Ãµes diferenciais ordinÃ¡rias (EDO's) ou parciais (EDP's). Para o caso de uma ou mais EDO's, tal sistema assume a forma
 %\begin{equation}
 %\begin{array}{rcl} d\vec{x}(t)/dt & = & \vec{f}_{\mu}(\vec{x}(t)) \\ 
 %                   \vec{x}(0) & = & \vec{x}_{0} \\
 %\end{array}
 %\label{eqedo}
 %\end{equation}
-%enquanto um \textit{sistema dinâmico discreto} pode ser representado como a iteração de uma ou mais funções, isto é
+%enquanto um \textit{sistema dinÃ¢mico discreto} pode ser representado como a iteraÃ§Ã£o de uma ou mais funÃ§Ãµes, isto Ã©
 %\begin{equation}
 %\vec{x}_{n+1} = \vec{f}_{\mu}(\vec{x}_{n})
 %\label{eqmapa}
 %\end{equation}
-%onde $\vec{x}\in \mathds{R}^{m}$ corresponde ao vetor de estados do sistema, $\mu$ é definido como um \textit{parâmetro de controle} do sistema e $\vec{x}(0)$ é o vetor de condições iniciais das variáveis de estado do sistema dinâmico. 
+%onde $\vec{x}\in \mathds{R}^{m}$ corresponde ao vetor de estados do sistema, $\mu$ Ã© definido como um \textit{parÃ¢metro de controle} do sistema e $\vec{x}(0)$ Ã© o vetor de condiÃ§Ãµes iniciais das variÃ¡veis de estado do sistema dinÃ¢mico. 
 %
-%Se $\vec{f}_{\mu}$ é constituído de $m$ funções contínuas lineares, o sistema dinâmico é linear; caso contrário, o sistema dinâmico é não-linear. Se $\vec{f}_{\mu}$ não depende explicitamente do tempo $t$, o sistema dinâmico é autônomo; caso contrário o sistema é não-autônomo.
+%Se $\vec{f}_{\mu}$ Ã© constituÃ­do de $m$ funÃ§Ãµes contÃ­nuas lineares, o sistema dinÃ¢mico Ã© linear; caso contrÃ¡rio, o sistema dinÃ¢mico Ã© nÃ£o-linear. Se $\vec{f}_{\mu}$ nÃ£o depende explicitamente do tempo $t$, o sistema dinÃ¢mico Ã© autÃ´nomo; caso contrÃ¡rio o sistema Ã© nÃ£o-autÃ´nomo.
 %
-%O conjunto dos valores assumidos pelas variáveis de estado ao longo do tempo, a partir da condição inicial $\vec{x}(0)$, é chamada de \textit{trajetória} ou \textit{órbita} do sistema dinâmico. As trajetórias descritas pelas variáveis de estado de um sistema dinâmico são usualmente representadas em um espaço euclidiano $\mathds{R}^{m}$, que neste contexto é chamado de \textit{espaço de estados} ou ainda \textit{espaço de fase}, sendo $m$ a dimensão do sistema.
+%O conjunto dos valores assumidos pelas variÃ¡veis de estado ao longo do tempo, a partir da condiÃ§Ã£o inicial $\vec{x}(0)$, Ã© chamada de \textit{trajetÃ³ria} ou \textit{Ã³rbita} do sistema dinÃ¢mico. As trajetÃ³rias descritas pelas variÃ¡veis de estado de um sistema dinÃ¢mico sÃ£o usualmente representadas em um espaÃ§o euclidiano $\mathds{R}^{m}$, que neste contexto Ã© chamado de \textit{espaÃ§o de estados} ou ainda \textit{espaÃ§o de fase}, sendo $m$ a dimensÃ£o do sistema.
 %
 %
-%\subsection{Caos em sistemas dinâmicos não-lineares}
+%\subsection{Caos em sistemas dinÃ¢micos nÃ£o-lineares}
 %
-%Desde a constatação feita por Poincaré de que sistemas dinâmicos podem exibir comportamentos de extrema complexidade, uma série de novos conceitos e ferramentas matemáticas têm sido desenvolvidos com sucesso, incluindo a abordagem qualitativa do fenômeno dinâmico não-linear. Sobretudo, com o advento de sistemas de computação mais poderosos, é que o processo investigativo se acelerou, penetrando mais profundamente nas áreas da física teórica e da matemática computacional.
+%Desde a constataÃ§Ã£o feita por PoincarÃ© de que sistemas dinÃ¢micos podem exibir comportamentos de extrema complexidade, uma sÃ©rie de novos conceitos e ferramentas matemÃ¡ticas tÃªm sido desenvolvidos com sucesso, incluindo a abordagem qualitativa do fenÃ´meno dinÃ¢mico nÃ£o-linear. Sobretudo, com o advento de sistemas de computaÃ§Ã£o mais poderosos, Ã© que o processo investigativo se acelerou, penetrando mais profundamente nas Ã¡reas da fÃ­sica teÃ³rica e da matemÃ¡tica computacional.
 %
-%Desde então, inúmeros pesquisadores passaram a analisar diferentes sistemas dinâmicos da forma (\ref{eqedo}) ou (\ref{eqmapa}). \citeonline{may/76}, por exemplo, tratou de um sistema dinâmico relacionado com o crescimento populacional. Este trabalho abordou o \textit{mapa logístico} para o qual avalia a população $x$ no ano $n+1$ a partir da população do ano anterior, ou seja,
+%Desde entÃ£o, inÃºmeros pesquisadores passaram a analisar diferentes sistemas dinÃ¢micos da forma (\ref{eqedo}) ou (\ref{eqmapa}). \citeonline{may/76}, por exemplo, tratou de um sistema dinÃ¢mico relacionado com o crescimento populacional. Este trabalho abordou o \textit{mapa logÃ­stico} para o qual avalia a populaÃ§Ã£o $x$ no ano $n+1$ a partir da populaÃ§Ã£o do ano anterior, ou seja,
 %\begin{equation}
 %x_{n+1}=\lambda x_{n}\left(x_{n}-1\right)
 %\label{equalogis1}
 %\end{equation}
 %
-%Este mapa é um sistema dinâmico autônomo, discreto e unidimensional, isto é, caracterizado por uma única variável de estado $x\in \mathds{R}$. O parâmetro $\lambda$ define o tipo de resposta do sistema, ou seja, a iteração do mapa (\ref{equalogis1}) para diferentes valores de $\lambda$ pode conduzir à soluções estáveis, periódicas ou irregulares, como as apresentadas na Figura~\ref{figuralogis}. Em $(a)$, observa-se uma solução estável. Em $(b)$ e $(c)$, têm-se soluções periódicas de períodos $2$ e $4$ respectivamente. Já em $(d)$, observa-se uma seqüência determinística e aperiódica, característica de \textit{sistemas caóticos}.
+%Este mapa Ã© um sistema dinÃ¢mico autÃ´nomo, discreto e unidimensional, isto Ã©, caracterizado por uma Ãºnica variÃ¡vel de estado $x\in \mathds{R}$. O parÃ¢metro $\lambda$ define o tipo de resposta do sistema, ou seja, a iteraÃ§Ã£o do mapa (\ref{equalogis1}) para diferentes valores de $\lambda$ pode conduzir Ã  soluÃ§Ãµes estÃ¡veis, periÃ³dicas ou irregulares, como as apresentadas na Figura~\ref{figuralogis}. Em $(a)$, observa-se uma soluÃ§Ã£o estÃ¡vel. Em $(b)$ e $(c)$, tÃªm-se soluÃ§Ãµes periÃ³dicas de perÃ­odos $2$ e $4$ respectivamente. JÃ¡ em $(d)$, observa-se uma seqÃ¼Ãªncia determinÃ­stica e aperiÃ³dica, caracterÃ­stica de \textit{sistemas caÃ³ticos}.
 %
 %\begin{figure}[ht]
 %\centering \resizebox{15cm}{!}{\includegraphics{docs/figs/logistico1.png}\includegraphics{docs/figs/logistico2.png}}\\ \resizebox{15cm}{!}{\includegraphics{docs/figs/logistico3.png} \includegraphics{docs/figs/logistico4.png}}
-%\caption{Séries temporais obtidas a partir da iteração do mapa~(\ref{equalogis1}) com condição inicial fixa $x_{0}=0.01$ e para valores de $\lambda$ dados, respectivamente por $2.75$, $3.4$, $3.5$ e $4.0$.}
+%\caption{SÃ©ries temporais obtidas a partir da iteraÃ§Ã£o do mapa~(\ref{equalogis1}) com condiÃ§Ã£o inicial fixa $x_{0}=0.01$ e para valores de $\lambda$ dados, respectivamente por $2.75$, $3.4$, $3.5$ e $4.0$.}
 %\label{figuralogis}
 %\end{figure}
 %
-%O mapa logístico também evidencia outra característica dos sistemas caóticos: a \textit{imprevisibilidade}, ou seja, o conhecimento do valor aproximado do estado do sistema não permite predizer, de maneira imediata, sua evolução posterior para qualquer tempo futuro. Este comportamento está associado à \textit{sensibilidade às variações nas condições iniciais} e ao fato de não se conseguir obter com precisão infinita o valor real do estado. Para o Sistema~(\ref{equalogis1}) valores muito próximos de uma condição inicial $x_0$ conduzem, após algumas poucas iterações, a órbitas completamente distintas, conforme pode ser observado na Figura~\ref{figuralogis2}.
+%O mapa logÃ­stico tambÃ©m evidencia outra caracterÃ­stica dos sistemas caÃ³ticos: a \textit{imprevisibilidade}, ou seja, o conhecimento do valor aproximado do estado do sistema nÃ£o permite predizer, de maneira imediata, sua evoluÃ§Ã£o posterior para qualquer tempo futuro. Este comportamento estÃ¡ associado Ã  \textit{sensibilidade Ã s variaÃ§Ãµes nas condiÃ§Ãµes iniciais} e ao fato de nÃ£o se conseguir obter com precisÃ£o infinita o valor real do estado. Para o Sistema~(\ref{equalogis1}) valores muito prÃ³ximos de uma condiÃ§Ã£o inicial $x_0$ conduzem, apÃ³s algumas poucas iteraÃ§Ãµes, a Ã³rbitas completamente distintas, conforme pode ser observado na Figura~\ref{figuralogis2}.
 %
 %\begin{figure}[ht]
 %\centering
 %\resizebox{15cm}{!}{\includegraphics{docs/figs/logisticoci.png}\includegraphics{docs/figs/logisticocidiff.png}}
-%\caption{(a) Séries temporais obtidas pela iteração do mapa~(\ref{equalogis1}) para valores muito próximos de $x_0$. A curva em azul corresponde à órbita gerada com condição inicial $x_{0}=0.01$, enquanto que a curva em vermelho corresponde à órbita gerada com condição inicial $x_{0}=0.010001$. (b) as diferenças associadas às duas órbitas.}
+%\caption{(a) SÃ©ries temporais obtidas pela iteraÃ§Ã£o do mapa~(\ref{equalogis1}) para valores muito prÃ³ximos de $x_0$. A curva em azul corresponde Ã  Ã³rbita gerada com condiÃ§Ã£o inicial $x_{0}=0.01$, enquanto que a curva em vermelho corresponde Ã  Ã³rbita gerada com condiÃ§Ã£o inicial $x_{0}=0.010001$. (b) as diferenÃ§as associadas Ã s duas Ã³rbitas.}
 %\label{figuralogis2}
 %\end{figure}
 %
-%As trajetórias ou órbitas de um sistema caótico oscilam confinados em uma região limitada do espaço de estados, sem entretanto, apresentar periodicidade~\cite{alligood/97}. No interior desta região, as variáveis de estado exibem valores correspondentes a pontos no espaço de fase para os quais as trajetórias caóticas, iniciando em um número significativo de condições iniciais, passam arbitrariamente próximas, infinitas vezes, à medida que o sistema evolui no tempo. Isto é, uma vez iniciada a evolução do sistema, sua trajetória é \textit{atraída} para um sub-conjunto de pontos do espaço de fase, conhecido como \textit{atrator caótico}, e ali permanece percorrendo este sub-conjunto indefinidamente. O conjunto de todas as condições iniciais que converge para o atrator caótico é chamado \textit{bacia de atração} do atrator~\cite{alligood/97}.
+%As trajetÃ³rias ou Ã³rbitas de um sistema caÃ³tico oscilam confinados em uma regiÃ£o limitada do espaÃ§o de estados, sem entretanto, apresentar periodicidade~\cite{alligood/97}. No interior desta regiÃ£o, as variÃ¡veis de estado exibem valores correspondentes a pontos no espaÃ§o de fase para os quais as trajetÃ³rias caÃ³ticas, iniciando em um nÃºmero significativo de condiÃ§Ãµes iniciais, passam arbitrariamente prÃ³ximas, infinitas vezes, Ã  medida que o sistema evolui no tempo. Isto Ã©, uma vez iniciada a evoluÃ§Ã£o do sistema, sua trajetÃ³ria Ã© \textit{atraÃ­da} para um sub-conjunto de pontos do espaÃ§o de fase, conhecido como \textit{atrator caÃ³tico}, e ali permanece percorrendo este sub-conjunto indefinidamente. O conjunto de todas as condiÃ§Ãµes iniciais que converge para o atrator caÃ³tico Ã© chamado \textit{bacia de atraÃ§Ã£o} do atrator~\cite{alligood/97}.
 %
-%Se a estrutura geométrica criada por estados assintóticos das trajetórias for um fractal, este é denominado atrator estranho. Atratores caóticos apenas ocorrem em sistemas dissipativos. Sobre este atrator, a dinâmica é caracterizada por \textit{esticamentos} e \textit{dobras}; o primeiro fenômeno é responsável pela divergência de trajetórias próximas e o último é responsável pela contração da dinâmica para uma região finita em um subespaço de dimensão $\leq m$.  Em contraste com sistemas não-caóticos que possuem atratores de dimensão inteira como pontos atrativos (que geram soluções estacionárias) e ciclos limites (que produzem soluções periódicas), sistemas caóticos podem estar associados a atratores caóticos caracterizados por uma dimensão não-inteira $d$. Esta dimensão é uma propriedade do atrator, independentemente de uma trajetória em particular.
+%Se a estrutura geomÃ©trica criada por estados assintÃ³ticos das trajetÃ³rias for um fractal, este Ã© denominado atrator estranho. Atratores caÃ³ticos apenas ocorrem em sistemas dissipativos. Sobre este atrator, a dinÃ¢mica Ã© caracterizada por \textit{esticamentos} e \textit{dobras}; o primeiro fenÃ´meno Ã© responsÃ¡vel pela divergÃªncia de trajetÃ³rias prÃ³ximas e o Ãºltimo Ã© responsÃ¡vel pela contraÃ§Ã£o da dinÃ¢mica para uma regiÃ£o finita em um subespaÃ§o de dimensÃ£o $\leq m$.  Em contraste com sistemas nÃ£o-caÃ³ticos que possuem atratores de dimensÃ£o inteira como pontos atrativos (que geram soluÃ§Ãµes estacionÃ¡rias) e ciclos limites (que produzem soluÃ§Ãµes periÃ³dicas), sistemas caÃ³ticos podem estar associados a atratores caÃ³ticos caracterizados por uma dimensÃ£o nÃ£o-inteira $d$. Esta dimensÃ£o Ã© uma propriedade do atrator, independentemente de uma trajetÃ³ria em particular.
 %
-%Segundo \citeonline{ruelle/91} atratores caóticos que apresentam o fenômeno da \textit{sensibilidade às variações nas condições iniciais}, correspondem à excitação de um número finito de graus de liberdade e embora tais atratores possuam dimensão finita, a análise em termos de freqüências temporais revela um \textit{espectro contínuo de freqüências}. 
+%Segundo \citeonline{ruelle/91} atratores caÃ³ticos que apresentam o fenÃ´meno da \textit{sensibilidade Ã s variaÃ§Ãµes nas condiÃ§Ãµes iniciais}, correspondem Ã  excitaÃ§Ã£o de um nÃºmero finito de graus de liberdade e embora tais atratores possuam dimensÃ£o finita, a anÃ¡lise em termos de freqÃ¼Ãªncias temporais revela um \textit{espectro contÃ­nuo de freqÃ¼Ãªncias}. 
 %
-%O mapa de Hénon é um exemplo de sistema dinâmico discreto, que apresenta um atrator caótico em sua dinâmica. Este mapa é descrito pelas equações 
+%O mapa de HÃ©non Ã© um exemplo de sistema dinÃ¢mico discreto, que apresenta um atrator caÃ³tico em sua dinÃ¢mica. Este mapa Ã© descrito pelas equaÃ§Ãµes 
 %\begin{equation}
 %\begin{array}{lcl} x_{n+1} & = & 1-ax_{n}^2+y_{n} \\ 
 %                   y_{n+1} & = & bx_{n} \\
 %\end{array}
 %\label{eqhenon}
 %\end{equation}
-%sendo $a$ e $b$ parâmetros do mapa. Para valores de $a=1.4$ e $b=0.3$, este sistema apresenta um comportamento irregular e aperiódico que se desenvolve em um atrator caótico e estranho. O atrator de Hénon e uma seqüência de sua ampliação são mostrados na Figura~\ref{figurahenonsimilar}. A dimensão fractal~\cite{mandelbrot/82} associada a esse atrator é de $1.265$, sendo evidente seu caráter auto-similar - característica típica de atratores estranhos~\cite{alligood/97}.
+%sendo $a$ e $b$ parÃ¢metros do mapa. Para valores de $a=1.4$ e $b=0.3$, este sistema apresenta um comportamento irregular e aperiÃ³dico que se desenvolve em um atrator caÃ³tico e estranho. O atrator de HÃ©non e uma seqÃ¼Ãªncia de sua ampliaÃ§Ã£o sÃ£o mostrados na Figura~\ref{figurahenonsimilar}. A dimensÃ£o fractal~\cite{mandelbrot/82} associada a esse atrator Ã© de $1.265$, sendo evidente seu carÃ¡ter auto-similar - caracterÃ­stica tÃ­pica de atratores estranhos~\cite{alligood/97}.
 %
 %\begin{figure}[ht]
 %\centering
 %\resizebox{15cm}{!}{\includegraphics{docs/figs/henon.png}\includegraphics{docs/figs/henonamp1.png}}\\ \resizebox{15cm}{!}{\includegraphics{docs/figs/henonamp2.png} \includegraphics{docs/figs/henonamp3.png}}
-%\caption{Autosimilaridade do atrator de Hénon. Os pequenos quadrados indicam as regiões de ampliação. (a) $10^3$ iterações. (b) $10^5$ iterações. (c) $10^6$ iterações. (d) $10^7$ iterações.}
+%\caption{Autosimilaridade do atrator de HÃ©non. Os pequenos quadrados indicam as regiÃµes de ampliaÃ§Ã£o. (a) $10^3$ iteraÃ§Ãµes. (b) $10^5$ iteraÃ§Ãµes. (c) $10^6$ iteraÃ§Ãµes. (d) $10^7$ iteraÃ§Ãµes.}
 %\label{figurahenonsimilar}
 %\end{figure}
 %
-%Para medir a taxa de divergência de trajetórias e, portanto, quantificar a sensibilidade às variações nas condições iniciais, utilizam-se os \textit{expoentes característicos de Lyapunov}. Essa caracterização constitui um dos principais critérios para definir comportamento caótico em sistemas dinâmicos.  
+%Para medir a taxa de divergÃªncia de trajetÃ³rias e, portanto, quantificar a sensibilidade Ã s variaÃ§Ãµes nas condiÃ§Ãµes iniciais, utilizam-se os \textit{expoentes caracterÃ­sticos de Lyapunov}. Essa caracterizaÃ§Ã£o constitui um dos principais critÃ©rios para definir comportamento caÃ³tico em sistemas dinÃ¢micos.  
 %
-%Os expoentes de Lyapunov contêm informações sobre a taxa média com que as trajetórias exponencialmente divergem ou convergem dentro do atrator. Eles estão relacionados às direções de expansão ou contração no espaço de fase~\cite{wolf/85}. Um sistema caótico é caracterizado por uma divergência exponencial de condições iniciais próximas, o que implica em pelo menos um expoente de Lyapunov estritamente positivo. A magnitude do maior expoente positivo (caso exista) reflete a escala temporal sobre a qual o sistema dinâmico torna-se imprevisível~\cite{jaramillo/93}. 
+%Os expoentes de Lyapunov contÃªm informaÃ§Ãµes sobre a taxa mÃ©dia com que as trajetÃ³rias exponencialmente divergem ou convergem dentro do atrator. Eles estÃ£o relacionados Ã s direÃ§Ãµes de expansÃ£o ou contraÃ§Ã£o no espaÃ§o de fase~\cite{wolf/85}. Um sistema caÃ³tico Ã© caracterizado por uma divergÃªncia exponencial de condiÃ§Ãµes iniciais prÃ³ximas, o que implica em pelo menos um expoente de Lyapunov estritamente positivo. A magnitude do maior expoente positivo (caso exista) reflete a escala temporal sobre a qual o sistema dinÃ¢mico torna-se imprevisÃ­vel~\cite{jaramillo/93}. 
 %
-%A estimativa dos expoentes de Lyapunov de um sistema dinâmico dissipativo $m$-dimensional requer que se acompanhe a evolução de uma esfera infinitesimal $m$-dimensional de condições iniciais. Com o passar do tempo, a esfera evolui para a forma de um elipsóide. Os expoentes de Lyapunov são definidos tomando o eixo principal do elipsóide. Especificamente, o $i$-ésimo maior expoente $\lambda_{i}$ é definido em termos da taxa de crescimento do $i$-ésimo maior eixo principal, $P_{i}$:
+%A estimativa dos expoentes de Lyapunov de um sistema dinÃ¢mico dissipativo $m$-dimensional requer que se acompanhe a evoluÃ§Ã£o de uma esfera infinitesimal $m$-dimensional de condiÃ§Ãµes iniciais. Com o passar do tempo, a esfera evolui para a forma de um elipsÃ³ide. Os expoentes de Lyapunov sÃ£o definidos tomando o eixo principal do elipsÃ³ide. Especificamente, o $i$-Ã©simo maior expoente $\lambda_{i}$ Ã© definido em termos da taxa de crescimento do $i$-Ã©simo maior eixo principal, $P_{i}$:
 %\begin{equation}
 %\lambda_{i}=\lim_{t\rightarrow\ \infty}\frac{1}{t}\log_{2}\left[\frac{P_{i}(t)}{P_{i}(0)}\right]
 %\label{eqlyapheuristico}
 %\end{equation}
 % 
-% O conceito de expoente de Lyapunov pode ser apresentado, de forma heurística, considerando uma bola infinitesimal de dimensão $m$ em um espaço de estado. Durante a evolução desse sistema a bola se torna um elipsóide, porém ainda infinitesimal. Denotando o eixo principal deste elipsóide por $\epsilon_{i}(t)\:(i=1,2,\ldots,m)$, os expoentes de Lyapunov $\lambda_{i}$ são determinados por
+% O conceito de expoente de Lyapunov pode ser apresentado, de forma heurÃ­stica, considerando uma bola infinitesimal de dimensÃ£o $m$ em um espaÃ§o de estado. Durante a evoluÃ§Ã£o desse sistema a bola se torna um elipsÃ³ide, porÃ©m ainda infinitesimal. Denotando o eixo principal deste elipsÃ³ide por $\epsilon_{i}(t)\:(i=1,2,\ldots,m)$, os expoentes de Lyapunov $\lambda_{i}$ sÃ£o determinados por
 %  
 % \begin{equation}
 % \epsilon_{i}(t)\approx\epsilon_{i}(0)e^{\lambda_{i}t}
 % \label{eqlyapheuristico}
 % \end{equation}
 % 
-%A soma dos expoentes $\lambda_{i}$, que descrevem a contração do volume, deve ser negativa já que o sistema dinâmico é dissipativo. Desta forma, se um atrator caótico é resultante de esticamentos e dobras, isto requer que pelo menos um dos $\lambda_{i}$ seja positivo. Inversamente, um expoente de Lyapunov positivo implica sensibilidade às variações nas condições iniciais, e desta forma comportamento caótico~\cite{grassbergerstratt/83}.
+%A soma dos expoentes $\lambda_{i}$, que descrevem a contraÃ§Ã£o do volume, deve ser negativa jÃ¡ que o sistema dinÃ¢mico Ã© dissipativo. Desta forma, se um atrator caÃ³tico Ã© resultante de esticamentos e dobras, isto requer que pelo menos um dos $\lambda_{i}$ seja positivo. Inversamente, um expoente de Lyapunov positivo implica sensibilidade Ã s variaÃ§Ãµes nas condiÃ§Ãµes iniciais, e desta forma comportamento caÃ³tico~\cite{grassbergerstratt/83}.
 %
-%A Figura~\ref{fighenonlyapunov} apresenta a evolução ao longo do tempo dos expoentes de Lyapunov associados ao Sistema~(\ref{eqhenon}) com condição inicial $(x_{0},y_{0})=(1,1)$. Pode-se observar que um destes expoentes é positivo e dado por $\lambda_{1}=0.42$. Aproximações para os expoentes de Lyapunov, com condições iniciais diferentes, tendem para o mesmo valor $\lambda_{1}$, já que o Sistema~(\ref{eqhenon}) é ergódico. Esse comportamento parece indicar que o sistema apresenta dinâmica caótica.
+%A Figura~\ref{fighenonlyapunov} apresenta a evoluÃ§Ã£o ao longo do tempo dos expoentes de Lyapunov associados ao Sistema~(\ref{eqhenon}) com condiÃ§Ã£o inicial $(x_{0},y_{0})=(1,1)$. Pode-se observar que um destes expoentes Ã© positivo e dado por $\lambda_{1}=0.42$. AproximaÃ§Ãµes para os expoentes de Lyapunov, com condiÃ§Ãµes iniciais diferentes, tendem para o mesmo valor $\lambda_{1}$, jÃ¡ que o Sistema~(\ref{eqhenon}) Ã© ergÃ³dico. Esse comportamento parece indicar que o sistema apresenta dinÃ¢mica caÃ³tica.
 %
 %\begin{figure}[ht]
 %\centering \resizebox{10cm}{!}{\includegraphics{docs/figs/henonlyapunov.png}} 
 %\centering \resizebox{13cm}{!}{\includegraphics{docs/figs/henonlyapunovgrid.png}} 
-%\caption{Expoentes de Lyapunov associados ao mapa de Hénon (\ref{eqhenon}) com $a=1.4$ e $b=0.3$.}
+%\caption{Expoentes de Lyapunov associados ao mapa de HÃ©non (\ref{eqhenon}) com $a=1.4$ e $b=0.3$.}
 %\label{fighenonlyapunov}
 %\end{figure}
 %
-%O artigo clássico de \citeonline{lor/63} foi um dos primeiros trabalhos a descrever movimentos caóticos a partir de um sistema de EDO's, como uma aproximação para a dinâmica de uma camada de fluido convectiva. Suponha que esta camada seja mais quente na base do que no topo (conforme a Figura~\ref{figconveclorenz}), e que a diferença de temperatura $\Delta t$ seja suficiente grande. Sob estas condições o ar mais quente se eleva, deslocando o ar mais frio que está por cima, provocando um movimento convectivo permanente. Se a diferença de temperatura aumentar ainda mais, o escoamento convectivo permanente é perturbado e se instala um movimento turbulento mais complicado~\cite{boyce/99}.
+%O artigo clÃ¡ssico de \citeonline{lor/63} foi um dos primeiros trabalhos a descrever movimentos caÃ³ticos a partir de um sistema de EDO's, como uma aproximaÃ§Ã£o para a dinÃ¢mica de uma camada de fluido convectiva. Suponha que esta camada seja mais quente na base do que no topo (conforme a Figura~\ref{figconveclorenz}), e que a diferenÃ§a de temperatura $\Delta t$ seja suficiente grande. Sob estas condiÃ§Ãµes o ar mais quente se eleva, deslocando o ar mais frio que estÃ¡ por cima, provocando um movimento convectivo permanente. Se a diferenÃ§a de temperatura aumentar ainda mais, o escoamento convectivo permanente Ã© perturbado e se instala um movimento turbulento mais complicado~\cite{boyce/99}.
 %
 %\begin{figure}[ht]
 %\centering \resizebox{13cm}{!}{\includegraphics{docs/figs/rolo.png}} 
-%\caption{Movimento convectivo de uma camada de fluido, com diferença de temperatura $\Delta t$ entre a placa inferior e a superior que o delimita.}
+%\caption{Movimento convectivo de uma camada de fluido, com diferenÃ§a de temperatura $\Delta t$ entre a placa inferior e a superior que o delimita.}
 %\FONTE{Adaptada de \citeonline{argyris/94}.}
 %\label{figconveclorenz}
 %\end{figure}
 %
-%Ao investigar este fenômeno, Lorenz foi levado, por um processo complexo cuja descrição não é o enfoque deste trabalho, ao sistema autônomo não-linear de EDO's
+%Ao investigar este fenÃ´meno, Lorenz foi levado, por um processo complexo cuja descriÃ§Ã£o nÃ£o Ã© o enfoque deste trabalho, ao sistema autÃ´nomo nÃ£o-linear de EDO's
 %\begin{equation}
 %\begin{array}{ccc} dx/dt & = & \sigma(-x+y) \\ dy/dt & = & rx-y-xz \\ dz/dt & = & -bz+xy \end{array}
 %\label{eqsistemalorenz}
 %\end{equation}
 %
-%As Equações~(\ref{eqsistemalorenz}) são comumente denominadas equações de Lorenz. Pode-se observar que a segunda e a terceira equações envolvem não-linearidades quadráticas. A variável $x$, está relacionada à intensidade do movimento do fluido, enquanto as variáveis $y$ e $z$ estão relacionadas a variações de temperatura nas direções horizontal e vertical. As equações de Lorenz também envolvem três parâmetros $\sigma$, $r$ e $b$, todos reais e positivos. Os parâmetros $\sigma$ e $b$ dependem do material e das propriedades geométricas da camada fluida. No caso da atmosfera, valores razoáveis destes parâmetros são 
-%$\sigma=10$ e $b=8/3$~\cite{lor/63}. O parâmetro $r$, por outro lado, é proporcional à diferença de temperatura $\Delta t$, e em todas as simulações posteriores assumirá valor $28$. Desta forma, o Sistema~(\ref{eqsistemalorenz}) assume uma forma particular, dada por
+%As EquaÃ§Ãµes~(\ref{eqsistemalorenz}) sÃ£o comumente denominadas equaÃ§Ãµes de Lorenz. Pode-se observar que a segunda e a terceira equaÃ§Ãµes envolvem nÃ£o-linearidades quadrÃ¡ticas. A variÃ¡vel $x$, estÃ¡ relacionada Ã  intensidade do movimento do fluido, enquanto as variÃ¡veis $y$ e $z$ estÃ£o relacionadas a variaÃ§Ãµes de temperatura nas direÃ§Ãµes horizontal e vertical. As equaÃ§Ãµes de Lorenz tambÃ©m envolvem trÃªs parÃ¢metros $\sigma$, $r$ e $b$, todos reais e positivos. Os parÃ¢metros $\sigma$ e $b$ dependem do material e das propriedades geomÃ©tricas da camada fluida. No caso da atmosfera, valores razoÃ¡veis destes parÃ¢metros sÃ£o 
+%$\sigma=10$ e $b=8/3$~\cite{lor/63}. O parÃ¢metro $r$, por outro lado, Ã© proporcional Ã  diferenÃ§a de temperatura $\Delta t$, e em todas as simulaÃ§Ãµes posteriores assumirÃ¡ valor $28$. Desta forma, o Sistema~(\ref{eqsistemalorenz}) assume uma forma particular, dada por
 %\begin{equation}
 %\begin{array}{ccc} dx/dt & = & 10(-x+y) \\ dy/dt & = & 28x-y-xz \\ dz/dt & = & -8/3z+xy \end{array}
 %\label{eqsistemalorenzpart}
 %\end{equation}
 %
-%A Figura~\ref{figlorenzx}(a) apresenta um gráfico de valores calculados de $x$ em função de $t$, ou seja, a evolução no tempo da variável de estado $x$, que é parte da solução do Sistema~(\ref{eqsistemalorenzpart}). Note que a solução oscila entre valores positivos e negativos de uma maneira aparentemente errática. Na realidade, o gráfico de $x$ contra $t$ assemelha-se ao de uma oscilação aleatória, embora as equações de Lorenz sejam inteiramente determinísticas e a solução seja completamente determinada pelas condições iniciais. Não obstante, a solução aparenta, também, uma certa \textit{regularidade}, pois a freqüência e a amplitude das oscilações são essencialmente constantes no tempo.
+%A Figura~\ref{figlorenzx}(a) apresenta um grÃ¡fico de valores calculados de $x$ em funÃ§Ã£o de $t$, ou seja, a evoluÃ§Ã£o no tempo da variÃ¡vel de estado $x$, que Ã© parte da soluÃ§Ã£o do Sistema~(\ref{eqsistemalorenzpart}). Note que a soluÃ§Ã£o oscila entre valores positivos e negativos de uma maneira aparentemente errÃ¡tica. Na realidade, o grÃ¡fico de $x$ contra $t$ assemelha-se ao de uma oscilaÃ§Ã£o aleatÃ³ria, embora as equaÃ§Ãµes de Lorenz sejam inteiramente determinÃ­sticas e a soluÃ§Ã£o seja completamente determinada pelas condiÃ§Ãµes iniciais. NÃ£o obstante, a soluÃ§Ã£o aparenta, tambÃ©m, uma certa \textit{regularidade}, pois a freqÃ¼Ãªncia e a amplitude das oscilaÃ§Ãµes sÃ£o essencialmente constantes no tempo.
 %
-%As soluções das equações de Lorenz são também muito sensíveis a perturbações nas condições iniciais. A Figura~\ref{figlorenzx}(b) mostra os gráficos dos valores calculados de $x$ contra $t$ para duas soluções com condições iniciais bastante próximas. As duas soluções ficam bastante próximas uma da outra, até $t$ nas vizinhanças de $10$, e depois se tornam bastante diferentes, parecendo não ter qualquer relação mútua. Esta propriedade atraiu particularmente a atenção de Lorenz no seu trabalho original sobre as equações, e que tal fato deve estar relacionado à impossibilidade de se ter previsões a longo prazo das condições meteorológicas~\cite{boyce/99}.
+%As soluÃ§Ãµes das equaÃ§Ãµes de Lorenz sÃ£o tambÃ©m muito sensÃ­veis a perturbaÃ§Ãµes nas condiÃ§Ãµes iniciais. A Figura~\ref{figlorenzx}(b) mostra os grÃ¡ficos dos valores calculados de $x$ contra $t$ para duas soluÃ§Ãµes com condiÃ§Ãµes iniciais bastante prÃ³ximas. As duas soluÃ§Ãµes ficam bastante prÃ³ximas uma da outra, atÃ© $t$ nas vizinhanÃ§as de $10$, e depois se tornam bastante diferentes, parecendo nÃ£o ter qualquer relaÃ§Ã£o mÃºtua. Esta propriedade atraiu particularmente a atenÃ§Ã£o de Lorenz no seu trabalho original sobre as equaÃ§Ãµes, e que tal fato deve estar relacionado Ã  impossibilidade de se ter previsÃµes a longo prazo das condiÃ§Ãµes meteorolÃ³gicas~\cite{boyce/99}.
 %
 %\begin{figure}[ht]
 %\centering 
 %\resizebox{15cm}{!}{\includegraphics{docs/figs/lorenzst.png}\includegraphics{docs/figs/lorenzstci.png}}
-%\caption{Séries temporais obtidas a partir da integração do Sistema~(\ref{eqsistemalorenzpart}). (a) condição inicial de $(5,5,5)$. (b) condição inicial da curva em azul é de $(5,5,5)$ enquanto que a da curva em vermelho é de $(5.01,5,5)$.}
+%\caption{SÃ©ries temporais obtidas a partir da integraÃ§Ã£o do Sistema~(\ref{eqsistemalorenzpart}). (a) condiÃ§Ã£o inicial de $(5,5,5)$. (b) condiÃ§Ã£o inicial da curva em azul Ã© de $(5,5,5)$ enquanto que a da curva em vermelho Ã© de $(5.01,5,5)$.}
 %\label{figlorenzx}
 %\end{figure}
 %
-%A Figura~\ref{figlorenzatratorproj} apresenta uma trajetória que principia em $(5,5,5)$ no espaço de fase tridimensional, que se desenvolve em um atrator caótico cuja dimensão de capacidade é de aproximadamente $2.16$~\cite{argyris/94}, como também suas projeções nos planos $xy$, $xz$ e $yz$. Pode-se observar que a trajetória sobre o atrator nunca repete o mesmo caminho; contudo, ela está confinada (atraída) em uma região limitada do espaço de fase. Tal trajetória se alterna sobre um dos dois lóbulos, onde cada um deles contém um ponto crítico instável, e este processo é repetido indefinidamente.
+%A Figura~\ref{figlorenzatratorproj} apresenta uma trajetÃ³ria que principia em $(5,5,5)$ no espaÃ§o de fase tridimensional, que se desenvolve em um atrator caÃ³tico cuja dimensÃ£o de capacidade Ã© de aproximadamente $2.16$~\cite{argyris/94}, como tambÃ©m suas projeÃ§Ãµes nos planos $xy$, $xz$ e $yz$. Pode-se observar que a trajetÃ³ria sobre o atrator nunca repete o mesmo caminho; contudo, ela estÃ¡ confinada (atraÃ­da) em uma regiÃ£o limitada do espaÃ§o de fase. Tal trajetÃ³ria se alterna sobre um dos dois lÃ³bulos, onde cada um deles contÃ©m um ponto crÃ­tico instÃ¡vel, e este processo Ã© repetido indefinidamente.
 %
 %\begin{figure}[ht]
 %\centering \resizebox{13cm}{!}{\includegraphics{docs/figs/lorenzatratorproj.png} } 
-%\caption{O atrator caótico de Lorenz com condição inicial $(5,5,5)$, e suas projeções nos planos $xy$ e $xz$ e $yz$.}
+%\caption{O atrator caÃ³tico de Lorenz com condiÃ§Ã£o inicial $(5,5,5)$, e suas projeÃ§Ãµes nos planos $xy$ e $xz$ e $yz$.}
 %\label{figlorenzatratorproj}
 %\end{figure}
 %
-%Segundo \citeonline{wolf/85} os expoentes de Lyapunov associados ao Sistema~(\ref{eqsistemalorenz}) (com $\sigma=16$ e $b=4.0$ e $r=45.92$) são dados por
-%$\lambda_{1}=2.16$, $\lambda_{2}=0$ e $\lambda_{3}=-32.4$. Desta forma, a dinâmica caótica presente nesse sistema parece se confirmar pela presença de um expoente de Lyapunov positivo~\cite{wolf/85}.
+%Segundo \citeonline{wolf/85} os expoentes de Lyapunov associados ao Sistema~(\ref{eqsistemalorenz}) (com $\sigma=16$ e $b=4.0$ e $r=45.92$) sÃ£o dados por
+%$\lambda_{1}=2.16$, $\lambda_{2}=0$ e $\lambda_{3}=-32.4$. Desta forma, a dinÃ¢mica caÃ³tica presente nesse sistema parece se confirmar pela presenÃ§a de um expoente de Lyapunov positivo~\cite{wolf/85}.
 %
-%Quando as equações que governam um sistema dinâmico são conhecidas, o estudo das características de suas soluções e de seus invariantes podem revelar comportamentos complexos e interessantes. Porém, em situações reais raramente se dispõe de um conjunto de equações diferenciais ou mesmo um mapa que descreva o comportamento do sistema. Em geral, monitora-se uma única variável, a partir de um experimento que se sabe de antemão depender de outras variáveis. Desta forma, obtém-se uma série temporal de medidas semelhantes às exibidas pelas docs/figs~(\ref{figlorenzx}) ou (\ref{figuralogis}) (admitindo-se o não-conhecimento de suas equações) e não se tem acesso às outras variáveis relevantes. A análise de séries temporais com base na teoria de sistemas dinâmicos é um dos temas centrais do Capítulo~\ref{caputiltecnicas}.
+%Quando as equaÃ§Ãµes que governam um sistema dinÃ¢mico sÃ£o conhecidas, o estudo das caracterÃ­sticas de suas soluÃ§Ãµes e de seus invariantes podem revelar comportamentos complexos e interessantes. PorÃ©m, em situaÃ§Ãµes reais raramente se dispÃµe de um conjunto de equaÃ§Ãµes diferenciais ou mesmo um mapa que descreva o comportamento do sistema. Em geral, monitora-se uma Ãºnica variÃ¡vel, a partir de um experimento que se sabe de antemÃ£o depender de outras variÃ¡veis. Desta forma, obtÃ©m-se uma sÃ©rie temporal de medidas semelhantes Ã s exibidas pelas docs/figs~(\ref{figlorenzx}) ou (\ref{figuralogis}) (admitindo-se o nÃ£o-conhecimento de suas equaÃ§Ãµes) e nÃ£o se tem acesso Ã s outras variÃ¡veis relevantes. A anÃ¡lise de sÃ©ries temporais com base na teoria de sistemas dinÃ¢micos Ã© um dos temas centrais do CapÃ­tulo~\ref{caputiltecnicas}.
 %
 % 
-%\section{Turbulência}
+%\section{TurbulÃªncia}
 %\label{secturb}
 %
-%\subsection{Introdução}
+%\subsection{IntroduÃ§Ã£o}
 %
-%O primeiro esboço de um fluxo turbulento, com diversos graus de realismo, foi feito por Leonardo da Vinci no século XV (conforme Figura~\ref{figleonardo}). Para ele o movimento da água em ``redemoinhos'' era devido em parte à sua corrente principal, como também por movimentos contrários e aleatórios. Da Vinci nomeou tal fenômeno de ``la turbolenza''~\cite{richter/70}. 
+%O primeiro esboÃ§o de um fluxo turbulento, com diversos graus de realismo, foi feito por Leonardo da Vinci no sÃ©culo XV (conforme Figura~\ref{figleonardo}). Para ele o movimento da Ã¡gua em ``redemoinhos'' era devido em parte Ã  sua corrente principal, como tambÃ©m por movimentos contrÃ¡rios e aleatÃ³rios. Da Vinci nomeou tal fenÃ´meno de ``la turbolenza''~\cite{richter/70}. 
 %
 %\begin{figure}[ht]
 %\centering \resizebox{13cm}{!}{\includegraphics{docs/figs/DaVinci3.png}}
 %\centering \resizebox{10cm}{!}{\includegraphics{docs/figs/DaVincipb.png}} opcao preto e branco!!!
-%\caption{Ilustração de Leonardo da Vinci de um fluxo em redemoinhos.}
+%\caption{IlustraÃ§Ã£o de Leonardo da Vinci de um fluxo em redemoinhos.}
 %\FONTE{\citeonline{ecke/05}}
 %\label{figleonardo}
 %\end{figure}
 %
-%Dois aspectos das observações de Leonardo da Vinci têm permanecido até os dias de hoje. Primeiro, a separação do fluxo em uma parte média e outra flutuante, que antecipou em quase $400$ anos a aproximação feita por Osborne Reynolds. Segundo, a identificação de ``vórtices'' como elementos intrínsecos no movimento turbulento. O termo ``vórtice'', usado aqui, refere-se a vários tipos de estruturas turbulentas presentes no escoamento, associadas, por exemplo, ao campo de velocidade de um fluido~\cite{ecke/05}.
+%Dois aspectos das observaÃ§Ãµes de Leonardo da Vinci tÃªm permanecido atÃ© os dias de hoje. Primeiro, a separaÃ§Ã£o do fluxo em uma parte mÃ©dia e outra flutuante, que antecipou em quase $400$ anos a aproximaÃ§Ã£o feita por Osborne Reynolds. Segundo, a identificaÃ§Ã£o de ``vÃ³rtices'' como elementos intrÃ­nsecos no movimento turbulento. O termo ``vÃ³rtice'', usado aqui, refere-se a vÃ¡rios tipos de estruturas turbulentas presentes no escoamento, associadas, por exemplo, ao campo de velocidade de um fluido~\cite{ecke/05}.
 %
-%\subsection{As equações de Navier Stokes}
+%\subsection{As equaÃ§Ãµes de Navier Stokes}
 %
-%Após as descrições feitas por Leonardo da Vinci, o maior avanço na análise do movimento de um fluido foi por meio de equações dinâmicas, como as equações de Navier Stokes (escritas durante o século XIX), que descrevem a taxa de variação da quantidade de movimento em cada ponto de um fluido viscoso. Para um fluido com densidade constante $\rho$ e viscosidade cinemática constante $\nu$, as equações de Navier-Stokes assumem a forma 
+%ApÃ³s as descriÃ§Ãµes feitas por Leonardo da Vinci, o maior avanÃ§o na anÃ¡lise do movimento de um fluido foi por meio de equaÃ§Ãµes dinÃ¢micas, como as equaÃ§Ãµes de Navier Stokes (escritas durante o sÃ©culo XIX), que descrevem a taxa de variaÃ§Ã£o da quantidade de movimento em cada ponto de um fluido viscoso. Para um fluido com densidade constante $\rho$ e viscosidade cinemÃ¡tica constante $\nu$, as equaÃ§Ãµes de Navier-Stokes assumem a forma 
 %
 %\begin{equation}
 %\frac{\partial u}{\partial t}+u\cdot\bigtriangledown u=-\frac{\bigtriangledown P}{\rho}+\nu\bigtriangledown ^2u
@@ -195,30 +195,30 @@
 %\label{eqns2}
 %\end{equation}
 %
-%Essas equações modelam o escoamento de fluidos incompressíveis, laminares e turbulentos, a partir de condições convenientes impostas nos contornos do fluido. A Equação~(\ref{eqns2}) é a condição de continuidade (sem fontes nem sumidouros), a variável $u(x,t)$ é o campo de velocidade do fluido (incompressível), e $P(x,t)$ é o campo de pressão determinado pela preservação da incompressibilidade~\cite{ecke/05}. O termo $\nu\bigtriangledown ^2u$ representa a contribuição das forças dissipativas lineares da Equação~(\ref{eqns1}), enquanto o termo $u\cdot\bigtriangledown u$ representa a contribuição das forças de inércia não lineares da mesma equação.
+%Essas equaÃ§Ãµes modelam o escoamento de fluidos incompressÃ­veis, laminares e turbulentos, a partir de condiÃ§Ãµes convenientes impostas nos contornos do fluido. A EquaÃ§Ã£o~(\ref{eqns2}) Ã© a condiÃ§Ã£o de continuidade (sem fontes nem sumidouros), a variÃ¡vel $u(x,t)$ Ã© o campo de velocidade do fluido (incompressÃ­vel), e $P(x,t)$ Ã© o campo de pressÃ£o determinado pela preservaÃ§Ã£o da incompressibilidade~\cite{ecke/05}. O termo $\nu\bigtriangledown ^2u$ representa a contribuiÃ§Ã£o das forÃ§as dissipativas lineares da EquaÃ§Ã£o~(\ref{eqns1}), enquanto o termo $u\cdot\bigtriangledown u$ representa a contribuiÃ§Ã£o das forÃ§as de inÃ©rcia nÃ£o lineares da mesma equaÃ§Ã£o.
 %
-%A Figura~(\ref{figvulcao}) apresenta a erupção explosiva do Monte St. Helens em sucessivas ampliações, mostrando estruturas em diversos comprimentos de escala. A grande diferença de velocidade, resultante de forças de cisalhamento aplicadas produzem um fluido fortemente turbulento, um estado que pode ser definido como uma solução das equações de Navier-Stokes cujas características exibem flutuações espacial e temporal~\cite{ecke/05}.
+%A Figura~(\ref{figvulcao}) apresenta a erupÃ§Ã£o explosiva do Monte St. Helens em sucessivas ampliaÃ§Ãµes, mostrando estruturas em diversos comprimentos de escala. A grande diferenÃ§a de velocidade, resultante de forÃ§as de cisalhamento aplicadas produzem um fluido fortemente turbulento, um estado que pode ser definido como uma soluÃ§Ã£o das equaÃ§Ãµes de Navier-Stokes cujas caracterÃ­sticas exibem flutuaÃ§Ãµes espacial e temporal~\cite{ecke/05}.
 % 
-%A Equação~(\ref{eqns1}) (quando multiplicada por $\rho$ fornece força por unidade de volume) é simplesmente a lei de Newton para um fluido: força é igual massa vezes aceleração. O lado esquerdo da mesma é a aceleração do fluido\footnote{A aceleração de um fluido é, por definição, a derivada segunda (no tempo) da trajetória do fluido lagrangiano $x(t)$, que descreve o movimento do fluido que estava inicialmente na posição $x(0)$. A primeira derivada é a velocidade lagrangiana do fluido, $dx(t)/dt$ que está relacionada com a velocidade euleriana do fluido por $dx(t)/dt=u(t,x(t))$. Devido $u$ ser uma função do tempo $t$ e da posição $x(t)$, que é por si mesma função do tempo, a expressão euleriana para a derivada segunda lagrangiana (a aceleração do fluido) é obtida através da regra da cadeia e igual a $du/dt=\partial u/\partial t +u\cdot\bigtriangledown u$.}, e seu lado direito é a soma das forças por unidade de massa sobre uma unidade de volume do fluido.
+%A EquaÃ§Ã£o~(\ref{eqns1}) (quando multiplicada por $\rho$ fornece forÃ§a por unidade de volume) Ã© simplesmente a lei de Newton para um fluido: forÃ§a Ã© igual massa vezes aceleraÃ§Ã£o. O lado esquerdo da mesma Ã© a aceleraÃ§Ã£o do fluido\footnote{A aceleraÃ§Ã£o de um fluido Ã©, por definiÃ§Ã£o, a derivada segunda (no tempo) da trajetÃ³ria do fluido lagrangiano $x(t)$, que descreve o movimento do fluido que estava inicialmente na posiÃ§Ã£o $x(0)$. A primeira derivada Ã© a velocidade lagrangiana do fluido, $dx(t)/dt$ que estÃ¡ relacionada com a velocidade euleriana do fluido por $dx(t)/dt=u(t,x(t))$. Devido $u$ ser uma funÃ§Ã£o do tempo $t$ e da posiÃ§Ã£o $x(t)$, que Ã© por si mesma funÃ§Ã£o do tempo, a expressÃ£o euleriana para a derivada segunda lagrangiana (a aceleraÃ§Ã£o do fluido) Ã© obtida atravÃ©s da regra da cadeia e igual a $du/dt=\partial u/\partial t +u\cdot\bigtriangledown u$.}, e seu lado direito Ã© a soma das forÃ§as por unidade de massa sobre uma unidade de volume do fluido.
 %
-%Acredita-se que as equações de Navier-Stokes contêm toda a informação sobre o escoamento turbulento. Embora o problema físico possa em princípio ser completamente revelado pela solução dessas equações, dadas as condições iniciais e de contorno, há uma grande dificuldade devido à sua natureza não-linear~\cite{welter/06}. Mesmo que fosse possível obter uma solução completa de um escoamento turbulento, onde o campo de velocidades $u(x,t)$ pudesse ser conhecido com exatidão em cada ponto do espaço e a cada instante de tempo, esse tipo de conhecimento seria inaplicável devido à dificuldade de armazenagem e processamento da enorme quantidade de informação. Assim, devido os graus de liberdade envolvidos em um escoamento turbulento serem muito grandes,\footnote{Segundo \citeonline{lulandlif/59}, o número de graus de liberdade em um escoamento turbulento é proporcional a $R_{e}^{9/4}$, onde $R_{e}$ é denominado número de Reynolds.} uma das abordagens mais utilizadas é o tratamento estatístico das quantidades de interesse.
+%Acredita-se que as equaÃ§Ãµes de Navier-Stokes contÃªm toda a informaÃ§Ã£o sobre o escoamento turbulento. Embora o problema fÃ­sico possa em princÃ­pio ser completamente revelado pela soluÃ§Ã£o dessas equaÃ§Ãµes, dadas as condiÃ§Ãµes iniciais e de contorno, hÃ¡ uma grande dificuldade devido Ã  sua natureza nÃ£o-linear~\cite{welter/06}. Mesmo que fosse possÃ­vel obter uma soluÃ§Ã£o completa de um escoamento turbulento, onde o campo de velocidades $u(x,t)$ pudesse ser conhecido com exatidÃ£o em cada ponto do espaÃ§o e a cada instante de tempo, esse tipo de conhecimento seria inaplicÃ¡vel devido Ã  dificuldade de armazenagem e processamento da enorme quantidade de informaÃ§Ã£o. Assim, devido os graus de liberdade envolvidos em um escoamento turbulento serem muito grandes,\footnote{Segundo \citeonline{lulandlif/59}, o nÃºmero de graus de liberdade em um escoamento turbulento Ã© proporcional a $R_{e}^{9/4}$, onde $R_{e}$ Ã© denominado nÃºmero de Reynolds.} uma das abordagens mais utilizadas Ã© o tratamento estatÃ­stico das quantidades de interesse.
 %
 %\begin{figure}[ht]
 %\centering \resizebox{15cm}{!}{\includegraphics{docs/figs/vulcaoturb.png}}
-%\caption{(a) A estrutura turbulenta de uma erupção vulcânica do Monte St. Helens, (b) ampliação por um fator de $2$, (c) ampliação por outro fator de $2$. 
-%A escala característica da coluna de fumaça é de aproximadamente $5$ Km. }
+%\caption{(a) A estrutura turbulenta de uma erupÃ§Ã£o vulcÃ¢nica do Monte St. Helens, (b) ampliaÃ§Ã£o por um fator de $2$, (c) ampliaÃ§Ã£o por outro fator de $2$. 
+%A escala caracterÃ­stica da coluna de fumaÃ§a Ã© de aproximadamente $5$ Km. }
 %\FONTE{\citeonline{ecke/05}}
 %\label{figvulcao}
 %\end{figure}
 %
 %
-%\subsection {O Número de Reynolds}
+%\subsection {O NÃºmero de Reynolds}
 %
-%Como se sabe, é possível distinguir entre dois tipos de escoamentos. Os escoamentos laminares, que são suaves e determinísticos, e os escoamentos turbulentos, que são abruptos e irregulares no tempo e no espaço. A transição do escoamento laminar para o escoamento turbulento é considerado um dos problemas mais complexos em mecânica dos fluidos. As teorias de transição do escoamento laminar para o turbulento são baseadas nas pequenas perturbações no escoamento. Estas perturbações teriam sua origem nas colisões intermoleculares, e dependendo da estabilidade do escoamento, seriam amplificadas ao passar do tempo e então o escoamento torna-se turbulento~\cite{welter/06}.
+%Como se sabe, Ã© possÃ­vel distinguir entre dois tipos de escoamentos. Os escoamentos laminares, que sÃ£o suaves e determinÃ­sticos, e os escoamentos turbulentos, que sÃ£o abruptos e irregulares no tempo e no espaÃ§o. A transiÃ§Ã£o do escoamento laminar para o escoamento turbulento Ã© considerado um dos problemas mais complexos em mecÃ¢nica dos fluidos. As teorias de transiÃ§Ã£o do escoamento laminar para o turbulento sÃ£o baseadas nas pequenas perturbaÃ§Ãµes no escoamento. Estas perturbaÃ§Ãµes teriam sua origem nas colisÃµes intermoleculares, e dependendo da estabilidade do escoamento, seriam amplificadas ao passar do tempo e entÃ£o o escoamento torna-se turbulento~\cite{welter/06}.
 %
-%Na tentativa de criterizar a transição para a turbulência, \citeonline{reinolds/1895} definiu uma relação entre forças inerciais e viscosas que atuam nos fluidos. Esta razão, um parâmetro adimensional, seria o ponto crítico de transição entre escoamentos laminares e turbulentos. Hoje chamado de \textit{número de Reynolds} ($R_{e}$), este parâmetro é proporcional à razão entre a contribuição das forças inerciais não lineares da Equação~(\ref{eqns1}) e à contribuição das suas forças dissipativas lineares.
+%Na tentativa de criterizar a transiÃ§Ã£o para a turbulÃªncia, \citeonline{reinolds/1895} definiu uma relaÃ§Ã£o entre forÃ§as inerciais e viscosas que atuam nos fluidos. Esta razÃ£o, um parÃ¢metro adimensional, seria o ponto crÃ­tico de transiÃ§Ã£o entre escoamentos laminares e turbulentos. Hoje chamado de \textit{nÃºmero de Reynolds} ($R_{e}$), este parÃ¢metro Ã© proporcional Ã  razÃ£o entre a contribuiÃ§Ã£o das forÃ§as inerciais nÃ£o lineares da EquaÃ§Ã£o~(\ref{eqns1}) e Ã  contribuiÃ§Ã£o das suas forÃ§as dissipativas lineares.
 %
-%Se $U$ é uma velocidade característica do escoamento e $L$ é uma escala de comprimento característico, então as forças inerciais são da ordem de $U^{2}/L$ e as forças viscosas são da ordem de $\nu U/L^{2}$. Assim, o número de Reynolds do escoamento pode ser caracterizado por
+%Se $U$ Ã© uma velocidade caracterÃ­stica do escoamento e $L$ Ã© uma escala de comprimento caracterÃ­stico, entÃ£o as forÃ§as inerciais sÃ£o da ordem de $U^{2}/L$ e as forÃ§as viscosas sÃ£o da ordem de $\nu U/L^{2}$. Assim, o nÃºmero de Reynolds do escoamento pode ser caracterizado por
 %
 %\begin{equation}
 %R_{e}=\frac{LU}{\nu}
@@ -226,55 +226,55 @@
 %\end{equation}
 %\newline
 %
-%Quando o numerador é muito maior que o denominador em~(\ref{eqreynolds2}), o valor de $R_{e}$ é grande e desta forma o fluxo é turbulento, caso contrário o fluxo é laminar (admitindo-se L constante). Em geral, considera-se que o número de Reynolds crítico está entre $2300$ e $3000$. Para números de Reynolds menores que o número de Reynolds crítico, a não-linearidade presente nas equações de Navier Stokes pode ser omitida, e as soluções analíticas para tais equações correspondem a fluxos laminares. Para número de Reynolds maiores que o número de Reynolds crítico não há soluções estacionárias estáveis e o fluido torna-se turbulento. Em particular, o fluxo se encontra na turbulência completamente desenvolvida quando $R_{e}$ é muito maior que aquele obtido na transição para a turbulência, levando-se em conta um conjunto particular de forças e condições de contorno. Na natureza e em laboratórios os escoamentos são em sua maioria turbulentos. Em experimentos laboratoriais em túnel de vento $R_{e}\sim 10^{5}$ e na camada limite atmosférica $R_{e}\sim 10^{7}$~\cite{welter/06}. 
+%Quando o numerador Ã© muito maior que o denominador em~(\ref{eqreynolds2}), o valor de $R_{e}$ Ã© grande e desta forma o fluxo Ã© turbulento, caso contrÃ¡rio o fluxo Ã© laminar (admitindo-se L constante). Em geral, considera-se que o nÃºmero de Reynolds crÃ­tico estÃ¡ entre $2300$ e $3000$. Para nÃºmeros de Reynolds menores que o nÃºmero de Reynolds crÃ­tico, a nÃ£o-linearidade presente nas equaÃ§Ãµes de Navier Stokes pode ser omitida, e as soluÃ§Ãµes analÃ­ticas para tais equaÃ§Ãµes correspondem a fluxos laminares. Para nÃºmero de Reynolds maiores que o nÃºmero de Reynolds crÃ­tico nÃ£o hÃ¡ soluÃ§Ãµes estacionÃ¡rias estÃ¡veis e o fluido torna-se turbulento. Em particular, o fluxo se encontra na turbulÃªncia completamente desenvolvida quando $R_{e}$ Ã© muito maior que aquele obtido na transiÃ§Ã£o para a turbulÃªncia, levando-se em conta um conjunto particular de forÃ§as e condiÃ§Ãµes de contorno. Na natureza e em laboratÃ³rios os escoamentos sÃ£o em sua maioria turbulentos. Em experimentos laboratoriais em tÃºnel de vento $R_{e}\sim 10^{5}$ e na camada limite atmosfÃ©rica $R_{e}\sim 10^{7}$~\cite{welter/06}. 
 %
-%O efeito da variação do número de Reynolds $R_{e}$ em um fluido pode ser vista claramente na Figura~\ref{reynolds1}, que mostra graficamente o padrão de um fluxo uniforme em um cilindro circular. O fluxo, neste caso, é visualizado por uma fumaça ejetada da superfície do cilindro.
+%O efeito da variaÃ§Ã£o do nÃºmero de Reynolds $R_{e}$ em um fluido pode ser vista claramente na Figura~\ref{reynolds1}, que mostra graficamente o padrÃ£o de um fluxo uniforme em um cilindro circular. O fluxo, neste caso, Ã© visualizado por uma fumaÃ§a ejetada da superfÃ­cie do cilindro.
 %
-%Para o estágio (a), $R_{e}\leq 1$, o fluxo é estacionário e não se separa do cilindro. Em (b), $1<R_{e}<10$, o fluxo é ainda estacionário mas um par de vórtices aparecem atrás do cilindro, que aumenta com o incremento de $R_{e}$. Em (c), $10<R_{e}<10^2$, os vórtices estão separados alternativamente do cilindro e alinhados em duas fileiras de vórtices, o conhecido fenômeno dos vórtices de Kármán~\cite{tomomasa/2000}. Neste caso, o fluxo não é mais estacionário e passa a ser periódico.
+%Para o estÃ¡gio (a), $R_{e}\leq 1$, o fluxo Ã© estacionÃ¡rio e nÃ£o se separa do cilindro. Em (b), $1<R_{e}<10$, o fluxo Ã© ainda estacionÃ¡rio mas um par de vÃ³rtices aparecem atrÃ¡s do cilindro, que aumenta com o incremento de $R_{e}$. Em (c), $10<R_{e}<10^2$, os vÃ³rtices estÃ£o separados alternativamente do cilindro e alinhados em duas fileiras de vÃ³rtices, o conhecido fenÃ´meno dos vÃ³rtices de KÃ¡rmÃ¡n~\cite{tomomasa/2000}. Neste caso, o fluxo nÃ£o Ã© mais estacionÃ¡rio e passa a ser periÃ³dico.
 %
-%Em (d), $10^2<R_{e}<10^5$, as fileiras de vórtices tornam-se irregulares e surge um fluxo turbulento, porém ainda laminar fora dele. Em (e), $R_{e}>10^5$, a região torna-se composta de uma grande variedade de vórtices em tamanho e direção, ou seja, o estágio da turbulência completamente desenvolvida. Acima de um certo valor crítico de $R_{e}$, no intervalo $10^5<R_{e}<10^6$, o fluxo no contorno do cilindro também torna-se turbulento.
+%Em (d), $10^2<R_{e}<10^5$, as fileiras de vÃ³rtices tornam-se irregulares e surge um fluxo turbulento, porÃ©m ainda laminar fora dele. Em (e), $R_{e}>10^5$, a regiÃ£o torna-se composta de uma grande variedade de vÃ³rtices em tamanho e direÃ§Ã£o, ou seja, o estÃ¡gio da turbulÃªncia completamente desenvolvida. Acima de um certo valor crÃ­tico de $R_{e}$, no intervalo $10^5<R_{e}<10^6$, o fluxo no contorno do cilindro tambÃ©m torna-se turbulento.
 %
 %\begin{figure}[ht]
 %\centering \resizebox{9cm}{!}{\includegraphics{docs/figs/reynoldstomomasa.png}}
-%\caption{Mudança no padrão do fluxo de acordo com o número de Reynolds $R_{e}$.}
+%\caption{MudanÃ§a no padrÃ£o do fluxo de acordo com o nÃºmero de Reynolds $R_{e}$.}
 %\FONTE{\citeonline{tomomasa/2000}}
 %\label{reynolds1}
 %\end{figure}
 %
-% As várias simetrias permitidas pela equação de Navier-Stokes são sucessivamente quebradas com o incremento de $R_{e}$, ou seja, quando o fluxo deixa de ser laminar e passa a ser turbulento. Porém, em número de Reynolds ainda mais elevados há uma tendência das simetrias perdidas serem restauradas no senso estatístico, este é o caso da turbulência plenamente desenvolvida, mencionada anteriormente. 
+% As vÃ¡rias simetrias permitidas pela equaÃ§Ã£o de Navier-Stokes sÃ£o sucessivamente quebradas com o incremento de $R_{e}$, ou seja, quando o fluxo deixa de ser laminar e passa a ser turbulento. PorÃ©m, em nÃºmero de Reynolds ainda mais elevados hÃ¡ uma tendÃªncia das simetrias perdidas serem restauradas no senso estatÃ­stico, este Ã© o caso da turbulÃªncia plenamente desenvolvida, mencionada anteriormente. 
 %
-%\subsection{Caracterização clássica da turbulência}
+%\subsection{CaracterizaÃ§Ã£o clÃ¡ssica da turbulÃªncia}
 %
 %\citeonline{lumpano/64} apontam algumas propriedades de um campo turbulento, a saber
 %\begin{itemize}
-%\item Turbulência é rotacional e dissipativa, isto é, energia mecânica é transformada em calor;
-%\item Turbulência é tridimensional; 
-%\item Turbulência é não-linear. Todas as escalas estão acopladas entre si no tempo e no espaço;
-%\item Turbulência é estocástica. Na prática não importa com qual cuidado as condições de um experimento sejam reproduzidas, o campo de velocidades não poderá ser predito em detalhes; 
-%\item Turbulência é um fenômeno contínuo;
-%\item Turbulência é difusiva. Um ponto marcado em um fluido turbulento irá vaguear, excursionando para longe de sua posição inicial. Este comportamento é responsável pelo transporte de quantidades (massa, momentum e calor).
+%\item TurbulÃªncia Ã© rotacional e dissipativa, isto Ã©, energia mecÃ¢nica Ã© transformada em calor;
+%\item TurbulÃªncia Ã© tridimensional; 
+%\item TurbulÃªncia Ã© nÃ£o-linear. Todas as escalas estÃ£o acopladas entre si no tempo e no espaÃ§o;
+%\item TurbulÃªncia Ã© estocÃ¡stica. Na prÃ¡tica nÃ£o importa com qual cuidado as condiÃ§Ãµes de um experimento sejam reproduzidas, o campo de velocidades nÃ£o poderÃ¡ ser predito em detalhes; 
+%\item TurbulÃªncia Ã© um fenÃ´meno contÃ­nuo;
+%\item TurbulÃªncia Ã© difusiva. Um ponto marcado em um fluido turbulento irÃ¡ vaguear, excursionando para longe de sua posiÃ§Ã£o inicial. Este comportamento Ã© responsÃ¡vel pelo transporte de quantidades (massa, momentum e calor).
 %\end{itemize}
 %
-%O caráter estocástico da turbulência foi questionado por \citeonline{ruelltak/71}. Tais autores introduziram uma interpretação alternativa dos processos turbulentos com base na teoria de sistemas dinâmicos, mais especificamente via ``atratores caóticos de baixa dimensão''. Este assunto será tratado em detalhes na Seção~(\ref{seccaosurb}).
+%O carÃ¡ter estocÃ¡stico da turbulÃªncia foi questionado por \citeonline{ruelltak/71}. Tais autores introduziram uma interpretaÃ§Ã£o alternativa dos processos turbulentos com base na teoria de sistemas dinÃ¢micos, mais especificamente via ``atratores caÃ³ticos de baixa dimensÃ£o''. Este assunto serÃ¡ tratado em detalhes na SeÃ§Ã£o~(\ref{seccaosurb}).
 %
-%A Figura~\ref{figvelocidadevert} apresenta a evolução de uma variável turbulenta ao longo do tempo, amostrada à $60$Hz. Pode-se observar, que mesmo à uma taxa de amostragem alta, não é possível observar uma variação suave de tal variável com o tempo. O mesmo comportamento é esperado com respeito ao espaço.
+%A Figura~\ref{figvelocidadevert} apresenta a evoluÃ§Ã£o de uma variÃ¡vel turbulenta ao longo do tempo, amostrada Ã  $60$Hz. Pode-se observar, que mesmo Ã  uma taxa de amostragem alta, nÃ£o Ã© possÃ­vel observar uma variaÃ§Ã£o suave de tal variÃ¡vel com o tempo. O mesmo comportamento Ã© esperado com respeito ao espaÃ§o.
 %
 %\begin{figure}[ht]
 %\centering \resizebox{13cm}{!}{\includegraphics{docs/figs/velocidadevert.png}}
-%\caption{Evolução temporal de uma variável turbulenta amostrada à $60$Hz.}
+%\caption{EvoluÃ§Ã£o temporal de uma variÃ¡vel turbulenta amostrada Ã  $60$Hz.}
 %\label{figvelocidadevert}
 %\end{figure}
 %
-%Pode-se imaginar, entretanto, que uma variável turbulenta, como a da Figura~\ref{figvelocidadevert}, é uma composição de um número muito grande de harmônicos e, desta forma, pode-se pensar que a turbulência é composta de uma superposição de vários harmônicos acoplados entre si não linearmente. Estes harmônicos podem ser denominados vórtices. Seguindo esta idéia, um campo turbulento é composto de uma superposição de um número muito grande de vórtices com vários números de onda. Naturalmente, surge a necessidade de se conhecer a distribuição da energia cinética entre estes números de onda~\cite{welter/06}. 
+%Pode-se imaginar, entretanto, que uma variÃ¡vel turbulenta, como a da Figura~\ref{figvelocidadevert}, Ã© uma composiÃ§Ã£o de um nÃºmero muito grande de harmÃ´nicos e, desta forma, pode-se pensar que a turbulÃªncia Ã© composta de uma superposiÃ§Ã£o de vÃ¡rios harmÃ´nicos acoplados entre si nÃ£o linearmente. Estes harmÃ´nicos podem ser denominados vÃ³rtices. Seguindo esta idÃ©ia, um campo turbulento Ã© composto de uma superposiÃ§Ã£o de um nÃºmero muito grande de vÃ³rtices com vÃ¡rios nÃºmeros de onda. Naturalmente, surge a necessidade de se conhecer a distribuiÃ§Ã£o da energia cinÃ©tica entre estes nÃºmeros de onda~\cite{welter/06}. 
 %
-%Segundo \citeonline{arya/88}, em escoamentos com elevado número de Reynolds a \textit{Energia Cinética Turbulenta} (ECT) é fornecida aos vórtices nas maiores escalas turbulentas (da ordem de $10^3$m) e, então, dissipada pelos vórtices nas menores escalas (da ordem de $10^{-3}$). A transferência dessa energia ocorre, possivelmente, por meio de um processo de cascata envolvendo todas as escalas intermediárias. Essa idéia foi proposta por Richardson em $1922$~\cite{monin/71} e foi desenvolvida por Kolmogorov em sua teoria sobre turbulência desenvolvida (teoria K41) e, ainda hoje, é objeto de muita discussão~\cite{frisch/96,nelkin/92}. Vórtices maiores colapsam-se em vórtices menores, sucessivamente, até atingirem as menores escalas, onde são destruídos pelas forças viscosas. Desta forma, os vórtices menores não estão diretamente ligados aos processos geradores de energia cinética turbulenta nas maiores escalas (flutuabilidade térmica e cisalhamento vertical da velocidade do vento), permitindo que as escalas intermediárias dessa cascata de energia tenham atributos universais a todos os escoamentos turbulentos. 
+%Segundo \citeonline{arya/88}, em escoamentos com elevado nÃºmero de Reynolds a \textit{Energia CinÃ©tica Turbulenta} (ECT) Ã© fornecida aos vÃ³rtices nas maiores escalas turbulentas (da ordem de $10^3$m) e, entÃ£o, dissipada pelos vÃ³rtices nas menores escalas (da ordem de $10^{-3}$). A transferÃªncia dessa energia ocorre, possivelmente, por meio de um processo de cascata envolvendo todas as escalas intermediÃ¡rias. Essa idÃ©ia foi proposta por Richardson em $1922$~\cite{monin/71} e foi desenvolvida por Kolmogorov em sua teoria sobre turbulÃªncia desenvolvida (teoria K41) e, ainda hoje, Ã© objeto de muita discussÃ£o~\cite{frisch/96,nelkin/92}. VÃ³rtices maiores colapsam-se em vÃ³rtices menores, sucessivamente, atÃ© atingirem as menores escalas, onde sÃ£o destruÃ­dos pelas forÃ§as viscosas. Desta forma, os vÃ³rtices menores nÃ£o estÃ£o diretamente ligados aos processos geradores de energia cinÃ©tica turbulenta nas maiores escalas (flutuabilidade tÃ©rmica e cisalhamento vertical da velocidade do vento), permitindo que as escalas intermediÃ¡rias dessa cascata de energia tenham atributos universais a todos os escoamentos turbulentos. 
 %
-%A Figura~\ref{espectroesboco} é uma representação esquemática do espectro da ECT. A região $1$ é a de produção de ECT, onde o escoamento médio fornece energia aos maiores vórtices turbulentos através da flutuabilidade e do cisalhamento do vento. Kolmogorov, em $1941$, propôs a \textit{Teoria do Equilíbrio Universal} sobre a similaridade e isotropia da turbulência desenvolvida na pequena escala~\cite{monin/71}. De acordo com essa teoria, para escoamentos com número de Reynolds suficientemente elevados, na Região $2$ da Figura~\ref{espectroesboco}, denominada de \textit{Subdomínio Inercial} (SI), a turbulência é homogênea e isotrópica e nela as propriedades médias do escoamento dependem diretamente apenas de $\epsilon$, a \textit{taxa de dissipação de ECT por unidade de massa}. Ainda, de acordo com a Teoria do Equilíbrio Universal, a região $3$ é onde a ECT transferida pela região $2$ é convertida em calor pela ação da viscosidade, fazendo com que outro parâmetro além de $\epsilon$ seja importante nessa região - a \textit{viscosidade cinemática} $\nu$.
+%A Figura~\ref{espectroesboco} Ã© uma representaÃ§Ã£o esquemÃ¡tica do espectro da ECT. A regiÃ£o $1$ Ã© a de produÃ§Ã£o de ECT, onde o escoamento mÃ©dio fornece energia aos maiores vÃ³rtices turbulentos atravÃ©s da flutuabilidade e do cisalhamento do vento. Kolmogorov, em $1941$, propÃ´s a \textit{Teoria do EquilÃ­brio Universal} sobre a similaridade e isotropia da turbulÃªncia desenvolvida na pequena escala~\cite{monin/71}. De acordo com essa teoria, para escoamentos com nÃºmero de Reynolds suficientemente elevados, na RegiÃ£o $2$ da Figura~\ref{espectroesboco}, denominada de \textit{SubdomÃ­nio Inercial} (SI), a turbulÃªncia Ã© homogÃªnea e isotrÃ³pica e nela as propriedades mÃ©dias do escoamento dependem diretamente apenas de $\epsilon$, a \textit{taxa de dissipaÃ§Ã£o de ECT por unidade de massa}. Ainda, de acordo com a Teoria do EquilÃ­brio Universal, a regiÃ£o $3$ Ã© onde a ECT transferida pela regiÃ£o $2$ Ã© convertida em calor pela aÃ§Ã£o da viscosidade, fazendo com que outro parÃ¢metro alÃ©m de $\epsilon$ seja importante nessa regiÃ£o - a \textit{viscosidade cinemÃ¡tica} $\nu$.
 %
 %
 %\begin{figure}[ht]
 %\centering \resizebox{13cm}{!}{\includegraphics{docs/figs/espectroesboco4.pdf}}
-%\caption{Representação esquemática do espectro da ECT em escala $\log$-$\log$.}
+%\caption{RepresentaÃ§Ã£o esquemÃ¡tica do espectro da ECT em escala $\log$-$\log$.}
 %\FONTE{Adaptada de \citeonline{garratt/92}}
 %\label{espectroesboco}
 %\end{figure}
@@ -282,105 +282,105 @@
 % \begin{figure}[!ht]
 % \begin{center}
 % \resizebox{13cm}{!}{\input{docs/figs/espectroesboco5.pdftex_t}}
-% \caption{Representação esquemática do espectro da ECT em escala $\log$-$\log$.}
+% \caption{RepresentaÃ§Ã£o esquemÃ¡tica do espectro da ECT em escala $\log$-$\log$.}
 % \FONTE{Adaptada de Garrat~\cite{garratt/92}}
 % \label{espectroesboco}
 % \end{center}
 % \end{figure}
 %
-%Segundo \citeonline{frisch/96}, no SI o espectro de potência das principais grandezas turbulentas (velocidade, temperatura, umidade, etc) é caracterizado por uma lei de potência com inclinação $-5/3$, ou seja
+%Segundo \citeonline{frisch/96}, no SI o espectro de potÃªncia das principais grandezas turbulentas (velocidade, temperatura, umidade, etc) Ã© caracterizado por uma lei de potÃªncia com inclinaÃ§Ã£o $-5/3$, ou seja
 %
 %\begin{equation}
 %S_{u}(k)=a k^{-5/3}
 %\label{eqespectroturb}
 %\end{equation}
-%onde $a$ é uma constante de proporçao e $k$ é \textit{o número de onda}. Analogamente, a lei de potência com inclinação $-5/3$ é também obtida para $S_{u}(w)$, onde $w$ é a freqüência.
+%onde $a$ Ã© uma constante de proporÃ§ao e $k$ Ã© \textit{o nÃºmero de onda}. Analogamente, a lei de potÃªncia com inclinaÃ§Ã£o $-5/3$ Ã© tambÃ©m obtida para $S_{u}(w)$, onde $w$ Ã© a freqÃ¼Ãªncia.
 %
-%\subsubsection{Estruturas coerentes em turbulência}
+%\subsubsection{Estruturas coerentes em turbulÃªncia}
 %
-%As estruturas coerentes têm sido um assunto de grande relevância na pesquisa em turbulência~\cite{oliver/02}. Este interesse foi intensificado a partir de estudos que demonstraram que a presença dessas estruturas pode ser responsável por até $75\%$ dos fluxos turbulentos na camada da superfície atmosférica\footnote{A porção mais inferior da atmosfera, com extensão de aproximadamente $1$ a $2$ Km, é denominada camada limite atmosférica. Esta é a região mais influenciada diretamente por trocas de momento, calor e vapor de água na superfície da Terra.}~\cite{gao/89}, ou segundo outros autores por, em média, $40\%$ de todo o calor turbulento e fluxos de momento \cite{lu/94,oliver/02}.
+%As estruturas coerentes tÃªm sido um assunto de grande relevÃ¢ncia na pesquisa em turbulÃªncia~\cite{oliver/02}. Este interesse foi intensificado a partir de estudos que demonstraram que a presenÃ§a dessas estruturas pode ser responsÃ¡vel por atÃ© $75\%$ dos fluxos turbulentos na camada da superfÃ­cie atmosfÃ©rica\footnote{A porÃ§Ã£o mais inferior da atmosfera, com extensÃ£o de aproximadamente $1$ a $2$ Km, Ã© denominada camada limite atmosfÃ©rica. Esta Ã© a regiÃ£o mais influenciada diretamente por trocas de momento, calor e vapor de Ã¡gua na superfÃ­cie da Terra.}~\cite{gao/89}, ou segundo outros autores por, em mÃ©dia, $40\%$ de todo o calor turbulento e fluxos de momento \cite{lu/94,oliver/02}.
 %
-%Não há uma definição precisa do que sejam estruturas coerentes. Segundo \citeonline{robinson/91} estruturas coerentes de grande escala constituem uma região do fluido turbulento que possui \textit{vorticidade}\footnote{O campo de vorticidade dado por $\omega (x,t)=\bigtriangledown \times u(x,t)$ é uma importante quantidade na caracterização e compreensão do fluxo turbulento. De forma geral, ele mede a rotação de um fluxo. Na turbulência 3-D, a vorticidade desempenha uma função quantitativa na qual a taxa média de energia dissipada $\varepsilon$ está relacionada com o quadrado da vorticidade pela relação $\varepsilon=-u\langle|\omega|^2\rangle$~\cite{ecke/05}.}\textit{coerente} sobre uma significativa extensão espacial. Essas estruturas podem ainda ser caracterizadas por uma região tridimensional, onde pelo menos uma das variáveis fundamentais do escoamento (componente de velocidade, massa específica, temperatura, etc.) apresenta significativa correlação com ela mesma ou com outra variável, num intervalo de espaço e/ou tempo suficientemente maior que as menores escalas locais do escoamento.
+%NÃ£o hÃ¡ uma definiÃ§Ã£o precisa do que sejam estruturas coerentes. Segundo \citeonline{robinson/91} estruturas coerentes de grande escala constituem uma regiÃ£o do fluido turbulento que possui \textit{vorticidade}\footnote{O campo de vorticidade dado por $\omega (x,t)=\bigtriangledown \times u(x,t)$ Ã© uma importante quantidade na caracterizaÃ§Ã£o e compreensÃ£o do fluxo turbulento. De forma geral, ele mede a rotaÃ§Ã£o de um fluxo. Na turbulÃªncia 3-D, a vorticidade desempenha uma funÃ§Ã£o quantitativa na qual a taxa mÃ©dia de energia dissipada $\varepsilon$ estÃ¡ relacionada com o quadrado da vorticidade pela relaÃ§Ã£o $\varepsilon=-u\langle|\omega|^2\rangle$~\cite{ecke/05}.}\textit{coerente} sobre uma significativa extensÃ£o espacial. Essas estruturas podem ainda ser caracterizadas por uma regiÃ£o tridimensional, onde pelo menos uma das variÃ¡veis fundamentais do escoamento (componente de velocidade, massa especÃ­fica, temperatura, etc.) apresenta significativa correlaÃ§Ã£o com ela mesma ou com outra variÃ¡vel, num intervalo de espaÃ§o e/ou tempo suficientemente maior que as menores escalas locais do escoamento.
 %
-%As estruturas coerentes são características da turbulência de grande escala na camada da superfície atmosférica. Sob condições convectivas instáveis, elas são reconhecidas em séries temporais de flutuações de temperatura com uma gradual elevação da temperatura, seguida por uma súbita queda. Sob condições estáveis, este padrão se inverte e uma gradual queda é seguida por uma súbita elevação~\cite{oliver/02}. Nestas duas condições, a estrutura coerente é do tipo ``rampa''. 
+%As estruturas coerentes sÃ£o caracterÃ­sticas da turbulÃªncia de grande escala na camada da superfÃ­cie atmosfÃ©rica. Sob condiÃ§Ãµes convectivas instÃ¡veis, elas sÃ£o reconhecidas em sÃ©ries temporais de flutuaÃ§Ãµes de temperatura com uma gradual elevaÃ§Ã£o da temperatura, seguida por uma sÃºbita queda. Sob condiÃ§Ãµes estÃ¡veis, este padrÃ£o se inverte e uma gradual queda Ã© seguida por uma sÃºbita elevaÃ§Ã£o~\cite{oliver/02}. Nestas duas condiÃ§Ãµes, a estrutura coerente Ã© do tipo ``rampa''. 
 %
-%O efeito das condições de estabilidade sobre o comportamento em rampa das estruturas coerentes é uma conseqüência direta da distribuição espacial de fontes de calor e umidade. Por exemplo, durante o dia o ar aquecido está localizado próximo à superfície, assim a súbita queda de temperatura é devido à presença do ar mais frio que se desloca para baixo e, durante a noite, a súbita elevação da temperatura está associada com o ar mais quente que se desloca para baixo. Desde que a fonte de umidade esteja situada apenas na superfície, as estruturas coerentes presentes em séries temporais de flutuações de umidade mostram um padrão independente de estabilidade.
+%O efeito das condiÃ§Ãµes de estabilidade sobre o comportamento em rampa das estruturas coerentes Ã© uma conseqÃ¼Ãªncia direta da distribuiÃ§Ã£o espacial de fontes de calor e umidade. Por exemplo, durante o dia o ar aquecido estÃ¡ localizado prÃ³ximo Ã  superfÃ­cie, assim a sÃºbita queda de temperatura Ã© devido Ã  presenÃ§a do ar mais frio que se desloca para baixo e, durante a noite, a sÃºbita elevaÃ§Ã£o da temperatura estÃ¡ associada com o ar mais quente que se desloca para baixo. Desde que a fonte de umidade esteja situada apenas na superfÃ­cie, as estruturas coerentes presentes em sÃ©ries temporais de flutuaÃ§Ãµes de umidade mostram um padrÃ£o independente de estabilidade.
 %
-%\subsubsection{Intermitência em turbulência}
+%\subsubsection{IntermitÃªncia em turbulÃªncia}
 %
-%A intermitência é um fenômeno relacionado à presença de raros, porém fortes gradientes de velocidade com acentuada localização no espaço ou no tempo. Esses gradientes são gerados por estruturas altamente coerentes (quase sempre não estacionárias) e são responsáveis pelo forte aumento da taxa de dissipação local da ECT~\cite{camussi/97}.
+%A intermitÃªncia Ã© um fenÃ´meno relacionado Ã  presenÃ§a de raros, porÃ©m fortes gradientes de velocidade com acentuada localizaÃ§Ã£o no espaÃ§o ou no tempo. Esses gradientes sÃ£o gerados por estruturas altamente coerentes (quase sempre nÃ£o estacionÃ¡rias) e sÃ£o responsÃ¡veis pelo forte aumento da taxa de dissipaÃ§Ã£o local da ECT~\cite{camussi/97}.
 %
-%Segundo \citeonline{frisch/96} uma função aleatória é intermitente se o quarto momento estatístico normalizado, a saber, a curtose definida como
+%Segundo \citeonline{frisch/96} uma funÃ§Ã£o aleatÃ³ria Ã© intermitente se o quarto momento estatÃ­stico normalizado, a saber, a curtose definida como
 %\begin{equation}
 %K(r)=\frac{\langle u_{r}^4\rangle}{{\langle u_{r}^2\rangle}^2}
 %\label{eqintermitencia}
 %\end{equation}
-%cresce sem limites quando $r\rightarrow 0$. Desta forma, pode-se afirmar que a curtose é uma grandeza estatística que quantifica a presença de fenômenos intermitentes em um escoamento turbulento, sendo um parâmetro que mede o grau de achatamento de uma \textit{Função de Distribuição de Probabilidade} (FDP). 
+%cresce sem limites quando $r\rightarrow 0$. Desta forma, pode-se afirmar que a curtose Ã© uma grandeza estatÃ­stica que quantifica a presenÃ§a de fenÃ´menos intermitentes em um escoamento turbulento, sendo um parÃ¢metro que mede o grau de achatamento de uma \textit{FunÃ§Ã£o de DistribuiÃ§Ã£o de Probabilidade} (FDP). 
 %
-%A presença da intermitência em um sinal turbulento confere uma forma especial à sua FDP. Para o caso da turbulência atmosférica, as FDP's são, em geral, aproximadamente gaussianas nas maiores escalas do escoamento (com valores de curtose próximos de $3$) e fortemente não gaussianas em suas menores escalas, devido ao fenômeno da intermitência. As curvas da Figura~\ref{figpdfintermitente} são histogramas de $\Delta u_{r}=u(x+\Delta r)-u(x)$ obtidos para distâncias de separação (usando a hipótese de Taylor $\Delta r=U\Delta t$) dadas por $\Delta r=4,40,400$ e $4000$. Para dados amostrados a $60$ Hz essas distâncias correspondem a $\Delta t$ de $0.06,0.66,6.66,66.66$ segundos, respectivamente. Nas menores escalas de separação, ocorrem grandes flutuações com uma freqüência muito maior que aquela prevista para um processo gaussiano. Este fenômeno, diretamente ligado à intermitência do escoamento turbulento, aparece nas FDP's sob a forma de ``asas'' ou ``caudas'' prolongadas.
+%A presenÃ§a da intermitÃªncia em um sinal turbulento confere uma forma especial Ã  sua FDP. Para o caso da turbulÃªncia atmosfÃ©rica, as FDP's sÃ£o, em geral, aproximadamente gaussianas nas maiores escalas do escoamento (com valores de curtose prÃ³ximos de $3$) e fortemente nÃ£o gaussianas em suas menores escalas, devido ao fenÃ´meno da intermitÃªncia. As curvas da Figura~\ref{figpdfintermitente} sÃ£o histogramas de $\Delta u_{r}=u(x+\Delta r)-u(x)$ obtidos para distÃ¢ncias de separaÃ§Ã£o (usando a hipÃ³tese de Taylor $\Delta r=U\Delta t$) dadas por $\Delta r=4,40,400$ e $4000$. Para dados amostrados a $60$ Hz essas distÃ¢ncias correspondem a $\Delta t$ de $0.06,0.66,6.66,66.66$ segundos, respectivamente. Nas menores escalas de separaÃ§Ã£o, ocorrem grandes flutuaÃ§Ãµes com uma freqÃ¼Ãªncia muito maior que aquela prevista para um processo gaussiano. Este fenÃ´meno, diretamente ligado Ã  intermitÃªncia do escoamento turbulento, aparece nas FDP's sob a forma de ``asas'' ou ``caudas'' prolongadas.
 %Fernando
 %
 %\begin{figure}[ht]
 %\centering \resizebox{13cm}{!}{\includegraphics{docs/figs/bolzan.pdf}}
-%\caption{PDF's das diferenças de velocidade longitudinal dentro da copa da Floresta Amazônica, para valores de $\Delta r=4,40,400$ e $4000$.}
+%\caption{PDF's das diferenÃ§as de velocidade longitudinal dentro da copa da Floresta AmazÃ´nica, para valores de $\Delta r=4,40,400$ e $4000$.}
 %\FONTE{\citeonline{bolzan/00}}
 %\label{figpdfintermitente}
 %\end{figure}
 %
-%\section{Caos e Turbulência}
+%\section{Caos e TurbulÃªncia}
 %\label{seccaosurb}
 %
-%O desenvolvimento da teoria de sistemas dinâmicos caóticos, tem fornecido importantes subsídios à compreensão do fenômeno da turbulência. Uma conjectura feita por Landau foi a primeira tentativa para a descrição do surgimento da turbulência. Conforme sua teoria, o comportamento turbulento é causado por uma seqüência infinita de bifurcações de Hopf. Desta forma, cada vez que uma bifurcação ocorre, freqüências fundamentais\footnote{A cada nova freqüência associa-se um novo grau de liberdade ao sistema} são adicionadas ao sistema e a medida que cada vez mais freqüências ocorrem, o movimento torna-se cada vez mais turbulento~\cite{grebogi/83}. 
+%O desenvolvimento da teoria de sistemas dinÃ¢micos caÃ³ticos, tem fornecido importantes subsÃ­dios Ã  compreensÃ£o do fenÃ´meno da turbulÃªncia. Uma conjectura feita por Landau foi a primeira tentativa para a descriÃ§Ã£o do surgimento da turbulÃªncia. Conforme sua teoria, o comportamento turbulento Ã© causado por uma seqÃ¼Ãªncia infinita de bifurcaÃ§Ãµes de Hopf. Desta forma, cada vez que uma bifurcaÃ§Ã£o ocorre, freqÃ¼Ãªncias fundamentais\footnote{A cada nova freqÃ¼Ãªncia associa-se um novo grau de liberdade ao sistema} sÃ£o adicionadas ao sistema e a medida que cada vez mais freqÃ¼Ãªncias ocorrem, o movimento torna-se cada vez mais turbulento~\cite{grebogi/83}. 
 %
-%A idéia defendida por Landau, de que um fenômeno complexo tal como a turbulência necessite de uma descrição complexa com infinitos graus de liberdade, foi contestada a partir do estudo de Lorenz que mostrou que um sistema com apenas três EDO's pode levar a comportamentos complexos e caóticos~\cite{argyris/94}. A concepção de Landau foi ainda fortemente questionada for \citeonline{ruelle/91}, sobretudo pela ausência tanto da sensibilidade às variações nas condições iniciais quanto de espectros contínuos em sua conjectura.
+%A idÃ©ia defendida por Landau, de que um fenÃ´meno complexo tal como a turbulÃªncia necessite de uma descriÃ§Ã£o complexa com infinitos graus de liberdade, foi contestada a partir do estudo de Lorenz que mostrou que um sistema com apenas trÃªs EDO's pode levar a comportamentos complexos e caÃ³ticos~\cite{argyris/94}. A concepÃ§Ã£o de Landau foi ainda fortemente questionada for \citeonline{ruelle/91}, sobretudo pela ausÃªncia tanto da sensibilidade Ã s variaÃ§Ãµes nas condiÃ§Ãµes iniciais quanto de espectros contÃ­nuos em sua conjectura.
 %
-%O trabalho pioneiro de \citeonline{ruelltak/71} introduziu uma nova e promissora perspectiva para a compreensão do fenômeno turbulento. Esses autores foram os primeiros estudiosos a propor um possível mecanismo de transição de um fluxo laminar para um fluxo turbulento com base na teoria de sistemas dinâmicos, mais especificamente por meio de atratores caóticos. Com base nessa abordagem Ruelle, Takens, Feigenbaum, e outros autores, investigaram ``rotas para a turbulência'', ou seja, cenários (sucessões de bifurcações) nos quais um sistema com uma evolução temporal simples torna-se turbulento quando um ou mais de seus parâmetros são alterados~\cite{ruellelecture/90}.  
+%O trabalho pioneiro de \citeonline{ruelltak/71} introduziu uma nova e promissora perspectiva para a compreensÃ£o do fenÃ´meno turbulento. Esses autores foram os primeiros estudiosos a propor um possÃ­vel mecanismo de transiÃ§Ã£o de um fluxo laminar para um fluxo turbulento com base na teoria de sistemas dinÃ¢micos, mais especificamente por meio de atratores caÃ³ticos. Com base nessa abordagem Ruelle, Takens, Feigenbaum, e outros autores, investigaram ``rotas para a turbulÃªncia'', ou seja, cenÃ¡rios (sucessÃµes de bifurcaÃ§Ãµes) nos quais um sistema com uma evoluÃ§Ã£o temporal simples torna-se turbulento quando um ou mais de seus parÃ¢metros sÃ£o alterados~\cite{ruellelecture/90}.  
 %
-%\subsection{Bifurcação e rotas para a turbulência}
-%
-%
-%O \textit{cenário Ruelle-Takens}~\cite{ruelltak/71} propõe uma rota baseada em três bifurcações consecutivas: ponto fixo $\longrightarrow$ ciclo limite $\longrightarrow$ toro\footnote{O toro $k$-dimensional $T^{k}$ pode ser entendido como o produto de $k$ círculos} $T^{3}$ $\longrightarrow$ atrator caótico (turbulência). Em outras palavras, movimentos quasiperiódicos sobre um toro $T^{3}$ (ou seja, com três freqüências incomensuráveis) podem perder estabilidade e surgir diretamente a turbulência~\cite{zeng/93,newhouse/78}. Esta rota é genérica e ocorre em diversos modelos matemáticos e em experimentos de laboratório, porém ela é uma rota de difícil compreensão teórica que as demais rotas mencionadas abaixo~\cite{zeng/93}.
-%
-%\citeonline{eckmann/81} propôs outra rota para a turbulência, que é conhecida como rota para a turbulência de Feigenbaum ou de duplicação de período: uma cascata de bifurcações de duplicações de período $p = 2^{n}(n=0,1,2,\ldots)$ que converge rapidamente para uma órbita aperiódica quando $n\rightarrow \infty$. Este cenário tem sido validado com grande êxito em diversas simulações numéricas e sistemas físicos. A duplicação de período tem sido observada em experimentos como a convecção de Rayleigh-Bénard~\cite{zeng/93}.
-%
-%A quarta rota, chamada de rota para a turbulência de Pomeau-Manneville, é através da intermitência~\cite{pomeau/80}. No contexto de sistemas caóticos, o termo \textit{intermitente} refere-se a alterações aleatórias entre um comportamento caótico e regular no tempo sem envolver nenhum grau de liberdade espacial. Este conceito é diferente do significado original da \textit{intermitência} na teoria hidrodinâmica da turbulência, que indica ``estouros'' aleatórios do movimento turbulento sobre a base de um fluxo laminar~\cite{zeng/93}. Nesta rota não há uma clara compreensão de quando o regime turbulento é alcançado nem da exata natureza desta turbulência~\cite{eckmann/81}. 
-%
-% Especificamente, pode-se afirmar que a rota Ruelle-Takens está relacionada a bifurcações do tipo Hopf, onde um par de autovalores complexos cruza o círculo unitário; a rota de Feigenbaum está associada com bifurcações do tipo Pitchfork, onde um autovalor cruza o círculo unitário em $-1$; e a rota Pomeau-Manneville está associada com bifurcações do tipo Sela-Nó, onde um autovalor cruza o círculo unitário em $1$. 
+%\subsection{BifurcaÃ§Ã£o e rotas para a turbulÃªncia}
 %
 %
-%A Tabela~\ref{tabbifurca} apresenta a evolução da dinâmica de um sistema, de um estado estacionário à um estado turbulento, sob a influência de diferentes sucessões de bifurcações.
+%O \textit{cenÃ¡rio Ruelle-Takens}~\cite{ruelltak/71} propÃµe uma rota baseada em trÃªs bifurcaÃ§Ãµes consecutivas: ponto fixo $\longrightarrow$ ciclo limite $\longrightarrow$ toro\footnote{O toro $k$-dimensional $T^{k}$ pode ser entendido como o produto de $k$ cÃ­rculos} $T^{3}$ $\longrightarrow$ atrator caÃ³tico (turbulÃªncia). Em outras palavras, movimentos quasiperiÃ³dicos sobre um toro $T^{3}$ (ou seja, com trÃªs freqÃ¼Ãªncias incomensurÃ¡veis) podem perder estabilidade e surgir diretamente a turbulÃªncia~\cite{zeng/93,newhouse/78}. Esta rota Ã© genÃ©rica e ocorre em diversos modelos matemÃ¡ticos e em experimentos de laboratÃ³rio, porÃ©m ela Ã© uma rota de difÃ­cil compreensÃ£o teÃ³rica que as demais rotas mencionadas abaixo~\cite{zeng/93}.
+%
+%\citeonline{eckmann/81} propÃ´s outra rota para a turbulÃªncia, que Ã© conhecida como rota para a turbulÃªncia de Feigenbaum ou de duplicaÃ§Ã£o de perÃ­odo: uma cascata de bifurcaÃ§Ãµes de duplicaÃ§Ãµes de perÃ­odo $p = 2^{n}(n=0,1,2,\ldots)$ que converge rapidamente para uma Ã³rbita aperiÃ³dica quando $n\rightarrow \infty$. Este cenÃ¡rio tem sido validado com grande Ãªxito em diversas simulaÃ§Ãµes numÃ©ricas e sistemas fÃ­sicos. A duplicaÃ§Ã£o de perÃ­odo tem sido observada em experimentos como a convecÃ§Ã£o de Rayleigh-BÃ©nard~\cite{zeng/93}.
+%
+%A quarta rota, chamada de rota para a turbulÃªncia de Pomeau-Manneville, Ã© atravÃ©s da intermitÃªncia~\cite{pomeau/80}. No contexto de sistemas caÃ³ticos, o termo \textit{intermitente} refere-se a alteraÃ§Ãµes aleatÃ³rias entre um comportamento caÃ³tico e regular no tempo sem envolver nenhum grau de liberdade espacial. Este conceito Ã© diferente do significado original da \textit{intermitÃªncia} na teoria hidrodinÃ¢mica da turbulÃªncia, que indica ``estouros'' aleatÃ³rios do movimento turbulento sobre a base de um fluxo laminar~\cite{zeng/93}. Nesta rota nÃ£o hÃ¡ uma clara compreensÃ£o de quando o regime turbulento Ã© alcanÃ§ado nem da exata natureza desta turbulÃªncia~\cite{eckmann/81}. 
+%
+% Especificamente, pode-se afirmar que a rota Ruelle-Takens estÃ¡ relacionada a bifurcaÃ§Ãµes do tipo Hopf, onde um par de autovalores complexos cruza o cÃ­rculo unitÃ¡rio; a rota de Feigenbaum estÃ¡ associada com bifurcaÃ§Ãµes do tipo Pitchfork, onde um autovalor cruza o cÃ­rculo unitÃ¡rio em $-1$; e a rota Pomeau-Manneville estÃ¡ associada com bifurcaÃ§Ãµes do tipo Sela-NÃ³, onde um autovalor cruza o cÃ­rculo unitÃ¡rio em $1$. 
+%
+%
+%A Tabela~\ref{tabbifurca} apresenta a evoluÃ§Ã£o da dinÃ¢mica de um sistema, de um estado estacionÃ¡rio Ã  um estado turbulento, sob a influÃªncia de diferentes sucessÃµes de bifurcaÃ§Ãµes.
 %
 %\begin{sidewaystable}
-%\caption{Rotas para a turbulência com base em seqüências de bifurcações}
+%\caption{Rotas para a turbulÃªncia com base em seqÃ¼Ãªncias de bifurcaÃ§Ãµes}
 %\vspace{0.5cm}
 %\begin{center}
 %\resizebox{!}{3.6cm}{
 %\begin{tabular}{c c c c c c c c c c c c}
 %\hline 
 %\multicolumn{1}{c}{\textbf{}} & \multicolumn{11}{c}{\textbf{}} \\
-%\multicolumn{1}{c}{\textbf{Rotas}} & \multicolumn{11}{c}{\textbf{Seqüências de bifurcações}}\\
+%\multicolumn{1}{c}{\textbf{Rotas}} & \multicolumn{11}{c}{\textbf{SeqÃ¼Ãªncias de bifurcaÃ§Ãµes}}\\
 %\multicolumn{1}{c}{\textbf{}} & \multicolumn{11}{c}{\textbf{}}\\
 %\cline{1-12}
 %\hline 
-%\textbf{} & Ponto & $\longrightarrow$ & Órbita & $\longrightarrow$ & Órbita & $\longrightarrow$ & Órbita & $\longrightarrow$ & $\cdots$ & $\longrightarrow$ & Movimento \\
-%\textbf{Landau} & estacionário & (Hopf) & periódica & (Hopf) & periódica & (Hopf) & periódica & & (Hopf) & & turbulento \\
-%\textbf{} & & & única &  & dupla &  & tripla & & & &  \\
+%\textbf{} & Ponto & $\longrightarrow$ & Ã“rbita & $\longrightarrow$ & Ã“rbita & $\longrightarrow$ & Ã“rbita & $\longrightarrow$ & $\cdots$ & $\longrightarrow$ & Movimento \\
+%\textbf{Landau} & estacionÃ¡rio & (Hopf) & periÃ³dica & (Hopf) & periÃ³dica & (Hopf) & periÃ³dica & & (Hopf) & & turbulento \\
+%\textbf{} & & & Ãºnica &  & dupla &  & tripla & & & &  \\
 %& & &  &  &  &  &  & & & &  \\
 %\hline
-%\textbf{Ruelle-} & Ponto & $\longrightarrow$ & Órbita & $\longrightarrow$ & Órbita & $\longrightarrow$ & Atrator &  &  & & \\
-%\textbf{Takens} & estacionário & (Hopf) & periódica & (Hopf) & periódica & (Hopf) & caótico &  &  & &  \\
-%\textbf{} & &  & única &  & tripla &  &  &  &  & & \\
+%\textbf{Ruelle-} & Ponto & $\longrightarrow$ & Ã“rbita & $\longrightarrow$ & Ã“rbita & $\longrightarrow$ & Atrator &  &  & & \\
+%\textbf{Takens} & estacionÃ¡rio & (Hopf) & periÃ³dica & (Hopf) & periÃ³dica & (Hopf) & caÃ³tico &  &  & &  \\
+%\textbf{} & &  & Ãºnica &  & tripla &  &  &  &  & & \\
 %& & &  &  &  &  &  & & & &  \\
 %\hline
-%\textbf{} & Ponto & $\longrightarrow$ & Órbita & $\longrightarrow$ & Órbita & $\longrightarrow$ & Órbita & $\longrightarrow$ & $\cdots$ & $\longrightarrow$ & Atrator \\
-%\textbf{Feigenbaum} & estacionário & (Hopf) & periódica & (Duplicação & periódica & (Duplicação & periódica &  & (Duplicação &  & Caótico \\
-%\textbf{} & & & única & de & única & de & única &  & de &  &  \\
-%\textbf{} & & & (período $T$) & período) & (período $2T$) & período) & (período $4T$) &  & período) &  &  \\
+%\textbf{} & Ponto & $\longrightarrow$ & Ã“rbita & $\longrightarrow$ & Ã“rbita & $\longrightarrow$ & Ã“rbita & $\longrightarrow$ & $\cdots$ & $\longrightarrow$ & Atrator \\
+%\textbf{Feigenbaum} & estacionÃ¡rio & (Hopf) & periÃ³dica & (DuplicaÃ§Ã£o & periÃ³dica & (DuplicaÃ§Ã£o & periÃ³dica &  & (DuplicaÃ§Ã£o &  & CaÃ³tico \\
+%\textbf{} & & & Ãºnica & de & Ãºnica & de & Ãºnica &  & de &  &  \\
+%\textbf{} & & & (perÃ­odo $T$) & perÃ­odo) & (perÃ­odo $2T$) & perÃ­odo) & (perÃ­odo $4T$) &  & perÃ­odo) &  &  \\
 %& & &  &  &  &  &  & & & &  \\
 %\hline
-%\textbf{Pomeau-} & Ponto & $\longrightarrow$ & Órbita & $\longrightarrow$ & Movimento &  &  &  &  &  & \\
-%\textbf{Manneville} & estacionário &(Hopf) & periódica &  & caótico &  &  &  &  &  &  \\
-%\textbf{} & & & única &  & intermitente &  &  &  &  &  &  \\
+%\textbf{Pomeau-} & Ponto & $\longrightarrow$ & Ã“rbita & $\longrightarrow$ & Movimento &  &  &  &  &  & \\
+%\textbf{Manneville} & estacionÃ¡rio &(Hopf) & periÃ³dica &  & caÃ³tico &  &  &  &  &  &  \\
+%\textbf{} & & & Ãºnica &  & intermitente &  &  &  &  &  &  \\
 %\hline
 %\end{tabular}}
 %\begin{flushleft}
@@ -394,18 +394,18 @@
 %\end{sidewaystable}
 %
 %
-%De modo geral, todas as rotas descritas acima, estão relacionadas à turbulência em seu estágio inicial (turbulência fraca), ou seja, quando a mesma pode ainda ser descrita por um número reduzido de graus de liberdade~\cite{chenmin/05}. Segundo \citeonline{zeng/93}, a compreensão do fenômeno turbulento será alcançada quando o mecanismo inicial que lhe deu origem for completamente entendido. Tal idéia justifica, em grande parte, a importância do estudo das rotas para a turbulência. Sob essa perspectiva, a turbulência fraca e caos possuem características em comum, já que ambos apresentam comportamentos irregulares em sua evolução temporal e podem ainda ser descritos por um conjunto reduzido de equações diferenciais determinísticas. Em contrapartida, a turbulência totalmente desenvolvida (com elevados números de Reynolds) envolve irregularidades de caráter temporal e espacial e só pode ser descrita por um número de graus de liberdade elevado.
+%De modo geral, todas as rotas descritas acima, estÃ£o relacionadas Ã  turbulÃªncia em seu estÃ¡gio inicial (turbulÃªncia fraca), ou seja, quando a mesma pode ainda ser descrita por um nÃºmero reduzido de graus de liberdade~\cite{chenmin/05}. Segundo \citeonline{zeng/93}, a compreensÃ£o do fenÃ´meno turbulento serÃ¡ alcanÃ§ada quando o mecanismo inicial que lhe deu origem for completamente entendido. Tal idÃ©ia justifica, em grande parte, a importÃ¢ncia do estudo das rotas para a turbulÃªncia. Sob essa perspectiva, a turbulÃªncia fraca e caos possuem caracterÃ­sticas em comum, jÃ¡ que ambos apresentam comportamentos irregulares em sua evoluÃ§Ã£o temporal e podem ainda ser descritos por um conjunto reduzido de equaÃ§Ãµes diferenciais determinÃ­sticas. Em contrapartida, a turbulÃªncia totalmente desenvolvida (com elevados nÃºmeros de Reynolds) envolve irregularidades de carÃ¡ter temporal e espacial e sÃ³ pode ser descrita por um nÃºmero de graus de liberdade elevado.
 %
-%\subsection{Caracterização da turbulência via atratores caóticos}
+%\subsection{CaracterizaÃ§Ã£o da turbulÃªncia via atratores caÃ³ticos}
 %
-%Desde que Lorenz introduziu seu modelo inspirado em dinâmica dos fluidos (conforme Seção~\ref{seccaos} deste capítulo), conjectura-se que a atmosfera possui um intrínseco limite de previsibilidade e que a dinâmica atmosférica é governada por um atrator caótico~\cite{weber/95}. 
+%Desde que Lorenz introduziu seu modelo inspirado em dinÃ¢mica dos fluidos (conforme SeÃ§Ã£o~\ref{seccaos} deste capÃ­tulo), conjectura-se que a atmosfera possui um intrÃ­nseco limite de previsibilidade e que a dinÃ¢mica atmosfÃ©rica Ã© governada por um atrator caÃ³tico~\cite{weber/95}. 
 %
-%Diversos trabalhos confirmam a existência de atratores na atmosfera, com base em séries temporais turbulentas. Esses atratores foram detectados, de maneira geral, a partir da técnica da reconstrução de espaço de fase~\cite{tak/81}, que será discutida em detalhes no Capítulo~\ref{caputiltecnicas}. \citeonline{xin/01} detectaram a existência de atratores caóticos, com dimensão de correlação entre $3$ e $7$, a partir de dados turbulentos observados na camada limite atmosférica. Esses dados foram amostrados a $16$ Hz e incluem medidas de temperatura, umidade e velocidade do vento em três direções, obtidos na província de Gansu e em Beijing, China. 
+%Diversos trabalhos confirmam a existÃªncia de atratores na atmosfera, com base em sÃ©ries temporais turbulentas. Esses atratores foram detectados, de maneira geral, a partir da tÃ©cnica da reconstruÃ§Ã£o de espaÃ§o de fase~\cite{tak/81}, que serÃ¡ discutida em detalhes no CapÃ­tulo~\ref{caputiltecnicas}. \citeonline{xin/01} detectaram a existÃªncia de atratores caÃ³ticos, com dimensÃ£o de correlaÃ§Ã£o entre $3$ e $7$, a partir de dados turbulentos observados na camada limite atmosfÃ©rica. Esses dados foram amostrados a $16$ Hz e incluem medidas de temperatura, umidade e velocidade do vento em trÃªs direÃ§Ãµes, obtidos na provÃ­ncia de Gansu e em Beijing, China. 
 %
-% Diversos trabalhos confirmam a existência de atratores de baixa dimensão na atmosfera, com base em séries temporais turbulentas. Esses atratores foram detectados a partir da técnicas como a reconstrução de espaço de fase \ref{eqtakensreconst}, pelo algoritmo de Grassberger e Procaccia \ref{eqcorr1} e ainda pelo algoritmo de Wolf~\cite{wolf/85}. Xin \textit{et al} \cite{xin/01} detectaram a existência de atratores estranhos, com dimensão entre $3$ e $7$, a partir de dados turbulentos observados na camada limite atmosférica. Esses dados foram amostrados a $16$ Hz e incluem medidas de temperatura, umidade e velocidade do vento em três direções, obtidos na província de Gansu e em Beijing, China. 
+% Diversos trabalhos confirmam a existÃªncia de atratores de baixa dimensÃ£o na atmosfera, com base em sÃ©ries temporais turbulentas. Esses atratores foram detectados a partir da tÃ©cnicas como a reconstruÃ§Ã£o de espaÃ§o de fase \ref{eqtakensreconst}, pelo algoritmo de Grassberger e Procaccia \ref{eqcorr1} e ainda pelo algoritmo de Wolf~\cite{wolf/85}. Xin \textit{et al} \cite{xin/01} detectaram a existÃªncia de atratores estranhos, com dimensÃ£o entre $3$ e $7$, a partir de dados turbulentos observados na camada limite atmosfÃ©rica. Esses dados foram amostrados a $16$ Hz e incluem medidas de temperatura, umidade e velocidade do vento em trÃªs direÃ§Ãµes, obtidos na provÃ­ncia de Gansu e em Beijing, China. 
 %
-%\citeonline{jaramillo/93} analisaram $24$ séries temporais de velocidade do vento e flutuações de temperatura, amostrados a $10$ Hz, em períodos de $30$ minutos, sobre condições atmosféricas instáveis, e concluiram que atratores caóticos com baixa dimensão, com dimensão de correlação entre $4$ e $6$, governam a dinâmica da baixa atmosfera de Ontário, Canadá. 
+%\citeonline{jaramillo/93} analisaram $24$ sÃ©ries temporais de velocidade do vento e flutuaÃ§Ãµes de temperatura, amostrados a $10$ Hz, em perÃ­odos de $30$ minutos, sobre condiÃ§Ãµes atmosfÃ©ricas instÃ¡veis, e concluiram que atratores caÃ³ticos com baixa dimensÃ£o, com dimensÃ£o de correlaÃ§Ã£o entre $4$ e $6$, governam a dinÃ¢mica da baixa atmosfera de OntÃ¡rio, CanadÃ¡. 
 %
-%A partir de dados de três componentes do vento, medidos em Almaraz (Cáceres, Espanha) à $18$ Hz, \citeonline{gallego/01} identificaram atratores caóticos para a turbulência convectiva com dimensão de correlação de aproximadamente $6$ e para a turbulência mecânica com dimensões de correlação variando entre $7$ e $9$. 
+%A partir de dados de trÃªs componentes do vento, medidos em Almaraz (CÃ¡ceres, Espanha) Ã  $18$ Hz, \citeonline{gallego/01} identificaram atratores caÃ³ticos para a turbulÃªncia convectiva com dimensÃ£o de correlaÃ§Ã£o de aproximadamente $6$ e para a turbulÃªncia mecÃ¢nica com dimensÃµes de correlaÃ§Ã£o variando entre $7$ e $9$. 
 %
-%Alguns trabalhos negam a existência de atratores caóticos na atmosfera. Nenhum indício de um atrator foi encontrado nas análises realizadas por \citeonline{weber/95} com base em séries temporais turbulentas das componentes vertical e horizontal da velocidade do vento, amostradas à $21$ Hz. \citeonline{loratrat/91} afirma que não há razão alguma para acreditar que um sistema dinâmico complexo, como o clima, possua um atrator de baixa dimensão associado. Segundo Lorenz, o valor da dimensão de correlação obtido em diversas análises, com base em séries temporais climáticas, pode estar relacionado à dimensão de um conjunto de subsistemas de baixa dimensão ``fracamente'' acoplados~\cite{loratrat/91}, e não à dimensão de um atrator associado ao sistema como um todo. A validade ou não deste cenário será investigada no Capítulo~\ref{caputiltecnicas}. Essa questão acerca da dimensão de um eventual atrator caótico associado à dinâmica da atmosfera está ainda em aberto, aguardando novos experimentos e o desenvolvimento de métodos inovadores de análise de séries temporais.
+%Alguns trabalhos negam a existÃªncia de atratores caÃ³ticos na atmosfera. Nenhum indÃ­cio de um atrator foi encontrado nas anÃ¡lises realizadas por \citeonline{weber/95} com base em sÃ©ries temporais turbulentas das componentes vertical e horizontal da velocidade do vento, amostradas Ã  $21$ Hz. \citeonline{loratrat/91} afirma que nÃ£o hÃ¡ razÃ£o alguma para acreditar que um sistema dinÃ¢mico complexo, como o clima, possua um atrator de baixa dimensÃ£o associado. Segundo Lorenz, o valor da dimensÃ£o de correlaÃ§Ã£o obtido em diversas anÃ¡lises, com base em sÃ©ries temporais climÃ¡ticas, pode estar relacionado Ã  dimensÃ£o de um conjunto de subsistemas de baixa dimensÃ£o ``fracamente'' acoplados~\cite{loratrat/91}, e nÃ£o Ã  dimensÃ£o de um atrator associado ao sistema como um todo. A validade ou nÃ£o deste cenÃ¡rio serÃ¡ investigada no CapÃ­tulo~\ref{caputiltecnicas}. Essa questÃ£o acerca da dimensÃ£o de um eventual atrator caÃ³tico associado Ã  dinÃ¢mica da atmosfera estÃ¡ ainda em aberto, aguardando novos experimentos e o desenvolvimento de mÃ©todos inovadores de anÃ¡lise de sÃ©ries temporais.

@@ -1,33 +1,33 @@
-# GERANDO A SAÕDA LATEX -> PDF (INPE)
+# GERANDO A SA√çDA LATEX -> PDF (INPE)
 -----------------------------------
-Gera o documento de saÌda via PDFLaTeX
+Gera o documento de sa√≠da via PDFLaTeX
 Para ser usado em ambiente UNIX/LINUX/CYGWIN
 
-H· duas formas de se fazer isto:
+H√° duas formas de se fazer isto:
 
 1) Usando o comando 'make'
 Uso:
-    make _opÁ„o_
+    make _op√ß√£o_
 
-OBS: … necess·rio abrir o arquivo Makefile e configur·-lo, 
-alterarando-se a vari·vel BASENAME para seu documento principal
+OBS: √â necess√°rio abrir o arquivo Makefile e configur√°-lo, 
+alterarando-se a vari√°vel BASENAME para seu documento principal
 
 2) Usando o script 'execpub.sh'
 Uso:
-    ./execpub.sh _input_ _opÁ„o_
+    ./execpub.sh _input_ _op√ß√£o_
 
 Entrada _input_: arquivo principal em LaTeX (mas sem extensao), p. ex.:
        publicacao[.tex] (ou equivalente)
 
-OpÁıes:
+Op√ß√µes:
 
     help	Esta ajuda.
 
-    pdf		CriaÁ„o do documento PDF.
+    pdf		Cria√ß√£o do documento PDF.
 
     pdf1	Executa apenas uma vez o PDFLATEX. 
 	
-    clean	Remove arquivos utilizados durante a criaÁ„o 
+    clean	Remove arquivos utilizados durante a cria√ß√£o 
 		do documento PDF.
 
     all		Limpa e cria o documento PDF.

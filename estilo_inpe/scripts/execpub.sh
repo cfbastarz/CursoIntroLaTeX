@@ -6,10 +6,10 @@
 #__INFO__MARK_BEGIN__
 ################################################################################
 #
-#   Nenhuma parte deste script pode ser copiada ou utilizada sem a prévia 
-#   aceitação do autor.
+#   Nenhuma parte deste script pode ser copiada ou utilizada sem a prÃ©via 
+#   aceitaÃ§Ã£o do autor.
 #   
-#   Data da última alteração: 29/07/2005.
+#   Data da Ãºltima alteraÃ§Ã£o: 29/07/2005.
 #
 #   Alan Wilter SID-INPE/MCT - alan@sid.inpe.br
 #
@@ -24,8 +24,8 @@ if [ $# -ne "$args" ]; then
 fi
 
 if [ ! -s ${file}.tex ]; then 
-  echo "Arquivo $file inexistente ou com extensão .tex"
-  echo "Omita a extensão .tex de $file se for o caso"
+  echo "Arquivo $file inexistente ou com extensÃ£o .tex"
+  echo "Omita a extensÃ£o .tex de $file se for o caso"
   exit
 fi
 
