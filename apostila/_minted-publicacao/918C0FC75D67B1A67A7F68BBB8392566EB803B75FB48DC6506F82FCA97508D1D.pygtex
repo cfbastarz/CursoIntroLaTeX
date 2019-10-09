@@ -1,0 +1,12 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}Huge} Huge\PYG{n+nb}{\PYGZcb{}}                 \PYG{k}{\PYGZbs{}\PYGZbs{}}
+\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}huge} huge\PYG{n+nb}{\PYGZcb{}}                 \PYG{k}{\PYGZbs{}\PYGZbs{}}
+\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}LARGE} LARGE\PYG{n+nb}{\PYGZcb{}}               \PYG{k}{\PYGZbs{}\PYGZbs{}}
+\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}Large} Large\PYG{n+nb}{\PYGZcb{}}               \PYG{k}{\PYGZbs{}\PYGZbs{}}
+\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}large} large\PYG{n+nb}{\PYGZcb{}}               \PYG{k}{\PYGZbs{}\PYGZbs{}}
+\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}normalsize} normalsize\PYG{n+nb}{\PYGZcb{}}     \PYG{k}{\PYGZbs{}\PYGZbs{}}
+\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}small} small\PYG{n+nb}{\PYGZcb{}}               \PYG{k}{\PYGZbs{}\PYGZbs{}}
+\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}footnotesize} footnotesize\PYG{n+nb}{\PYGZcb{}} \PYG{k}{\PYGZbs{}\PYGZbs{}}
+\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}scriptsize} scriptsize\PYG{n+nb}{\PYGZcb{}}     \PYG{k}{\PYGZbs{}\PYGZbs{}}
+\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}tiny} tiny\PYG{n+nb}{\PYGZcb{}}
+\end{Verbatim}

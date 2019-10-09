@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+latex documento.tex
+bibtex documento
+latex documento
+latex documento
+dvips documento.dvi
+ps2pdf documento.ps
+\end{Verbatim}

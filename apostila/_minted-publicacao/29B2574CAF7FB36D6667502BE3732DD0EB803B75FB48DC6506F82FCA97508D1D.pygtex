@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+No \PYG{k}{\PYGZbs{}LaTeX}\PYG{n+nb}{\PYGZob{}\PYGZcb{}}, códigos e comandos podem ser inseridos diretamente no
+texto, como por exemplo, o comando \PYG{k}{\PYGZbs{}verb}|\PYG{k}{\PYGZbs{}mintinline}\PYG{n+nb}{\PYGZob{}\PYGZcb{}\PYGZob{}\PYGZcb{}}|, que
+pode ser utilizado para mostrar como se carrega o pacote \PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}tt} minted\PYG{n+nb}{\PYGZcb{}}:
+\PYG{k}{\PYGZbs{}mintinline}\PYG{n+nb}{\PYGZob{}}latex\PYG{n+nb}{\PYGZcb{}\PYGZob{}}\PYG{k}{\PYGZbs{}usepackage}\PYG{n+nb}{\PYGZob{}}minted\PYG{n+nb}{\PYGZcb{}\PYGZcb{}}.
+\end{Verbatim}

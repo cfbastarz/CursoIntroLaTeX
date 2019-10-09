@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{\PYGZbs{}newcommand}\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}meusomatorio}\PYG{n+nb}{\PYGZcb{}}[3]\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}ensuremath}\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}sum}\PYG{n+nb}{\PYGZus{}\PYGZob{}}\PYGZsh{}1\PYG{n+nb}{\PYGZcb{}\PYGZca{}\PYGZob{}}\PYGZsh{}2\PYG{n+nb}{\PYGZcb{}\PYGZob{}}\PYGZsh{}3\PYG{n+nb}{\PYGZcb{}\PYGZcb{}\PYGZcb{}}
+
+O somatório de todos os números naturais pode ser expresso por:
+\PYG{k}{\PYGZbs{}meusomatorio}\PYG{n+nb}{\PYGZob{}}i=1\PYG{n+nb}{\PYGZcb{}\PYGZob{}}\PYG{k}{\PYGZbs{}infty}\PYG{n+nb}{\PYGZcb{}\PYGZob{}}i\PYG{n+nb}{\PYGZcb{}}, \PYG{l+s}{\PYGZdl{}}\PYG{n+nv}{\PYGZbs{}forall}\PYG{n+nb}{ i }\PYG{n+nv}{\PYGZbs{}in}\PYG{n+nb}{ }\PYG{n+nv}{\PYGZbs{}mathbb}\PYG{n+nb}{\PYGZob{}N\PYGZca{}}\PYG{o}{*}\PYG{n+nb}{\PYGZcb{}}\PYG{l+s}{\PYGZdl{}}.
+\end{Verbatim}

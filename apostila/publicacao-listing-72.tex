@@ -1,0 +1,70 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{lipsum}
+\usepackage{longtable}
+
+\title{Título}
+\author{Nome}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Seção}
+
+\lipsum[1]
+
+\begin{center}
+\begin{longtable}{|l|l|l|}
+%\caption{A sample long table.}
+%\label{tab:long} \\
+
+\hline
+\multicolumn{1}{|c|}{\textbf{Coluna 1}} & \multicolumn{1}{c|}{\textbf{Coluna 2}} & \multicolumn{1}{c|}{\textbf{Coluna 3}} \\
+\hline
+\endfirsthead
+
+\multicolumn{3}{c}{{\bfseries \tablename\ \thetable{} -- continuação da página anterior}} \\
+\hline
+\multicolumn{1}{|c|}{\textbf{Coluna 1}} & \multicolumn{1}{c|}{\textbf{Coluna 2}} & \multicolumn{1}{c|}{\textbf{Coluna 3}} \\
+\hline
+\endhead
+
+\hline
+\multicolumn{3}{|r|}{{Continua na próxima página}} \\
+\hline
+\endfoot
+
+\hline
+\hline
+\endlastfoot
+
+11111111111111 & 22222222222222 & 33333333333333 \\
+11111111111111 & 22222222222222 & 33333333333333 \\
+11111111111111 & 22222222222222 & 33333333333333 \\
+11111111111111 & 22222222222222 & 33333333333333 \\
+11111111111111 & 22222222222222 & 33333333333333 \\
+11111111111111 & 22222222222222 & 33333333333333 \\
+11111111111111 & 22222222222222 & 33333333333333 \\
+11111111111111 & 22222222222222 & 33333333333333 \\
+11111111111111 & 22222222222222 & 33333333333333 \\
+11111111111111 & 22222222222222 & 33333333333333 \\
+11111111111111 & 22222222222222 & 33333333333333 \\
+11111111111111 & 22222222222222 & 33333333333333 \\
+11111111111111 & 22222222222222 & 33333333333333 \\
+11111111111111 & 22222222222222 & 33333333333333 \\
+11111111111111 & 22222222222222 & 33333333333333 \\
+11111111111111 & 22222222222222 & 33333333333333 \\
+11111111111111 & 22222222222222 & 33333333333333 \\
+11111111111111 & 22222222222222 & 33333333333333 \\
+11111111111111 & 22222222222222 & 33333333333333 \\
+11111111111111 & 22222222222222 & 33333333333333 \\
+11111111111111 & 22222222222222 & 33333333333333 \\
+
+\end{longtable}
+\end{center}
+
+\lipsum[2]
+
+\end{document}

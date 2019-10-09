@@ -1,0 +1,11 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}tabular\PYG{n+nb}{\PYGZcb{}}[t]\PYG{n+nb}{\PYGZob{}}lcc\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}toprule}
+     \PYG{n+nb}{\PYGZam{}} L1C2 \PYG{n+nb}{\PYGZam{}} L1C3 \PYG{k}{\PYGZbs{}\PYGZbs{}}
+\PYG{k}{\PYGZbs{}midrule}
+L2C1 \PYG{n+nb}{\PYGZam{}} L2C2 \PYG{n+nb}{\PYGZam{}} L2C3 \PYG{k}{\PYGZbs{}\PYGZbs{}}
+L3C1 \PYG{n+nb}{\PYGZam{}} L3C2 \PYG{n+nb}{\PYGZam{}} L3C3 \PYG{k}{\PYGZbs{}\PYGZbs{}}
+L4C1 \PYG{n+nb}{\PYGZam{}} L4C2 \PYG{n+nb}{\PYGZam{}} L4C3 \PYG{k}{\PYGZbs{}\PYGZbs{}}
+\PYG{k}{\PYGZbs{}bottomrule}
+\PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}tabular\PYG{n+nb}{\PYGZcb{}}
+\end{Verbatim}

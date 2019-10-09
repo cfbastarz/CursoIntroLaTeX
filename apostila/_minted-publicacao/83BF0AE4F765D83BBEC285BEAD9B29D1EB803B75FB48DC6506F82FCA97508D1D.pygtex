@@ -1,0 +1,21 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{\PYGZbs{}newcommand}\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}eg}\PYG{n+nb}{\PYGZcb{}\PYGZob{}}por exemplo\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}newcommand}\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}ie}\PYG{n+nb}{\PYGZcb{}\PYGZob{}}isto é\PYG{n+nb}{\PYGZcb{}}
+
+Documentos \PYG{k}{\PYGZbs{}LaTeX}\PYG{n+nb}{\PYGZob{}\PYGZcb{}}, independente da sua classe (\PYG{k}{\PYGZbs{}eg}, \PYG{k}{\PYGZbs{}textit}\PYG{n+nb}{\PYGZob{}}book\PYG{n+nb}{\PYGZcb{}},
+\PYG{k}{\PYGZbs{}textit}\PYG{n+nb}{\PYGZob{}}report\PYG{n+nb}{\PYGZcb{}}, \PYG{k}{\PYGZbs{}textit}\PYG{n+nb}{\PYGZob{}}article\PYG{n+nb}{\PYGZcb{}} e \PYG{k}{\PYGZbs{}textit}\PYG{n+nb}{\PYGZob{}}letter\PYG{n+nb}{\PYGZcb{}}), podem ser muito
+simples ou complexos.
+
+\PYG{k}{\PYGZbs{}dots}
+
+Entretanto, em algumas situações é necessário marcar\PYGZhy{}se os acentos
+de forma explícita (\PYG{k}{\PYGZbs{}eg}, na edição de um arquivo de referências
+do BibTeX).
+
+\PYG{k}{\PYGZbs{}dots}
+
+No Exemplo \PYG{k}{\PYGZbs{}ref}\PYG{n+nb}{\PYGZob{}}exe\PYG{n+nb}{\PYGZus{}}eq0\PYG{n+nb}{\PYGZcb{}}, observe que os delimitadores dados por
+colchetes ou parênteses precisar ser ``escapados\PYGZsq{}\PYGZsq{}, \PYG{k}{\PYGZbs{}ie}, é necessário
+adicionar uma \PYG{k}{\PYGZbs{}verb}|\PYG{k}{\PYGZbs{}|} (barra invertida) antes deles (\PYG{k}{\PYGZbs{}eg}, \PYG{k}{\PYGZbs{}verb}|\PYG{l+s+sb}{\PYGZbs{}[}\PYG{n+nb}{|}
+\PYG{n+nb}{e }\PYG{n+nv}{\PYGZbs{}verb}\PYG{n+nb}{|}\PYG{l+s}{\PYGZbs{}]}| ou \PYG{k}{\PYGZbs{}verb}|\PYG{l+s}{\PYGZbs{}(}\PYG{n+nb}{| e }\PYG{n+nv}{\PYGZbs{}verb}\PYG{n+nb}{|}\PYG{l+s}{\PYGZbs{})}|).
+\end{Verbatim}

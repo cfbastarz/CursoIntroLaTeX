@@ -1,3 +1,6 @@
+% COMANDOS PESSOAIS
+%\newcommand{\vetor}[1]{\mathit{\mathbf{#1}}}
+
 % Caixas das Dicas (pacote tcolorbox)
 % Material Colors
 \newtcolorbox{marker}[1][]{enhanced,
@@ -20,7 +23,7 @@
         colframe=MaterialBlue900,
         colback=white,
         coltitle=white,
-        fonttitle=\small\sffamily\bfseries
+        fonttitle=\small\sffamily\bfseries,
         fontupper=\small, 
         fontlower=\small},
         example/.style 2 args={texexp,
@@ -31,6 +34,14 @@
         example={#2}{#3},#1}
     \newtcolorbox[use counter from=texexptitled]{texexptitledspec}[3][]{%
         example={#2}{#3},#1}
+
+%\newtcolorbox[auto counter,number within=section,list inside=exam]{texercise}[4][]{%
+%    texercisestyle,
+%    listing file={respostas/texercise\thetcbcounter.tex},
+%    label={exe:#2},
+%    record={\string\processsol{respostas/texercise\thetcbcounter.tex}{#2}},
+%    title={Exercício \thetcbcounter\hfill\mdseries Resposta na página \pageref{sol:#2}},
+%    list text={\vspace{-1em}\hspace{1mm} #3 (Resposta na página \pageref{sol:#2}}), #1)}
 
 % Caixas dos Exercícios e Soluções (pacote tcolorbox)  
 % Material Colors
@@ -50,20 +61,21 @@
     label={exercise:#1},
     attach title to upper=\quad,
     after upper={\par\hfill\textcolor{white}%
-        {\itshape Solução na página~\pageref{solution:#1}}},
+        {\itshape Resposta na página~\pageref{solution:#1}}},
     lowerbox=ignored,
-    savelowerto=solutions/exercise-\thetcbcounter.tex,
-    record={\string\solution{#1}{solutions/exercise-\thetcbcounter.tex}},
+    savelowerto=respostas/exercise-\thetcbcounter.tex,
+    record={\string\solution{#1}{respostas/exercise-\thetcbcounter.tex}},
     #2
 }
 
-\newtcolorbox[auto counter,number within=section,list inside=exam]{texercise}[2][]{%
+% Esta é a lista de exercícios
+\newtcolorbox[auto counter,number within=section,list inside=exam]{texercise}[4][]{%
     texercisestyle,
-    listing file={solutions/texercise\thetcbcounter.tex},
+    listing file={respostas/texercise\thetcbcounter.tex},
     label={exe:#2},
-    record={\string\processsol{solutions/texercise\thetcbcounter.tex}{#2}},
-    title={Exercício \thetcbcounter\hfill\mdseries Solução na página \pageref{sol:#2}},
-    list text={Exercício com solução na página \pageref{sol:#2}},#1}
+    record={\string\processsol{respostas/texercise\thetcbcounter.tex}{#2}},
+    title={Exercício \thetcbcounter\hfill\mdseries Resposta na página \pageref{sol:#2}},
+    list text={\vspace{-1em}\hspace{1mm} #3 - resposta na página \pageref{sol:#2}}, #1)}
     
 \tcbset{texercisestyle/.style={arc=0.5mm, colframe=MaterialGreen900,
     colback=white, coltitle=white,
@@ -71,20 +83,13 @@
     listing options={style=tcblatex,texcsstyle=*\color{MaterialRed900}},
 }}
 
-% Remove o comando style=tcblatex para funcionar com os compiladores XeLaTeX e LuaTex
-%\tcbset{texercisestyle/.style={arc=0.5mm, colframe=MaterialOrange,
-%    colback=white, coltitle=white,
-%    fonttitle=\small\sffamily\bfseries, fontupper=\small, fontlower=\small,
-%    listing options={texcsstyle=*\color{white}},
-%}}
-
 % \usepackage{hyperref} % for phantomlabel
 \newtcbinputlisting{\processsol}[2]{%
     texercisestyle,
     listing only,
     listing file={#1},
     phantomlabel={sol:#2},%
-    title={Solução do Exercício \ref{exe:#2} na página \pageref{exe:#2}},
+    title={Resposta do Exercício \ref{exe:#2} na página \pageref{exe:#2}},
 }
 
 % Caixa dos Comandos (pacote tcolorbox)
@@ -92,12 +97,17 @@
 \newtcblisting{commandshell}{colback=MaterialBlueGrey900,colupper=MaterialBlueGrey50,colframe=MaterialBlueGrey900!75!MaterialBlueGrey900,listing only,listing options={style=tcblatex,language=sh},
     every listing line={\textcolor{MaterialRed500}{\small\ttfamily\bfseries \$ }}}
 
-% Remove o comando tcblatex para funcionar com o compiladores XeLaTeX e LuaLaTeX
-%\newtcblisting{commandshell}{colback=MaterialBlueGrey900,colupper=MaterialBlueGrey50,colframe=MaterialBlueGrey900!75!MaterialBlueGrey900,listing only,listing options={language=sh},
-%    every listing line={\textcolor{MaterialRed500}{\small\ttfamily\bfseries \$ }}}
+\newtcblisting{meucomando}{listing engine=minted,
+	minted style=colorful,
+	minted language=bash,
+	minted options={fontsize=\small,breaklines,autogobble,linenos,numbersep=3mm},
+	colback=MaterialAmber50,colframe=MaterialBlueGrey900,listing only,
+	left=5mm,enhanced,
+	overlay={\begin{tcbclipinterior}\fill[MaterialAmber600] (frame.south west)
+			rectangle ([xshift=5mm]frame.north west);\end{tcbclipinterior}}}
 
-% Setenças individuais Loren Lipsum (pacote lipsum)
-%https://tex.stackexchange.com/questions/254901/one-sentence-of-dummy-text
+% Sentenças individuais Loren Lipsum (pacote lipsum)
+% REF: https://tex.stackexchange.com/questions/254901/one-sentence-of-dummy-text
 % store a big set of sentences
 \unpacklipsum[1-100] % it was \UnpackLipsum before version 2.0
 \ExplSyntaxOn
@@ -124,3 +134,48 @@
    }
  }
 \ExplSyntaxOff
+
+%\newcommand{\recuo}{\\[-0.5em]}
+%
+%\newcommand{\eg}{por exemplo}
+%\newcommand{\ie}{isto é}
+%
+%\newcommand{\inpe}{INPE}
+%\newcommand{\inpex}{INPE\xspace}
+%\newcommand{\ninpe}{Instituto Nacional de Pesquisas Espaciais}
+%\newcommand{\ninpex}{Instituto Nacional de Pesquisas Espaciais\xspace}
+
+% Reinsere um ponto (.) depois do número em listas ordenadas
+%\renewenvironment{enumerate}%
+%{\begin{list}{\arabic{enumi}.}%
+%		{\setlength{\leftmargin}{2.5em}%
+%			\setlength{\itemsep}{-\parsep}%
+%			\setlength{\topsep}{-\parskip}%%
+%			\usecounter{enumi}}%
+%}{\end{list}}
+
+% Força a redefinição do estilo das listas ordenadas (utilize o begingroup/endgroup para alterar localmente)
+%\renewcommand{\labelenumi}{\arabic{enumi}.}
+%\renewcommand{\labelenumii}{(\alph{enumii})}
+%\renewcommand{\labelenumiii}{\roman{enumiii}.}
+%\renewcommand{\labelenumiv}{\Alph{enumiv}.}
+
+%% Notas (pacote todonotes)
+%\newcommandx{\reescrever}[2][1=]{
+%  \todo[linecolor=MaterialRed,
+%  backgroundcolor=MaterialRed!25,
+%  bordercolor=MaterialRed,#1]{#2}
+%}
+%\newcommandx{\verificar}[2][1=]{
+%  \todo[linecolor=MaterialBlue,
+%  backgroundcolor=MaterialBlue!25,
+%  bordercolor=MaterialBlue,#1]{#2}
+%}
+%\newcommandx{\comentario}[2][1=]{
+%  \todo[linecolor=MaterialGreen,
+%  backgroundcolor=MaterialGreen!25,
+%  bordercolor=MaterialGreen,#1]{#2}
+%}
+%\newcommandx{\remover}[2][1=]{
+%  \todo[disable,#1]{#2}
+%}

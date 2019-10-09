@@ -1,17 +1,15 @@
-%%%%%%%%%%%%%%%%%%%CAPA%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\serieinpe{INPE-NNNNN-TDI/NNNN} %% não mais usado
-
+% CAPA
 \titulo{Introdução ao \LaTeX{}}
-\title{Introduction to \LaTeX{}} %% 
-\author{Carlos Frederico Bastarz} %% coloque o nome do(s) autor(es)
+\title{Introduction to \LaTeX{}} 
+\author{Carlos Frederico Bastarz}
 \descriccao{Apostila de introdução à linguagem de marcação \LaTeX{}.}
-\repositorio{aa/bb/cc/dd} %% repositório onde está depositado este documento - na omissão, será preenchido pelo SID
+\repositorio{aa/bb/cc/dd} 
 \tipoDaPublicacao{TDI}	%% tipo da publicação (NTC, RPQ, PRP, MAN, PUD, TDI, TAE e PRE) na ausência do número de série INPE, caso contrário deixar vazio
 \IBI{xx/yy} %% IBI (exemplo: J8LNKAN8PW/36CT2G2) quando existir, caso contrário o nome do repositório onde está depositado o documento
 
-\date{2019}%ano da publicação
+\date{2019}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%VERSO DA CAPA%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% VERSO DA CAPA
 \tituloverso{\vspace{-0.9cm}\textbf{\PublicadoPor:}}
 \descriccaoverso{Instituto Nacional de Pesquisas Espaciais - INPE\\
 Gabinete do Diretor (GB)\\
@@ -49,31 +47,27 @@ Marcelo de Castro Pazos - Serviço de Informação e Documentação (SID)\\
 André Luis Dias Fernandes - Serviço de Informação e Documentação (SID)\\
 }
 
-%%%%%%%%%%%%%%%%%%%FOLHA DE ROSTO
-
-%%%%%%%%%%%%%%%FICHA CATALOGRÁFICA
-%% NÃO PREENCHER - SERÁ PREENCHIDO PELO SID
-
+% FICHA CATALOGRÁFICA
+% NÃO PREENCHER - SERÁ PREENCHIDO PELO SID
 \cutterFICHAC{Cutter}
-\autorUltimoNomeFICHAC{Sobrenome, Nomes} %% exemplo: Fuckner, Marcus André
-\autorFICHAC {Nome Completo do Autor1; Nome Completo do Autor2} %% Campo opcional (se não usado prevalece \author)
+\autorUltimoNomeFICHAC{Sobrenome, Nomes}
+\autorFICHAC {Nome Completo do Autor1; Nome Completo do Autor2}
 \tituloFICHAC{Titulo da publicação}
 \instituicaosigla{INPE}
 \instituicaocidade{São José dos Campos}
-\paginasFICHAC{\pageref{numeroDePáginasDoPretexto} + \pageref{LastPage}} %% número total de páginas
-%\serieinpe{INPE-00000-TDI/0000} %% não mais usado
-\palavraschaveFICHAC{1.~Palavra chave. 2.~Palavra chave 3.~Palavra chave. 4.~Palavra chave. 5.~Palavra chave  I.~\mbox{Título}.} %% recomenda-se pelo menos 5 palavras-chaves - \mbox{} é para evitar hifenização 
-\numeroCDUFICHAC{000.000} %% número do CDU 
+\paginasFICHAC{\pageref{numeroDePáginasDoPretexto} + \pageref{LastPage}}
+\palavraschaveFICHAC{1.~Palavra chave. 2.~Palavra chave 3.~Palavra chave. 4.~Palavra chave. 5.~Palavra chave  I.~\mbox{Título}.} 
+\numeroCDUFICHAC{000.000} 
 
 % Nota da ficha (para TD)
-\tipoTD{Dissertação ou Tese} % Dissertação ou Tese
+\tipoTD{Dissertação ou Tese} 
 \cursoFA{Mestrado ou Doutorado em Nome do Curso}
 \instituicaoDefesa{Instituto Nacional de Pesquisas Espaciais}
-\anoDefesa{AAAA} % ano de defesa 
-\nomeAtributoOrientadorFICHAC{Orientador}	% pode ser: Orientador, Orientadora ou Orientadores
-\valorAtributoOrientadorFICHAC{José da Silva} % nome(s) completo(s)
+\anoDefesa{AAAA} 
+\nomeAtributoOrientadorFICHAC{Orientador}
+\valorAtributoOrientadorFICHAC{José da Silva}
 
-%%%%%%%%%%%%%%%FOLHA DE APROVAÇAO PELA BANCA EXAMINADORA
+% FOLHA DE APROVAÇAO PELA BANCA EXAMINADORA
 \tituloFA{\textbf{ATENÇÃO! A FOLHA DE APROVAÇÃO SERÁ INCLUIDA POSTERIORMENTE.}}
 %\cursoFA{\textbf{}}
 \candidatoOUcandidataFA{}
@@ -85,15 +79,10 @@ André Luis Dias Fernandes - Serviço de Informação e Documentação (SID)\\
 \membroE{}{}{}
 \membroF{}{}{}
 \membroG{}{}{}
-\ifpdf
 
-%%%%%%%%%%%%%%NÍVEL DE COMPRESSÃO {0 -- 9}
-\pdfcompresslevel 9
-\fi
-%%% define em 80% a largura das figuras %%%
-\newlength{\mylenfig} 
-\setlength{\mylenfig}{0.8\textwidth}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%%%%%%%%%%%%%%COMANDOS PESSOAIS
-\newcommand{\vetor}[1]{\mathit{\mathbf{#1}}}
+%\ifpdf
+%% NÍVEL DE COMPRESSÃO {0 -- 9}
+%\pdfcompresslevel 9
+%\fi
+%\newlength{\mylenfig} 
+%\setlength{\mylenfig}{0.8\textwidth}

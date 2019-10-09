@@ -1,0 +1,9 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}equation*\PYG{n+nb}{\PYGZcb{}}
+x = \PYG{k}{\PYGZbs{}frac}\PYG{n+nb}{\PYGZob{}}\PYGZhy{}b \PYG{k}{\PYGZbs{}pm} \PYG{k}{\PYGZbs{}sqrt}\PYG{n+nb}{\PYGZob{}}b\PYG{n+nb}{\PYGZca{}\PYGZob{}}2\PYG{n+nb}{\PYGZcb{}} \PYGZhy{} 4ac\PYG{n+nb}{\PYGZcb{}\PYGZcb{}\PYGZob{}}2a\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}equation*\PYG{n+nb}{\PYGZcb{}}
+
+\PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}equation\PYG{n+nb}{\PYGZcb{}}
+x = \PYG{k}{\PYGZbs{}frac}\PYG{n+nb}{\PYGZob{}}\PYGZhy{}b \PYG{k}{\PYGZbs{}pm} \PYG{k}{\PYGZbs{}sqrt}\PYG{n+nb}{\PYGZob{}}b\PYG{n+nb}{\PYGZca{}\PYGZob{}}2\PYG{n+nb}{\PYGZcb{}} \PYGZhy{} 4ac\PYG{n+nb}{\PYGZcb{}\PYGZcb{}\PYGZob{}}2a\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}equation\PYG{n+nb}{\PYGZcb{}}
+\end{Verbatim}

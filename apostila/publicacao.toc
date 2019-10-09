@@ -1,0 +1,52 @@
+\babel@toc {portuguese}{}
+\contentsline {chapter}{\numberline {1}Parte I - Preparação}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Introdução}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}Objetivos}{5}{section.1.2}
+\contentsline {section}{\numberline {1.3}Estrutura e Organização do Documento}{5}{section.1.3}
+\contentsline {section}{\numberline {1.4}Preparação do Ambiente}{6}{section.1.4}
+\contentsline {subsection}{\numberline {1.4.1}Escolhendo e instalando o compilador}{7}{subsection.1.4.1}
+\contentsline {chapter}{\numberline {2}Parte II - Entendendo o \LaTeX {}}{11}{chapter.2}
+\contentsline {section}{\numberline {2.1}Introdução ao \LaTeX {}}{11}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Caracteres e símbolos especiais}{15}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Acentos}{16}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}Tipos, tamanhos e estilos de letras}{17}{subsection.2.1.3}
+\contentsline {subsection}{\numberline {2.1.4}Títulos e seções}{20}{subsection.2.1.4}
+\contentsline {subsection}{\numberline {2.1.5}Cores e Paletas de Cores}{22}{subsection.2.1.5}
+\contentsline {subsection}{\numberline {2.1.6}Medidas}{25}{subsection.2.1.6}
+\contentsline {subsection}{\numberline {2.1.7}Parágrafos}{29}{subsection.2.1.7}
+\contentsline {subsection}{\numberline {2.1.8}Notas de rodapé}{35}{subsection.2.1.8}
+\contentsline {subsection}{\numberline {2.1.9}Listas}{38}{subsection.2.1.9}
+\contentsline {subsection}{\numberline {2.1.10}Figuras}{43}{subsection.2.1.10}
+\contentsline {subsection}{\numberline {2.1.11}Matemática e equações}{56}{subsection.2.1.11}
+\contentsline {subsection}{\numberline {2.1.12}Tabelas}{62}{subsection.2.1.12}
+\contentsline {subsection}{\numberline {2.1.13}Ferramentas de revisão}{71}{subsection.2.1.13}
+\contentsline {subsection}{\numberline {2.1.14}Outros ambientes}{75}{subsection.2.1.14}
+\contentsline {subsection}{\numberline {2.1.15}Citações e Referências}{86}{subsection.2.1.15}
+\contentsline {section}{\numberline {2.2}Uma Seção}{86}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Macros}{99}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Editores}{103}{subsection.2.2.2}
+\contentsline {section}{\numberline {2.3}Exercícios}{104}{section.2.3}
+\contentsline {chapter}{\numberline {3}Parte III - Estilo do INPE}{113}{chapter.3}
+\contentsline {section}{\numberline {3.1}Estilo do INPE para Dissertações e Teses}{113}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Estrutura e Organização}{114}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Compilação do Documento}{117}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Arquivos de Configuração}{121}{subsection.3.1.3}
+\contentsline {subsection}{\numberline {3.1.4}Inserção de Figuras e Tabelas}{123}{subsection.3.1.4}
+\contentsline {subsection}{\numberline {3.1.5}Inserção de Citações e Referências}{125}{subsection.3.1.5}
+\contentsline {subsection}{\numberline {3.1.6}Orientações Especiais}{131}{subsection.3.1.6}
+\contentsline {chapter}{\numberline {4}Parte IV - Apresentações e Pôsteres}{135}{chapter.4}
+\contentsline {section}{\numberline {4.1}Pacote Beamer}{135}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Estilos}{136}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Ambientes especiais}{138}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Transições e Animações}{139}{subsection.4.1.3}
+\contentsline {chapter}{REFERÊNCIAS BIBLIOGRÁFICAS}{145}{chapter.5}
+\ttl@change@i {\@ne }{chapter}{0cm}{\vspace {4mm}}{\normalfont \normalsize \bfseries }{}{\normalfont \normalsize \bfseries \titlerule *[0.82pc]{.}\contentspage }\relax 
+\ttl@change@v {chapter}{}{}{}\relax 
+\renewcommand {\chaptername }{\nomeanexo }
+\contentsline {chapter}{\numberline {}ANEXO A - RESPOSTAS DOS EXERCÍCIOS}{147}{anexo.a}
+\contentsline {chapter}{\numberline {}ANEXO B - MATEMÁTICA E OUTROS SÍMBOLOS}{157}{anexo.b}
+\contentsline {chapter}{\numberline {}APÊNDICE A - PACOTES UTILIZADOS}{163}{anexo.A}
+\ttl@change@i {\@ne }{chapter}{0cm}{\vspace {4mm}}{\normalfont \normalsize \bfseries }{}{\normalfont \normalsize \bfseries \titlerule *[0.82pc]{.}\contentspage }\relax 
+\ttl@change@v {chapter}{}{}{}\relax 
+\renewcommand {\chaptername }{\appendixname }
+\contentsfinish 

@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}center\PYG{n+nb}{\PYGZcb{}}
+    A \PYG{k}{\PYGZbs{}colorbox}\PYG{n+nb}{\PYGZob{}}blue\PYG{n+nb}{\PYGZcb{}\PYGZob{}}\PYG{k}{\PYGZbs{}color}\PYG{n+nb}{\PYGZob{}}white\PYG{n+nb}{\PYGZcb{}\PYGZob{}}famosa\PYG{n+nb}{\PYGZcb{}\PYGZcb{}} \PYG{k}{\PYGZbs{}colorbox}\PYG{n+nb}{\PYGZob{}}green\PYG{n+nb}{\PYGZcb{}\PYGZob{}}Kelly\PYG{n+nb}{\PYGZcb{}}
+    comeu \PYG{k}{\PYGZbs{}colorbox}\PYG{n+nb}{\PYGZob{}}red\PYG{n+nb}{\PYGZcb{}\PYGZob{}}\PYG{k}{\PYGZbs{}color}\PYG{n+nb}{\PYGZob{}}white\PYG{n+nb}{\PYGZcb{}\PYGZob{}}pão infetado\PYG{n+nb}{\PYGZcb{}\PYGZcb{}} com arroz que
+    o \PYG{k}{\PYGZbs{}colorbox}\PYG{n+nb}{\PYGZob{}}magenta\PYG{n+nb}{\PYGZcb{}\PYGZob{}}Barriga\PYG{n+nb}{\PYGZcb{}} jantou
+    \PYG{k}{\PYGZbs{}colorbox}\PYG{n+nb}{\PYGZob{}}blue\PYG{n+nb}{\PYGZcb{}\PYGZob{}}\PYG{k}{\PYGZbs{}color}\PYG{n+nb}{\PYGZob{}}yellow\PYG{n+nb}{\PYGZcb{}\PYGZob{}}vendo\PYG{n+nb}{\PYGZcb{}\PYGZcb{}}
+    o filme da \PYG{k}{\PYGZbs{}colorbox}\PYG{n+nb}{\PYGZob{}}green\PYG{n+nb}{\PYGZcb{}\PYGZob{}}Wehrmacht\PYG{n+nb}{\PYGZcb{}}
+    \PYG{k}{\PYGZbs{}colorbox}\PYG{n+nb}{\PYGZob{}}red\PYG{n+nb}{\PYGZcb{}\PYGZob{}}\PYG{k}{\PYGZbs{}color}\PYG{n+nb}{\PYGZob{}}white\PYG{n+nb}{\PYGZcb{}\PYGZob{}}xexelenta\PYG{n+nb}{\PYGZcb{}\PYGZcb{}}.
+\PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}center\PYG{n+nb}{\PYGZcb{}}
+\end{Verbatim}

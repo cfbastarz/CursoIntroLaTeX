@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}center\PYG{n+nb}{\PYGZcb{}}
+    \PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}equation*\PYG{n+nb}{\PYGZcb{}}
+        \PYG{k}{\PYGZbs{}frac}\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}partial}\PYG{n+nb}{\PYGZca{}\PYGZob{}}2\PYG{n+nb}{\PYGZcb{}}\PYG{k}{\PYGZbs{}Psi}\PYG{n+nb}{\PYGZcb{}\PYGZob{}}\PYG{k}{\PYGZbs{}partial} x\PYG{n+nb}{\PYGZca{}\PYGZob{}}2\PYG{n+nb}{\PYGZcb{}\PYGZcb{}} +
+        \PYG{k}{\PYGZbs{}frac}\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}partial}\PYG{n+nb}{\PYGZca{}\PYGZob{}}2\PYG{n+nb}{\PYGZcb{}}\PYG{k}{\PYGZbs{}Psi}\PYG{n+nb}{\PYGZcb{}\PYGZob{}}\PYG{k}{\PYGZbs{}partial} y\PYG{n+nb}{\PYGZca{}\PYGZob{}}2\PYG{n+nb}{\PYGZcb{}\PYGZcb{}} = 0
+    \PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}equation*\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}center\PYG{n+nb}{\PYGZcb{}}
+\end{Verbatim}

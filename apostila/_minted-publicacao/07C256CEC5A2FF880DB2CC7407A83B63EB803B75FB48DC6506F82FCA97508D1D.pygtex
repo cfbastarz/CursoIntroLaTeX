@@ -1,0 +1,15 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}equation*\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}split\PYG{n+nb}{\PYGZcb{}}
+f(x) \PYG{n+nb}{\PYGZam{}} = x\PYG{n+nb}{\PYGZca{}\PYGZob{}}\PYGZhy{}\PYG{k}{\PYGZbs{}frac}\PYG{n+nb}{\PYGZob{}}1\PYG{n+nb}{\PYGZcb{}\PYGZob{}}2\PYG{n+nb}{\PYGZcb{}\PYGZcb{}}   \PYG{k}{\PYGZbs{}\PYGZbs{}}
+     \PYG{n+nb}{\PYGZam{}} = \PYG{k}{\PYGZbs{}frac}\PYG{n+nb}{\PYGZob{}}1\PYG{n+nb}{\PYGZcb{}\PYGZob{}}\PYG{k}{\PYGZbs{}sqrt}\PYG{n+nb}{\PYGZob{}}x\PYG{n+nb}{\PYGZcb{}\PYGZcb{}}\PYG{k}{\PYGZbs{}text}\PYG{n+nb}{\PYGZob{}}, \PYG{n+nb}{\PYGZcb{}}\PYG{k}{\PYGZbs{}forall} x \PYG{k}{\PYGZbs{}neq} 0.
+\PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}split\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}equation*\PYG{n+nb}{\PYGZcb{}}
+
+\PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}equation\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}split\PYG{n+nb}{\PYGZcb{}}
+f(x) \PYG{n+nb}{\PYGZam{}} = x\PYG{n+nb}{\PYGZca{}\PYGZob{}}\PYGZhy{}\PYG{k}{\PYGZbs{}frac}\PYG{n+nb}{\PYGZob{}}1\PYG{n+nb}{\PYGZcb{}\PYGZob{}}2\PYG{n+nb}{\PYGZcb{}\PYGZcb{}}   \PYG{k}{\PYGZbs{}\PYGZbs{}}
+     \PYG{n+nb}{\PYGZam{}} = \PYG{k}{\PYGZbs{}frac}\PYG{n+nb}{\PYGZob{}}1\PYG{n+nb}{\PYGZcb{}\PYGZob{}}\PYG{k}{\PYGZbs{}sqrt}\PYG{n+nb}{\PYGZob{}}x\PYG{n+nb}{\PYGZcb{}\PYGZcb{}}\PYG{k}{\PYGZbs{}text}\PYG{n+nb}{\PYGZob{}}, \PYG{n+nb}{\PYGZcb{}}\PYG{k}{\PYGZbs{}forall} x \PYG{k}{\PYGZbs{}neq} 0.
+\PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}split\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}equation\PYG{n+nb}{\PYGZcb{}}
+\end{Verbatim}

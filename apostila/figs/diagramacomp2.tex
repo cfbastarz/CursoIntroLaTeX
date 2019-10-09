@@ -1,0 +1,50 @@
+% Adaptado de http://www.texample.net/tikz/examples/tex-workflow/
+% carlos.bastarz@inpe.br (28/09/2019)
+
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+
+\usetikzlibrary{arrows,shapes}
+
+\usepackage{lscape}
+
+\begin{document}
+
+\begin{landscape}
+
+	\thispagestyle{empty}
+	
+	\tikzstyle{format} = [draw, thin, fill=blue!20]
+	\tikzstyle{medium} = [ellipse, draw, thin, fill=green!20, minimum height=2.5em]
+
+  \begin{figure}
+		\resizebox{\columnwidth}{!}{%
+      \begin{tikzpicture}[node distance=3cm, auto,>=latex', thick]
+        \path[use as bounding box] (-1,0) rectangle (10,-2);
+        \path[->] node[format] (tex) {Arq. {\tt .tex}};
+        \path[->] node[format, right of=tex] (dvi) {Arq. {\tt .dvi}}
+                          (tex) edge node {\LaTeX} (dvi);
+%        \path[->, draw=blue] (tex) -- +(0,-1) -| node[near start] {\color{blue}{Bib\TeX{}}} +(2.75,-0.3) (dvi) +(-0.25,-0.3);
+%        \path[->, draw] (-1.5,1.5) rectangle (4.5,-2) node[above right] {$\times$2};
+        \path[->] node[format, right of=dvi] (ps) {Arq. {\tt .ps}}
+                          node[medium, below of=dvi] (screen) {Tela}
+                          (dvi) edge node {dvips} (ps)
+                          edge node[swap] {xdvi} (screen);
+        \path[->] node[format, right of=ps] (pdf) {Arq. {\tt .pdf}}
+                          node[medium, below of=ps] (print) {Impressão}
+                          (ps) edge node {ps2pdf} (pdf)
+                          edge node[swap] {gs} (screen)
+                          edge (print);
+        \path[->] (pdf) edge (screen)
+                          edge (print);
+        \path[->, draw] (dvi) -- +(0,2) -| node[near start] {dvipdf} +(6.25,0.3) (pdf);
+        \path[->, draw] (tex) -- +(0,1) -| node[near start] {pdf\LaTeX} (pdf);
+      \end{tikzpicture}
+    }
+  \end{figure}
+
+\end{landscape}
+
+\end{document}

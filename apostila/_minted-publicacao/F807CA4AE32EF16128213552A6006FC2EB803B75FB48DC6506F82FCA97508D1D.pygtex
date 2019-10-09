@@ -1,0 +1,32 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{\PYGZbs{}documentclass}\PYG{n+nb}{\PYGZob{}}article\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}usepackage}\PYG{n+na}{[utf8]}\PYG{n+nb}{\PYGZob{}}inputenc\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}usepackage}\PYG{n+nb}{\PYGZob{}}tabularx\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}usepackage}\PYG{n+nb}{\PYGZob{}}lipsum\PYG{n+nb}{\PYGZcb{}}
+
+\PYG{k}{\PYGZbs{}title}\PYG{n+nb}{\PYGZob{}}Título\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}author}\PYG{n+nb}{\PYGZob{}}Nome\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}date}\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}today}\PYG{n+nb}{\PYGZcb{}}
+
+\PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}document\PYG{n+nb}{\PYGZcb{}}
+
+\PYG{k}{\PYGZbs{}maketitle}
+
+\PYG{k}{\PYGZbs{}section}\PYG{n+nb}{\PYGZob{}}Seção\PYG{n+nb}{\PYGZcb{}}
+
+\PYG{k}{\PYGZbs{}lipsum}\PYG{n+na}{[1]}
+
+\PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}tabularx\PYG{n+nb}{\PYGZcb{}\PYGZob{}}\PYG{k}{\PYGZbs{}textwidth}\PYG{n+nb}{\PYGZcb{}\PYGZob{}}|X|X|\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}hline}
+Coluna 1     \PYG{n+nb}{\PYGZam{}} Coluna 2     \PYG{k}{\PYGZbs{}\PYGZbs{}}
+\PYG{k}{\PYGZbs{}hline}
+\PYG{k}{\PYGZbs{}lipsum}\PYG{n+na}{[1\PYGZhy{}2]} \PYG{n+nb}{\PYGZam{}} \PYG{k}{\PYGZbs{}lipsum}\PYG{n+na}{[1\PYGZhy{}2]} \PYG{k}{\PYGZbs{}\PYGZbs{}}
+\PYG{k}{\PYGZbs{}hline}
+\PYG{k}{\PYGZbs{}lipsum}\PYG{n+na}{[1\PYGZhy{}2]} \PYG{n+nb}{\PYGZam{}} \PYG{k}{\PYGZbs{}lipsum}\PYG{n+na}{[1\PYGZhy{}2]} \PYG{k}{\PYGZbs{}\PYGZbs{}}
+\PYG{k}{\PYGZbs{}hline}
+\PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}tabularx\PYG{n+nb}{\PYGZcb{}}
+
+\PYG{k}{\PYGZbs{}lipsum}\PYG{n+na}{[2]}
+
+\PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}document\PYG{n+nb}{\PYGZcb{}}
+\end{Verbatim}

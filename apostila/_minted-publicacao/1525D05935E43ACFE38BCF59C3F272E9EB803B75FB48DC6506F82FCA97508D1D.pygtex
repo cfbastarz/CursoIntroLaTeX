@@ -1,0 +1,16 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{\PYGZbs{}documentclass}\PYG{n+nb}{\PYGZob{}}article\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}usepackage}\PYG{n+na}{[utf8]}\PYG{n+nb}{\PYGZob{}}inputenc\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}usepackage}\PYG{n+nb}{\PYGZob{}}lipsum\PYG{n+nb}{\PYGZcb{}}
+
+\PYG{k}{\PYGZbs{}renewcommand}\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}baselinestretch}\PYG{n+nb}{\PYGZcb{}\PYGZob{}}1.6\PYG{n+nb}{\PYGZcb{}}
+
+\PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}document\PYG{n+nb}{\PYGZcb{}}
+
+\PYG{k}{\PYGZbs{}setlength}\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}parindent}\PYG{n+nb}{\PYGZcb{}\PYGZob{}}3em\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}setlength}\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}parskip}\PYG{n+nb}{\PYGZcb{}\PYGZob{}}1em\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}lipsum}\PYG{n+na}{[1]} \PYG{k}{\PYGZbs{}par}
+\PYG{k}{\PYGZbs{}lipsum}\PYG{n+na}{[2]}
+
+\PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}document\PYG{n+nb}{\PYGZcb{}}
+\end{Verbatim}

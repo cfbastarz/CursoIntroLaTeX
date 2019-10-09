@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{\PYGZbs{}lipsumsentence}\PYG{n+na}{[32\PYGZhy{}33]}
+\PYG{k}{\PYGZbs{}vspace}\PYG{n+nb}{\PYGZob{}}1cm\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}lipsumsentence}\PYG{n+na}{[34\PYGZhy{}35]}
+\end{Verbatim}

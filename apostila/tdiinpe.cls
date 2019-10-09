@@ -16,6 +16,7 @@
 % Alan W. S. da Silva (alan@sid.inpe.br) [11/08/2005] +55(12)3945 6911
 % Mantenedor e Desenvolvedor atual:
 % Gerald J. F. Banon (banon@dpi.inpe.br) [25/03/2008] +55(12)3945 6489
+% Gerald J. F. Banon (gerald.banon@gmail.com) [11/05/2015] +55(12)3923 4742
 %
 % ----- Identificacao:
 \NeedsTeXFormat{LaTeX2e}[1995/12/01]
@@ -52,15 +53,21 @@
 %\ProvidesClass{tdiinpe}[2015/01/29 v1.31]
 %\ProvidesClass{tdiinpe}[2015/06/10 v1.32]
 %\ProvidesClass{tdiinpe}[2015/11/16 v1.33]
-\ProvidesClass{tdiinpe}[2016/07/24 v1.34]
+%\ProvidesClass{tdiinpe}[2016/07/24 v1.34]
+%\ProvidesClass{tdiinpe}[2018/09/21 v1.35]
+\ProvidesClass{tdiinpe}[2019/04/02 v1.36]
 
-% modificaçoes (mais acima, mais atual) - última modificação: 24 de julho de 2016
+% modificaçoes (mais acima, mais atual) - última modificação: 02 de abril de 2019
+% - Troca de: COMISSÃO DO CONSELHO DE EDITORAÇÃO E PRESERVAÇÃODA PRODUÇÃO INTELECTUAL DO INPE (DE/DIR-544, por CONSELHO DE EDITORAÇÃO E PRESERVAÇÃO DA PRODUÇÃOINTELECTUAL DO INPE - CEPPII (PORTARIA No176/2018/SEI-INPE) (André Fernandes 2019-04-02)
+% - inclusão do commando \financiamento para informar abaixo da ficha catalográfica sobre a(s) fonte(s) financiador(es) (banon 2018-09-21)
+%   o comando \financiamento{xxx} deve ser colocado depois de \begin{documment} e antes de \maketitle
+%   onde xxx é o texto referente à(s) fonte(s) financiador(es).
 % - modificação do código do comando \FONTE para que as fontes curtas fiquem centralizadas (gjfb - banon 2016-07-24)
 % - introdução do campo \autorFICHAC para ter os nomes dos autores separados por (;) na ficha catalográfica (ex: Nome Completo do Autor1; Nome Completo do Autor2). Campo opcional (se não usado prevalece \author - observação: se há mais de um autor, o campo \author deve ser preenchido assim: Nome Completo do Autor1\\Nome Completo do Autor2). A possibilidade de ausência do campo \autorFICHAC é prático quando a obra tem apenas um autor. Nesse caso basta preencher apenas o campo \author. (banon 2015-11-16)
 % - introdução da opção de copyright: GPLv3 (banon 2015-06-10)
 % - inclusão da palavra COMISSÃO/COMMISSION no comando \ConselhoDeEditoracao (clayton 2015-01-29)
 % - inclusão do commando \marcaRegistrada para informar abaixo da ficha catalográfica sobre marca registrada.
-%   o comando \marcaRegistrada{xxx} tem que ser colocado depois de \begin{documment} e antes de \maketitle
+%   o comando \marcaRegistrada{xxx} deve ser colocado depois de \begin{documment} e antes de \maketitle
 %   onde xxx é o texto referente à marca registrada.
 % - alteração de \newcommand{\FONTE} para assegurar o alinhamento do fonte com a legenda (banon 2014-07-23)
 %   para figuras o posicionamento de título, legenda e fonte segue as três regras abaixo: 
@@ -195,7 +202,7 @@
 \fi
 
 \RequirePackage{color} %% essencial %% aplicar cores no texto
-%\RequirePackage[utf8]{inputenc} %% essencial 
+%\RequirePackage[latin1]{inputenc} %% essencial
 
 \RequirePackage{float}	%% acrescentado por gjfb em 2012-10-19 seguindo recomendação do Fabio Dall Cortivo
 
@@ -509,7 +516,7 @@ top=3cm,bottom=3cm]{geometry}	% acrescentado por gjfb em 2011-12-06
 \newcommand{\nomeglossarios}{GLOSSÁRIO}
 \newcommand{\nomeabreviaturasesiglas}{LISTA DE ABREVIATURAS E SIGLAS}
 \newcommand{\nomefichacatalografica}{FICHA CATALOGRÁFICA}
-\newcommand{\termosdeuso}{TERMOS DE USO}	% acrescentado por jgfb em 2013-10-07
+\newcommand{\termosdeuso}{TERMOS DE USO}	% acrescentado por gjfb em 2013-10-07
 \newcommand{\nomefolhadeaprovacao}{FOLHA DE APROVAÇÃO}
 \renewcommand{\refname}{REFERÊNCIAS BIBLIOGRÁFICAS}
 \renewcommand{\figurename}{Figura}% %awss
@@ -531,7 +538,8 @@ top=3cm,bottom=3cm]{geometry}	% acrescentado por gjfb em 2011-12-06
 \newcommand{\PublicadoPor}{Publicado por}
 %\newcommand{\ConselhoDeEditoracao}{CONSELHO DE EDITORAÇÃO}	% comentado por gjfb em 2010-05-01
 %\newcommand{\ConselhoDeEditoracao}{CONSELHO DE EDITORAÇÃO E PRESERVAÇÃO DA PRODUÇÃO INTELECTUAL DO INPE (RE/DIR-204)}	% acrescentado por gjfb em 2010-05-01
-\newcommand{\ConselhoDeEditoracao}{COMISSÃO DO CONSELHO DE EDITORAÇÃO E PRESERVAÇÃO DA PRODUÇÃO INTELECTUAL DO INPE (DE/DIR-544)}	% acrescentado por cmp em 2015-01-29
+%\newcommand{\ConselhoDeEditoracao}{COMISSÃO DO CONSELHO DE EDITORAÇÃO E PRESERVAÇÃO DA PRODUÇÃO INTELECTUAL DO INPE (DE/DIR-544)}	% acrescentado por cmp em 2015-01-29
+\newcommand{\ConselhoDeEditoracao}{CONSELHO DE EDITORAÇÃO E PRESERVAÇÃO DA PRODUÇÃO INTELECTUAL DO INPE - CEPPII (PORTARIA Nº 176/2018/SEI-INPE)}	% acrescentado por aldf em 2019-04-02
 \newcommand{\Presidente}{Presidente}
 \newcommand{\Membros}{Membros}
 \newcommand{\BibliotecaDigital}{BIBLIOTECA DIGITAL}
@@ -554,7 +562,7 @@ top=3cm,bottom=3cm]{geometry}	% acrescentado por gjfb em 2011-12-06
 \newcommand{\nomeglossarios}{GLOSSARY}
 \newcommand{\nomeabreviaturasesiglas}{LIST OF ABBREVIATIONS}
 \newcommand{\nomefichacatalografica}{INDEX CARD}
-\newcommand{\termosdeuso}{TERMS OF USE}	% acrescentado por jgfb em 2013-10-07
+\newcommand{\termosdeuso}{TERMS OF USE}	% acrescentado por gjfb em 2013-10-07
 \newcommand{\nomefolhadeaprovacao}{APPROVAL TERM}
 \renewcommand{\refname}{REFERENCES}
 %\renewcommand{\figurename}{FIGURE}% %awss
@@ -578,7 +586,8 @@ top=3cm,bottom=3cm]{geometry}	% acrescentado por gjfb em 2011-12-06
 \newcommand{\PublicadoPor}{Published by}
 %\newcommand{\ConselhoDeEditoracao}{EDITORIAL COMMITTEE}	% comentado por gjfb em 2010-05-01
 %\newcommand{\ConselhoDeEditoracao}{BOARD OF PUBLISHING AND PRESERVATION OF INPE INTELLECTUAL PRODUCTION (RE/DIR-204)}	% acrescentado por gjfb em 2010-05-01
-\newcommand{\ConselhoDeEditoracao}{COMMISSION OF BOARD OF PUBLISHING AND PRESERVATION OF INPE INTELLECTUAL PRODUCTION (DE/DIR-544)}	% acrescentado por cmp em 2015-01-29
+%\newcommand{\ConselhoDeEditoracao}{COMMISSION OF BOARD OF PUBLISHING AND PRESERVATION OF INPE INTELLECTUAL PRODUCTION (DE/DIR-544)}	% acrescentado por cmp em 2015-01-29
+\newcommand{\ConselhoDeEditoracao}{BOARD OF PUBLISHING AND PRESERVATION OF INPE INTELLECTUAL PRODUCTION - CEPPII (PORTARIA Nº 176/2018/SEI-INPE)}	% acrescentado por aldf em 2019-04-02 
 \newcommand{\Presidente}{Chairperson}
 \newcommand{\Membros}{Members}
 \newcommand{\BibliotecaDigital}{DIGITAL LIBRARY}
@@ -723,6 +732,7 @@ top=3cm,bottom=3cm]{geometry}	% acrescentado por gjfb em 2011-12-06
 % FICHA - fim
 
 \newcommand*{\marcaRegistrada}[1]{\gdef\@marcaRegistrada{#1}}	% acrescentado por gjfb em 2014-10-07
+\newcommand*{\financiamento}[1]{\gdef\@financiamento{#1}}	% acrescentado por gjfb em 2018-09-21
 
 \newcommand*{\tituloFA}[1]{\gdef\@tituloFA{#1}}
 \newcommand*{\cursoFA}[1]{\gdef\@cursoFA{#1}}
@@ -799,15 +809,35 @@ top=3cm,bottom=3cm]{geometry}	% acrescentado por gjfb em 2011-12-06
 % end AWSS
 
 %% CFB
+\singlespacing
+\newcommand{\listofexamples}{%
+	\tcblistof[\chapter*]{exem}{LISTA DE EXEMPLOS%
+	    \\[-1em]
+        \hfill\mbox{}\\[\parsinpe]\mbox{}\hfill\underline{\normalfont\normalsize\bfseries P\'{a}g.}}
+}
+
+\newcommand{\includeListaExemplos}{%
+%	\pagestyle{empty}
+	\pagestyle{plain}% para colocar paginação na lista de tabelas
+	\refstepcounter{section}
+	\pretexto%
+	\listofexamples
+	\pretexto}
+%% CFB
+%% CFB
+\singlespacing
+\newcommand{\listofexercicies}{%
+	\tcblistof[\chapter*]{exam}{LISTA DE EXERCÍCIOS%
+	    \\[-1em]
+        \hfill\mbox{}\\[\parsinpe]\mbox{}\hfill\underline{\normalfont\normalsize\bfseries P\'{a}g.}}
+}
+
 \newcommand{\includeListaExercicios}{%
 %	\pagestyle{empty}
 	\pagestyle{plain}% para colocar paginação na lista de tabelas
 	\refstepcounter{section}
 	\pretexto%
-	\tcblistof[\chapter*]{exam}{LISTA DE EXERCÍCIOS%
-	    \\
-        \hfill\mbox{}\\[\parsinpe]\mbox{}\hfill\underline{\normalfont\normalsize\bfseries P\'{a}g.}	    
-	    \label{listofexercises}}
+	\listofexercicies
 	\pretexto}
 %% CFB
 
@@ -860,7 +890,7 @@ top=3cm,bottom=3cm]{geometry}	% acrescentado por gjfb em 2011-12-06
 %%% Comando \legenda por gjfb em 2014-01-17 - fim
 
 %%% estilo de paragrafo especial para o \FONTE com margem adequada a partir do caption
-\def\tamfonte{\captionfont{\FONTEname: }}  %% observe o espaco, ´:´ eh o separador
+\def\tamfonte{\captionfont{\FONTEname: }}  %% observe o espaco, Ž:Ž eh o separador
 %%% comando \FONTE
 
 \ifHTML
@@ -1127,6 +1157,7 @@ top=3cm,bottom=3cm]{geometry}	% acrescentado por gjfb em 2011-12-06
                  \@ldtable}
 \makeatother 
 \marcaRegistrada{}	% acrescentado por gjfb em 2014-10-07 
+\financiamento{}	% acrescentado por gjfb em 2018-09-21 
 }
 
 \renewcommand{\maketitle}{%maketitle
@@ -1360,11 +1391,13 @@ pdfauthor = {\@author},
 		
 		\@marcaRegistrada	% acrescentado por gjfb em 2014-10-07
 		
-%		\normalsize		% retornar para normalsize - comentado por jgfb em 2013-12-24 - nesta posição este comando está sem efeito
+		\@financiamento	% acrescentado por gjfb em 2018-09-21
+		
+%		\normalsize		% retornar para normalsize - comentado por gjfb em 2013-12-24 - nesta posição este comando está sem efeito
 	}
 }	% fim da ficha
 {
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Somente os termos de uso - acrescentado por jgfb em 2013-10-07
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Somente os termos de uso - acrescentado por gjfb em 2013-10-07
 
 	\pdfbookmark[0]{\termosdeuso}{}{
 		\vspace*{\stretch{1}}{
@@ -1378,12 +1411,14 @@ pdfauthor = {\@author},
 		
 		\@marcaRegistrada	% acrescentado por gjfb em 2014-10-07
 		
-%		\normalsize		% retornar para normalsize - comentado por jgfb em 2013-12-24 - nesta posição este comando está sem efeito
+		\@financiamento	% acrescentado por gjfb em 2018-09-21
+		
+%		\normalsize		% retornar para normalsize - comentado por gjfb em 2013-12-24 - nesta posição este comando está sem efeito
 	}
 }	% fim dos termos de uso
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%FOLHA DE APROVAÇAO PELA BANCA EXAMINADORA
 
-\normalsize		% retornar para normalsize - acrescentado por jgfb em 2013-12-24
+\normalsize		% retornar para normalsize - acrescentado por gjfb em 2013-12-24
 
 \ifthenelse{\equal{\@includeFA}{true}}{%
 	\pretexto

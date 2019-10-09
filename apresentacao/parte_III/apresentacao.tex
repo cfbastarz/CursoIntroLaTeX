@@ -1,0 +1,960 @@
+\documentclass[10pt]{beamer}
+
+\usetheme{metropolis}
+%\usecolortheme{crane}
+
+%\usefonttheme{professionalfonts}
+\usefonttheme[onlymath]{serif}
+\usefonttheme{professionalfonts}
+
+\usepackage[T1]{fontenc}
+
+\usepackage[alf]{abntex2cite}
+\usepackage{bibentry}
+
+% Numeração das figuras e tabelas
+\setbeamertemplate{caption}[numbered]
+
+% Força fundo branco em todos os slides
+\setbeamercolor{background canvas}{bg=white}
+
+% Engana o pacote tcolorbox no carregamento do inputenc
+% (https://tex.stackexchange.com/questions/370262/how-to-adapt-tcolorbox-with-xelatex)
+%\makeatletter\@namedef{ver@inputenc.sty}{}\makeatother
+
+%\AtBeginEnvironment{tcblisting}{\tiny}
+
+\AtBeginSubsection[
+  {\frame<beamer>{\frametitle{Sumário}   
+    \tableofcontents[currentsection,currentsubsection]}}%
+]%
+{
+  \frame<beamer>{ 
+    \frametitle{Sumário}
+    \begin{multicols}{2}
+    \tableofcontents[currentsection,currentsubsection]
+    \end{multicols}
+    }
+}
+
+\input{./meus_pacotes}
+\input{./minhas_macros}
+
+\title{Introdução ao \LaTeX}
+\subtitle{Parte III}
+\date{2 de Outubro de 2019}
+\author{Carlos Frederico Bastarz (CPTEC/INPE)}
+\institute{Instituto Nacional de Pesquisas Espaciais (INPE)}
+%\titlegraphic{\hfill\includegraphics[height=0.5cm]{figs/layout/logonome.pdf}}
+\titlegraphic{\hfill\includegraphics[height=1.25cm]{figs/layout/inpe_logo.png}}
+
+\makeatletter
+\patchcmd{\beamer@sectionintoc}{\vskip1.5em}{\vskip0.75em}{}{}
+\makeatother
+
+\begin{document}
+
+\maketitle
+
+%\begin{frame}[c]{Sumário}
+%  \vspace{0.75cm}
+%  \setbeamertemplate{section in toc}[sections numbered]
+%  \tableofcontents[hideallsubsections]
+%\end{frame}
+
+%\begin{frame}[c]{Sumário}
+%    \begin{flushleft}
+%        \begin{minipage}{5cm}
+%            \setbeamertemplate{section in toc}[sections numbered]
+%            \tableofcontents[hideallsubsections]
+%        \end{minipage}
+%    \end{flushleft}
+%    \begin{flushright}
+%        \begin{minipage}{5cm}
+%            \includegraphics[width=\textwidth]{./figs/ctan_lion_350x350.pdf}
+%        \end{minipage}
+%    \end{flushright}
+%\end{frame}
+
+\begin{frame}[c]{Sumário}
+    \vspace{2em}
+    \begin{multicols}{2}
+        \begin{minipage}{0.49\textwidth}
+           \setbeamertemplate{section in toc}[sections numbered]
+           \tableofcontents[hideallsubsections]
+        \end{minipage}
+        \begin{minipage}{0.49\textwidth}
+            \includegraphics[width=\textwidth]{./figs/ctan_lion_350x350.pdf}
+        \end{minipage}
+    \end{multicols}
+\end{frame}
+
+\section{Introdução}
+
+\begin{frame}{Introdução}
+\begin{block}{Nas duas primeiras etapas do Curso de Introdução ao \LaTeX{}}
+\begin{itemize}[label=\textbullet]
+    \pause
+    \item Aprendemos o que é o \LaTeX{};
+    \pause
+    \item Aprendemos o que se pode fazer com ele;
+    \pause
+    \item Aprendemos sobre as estruturas básicas da linguagem (classes, estilos e cores de fontes, figuras, tabelas, equações);
+    \pause
+    \item Aprendemos sobre como utilizar um editor simples;
+    \pause
+    \item Aprendemos sobre como compilar um documento simples (pela linha de comando e pelo editor);
+\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}{Introdução}
+\begin{block}{Nestas duas últimas etapas do Curso de Introdução ao \LaTeX{}}
+\begin{itemize}[label=\textbullet]
+    \pause
+    \item Aprenderemos como aplicar o estilo do INPE;
+    \pause
+    \item Aprenderemos sobre como devem ser inseridas figuras e tabelas;
+    \pause
+    \item Aprenderemos sobre como citar corretamente referências e outros elementos do texto;
+    \pause
+    \item Aprenderemos como utilizar o \LaTeX{} para fazer apresentações.
+\end{itemize}
+\end{block}
+\end{frame}
+
+\section{Parte III - Estilo do INPE}
+
+\subsection{Obtendo do Estilo}
+
+\begin{frame}{Obtendo o Estilo}
+\vspace{1em}
+\begin{block}{Entrar no \textit{site} \url{http://www.inpe.br/biblioteca/}}
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[scale=0.25]{./figs/biblio_pub_latex.pdf}
+    \end{center}
+\caption{Obtenção do estilo \LaTeX{} do INPE a partir do \textit{site} da Biblioteca do INPE.}
+\end{figure}
+\end{block}
+\end{frame}
+
+\subsection{Estrutura e Organização}
+
+\begin{frame}[fragile]{Estrutura e Organização}
+    \begin{block}{Arquivo {\tt archive.zip}}
+        \vspace{1em}
+        \begin{tcblisting}{colback=yellow!5,colframe=yellow!50!black,listing only,title=Descompactar o arquivo (Linux/MacOS),fonttitle=\small\bfseries,listing engine=minted,minted language=bash}
+            unzip archive.zip
+        \end{tcblisting}
+        No \textit{Microsoft Windows}, basta clicar com o botão direito e clicar em ``Descompactar...''.
+    \end{block}
+\end{frame}
+
+\begin{frame}{Estrutura e Organização}
+\begin{figure}[H]
+    \vspace{1em}
+    \begin{center}
+        \includegraphics[scale=0.17]{./figs/estrutura_estilo_inpe.pdf}
+    \end{center}
+\caption{Estrutura e organização do estilo \LaTeX{} do INPE.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Estrutura e Organização}
+    \begin{multicols}{4}
+    {\scriptsize
+        \pause
+        \textbf{Diretórios}
+        \begin{itemize}[leftmargin=0pt, itemindent=0pt,labelwidth=15pt,labelsep=0pt, listparindent=0cm,align=left]
+            \item bib/
+            \item Figuras/
+            \item docs/
+        \end{itemize}
+        \pause
+        \textbf{Arquivos do Estilo}
+        \begin{itemize}[leftmargin=0pt, itemindent=0pt,labelwidth=15pt,labelsep=0pt, listparindent=0cm,align=left]
+            \color{blue}{\item leiame
+            \item GPLv3.pdf
+            \item CCBY.png
+            \item CCBYNC.png
+            \item CCBYNCND.png
+            \item CCBYNCSA.png
+            \item CCBYND.png
+            \item CCBYSA.png
+            \item logoverno.pdf
+            \item logoinpe.pdf
+            \item tdiinpe.cls}                                                        
+            \pause
+            \color{red}{\item abntex-abrev-pt\_BR.def      
+            \item abntex-abrev.sty
+            \item nbr10520-2002.def
+            \item nbr10522-1988.def
+            \item abnt-alf.bst
+            \item abnt-alfenglish.bst
+            \item bibinpe.bst
+            \item eso-pic.sty
+            \item abnt-num.bst
+            \item abnt-options.bib
+    		\item abntcite.sty}
+        \end{itemize}
+        \pause
+    	\textbf{Outros Pacotes Fornecidos}
+    	\begin{itemize}[leftmargin=0pt, itemindent=0pt,labelwidth=15pt,labelsep=0pt, listparindent=0cm,align=left]
+            \item caption2.sty
+            \item calligra.sty
+            \item caption3.sty
+    		\item hyphenat.sty
+    		\item multirow.sty    
+            \item dsfont.sty
+    		\item supertabular.sty
+    		\item tocloft.sty   
+            \item setspace.sty
+    		\item titlesec.sty   
+            \item textcase.sty
+    		\item lastpage.sty     
+            \item bigdelim.sty
+    		\item everyshi.sty 
+            \item subfigure.sty
+    		\item titletoc.sty
+    	\end{itemize}
+        \pause
+    	\textbf{Arquivos de Configuração}
+    	\begin{itemize}[leftmargin=0pt, itemindent=0pt,labelwidth=15pt,labelsep=0pt, listparindent=0cm,align=left]
+    		\item configuracao.tex
+    	\end{itemize}
+        \pause
+        \textbf{Arquivos de Documentos}
+        \begin{itemize}[leftmargin=0pt, itemindent=0pt,labelwidth=15pt,labelsep=0pt, listparindent=0cm,align=left]
+            \item publicacao.tex
+        \end{itemize}
+        \pause
+        \textbf{\textit{Scripts}}
+        \begin{itemize}[leftmargin=0pt, itemindent=0pt,labelwidth=15pt,labelsep=0pt, listparindent=0cm,align=left]
+            \item tex2latin.sh
+            \item criapublicacaozip
+            \item latin2tex.sh
+            \item pdftohtmlB
+            \item livreto4.sh
+            \item execpub.sh
+        \end{itemize}
+        \pause
+        \textbf{Documento Final}
+        \begin{itemize}[leftmargin=0pt, itemindent=0pt,labelwidth=15pt,labelsep=0pt, listparindent=0cm,align=left]
+            \item publicacao.pdf
+        \end{itemize}
+    }
+    \end{multicols}
+\end{frame}
+
+\begin{frame}{Estrutura e Organização}
+    \begin{block}{\textit{Scripts} do estilo do INPE}
+        \begin{itemize}[label=\textbullet]
+            \pause
+            \item \textbf{criapublicacaozip}: \textit{script} que empacota o documento final ({\tt publicacao.pdf}) para publicação;
+            \pause
+            \item \textbf{latin2tex.sh}: \textit{script} que converte acentos latinos para a marcação da linguagem \LaTeX{};
+            \pause
+            \item \textbf{tex2latin.sh}: \textit{script} que converte acentos com marcação \LaTeX{} para acentos latinos;
+            \pause
+            \item \textbf{pdftohtmlB}: converte um documento PDF em HTML;
+            \pause
+            \item \textbf{livreto4.sh}: gera um livreto de quatro folhas no formato A4;
+            \pause
+            \item \textbf{execpub.sh}: gera o documento de saída ({\tt publicacao.pdf}) utilizando o compilador \LaTeX{}. 
+        \end{itemize}       
+    \end{block}
+\end{frame}
+
+\subsection{Arquivos de Configuração}
+
+\begin{frame}{Arquivos de Configuração}
+    \begin{block}{Arquivos principais}
+        \begin{itemize}[label=\textbullet]
+            \item {\tt publicacao.tex}
+            \item {\tt configuracao.tex}
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+%\begin{frame}[plain,fragile]{}
+%    \begin{tcblisting}{colback=yellow!5,colframe=yellow!50!black,listing only,title=Arquivo {\tt publicacao.tex},fonttitle=\bfseries,listing engine=minted,minted language=latex}
+%        documentclass[
+%        % PARA ESCOLHER O ESTILO TIRE O SIMBOLO (COMENTÁRIO)
+%        ...
+%        %PublicacaoDissOuTese,
+%        %PublicacaoArtigoOuRelatorio,
+%        %PublicacaoProposta, 
+%        %PublicacaoLivro, 
+%        %PublicacaoLivro,SemFormatacaoCapitulo,
+%        english,portuguese, 
+%        %portuguese,english, 
+%        LogoINPE,
+%        CCBYNC,
+%        ]{tdiinpe}
+%        ...
+%    \end{tcblisting}  
+%\end{frame}
+
+\begin{frame}[plain,fragile]{}
+    \begin{tcblisting}{
+        theorem={Listing}{listings}{Arquivo {\tt publicacao.tex}}{lst:example1},
+        title=Arquivo {\tt publicacao.tex},
+        fonttitle=\small\bfseries,
+        center,width=0.92\paperwidth,
+        colback=yellow!5,colframe=yellow!50!black
+        listing engine=minted,
+        minted language=latex,
+        minted options={%
+            linenos,
+            breaklines,
+            autogobble,
+            fontsize=\small,
+            numbersep=2mm,
+            baselinestretch=1},
+        overlay={%
+        \begin{tcbclipinterior}
+            \fill[gray!25] (frame.south west) rectangle ([xshift=4mm]frame.north west);
+        \end{tcbclipinterior}},
+        breakable, enhanced, listing only}
+        documentclass[
+        % PARA ESCOLHER O ESTILO TIRE O SIMBOLO (COMENTÁRIO)
+        %SemVinculoColorido,
+        %SemFormatacaoCapitulo,
+        %SemFolhaAprovacao,
+        %SemImagens,
+        %CitacaoNumerica, 
+        %PublicacaoDissOuTese,
+        %PublicacaoArtigoOuRelatorio,
+        %PublicacaoProposta, 
+        %PublicacaoLivro, 
+        %PublicacaoLivro,SemFormatacaoCapitulo,
+        english,portuguese, 
+        %portuguese,english, 
+        LogoINPE,
+        CCBYNC,
+        ]{tdiinpe}
+        ...
+    \end{tcblisting}
+\end{frame}
+
+\begin{frame}[plain,fragile]{}
+    \begin{tcblisting}{
+        theorem={Listing}{listings}{Arquivo {\tt publicacao.tex} (Continuação)}{lst:example1},
+        title=Arquivo {\tt publicacao.tex} (Continuação),
+        fonttitle=\small\bfseries,
+        center,width=0.92\paperwidth,
+        colback=yellow!5,colframe=yellow!50!black
+        listing engine=minted,
+        minted language=latex,
+        minted options={%
+            linenos,
+            breaklines,
+            autogobble,
+            fontsize=\small,
+            numbersep=2mm,
+            baselinestretch=1},
+        overlay={%
+        \begin{tcbclipinterior}
+            \fill[gray!25] (frame.south west) rectangle ([xshift=4mm]frame.north west);
+        \end{tcbclipinterior}},
+        breakable, enhanced, listing only}
+        ...
+        %\watermark{Revisão No. ##} 
+        \usepackage{rotating}
+        \usepackage{dsfont}
+        \usepackage{comment}
+        
+        \input{./configuracao} 
+        
+        \makeindex  
+        ... 
+        \marcaRegistrada{Informar aqui sobre marca registrada (a modificação desta linha deve ser feita no arquivo publicacao.tex).}
+        \financiamento{Informar aqui sobre fontes financiadoras (a modificação desta linha deve ser feita no arquivo publicacao.tex).}
+         
+        \maketitle  
+        ...
+    \end{tcblisting}
+\end{frame}
+
+\begin{frame}[plain,fragile]{}
+    \begin{tcblisting}{
+        theorem={Listing}{listings}{Arquivo {\tt publicacao.tex} (Continuação)}{lst:example1},
+        title=Arquivo {\tt publicacao.tex} (Continuação),
+        fonttitle=\small\bfseries,
+        center,width=0.92\paperwidth,
+        colback=yellow!5,colframe=yellow!50!black
+        listing engine=minted,
+        minted language=latex,
+        minted options={%
+            linenos,
+            breaklines,
+            autogobble,
+            fontsize=\small,
+            numbersep=2mm,
+            baselinestretch=1},
+        overlay={%
+        \begin{tcbclipinterior}
+            \fill[gray!25] (frame.south west) rectangle ([xshift=4mm]frame.north west);
+        \end{tcbclipinterior}},
+        breakable, enhanced, listing only}
+        ...
+        % Comente as linhas opcionais abaixo caso não as deseje
+        \include{./docs/epigrafe} % Opcional
+        \include{./docs/dedicatoria} % Opcional
+        \include{./docs/agradecimentos} % Opcional
+        \include{./docs/resumo} % Obrigatório
+        \include{./docs/abstract} % Obrigatório
+        
+        \includeListaFiguras % Obrigatório (mais de 3 figuras)
+        \includeListaTabelas % Obrigatório (mais de 3 tabelas)
+        
+        \include{./docs/abreviaturasesiglas} % Opcional
+        \include{./docs/simbolos} % Opcional
+        
+        \includeSumario % Obrigatório
+        \inicioIntroducao % Não altere este comando
+        ...
+    \end{tcblisting}
+\end{frame}
+
+\begin{frame}[plain,fragile]{}
+    \begin{tcblisting}{
+        theorem={Listing}{listings}{Arquivo {\tt publicacao.tex} (Continuação)}{lst:example1},
+        title=Arquivo {\tt publicacao.tex} (Continuação),
+        fonttitle=\small\bfseries,
+        center,width=0.92\paperwidth,
+        colback=yellow!5,colframe=yellow!50!black
+        listing engine=minted,
+        minted language=latex,
+        minted options={%
+            linenos,
+            breaklines,
+            autogobble,
+            fontsize=\small,
+            numbersep=2mm,
+            baselinestretch=1},
+        overlay={%
+        \begin{tcbclipinterior}
+            \fill[gray!25] (frame.south west) rectangle ([xshift=4mm]frame.north west);
+        \end{tcbclipinterior}},
+        breakable, enhanced, listing only}
+    ...
+    \include{./docs/introducao_corr3} % 1o capítulo
+    %\include{./docs/turbulencia_e_caos_st_corr6} % 2o capítulo
+    %\include{./docs/tecnicas_utilizadas_corr3} % 3o capítulo
+    \include{./docs/dados_analisados_corr2} % 4o capítulo
+    \include{./docs/analise_e_resultados_corr7} % 5o capítulo
+    \include{./docs/conclusoes3} % 6o capítulo
+    ...
+    \end{tcblisting}
+\end{frame}
+
+\begin{frame}[plain,fragile]{}
+    \begin{tcblisting}{
+        theorem={Listing}{listings}{Arquivo {\tt publicacao.tex} (Continuação)}{lst:example1},
+        title=Arquivo {\tt publicacao.tex} (Continuação),
+        fonttitle=\small\bfseries,
+        center,width=0.92\paperwidth,
+        colback=yellow!5,colframe=yellow!50!black
+        listing engine=minted,
+        minted language=latex,
+        minted options={%
+            linenos,
+            breaklines,
+            autogobble,
+            fontsize=\small,
+            numbersep=2mm,
+            baselinestretch=1},
+        overlay={%
+        \begin{tcbclipinterior}
+            \fill[gray!25] (frame.south west) rectangle ([xshift=4mm]frame.north west);
+        \end{tcbclipinterior}},
+        breakable, enhanced, listing only}
+    ...
+    % Bibliografia (obrigatório) 
+    \bibliography{./bib/referencia} 
+    
+    %\include{./docs/glossario} 
+    
+    \inicioApendice % Opcional
+    \include{./docs/apendice1} 
+    
+    \inicioAnexo
+    \include{./docs/anexo}
+    \include{./docs/anexo1}
+    \include{./docs/anexo2}
+    
+    \inicioIndice
+    \include{./docs/contracapa}
+    ...
+    \end{tcblisting}
+\end{frame}
+
+
+\begin{frame}{Arquivos de Configuração}
+\begin{table}[H]
+    \centering
+    \caption{Configurações principais do arquivo {\tt publicacao.tex}.}
+	\vspace{-1em}
+    {\scriptsize
+    \begin{tabular}{p{5cm}p{5cm}}
+    \toprule
+    \textbf{Opção} & \textbf{Descrição} \\
+    \midrule
+    {\tt SemVinculoColorido}                    & Remove o realce das referências e \textit{links} \\
+    {\tt SemFormatacaoCapitulo}                 & Não aplica a formatação de capítulos  \\
+    {\tt SemImagens}                            & Compila o documento sem as imagens\footnotemark[1] \\
+    {\tt CitacaoNumerica}                       & Altera o estilo das citações \\
+    {\tt PublicacaoDissOuTese}                  & Aplica o estilo de Dissertação ou Tese \\
+    {\tt PublicacaoArtigoOuRelatorio}           & Aplica o estilo de Artigo ou Relatório \\
+    {\tt PublicacaoProposta}                    & Aplica o estilo de Proposta (Tese ou Dissertação) \\
+    {\tt PublicacaoLivro}                       & Aplica o estilo de Livro \\
+    {\tt PublicacaoLivro},\newline{\tt SemFormatacaoCapitulo} & Idem anterior, mas sem a formatação de capítulos \\
+    {\tt english,portuguese}                    & Texto em Português, \textit{Abstract} em Inglês \\
+    {\tt portuguese,english}                    & Texto em Inglês, Resumo em Português \\
+    {\tt LogoINPE}                              & Utiliza o logo do INPE ao invés do logo do governo \\
+    {\tt CCBYNC}                                & Aplica o tipo de licença \\
+    \mintinline{latex}{\renewcommand{\rmdefault}{phv}}& Aplica a fonte Arial (sem serifa) como padrão \\
+    \bottomrule
+    \end{tabular}
+    }
+\end{table}
+\end{frame}
+
+%\begin{frame}[plain,fragile]{}
+%    \begin{tcblisting}{colback=yellow!5,colframe=yellow!50!black,listing only,title=Arquivo {\tt publicacao.tex},fonttitle=\bfseries,listing engine=minted,minted language=latex}
+%        % CAPA
+%        \titulo{Escrever o t\'{i}tulo no idioma em que foi escrito a publicaç\~{a}o}
+%        \title{Escrever o t\'{i}tulo em Ingl\^{e}s para publicaç\~{o}es escritas em Portugu\^{e}s e em Portugu\^{e}s para publicaç\~{o}es escritas em Ingl\^{e}s} 
+%        \author{Nome Completo do Autor}
+%        \descriccao{Tese de Doutorado ou Dissertaç\~{a}o de Mestrado do Curso de P\'{o}s-Graduaç\~{a}o em Nome do Curso, orientada pelo(a)  Dr(a). Nome do Orientador(a), aprovada em dd de m\^{e}s por extenso
+%        de aaaa.}
+%        ...    
+%    \end{tcblisting}  
+%\end{frame}
+
+\begin{frame}[plain,fragile]{}
+    \begin{tcblisting}{
+        theorem={Listing}{listings}{Arquivo {\tt configuracao.tex}}{lst:example2},
+                title=Arquivo {\tt configuracao.tex},
+        title=Arquivo {\tt configuracao.tex},
+        fonttitle=\small\bfseries,
+        center,width=0.92\paperwidth,
+        colback=yellow!5,colframe=yellow!50!black
+        listing engine=minted,
+        minted language=latex,
+        minted options={%
+            linenos,
+            breaklines,
+            autogobble,
+            fontsize=\small,
+            numbersep=2mm,
+            baselinestretch=1},
+        overlay={%
+        \begin{tcbclipinterior}
+            \fill[gray!25] (frame.south west) rectangle ([xshift=4mm]frame.north west);
+        \end{tcbclipinterior}},
+        breakable, enhanced, listing only}
+        % CAPA
+        \titulo{Escrever o t\'{i}tulo no idioma em que foi escrito a publicaç\~{a}o}
+        \title{Escrever o t\'{i}tulo em Ingl\^{e}s para publicaç\~{o}es escritas em Portugu\^{e}s e em Portugu\^{e}s para publicaç\~{o}es escritas em Ingl\^{e}s} 
+        \author{Nome Completo do Autor}
+        \descriccao{Tese de Doutorado ou Dissertaç\~{a}o de Mestrado do Curso de P\'{o}s-Graduaç\~{a}o em Nome do Curso, orientada pelo(a) Dr(a). Nome do Orientador(a), aprovada em dd de m\^{e}s por extenso de aaaa.}
+        \repositorio{aa/bb/cc/dd}
+        \tipoDaPublicacao{TDI}
+        \IBI{xx/yy} 
+        \date{AAAA}
+        ... 
+    \end{tcblisting}
+\end{frame}
+
+\begin{frame}[plain]{}
+    \begin{marker}
+        Recomenda-se atenção especial para os caracteres que são inseridos no arquivo {\tt configuracao.tex}. Neste arquivo, os acentos devem ser marcados, e.g., a palavra ``{\tt publicação}'', deve ser marcada como ``\mintinline{latex}{publicaç\~{a}o}.''
+    \end{marker}
+\end{frame}
+
+\subsection{Inserção de Figuras e Tabelas}
+
+%\begin{frame}[plain,fragile]{}
+%    \begin{tcblisting}{colback=yellow!5,colframe=yellow!50!black,listing only,title=Inserção de uma figura utilizando o estilo do INPE,fonttitle=\bfseries,listing engine=minted,minted language=latex}
+%        \begin{figure}[H]
+%          \caption{Exemplo de figura com título curto.}
+%          \vspace{6mm} % acrescentar o espaçamento vertical apropriado entre o título e a borda superior da figura
+%          \begin{center}
+%            \includegraphics[width=12cm]{./figs/gpa.pdf}  
+%          \end{center}
+%          \vspace{4mm} % acrescentar o espaçamento vertical apropriado entre a borda inferior da figura e a legenda ou a fonte quando não há legenda (o valor pode ser negativo para subir)
+%          \legenda{Exemplo de legenda curta.} % legenda - opcional
+%          \label{figgpa1}
+%          \FONTE{\citeonline{lba/06}.} % fonte consultada (elemento obrigatório, mesmo que seja produção do próprio autor)
+%        \end{figure}
+%    \end{tcblisting}    
+%\end{frame}
+
+\begin{frame}[plain,fragile]{}
+    \begin{tcblisting}{
+        theorem={Listing}{listings}{Inserção de uma figura utilizando o estilo do INPE}{lst:example3},
+        title=Inserção de uma figura utilizando o estilo do INPE,
+        fonttitle=\small\bfseries,
+        center,width=0.92\paperwidth,
+        colback=yellow!5,colframe=yellow!50!black
+        listing engine=minted,
+        minted language=latex,
+        minted options={%
+            linenos,
+            breaklines,
+            autogobble,
+            fontsize=\small,
+            numbersep=2mm,
+            baselinestretch=1},
+        overlay={%
+        \begin{tcbclipinterior}
+            \fill[gray!25] (frame.south west) rectangle ([xshift=4mm]frame.north west);
+        \end{tcbclipinterior}},
+        breakable, enhanced, listing only}
+        \begin{figure}[H]
+          \caption{Exemplo de figura com título curto.}
+          \vspace{6mm} % acrescentar o espaçamento vertical apropriado entre o título e a borda superior da figura
+          \begin{center}
+            \includegraphics[width=12cm]{./figs/gpa.pdf}  
+          \end{center}
+          \vspace{4mm} % acrescentar o espaçamento vertical apropriado entre a borda inferior da figura e a legenda ou a fonte quando não há legenda (o valor pode ser negativo para subir)
+          \legenda{Exemplo de legenda curta.} % legenda - opcional
+          \label{figgpa1}
+          \FONTE{\citeonline{lba/06}.} % fonte consultada (elemento obrigatório, mesmo que seja produção do próprio autor)
+        \end{figure}
+    \end{tcblisting}
+\end{frame}
+
+\begin{frame}{Inserção de Figuras e Tabelas}
+    \begin{block}{Figura no Estilo do INPE}
+        \begin{figure}[H]
+          \begin{center}
+            \includegraphics[width=10cm]{./figs/exefigestiinpe.pdf}  
+          \end{center}
+        \end{figure}
+    \end{block}
+\end{frame}
+
+%\begin{frame}[plain,fragile]{}
+%    \begin{tcblisting}{colback=yellow!5,colframe=yellow!50!black,listing only,title=Inserção de uma tabela utilizando o estilo do INPE,fonttitle=\bfseries,listing engine=minted,minted language=latex}
+%        \begin{table}[H] % [htbp] opções de posicionamento da tabela no texto
+%            \begin{center} % use sempre um ambiente para as tabelas
+%            % (opções: center (recomendado), flushright, flushleft)
+%            % NÃO USE \centering com TABELAS se houver \FONTE!	
+%            \caption{Exemplo de tabela, com fonte.}
+%            \begin{tabular}{l|l|c|c|r|r}
+%            \hline % desenha uma linha horizontal
+%            Campo 1 & Campo2 & Campo3 & Campo 4 & Campo5 & Campo6 \\
+%            Campo 1 & Campo2 & Campo3 & Campo 4 & Campo5 & Campo6 \\
+%            Campo 1 & Campo2 & Campo3 & Campo 4 & Campo5 & Campo6 \\				
+%            \hline % desenha uma linha horizontal
+%            \end{tabular}
+%            \end{center}
+%            \FONTE{Coloque a fonte de referência aqui, se houver.}
+%        \end{table}
+%    \end{tcblisting}    
+%\end{frame}
+
+\begin{frame}[plain,fragile]{}
+    \begin{tcblisting}{
+        theorem={Listing}{listings}{Inserção de uma tabela utilizando o estilo do INPE}{lst:example4},
+        title=Inserção de uma tabela utilizando o estilo do INPE,
+        fonttitle=\small\bfseries,
+        center,width=0.92\paperwidth,
+        colback=yellow!5,colframe=yellow!50!black
+        listing engine=minted,
+        minted language=latex,
+        minted options={%
+            linenos,
+            breaklines,
+            autogobble,
+            fontsize=\footnotesize,
+            numbersep=2mm,
+            baselinestretch=1},
+        overlay={%
+        \begin{tcbclipinterior}
+            \fill[gray!25] (frame.south west) rectangle ([xshift=4mm]frame.north west);
+        \end{tcbclipinterior}},
+        breakable, enhanced, listing only}
+        \begin{table}[H] % [htbp] opções de posicionamento da tabela no texto
+            \begin{center} % use sempre um ambiente para as tabelas
+            % (opções: center (recomendado), flushright, flushleft)
+            % NÃO USE \centering com TABELAS se houver \FONTE!
+            \caption{Exemplo de tabela, com fonte.}
+            \begin{tabular}{l|l|c|c|r|r}
+            \hline % desenha uma linha horizontal
+            Campo 1 & Campo2 & Campo3 & Campo 4 & Campo5 & Campo6 \\
+            Campo 1 & Campo2 & Campo3 & Campo 4 & Campo5 & Campo6 \\
+            Campo 1 & Campo2 & Campo3 & Campo 4 & Campo5 & Campo6 \\
+            \hline % desenha uma linha horizontal
+            \end{tabular}
+            \end{center}
+            \FONTE{Coloque a fonte de referência aqui, se houver.}
+        \end{table}
+    \end{tcblisting}
+\end{frame}
+
+\begin{frame}{Inserção de Figuras e Tabelas}
+    \begin{block}{Tabela no Estilo do INPE}
+        \begin{figure}[H]
+          \begin{center}
+            \includegraphics[width=10cm]{./figs/exetabestiinpe.pdf}  
+          \end{center}
+        \end{figure}
+    \end{block}
+\end{frame}
+
+\begin{frame}[plain]{}
+    \begin{marker}
+        Vários outros exemplos de figuras e tabelas podem ser encontrados em ``MANUAL PARA ELABORAÇÃO, FORMATAÇÃO E SUBMISSÃO DE TESES, DISSERTAÇÕES E OUTRAS PUBLICAÇÕES DO INPE (CEPPII, 2019)'' (\url{http://urlib.net/sid.inpe.br/iris@1916/2005/05.19.15.27}).
+    \end{marker}
+\end{frame}
+
+\subsection{Inserção de Citações e Referências}
+
+\begin{frame}{Inserção de Citações e Referências}
+    \begin{block}{Formato Bib\TeX{}}
+        \vspace{1em}
+        \begin{itemize}[label=\textbullet]
+            \pause
+            \item Formato específico para a organização de referências bibliográficas;
+            \pause
+            \item Referências ficam dentro de um arquivo de extensão {\tt .bib};
+            \pause
+            \item Requer cuidados especiais;
+            \pause
+            \item Altera a sequência de compilação.
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+\begin{frame}{Inserção de Citações e Referências}
+
+\tikzstyle{format} = [draw, thin, fill=blue!20]
+\tikzstyle{medium} = [ellipse, draw, thin, fill=green!20, minimum height=2.5em]
+
+\begin{figure}
+\begin{tikzpicture}[node distance=3cm, auto,>=latex', thick]
+    % We need to set at bounding box first. Otherwise the diagram
+    % will change position for each frame.
+    \path[use as bounding box] (-1,0) rectangle (10,-2);
+    \path[->]<1-> node[format] (tex) {Arq. {\tt .tex}};
+    \path[->]<2-> node[format, right of=tex] (dvi) {Arq. {\tt .dvi}}
+                  (tex) edge node {\LaTeX} (dvi);
+    %\path[->, draw]<3-> (tex) -- +(0,-1) -| node[near start] {Bib\TeX} (dvi);
+    \path[->, draw=blue]<3-> (tex) -- +(0,-1) -| node[near start] {\color{blue}{Bib\TeX{}}} +(2.75,-0.3) (dvi) +(-0.25,-0.3);
+    
+    %\path[-> draw] (tex) -- +(0,-1) -| node[near start] (dvi + (-1,-1));
+    
+    \path[->, draw]<4> (-1.5,1.5) rectangle (4.5,-2) node[above right] {$\times$2};
+    \path[->]<5-> node[format, right of=dvi] (ps) {Arq. {\tt .ps}}
+                  node[medium, below of=dvi] (screen) {Tela}
+                  (dvi) edge node {dvips} (ps)
+                        edge node[swap] {xdvi} (screen);
+    \path[->]<6-> node[format, right of=ps] (pdf) {Arq. {\tt .pdf}}
+                  node[medium, below of=ps] (print) {Impressão}
+                  (ps) edge node {ps2pdf} (pdf)
+                       edge node[swap] {gs} (screen)
+                       edge (print);
+    \path[->]<7-> (pdf) edge (screen)
+                        edge (print);
+    \path[->, draw=red]<8-> (dvi) -- +(0,2) -| node[near start] {\color{red}{dvipdf}} +(6.25,0.3) (pdf);
+    \path[->, draw]<9-> (tex) -- +(0,1) -| node[near start] {pdf\LaTeX} (pdf);
+\end{tikzpicture}
+\end{figure}
+\end{frame}
+
+\begin{frame}[fragile]{Inserção de Citações e Referências}
+    \begin{block}{Compilação de um documento \LaTeX{} com referências Bib\TeX{}}
+        \vspace{1em}
+%        \begin{tcblisting}{colback=yellow!5,colframe=yellow!50!black,listing only,title=Compilação Manual,fonttitle=\bfseries,listing engine=minted,minted language=bash}
+%            latex documento.tex
+%            bibtex documento
+%            latex documento
+%            latex documento
+%            dvips documento.dvi
+%            ps2pdf documento.ps
+%        \end{tcblisting}
+    \begin{tcblisting}{
+        theorem={Listing}{listings}{Compilação Manual}{lst:example5},
+        title=Compilação Manual,
+        fonttitle=\small\bfseries,
+        center,width=0.92\paperwidth,
+        colback=yellow!5,colframe=yellow!50!black
+        listing engine=minted,
+        minted language=latex,
+        minted options={%
+            linenos,
+            breaklines,
+            autogobble,
+            fontsize=\small,
+            numbersep=2mm,
+            baselinestretch=1},
+        overlay={%
+        \begin{tcbclipinterior}
+            \fill[gray!25] (frame.south west) rectangle ([xshift=4mm]frame.north west);
+        \end{tcbclipinterior}},
+        breakable, enhanced, listing only}
+            latex documento.tex
+            bibtex documento
+            latex documento
+            latex documento
+            dvips documento.dvi
+            ps2pdf documento.ps
+    \end{tcblisting}        
+    \end{block}
+\end{frame}
+
+\begin{frame}[fragile]{Inserção de Citações e Referências}
+    \begin{block}{\textit{Script} {\tt execpub.sh} do estilo do INPE}
+        \vspace{1em}
+        \begin{tcblisting}{colback=yellow!5,colframe=yellow!50!black,listing only,title=Permissão de execução (Linux/MacOS),fonttitle=\small\bfseries,listing engine=minted,minted language=bash}
+            chmod +x execpub.sh
+        \end{tcblisting}
+        
+        \begin{tcblisting}{colback=yellow!5,colframe=yellow!50!black,listing only,title=Uso (Linux/MacOS),fonttitle=\small\bfseries,listing engine=minted,minted language=bash}
+            ./execpub.sh <arquivo> <opcao>
+        \end{tcblisting}    
+        
+        \begin{tcblisting}{colback=yellow!5,colframe=yellow!50!black,listing only,title=Exemplo (Linux/MacOS),fonttitle=\small\bfseries,listing engine=minted,minted language=bash}
+            ./execpub.sh publicacao pdf
+        \end{tcblisting}        
+    \end{block}
+\end{frame}
+
+%\begin{frame}[plain,fragile]{}
+%    \begin{tcblisting}{colback=yellow!5,colframe=yellow!50!black,listing only,title=Exemplo de uma referência no formato Bib\TeX{},fonttitle=\bfseries,listing engine=minted,minted language=latex}
+%        @ARTICLE{nobre/2005,
+%          author    = {Luizao, F. J. and Nobre, C. A. and Manzi, A. O.},
+%          title     = {Projeto LBA: Estudando as Complexas Intera{\c c}\~oes da Biosfera com a Atmosfera na Amaz\^onia},
+%          journal   = actaam,
+%          year      = {2005},
+%          volume    = {35},
+%          number    = {1-2},
+%          pages     = {109--110},
+%        }
+%    \end{tcblisting}    
+%\end{frame}
+
+\begin{frame}[plain,fragile]{}
+    \begin{tcblisting}{
+        theorem={Listing}{listings}{Exemplo de uma referência no formato Bib\TeX{}}{lst:example6},
+        title=Exemplo de uma referência no formato Bib\TeX{},
+        fonttitle=\small\bfseries,
+        center,width=0.92\paperwidth,
+        colback=yellow!5,colframe=yellow!50!black
+        listing engine=minted,
+        minted language=latex,
+        minted options={%
+            linenos,
+            breaklines,
+            autogobble,
+            fontsize=\small,
+            numbersep=2mm,
+            baselinestretch=1},
+        overlay={%
+        \begin{tcbclipinterior}
+            \fill[gray!25] (frame.south west) rectangle ([xshift=4mm]frame.north west);
+        \end{tcbclipinterior}},
+        breakable, enhanced, listing only}
+        @ARTICLE{nobre/2005,
+          author    = {Luizao, F. J. and Nobre, C. A. and Manzi, A. O.},
+          title     = {Projeto LBA: Estudando as Complexas Intera{\c c}\~oes da Biosfera com a Atmosfera na Amaz\^onia},
+          journal   = actaam,
+          year      = {2005},
+          volume    = {35},
+          number    = {1-2},
+          pages     = {109--110},
+        }
+    \end{tcblisting}
+\end{frame}
+
+\begin{frame}{Inserção de Citações e Referências}
+    \begin{table}[H]
+    \centering
+    \caption{Tipos de referências padrão do Bib\TeX{}.}
+    {\scriptsize
+        \begin{tabular}{p{3cm}p{6cm}}
+        \toprule
+        \textbf{Tipo} & \textbf{Descrição} \\
+        \midrule
+        {\tt article}       & Artigo de jornal ou revista \\
+        {\tt book}          & Livro publicado \\
+        {\tt booklet}       & Compilação de trabalhos em formato de livro com vários autores, mas sem editora ou patrocinador \\
+        {\tt inbook}        & Parte ou capítulo de um livro, sem o título do livro ao qual pertence \\
+        {\tt incollection}  & Parte ou capítulo de um livro, com o título do livro ao qual pertence \\
+        {\tt inproceedings} & Artigo em anais de congresso ou conferência \\
+        {\tt conference}    & Idem a {\tt inproceedings} \\
+        {\tt manual}        & Manual técnico \\
+        {\tt masterthesis}  & Dissertação de mestrado \\
+        {\tt phdthesis}     & Tese de doutorado \\
+        {\tt misc}          & Modelo útil para outros tipos de referências \\
+        {\tt proceedings}   & Anais de congresso ou conferência \\
+        {\tt techreport}    & Relatório técnico \\
+        {\tt unpublished}   & Artigo, livro ou outro tipo de trabalho não publicado \\
+        \bottomrule
+        \end{tabular}
+    }
+    \end{table}
+\end{frame}
+
+\begin{frame}{Inserção de Citações e Referências}
+    \begin{block}{Estilos de referência mais comuns}
+        \begin{itemize}[label=\textbullet]
+            \item {\tt cite}:
+            \item {\tt citeonline}:
+            \item {\tt citeyear}:
+            \item {\tt citeauthor}:
+            \item {\tt citeauthoronline}:
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+\begin{frame}{Inserção de Citações e Referências}
+    \begin{table}[htb]
+        \centering
+        \vspace{-1em}
+        \caption{Estilos de citação segundo as normas ABNT no estilo do INPE.}
+        {\tiny
+        \begin{tabular}{p{5.5cm} p{4cm}}
+	        \toprule
+            \textbf{Uso}                                                            & \textbf{Exemplo}                                    \\
+	        \midrule                                                                                                                                    
+            \mintinline{latex}{\cite{fulano/1964}}                                  & \cite{fulano/1964}                                  \\
+            \mintinline{latex}{\citeonline{fulano/1964}}                            & \citeonline{fulano/1964}                            \\
+            \mintinline{latex}{\citeyear{fulano/1964}}                              & \citeyear{fulano/1964}                              \\
+            \mintinline{latex}{\citeauthor{ciclanoetal/1975}}                       & \citeauthor{ciclanoetal/1975}                            \\
+            \mintinline{latex}{\citeauthoronline{fulano/1964}}                      & \citeauthoronline{fulano/1964}                      \\
+            \midrule
+            \mintinline{latex}{\apud[p.~2--3]{fulano/1964}{ciclanoetal/1975}}       & \apud[p.~2--3]{fulano/1964}{ciclanoetal/1975}       \\
+            \mintinline{latex}{\apudonline[p.~2--3]{fulano/1964}{ciclanoetal/1975}} & \apudonline[p.~2--3]{fulano/1964}{ciclanoetal/1975} \\
+            \mintinline{latex}{\Idem[p.~2--3]{ciclanoetal/1975}}                    & \Idem[p.~2--3]{ciclanoetal/1975}                    \\
+            \mintinline{latex}{\Ibidem[p.~2--3]{ciclanoetal/1975}}                  & \Ibidem[p.~2--3]{ciclanoetal/1975}                  \\
+            \mintinline{latex}{\opcit[p.~2--3]{ciclanoetal/1975}}                   & \opcit[p.~2--3]{ciclanoetal/1975}                   \\
+            \mintinline{latex}{\passim{ciclanoetal/1975}}                           & \passim{ciclanoetal/1975}                           \\
+            \mintinline{latex}{\loccit{ciclanoetal/1975}}                           & \loccit{ciclanoetal/1975}                          \\
+            \mintinline{latex}{\cfcite[p.~2--3]{ciclanoetal/1975}}                  & \cfcite[p.~2--3]{ciclanoetal/1975}                  \\
+            \mintinline{latex}{\etseq{fulano/1964}}                                 & \etseq{fulano/1964}                                 \\
+	        \bottomrule                                                                                            
+        \end{tabular}
+        }
+    \end{table}
+\end{frame}
+
+%\section{Parte IV - Apresentações e Pôsteres}
+%
+%\begin{frame}{Apresentações com o Beamer}
+%
+%\end{frame}
+
+\section{Referências}
+
+\begin{frame}{Referências Bibliográficas}
+%\bibliographystyle{amsalpha}
+\bibliography{referencias}
+\end{frame}
+
+\end{document}

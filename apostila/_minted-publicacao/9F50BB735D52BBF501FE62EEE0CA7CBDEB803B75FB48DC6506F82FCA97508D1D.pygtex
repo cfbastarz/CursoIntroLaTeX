@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nb}{\PYGZob{}}tikzpicture\PYG{n+nb}{\PYGZcb{}}
+    \PYG{k}{\PYGZbs{}draw}
+        (3,\PYGZhy{}1) coordinate (a) node[right] \PYG{n+nb}{\PYGZob{}}a\PYG{n+nb}{\PYGZcb{}}
+        \PYGZhy{}\PYGZhy{} (0,0) coordinate (b) node[left] \PYG{n+nb}{\PYGZob{}}b\PYG{n+nb}{\PYGZcb{}}
+        \PYGZhy{}\PYGZhy{} (2,2) coordinate (c) node[above right] \PYG{n+nb}{\PYGZob{}}c\PYG{n+nb}{\PYGZcb{}}
+        pic[\PYGZdq{}\PYG{l+s}{\PYGZdl{}}\PYG{n+nv}{\PYGZbs{}alpha}\PYG{l+s}{\PYGZdl{}}\PYGZdq{}, draw=orange, \PYGZlt{}\PYGZhy{}\PYGZgt{}, angle eccentricity=1.2, angle radius=1cm]
+        \PYG{n+nb}{\PYGZob{}}angle=a\PYGZhy{}\PYGZhy{}b\PYGZhy{}\PYGZhy{}c\PYG{n+nb}{\PYGZcb{}};
+    \PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}tikzpicture\PYG{n+nb}{\PYGZcb{}}
+\end{Verbatim}

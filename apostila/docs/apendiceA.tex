@@ -1,0 +1,140 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Apêndice A
+\hypertarget{estilo:apendice1}{} %% uso para este Guia
+%Este apêndice foi criado apenas para indicar como construir um apêndice no estilo, não existia no original da tese.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\renewcommand{\thechapter}{}%
+\chapter{APÊNDICE A - PACOTES UTILIZADOS}  % trocar A por B na próxima apêndice e etc
+\label{apendiceA} % trocar A por B na próxima apêndice e etc
+\renewcommand{\thechapter}{A}%    % trocar A por B na próxima apêndice e etc
+
+%Neste apêndice estão sumarizados os pacotes extras\footnote{Vários outros pacotes são carregados por padrão no arquivo do estilo do INPE. Para mais informações sobre estes pacotes, verifique o arquivo {\tt tdiinpe.cls}.} utilizados para a produção deste documento. Na Tabela \ref{tab:pacotes_uteis} estão listados os pacotes junto com uma breve descrição para que o leitor entenda a função e o contexto da utilização destes pacotes. Clique nos links da coluna ``Pacote'' para acessar a documentação oficial do pacote no site do CTAN.
+
+Neste apêndice estão sumarizados os pacotes carregados pelo estilo do INPE (Tabela \ref{tab:pacotes}}) e os pacotes extras utilizados para a produção deste documento (Tabela \ref{tab:pacotes_uteis}). Nas tabelas estão listados os pacotes junto com uma breve descrição e uso, para que o leitor entenda a função e o contexto da utilização destes pacotes. Clique nos links da coluna ``Pacote'' para acessar a documentação oficial do pacote no site do CTAN. 
+
+\setlongtables
+\begin{longtable}{@{\extracolsep{\fill}}p{2cm} p{12cm}}
+\caption{Pacotes carregados pelo estilo do INPE.}\label{tab:pacotes} \\
+\toprule
+\textbf{Pacote} & \textbf{Descrição/Uso} \\
+\midrule
+\endfirsthead
+\multicolumn{2}{c}%
+{\tablename\ \thetable\ -- Continuação} \\
+\midrule
+\textbf{Pacote} & \textbf{Descrição/Uso} \\
+\midrule
+\endhead
+\midrule \multicolumn{2}{r}{(Continua)} \\
+\endfoot
+\midrule
+\endlastfoot
+\href{https://www.ctan.org/pkg/titlesec}{titlesec} & Necessário para a formatação das páginas. \\
+\href{https://www.ctan.org/pkg/titletoc}{titletoc} & Necessário para a confecção das listas de tabelas figuras etc. \\
+\href{https://www.ctan.org/pkg/textcase}{textcase} & Necessário para poder deixar partes do texto em letras minúsculas. \\
+\href{https://www.ctan.org/pkg/ifthen}{ifthen} & Essencial para utilizar operadores de condicionais. \\
+\href{https://www.ctan.org/pkg/calc}{calc} & Essencial para realizar operações matemáticas no \LaTeX{}. \\
+\href{https://www.ctan.org/pkg/graphics}{graphics} & Essencial para inserir figuras (suporte básico). \\
+\href{https://www.ctan.org/pkg/graphicx}{graphicx} & Essencial para inserir figuras (suporte avançado). \\
+\href{https://www.ctan.org/pkg/pstricks-base}{pstricks} & Essencial para inserir figuras no formato \textit{PSTricks} (\textit{PostScript}). \\
+\href{https://www.ctan.org/pkg/pst-grad}{pst-grad} & Essencial para inserir figuras no formato \textit{PSTricks}, permite a representação de gradientes. \\
+\href{https://www.ctan.org/pkg/pst-plot}{pst-plot} & Essencial para inserir figuras no formato \textit{PSTricks}, permite a plotagem de dados (com a representação de eixos). \\
+\href{https://www.ctan.org/pkg/color}{color} & Essencial aplicar cores no texto. \\
+\href{https://www.ctan.org/pkg/inputenc}{inputenc} & Essencial para a acentuação. \\
+\href{https://www.ctan.org/pkg/float}{float} & Essencial para o posicionamento relativo de ambientes como figuras e tabelas. \\
+\href{https://www.ctan.org/pkg/babel}{babel} & Essencial para a localização das estruturas do texto (nomes de figuras, tabelas, seções etc). \\
+\href{https://www.ctan.org/pkg/hyphenat}{hyphenat} & Essencial para a hifenização. \\
+\href{https://www.ctan.org/pkg/array}{array} & Essencial para a representação de arranjos e tabelas. \\
+\href{https://www.ctan.org/pkg/setspace}{setspace} & Essencial para a definição de espaços entre linhas no texto. \\
+\href{https://www.ctan.org/pkg/bigdelim}{bigdelim} & Essencial para uso de tabelas. \\
+\href{https://www.ctan.org/pkg/multirow}{multirow} & Essencial para uso de tabelas com linhas mescladas. \\
+\href{https://www.ctan.org/pkg/supertabular}{supertabular} & Essencial para uso de tabelas. \\
+\href{https://www.ctan.org/pkg/tabularx}{tabularx} & Essencial para uso de tabelas com largura fixa. \\
+\href{https://www.ctan.org/pkg/longtable}{longtable} & Essencial para uso de tabelas longas (entre páginas). \\
+\href{https://www.ctan.org/pkg/lastpage}{lastpage} & Essencial para a representação do número de páginas total do documento. \\
+\href{https://www.ctan.org/pkg/lscape}{lscape} & Essencial para orientação no modo paisagem. \\
+\href{https://www.ctan.org/pkg/rotate}{rotate} & Essencial para rotacionar corpos flutuantes (figuras, tabelas). \\
+\href{https://www.ctan.org/pkg/caption2}{caption2} & Essencial para o pacote ABNT. \\
+\href{https://www.ctan.org/pkg/amsmath}{amsmath} & Essencial para linguagem matemática. \\
+\href{https://www.ctan.org/pkg/amsfonts}{amssymb} & Essencial para linguagem matemática. \\
+\href{https://www.ctan.org/pkg/amsthm}{amsthm} & Essencial para linguagem matemática. \\
+\href{https://www.ctan.org/pkg/subfigure}{subfigure} & Essencial fazer subfiguras (lado-a-lado ou empilhadas). \\
+\href{https://www.ctan.org/pkg/tocloft}{tocloft} & Essencial para controlar o sumário e outras listas. \\
+\href{https://www.ctan.org/pkg/makeidx}{makeidx} & Essencial para fazer índice. \\
+\href{https://www.ctan.org/pkg/eso-pic}{eso-pic} & Permite a inserção de figuras em posições absolutas em várias páginas de um documento. \\
+\href{https://www.ctan.org/pkg/hyperref}{hyperref} & Melhora o suporte a hipertexto (\textit{links}, \textit{urls} e outros endereços) no \LaTeX{}. \\
+\href{https://www.ctan.org/pkg/ae}{ae} & Essencial para as fontes no arquivo PDF. \\
+\href{https://www.ctan.org/tex-archive/info/lmodern}{lmodern} & Permite copiar e colar o texto com acentuação a partir do arquivo PDF. \\
+%\href{https://www.ctan.org/pkg/backref}{backref} & backref não é compatível com abnt-verbatim-entry ainda \\
+%\href{https://www.ctan.org/pkg/abntcite}{abntcite} & Necessário para a citação e referências segundo as normas da ABNT. \\
+\href{https://www.ctan.org/pkg/geometry}{geometry} & Essencial para definir as dimensões do documento (margens e outros espaçamentos). \\
+%\bottomrule
+\end{longtable}
+\vspace{-8mm}
+\begin{center}
+	Fonte: Produção do autor.
+\end{center}
+
+Além dos pacotes listados na Tabela \ref{tab:pacotes}, também são carregados os pacotes do estilo de citação da Associação Brasileira de Normas Técnicas (ABNT). Este pacote está incluído diretamente na distribuição do estilo do INPE, de forma que o seu uso seja independente do pacote ABN\TeX{}2 que geralmente está presente nas distribuições do \LaTeX{}. Os arquivo do estilo de citação da ABNT que estão incorporados ao estilo do INPE, são os seguintes:
+
+\begin{itemize}
+  \item abnt-options.bib
+  \item abnt-num.bst
+  \item abntex-abrev.sty
+  \item abntcite.sty
+  \item abnt-alfportuguese.bst
+  \item abnt-alfenglish.bst
+  \item abnt-alf.bst
+  \item abntex-abrev-pt\_BR.def
+\end{itemize}
+
+Para a confecação desta apostila, além dos pacotes que já se encontram pré-carregados pelo estilo do INPE, foram também utilizados os pacotes que estão relacionados na Tabela \ref{tab:pacotes_uteis} a seguir.
+
+\setlongtables
+\begin{longtable}{@{\extracolsep{\fill}}p{2cm} p{12cm}}
+\caption{Pacotes extras utilizados neste documento.}\label{tab:pacotes_uteis} \\
+\toprule
+\textbf{Pacote} & \textbf{Descrição/Uso} \\
+\midrule
+\endfirsthead
+\multicolumn{2}{c}%
+{\tablename\ \thetable\ -- Continuação} \\
+\midrule
+\textbf{Pacote} & \textbf{Descrição/Uso} \\
+\midrule
+\endhead
+\midrule \multicolumn{2}{r}{(Continua)} \\
+\endfoot
+\midrule
+\endlastfoot
+%\href{https://www.ctan.org/pkg/rotating}{rotating} &   d  \\ 
+%\href{https://www.ctan.org/pkg/dsfont}{dsfont} &  d    \\
+%\href{https://www.ctan.org/pkg/comment}{comment} &  d    \\
+\href{https://www.ctan.org/pkg/xcolor}{xcolor} & Fornece as cores básicas do \LaTeX{}. Veja a Seção \ref{sec:pal_cores} do Capítulo \ref{cap:parteII}. \\
+\href{https://www.ctan.org/pkg/xcolor-material}{xcolor-material} & Fornece as cores do projeto \textit{Material Design} do Google. Veja a Seção \ref{sec:pal_cores} do Capítulo \ref{cap:parteII}. \\
+\href{https://www.ctan.org/pkg/xcolor-solarized}{xcolor-solarized} & Fornece as cores do projeto \textit{Solarized}. Veja a Seção \ref{sec:pal_cores} do Capítulo \ref{cap:parteII}. \\
+\href{https://www.ctan.org/pkg/minted}{minted} & Permite a inserção de códigos de \textit{scripts} e linguagens de programação, com várias opções. Veja a Seção \ref{sec:listing} do Capítulo \ref{cap:parteII}. \\
+\href{https://www.ctan.org/pkg/multicol}{multicol} & Permite a inserção de texto e corpos flutuantes em colunas. Veja a Seção \ref{sec:colunas} do Capítulo \ref{cap:parteII}. \\
+\href{https://www.ctan.org/pkg/listings}{listings} & Permite a inserção de códigos de \textit{scripts} e linguagens de programação. \\
+\href{https://www.ctan.org/pkg/ulem}{ulem} & Permite riscar expressões matemáticas. Veja a Seção \ref{sec:marc_text} do Capítulo \ref{cap:parteII}. \\
+\href{https://www.ctan.org/pkg/cancel}{cancel} & Permite riscar palavras. Veja a Seção \ref{sec:marc_text} do Capítulo \ref{cap:parteII}. \\
+\href{https://www.ctan.org/pkg/lipsum}{lipsum} & Permite a utilização de texto prolixo. \\
+\href{https://www.ctan.org/pkg/graphicx}{graphicx} & Permite a utilização de imagens de exemplo. Veja a Seção \ref{sec:figuras} do Capítilo \ref{cap:parteII}. \\
+%\href{https://www.ctan.org/pkg/pstricks}{pstricks} & d  \\
+%\href{https://www.ctan.org/pkg/pst-plot}{pst-plot} & d  \\
+%\href{https://www.ctan.org/pkg/pst-3dplot}{pst-3dplot} & d  \\
+\href{https://www.ctan.org/pkg/booktabs}{booktabs} & Permite a utilização das réguas {\tt toprule}, {\tt midrule}, {\tt bottomrule} e melhora o espaçamento entre as linhas de uma tabela. Veja a Seção \ref{sec:amb_tabs} do Capítulo \ref{cap:parteII}. \\
+%\href{https://www.ctan.org/pkg/wrapfig}{wrapfig} & Permite que figuras sejam inseridas dentro de parágrafos. Veja a Seção \ref{sec:amb_figs} do Capítulo \ref{cap:partII}. \\
+\href{https://www.ctan.org/pkg/metalogo}{metalogo} & Permite a inserção dos nomes \TeX{}, \LaTeX{}, \XeLaTeX{} etc. \\
+\href{https://www.ctan.org/pkg/enumitem}{enumitem} & Permite controlar a marcação de listas ordenadas e não ordenadas. Veja a Seção \ref{sec:listas} do Capítulo \ref{cap:parteII}. \\
+\href{https://www.ctan.org/pkg/subfig}{subfig}  & Permite a inserção de figuras lado-a-lado dentro do ambiente {\tt figure}. Veja a Seção \ref{sec:amb_figs} do Capítulo \ref{cap:parteII}. \\
+\href{https://www.ctan.org/pkg/tcolorbox}{tcolorbox} & Permite a inserção das caixas de dicas, exemplos e exercícios. \\
+%\href{https://www.ctan.org/pkg/setspace}{setspace} & d  \\
+%\href{https://www.ctan.org/pkg/xspace}{xspace} &  d  \\
+\href{https://www.ctan.org/pkg/lscape}{lscape} & Permite a rotação das páginas do documento. Veja a Seção \ref{sec:retratopaisagem} do Capítulo \ref{cap:parteII}. \\
+%\bottomrule
+\end{longtable}
+\vspace{-8mm}
+\begin{center}
+	Fonte: Produção do autor.
+\end{center}

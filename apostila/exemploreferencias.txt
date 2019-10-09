@@ -39,7 +39,7 @@ Encoding: Cp1252
   edition = {2},
   address = {Bras{\'i}lia},
   publisher = {Editora do Autor},
-  author = {Antonia Motta Castro Mem�ria Ribeiro},
+  author = {Antonia Motta Castro Memória Ribeiro},
   year = {2004}, 
   note = {v{\'a}rias p{\'a}gina{\c{c}}{\~o}es},
 } 
@@ -132,7 +132,7 @@ de controles geomorfol{\'o}gicos em reservat{\'o}rios hidrel{\'e}tricos},
 }
 
 @ARTICLE{brasil74,
-  title = {Decreto-lei n� 6129, de 6 de novembro de 1974. Disp\~oe sobre a
+  title = {Decreto-lei nº 6129, de 6 de novembro de 1974. Disp\~oe sobre a
 transforma{\c{c}}{\~a}o do Conselho Nacional de Desenvolvimento
 	Cient\'ifico e Tecnol\'ogico -- {CNPq}},
   journal = {Lex},
@@ -145,7 +145,7 @@ transforma{\c{c}}{\~a}o do Conselho Nacional de Desenvolvimento
 }
 
 @ARTICLE{brasil04,
-  title = {Portaria {CCIVIL} n� 388, de 15.04.2004. {D}esigna os membros para
+  title = {Portaria {CCIVIL} nº 388, de 15.04.2004. {D}esigna os membros para
 compor a {C}omiss\~ao {E}xecutiva do {P}lano de {A}{\c{c}}{\~a}o para
 a {P}reven{\c{c}}{\~a}o e {C}rontole do {D}esmatamento na {A}maz\^onia
 {L}egal},
@@ -398,7 +398,7 @@ CCD -- Composi{\c{c}}{\~a}o RGB, bandas 4, 3, 2, Base 153 / Ponto: 126},
   howpublished = {Vladimir Jesus Trava-Airoldi and Evaldo Jose Corat and Edson Del 
   Bosco and Marcia Carneiro Valera and Angel Fidel Pi{\~n}a and Victor Baranauskas and N{\'e}lia Ferreira Leite},
   year = {1995},
-  title = {Brocas para uso odontol{\'o}gico ou uso correlato de desgaste ou perfura{\c{c}}{\~a}o revestidas com diamante obtido com as t{\'e}cnicas qu{\'�}micas de crescimento a partir da Fase Vapor-CVD (Chemical Vapor Deposition)},
+  title = {Brocas para uso odontol{\'o}gico ou uso correlato de desgaste ou perfura{\c{c}}{\~a}o revestidas com diamante obtido com as t{\'e}cnicas qu{\'í}micas de crescimento a partir da Fase Vapor-CVD (Chemical Vapor Deposition)},
   note = {21 fev. 1995, 8 out. 2002},
   number = {BR, n. PI 9500865-9},
 }
@@ -415,7 +415,7 @@ CCD -- Composi{\c{c}}{\~a}o RGB, bandas 4, 3, 2, Base 153 / Ponto: 126},
 @MISC{gomes98,
   title = {Elei{\c{c}}{\~a}o}, 
   year = {1998},
-  note = {Entrevistador: M{\'a}rcio Manzi Alvarenga. Uberl{\^a}ndia: Funda{\c{c}}{\~a}o R{\'a}dio e Televis{\~a}o Educativa de Uberl{\^a}ndia, 30 mar. 1998. Entrevista concedida ao programa de televis�o "Acontece o seguinte".},
+  note = {Entrevistador: M{\'a}rcio Manzi Alvarenga. Uberl{\^a}ndia: Funda{\c{c}}{\~a}o R{\'a}dio e Televis{\~a}o Educativa de Uberl{\^a}ndia, 30 mar. 1998. Entrevista concedida ao programa de televisão "Acontece o seguinte".},
   author = {C Gomes}, 
   subtitle = {poss{\'i}vel candidatura},
 }
@@ -447,7 +447,7 @@ CCD -- Composi{\c{c}}{\~a}o RGB, bandas 4, 3, 2, Base 153 / Ponto: 126},
 
 @ARTICLE{jereissati98,
   author = {T. Jereissati},
-  title = {Cuidado com o j� ganhou},
+  title = {Cuidado com o já ganhou},
   journal = {Veja},
   year = {1998},
   address = {S{\~a}o Paulo},
@@ -489,7 +489,7 @@ thermodynamics to the infinite U Hubbard model},
 }
 
 @MANUAL{man90,
-  title = {Manual de normas para publica��es t�cnico-cient�ficas},
+  title = {Manual de normas para publicações técnico-científicas},
   organization = {Instituto Nacional de Pesquisas Espaciais (INPE)},
   org-short = {INPE},
   address = {S{\~a}o Jos{\'e} dos Campos},
@@ -729,7 +729,7 @@ thermodynamics to the infinite U Hubbard model},
   author = {Irani In{\'a}cio Cordeiro P\'adua},
   title = {Estilo TDIINPE LaTeX},
   year = {2005},
-  note = {58 transpar�ncias}, 
+  note = {58 transparências}, 
   address = {S{\~a}o Jos{\'e} dos Campos},
   publisher = {INPE},
   subtitle = {Curso de editora{\c{c}}{\~a}o eletr{\^o}nica e 
@@ -793,7 +793,7 @@ publica{\c{c}}{\~a}o t{\'e}cnico-cient{\'i}fica},
 
 @BOOK{rey93,
   title = {Planejar e redigir trabalhos cient\'ificos},
-  publisher = {Edgard Bl�cher},
+  publisher = {Edgard Blücher},
   year = {1993},
   author = {Rey, L.},
   address = {S\~ao Paulo},
@@ -826,7 +826,7 @@ imagens de Radar para extra{\c{c}}{\~a}o de fei{\c{c}}{\~o}es topogr{\'a}ficas
 }
 
 @BOOK{saty04,
-  title = {Rudimentos de meteorologia din�mica},
+  title = {Rudimentos de meteorologia dinâmica},
   publisher = {INPE},
   year = {2004},
   author = {Satyamurty, P.},
@@ -910,20 +910,20 @@ imagens de Radar para extra{\c{c}}{\~a}o de fei{\c{c}}{\~o}es topogr{\'a}ficas
   urlaccessdate = {15 jun. 2005},
 }
 
-%transpar�ncia
+%transparência
  @MISC{traina2002,
   author ={Agma Juici Machado Traina and Traina, Junior, Caetano}
   title = {Como escrever artigos cient{\'i}ficos},
   publisher = {UFSCAR},
   year = {2002},
-  note = {27 transpar�ncias},
+  note = {27 transparências},
   url = {http://gbdi.icmc.usp.br/disciplinas/sce-5845/ComoEscrever/Single.html},
   urlaccessdate = {25 maio 2006},
 }
 
  @INCOLLECTION{venancio84,
   author = {Alberto {VEN{\^A}NCIO FILHO}},
-  title =  {Constitui��o de 1934},
+  title =  {Constituição de 1934},
   booktitle = {Dicion{\'a}rio hist{\'o}rico biogr{\'a}fico brasileiro 1930-1983},
   editor = {I. Beloch  and  A. A. Abreu},
   publisher = {FGV, CPDOC : FINEP}, 
@@ -935,7 +935,7 @@ imagens de Radar para extra{\c{c}}{\~a}o de fei{\c{c}}{\~o}es topogr{\'a}ficas
 
 @INCOLLECTION{camposvelho97,
   author = {Haroldo Fraga, Campos Velho},
-  title =  {Constitui��o de 1934},
+  title =  {Constituição de 1934},
   booktitle = {Dicion{\'a}rio hist{\'o}rico biogr{\'a}fico brasileiro 1930-1983},
   editor = {I. Beloch  and  A. A. Abreu},
   publisher = {FGV, CPDOC : FINEP}, 
@@ -947,7 +947,7 @@ imagens de Radar para extra{\c{c}}{\~a}o de fei{\c{c}}{\~o}es topogr{\'a}ficas
 
  @ARTICLE{dias,
  author = {Silva, Dias, M. A. F.},
- title = { Sistemas de Mesoescala e previs�o de tempo a curto prazo},
+ title = { Sistemas de Mesoescala e previsão de tempo a curto prazo},
  journal = {Revista Brasileira de Meteorologia},
  volume = {2},
  pages = {133-150},
@@ -965,20 +965,20 @@ imagens de Radar para extra{\c{c}}{\~a}o de fei{\c{c}}{\~o}es topogr{\'a}ficas
  pages = {409-438}
 }
 
-%Este � um exemplo de t�tulo de tese com subt�tulo
+%Este é um exemplo de título de tese com subtítulo
 
 @THESIS{leite04,
- address = {Macei�},
+ address = {Maceió},
  author = {C.C. Leite},
  school = {Universidade Federal de Alagoas (UFAL)},
- title = {Caracter�sticas da {C}amada {L}imite {C}onvectiva durante a transi��o da esta��o seca para chuvosa na {A}maz�nia    (2002)},
- subtitle = {{C}ompara��o {F}loresta/{P}astagem ({DRY TO WET AMC}/{LBA})},
- type = {Disserta��o (Mestrado em Meteorologia)},
+ title = {Características da {C}amada {L}imite {C}onvectiva durante a transição da estação seca para chuvosa na {A}mazônia    (2002)},
+ subtitle = {{C}omparação {F}loresta/{P}astagem ({DRY TO WET AMC}/{LBA})},
+ type = {Dissertação (Mestrado em Meteorologia)},
  year = {2004},
 }
 
 
-%Este � um exemplo de cap�tulo de livro, onde foi adicionado o campo nota, para indicar a s�rie 
+%Este é um exemplo de capítulo de livro, onde foi adicionado o campo nota, para indicar a série 
 
   @INCOLLECTION{athanassoula01,
   author = {Evangelia Athanassoula},
@@ -986,7 +986,7 @@ imagens de Radar para extra{\c{c}}{\~a}o de fei{\c{c}}{\~o}es topogr{\'a}ficas
   booktitle = {Mapping the galaxy and nearby galaxies},
   publisher = {Springer},
   year = {2008},
-  editor = {Keiichi Wada and Fran�oise Combes},
+  editor = {Keiichi Wada and Françoise Combes},
   address = {New York},
   pages = {47--54},
   note = {Astrophysics and Space Science Proceedings},

@@ -1,0 +1,33 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}minted\PYG{n+nb}{\PYGZcb{}}[bgcolor=white,
+               frame=lines,
+               linenos,
+               bgcolor=MaterialGrey100]\PYG{n+nb}{\PYGZob{}}python\PYG{n+nb}{\PYGZcb{}}
+\PYGZsh{}! /usr/bin/env python3
+\PYGZdq{}\PYGZdq{}\PYGZdq{}
+Este simples script calcula os n primeiros elementos
+da sequência de Fibonacci.
+\PYGZdq{}\PYGZdq{}\PYGZdq{}
+
+def fibonacci(n):
+
+  fibo = []
+  for i in range(n):
+    \PYGZsh{} Na sequência, o primeiro elemento é 0...
+    if i == 0:
+      fibo.append(0)
+    \PYGZsh{}... e o segundo elemento é o 1.
+    elif i == 1:
+      fibo.append(1)
+    else:
+      \PYGZsh{} Os demais elementos são calculados como sendo a soma
+      \PYGZsh{} entre dois antecessores imediatos
+      fibo.append(fibo[i\PYGZhy{}1] + fibo[i\PYGZhy{}2])
+
+  return fibo
+
+fibo\PYG{n+nb}{\PYGZus{}}seq = fibonacci(n=20)
+
+print(fibo\PYG{n+nb}{\PYGZus{}}seq)
+\PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}minted\PYG{n+nb}{\PYGZcb{}}
+\end{Verbatim}

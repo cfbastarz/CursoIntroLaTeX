@@ -1,0 +1,15 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}center\PYG{n+nb}{\PYGZcb{}}
+    \PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}equation*\PYG{n+nb}{\PYGZcb{}}
+        \PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}bmatrix\PYG{n+nb}{\PYGZcb{}}
+            x\PYG{n+nb}{\PYGZus{}\PYGZob{}}11\PYG{n+nb}{\PYGZcb{}} \PYG{n+nb}{\PYGZam{}} x\PYG{n+nb}{\PYGZus{}\PYGZob{}}12\PYG{n+nb}{\PYGZcb{}} \PYG{k}{\PYGZbs{}\PYGZbs{}}
+            x\PYG{n+nb}{\PYGZus{}\PYGZob{}}21\PYG{n+nb}{\PYGZcb{}} \PYG{n+nb}{\PYGZam{}} x\PYG{n+nb}{\PYGZus{}\PYGZob{}}22\PYG{n+nb}{\PYGZcb{}} \PYG{k}{\PYGZbs{}\PYGZbs{}}
+        \PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}bmatrix\PYG{n+nb}{\PYGZcb{}\PYGZca{}\PYGZob{}}\PYGZhy{}1\PYG{n+nb}{\PYGZcb{}}
+        = \PYG{k}{\PYGZbs{}frac}\PYG{n+nb}{\PYGZob{}}1\PYG{n+nb}{\PYGZcb{}\PYGZob{}}x\PYG{n+nb}{\PYGZus{}\PYGZob{}}11\PYG{n+nb}{\PYGZcb{}}x\PYG{n+nb}{\PYGZus{}\PYGZob{}}22\PYG{n+nb}{\PYGZcb{}} \PYGZhy{} x\PYG{n+nb}{\PYGZus{}\PYGZob{}}12\PYG{n+nb}{\PYGZcb{}}x\PYG{n+nb}{\PYGZus{}\PYGZob{}}21\PYG{n+nb}{\PYGZcb{}\PYGZcb{}}
+        \PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}bmatrix\PYG{n+nb}{\PYGZcb{}}
+            x\PYG{n+nb}{\PYGZus{}\PYGZob{}}22\PYG{n+nb}{\PYGZcb{}} \PYG{n+nb}{\PYGZam{}} \PYGZhy{}x\PYG{n+nb}{\PYGZus{}\PYGZob{}}12\PYG{n+nb}{\PYGZcb{}}  \PYG{k}{\PYGZbs{}\PYGZbs{}}
+            \PYGZhy{}x\PYG{n+nb}{\PYGZus{}\PYGZob{}}21\PYG{n+nb}{\PYGZcb{}} \PYG{n+nb}{\PYGZam{}}  x\PYG{n+nb}{\PYGZus{}\PYGZob{}}11\PYG{n+nb}{\PYGZcb{}} \PYG{k}{\PYGZbs{}\PYGZbs{}}
+        \PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}bmatrix\PYG{n+nb}{\PYGZcb{}}
+    \PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}equation*\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}center\PYG{n+nb}{\PYGZcb{}}
+\end{Verbatim}

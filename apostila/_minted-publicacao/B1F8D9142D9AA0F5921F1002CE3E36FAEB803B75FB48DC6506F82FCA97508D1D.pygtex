@@ -1,0 +1,17 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}table\PYG{n+nb}{\PYGZcb{}}[H]\PYG{c}{\PYGZpc{}[htbp] \PYGZpc{} opções de posicionamento da tabela no texto}
+\PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}center\PYG{n+nb}{\PYGZcb{}} \PYG{c}{\PYGZpc{} use sempre um ambiente para as tabelas}
+\PYG{c}{\PYGZpc{} (opções: center (recomendado), flushright, flushleft)}
+\PYG{c}{\PYGZpc{} NÃO USE \PYGZbs{}centering com TABELAS se houver \PYGZbs{}FONTE!}
+\PYG{k}{\PYGZbs{}caption}\PYG{n+nb}{\PYGZob{}}Exemplo de tabela, com fonte.\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}tabular\PYG{n+nb}{\PYGZcb{}\PYGZob{}}l|l|c|c|r|r\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}hline} \PYG{c}{\PYGZpc{} desenha uma linha horizontal}
+Campo 1 \PYG{n+nb}{\PYGZam{}} Campo2 \PYG{n+nb}{\PYGZam{}} Campo3 \PYG{n+nb}{\PYGZam{}} Campo 4 \PYG{n+nb}{\PYGZam{}} Campo5 \PYG{n+nb}{\PYGZam{}} Campo6 \PYG{k}{\PYGZbs{}\PYGZbs{}}
+Campo 1 \PYG{n+nb}{\PYGZam{}} Campo2 \PYG{n+nb}{\PYGZam{}} Campo3 \PYG{n+nb}{\PYGZam{}} Campo 4 \PYG{n+nb}{\PYGZam{}} Campo5 \PYG{n+nb}{\PYGZam{}} Campo6 \PYG{k}{\PYGZbs{}\PYGZbs{}}
+Campo 1 \PYG{n+nb}{\PYGZam{}} Campo2 \PYG{n+nb}{\PYGZam{}} Campo3 \PYG{n+nb}{\PYGZam{}} Campo 4 \PYG{n+nb}{\PYGZam{}} Campo5 \PYG{n+nb}{\PYGZam{}} Campo6 \PYG{k}{\PYGZbs{}\PYGZbs{}}
+\PYG{k}{\PYGZbs{}hline} \PYG{c}{\PYGZpc{} desenha uma linha horizontal}
+\PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}tabular\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}center\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}FONTE}\PYG{n+nb}{\PYGZob{}}Coloque a fonte de referência aqui, se houver.\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}table\PYG{n+nb}{\PYGZcb{}}
+\end{Verbatim}

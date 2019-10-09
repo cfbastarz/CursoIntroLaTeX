@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}itemize\PYG{n+nb}{\PYGZcb{}}[label=\PYG{l+s}{\PYGZdl{}}\PYG{n+nv}{\PYGZbs{}to}\PYG{l+s}{\PYGZdl{}}]
+    \PYG{k}{\PYGZbs{}item} Item 1
+    \PYG{k}{\PYGZbs{}item} Item 2
+    \PYG{k}{\PYGZbs{}item} Item 3
+    \PYG{k}{\PYGZbs{}item} Item 4
+\PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}itemize\PYG{n+nb}{\PYGZcb{}}
+\end{Verbatim}

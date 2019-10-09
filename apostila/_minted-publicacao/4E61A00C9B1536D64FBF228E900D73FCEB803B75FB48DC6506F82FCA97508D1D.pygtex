@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}figure\PYG{n+nb}{\PYGZcb{}}[H]
+    \PYG{k}{\PYGZbs{}includegraphics}\PYG{n+na}{[width=3cm]}\PYG{n+nb}{\PYGZob{}}example\PYGZhy{}image\PYGZhy{}a\PYG{n+nb}{\PYGZcb{}}
+    \PYG{k}{\PYGZbs{}caption}\PYG{n+nb}{\PYGZob{}}Esta é uma imagem de exemplo com a letra ``A\PYGZsq{}\PYGZsq{}no meio.\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}figure\PYG{n+nb}{\PYGZcb{}}
+\end{Verbatim}

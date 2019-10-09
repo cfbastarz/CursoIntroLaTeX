@@ -1,0 +1,13 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}gather*\PYG{n+nb}{\PYGZcb{}}
+ x           = 1 + 2y + 3z \PYG{k}{\PYGZbs{}\PYGZbs{}}
+3x \PYGZhy{}  y + 2z = 0           \PYG{k}{\PYGZbs{}\PYGZbs{}}
+2x +  y      = 2 \PYGZhy{} z
+\PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}gather*\PYG{n+nb}{\PYGZcb{}}
+
+\PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}gather\PYG{n+nb}{\PYGZcb{}}
+ x           = 1 + 2y + 3z \PYG{k}{\PYGZbs{}\PYGZbs{}}
+3x \PYGZhy{}  y + 2z = 0           \PYG{k}{\PYGZbs{}\PYGZbs{}}
+2x +  y      = 2 \PYGZhy{} z
+\PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}gather\PYG{n+nb}{\PYGZcb{}}
+\end{Verbatim}

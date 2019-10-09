@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}center\PYG{n+nb}{\PYGZcb{}}
+    \PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}equation*\PYG{n+nb}{\PYGZcb{}}
+        \PYG{k}{\PYGZbs{}lim}\PYG{n+nb}{\PYGZus{}\PYGZob{}}x \PYG{k}{\PYGZbs{}to} \PYG{k}{\PYGZbs{}infty}\PYG{n+nb}{\PYGZcb{}}
+        \PYG{k}{\PYGZbs{}frac}\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}pi}(x)\PYG{n+nb}{\PYGZcb{}\PYGZob{}}\PYG{k}{\PYGZbs{}frac}\PYG{n+nb}{\PYGZob{}}x\PYG{n+nb}{\PYGZcb{}\PYGZob{}}\PYG{k}{\PYGZbs{}text}\PYG{n+nb}{\PYGZob{}}log\PYG{n+nb}{\PYGZcb{}}(x)\PYG{n+nb}{\PYGZcb{}\PYGZcb{}} = 1
+    \PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}equation*\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}center\PYG{n+nb}{\PYGZcb{}}
+\end{Verbatim}

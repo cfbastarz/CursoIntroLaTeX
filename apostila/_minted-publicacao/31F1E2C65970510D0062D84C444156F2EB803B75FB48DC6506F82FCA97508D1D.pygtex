@@ -1,0 +1,21 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+@article\PYG{n+nb}{\PYGZob{}}fulano/1964,
+  author = \PYG{n+nb}{\PYGZob{}}Fulano, Sicrano\PYG{n+nb}{\PYGZcb{}},
+  title = \PYG{n+nb}{\PYGZob{}}Um Exemplo de Refer\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}\PYGZca{}}e\PYG{n+nb}{\PYGZcb{}}ncia Bibliogr\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}\PYGZsq{}}a\PYG{n+nb}{\PYGZcb{}}fica do tipo article.\PYG{n+nb}{\PYGZcb{}},
+  journal = \PYG{n+nb}{\PYGZob{}}Revista Mensal de Ci\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}\PYGZca{}}e\PYG{n+nb}{\PYGZcb{}}ncia\PYG{n+nb}{\PYGZcb{}},
+  volume = \PYG{n+nb}{\PYGZob{}}12\PYG{n+nb}{\PYGZcb{}},
+  number = \PYG{n+nb}{\PYGZob{}}11\PYG{n+nb}{\PYGZcb{}},
+  pages = \PYG{n+nb}{\PYGZob{}}340\PYGZhy{}346\PYG{n+nb}{\PYGZcb{}},
+  year = \PYG{n+nb}{\PYGZob{}}1964\PYG{n+nb}{\PYGZcb{}},
+\PYG{n+nb}{\PYGZcb{}}
+
+@article\PYG{n+nb}{\PYGZob{}}ciclanoetal/1975,
+  author = \PYG{n+nb}{\PYGZob{}}Ciclano, Beltrano and Fulano, Sicrano\PYG{n+nb}{\PYGZcb{}},
+  title = \PYG{n+nb}{\PYGZob{}}Mais um exemplo de Refer\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}\PYGZca{}}e\PYG{n+nb}{\PYGZcb{}}ncia Bibliogr\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}\PYGZsq{}}a\PYG{n+nb}{\PYGZcb{}}fica do tipo article.\PYG{n+nb}{\PYGZcb{}},
+  journal = \PYG{n+nb}{\PYGZob{}}Revista Mensal de Ci\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}\PYGZca{}}e\PYG{n+nb}{\PYGZcb{}}ncia\PYG{n+nb}{\PYGZcb{}},
+  volume = \PYG{n+nb}{\PYGZob{}}2\PYG{n+nb}{\PYGZcb{}},
+  number = \PYG{n+nb}{\PYGZob{}}21\PYG{n+nb}{\PYGZcb{}},
+  pages = \PYG{n+nb}{\PYGZob{}}430\PYGZhy{}436\PYG{n+nb}{\PYGZcb{}},
+  year = \PYG{n+nb}{\PYGZob{}}1975\PYG{n+nb}{\PYGZcb{}},
+\PYG{n+nb}{\PYGZcb{}}
+\end{Verbatim}

@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}verbatim*\PYG{n+nb}{\PYGZcb{}}
+Um texto delimitado pelo ambiente \PYG{k}{\PYGZbs{}texttt}\PYG{n+nb}{\PYGZob{}}verbatim\PYG{n+nb}{\PYGZcb{}} é renderizado
+diretamente e os comandos \PYG{k}{\PYGZbs{}LaTeX}\PYG{n+nb}{\PYGZob{}\PYGZcb{}} são ignorados.
+\PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}verbatim*\PYG{n+nb}{\PYGZcb{}}
+\end{Verbatim}

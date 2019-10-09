@@ -1,0 +1,19 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}multline*\PYG{n+nb}{\PYGZcb{}}
+  A(x,y)\PYG{k}{\PYGZbs{}frac}\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}partial}\PYG{n+nb}{\PYGZca{}}2\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}Psi}\PYG{n+nb}{\PYGZcb{}\PYGZcb{}\PYGZob{}}\PYG{k}{\PYGZbs{}partial}\PYG{n+nb}{\PYGZob{}}x\PYG{n+nb}{\PYGZca{}}2\PYG{n+nb}{\PYGZcb{}\PYGZcb{}}           +
+  B(x,y)\PYG{k}{\PYGZbs{}frac}\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}partial}\PYG{n+nb}{\PYGZca{}}2\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}Psi}\PYG{n+nb}{\PYGZcb{}\PYGZcb{}\PYGZob{}}\PYG{k}{\PYGZbs{}partial}\PYG{n+nb}{\PYGZob{}}x\PYG{n+nb}{\PYGZcb{}}\PYG{k}{\PYGZbs{}partial}\PYG{n+nb}{\PYGZob{}}y\PYG{n+nb}{\PYGZcb{}\PYGZcb{}}  +
+  C(x,y)\PYG{k}{\PYGZbs{}frac}\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}partial}\PYG{n+nb}{\PYGZca{}}2\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}Psi}\PYG{n+nb}{\PYGZcb{}\PYGZcb{}\PYGZob{}}\PYG{k}{\PYGZbs{}partial}\PYG{n+nb}{\PYGZob{}}y\PYG{n+nb}{\PYGZca{}}2\PYG{n+nb}{\PYGZcb{}\PYGZcb{}}           +
+  D(x,y)\PYG{k}{\PYGZbs{}frac}\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}partial}\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}Psi}\PYG{n+nb}{\PYGZcb{}\PYGZcb{}\PYGZob{}}\PYG{k}{\PYGZbs{}partial}\PYG{n+nb}{\PYGZob{}}x\PYG{n+nb}{\PYGZcb{}\PYGZcb{}}               + \PYG{k}{\PYGZbs{}\PYGZbs{}}
++ E(x,y)\PYG{k}{\PYGZbs{}frac}\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}partial}\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}Psi}\PYG{n+nb}{\PYGZcb{}\PYGZcb{}\PYGZob{}}\PYG{k}{\PYGZbs{}partial}\PYG{n+nb}{\PYGZob{}}y\PYG{n+nb}{\PYGZcb{}\PYGZcb{}}               +
+  F(x,y)\PYG{k}{\PYGZbs{}Psi} = G(x,y)
+\PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}multline*\PYG{n+nb}{\PYGZcb{}}
+
+\PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}multline\PYG{n+nb}{\PYGZcb{}}
+  A(x,y)\PYG{k}{\PYGZbs{}frac}\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}partial}\PYG{n+nb}{\PYGZca{}}2\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}Psi}\PYG{n+nb}{\PYGZcb{}\PYGZcb{}\PYGZob{}}\PYG{k}{\PYGZbs{}partial}\PYG{n+nb}{\PYGZob{}}x\PYG{n+nb}{\PYGZca{}}2\PYG{n+nb}{\PYGZcb{}\PYGZcb{}}           +
+  B(x,y)\PYG{k}{\PYGZbs{}frac}\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}partial}\PYG{n+nb}{\PYGZca{}}2\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}Psi}\PYG{n+nb}{\PYGZcb{}\PYGZcb{}\PYGZob{}}\PYG{k}{\PYGZbs{}partial}\PYG{n+nb}{\PYGZob{}}x\PYG{n+nb}{\PYGZcb{}}\PYG{k}{\PYGZbs{}partial}\PYG{n+nb}{\PYGZob{}}y\PYG{n+nb}{\PYGZcb{}\PYGZcb{}}  +
+  C(x,y)\PYG{k}{\PYGZbs{}frac}\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}partial}\PYG{n+nb}{\PYGZca{}}2\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}Psi}\PYG{n+nb}{\PYGZcb{}\PYGZcb{}\PYGZob{}}\PYG{k}{\PYGZbs{}partial}\PYG{n+nb}{\PYGZob{}}y\PYG{n+nb}{\PYGZca{}}2\PYG{n+nb}{\PYGZcb{}\PYGZcb{}}           +
+  D(x,y)\PYG{k}{\PYGZbs{}frac}\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}partial}\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}Psi}\PYG{n+nb}{\PYGZcb{}\PYGZcb{}\PYGZob{}}\PYG{k}{\PYGZbs{}partial}\PYG{n+nb}{\PYGZob{}}x\PYG{n+nb}{\PYGZcb{}\PYGZcb{}}               + \PYG{k}{\PYGZbs{}\PYGZbs{}}
++ E(x,y)\PYG{k}{\PYGZbs{}frac}\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}partial}\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}Psi}\PYG{n+nb}{\PYGZcb{}\PYGZcb{}\PYGZob{}}\PYG{k}{\PYGZbs{}partial}\PYG{n+nb}{\PYGZob{}}y\PYG{n+nb}{\PYGZcb{}\PYGZcb{}}               +
+  F(x,y)\PYG{k}{\PYGZbs{}Psi} = G(x,y)
+\PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}multline\PYG{n+nb}{\PYGZcb{}}
+\end{Verbatim}

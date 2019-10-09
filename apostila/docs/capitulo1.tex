@@ -4,36 +4,81 @@
 \section{Introdução}
 \label{sec:intro}
 
-Metodologia científica compreende os conhecimentos necessários para a produção científica. Artigos, relatórios, dissertações e teses são documentos que trazem relatos de experimentações, muitas vezes práticas, que surgem da necessidade de se testar hipóteses. Estas hipóteses frequentemente se referem ao mundo físico em vivemos, mas podem também, serem formulados a cerca de ideias abstratas. O método científico, assim como preconizou o patrono de todas as ciências, Renè Descartes, em seu ``O Discurso do Método'' \cite{descartes}, representa uma sequência de etapas que visam testar as hipóteses que formulamos e transformá-las, então, em teses, em teorias.
+Metodologia científica compreende os conhecimentos necessários para a produção científica. Artigos, relatórios, dissertações e teses são documentos que trazem relatos de experimentações, muitas vezes práticas, que surgem da necessidade de se testar hipóteses. Estas hipóteses frequentemente se referem ao mundo físico em que vivemos, mas podem também, serem formulados a cerca de ideias abstratas. O método científico, assim como preconizou o patrono de todas as ciências, Renè Descartes, em seu ``O Discurso do Método'' \cite{descartes}, representa uma sequência de etapas que visam testar as hipóteses que formulamos e transformá-las, então, em teses, em teorias.
 
 A escrita é parte fundamental da metodologia científica. É através dela que documentamos todo o processo de desenvolvimento da ciência, é através dela que se faz a comunicação formal da ciência que se produz e que, finalmente, se materializa o conhecimento adquirido. A escrita científica deve ser pautada por normas que ajudam a verificar a natureza do que se escreve e a validade dos argumentos com que se trata o objeto de estudo.
 
-O \TeX{} (pronuncia-se ``Tec'', sendo o ``X'' ao final a letra $\chi$ do alfabeto Grego), foi criado pelo Matemático e Cientista da Computação americano Donald Ervin Knuth, em 1978 para facilitar a escrita e melhorar a apresentação de textos científicos, principalmente aqueles com notações matemáticas. Naquela época, não haviam editores de texto formatado, como por exemplo o \textit{Microsoft Word}, \textit{Libre Office} e outros. Estes software viriam a ser lançados apenas na década de 1990. Além disso, o computador pessoal estava em seus primórdios, e viria a se tornar realmente pessoal com o lançamento do Apple II, no final dos anos 1970. Este tipo de computador, incluindo os seus clones (i.e., demais computadores que possuíam o mesmo \textit{layout} de processador e memória de acesso randômico) não possuíam interfaces gráficas, mouses e discos rígidos; eles possuíam apenas um compilador BASIC e tela monocromática. Tendo-se em vista este cenário, a produção científica já havia avançado, pois o computador sempre foi uma ferramente essencial nas mais diversas áreas do conhecimento (imagine como se comunicava a ciência antes do advento dos computadores, ou mesmo antes da invenção da prensa!). 
+O \TeX{} (pronuncia-se ``Tec'', sendo o ``X'' ao final a letra $\chi$ do alfabeto Grego)\footnote{De fato, \TeX{} vem do grego $\tau\epsilon\chi$ que representa arte e tecnologia em grego. \TeX{} é portanto $\tau\epsilon\chi$ e não simplesmente ``Tex'' para que nos lembremos que o \TeX{} foi criado para produzir documentos bonitos e cheios de matemática \cite{knuth/1996}.}, foi criado pelo Matemático e Cientista da Computação americano Donald Ervin Knuth, em 1978 para facilitar a escrita e melhorar a apresentação de textos científicos, principalmente aqueles com notações matemáticas. Naquela época, não haviam editores de texto formatado, como por exemplo o \textit{Microsoft Word}, \textit{Libre Office} e outros. Estes software viriam a ser lançados a partir de meados da década de 1980. Além disso, o computador pessoal estava em seus primórdios, e viria a se popularizar com o lançamento do \textit{Apple II}, no final dos anos 1970. Este tipo de computador, incluindo os seus clones (i.e., demais computadores que possuíam o mesmo \textit{layout} de processador e memória de acesso randômico) não possuíam interfaces gráficas, \textit{mouses} e discos rígidos; eles possuíam apenas um compilador \textit{BASIC} e tela monocromática. Tendo-se em vista este cenário, a produção científica já havia avançado, pois o computador sempre foi uma ferramente essencial nas mais diversas áreas do conhecimento (imagine como se comunicava a ciência antes do advento dos computadores no século XXI, ou mesmo antes da invenção da prensa móvel no século XV). 
 
-Por outro lado, com os avanços tecnológicos e a sofisticação dos computadores pessoais, houve também a necessidade de se melhorar a representação tipográfica dos textos científicos, além da qualidade gráfica de imagens e gráficos. Em 1986, Leslie Lamport lança a primeira versão do \LaTeX{}, uma versão aprimorada e de mais fácil utilização do que o \TeX{} puro. De forma geral, as linguagens de marcação de texto como o \TeX{} e o \LaTeX{}
+Por outro lado, com os avanços tecnológicos e a sofisticação dos computadores pessoais, houve também a necessidade de se melhorar a representação tipográfica dos textos científicos, além da qualidade gráfica de imagens e gráficos. Em 1986, Leslie Lamport lança a primeira versão do \LaTeX{}, uma versão aprimorada e de mais fácil utilização do que o \TeX{} puro. Consequentemente, por ser de mais fácil utilização (no sentido de que o \LaTeX{} simplifica a utilização do \TeX{} puro através de uma série de \textit{macros}), o \LaTeX{} tornou-se muito popular e trouxe atenção para uma forma bastante eficiente de se produzir documentos bem diagramados e aspecto profissional.
 
-É fato que a confecção de documentos utilizando o \LaTeX{} pode ser um pouco trabalhosa, visto que a linguagem é focada na escrita, e não na formatação como é o caso das suítes de escritório como o \textit{Microsoft Office}. Neste caso, o usuário deve ponderar sobre o tipo de documento que tem por intenção produzir e o tamanho que este virá a ter. Portanto, a escrita de um documento utilizando o \LaTeX{} é vantajosa quando: 1) um estilo já está preparado (e.g., um artigo científico, dissertação, tese, relatório etc); 2) quando muitos elementos textuais estiverem presentes (e.g., figuras, tabelas, referências cruzadas, quebras de seções etc); 3) quando se tem tempo suficiente. Entre estes três pontos, há que se ressaltar o tempo necessário para a escrita de documentos utilizando \LaTeX{}. Embora a linguagem permita que a escrita seja focada no conteúdo do texto (ao invés do seu aspecto), há uma curva de aprendizado e é bastante frequente o usuário da linguagem se encontrar em situações em que necessita criar uma tabela um pouco mais complicada, ou inserir um conjunto de figuras de uma forma diferente. Estas situações não são óbvias de serem resolvidas e o usuário precisa ou ler a documentação dos pacotes (o que acaba não sendo muito prático), ou recorre a Fóruns na internet para resolver seus problemas. Há vários fóruns na internet que são especializados na linguagem \LaTeX{} e são uma boa fonte para a solução de diversas dúvidas e problemas. Apesar disso, o efeito colateral disso é que o usuário acaba não aprendendo como usar efetivamente a linguagem, porque nunca está a par da documentação, tendo à mão apenas receitas prontas. Logo, esta apostila foi escrita como uma forma de orientar os usuários a adquirirem o mínimo de independência na utilização do \LaTeX{}.
+A confecção de documentos utilizando o \LaTeX{} pode ser um pouco trabalhosa, visto que a linguagem é focada na marcação da escrita, e não na formatação como é o caso das suítes de escritório como o \textit{Microsoft Office}. Neste caso, o usuário deve ponderar sobre o tipo de documento que tem por intenção produzir e o tamanho que este virá a ter. Portanto, a escrita de um documento utilizando o \LaTeX{} é vantajosa quando: 1) um estilo já está preparado (e.g., um artigo científico, dissertação, tese, relatório etc); 2) quando muitos elementos textuais estiverem presentes (e.g., figuras, tabelas, referências cruzadas, quebras de seções etc); 3) quando se tem tempo suficiente. Entre estes três pontos, há que se ressaltar o tempo necessário para a escrita de documentos utilizando \LaTeX{}. Embora a linguagem permita que a escrita seja focada no conteúdo do texto (ao invés do seu aspecto), há uma curva de aprendizado e é bastante frequente que o usuário da linguagem se encontre em situações em que necessita criar uma tabela um pouco mais complicada, ou inserir um conjunto de figuras de uma forma diferente. Estas situações podem não ser de fácil solução e o usuário precisa ou ler a documentação dos pacotes (pelo qual consome-se muito tempo), ou recorre a fóruns na \textit{internet} para resolver seus problemas. Há vários fóruns na \textit{internet} que são especializados na linguagem \LaTeX{} e são uma boa fonte para a solução de diversas dúvidas e problemas. Apesar disso, um efeito colateral é que o usuário acaba não aprendendo como usar efetivamente a linguagem, porque nunca está a par da documentação, tendo à mão apenas receitas prontas. Logo, esta apostila foi escrita como uma forma de orientar os usuários a adquirirem o mínimo de independência na utilização do \LaTeX{}.
 
-% Explicar as diferenças entre o TeX e o LaTex.
+Contudo, depois do exposto, pode-se fazer a pergunta: ``Se é necessário ponderar tanto a utilização do \LaTeX{} na escrita de documentos, por que ele ainda é melhor do que o \textit{Microsoft Word} (e outros)?''. Esta é uma pergunta pertinente, mas há razões práticas para esta escolha. O professor Kent H. Lundberg do \textit{Massachussets Institute of Technology} (MIT), escreveu uma lista com 10 razões para tal (disponível em \url{http://web.mit.edu/klund/www/urk/texvword.html}). Em uma tradução livre, estas razões seriam:
 
-O texto do documento está organizado em três partes: a ``Parte I - Entendendo o \LaTeX{}'' foi preparada como um introdução à linguagem de marcação \LaTeX{}, a fim de facilitar o entendimento das funções e estruturas básicas da linguagem, que serão extensamente utilizadas nos estilos; a ``Parte II - Estilos do INPE'', contém um manual de utilização dos estilos do INPE para a escrita de dissertações e teses. Se o leitor já possui alguma experiência com a linguagem de marcação \LaTeX{}, ela pode pular diretamente para esta parte. Na ``Parte III - Pacote Beamer'', há a apresentação básica do pacote Beamer, frequentemente utilizado para a confecção de apresentações (no estilo do \textit{Microsoft PowerPoint}) e pôsteres.
+\textbf{Dez razões porque o \TeX{}\footnote{Ou o \LaTeX{}.} é melhor do que o \textit{Word}\footnote{Ou qualquer outro \textit{software} de processamento de textos.}:}
+
+\begingroup
+\renewcommand{\labelenumi}{\arabic{enumi}.}
+\begin{enumerate}
+    \item O modo de matemática do \TeX{} é belo. Equações são apresentadas da forma correta. Expressões matemáticas no \textit{Word} são pós-processadas\footnote{No sentido de que parece que elas não fazem parte do texto.}. O editor de equações do \textit{Word} não é do bem;
+    \item O \TeX{} não possui \textit{bugs}. O autor da linguagem, o professor Donald Knuth, da \textit{Stanford University}, enviará um prêmio a quem encontrar um \textit{bug}. O prêmio atualmente é de \$ 327,68 dólares (ou \$ $2^{15}$ centavos de dólares);
+    \item O \TeX{} é gratuito e livre (como a liberdade de expressão);
+    \item O \TeX{} possui comentários reais. Qualquer pessoa que não comenta o seu próprio código, tem problemas\footnote{No original, utilizou-se uma expressão de baixo calão.};
+    \item O \TeX{} é completo\footnote{No texto original, utilizou-se a expressão \textit{Turing-complete language}, uma referência à máquina de Alan Turing (o pai da computação). A máquina de Turing, seria uma máquina capaz de nos auxiliar a resolver todos os problemas.}. O texto produzido a partir do que se digita, pode ser o resultado de estruturas condicionais (as quais podem ser reutilizadas em diferentes seções de um documento) ou os cálculos complicados\footnote{Sim, pois o \TeX{} é, essencialmente, uma linguagem de programação.}. No livro \TeX \textit{book}\footnote{Uma cópia pública deste livro pode ser obtida em \url{http://www.ctex.org/documents/shredder/src/texbook.pdf}.}, Donald Knuth demonstra o poder da linguagem \TeX{} definindo o comando \mintinline{latex}{\primes{n}}, que calcula e imprime os primeiros $n$ números primos (\citeonline{knuth/1996}, página 218);
+    \item As macros do \TeX{} não contém vírus. Pode-se receber seguramente documentos \TeX{} seguramente por \textit{e-mail} e não se preocupar se ao abrí-los eles lerão a sua lista de contatos do \textit{Microsoft Outlook} e fazer cópias de si mesmo para os seus colegas;
+    \item O \TeX{} não tem um \textit{Globally Unique Identifier} (GUID). Documentos do \textit{Word}\footnote{Como pode ser verificado na documentação disponível em \url{https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-rdperp/80ac56ea-2859-447d-9e39-97ef6f03b6ee}.} possuem um código embutido que pode ser rastreado até o computador em que foi originado (no final dos anos 1990, a polícia capturou o autor do vírus Melissa rastreando o seu GUID);
+    \item As versões do \TeX{} não são incompatíveis entre si. O formato dos arquivos nunca mudou. Arquivos \TeX{} de 1989 funcionam sem nenhum problema com a última versão do \TeX{};
+    \item O \TeX{} não possui a função ``voltar''. Isso é uma coisa boa. Ninguém nunca poderá ver as versões anteriores dos seus documentos \TeX{} pressionando o botão ``voltar''\footnote{No caso desta apostila, por exemplo, isto é perfeitamente possível porque ela foi editada com uma ferramenta que permite recuperar revisões anteriores de um mesmo documento, assim como qualquer editor moderno da linguagem.};
+    \item Documentos \TeX{} são pequenos e enxutos. Qual é o menor documento \textit{Word} no seu computador?
+\end{enumerate}
+\endgroup
+
+É fato que este ``manifesto'' foi escrito há muito tempo atrás. Apesar disso, pode-se estender as ideias nele relacionadas ao próprio \LaTeX{} e suas revisões mais recentes. Além disso, deve-se observar também que muitas ferramentas de edição foram criadas desde então e que a qualidade dos documentos do \textit{Microsoft Word} melhorou substancialmente, tornando-o um \textit{software} muito popular e largamente utilizado. Um processo semelhante ocorreu com o \TeX{} e sua evolução para o \LaTeX{}, o que inclui também os seus compiladores mais modernos como o Pdf\LaTeX{}, \XeLaTeX{}, Lua\LaTeX{} e outros.
+
+A década de 2010 tem sido marcada por uma revolução na forma como as ferramentas \textit{online} tem sido criadas e utilizadas. No caso do \LaTeX{}, percebe-se um aumento no número dos serviços que facilitam a edição de documentos \textit{online}, i.e., na nuvem e sem a necessidade de se ter um ambiente local preparado para isto. Na Figura \ref{fig:leao_ctan}, está desenhado o mascote do \textit{Comprehensive \TeX{} Archive Network} (CTAN), uma comunidade de utilizadores e mantenedores da linguagem \LaTeX{} e dos seus inúmeros pacotes. Este mascote tem acompanhado o \LaTeX{} desde a sua gênese no final dos anos 1970 e tem sido utilizado desde então na representação da linguagem, passando por todas as suas fases, incluindo a era mais moderna da computação e da \textit{internet}.
+
+\begin{figure}[H]
+\caption{O mascote do \textit{Comprehensive \TeX{} Archive Network} (CTAN).}
+\vspace{6mm}
+    \begin{center}
+        \includegraphics[scale=0.8]{./figs/ctanlion.pdf}
+    \end{center}
+\vspace{4mm}
+\legenda{O mascote do CTAN é um leão originalmente desenhado por Duanne Bibby para o \TeX \textit{book} de \citeonline{knuth/1996} e frequentemente visualizado em outros livros relacionados ao \TeX{} e ao \LaTeX{}.}
+\label{fig:leao_ctan}
+\FONTE{Adaptado de \url{https://ctan.org/lion/files/ctanlion.eps}.}
+\end{figure}
+
+%\begin{figure}[H]
+%	\centering \resizebox{13cm}{!}{\includegraphics{./figs/ctanlion.pdf}}
+%	\legenda{O mascote do CTAN é um leão originalmente desenhado por Duanne Bibby para o \TeX \textit{book} de \citeonline{knuth/1996} e frequentemente visualizado em outros livros relacionados ao \TeX{} e ao \LaTeX{}.}
+%	\caption{O mascote do \textit{Comprehensive \TeX{} Archive Network} (CTAN).}
+%	\FONTE{Adaptado de \url{https://ctan.org/lion/files/ctanlion.eps}.}
+%	\label{fig:leao_ctan} 
+%\end{figure}
+
+
+%O texto do documento está organizado em três partes: a ``Parte I - Entendendo o \LaTeX{}'' foi preparada como um introdução à linguagem de marcação \LaTeX{}, a fim de facilitar o entendimento das funções e estruturas básicas da linguagem, que serão extensamente utilizadas nos estilos; a ``Parte II - Estilos do INPE'', contém um manual de utilização dos estilos do INPE para a escrita de dissertações e teses. Se o leitor já possui alguma experiência com a linguagem de marcação \LaTeX{}, ela pode pular diretamente para esta parte. Na ``Parte III - Pacote Beamer'', há a apresentação básica do pacote Beamer, frequentemente utilizado para a confecção de apresentações (no estilo do \textit{Microsoft PowerPoint}) e pôsteres.
+
+Este material foi escrito com base na experiência pessoal do autor e com base nas necessidades dos alunos da pós-graduação do Instituto Nacional de Pesquisas Espaciais (INPE), compiladas pelo Serviço de Informação e Documentação (SESID) do instituto. A maioria dos exemplos, quando não explicitamente indicada a fonte, é baseada em exemplos pessoais, outros tutoriais, \textit{sites} e fóruns como o \TeX{} \textit{Stack Exchange} e os manuais e tutoriais do \textit{Overleaf}. Durante a escrita deste material, procurou-se organizar as informações de forma que seja possível ao leitor encontrar o máximo de informações possível, através dos exemplos e dos resultados, os quais são mostrados sempre juntos. Uma lista de exercícios também foi incluída para que o leitor possa treinar e adquirir fluência na escrita com a linguagem \LaTeX{}. Devido à grande quantidade de elementos coloridos inseridos ao longo deste documento, não recomenda-se imprimí-lo. Ao invés disso, orienta-se a utilização desta apostila no computador, de forma que se possa tirar vantagem das ferramentas de busca do visualizador de documentos.
 
 \section{Objetivos}
 \label{sec:objetivos}
 
-Nesta apostila são apresentados os conceitos fundamentais da linguagem de marcação \LaTeX{}, com especial atenção à utilização dos estilos do INPE para a escrita de dissertações e teses. Os objetivos específicos são:
+Nesta apostila são apresentados os conceitos fundamentais da linguagem de marcação \LaTeX{}, com especial atenção à utilização do estilo do INPE para a escrita de dissertações e teses. Os objetivos específicos são:
 
 \begin{itemize}
-    \item Apresentar a linguagem de marcação \LaTeX{}, acompanhado de um breve histórico do seu desenvolvimento;
-    \item Mostrar ao usuário como instalar o compilador/interpretador da linguagem nas plataformas mais conhecidas;
-    \item Apresentar ao usuário os conceitos fundamentais da linguagem, levando-o a ter independência na utilização dos estilos do INPE;
-    \item Treinar o usuário na utilização dos estilos de INPE para a escrita de dissertações e teses.
+    \item Apresentar a linguagem de marcação \LaTeX{}, acompanhado de um breve histórico sobre o seu desenvolvimento;
+    \item Mostrar ao usuário como instalar o compilador/interpretador da linguagem nas plataformas mais frequentemente utilizadas;
+    \item Apresentar ao usuário os conceitos fundamentais da linguagem, levando-o a ter independência na utilização do estilo do INPE;
+    \item Treinar o usuário na utilização dos estilo do INPE para, principalmente, a escrita de dissertações e teses.
 \end{itemize}
 
 \section{Estrutura e Organização do Documento}
 \label{sec:estrutura}
 
-Este documento foi preparado utilizando o estilo de teses e dissertações do INPE, com a finalidade de servir não apenas como uma manual de utilização do estilo, mas também como um documento simples que possa ser utilizado como uma referência no aprendizado da linguagem de marcação \LaTeX{}. Para cumprir com esta finalidade, ao longo das seções que se seguem, alguns elementos textuais foram incorporados para sinalizar instruções específicas, como comandos do ambiente \textit{Shell} do Linux e dicas ou instruções sobre pontos específicos do que está sendo apresentado. 
+Este documento foi preparado utilizando o estilo de teses e dissertações do INPE, com a finalidade de servir não apenas como uma manual de utilização do estilo, mas também como um documento simples que possa ser utilizado como uma referência no aprendizado da linguagem de marcação \LaTeX{}. Para cumprir com esta finalidade, ao longo dos capítulos e das seções que se seguem, alguns elementos especiais foram incorporados para sinalizar instruções específicas, como comandos do ambiente \textit{Shell} do Linux e dicas ou instruções sobre pontos específicos do que está sendo apresentado. 
 
 Dessa forma, dicas e observações são destacados da seguinte forma:
 
@@ -41,17 +86,23 @@ Dessa forma, dicas e observações são destacados da seguinte forma:
 Isto é uma dica ou uma observação!
 \end{marker}
 
-De outra forma, comando que devem ser digitados em algum ambiente computacional específico, são destacados como:
+De outra forma, comandos que devem ser digitados em algum ambiente computacional específico, são destacados como:
 
-\begin{commandshell}
-echo ''Isto é um comando Shell do Linux/UNIX!''
-\end{commandshell}
+\begin{meucomando}
+echo ''Isto é um comando de prompt!''
+\end{meucomando}
 
-Exemplos da linguagem são apresentados em uma caixa, contendo a grafia dos comandos e o seu resultado ame anexo. Exercícios são apresentados de forma semelhante, mas com a diferença de que é apresentado um exemplo (eg., uma tabela) o qual o usuário deverá reproduzir em ambiente local ou online configurado para tal. As respostas dos exercícios são então apresentadas no Anexo \ref{anexoA}. Ao longo do texto, o leitor irá notar que na maioria dos exemplos que contém algum tipo de texto, aparece um texto prolixo. Este texto é gerado automaticamente com o auxílio de um pacote específico ({\tt lipsum}), e não faz referência á nenhum tipo de conhecimento ou conceitos. Em outros exemplo, a frase ``\textit{The quick brown fox jumps over the lazy dog}'' é utilizada. Esta frase é um pangrama, e contém todas as letras do alfabeto da língua inglesa. Ela é frequentemente utilizada como prova tipográfica, o que permite verificar a renderização de todas as letras e do seu espaçamento em uma única frase, de acordo com o tipo de fonte utilizada.
+Em geral, estas inserções são mostradas para auxiliar o leitor na execução de comandos que o auxiliarão na instalação de pacotes da linguagem \LaTeX{}, na utilização de \textit{scripts} do \textit{Shell} do Linux ou mesmo na utilização de outros e programas em linha de comando.
 
-Neste documento boa parte dos exemplos e trechos de código foi obtido da \textit{internet} de outros tutoriais. Uma lista de sites em que os exemplos foram obtidos, pode ser encontrado no Anexo \ref{anexoC}.
+Exemplos da linguagem são apresentados em uma caixa, contendo a grafia dos comandos e o seu resultado em anexo. Exercícios são apresentados de forma semelhante, mas com a diferença de que é apresentado um exemplo (eg., uma tabela) o qual o usuário deverá reproduzir em ambiente local ou online configurado para tal. As respostas dos exercícios são então apresentadas no Anexo \ref{anexoA}. Ao longo do texto, o leitor irá notar que na maioria dos exemplos que contém algum tipo de texto, aparece um texto prolixo. Este texto é gerado automaticamente com o auxílio de um pacote chamado {\tt lipsum}, e não faz, necessariamente, referência a nada específico\footnote{Veja algumas curiosidades sobre este verbete na sua entrada na Wikipedia em \url{https://pt.wikipedia.org/wiki/Lorem_ipsum}.}. Outras frases também utilizadas em alguns exemplos, são ``Jane quer LP, fax, CD, giz, TV e bom whisky'' (um pangrama com 30 letras) e ``À noite, vovô Kowalsky vê o ímã cair no pé do pinguim queixoso e vovó põe açúcar no chá de tâmaras do jabuti feliz'', uma frase com 90 letras, incluindo todas as letras acentuadas. Estas frases foram obtidas da página \url{https://pt.wikipedia.org/wiki/Pangrama}.
 
-O documento está organizado em 4 partes. A Parte \ref{cap:parteI} trata da introdução e objetivos deste documento e da linguagem \LaTeX{}. A Parte \ref{cap:parteII} apresentam uma introdução aos elementos e marcadores principais da linguagem. Ao final desta parte, o usuário deverá ser capaz de produzir documentos \LaTeX{} simples, utilizando as classes mais comuns e os elementos textuais mais frequentes. Na Parte \ref{cap:parteIII}, é apresentado o estilo de INPE para a escrita de teses e dissertações. Ao final desta parte, o usuário deverá ser capaz de utilizar o estilo do INPE para a escrita de sua tese ou dissertação. É importante salientar, entretanto, que a Parte \ref{cap:parteIII} requer o aprendizado do conteúdo da Parte \ref{cap:parteII}. A Parte \ref{cap:parteIV} apresenta o pacote Beamer, uma classe que pode ser utilizada para confeccionar apresentações digitais.
+%Em outros exemplo, a frase ``\textit{The quick brown fox jumps over the lazy dog}'' é utilizada. Esta frase é um pangrama, e contém todas as letras do alfabeto da língua inglesa. Ela é frequentemente utilizada como prova tipográfica, o que permite verificar a renderização de todas as letras e do seu espaçamento em uma única frase, de acordo com o tipo de fonte utilizada.
+
+%Neste documento boa parte dos exemplos e trechos de código foi obtido da \textit{internet} de outros tutoriais. Uma lista de sites em que os exemplos foram obtidos, pode ser encontrado no Anexo \ref{anexoC}.
+
+%O documento está organizado em 4 partes. A Parte \ref{cap:parteI} trata da introdução e objetivos deste documento e da linguagem \LaTeX{}. A Parte \ref{cap:parteII} apresentam uma introdução aos elementos e marcadores principais da linguagem. Ao final desta parte, o usuário deverá ser capaz de produzir documentos \LaTeX{} simples, utilizando as classes mais comuns e os elementos textuais mais frequentes. Na Parte \ref{cap:parteIII}, é apresentado o estilo de INPE para a escrita de teses e dissertações. Ao final desta parte, o usuário deverá ser capaz de utilizar o estilo do INPE para a escrita de sua tese ou dissertação. É importante salientar, entretanto, que a Parte \ref{cap:parteIII} requer o aprendizado do conteúdo da Parte \ref{cap:parteII}. A Parte \ref{cap:parteIV} apresenta o pacote \textit{Beamer}, uma classe que pode ser utilizada para confeccionar apresentações digitais.
+
+O documento está organizado em 4 partes. A Parte \ref{cap:parteI} trata da introdução e objetivos deste documento e da linguagem \LaTeX{}. A Parte \ref{cap:parteII} apresentam uma introdução aos elementos e marcadores principais da linguagem. Ao final desta parte, o usuário deverá ser capaz de produzir documentos \LaTeX{} simples, utilizando as classes mais comuns e os elementos textuais mais frequentes. Na Parte \ref{cap:parteIII}, é apresentado o estilo de INPE para a escrita de teses e dissertações. Ao final desta parte, o usuário deverá ser capaz de utilizar o estilo do INPE para a escrita de sua tese ou dissertação. É importante salientar, entretanto, que a Parte 3 requer o aprendizado do conteúdo da Parte \ref{cap:parteII}. A Parte \ref{cap:parteIV}, apresenta o pacote \textit{Beamer}, uma classe que pode ser utilizada para confeccionar apresentações digitais.
 
 \section{Preparação do Ambiente}
 \label{sec:prepara}
@@ -61,100 +112,71 @@ O \LaTeX{} é, essencialmente, um compilador/interpretador. Para a sua utilizaç
 \subsection{Escolhendo e instalando o compilador}
 \label{sec:compilador}
 
-%FALTA: EXPLICAR AS DIFERENÇAS ENTRE LATEX, PDFLATEX, XELATEX E LUATEX
-
-Nas próximas seções, será mostrado como instalar e configurar o compilador/interpretador da linguagem. 
+Nas próximas seções, será mostrado como instalar e configurar o compilador/interpretador da linguagem \LaTeX{} nos sistemas operacionais mais utilizados.
 
 \subsection*{Linux}
 \label{sec:linux}
 
-Nos sistemas GNU Linux, a instalação dos pacotes do \LaTeX{} é bastante simples, mas pode variar de acordo com a distribuição utilizada. Neste manual, serão abordadas as distribuições mais populares e que utilizam os sistemas de pacotes ``apt'' (Debian e derivados) e ``dnf'' (RedHat e derivados). A vantagem destes gerenciadores de pacotes está no fato de que eles resolvem automaticamente as dependências, i.e., eles são capazes de instalar outros pacotes que são necessários para o correto funcionamento do programa principal. Em outras distribuições o processo de instalação pode ser diferente ou mesmo envolvendo a instalação a partir dos códigos fontes dos pacotes. 
+Nos sistemas GNU Linux, a instalação dos interpretador da linguagem \LaTeX{} e dos seus pacotes é bastante simples, mas pode variar de acordo com a distribuição utilizada. Neste manual, são abordadas as distribuições mais populares e que utilizam os sistemas de pacotes \textit{Advanced Packaging Tool} (APT, para a distribuição Debian e derivados, e.g., Ubuntu e Linux Mint) e \textit{Danified Yum} (DNF, para a distribuição RedHat e derivados, e.g., Fedora e CentOS). A vantagem destes gerenciadores de pacotes está no fato de que eles resolvem automaticamente as dependências, i.e., eles são capazes de instalar outros pacotes que são necessários para o correto funcionamento do programa principal. Em outras distribuições o processo de instalação pode ser diferente ou mesmo envolvendo a instalação a partir dos códigos fontes dos pacotes. 
 
-O site oficial do \LaTeX{} é o \url{https://www.latex-project.org/}. No Linux, a principal distribuição da linguagem é o pacote ``texlive'' (\url{https://www.tug.org/texlive/}). Para instalar o pacote no Debian, basta fazer:
+O site oficial do \LaTeX{} é o \url{https://www.latex-project.org/}. No Linux, a principal distribuição da linguagem é o pacote \TeX \textit{live} (\url{https://www.tug.org/texlive/}). Para instalar o pacote no Debian e derivados, basta fazer:
 
-%\begin{minted}
-%[
-%frame=lines,
-%framesep=2mm,
-%baselinestretch=1.5,
-%bgcolor=solarized-base2,
-%fontsize=\normalsize,
-%linenos
-%]
-%{bash}
-%    $ sudo apt install texlive-full
-%\end{minted}
-
-\begin{commandshell}
+\begin{meucomando}
 sudo apt install texlive-full
-\end{commandshell}
+\end{meucomando}
 
-%\begin{tcblisting}{title={Snapshot of the staging area},
-%gitexample={The option'-a'automatically stages all tracked and modifiedfiles before the commit.\par
-%This can be combined with the message option'-m'as seen in the third line.}}
-%git commit
-%git commit -a
-%git commit -am'changes to my example'
-%\end{tcblisting}
+No RedHat e derivados, basta fazer:
 
-No RedHat, basta fazer:
-
-%\begin{minted}
-%[
-%frame=lines,
-%framesep=2mm,
-%baselinestretch=1.5,
-%bgcolor=solarized-base2,
-%fontsize=\normalsize,
-%linenos
-%]
-%{bash}
-%    $ sudo dnf install texlive-scheme-full
-%\end{minted}
-
-\begin{commandshell}
+\begin{meucomando}
 sudo dnf install texlive-scheme-full
-\end{commandshell}
-
-%\begin{dica}{Dica \# 1}
-%Mesmo instalando o pacote completo do ``texlive'', é possível que outros pacotes precisem ser instalados depois.
-%\end{dica}
+\end{meucomando}
 
 \begin{marker}
 Mesmo instalando o pacote completo do ``texlive'', é possível que outros pacotes precisem ser instalados depois.
 \end{marker}
 
+Neste momento, pode-se também escolher um editor a fim de que possam ser editados documentos localmente. Nesta etapa, sugere-se a instalação do editor \textit{TeXStudio}:
+
+\begin{meucomando}
+sudo apt install texstudio
+\end{meucomando}
+
+Analogamente, nas distribuições que utilizam o gerenciados de pacotes DNF:
+
+\begin{meucomando}
+sudo dnf install texstudio
+\end{meucomando}
+
+\begin{marker}
+Para mais detalhes sobre o processo de instalação do \LaTeX{} nas distribuições baseadas no Fedora, acesse a página \url{https://docs.fedoraproject.org/en-US/neurofedora/latex/}. 
+\end{marker}
+
 \subsection*{Windows}
 \label{sec:windows}
 
-No sistema operacional \textit{Microsoft Windows}, a instalação do pacote texlive pode ser feita de forma convencional, através do instalador oficial da distribuição disponível em \url{http://mirror.ctan.org/systems/texlive/tlnet/install-tl-windows.exe} (a url indicada sempre aponta para o pacote mais recente). Após baixar o pacote, siga as instruções a seguir para completar a instalação.
+No sistema operacional \textit{Microsoft Windows}, a instalação do pacote \TeX \textit{live} pode ser feita de forma convencional, através do instalador oficial da distribuição disponível em \url{http://mirror.ctan.org/systems/texlive/tlnet/install-tl-windows.exe} (este endereço aponta sempre para o pacote mais recente). Após baixar o pacote, siga as instruções na tela para completar a instalação.
 
 \begin{marker}
-Outras informações sobre a instalação do \LaTeX{} no sistema operacional \textit{Windows}, podem ser encontradas no documento \href{http://mtc-m16d.sid.inpe.br/col/sid.inpe.br/mtc-m19@80/2010/03.24.15.12/doc/ambiente_latex_no_windows.pdf}{oficial} do Serviço de Informação e Documentação (SID) do INPE.
+Outras informações sobre a instalação do \LaTeX{} no sistema operacional \textit{Microsoft Windows}, podem ser encontradas no documento \href{http://mtc-m16d.sid.inpe.br/col/sid.inpe.br/mtc-m19@80/2010/03.24.15.12/doc/ambiente_latex_no_windows.pdf}{oficial} do SESID do INPE.
 \end{marker}
 
-\subsection*{MacOS}
+\subsection*{Mac OS}
 \label{sec:macos}
 
-No MacOS, a forma mais simples de instalar o pacote do texlive, é a partir do instalador disponível em \url{http://tug.org/cgi-bin/mactex-download/MacTeX.pkg} (da mesma forma, este url sempre aponta para o pacote mais recente). Se você está habituado a utilizar algum tipo de gerenciador de pacote no MacOS, e.g., o ``brew'', pode tentar também a instalação com os seguintes comandos:
+No Mac OS, a forma mais simples de instalar o pacote do \TeX \textit{live} é a partir do instalador disponível em \url{http://tug.org/cgi-bin/mactex-download/MacTeX.pkg} (da mesma forma, este endereço sempre aponta para o pacote mais recente). Se o leitor estiver habituado a utilizar algum tipo de gerenciador de pacote no Mac OS, e.g., o \textit{Homebrew}, orienta-se a utilização deste método para a instalação da distribuição com os seguintes comandos:
 
-%\begin{minted}
-%[
-%frame=lines,
-%framesep=2mm,
-%baselinestretch=1.5,
-%bgcolor=solarized-base2,
-%fontsize=\normalsize,
-%linenos
-%]
-%{bash}
-%    $ brew install caskroom/cask/brew-cask
-%    $ brew cask install mactex
-%    $ brew cask install texmaker
-%\end{minted}
-
-\begin{commandshell}
+\begin{meucomando}
 brew install caskroom/cask/brew-cask
 brew cask install mactex
-brew cask install texmaker
-\end{commandshell}
+\end{meucomando}
+%brew cask install texmaker
+
+\begin{marker}
+Se você não possui o gerenciador de pacotes \textit{Homebrew} instalado no seu Mac OS, veja como instalar em \url{https://brew.sh/index_pt-br}.
+\end{marker}
+
+Outra forma de instalar os compiladores do \LaTeX{} no Mac OS, é a partir do pacote de instalação do ``MacTeX''. Este pacote pode ser obtido a partir do endereço \url{http://www.tug.org/mactex/mactex-download.html}. Esta é a forma de instalação recomendada para este sistema operacional. Neste pacote estão presentes também alguns programas úteis, como o editor \TeX \textit{Shop}, o gerenciador de referências \textit{BibDesk}, o editor de equações \textit{LaTeXit} e o verificador de gramática \textit{Excalibur}.
+
+Para a edição de documentos \LaTeX{} no Mac OS, recomenda-se também ao leitor a instalação do editor \textit{TeXStudio}. O instalador deste editor pode ser obtido a partir do endereço \url{https://github.com/texstudio-org/texstudio/releases/}, onde deve ser escolhido o arquivo com a extensão {\tt .dmg}.
+
+Apesar das diferenças entre as instalações do \LaTeX{} com relação aos diferentes sistemas operacionais, os resultados que se obtém a partir da compilação de um documento \LaTeX{} são os mesmos. O leitor deve estar atento também às diferenças entre os tipos de compiladores, cujo uso pode ser diferente. Mais informações sobre os diferentes tipos de compiladores do \LaTeX{}, serão fornecidas nas seções a seguir.
