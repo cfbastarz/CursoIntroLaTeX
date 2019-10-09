@@ -2,7 +2,7 @@
 O artigo clássico de Eduard N. Lorenz \cite{lor/63} foi um dos primeiros trabalhos a descrever movimentos caóticos a partir de um sistema de equações diferenciais ordinárias, como uma aproximação para a dinâmica de uma camada de fluido convectiva. Suponha que esta camada seja mais quente na base do que no topo (conforme a Figura~\ref{figconveclorenz}), e que a diferença de temperatura $\Delta t$ seja suficiente grande. Sob estas condições o ar mais quente se eleva, deslocando o ar mais frio que está por cima, e provoca um movimento convectivo permanente. Se a diferença de temperatura aumentar ainda mais, o escoamento convectivo permanente é perturbado e se instala um movimento turbulento mais complicado \cite{boyce/99}.
 
 \begin{figure}[ht]
-\centering \resizebox{12cm}{!}{\includegraphics{figs/roloconveclorenz.png}} 
+\centering \resizebox{12cm}{!}{\includegraphics{docs/figs/roloconveclorenz.png}} 
 \caption{Movimento convectivo de uma camada de fluido, com diferença de temperatura $\Delta t$ entre a placa inferior e a superior que o delimita.}
 \label{figconveclorenz}
 \end{figure}
@@ -100,7 +100,7 @@ O estudo qualitativo das soluções do sistema~\ref{eqsistemalorenz} prossegue con
 A Figura~\ref{figlorenzx} apresenta um gráfico de valores calculados de $x$ em função de $t$, para uma solução típica com $r>r_{2}$. Note que a solução oscila entre valores positivos e negativos de uma maneira aparentemente errática. Na realidade, o gráfico de $x$ contra $t$ assemelha-se ao de uma oscilação aleatória, embora as equações de Lorenz sejam inteiramente determinísticas e a solução seja completamente determinada pelas condições iniciais. Não obstante, a solução aparenta, também, uma certa \textit{regularidade}, pois a freqüência e a amplitude das oscilações são essencialmente constantes no tempo.
 
 \begin{figure}[ht]
-\centering \resizebox{10cm}{!}{\includegraphics{figs/lorenzseriex.png}} 
+\centering \resizebox{10cm}{!}{\includegraphics{docs/figs/lorenzseriex.png}} 
 \caption{Gráficos de $x$ em função de $t$ de uma solução das equações de Lorenz com $r=28$ e condição inicial $(5,5,5)$.}
 \label{figlorenzx}
 \end{figure}
@@ -108,18 +108,18 @@ A Figura~\ref{figlorenzx} apresenta um gráfico de valores calculados de $x$ em f
 As soluções das equações de Lorenz são também muito sensíveis a perturbações nas condições iniciais. A Figura~\ref{figlorenzxci} mostra os gráficos dos valores calculados de $x$ contra $t$ para duas soluções cujos pontos iniciais são $(5,5,5)$ e $(5.01,5,5)$. A curva tracejada é a mesma que está na Figura~\ref{figlorenzx}, e a curva cheia principia em um ponto muito próximo do início daquela. As duas soluções ficam bastante próximas uma da outra, até $t$ nas vizinhanças de $10$, e depois são bastante diferentes. Na realidade, parecem não ter qualquer relação mútua. Esta propriedade atraiu particularmente a atenção de Lorenz, no seu trabalho original sobre as equações, e o levou a concluir que a provável impossibilidade de se terem previsões a longo prazo das condições meteorológicas.
 
 \begin{figure}[ht]
-\centering \resizebox{10cm}{!}{\includegraphics{figs/lorenzseriexci.png}} 
+\centering \resizebox{10cm}{!}{\includegraphics{docs/figs/lorenzseriexci.png}} 
 \caption{Curvas de $x$ em função de $t$ de duas soluções vizinhas das equações de Lorenz com $r=28$; a condição inicial da curva tracejada é $(5,5,5)$ e a da curva cheia é $(5.01,5,5)$}
 \label{figlorenzxci}
 \end{figure}
 
-O conjunto atrator, neste caso, embora tenha volume nulo, tem também uma estrutura bastante complicada e é denominado de atrator estranho. O termo caótico tornou-se de uso geral para descrever soluções como as que aparecem nas figs~\ref{figlorenzx} e \ref{figlorenzxci}.
+O conjunto atrator, neste caso, embora tenha volume nulo, tem também uma estrutura bastante complicada e é denominado de atrator estranho. O termo caótico tornou-se de uso geral para descrever soluções como as que aparecem nas docs/figs~\ref{figlorenzx} e \ref{figlorenzxci}.
 
 A fim de determinar como e quando se cria o atrator estranho, é elucidativo investigar soluções para valores menores de $r$. Com $r=21$, as soluções que principiam em três condições iniciais diferentes aparecem na Figura~~\ref{figlorenzxtriplo}. Para a condição inicial $(3,8,0)$ a solução começa a convergir para o ponto $P_{3}$ quase que imediatamente (conforme a Figura~\ref{figlorenzxtriplo}a). Na segunda condição inicial $(5,5,5)$ há um intervalo bem curto de comportamento transiente e depois a solução converge para $P_{2}$; ver Figura~\ref{figlorenzxtriplo}b. No entanto, como mostra a Figura~\ref{figlorenzxtriplo}c, a partir da terceira condição inicial $(5,5,10)$ há um intervalo muito mais dilatado de comportamento caótico transiente antes da solução convergir para $P_{2}$. À medida que $r$ cresce, a duração do comportamento transiente caótico também aumenta. Quando $r=r_{3}\thickapprox24.06$, os transientes caóticos parecem continuar indefinidamente e nasce então o atrator estranho.
 
 \begin{figure}[ht]
 \centering 
-\resizebox{6cm}{!}{\includegraphics{figs/figlorenzxtriplo1.png}} \resizebox{6cm}{!}{\includegraphics{figs/figlorenzxtriplo2.png}} \\  \resizebox{6cm}{!}{\includegraphics{figs/figlorenzxtriplo3.png}} 
+\resizebox{6cm}{!}{\includegraphics{docs/figs/figlorenzxtriplo1.png}} \resizebox{6cm}{!}{\includegraphics{docs/figs/figlorenzxtriplo2.png}} \\  \resizebox{6cm}{!}{\includegraphics{docs/figs/figlorenzxtriplo3.png}} 
 \caption{Gráficos de $x$ contra $t$ de três soluções das equações de Lorenz com $r=21$. As condições iniciais tomadas foram (3,8,0), (5,5,5) e (5,5,10).}
 \label{figlorenzxtriplo}
 \end{figure}
@@ -127,7 +127,7 @@ A fim de determinar como e quando se cria o atrator estranho, é elucidativo inve
 A Figura~\ref{figlorenzatratorproj} apresenta uma trajetória que principia em $(5,5,5)$ no espaço de fase tridimensional, que se desenvolve em um atrator estranho, como também suas projeções nos planos $xy$, $xz$ e $yz$. Pode-se observar que a trajetória sobre o atrator nunca repete o mesmo caminho; contudo, ela está confinada (atraída) a uma região limitada do espaço de fase. Tal trajetória alterna sobre um dos dois pontos fixos instáveis $P_{2}$ e $P_{3}$ e este processo é repetido indefinidamente. As projeções deste atrator cruzam-se indefinidamente, mas isto não ocorre com as trajetórias reais no espaço tridimensional, em virtude do teorema geral da unicidade. Os cruzamentos aparentes são provocados, exclusivamente, pelo caráter bidimensional das figuras.
 
 \begin{figure}[ht]
-\centering \resizebox{12cm}{!}{\includegraphics{figs/atratorlorenzcomprojecoes.png} } 
+\centering \resizebox{12cm}{!}{\includegraphics{docs/figs/atratorlorenzcomprojecoes.png} } 
 \caption{O atrator de Lorenz com $r=28$ e condição inicial $(5,5,5)$, e suas projeções nos planos $xy$ e $xz$ e $yz$}
 \label{figlorenzatratorproj}
 \end{figure}
