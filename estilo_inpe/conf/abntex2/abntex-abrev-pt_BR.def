@@ -19,7 +19,7 @@
 %\CVSFile{nbr}{\space definicao de abntex-abrev, traducao de termos en_US/pt_BR}
 
 
-\RequirePackage{abntex-abrev}
+\RequirePackage{conf/abntex2/abntex-abrev}
 
 \providecommand{\@PREF@}{}
 

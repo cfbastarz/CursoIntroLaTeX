@@ -10,5 +10,4 @@ Como você deve utilizar estes arquivos:
 
 Recomenda-se a instalação do compilador nativo do LaTeX em seu computador, isto é, sem a utilização do VirtualBox. A experiência será muito melhor.
 
-Carlos Frederico Bastarz
-(carlos.bastarz@inpe.br)
+Carlos Frederico Bastarz (carlos.bastarz@inpe.br)

@@ -14,7 +14,7 @@ english,portuguese %% para os documentos em Português com abstract.tex em Inglês
 %portuguese,english %% para os documentos em Inglês com abstract.tex em Português
 ,LogoINPE% comentar essa linha para fazer aparecer o logo do Governo
 ,CCBYNC	% as opções de licença são: CCBY, CCBYSA, CCBYND, CCBYNC, CCBYNCSA, CCBYNCND, GPLv3 e INPECopyright
-]{tdiinpe}
+]{conf/tdiinpe}
 %]{../../../../../iconet.com.br/banon/2008/03.25.01.19/doc/tdiinpe}
 
 % PARA EXIBIR EM ARIAL TIRAR O COMENTÁRIO DAS DUAS LINHAS SEGUINTES
@@ -42,9 +42,13 @@ english,portuguese %% para os documentos em Português com abstract.tex em Inglês
 %\watermark{Revisão No. ##} %% use o comando \watermark para identificar a versão de seu documento
 %% comente este comando quando for gerar a versão final
 \usepackage{rotating}
-\usepackage{dsfont}
+\usepackage{conf/pkgs/dsfont}
 \usepackage{comment}
-\input{./configuracao} %% faça as modificações pertinentes no arquivo configuracao.tex
+
+\input{conf/meus_pacotes}
+\input{conf/minhas_macros}
+
+\input{conf/configuracao} %% faça as modificações pertinentes no arquivo configuracao.tex
 
 \makeindex  %% não alterar, gera INDEX, caso haja algum termo indexado no texto
 

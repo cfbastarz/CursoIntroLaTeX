@@ -129,7 +129,7 @@
 
 \RequirePackage{ifthen}
 \RequirePackage{calc}
-\RequirePackage{abntex-abrev}
+\RequirePackage{conf/abntex2/abntex-abrev}
 
 %%%%%%  Options Declaration  %%%%%%
 
@@ -241,8 +241,8 @@
 
 % 10520:2002 does not allow (XX) or [XX] for superscript cites
 \newboolean{ABNTstrictnumformat}
-\DeclareOption{nbr10520-2001}{\input{nbr10520-2001.def}}
-\DeclareOption{nbr10520-2002}{\input{nbr10520-2002.def}}
+\DeclareOption{nbr10520-2001}{\input{conf/abntex2/nbr10520-2001.def}}
+\DeclareOption{nbr10520-2002}{\input{conf/abntex2/nbr10520-2002.def}}
 \ExecuteOptions{nbr10520-2002}
 
 %
