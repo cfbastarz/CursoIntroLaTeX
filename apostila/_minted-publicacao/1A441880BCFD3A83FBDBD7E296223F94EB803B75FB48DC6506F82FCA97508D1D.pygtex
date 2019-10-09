@@ -1,7 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}center\PYG{n+nb}{\PYGZcb{}}
-    \PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}equation*\PYG{n+nb}{\PYGZcb{}}
-        e\PYG{n+nb}{\PYGZca{}\PYGZob{}}x\PYG{n+nb}{\PYGZcb{}} = \PYG{k}{\PYGZbs{}sum}\PYG{n+nb}{\PYGZus{}\PYGZob{}}k=0\PYG{n+nb}{\PYGZcb{}\PYGZca{}\PYGZob{}}\PYG{k}{\PYGZbs{}infty}\PYG{n+nb}{\PYGZcb{}} \PYG{k}{\PYGZbs{}frac}\PYG{n+nb}{\PYGZob{}}x\PYG{n+nb}{\PYGZca{}\PYGZob{}}k\PYG{n+nb}{\PYGZcb{}\PYGZcb{}\PYGZob{}}k!\PYG{n+nb}{\PYGZcb{}}
-    \PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}equation*\PYG{n+nb}{\PYGZcb{}}
-\PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}center\PYG{n+nb}{\PYGZcb{}}
-\end{Verbatim}

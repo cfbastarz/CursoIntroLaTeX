@@ -1,2 +1,0 @@
-\beamer@sectionintoc {1}{Minha Se\IeC {\c c}\IeC {\~a}o}{2}{0}{1}
-\beamer@subsectionintoc {1}{1}{Minha Subse\IeC {\c c}\IeC {\~a}o}{2}{0}{1}

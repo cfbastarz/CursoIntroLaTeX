@@ -1,7 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}center\PYG{n+nb}{\PYGZcb{}}
-    \PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}equation*\PYG{n+nb}{\PYGZcb{}}
-        f\PYGZsq{}(a) = \PYG{k}{\PYGZbs{}lim}\PYG{n+nb}{\PYGZus{}\PYGZob{}}x \PYG{k}{\PYGZbs{}to} a\PYG{n+nb}{\PYGZcb{}} \PYG{k}{\PYGZbs{}frac}\PYG{n+nb}{\PYGZob{}}f(x) \PYGZhy{} f(a)\PYG{n+nb}{\PYGZcb{}\PYGZob{}}x \PYGZhy{} a\PYG{n+nb}{\PYGZcb{}}
-    \PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}equation*\PYG{n+nb}{\PYGZcb{}}
-\PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}center\PYG{n+nb}{\PYGZcb{}}
-\end{Verbatim}

@@ -1,9 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}center\PYG{n+nb}{\PYGZcb{}}
-    \PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}equation*\PYG{n+nb}{\PYGZcb{}}
-        \PYG{k}{\PYGZbs{}text}\PYG{n+nb}{\PYGZob{}}cos\PYG{n+nb}{\PYGZcb{}}(\PYG{k}{\PYGZbs{}alpha} \PYG{k}{\PYGZbs{}pm} \PYG{k}{\PYGZbs{}beta}) =
-        \PYG{k}{\PYGZbs{}text}\PYG{n+nb}{\PYGZob{}}cos \PYG{n+nb}{\PYGZcb{}}\PYG{k}{\PYGZbs{}alpha} \PYG{k}{\PYGZbs{}text}\PYG{n+nb}{\PYGZob{}} cos \PYG{n+nb}{\PYGZcb{}}\PYG{k}{\PYGZbs{}beta} \PYG{k}{\PYGZbs{}mp}
-        \PYG{k}{\PYGZbs{}text}\PYG{n+nb}{\PYGZob{}} sin \PYG{n+nb}{\PYGZcb{}}\PYG{k}{\PYGZbs{}alpha} \PYG{k}{\PYGZbs{}text}\PYG{n+nb}{\PYGZob{}} sin \PYG{n+nb}{\PYGZcb{}}\PYG{k}{\PYGZbs{}beta}
-    \PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}equation*\PYG{n+nb}{\PYGZcb{}}
-\PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}center\PYG{n+nb}{\PYGZcb{}}
-\end{Verbatim}

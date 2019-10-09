@@ -1,8 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}center\PYG{n+nb}{\PYGZcb{}}
-    \PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}equation*\PYG{n+nb}{\PYGZcb{}}
-        \PYG{k}{\PYGZbs{}mathcal}\PYG{n+nb}{\PYGZob{}}L\PYG{n+nb}{\PYGZcb{}} \PYG{k}{\PYGZbs{}lbrace} f(t) \PYG{k}{\PYGZbs{}rbrace} =
-        F(s) \PYG{k}{\PYGZbs{}int}\PYG{n+nb}{\PYGZus{}\PYGZob{}}0\PYG{n+nb}{\PYGZcb{}\PYGZca{}\PYGZob{}}\PYG{k}{\PYGZbs{}infty}\PYG{n+nb}{\PYGZcb{}} f(t) e\PYG{n+nb}{\PYGZca{}\PYGZob{}}\PYGZhy{}st\PYG{n+nb}{\PYGZcb{}} dt
-    \PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}equation*\PYG{n+nb}{\PYGZcb{}}
-\PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}center\PYG{n+nb}{\PYGZcb{}}
-\end{Verbatim}
