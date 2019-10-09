@@ -24,8 +24,8 @@ Um documento \LaTeX{} contém, portanto, as instruções que marcam e formatam o
 \caption{Etapas envolvidas na compilação de um documento \LaTeX{}.}
 \vspace{6mm}
     \begin{center}
-        %\includegraphics[scale=0.6]{./figs/texcomp.pdf}
-        \includegraphics[scale=0.6,angle=-90,trim={4.5cm 1cm 6cm 1cm},clip]{./figs/diagramacomp2.pdf}
+        %\includegraphics[scale=0.6]{./docs/figs/texcomp.pdf}
+        \includegraphics[scale=0.6,angle=-90,trim={4.5cm 1cm 6cm 1cm},clip]{./docs/figs/diagramacomp2.pdf}
     \end{center}
 \vspace{4mm}
 \legenda{Compilação de um documento \LaTeX{}.}
@@ -1144,7 +1144,7 @@ Uma figura pode ser incluída de forma simples utilizando o comando \mintinline{
 No Exemplo \ref{exe_fig1}, observe que o marcador \mintinline{latex}{\includegraphics} aceita algumas opções que são delimitadas por um par de \mintinline{latex}{[]}'s (conchetes). Pode-se especificar, por exemplo, o tamanho da figura com as opções \mintinline{latex}{width}, \mintinline{latex}{height} ou \mintinline{latex}{scale}. Além disso, pode-se também utilizar as macros da Tabela \ref{tab:meds_padrao}. Para isto, veja o Exemplo \ref{exe_meds1}.
 
 \subsection*{Formatos de Figuras}
-\label{sec:form_figs}
+\label{sec:form_docs/figs}
 
 Figuras podem ser incorporadas a partir de diferentes formatos em um documento \LaTeX{}. Os formatos preferenciais, entretanto, são o \textit{Portable Document Format} (PDF) e o \textit{Encapsulated PostScript} (EPS). Estes formatos são vetoriais e permitem, por exemplo, a impressão em alta resolução das figuras. Outra vantagem que se adquire com a incorporação de figuras nestes formatos, é a capacidade de \textit{zoom} do documento, i.e., um documento no formato PDF com imagem PDF embutidas, pode ser aumentado no visualizador de documentos sem perda de qualidade.
 
@@ -1182,7 +1182,7 @@ for i in $(ls *pdf); do echo $i; j=$(echo $i | sed "s,.pdf,,g"); gs -sDEVICE=pdf
 \end{marker}
 
 \subsubsection*{Ambientes de figuras}
-\label{sec:amb_figs}
+\label{sec:amb_docs/figs}
 
 Assim como mostrado no Exemplo \ref{exe_fig1}, a forma mais simples de incluir figuras em um documento \LaTeX{}, é a partir do comando \mintinline{latex}{\includegraphics[]{}}. Observe que este comando (assim como a maioria dos comandos e marcadores da linguagem) possui uma seção de opções (ou argumentos) que são indicados entre os colchetes e o caminho para a imagem em si, que é informada entre as chaves. O Exemplo \ref{exe_incgraphs} mostra um exemplo simples:
 
@@ -1336,7 +1336,7 @@ Para saber mais sobre o pacote {\tt subfig} e as suas aplicações, tenha como r
 %\end{marker}
 
 \subsubsection*{Construindo figuras}
-\label{sec:const_figs}
+\label{sec:const_docs/figs}
 
 %FALTA: INSERIR CODIGOS
 
@@ -1443,7 +1443,7 @@ Para facilitar o desenho de diagramas, recomenda-se a utilização do programa \
 \caption{Exemplo de um diagrama construído no programa \LaTeX\textit{Draw}}
 \vspace{6mm}
     \begin{center}
-        \includegraphics[width=\textwidth]{./figs/diagrama_hibrido_novo_pt-tempos.pdf}
+        \includegraphics[width=\textwidth]{./docs/figs/diagrama_hibrido_novo_pt-tempos.pdf}
     \end{center}
 \vspace{4mm}
 \legenda{Um diagrama complexo com elementos geométricos e equações.}
@@ -1461,7 +1461,7 @@ A utilização do programa \LaTeX\textit{Draw} é bastante simples. Na Figura \r
 \caption{Interface gráfica do programa \LaTeX\textit{Draw}}
 \vspace{6mm}
     \begin{center}
-        \includegraphics[width=0.7\textwidth,angle=-90]{./figs/ldraw1.pdf}
+        \includegraphics[width=0.7\textwidth,angle=-90]{./docs/figs/ldraw1.pdf}
     \end{center}
 \vspace{4mm}
 \legenda{Um programa para criação e diagramas e figuras simples.}
@@ -1475,7 +1475,7 @@ Na Figura \ref{fig:interld}, observe que há duas abas: \textit{Drawing} e ``PST
 \caption{Código PS\textit{Tricks} gerado pelo do programa \LaTeX\textit{Draw}}
 \vspace{6mm}
     \begin{center}
-        \includegraphics[width=0.7\textwidth,angle=-90]{./figs/ldraw2.pdf}
+        \includegraphics[width=0.7\textwidth,angle=-90]{./docs/figs/ldraw2.pdf}
     \end{center}
 \vspace{4mm}
 \legenda{Aba ``PST''.}
@@ -1489,7 +1489,7 @@ Na aba ``PST'', uma vez que algum desenho é inserido na aba \textit{Drawing}, p
 \caption{Interface de exportação do programa \LaTeX\textit{Draw}}
 \vspace{6mm}
     \begin{center}
-        \includegraphics[width=0.7\textwidth,angle=-90]{./figs/ldraw3.pdf}
+        \includegraphics[width=0.7\textwidth,angle=-90]{./docs/figs/ldraw3.pdf}
     \end{center}
 \vspace{4mm}
 \legenda{Exportando uma figura para o formato PDF.}
@@ -2159,7 +2159,7 @@ Para determinar páginas individuais no modo paisagem, é necessário carregar o
 %%\begin{texexptitled}[breakable,center lower,enhanced,middle=2mm]{Página em modo paisagem utilizando o ambiente {\tt landscape}}{exe_paisagem}
 %\begin{tcblisting}{colback=red!5!white,colframe=red!75!black,list and comment,
 %righthand width=3cm,lower separated=false,middle=1mm,
-%pdf comment={./figs/lscape.pdf},
+%pdf comment={./docs/figs/lscape.pdf},
 %comment style={raster columns=3,graphics pages={1,2,3},
 %colframe=blue,drop fuzzy shadow}}
 %Um documento simples com páginas no modo retrato e paisagem.
@@ -2399,7 +2399,7 @@ A maioria das revistas científicas indexadas fornecem ferramentas para a export
 \caption{Download do arquivo de referência no formato Bib\TeX{} a partir da revista \textit{Monthly Weather Review} da \textit{American Meteorological Society}.}
 \vspace{6mm}
     \begin{center}
-        \includegraphics[scale=0.4]{./figs/exemplo_revista_ams_citacao.pdf}
+        \includegraphics[scale=0.4]{./docs/figs/exemplo_revista_ams_citacao.pdf}
     \end{center}
 \vspace{4mm}
 \legenda{\textit{Site} da revista \textit{Monthly Weather Review}.}
@@ -2477,7 +2477,7 @@ No \textit{BibDesk}, clique no menu ``Arquivo > Abrir...'' e selecione o arquivo
 %\caption{Base de dados de referências carregada no \textit{software} \textit{BibDesk}.}
 %\vspace{6mm}
 %    \begin{center}
-%        \includegraphics[scale=0.3]{./figs/bibdesk1.pdf}
+%        \includegraphics[scale=0.3]{./docs/figs/bibdesk1.pdf}
 %    \end{center}
 %\vspace{4mm}
 %\legenda{\textit{Software} \textit{BibDesk}.}
@@ -2489,7 +2489,7 @@ No \textit{BibDesk}, clique no menu ``Arquivo > Abrir...'' e selecione o arquivo
 %\caption{Base de dados de referências carregada no \textit{software} \textit{BibDesk}.}
 %\vspace{6mm}
 %    \begin{center}
-%        \includegraphics[scale=0.3]{./figs/bibdesk2.pdf}
+%        \includegraphics[scale=0.3]{./docs/figs/bibdesk2.pdf}
 %    \end{center}
 %\vspace{4mm}
 %\legenda{\textit{Software} \textit{BibDesk}.}
@@ -2501,7 +2501,7 @@ No \textit{BibDesk}, clique no menu ``Arquivo > Abrir...'' e selecione o arquivo
 \caption{Base de dados de referências carregada no \textit{software} \textit{BibDesk}.}
 \vspace{6mm}
     \begin{center}
-        \includegraphics[scale=0.3]{./figs/bibdesk.pdf}
+        \includegraphics[scale=0.3]{./docs/figs/bibdesk.pdf}
     \end{center}
 \vspace{4mm}
 \legenda{\textit{Software} \textit{BibDesk}.}
@@ -2513,7 +2513,7 @@ No \textit{BibDesk}, clique no menu ``Arquivo > Abrir...'' e selecione o arquivo
 \caption{Base de dados de referências carregada no \textit{software} \textit{Mendeley}.}
 \vspace{6mm}
     \begin{center}
-        \includegraphics[scale=0.3]{./figs/mendeley.pdf}
+        \includegraphics[scale=0.3]{./docs/figs/mendeley.pdf}
     \end{center}
 \vspace{4mm}
 \legenda{\textit{Software} \textit{Mendeley}.}
@@ -2525,7 +2525,7 @@ No \textit{BibDesk}, clique no menu ``Arquivo > Abrir...'' e selecione o arquivo
 \caption{Base de dados de referências carregada no \textit{software} \textit{Zotero}.}
 \vspace{6mm}
     \begin{center}
-        \includegraphics[scale=0.3]{./figs/zotero.pdf}
+        \includegraphics[scale=0.3]{./docs/figs/zotero.pdf}
     \end{center}
 \vspace{4mm}
 \legenda{\textit{Software} \textit{Zotero}.}
@@ -2573,7 +2573,7 @@ No \textit{site} da biblioteca do INPE, todas as referências já se encontram c
 \caption{Obtenção de referências no formato Bib\TeX{} a partir do \textit{site} da biblioteca do INPE.}
 \vspace{6mm}
     \begin{center}
-        \includegraphics[scale=0.45]{./figs/bibliotex.pdf}
+        \includegraphics[scale=0.45]{./docs/figs/bibliotex.pdf}
     \end{center}
 \vspace{4mm}
 \legenda{Site da biblioteca do INPE.}
