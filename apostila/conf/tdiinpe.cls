@@ -202,7 +202,7 @@
 \fi
 
 \RequirePackage{color} %% essencial %% aplicar cores no texto
-\RequirePackage[latin1]{inputenc} %% essencial
+%\RequirePackage[latin1]{inputenc} %% essencial
 
 \RequirePackage{float}	%% acrescentado por gjfb em 2012-10-19 seguindo recomendação do Fabio Dall Cortivo
 
@@ -807,6 +807,39 @@ top=3cm,bottom=3cm]{geometry}	% acrescentado por gjfb em 2011-12-06
 %	\addtocontents{lot}{\protect\thispagestyle{empty}}% retirar paginação na primeira página
 	\pretexto}
 % end AWSS
+
+%% CFB
+\singlespacing
+\newcommand{\listofexamples}{%
+	\tcblistof[\chapter*]{exem}{LISTA DE EXEMPLOS%
+	    \\[-1em]
+        \hfill\mbox{}\\[\parsinpe]\mbox{}\hfill\underline{\normalfont\normalsize\bfseries P\'{a}g.}}
+}
+
+\newcommand{\includeListaExemplos}{%
+%	\pagestyle{empty}
+	\pagestyle{plain}% para colocar paginação na lista de tabelas
+	\refstepcounter{section}
+	\pretexto%
+	\listofexamples
+	\pretexto}
+%% CFB
+%% CFB
+\singlespacing
+\newcommand{\listofexercicies}{%
+	\tcblistof[\chapter*]{exam}{LISTA DE EXERCÍCIOS%
+	    \\[-1em]
+        \hfill\mbox{}\\[\parsinpe]\mbox{}\hfill\underline{\normalfont\normalsize\bfseries P\'{a}g.}}
+}
+
+\newcommand{\includeListaExercicios}{%
+%	\pagestyle{empty}
+	\pagestyle{plain}% para colocar paginação na lista de tabelas
+	\refstepcounter{section}
+	\pretexto%
+	\listofexercicies
+	\pretexto}
+%% CFB
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% define variaveis do caption %%%
