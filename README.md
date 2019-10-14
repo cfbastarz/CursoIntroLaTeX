@@ -15,7 +15,9 @@ Recomenda-se a instalação do compilador mais recente do LaTeX em seu computado
 Clone ou baixe este repositório em uma pasta no seu computador. Para a compilação, você pode utilizar a linha de comando ou algum editor de sua preferência. Para compilar é necessário, antes, instalar o pacote Pygments no seu computador. Em computador com o Linux/OS X, basta fazer:
 
     sudo easy_install Pygments
+
 ou
+
     sudo apt-get install python-pygments
 
 Após a instalação do Pygmenyts, utilize a seguinte sequência de comandos para compilar o documento:
