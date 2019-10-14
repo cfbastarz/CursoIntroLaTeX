@@ -17,6 +17,6 @@ Após a instalação do Pygmenyts, utilize a seguinte sequência de comandos par
     xelatex -interaction=nonstopmode apresentacao.tex
     xelatex -interaction=nonstopmode apresentacao.tex
 
-Observe que é necessário executar os comandos nesta ordem, com a repetição indicada. É apenas no último comando em que as referências bibliográficas serão adicionadas ao documento. O arquivo final com a apostila é o "publicacao.pdf".
+Observe que é necessário executar os comandos nesta ordem, com a repetição indicada. É apenas no último comando em que as referências bibliográficas serão adicionadas ao documento. O arquivo final com a parte compilada da apresentação é o "apresentacao.pdf".
 
 Carlos Frederico Bastarz (carlos.bastarz@inpe.br)
