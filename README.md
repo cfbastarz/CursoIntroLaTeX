@@ -1,4 +1,4 @@
-# CursoLaTeXINPE
+# CursoIntroLaTeX
 
 Bem vindo ao "Curso de Introdução ao LaTeX".
 
