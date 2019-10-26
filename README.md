@@ -10,9 +10,17 @@ Como você deve utilizar estes arquivos:
 
 Recomenda-se a instalação do compilador mais recente do LaTeX em seu computador.
 
+## Baixando o material
+
+Você pode baixar o material clicando no botão "Clone or download", ou pode clonar este repositório utilizando o git:
+
+    git clone git@github.com:cfbastarz/CursoIntroLaTeX.git
+    
+![Screencast git clone](https://github.com/cfbastarz/CursoIntroLaTeX/blob/master/cursolatex-80x25_50p-v2.gif)
+
 ## Compilação do material
 
-Clone ou baixe este repositório em uma pasta no seu computador. Para a compilação, você pode utilizar a linha de comando ou algum editor de sua preferência. Para compilar é necessário, antes, instalar o pacote Pygments no seu computador. Em computador com o Linux/OS X, basta fazer:
+Para a compilação, você pode utilizar a linha de comando ou algum editor de sua preferência. Para compilar é necessário, antes, instalar o pacote Pygments no seu computador. Em computador com o Linux/OS X, basta fazer:
 
     sudo easy_install Pygments
 
