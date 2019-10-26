@@ -17,7 +17,8 @@ Você pode baixar o material clicando no botão ["Clone or download"](https://gi
     git clone git@github.com:cfbastarz/CursoIntroLaTeX.git
     
 Veja como fazer no exemplo a seguir:
-![Screencast git clone](https://github.com/cfbastarz/CursoIntroLaTeX/blob/master/cursolatex-80x25_50p-v2.gif)
+
+![Screencast git clone](https://github.com/cfbastarz/CursoIntroLaTeX/blob/master/cursolatex-80x25_50p-v3.gif)
 
 ## Compilação do material
 
