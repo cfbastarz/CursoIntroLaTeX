@@ -12,10 +12,11 @@ Recomenda-se a instalação do compilador mais recente do LaTeX em seu computado
 
 ## Baixando o material
 
-Você pode baixar o material clicando no botão "Clone or download", ou pode clonar este repositório utilizando o git:
+Você pode baixar o material clicando no botão ["Clone or download"](https://github.com/cfbastarz/CursoIntroLaTeX/archive/master.zip), ou pode clonar este repositório utilizando o git:
 
     git clone git@github.com:cfbastarz/CursoIntroLaTeX.git
     
+Veja como fazer no exemplo a seguir:
 ![Screencast git clone](https://github.com/cfbastarz/CursoIntroLaTeX/blob/master/cursolatex-80x25_50p-v2.gif)
 
 ## Compilação do material
