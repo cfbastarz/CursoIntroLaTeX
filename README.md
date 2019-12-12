@@ -2,7 +2,7 @@
 
 Bem vindo ao "Curso de Introdução ao LaTeX".
 
-Neste diretório estão disponíveis a apostila e as apresentações do curso. As atualizações deste material é feita diretamente neste repositório.
+Neste diretório estão disponíveis a apostila e as apresentações do curso. As atualizações deste material são feita diretamente neste repositório.
 
 Como você deve utilizar estes arquivos:
 
