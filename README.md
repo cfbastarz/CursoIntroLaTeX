@@ -8,7 +8,7 @@ Como você deve utilizar estes arquivos:
 
 - A apostila é o material de apoio do curso. Ela contém informações, exemplos e alguns exercícios que serão feitos durante o curso. Tenha ela sempre em mãos para poder seguir com o curso.
 
-Recomenda-se a instalação do compilador mais recente do LaTeX em seu computador.
+Recomenda-se a instalação do compilador mais recente do LaTeX em seu computador. Se você tem dúvidas como proceder nesta parte, tenha como referência a Seção 1.4.1 da apostila - "Escolhendo e instalando o compilador". O arquivo PDF da apostila pode ser encontrado no diretório "apostila".
 
 ## Baixando o material
 
