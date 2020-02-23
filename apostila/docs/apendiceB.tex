@@ -1,0 +1,36 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Apêndice A
+\hypertarget{estilo:apendice1}{} %% uso para este Guia
+%Este apêndice foi criado apenas para indicar como construir um apêndice no estilo, não existia no original da tese.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\renewcommand{\thechapter}{}%
+\chapter{APÊNDICE B - OPÇÔES AVANÇADAS DE COMPILAÇÂO}  % trocar A por B na próxima apêndice e etc
+\label{apendiceB} % trocar A por B na próxima apêndice e etc
+\renewcommand{\thechapter}{B}%    % trocar A por B na próxima apêndice e etc
+
+Neste apêndice são apresentadas algumas opções úteis para a compilação de documentos \LaTeX{}. No Capítulo \ref{cap:parteI}, foi mostrado como um documento \LaTeX{} simples pode ser compilado utilizando-se a linha de comando:
+
+\begin{meucomando}
+latex exe_doc.tex 
+dvips exe_doc
+ps2pdf exe_doc
+\end{meucomando}
+
+De forma mais simples e direta, pode-se utilizar o comando {\tt pdflatex} que automatiza as etapas intermediárias entre o documento no formato {\tt .tex} e o arquivo PDF final:
+
+\begin{meucomando}
+pdflatex exe_doc.tex
+\end{meucomando}
+
+Porém, dependendo das necessidades do usuário ou da complexidade do documento escrito (como esta apostila), pode ser necessário utilizar algumas opções mais avançadas do compilador. Algumas opções mais comuns são...
+
+% xelatex -interaction=nonstopmode -shell-escape publicacao.tex
+% biblatex publicacao
+% xelatex -interaction=nonstopmode publicacao.tex
+% xelatex -interaction=nonstopmode publicacao.tex
+
+% Utilizando o latexmk
+%  latexmk -xelatex -interaction=nonstopmode -shell-escape -bibtex publicacao.tex
+
+% A opção a seguir pode ser utilizada para emular o comportamento de alguns editores, em que o documento é automaticamente atualizado quando ele é salvo:
+% latexmk -pvc -pdf -e '$pdflatex=q/xelatex %O -interaction=nonstopmode %S/' publicacao.tex 
