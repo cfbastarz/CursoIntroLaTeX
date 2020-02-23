@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+iconv \PYGZhy{}f ISO\PYGZhy{}8859\PYGZhy{}9 \PYGZhy{}t UTF\PYGZhy{}8 arquivo.tex \PYGZgt{} novo\PYGZus{}arquivo.tex
+\end{Verbatim}

@@ -1,0 +1,27 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{\PYGZbs{}documentclass}\PYG{n+nb}{\PYGZob{}}article\PYG{n+nb}{\PYGZcb{}}
+
+\PYG{k}{\PYGZbs{}usepackage}\PYG{n+na}{[utf8]}\PYG{n+nb}{\PYGZob{}}inputenc\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}usepackage}\PYG{n+nb}{\PYGZob{}}xargs\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}usepackage}\PYG{n+nb}{\PYGZob{}}xcolor\PYGZhy{}material\PYG{n+nb}{\PYGZcb{}}
+
+\PYG{k}{\PYGZbs{}usepackage}\PYG{n+nb}{\PYGZob{}}todonotes\PYG{n+nb}{\PYGZcb{}}
+
+\PYG{k}{\PYGZbs{}newcommandx}\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}minhanota}\PYG{n+nb}{\PYGZcb{}}[2][1=]\PYG{n+nb}{\PYGZob{}}
+  \PYG{k}{\PYGZbs{}todo}[linecolor=MaterialAmber,
+  backgroundcolor=MaterialAmber!25,
+  bordercolor=MaterialAmber,\PYGZsh{}1]\PYG{n+nb}{\PYGZob{}}\PYGZsh{}2\PYG{n+nb}{\PYGZcb{}}
+\PYG{n+nb}{\PYGZcb{}}
+
+\PYG{k}{\PYGZbs{}title}\PYG{n+nb}{\PYGZob{}}Meu documento\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}author}\PYG{n+nb}{\PYGZob{}}Meu Nome\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}date}\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}today}\PYG{n+nb}{\PYGZcb{}}
+
+\PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}document\PYG{n+nb}{\PYGZcb{}}
+
+\PYG{k}{\PYGZbs{}maketitle}
+
+Este é um exemplo de texto com notas coloridas.\PYG{k}{\PYGZbs{}minhanota}\PYG{n+nb}{\PYGZob{}}Esta é uma nota colorida.\PYG{n+nb}{\PYGZcb{}}
+
+\PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}document\PYG{n+nb}{\PYGZcb{}}
+\end{Verbatim}

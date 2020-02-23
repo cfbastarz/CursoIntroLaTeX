@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{\PYGZbs{}includegraphics}\PYG{n+na}{[width=3cm]}\PYG{n+nb}{\PYGZob{}}example\PYGZhy{}image\PYGZhy{}a\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}includegraphics}\PYG{n+na}{[width=3cm]}\PYG{n+nb}{\PYGZob{}}example\PYGZhy{}image\PYGZhy{}golden\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}includegraphics}\PYG{n+na}{[width=3cm]}\PYG{n+nb}{\PYGZob{}}example\PYGZhy{}grid\PYGZhy{}100x100pt\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}includegraphics}\PYG{n+na}{[height=5cm]}\PYG{n+nb}{\PYGZob{}}example\PYGZhy{}image\PYGZhy{}b\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}includegraphics}\PYG{n+na}{[scale=0.5]}\PYG{n+nb}{\PYGZob{}}example\PYGZhy{}image\PYGZhy{}c\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}includegraphics}\PYG{n+na}{[width=3cm]}\PYG{n+nb}{\PYGZob{}}example\PYGZhy{}image\PYG{n+nb}{\PYGZcb{}}
+\end{Verbatim}

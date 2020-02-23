@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+latex exe\PYGZus{}doc.tex
+dvips exe\PYGZus{}doc
+ps2pdf exe\PYGZus{}doc
+\end{Verbatim}

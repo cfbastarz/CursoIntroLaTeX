@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}flushleft\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}lipsumsentence}\PYG{n+na}{[9\PYGZhy{}10]} \PYG{k}{\PYGZbs{}\PYGZbs{}}
+\PYG{k}{\PYGZbs{}lipsumsentence}\PYG{n+na}{[11\PYGZhy{}12]}
+\PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}flushleft\PYG{n+nb}{\PYGZcb{}}
+\end{Verbatim}

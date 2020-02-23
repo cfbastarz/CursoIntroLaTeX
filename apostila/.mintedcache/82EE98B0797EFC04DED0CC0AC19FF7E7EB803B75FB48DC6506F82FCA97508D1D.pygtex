@@ -1,0 +1,18 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c}{\PYGZpc{} CAPA}
+\PYG{k}{\PYGZbs{}titulo}\PYG{n+nb}{\PYGZob{}}Escrever o t\PYG{k}{\PYGZbs{}\PYGZsq{}}\PYG{n+nb}{\PYGZob{}}i\PYG{n+nb}{\PYGZcb{}}tulo no idioma em que foi escrito a
+publicaç\PYG{k}{\PYGZbs{}\PYGZti{}}\PYG{n+nb}{\PYGZob{}}a\PYG{n+nb}{\PYGZcb{}}o\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}title}\PYG{n+nb}{\PYGZob{}}Escrever o t\PYG{k}{\PYGZbs{}\PYGZsq{}}\PYG{n+nb}{\PYGZob{}}i\PYG{n+nb}{\PYGZcb{}}tulo em Ingl\PYG{k}{\PYGZbs{}\PYGZca{}}\PYG{n+nb}{\PYGZob{}}e\PYG{n+nb}{\PYGZcb{}}s para publicaç\PYG{k}{\PYGZbs{}\PYGZti{}}\PYG{n+nb}{\PYGZob{}}o\PYG{n+nb}{\PYGZcb{}}es
+escritas em Portugu\PYG{k}{\PYGZbs{}\PYGZca{}}\PYG{n+nb}{\PYGZob{}}e\PYG{n+nb}{\PYGZcb{}}s e em Portugu\PYG{k}{\PYGZbs{}\PYGZca{}}\PYG{n+nb}{\PYGZob{}}e\PYG{n+nb}{\PYGZcb{}}s para publicaç\PYG{k}{\PYGZbs{}\PYGZti{}}\PYG{n+nb}{\PYGZob{}}o\PYG{n+nb}{\PYGZcb{}}es
+escritas em Ingl\PYG{k}{\PYGZbs{}\PYGZca{}}\PYG{n+nb}{\PYGZob{}}e\PYG{n+nb}{\PYGZcb{}}s\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}author}\PYG{n+nb}{\PYGZob{}}Nome Completo do Autor\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}descriccao}\PYG{n+nb}{\PYGZob{}}Tese de Doutorado ou Dissertaç\PYG{k}{\PYGZbs{}\PYGZti{}}\PYG{n+nb}{\PYGZob{}}a\PYG{n+nb}{\PYGZcb{}}o de Mestrado do
+Curso de P\PYG{k}{\PYGZbs{}\PYGZsq{}}\PYG{n+nb}{\PYGZob{}}o\PYG{n+nb}{\PYGZcb{}}s\PYGZhy{}Graduaç\PYG{k}{\PYGZbs{}\PYGZti{}}\PYG{n+nb}{\PYGZob{}}a\PYG{n+nb}{\PYGZcb{}}o em Nome do Curso, orientada pelo(a)
+Dr(a). Nome do Orientador(a), aprovada em dd de m\PYG{k}{\PYGZbs{}\PYGZca{}}\PYG{n+nb}{\PYGZob{}}e\PYG{n+nb}{\PYGZcb{}}s por extenso
+de aaaa.\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}repositorio}\PYG{n+nb}{\PYGZob{}}aa/bb/cc/dd\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}tipoDaPublicacao}\PYG{n+nb}{\PYGZob{}}TDI\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}IBI}\PYG{n+nb}{\PYGZob{}}xx/yy\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}date}\PYG{n+nb}{\PYGZob{}}AAAA\PYG{n+nb}{\PYGZcb{}}
+...
+\end{Verbatim}

@@ -1,0 +1,35 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{xargs}
+
+\usepackage{xcolor-material}
+\usepackage[colorinlistoftodos,
+            prependcaption,
+            textsize=tiny]{todonotes}
+
+\newcommandx{\comentario}[2][1=]{
+  \todo[linecolor=MaterialGreen,
+  backgroundcolor=MaterialGreen!25,
+  bordercolor=MaterialGreen,#1]{#2}
+}
+
+\newcommandx{\remover}[2][1=]{
+  \todo[disable,#1]{#2}
+}
+
+\title{Meu documento}
+\author{Meu Nome}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\listoftodos[Notas]
+
+\newpage
+
+Este é um exemplo de texto\comentario[inline]{Este é um comentário em em linha, o qual pode ser útil quando o comentário for muito grande} com notas coloridas. Notas podem ser inseridas de formas diferentes. No entando, pode ser um pouco difícil de se acostumar.\comentario{Isso é verdade, principalmente quando não se está acostmado com o \LaTeX{}.} Mas esta é uma boa opção, especialmente porque é o \LaTeX{} quem controla a aparição das notas.\remover{Remover esta parte!}
+
+\end{document}

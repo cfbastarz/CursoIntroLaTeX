@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}center\PYG{n+nb}{\PYGZcb{}}
+    A \PYG{k}{\PYGZbs{}textbf}\PYG{n+nb}{\PYGZob{}}famosa\PYG{n+nb}{\PYGZcb{}} \PYG{k}{\PYGZbs{}underline}\PYG{n+nb}{\PYGZob{}}Kelly\PYG{n+nb}{\PYGZcb{}} comeu \PYG{k}{\PYGZbs{}textit}\PYG{n+nb}{\PYGZob{}}pão infetado\PYG{n+nb}{\PYGZcb{}}
+    com arroz que o \PYG{k}{\PYGZbs{}textbf}\PYG{n+nb}{\PYGZob{}}Barriga\PYG{n+nb}{\PYGZcb{}} jantou \PYG{k}{\PYGZbs{}underline}\PYG{n+nb}{\PYGZob{}}vendo\PYG{n+nb}{\PYGZcb{}} o
+    filme da \PYG{k}{\PYGZbs{}textit}\PYG{n+nb}{\PYGZob{}}Wehrmacht\PYG{n+nb}{\PYGZcb{}} \PYG{k}{\PYGZbs{}sout}\PYG{n+nb}{\PYGZob{}}xexelenta\PYG{n+nb}{\PYGZcb{}}.
+\PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}center\PYG{n+nb}{\PYGZcb{}}
+\end{Verbatim}

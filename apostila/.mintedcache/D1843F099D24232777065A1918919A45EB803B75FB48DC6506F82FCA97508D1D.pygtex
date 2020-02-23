@@ -1,0 +1,28 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+documentclass[
+\PYG{c}{\PYGZpc{} PARA ESCOLHER O ESTILO TIRE O SIMBOLO (COMENTÁRIO)}
+\PYG{c}{\PYGZpc{}SemVinculoColorido,}
+\PYG{c}{\PYGZpc{}SemFormatacaoCapitulo,}
+\PYG{c}{\PYGZpc{}SemFolhaAprovacao,}
+\PYG{c}{\PYGZpc{}SemImagens,}
+\PYG{c}{\PYGZpc{}CitacaoNumerica,}
+\PYG{c}{\PYGZpc{}PublicacaoDissOuTese,}
+\PYG{c}{\PYGZpc{}PublicacaoArtigoOuRelatorio,}
+\PYG{c}{\PYGZpc{}PublicacaoProposta,}
+\PYG{c}{\PYGZpc{}PublicacaoLivro,}
+\PYG{c}{\PYGZpc{}PublicacaoLivro,SemFormatacaoCapitulo,}
+english,portuguese,
+\PYG{c}{\PYGZpc{}portuguese,english,}
+LogoINPE,
+CCBYNC,
+]\PYG{n+nb}{\PYGZob{}}tdiinpe\PYG{n+nb}{\PYGZcb{}}
+
+\PYG{c}{\PYGZpc{} PARA EXIBIR EM ARIAL TIRAR O COMENTÁRIO DAS DUAS LINHAS SEGUINTES}
+\PYG{c}{\PYGZpc{}\PYGZbs{}renewcommand\PYGZob{}\PYGZbs{}rmdefault\PYGZcb{}\PYGZob{}phv\PYGZcb{}\PYGZcb{} \PYGZpc{} Arial}
+\PYG{c}{\PYGZpc{}\PYGZbs{}renewcommand\PYGZob{}\PYGZbs{}sfdefault\PYGZcb{}\PYGZob{}phv\PYGZcb{}\PYGZcb{} \PYGZpc{} Arial}
+
+\PYG{c}{\PYGZpc{} PARA PUBLICAÇÕES EM INGLÊS:}
+\PYG{c}{\PYGZpc{}renomear o arquivo: abnt\PYGZhy{}alf.bst para abnt\PYGZhy{}alfportuguese.bst}
+\PYG{c}{\PYGZpc{}renomear o arquivo: abnt\PYGZhy{}alfenglish.bst para abnt\PYGZhy{}alf.bst}
+...
+\end{Verbatim}

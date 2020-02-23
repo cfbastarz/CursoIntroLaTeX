@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+autotrim \PYGZhy{}i figura.png \PYGZhy{}o figura\PYGZus{}crop.png
+\end{Verbatim}

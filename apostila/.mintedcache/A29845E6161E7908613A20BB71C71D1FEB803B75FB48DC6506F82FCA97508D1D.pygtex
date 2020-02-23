@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}center\PYG{n+nb}{\PYGZcb{}}
+    \PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}equation*\PYG{n+nb}{\PYGZcb{}}
+        \PYG{k}{\PYGZbs{}text}\PYG{n+nb}{\PYGZob{}}sin \PYG{n+nb}{\PYGZcb{}}x = x \PYG{k}{\PYGZbs{}prod}\PYG{n+nb}{\PYGZca{}\PYGZob{}}\PYG{k}{\PYGZbs{}infty}\PYG{n+nb}{\PYGZcb{}\PYGZus{}\PYGZob{}}n=1\PYG{n+nb}{\PYGZcb{}}
+        \PYG{k}{\PYGZbs{}bigg}(1 \PYGZhy{} \PYG{k}{\PYGZbs{}frac}\PYG{n+nb}{\PYGZob{}}x\PYG{n+nb}{\PYGZca{}}2\PYG{n+nb}{\PYGZcb{}\PYGZob{}}\PYG{k}{\PYGZbs{}pi}\PYG{n+nb}{\PYGZca{}\PYGZob{}}2\PYG{n+nb}{\PYGZcb{}} n\PYG{n+nb}{\PYGZca{}\PYGZob{}}2\PYG{n+nb}{\PYGZcb{}\PYGZcb{}} \PYG{k}{\PYGZbs{}bigg})
+    \PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}equation*\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}center\PYG{n+nb}{\PYGZcb{}}
+\end{Verbatim}

@@ -1,0 +1,13 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}figure\PYG{n+nb}{\PYGZcb{}}[H]
+  \PYG{k}{\PYGZbs{}caption}\PYG{n+nb}{\PYGZob{}}Exemplo de figura com título curto.\PYG{n+nb}{\PYGZcb{}}
+  \PYG{k}{\PYGZbs{}vspace}\PYG{n+nb}{\PYGZob{}}6mm\PYG{n+nb}{\PYGZcb{}} \PYG{c}{\PYGZpc{} acrescentar o espaçamento vertical apropriado entre o título e a borda superior da figura}
+  \PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}center\PYG{n+nb}{\PYGZcb{}}
+    \PYG{k}{\PYGZbs{}includegraphics}\PYG{n+na}{[width=12cm]}\PYG{n+nb}{\PYGZob{}}./docs/figs/gpa.pdf\PYG{n+nb}{\PYGZcb{}}
+  \PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}center\PYG{n+nb}{\PYGZcb{}}
+  \PYG{k}{\PYGZbs{}vspace}\PYG{n+nb}{\PYGZob{}}4mm\PYG{n+nb}{\PYGZcb{}} \PYG{c}{\PYGZpc{} acrescentar o espaçamento vertical apropriado entre a borda inferior da figura e a legenda ou a fonte quando não há legenda (o valor pode ser negativo para subir)}
+  \PYG{k}{\PYGZbs{}legenda}\PYG{n+nb}{\PYGZob{}}Exemplo de legenda curta.\PYG{n+nb}{\PYGZcb{}} \PYG{c}{\PYGZpc{} legenda \PYGZhy{} opcional}
+  \PYG{k}{\PYGZbs{}label}\PYG{n+nb}{\PYGZob{}}figgpa1\PYG{n+nb}{\PYGZcb{}}
+  \PYG{k}{\PYGZbs{}FONTE}\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}citeonline}\PYG{n+nb}{\PYGZob{}}lba/06\PYG{n+nb}{\PYGZcb{}}.\PYG{n+nb}{\PYGZcb{}} \PYG{c}{\PYGZpc{} fonte consultada (elemento obrigatório, mesmo que seja produção do próprio autor)}
+\PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}figure\PYG{n+nb}{\PYGZcb{}}
+\end{Verbatim}

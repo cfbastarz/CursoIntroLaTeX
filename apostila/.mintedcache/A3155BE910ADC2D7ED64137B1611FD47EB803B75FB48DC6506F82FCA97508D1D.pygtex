@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}tabular\PYG{n+nb}{\PYGZcb{}\PYGZob{}}|l|c|r|\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}hline}
+L1C1 \PYG{n+nb}{\PYGZam{}} L1C2 \PYG{n+nb}{\PYGZam{}} L1C3 \PYG{k}{\PYGZbs{}\PYGZbs{}}
+L2C1 \PYG{n+nb}{\PYGZam{}} L2C2 \PYG{n+nb}{\PYGZam{}} L2C3 \PYG{k}{\PYGZbs{}\PYGZbs{}}
+\PYG{k}{\PYGZbs{}hline}
+\PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}tabular\PYG{n+nb}{\PYGZcb{}}
+\end{Verbatim}

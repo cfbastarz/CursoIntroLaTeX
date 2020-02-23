@@ -1,0 +1,27 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}enumerate\PYG{n+nb}{\PYGZcb{}}
+    \PYG{k}{\PYGZbs{}item} Item 1
+    \PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}enumerate\PYG{n+nb}{\PYGZcb{}}
+        \PYG{k}{\PYGZbs{}item} Item 1a
+        \PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}enumerate\PYG{n+nb}{\PYGZcb{}}
+            \PYG{k}{\PYGZbs{}item} Item 1a.i
+            \PYG{k}{\PYGZbs{}item} Item 1a.ii
+        \PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}enumerate\PYG{n+nb}{\PYGZcb{}}
+        \PYG{k}{\PYGZbs{}item} Item 1b
+    \PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}enumerate\PYG{n+nb}{\PYGZcb{}}
+    \PYG{k}{\PYGZbs{}item} Item 2
+    \PYG{k}{\PYGZbs{}item} Item 3
+    \PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}enumerate\PYG{n+nb}{\PYGZcb{}}
+        \PYG{k}{\PYGZbs{}item} Item 3a
+         \PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}enumerate\PYG{n+nb}{\PYGZcb{}}
+            \PYG{k}{\PYGZbs{}item} Item 3a.i
+            \PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}enumerate\PYG{n+nb}{\PYGZcb{}}
+                \PYG{k}{\PYGZbs{}item} Item 3a.i.A
+                \PYG{k}{\PYGZbs{}item} Item 3a.i.B
+            \PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}enumerate\PYG{n+nb}{\PYGZcb{}}
+            \PYG{k}{\PYGZbs{}item} Item 3a.ii
+        \PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}enumerate\PYG{n+nb}{\PYGZcb{}}
+        \PYG{k}{\PYGZbs{}item} Item 3b
+    \PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}enumerate\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}enumerate\PYG{n+nb}{\PYGZcb{}}
+\end{Verbatim}

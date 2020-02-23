@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{for} i in \PYG{k}{\PYGZdl{}(}ls *.png\PYG{k}{)}\PYG{p}{;} \PYG{k}{do} \PYG{n+nv}{j}\PYG{o}{=}\PYG{k}{\PYGZdl{}(}\PYG{n+nb}{echo} \PYG{n+nv}{\PYGZdl{}i} \PYG{p}{|} sed \PYG{l+s+s1}{\PYGZsq{}s,.png,.pdf,g\PYGZsq{}}\PYG{k}{)}\PYG{p}{;} convert \PYGZhy{}i \PYG{n+nv}{\PYGZdl{}i} \PYGZhy{}o \PYG{n+nv}{\PYGZdl{}j}\PYG{p}{;} \PYG{k}{done}
+\end{Verbatim}

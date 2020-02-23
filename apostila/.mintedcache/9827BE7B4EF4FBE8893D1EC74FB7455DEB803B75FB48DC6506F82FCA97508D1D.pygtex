@@ -1,0 +1,23 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{\PYGZbs{}newcommand}\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}recuo}\PYG{n+nb}{\PYGZcb{}\PYGZob{}}\PYG{k}{\PYGZbs{}\PYGZbs{}}\PYG{n+na}{[\PYGZhy{}0.5em]}\PYG{n+nb}{\PYGZcb{}}
+
+\PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}tabular\PYG{n+nb}{\PYGZcb{}\PYGZob{}}l r\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}hline}
+\PYG{k}{\PYGZbs{}recuo}
+\PYG{k}{\PYGZbs{}textbf}\PYG{n+nb}{\PYGZob{}}L0C1\PYG{n+nb}{\PYGZcb{}} \PYG{n+nb}{\PYGZam{}} \PYG{k}{\PYGZbs{}textbf}\PYG{n+nb}{\PYGZob{}}L0C2\PYG{n+nb}{\PYGZcb{}} \PYG{k}{\PYGZbs{}\PYGZbs{}}
+\PYG{k}{\PYGZbs{}recuo}
+\PYG{k}{\PYGZbs{}hline}
+\PYG{k}{\PYGZbs{}recuo}
+L1C1 \PYG{n+nb}{\PYGZam{}} L1C2 \PYG{k}{\PYGZbs{}\PYGZbs{}}
+\PYG{k}{\PYGZbs{}recuo}
+L2C1 \PYG{n+nb}{\PYGZam{}} L2C2 \PYG{k}{\PYGZbs{}\PYGZbs{}}
+\PYG{k}{\PYGZbs{}recuo}
+L3C1 \PYG{n+nb}{\PYGZam{}} L3C2 \PYG{k}{\PYGZbs{}\PYGZbs{}}
+\PYG{k}{\PYGZbs{}recuo}
+L4C1 \PYG{n+nb}{\PYGZam{}} L4C2 \PYG{k}{\PYGZbs{}\PYGZbs{}}
+\PYG{k}{\PYGZbs{}recuo}
+L5C1 \PYG{n+nb}{\PYGZam{}} L5C2 \PYG{k}{\PYGZbs{}\PYGZbs{}}
+\PYG{k}{\PYGZbs{}recuo}
+\PYG{k}{\PYGZbs{}hline}
+\PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}tabular\PYG{n+nb}{\PYGZcb{}}
+\end{Verbatim}

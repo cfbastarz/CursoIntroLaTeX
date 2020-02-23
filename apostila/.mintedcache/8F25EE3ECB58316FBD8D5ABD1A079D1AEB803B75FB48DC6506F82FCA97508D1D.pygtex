@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{\PYGZbs{}newcommand}\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}inpe}\PYG{n+nb}{\PYGZcb{}\PYGZob{}}INPE\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}newcommand}\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}inpex}\PYG{n+nb}{\PYGZcb{}\PYGZob{}}INPE\PYG{k}{\PYGZbs{}xspace}\PYG{n+nb}{\PYGZcb{}}
+
+O \PYG{k}{\PYGZbs{}inpe}\PYG{n+nb}{\PYGZob{}\PYGZcb{}} desenvolve pesquisas relacionadas às ciências atmosféricas
+e espaciais.
+
+O \PYG{k}{\PYGZbs{}inpex} desenvolve pesquisas relacionadas às ciências atmosféricas
+e espaciais.
+\end{Verbatim}

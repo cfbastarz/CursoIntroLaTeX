@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+...
+\PYG{k}{\PYGZbs{}RequirePackage}\PYG{n+na}{[hang,small]}\PYG{n+nb}{\PYGZob{}}caption2\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}RequirePackage}\PYG{n+nb}{\PYGZob{}}amsmath,amssymb,amsthm\PYG{n+nb}{\PYGZcb{}} \PYG{c}{\PYGZpc{}\PYGZpc{} essencial \PYGZpc{}\PYGZpc{} para linguagem matemática}
+\PYG{c}{\PYGZpc{}\PYGZbs{}RequirePackage\PYGZob{}subfigure\PYGZcb{} \PYGZpc{}\PYGZpc{} essencial \PYGZpc{}\PYGZpc{} fazer subfiguras}
+\PYG{c}{\PYGZpc{}\PYGZbs{}RequirePackage[subfigure]\PYGZob{}tocloft\PYGZcb{} \PYGZpc{}\PYGZpc{} faz sumários e listas \PYGZhy{} needed for \PYGZbs{}cftchapindent}
+\PYG{k}{\PYGZbs{}RequirePackage}\PYG{n+nb}{\PYGZob{}}makeidx\PYG{n+nb}{\PYGZcb{}} \PYG{c}{\PYGZpc{}\PYGZpc{} essencial \PYGZpc{}\PYGZpc{} faz o ÍNDICE}
+\PYG{k}{\PYGZbs{}RequirePackage}\PYG{n+nb}{\PYGZob{}}eso\PYGZhy{}pic\PYG{n+nb}{\PYGZcb{}}
+...
+\end{Verbatim}

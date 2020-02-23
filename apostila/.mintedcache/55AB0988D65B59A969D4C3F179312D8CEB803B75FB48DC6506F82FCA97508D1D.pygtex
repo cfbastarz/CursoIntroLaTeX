@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{\PYGZbs{}lipsumsentence}\PYG{n+na}{[1\PYGZhy{}2]}
+\PYG{k}{\PYGZbs{}setlength}\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}columnsep}\PYG{n+nb}{\PYGZcb{}\PYGZob{}}2cm\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}multicols*\PYG{n+nb}{\PYGZcb{}\PYGZob{}}3\PYG{n+nb}{\PYGZcb{}}
+    \PYG{k}{\PYGZbs{}lipsum}\PYG{n+na}{[3]}
+\PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}multicols*\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}lipsumsentence}\PYG{n+na}{[5\PYGZhy{}6]}
+\end{Verbatim}

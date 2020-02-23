@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+A Equação \PYG{k}{\PYGZbs{}ref}\PYG{n+nb}{\PYGZob{}}eq:euler\PYG{n+nb}{\PYGZcb{}} é denominada ``Equação de Euler\PYGZsq{}\PYGZsq{} e nela estão relacionados os números irracionais mais conhecidos: \PYG{l+s}{\PYGZdl{}}\PYG{n+nb}{e}\PYG{l+s}{\PYGZdl{}} e \PYG{l+s}{\PYGZdl{}}\PYG{n+nv}{\PYGZbs{}pi}\PYG{l+s}{\PYGZdl{}}, além do número imaginário \PYG{l+s}{\PYGZdl{}}\PYG{n+nb}{i}\PYG{l+s}{\PYGZdl{}}:
+
+\PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}equation\PYG{n+nb}{\PYGZcb{}}
+  \PYG{k}{\PYGZbs{}label}\PYG{n+nb}{\PYGZob{}}eq:euler\PYG{n+nb}{\PYGZcb{}}
+  e\PYG{n+nb}{\PYGZca{}\PYGZob{}}i\PYG{k}{\PYGZbs{}pi}\PYG{n+nb}{\PYGZcb{}} + 1 = 0
+\PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}equation\PYG{n+nb}{\PYGZcb{}}
+\end{Verbatim}

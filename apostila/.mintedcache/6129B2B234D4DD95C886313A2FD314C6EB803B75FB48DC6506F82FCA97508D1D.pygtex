@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}center\PYG{n+nb}{\PYGZcb{}}
+    \PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}equation*\PYG{n+nb}{\PYGZcb{}}
+        \PYG{k}{\PYGZbs{}int}\PYG{n+nb}{\PYGZus{}\PYGZob{}}\PYG{k}{\PYGZbs{}partial}\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}Omega}\PYG{n+nb}{\PYGZcb{}\PYGZcb{}} \PYG{k}{\PYGZbs{}omega} = \PYG{k}{\PYGZbs{}int}\PYG{n+nb}{\PYGZus{}\PYGZob{}}\PYG{k}{\PYGZbs{}Omega}\PYG{n+nb}{\PYGZcb{}} d\PYG{k}{\PYGZbs{}omega}
+    \PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}equation*\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}center\PYG{n+nb}{\PYGZcb{}}
+\end{Verbatim}
