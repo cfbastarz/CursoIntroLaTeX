@@ -1105,60 +1105,22 @@ Uma figura pode ser incluída de forma simples utilizando o comando \mintinline{
 \includegraphics[width=3cm]{example-image} 
 \end{texexptitled}
 
-\begin{marker}
-  As imagens do Exemplo \ref{exe_fig1} acima foram incluídas com o pacote \mintinline{latex}{graphicsx} que possui diversas imagens de exemplos. Veja mais sobre este pacote em \url{https://www.ctan.org/pkg/graphicx}.
-\end{marker}
-
 No Exemplo \ref{exe_fig1}, observe que o marcador \mintinline{latex}{\includegraphics} aceita algumas opções que são delimitadas por um par de \mintinline{latex}{[]}'s (conchetes). Pode-se especificar, por exemplo, o tamanho da figura com as opções \mintinline{latex}{width}, \mintinline{latex}{height} ou \mintinline{latex}{scale}. Além disso, pode-se também utilizar as macros da Tabela \ref{tab:meds_padrao}. Para isto, veja o Exemplo \ref{exe_meds1}.
 
-\subsection*{Formatos de Figuras}
-\label{sec:form_docs/figs}
-
-Figuras podem ser incorporadas a partir de diferentes formatos em um documento \LaTeX{}. Os formatos preferenciais, entretanto, são o \textit{Portable Document Format} (PDF) e o \textit{Encapsulated PostScript} (EPS). Estes formatos são vetoriais e permitem, por exemplo, a impressão em alta resolução das figuras. Outra vantagem que se adquire com a incorporação de figuras nestes formatos, é a capacidade de \textit{zoom} do documento, i.e., um documento no formato PDF com imagem PDF embutidas, pode ser aumentado no visualizador de documentos sem perda de qualidade.
-
-É possível converter formatos como o \textit{Portable Network Graphics} (PNG), \textit{Graphics Interchange Format} (GIF) e \textit{Joint Photographic Experts Group} (JPEG) para os formatos PDF e EPS. Para tanto, recomenda-se a utilização do programa \href{https://imagemagick.org/index.php}{\textit{Imagemagick}} para esta conversão (disponível para os sistemas \textit{MIcrosoft Windows}, Linux e Mac OS). Conversores \textit{online} também podem ser utilizados para esta finalidade.
-
-O \textit{Imagemagick} possui um \textit{script} chamado {\tt convert}\footnote{Este \textit{script} é nativo, i.e., uma vez instalado em sua máquina, ele estará disponível através da linha de comando.} que pode ser utilizado para realizar a conversão entre estes formatos:
-
-\begin{meucomando}
-for i in $(ls *.png); do j=$(echo $i | sed 's,.png,.pdf,g'); convert -i $i -o $j; done
-\end{meucomando}
-
-Outro detalhe que pode ser importante, é remover os espaços em branco nas margens das figuras. Isso é útil especialmente quando deseja-se incluir figuras lado a lado. Para isso, pode-se utilizar o \textit{script} \href{http://www.fmwconcepts.com/imagemagick/autotrim/index.php}{{\tt autotrim}} (que utiliza o comando {\tt convert}):
-
-\begin{meucomando}
-autotrim -i figura.png -o figura_crop.png
-\end{meucomando}
-
 \begin{marker}
-Veja a página \url{http://www.fmwconcepts.com/imagemagick/index.php} com diversos exemplos e \textit{scripts} úteis do \textit{Imagemagick}.
-\end{marker}
-
-Outro fator que pode impactar significativamente no tempo de compilação de um documento \LaTeX{}, além da quantidade de figuras, é o formato. Dependendo do compilador utilizado, é preferível utilizar imagens no formato PDF. Se este for o caso, pode-se utilizar o utilitário {\tt gs} (\textit{Ghostview}) para se reduzir ao máximo o tamanho das imagens em PDF, da seguinte forma:
-
-% Dica: https://askubuntu.com/questions/113544/how-can-i-reduce-the-file-size-of-a-scanned-pdf-file
-%\begin{commandshell}
-%for i in \$(ls *pdf); do echo \$i; j=\$(echo \$i | sed "s,.pdf,,g"); gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -dNOPAUSE -dQUIET -dBATCH -sOutputFile=\${j}_c.pdf \$i; done
-%\end{commandshell}
-
-\begin{meucomando}
-for i in $(ls *pdf); do echo $i; j=$(echo $i | sed "s,.pdf,,g"); gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -dNOPAUSE -dQUIET -dBATCH -sOutputFile=${j}_c.pdf $i; done
-\end{meucomando}
-
-\begin{marker}
-  Para mais exemplos sobre a incorporação e conversão entre formatos de arquivos de imagens, tenha como referência a página \url{https://en.wikibooks.org/wiki/LaTeX/Importing_Graphics}.
+  As imagens do Exemplo \ref{exe_fig1} acima foram incluídas com o pacote \mintinline{latex}{graphicsx} que possui diversas imagens de exemplos. Veja mais sobre este pacote em \url{https://www.ctan.org/pkg/graphicx}.
 \end{marker}
 
 \subsubsection*{Ambientes de figuras}
 \label{sec:amb_docs/figs}
 
-Assim como mostrado no Exemplo \ref{exe_fig1}, a forma mais simples de incluir figuras em um documento \LaTeX{}, é a partir do comando \mintinline{latex}{\includegraphics[]{}}. Observe que este comando (assim como a maioria dos comandos e marcadores da linguagem) possui uma seção de opções (ou argumentos) que são indicados entre os colchetes e o caminho para a imagem em si, que é informada entre as chaves. O Exemplo \ref{exe_incgraphs} mostra um exemplo simples:
+Assim como mostrado no Exemplo \ref{exe_fig1}, a forma mais simples de incluir figuras em um documento \LaTeX{}, é a partir do comando \mintinline{latex}{\includegraphics[]{}}. Observe que este comando (assim como a maioria dos comandos e marcadores da linguagem) possui uma seção de opções (ou argumentos) que são indicados entre os colchetes e o caminho para a imagem em si, que é informada entre as chaves. Veja o Exemplo \ref{exe_incgraphs} a seguir:
 
 \begin{texexptitled}[breakable,enhanced,middle=2mm]{Incorporando uma figura com o comando {\tt includegraphics}}{exe_incgraphs}
 \includegraphics[width=3cm]{example-image-a}
 \end{texexptitled}
 
-Entretanto, observe que apenas inserimos uma figura, mas não definimos uma posição relativa ao parágrafo ou à página. Para isso, é necessário incorporar o comando \mintinline{latex}{\includegraphics[]{}} dentro de um ambiente específico que permita o seu posicionamento relativo. Este ambiente, é o ambiente {\tt figure}. O Exemplo \ref{exe_ambfig} mostra um exemplo com o ambiente {\tt figure}:
+Entretanto, observe que apenas inserimos uma figura, mas não definimos uma posição relativa ao parágrafo ou à página e que também não há uma legenda atribuída à figura. Para isso, é necessário incorporar o comando \mintinline{latex}{\includegraphics[]{}} dentro de um ambiente específico que permita o seu posicionamento relativo, além da edição de outros atributos referentes à figura. Este ambiente, é o ambiente {\tt figure}. O Exemplo \ref{exe_ambfig} a seguir, mostra como o ambiente {\tt figure} é utilizado:
 
 \begin{texexptitled}[breakable,enhanced,middle=2mm]{Incorporando uma figura com o comando {\tt includegraphics} dentro do ambiente {\tt figure}}{exe_ambfig}
 \begin{figure}[H]
@@ -1167,7 +1129,7 @@ Entretanto, observe que apenas inserimos uma figura, mas não definimos uma posi
 \end{figure}
 \end{texexptitled}
 
-No Exemplo \ref{exe_ambfig}, note que foi utilizado também o comando \mintinline{latex}{caption}, cuja utilização serve para inserir a legenda da figura.
+No Exemplo \ref{exe_ambfig}, note que foi utilizado também o comando \mintinline{latex}{caption}, utilizado para inserir a legenda da figura.
 
 O ambiente {\tt figure} deve ser configurado para possuir uma das seguintes posições relativas:
 
@@ -1202,9 +1164,8 @@ As opções de posicionamento relativo apresentados na Tabela \ref{tab:ambfig}, 
 \lipsum[2]
 \end{texexptitled}
 
-%No estilo do INPE (apresentado no Capítulo \ref{cap:parteIII}), o ambiente padrão para o posicionamento do ambiente {\tt figure} é {\tt H}.
 \begin{marker}
-  No estilo do INPE (apresentado no Capítulo \ref{cap:parteIII}), o ambiente padrão para o posicionamento do ambiente {\tt figure} é {\tt H}.
+No estilo do INPE (apresentado no Capítulo \ref{cap:parteIII}), o ambiente padrão para o posicionamento do ambiente {\tt figure} é {\tt H}.
 \end{marker}
 
 Uma vez definido o posicionamento relativo (i.e., relativo ao parágrafo ou página), pode-se centralizar a figura utilizando-se o marcador \mintinline{latex}{\centering} ou o ambiente {\tt center}. O Exemplo \ref{exe_ambfig_center} mostra estas duas opções:
@@ -1225,7 +1186,7 @@ Uma vez definido o posicionamento relativo (i.e., relativo ao parágrafo ou pág
 \end{figure}
 \end{texexptitled}
 
-No Exemplo \ref{exe_ambfig_center}, observe que ambos o marcador \mintinline{latex}{centering} e o ambiente {\tt center} devem ser colocados dentro do ambiente {\tt figure}.
+No Exemplo \ref{exe_ambfig_center}, observe que ambos, o marcador \mintinline{latex}{centering} e o ambiente {\tt center}, devem ser colocados dentro do ambiente {\tt figure}.
 
 O ambiente {\tt figure} permite também que figuras sejam posicionadas lado-a-lado. Para isso, pode-se utilizar o comando {\tt subfigure}. O comando {\tt subfigure} tem a sintaxe \mintinline{latex}{\subfigure[]{}}. Veja o Exemplo \ref{exe:subfigure1} a seguir:
 
@@ -1261,7 +1222,7 @@ Nos Exemplos \ref{exe:subfigure1} e \ref{exe:subfigure2}, observe que para cada 
 
 %Outros pacotes também estão disponíveis para a inserção de figuras lado-a-lado (ou empilhadas). Os pacotes {\tt subfig}, {\tt subfloat} e {\tt subcaption}. Segundo a página do pacote {\tt subfig} no CTAN (disponível em \url{https://www.ctan.org/pkg/subfig}), o pacote {\tt subfigure} não está mais sendo mantido e por esta razão, recomenda-se o uso de um destes outros pacotes. Porém, o estilo para teses e dissertações do INPE utiliza, por padrão o pacote {\tt subfigure}. A utilização de ambos os pacotes é possível, mas deverão ocorrer alguns efeitos indesejados, como o aparecimento de parênteses duplos na indexação das subfiguras que forem geradas com o pacote {\tt subfloat}. Portanto, a melhor opção é não misturar a utilização destes pacotes. Se a necessidade do leitor utilizar um desses pacotes (ao invés do pacote {\tt subfigure}), verifique as instruções na Seção \ref{sec:oriesp} do Capítulo \ref{cap:parteIII}. 
 
-Outros pacotes também estão disponíveis para a inserção de figuras lado-a-lado (ou empilhadas). Os pacotes {\tt subfig}, {\tt subfloat} e {\tt subcaption}. Segundo a página do pacote {\tt subfig} no CTAN (disponível em \url{https://www.ctan.org/pkg/subfig}), o pacote {\tt subfigure} não está mais sendo mantido e por esta razão, recomenda-se o uso de um destes outros pacotes. Porém, o estilo para teses e dissertações do INPE utiliza, por padrão, o pacote {\tt subfigure}. A utilização de ambos os pacotes é possível, mas deverão ocorrer alguns efeitos indesejados, como o aparecimento de parênteses duplos na indexação das subfiguras que forem geradas com o pacote {\tt subfloat}. Portanto, a melhor opção é não misturar a utilização destes pacotes. Se for necessário utilizar um desses pacotes (ao invés do pacote {\tt subfigure}), verifique as instruções no Capítulo \ref{cap:parteIII}. 
+Outros pacotes também estão disponíveis para a inserção de figuras lado-a-lado (ou empilhadas). Os pacotes {\tt subfig}, {\tt subfloat} e {\tt subcaption}. Segundo a página do pacote {\tt subfig} no CTAN (disponível em \url{https://www.ctan.org/pkg/subfig}), o pacote {\tt subfigure} é obsoleto e por esta razão, recomenda-se o uso de um destes outros pacotes. Porém, o estilo para teses e dissertações do INPE ainda utiliza o pacote {\tt subfigure}. A utilização de ambos os pacotes é possível, mas deverão ocorrer alguns efeitos indesejados, como o aparecimento de parênteses duplos na indexação das subfiguras que forem geradas com o pacote {\tt subfloat}. Portanto, a melhor opção é não misturar a utilização destes pacotes. Se for necessário utilizar um desses pacotes (ao invés do pacote {\tt subfigure}), verifique as instruções no Capítulo \ref{cap:parteIII}. 
 
 %Utilizando o pacote {\tt subfig}, o Exemplo \ref{exe:subfigure1} pode ser substituído pelo código do Exemplo \ref{exe:subfigure3}. Levando-se em consideração o que foi exposto no parágrafo anterior, apenas o código será apresentado no exemplo a seguir.
 
@@ -1302,6 +1263,58 @@ Para saber mais sobre o pacote {\tt subfig} e as suas aplicações, tenha como r
 %\begin{marker}
 %  Consulte a página \url{https://www.overleaf.com/learn/latex/Inserting_Images} para mais opções de configuração. Veja também a documentação do pacote {\tt wrapfigure} no CTAN em \url{https://www.ctan.org/pkg/wrapfig}.
 %\end{marker}
+
+\subsection*{Formatos de Figuras}
+\label{sec:form_docs/figs}
+
+Figuras podem ser incorporadas a partir de diferentes formatos em um documento \LaTeX{}. Os formatos preferenciais, entretanto, são o \textit{Portable Document Format} (PDF) e o \textit{Encapsulated PostScript} (EPS). Estes formatos são vetoriais e permitem, por exemplo, a impressão em alta resolução das figuras. Outra vantagem que se adquire com a incorporação de figuras nestes formatos, é a capacidade de \textit{zoom} do documento, i.e., um documento no formato PDF com imagem PDF embutidas, pode ser aumentado no visualizador de documentos sem perda de qualidade.
+
+É possível converter formatos como o \textit{Portable Network Graphics} (PNG), \textit{Graphics Interchange Format} (GIF) e \textit{Joint Photographic Experts Group} (JPEG) para os formatos PDF e EPS. Para tanto, recomenda-se a utilização do programa \href{https://imagemagick.org/index.php}{\textit{Imagemagick}} para esta conversão (disponível para os sistemas \textit{MIcrosoft Windows}, Linux e Mac OS). Conversores \textit{online} também podem ser utilizados para esta finalidade.
+
+O \textit{Imagemagick} possui um \textit{script} chamado {\tt convert}\footnote{Este \textit{script} é nativo, i.e., uma vez instalado no computador, ele estará disponível através da linha de comando.} que pode ser utilizado para realizar a conversão entre estes formatos. A utilização básica do comando {\tt convert}, é a seguinte:
+
+\begin{meucomando}
+convert -i figura.ext1 -o figura.ext2
+\end{meucomando}
+
+Onde {\tt ext1} e {\tt ext2} são dois formatos de figuras distintos.
+
+Para converter imagens em lotes utilizando o comando {\tt convert}, pode-se utilizar o comando a seguir (em linguagem \textit{Bash}):
+
+\begin{meucomando}
+for i in $(ls *.png); do j=$(echo $i | sed 's,.png,.pdf,g'); convert -i $i -o $j; done
+\end{meucomando}
+
+Em outras situações, pode ser necessário remover os espaços em branco nas margens das figuras. Isso pode ser útil especialmente quando deseja-se incluir figuras lado a lado. Para isso, pode-se utilizar o \textit{script} \href{http://www.fmwconcepts.com/imagemagick/autotrim/index.php}{{\tt autotrim}} (que faz uso do comando {\tt convert}). A utilização básica do \textit{script} {\tt autotrim} é a seguinte:
+
+\begin{meucomando}
+autotrim -i figura.png -o figura_crop.png
+\end{meucomando}
+
+É possível também utilizar o comando {\tt autotrim} para processar imagens em lotes. Para isto, pode-se utilizar o comando a seguir (em linguagem \textit{Bash}):
+
+\begin{meucomando}
+for i in $(ls *.png); do j=$(echo $i | sed 's,.png,.-crop.png,g'); autotrim -i $i -o $j; done
+\end{meucomando}
+
+\begin{marker}
+Veja a página \url{http://www.fmwconcepts.com/imagemagick/index.php} com diversos exemplos e \textit{scripts} úteis do \textit{Imagemagick}.
+\end{marker}
+
+Outro fator que pode impactar significativamente no tempo de compilação de um documento \LaTeX{}, além da quantidade de figuras, é o formato. Dependendo do compilador utilizado, é preferível utilizar imagens no formato PDF. Se este for o caso, pode-se utilizar o programa {\tt gs} (\textit{Ghostview}) para reduzir ao máximo o tamanho das imagens em PDF. Isso pode ser feito da seguinte forma (em linguagem \textit{Bash}):
+
+% Dica: https://askubuntu.com/questions/113544/how-can-i-reduce-the-file-size-of-a-scanned-pdf-file
+%\begin{commandshell}
+%for i in \$(ls *pdf); do echo \$i; j=\$(echo \$i | sed "s,.pdf,,g"); gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -dNOPAUSE -dQUIET -dBATCH -sOutputFile=\${j}_c.pdf \$i; done
+%\end{commandshell}
+
+\begin{meucomando}
+for i in $(ls *pdf); do echo $i; j=$(echo $i | sed "s,.pdf,,g"); gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -dNOPAUSE -dQUIET -dBATCH -sOutputFile=${j}_c.pdf $i; done
+\end{meucomando}
+
+\begin{marker}
+  Para mais exemplos sobre a incorporação e conversão entre formatos de arquivos de imagens, tenha como referência a página \url{https://en.wikibooks.org/wiki/LaTeX/Importing_Graphics}.
+\end{marker}
 
 \subsubsection*{Construindo figuras}
 \label{sec:const_docs/figs}
