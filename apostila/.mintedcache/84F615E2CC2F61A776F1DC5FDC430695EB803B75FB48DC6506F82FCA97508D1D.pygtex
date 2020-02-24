@@ -1,8 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}center\PYG{n+nb}{\PYGZcb{}}
-    \PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}equation*\PYG{n+nb}{\PYGZcb{}}
-        \PYG{k}{\PYGZbs{}text}\PYG{n+nb}{\PYGZob{}}Hom\PYG{n+nb}{\PYGZcb{}}(U \PYG{k}{\PYGZbs{}otimes} V, W) \PYG{k}{\PYGZbs{}cong}
-        \PYG{k}{\PYGZbs{}text}\PYG{n+nb}{\PYGZob{}}Hom\PYG{n+nb}{\PYGZcb{}}(U, \PYG{k}{\PYGZbs{}text}\PYG{n+nb}{\PYGZob{}}Hom\PYG{n+nb}{\PYGZcb{}}(V,W))
-    \PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}equation*\PYG{n+nb}{\PYGZcb{}}
-\PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}center\PYG{n+nb}{\PYGZcb{}}
-\end{Verbatim}

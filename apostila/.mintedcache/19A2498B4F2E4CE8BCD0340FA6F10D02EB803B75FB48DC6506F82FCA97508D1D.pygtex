@@ -1,6 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{k}{\PYGZbs{}section}\PYG{n+nb}{\PYGZob{}}Uma Seção\PYG{n+nb}{\PYGZcb{}}
-\PYG{k}{\PYGZbs{}label}\PYG{n+nb}{\PYGZob{}}sec:minha\PYG{n+nb}{\PYGZus{}}secao\PYG{n+nb}{\PYGZcb{}}
-
-Este é um exemplo de citação de uma parte do texto. Na Seção \PYG{k}{\PYGZbs{}ref}\PYG{n+nb}{\PYGZob{}}sec:minha\PYG{n+nb}{\PYGZus{}}secao\PYG{n+nb}{\PYGZcb{}}, mostra\PYGZhy{}se como utilizar os comandos \PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}tt} label\PYG{n+nb}{\PYGZcb{}} e \PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}tt} ref\PYG{n+nb}{\PYGZcb{}} para a citação. O mesmo procedimento pode ser aplicado para a citação de partes, capítulos, subseções, anexos, apêndices etc.
-\end{Verbatim}

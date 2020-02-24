@@ -1,9 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{k}{\PYGZbs{}renewcommand*}\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}thefootnote}\PYG{n+nb}{\PYGZcb{}\PYGZob{}}\PYG{k}{\PYGZbs{}arabic}\PYG{n+nb}{\PYGZob{}}footnote\PYG{n+nb}{\PYGZcb{}\PYGZcb{}}
-
-À noite, vovô Kowalsky vê o ímã\PYG{k}{\PYGZbs{}footnotemark}\PYG{n+na}{[1]} cair no pé do pinguim queixoso\PYG{k}{\PYGZbs{}footnotemark}\PYG{n+na}{[2]} e vovó põe açúcar\PYG{k}{\PYGZbs{}footnotemark}\PYG{n+na}{[3]} no chá de tâmaras do jabuti feliz.
-
-\PYG{k}{\PYGZbs{}footnotetext}\PYG{n+na}{[1]}\PYG{n+nb}{\PYGZob{}}Esta é uma nota de rodapé.\PYG{n+nb}{\PYGZcb{}}
-\PYG{k}{\PYGZbs{}footnotetext}\PYG{n+na}{[2]}\PYG{n+nb}{\PYGZob{}}Esta é uma outra nota de rodapé.\PYG{n+nb}{\PYGZcb{}}
-\PYG{k}{\PYGZbs{}footnotetext}\PYG{n+na}{[3]}\PYG{n+nb}{\PYGZob{}}Esta é mais uma outra nota de rodapé.\PYG{n+nb}{\PYGZcb{}}
-\end{Verbatim}

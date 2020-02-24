@@ -1,8 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}itemize\PYG{n+nb}{\PYGZcb{}}
-    \PYG{k}{\PYGZbs{}item}\PYG{n+na}{[\PYGZbs{}\PYGZsh{}]}    Item 1
-    \PYG{k}{\PYGZbs{}item}\PYG{n+na}{[\PYGZhy{}\PYGZhy{}]}    Item 2
-    \PYG{k}{\PYGZbs{}item}\PYG{n+na}{[@]}     Item 3
-    \PYG{k}{\PYGZbs{}item}\PYG{n+na}{[\PYGZdl{}\PYGZbs{}to\PYGZdl{}]} Item 4
-\PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}itemize\PYG{n+nb}{\PYGZcb{}}
-\end{Verbatim}

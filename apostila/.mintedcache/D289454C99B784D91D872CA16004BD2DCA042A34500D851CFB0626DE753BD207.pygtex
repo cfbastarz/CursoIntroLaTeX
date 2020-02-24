@@ -1,4 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-brew install caskroom/cask/brew\PYGZhy{}cask
-brew cask install mactex
-\end{Verbatim}
