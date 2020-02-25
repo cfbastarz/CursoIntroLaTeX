@@ -1311,7 +1311,7 @@ for i in $(ls *pdf); do echo $i; j=$(echo $i | sed "s,.pdf,,g"); gs -sDEVICE=pdf
 \end{meucomando}
 
 \begin{marker}
-  Para mais exemplos sobre a incorporação e conversão entre formatos de arquivos de imagens, tenha como referência a página \url{https://en.wikibooks.org/wiki/LaTeX/Importing_Graphics}.
+Para mais exemplos sobre a incorporação e conversão entre formatos de arquivos de imagens, tenha como referência a página \url{https://en.wikibooks.org/wiki/LaTeX/Importing_Graphics}.
 \end{marker}
 
 \subsubsection*{Construindo figuras}
@@ -1319,7 +1319,7 @@ for i in $(ls *pdf); do echo $i; j=$(echo $i | sed "s,.pdf,,g"); gs -sDEVICE=pdf
 
 %FALTA: INSERIR CODIGOS
 
-Figuras no \LaTeX{} podem ser desenhadas utilizando pacotes específicos. As figuras podem ser incorporadas a partir de arquivos {\tt .tex} separados ou desenhadas em ambientes apropriados. O pacote TikZ é um pacote do \LaTeX{} orientado para a construção de diagramas. Com ele pode-se criar diferentes tipos de gráficos, grafos, diagramas etc, que são alinhados com o formato \textit{Scalable Vector Graphics} (SVG). Com o pacote PS\textit{Tricks}, é possível criar imagens vetoriais complexas utilizando o interpretador do \textit{GhostScript}. A diferença entre estes dois pacotes está mais relacionada com a forma como os seus resultados são interpretados e as suas imagens compiladas dentro do documento \LaTeX{}. %https://tex.stackexchange.com/questions/60778/fundamental-differences-pstricks-tikz-pgf-and-others
+Figuras no \LaTeX{} podem ser desenhadas utilizando pacotes específicos. As figuras podem ser incorporadas a partir de arquivos {\tt .tex} separados ou desenhadas em ambientes apropriados. O pacote TikZ é um pacote do \LaTeX{} orientado para a construção de diagramas. Com ele pode-se criar diferentes tipos de gráficos, grafos, diagramas etc, que são compatíveis com o formato \textit{Scalable Vector Graphics} (SVG). Com o pacote PS\textit{Tricks}, é possível criar imagens vetoriais complexas utilizando o interpretador do \textit{GhostScript}. A diferença entre estes dois pacotes está relacionada com a forma como os seus resultados são interpretados e as suas imagens compiladas dentro de um documento \LaTeX{}. %https://tex.stackexchange.com/questions/60778/fundamental-differences-pstricks-tikz-pgf-and-others
 
 %\subsubsection*{Figura TikZ}
 %
@@ -1448,7 +1448,7 @@ A utilização do programa \LaTeX\textit{Draw} é bastante simples. Na Figura \r
 \FONTE{Produção do autor.}
 \end{figure}
 
-Na Figura \ref{fig:interld}, observe que há duas abas: \textit{Drawing} e ``PST''. Na aba \textit{Drawing}, é onde são feitos os desenhos. Utilizam-se as ferramentas de desenho disponíveis na barra de ferramentas, onde podem ser utilizadas as ferramentas de inserções de figuras geométricas e texto, incluindo equações (modo matemático do \LaTeX{}).
+Na Figura \ref{fig:interld}, observe que há duas abas: \textit{Drawing} e ``PST''. Na aba \textit{Drawing}, é onde são feitos os desenhos. Utilizam-se as ferramentas de desenho disponíveis na barra de ferramentas, onde podem ser utilizadas as ferramentas de inserção de figuras geométricas e texto, incluindo equações (modo matemático do \LaTeX{}).
 
 \begin{figure}[H]
 \caption{Código PS\textit{Tricks} gerado pelo do programa \LaTeX\textit{Draw}}
@@ -1483,7 +1483,7 @@ Outro programa que também pode ser utilizado para a construção de figuras e d
 \subsection{Matemática e equações}
 \label{sec:mat_eqs}
 
-Equações podem ser digitadas diretamente em parágrafos (em linha ou \textit{inline}) utilizando uma dupla de {\tt \$\$}'s (cifrões), {\tt []}'s (colchetes) ou \mintinline{latex}{()}'s (parênteses) como delimitadores. Por exemplo, equação $ax^2 + bx + c = 0$ pode ser digitada como \mintinline{latex}{$ax^2 + bx + c = 0$} no meio de uma frase ou parágrafo. Veja no Exempo \ref{exe_eq0} formas diferentes de digitar equações em linha.
+O modo matemático do \LaTeX{} representa uma forma bastante conveniente de se inserir equações e símbolos matemáticos em um documento. Equações podem ser digitadas diretamente em parágrafos (em linha ou \textit{inline}) utilizando uma dupla de {\tt \$\$}'s (cifrões), {\tt []}'s (colchetes) ou \mintinline{latex}{()}'s (parênteses) como delimitadores. Por exemplo, equação $ax^2 + bx + c = 0$ pode ser digitada como \mintinline{latex}{$ax^2 + bx + c = 0$} no meio de uma frase ou parágrafo. Veja no Exempo \ref{exe_eq0} formas diferentes de digitar equações em linha.
 
 \begin{texexptitled}[breakable,center lower,enhanced,middle=2mm]{Inserindo equações em linha (\textit{inline})}{exe_eq0}
 Uma equação do segundo grau tem a forma geral, $ax^2 + bx + c =0$. Suas raízes são calculadas por, $x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$.
@@ -1493,13 +1493,13 @@ Uma equação do segundo grau tem a forma geral, \(ax^2 + bx + c =0\). Suas raí
 Uma equação do segundo grau tem a forma geral, \[ax^2 + bx + c =0\]. Suas raízes são calculadas por, \[x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}\].
 \end{texexptitled}
 
-No Exemplo \ref{exe_eq0}, observe que os delimitadores dados por colchetes ou parênteses precisar ser ``escapados'', i.e., é necessário adicionar uma \verb|\| (barra invertida) antes deles (e.g., \verb|\[| e \verb|\]| ou \verb|\(| e \verb|\)|). Além disso, quando são utilizados os colchetes, as equações em linha são escritas em uma linha própria e centralizada com o texto. O resultado obtido com a digitação de equações em linha utilizando os delimitadores indicados, apresenta as equações dentro da definição de altura da linha do texto. Para fazer com que esta limitação seja contornada e dar mais espaço ao ambiente de equações em linha, utiliza um par de delimitadores duplos \verb|$$|'s (dólar duplo). Veja o Exemplo \ref{exe_eq00} a seguir:
+No Exemplo \ref{exe_eq0}, observe que os delimitadores dados por colchetes ou parênteses precisam ser ``escapados'', i.e., é necessário adicionar uma \verb|\| (barra invertida) antes deles (e.g., \verb|\[| e \verb|\]| ou \verb|\(| e \verb|\)|). Além disso, quando são utilizados os colchetes, as equações em linha são escritas em uma linha própria e centralizada com o texto. O resultado obtido com a digitação de equações em linha utilizando os delimitadores indicados, apresenta as equações dentro da definição de altura da linha do texto. Para fazer com que esta limitação seja contornada e dar mais espaço ao ambiente de equações em linha, utiliza-se um par de delimitadores duplos \verb|$$|'s (dólar duplo). Veja o Exemplo \ref{exe_eq00} a seguir:
 
 \begin{texexptitled}[breakable,center lower,enhanced,middle=2mm]{Inserindo equações em linha (\textit{inline)} com espaço vertical extra}{exe_eq00}
 Uma equação do segundo grau tem a forma geral, $$ax^2 + bx + c =0$$. Suas raízes são calculadas por, $$x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$.
 \end{texexptitled}
 
-No \LaTeX{} é possível inserir praticamente todos os símbolos relacionados às ciências. No Anexo \ref{anexoB} há uma lista destes símbolos, os quais poderão ser utilizados para a realizações dos exercícios da Seção \ref{sec:exercicios}.
+No \LaTeX{} é possível inserir todos os símbolos relacionados às ciências. No Anexo \ref{anexoB} há uma lista destes símbolos, os quais podem ser utilizados para a realização dos exercícios da Seção \ref{sec:exercicios}.
 
 Para digitar equações em blocos, há ambientes próprios para casos variados, os quais são mostrados a seguir.
 
@@ -1522,7 +1522,7 @@ x = \frac{-b \pm \sqrt{b^{2} - 4ac}}{2a}
 
 No Exemplo \ref{exe_eq1}, o ambiente {\tt equation*} evita que as equações sejam numeradas. Além disso, as equações são numeradas de acordo com a numeração da seção em que elas estiverem inseridas. %Neste caso, a Equação \ref{eq1} pertence à Seção \ref{sec:mat_eqs}.
 
-Equações podem ser alinhadas pelo sinal de ``='' (ou qualquer outro sinal) a partir do ambiente {\tt split}. Veja no Exemplo \ref{exe_eq2} como aplicar o ambiente {\tt split}: 
+Equações podem ser alinhadas pelo sinal de ``='' (ou qualquer outro sinal) dentro do ambiente {\tt split}. Veja no Exemplo \ref{exe_eq2} como aplicar o ambiente {\tt split}: 
 
 \begin{texexptitled}[breakable,center lower,enhanced,middle=2mm]{Ambientes {\tt equation} e {\tt split}}{exe_eq2}
 \begin{equation*}
@@ -1540,9 +1540,9 @@ f(x) & = x^{-\frac{1}{2}}   \\
 \end{equation}
 \end{texexptitled}
 
-No exemplo anterior, além do modo matemático puro, foram inseridos também modos de texto com o marcador {\tt text}. Este marcado serve para digitar texto dentro do ambiente {\tt equation} (neste caso foi digitado uma vírgula acrescida de um espaço em branco, i.e., \mintinline{latex}{\text{, }}).
+No exemplo anterior, além do modo matemático puro, foram inseridos também modos de texto com o marcador {\tt text}. Este marcador serve para digitar texto dentro do ambiente {\tt equation} (neste caso foi digitada uma vírgula acrescida de um espaço em branco, i.e., \mintinline{latex}{\text{, }}).
 
-No Exemplo \ref{exe_eq3}, o ambiente {\tt multiline} é utilizado para inserir equações muito longas. Neste ambiente, pode-se escolher em que parte a equação deverá ser quebrada utilizando-se um par de \verb|\\|'s (barras invertidas):
+No Exemplo \ref{exe_eq3}, o ambiente {\tt multiline} é utilizado para inserir equações muito longas. Neste ambiente, pode-se escolher em que parte a equação deverá ser truncada utilizando-se um par de \verb|\\|'s (barras invertidas):
 
 %P(x) = a_{n}x^{n} + a_{n-1}x^{n-1} + a_{n-2}x^{n-2} + a_{n-3}x^{n-3} 
 %+ \cdots \\ + a_{3}x^{3} + a_{2}x^{2} + a_{1}x^{1} + a_{0}x^{0} 
@@ -1584,11 +1584,8 @@ e & = \lim_{n \to \infty}{\Bigg(1 + \frac{1}{n}\Bigg)^{n}}   \\
 y & = \sin 2\pi \Bigg(\frac{1}{2\pi}\sqrt{\frac{k}{m}}\Bigg)
 \end{align}
 \end{texexptitled}
-%E & = mc^2            & e^{i\pi} + 1 & = 0 \\
-%F & = G\frac{mM}{r^2} & e & = \lim_{n \to \infty}{\Bigg(1 + \frac{1}{n}\Bigg)^{n}}   \\
-%y & = \sin 2\pi \Bigg(\frac{1}{2\pi}\sqrt{\frac{k}{m}}\Bigg)t & \sum_{n=1}^{\infty} 2^{-n} & = 1
 
-No Exemplo \ref{exe_eq4}, observe também que foi utilizado o marcador {\tt Bigg} antes dos parênteses. Este marcados, no modo matemático, permite que parênteses, colchetes e chaves sejam ampliados de forma que se ajustem à altura das equações que estão sendo digitadas. Outros marcadores podem ser utilizados para ampliar estes sinais matemáticos na escala correta. Pode-se utilizar {\tt big} para produzir $x=\big(\frac{1}{25}\big)^{\frac{1}{2}}$, ou {\tt bigg} para produzir $x=\bigg(\frac{1}{25}\bigg)^{\frac{1}{2}}$, ou ainda {\tt Big} para produzir $x=\Big(\frac{1}{25}\Big)^{\frac{1}{2}}$ e {\tt Bigg} para se obter $x=\Bigg(\frac{1}{25}\Bigg)^{\frac{1}{2}}$.
+No Exemplo \ref{exe_eq4}, observe também que foi utilizado o marcador {\tt Bigg} antes dos parênteses. Este marcador, no modo matemático, permite que parênteses, colchetes e chaves sejam ampliados de forma que se ajustem à altura dos símbolos das equações que estão sendo digitadas. Outros marcadores podem ser utilizados para ampliar estes sinais matemáticos na escala correta. Pode-se utilizar {\tt big} para produzir $x=\big(\frac{1}{25}\big)^{\frac{1}{2}}$, ou {\tt bigg} para produzir $x=\bigg(\frac{1}{25}\bigg)^{\frac{1}{2}}$, ou ainda {\tt Big} para produzir $x=\Big(\frac{1}{25}\Big)^{\frac{1}{2}}$ e {\tt Bigg} para se obter $x=\Bigg(\frac{1}{25}\Bigg)^{\frac{1}{2}}$.
 
 \begin{marker}
 Veja mais opções de marcadores especiais para o modo matemáticos em \url{https://www.overleaf.com/learn/latex/Brackets_and_Parentheses}.
@@ -1615,7 +1612,7 @@ Com o ambiente {\tt gather}, as equações são alinhadas em relação ao parág
 \subsection{Tabelas}
 \label{sec:tabs}
 
-Tabelas são os elementos do texto que resumem e organizam informações. No \LaTeX{}, tabelas são escritas em ambientes específicos, que podem, dependendo da necessidade, ajustar automaticamente o seu conteúdo aos limites das dimensões do texto. Antes de apresentar os ambientes mais comuns de tabelas, salienta-se que a construção de tabelas pode se tornar uma tarefa um pouco mais complicada do que parece, principalmente se a tabela em questão possuir muitas células mescladas. Portanto, prefira construir tabelas de forma simples e clara.
+Tabelas são os elementos do texto que resumem e organizam informações. No \LaTeX{}, tabelas são escritas em ambientes específicos, que podem, dependendo da necessidade, ajustar automaticamente o seu conteúdo aos limites das dimensões do texto. Antes de apresentar os ambientes mais comuns de tabelas, salienta-se que a construção de tabelas pode se tornar uma tarefa um pouco mais complicada do que parece, principalmente se a tabela em questão possuir muitas células mescladas. Portanto, recomenda-se a construção tabelas simples e clara.
 
 O ambiente {\tt tabular} é um ambiente simples para a construção de tabelas. A sua utilização é apresentada no Exemplo \ref{exe_tab1}.
 
@@ -1633,7 +1630,7 @@ L5C1 & L5C2 \\
 \end{tabular}
 \end{texexptitled}
 
-Na tabela do Exemplo \ref{exe_tab1}, tem-se apenas duas colunas e algumas linhas. Para separar o conteúdo, utilizou-se apenas linhas horizontais (produzidas pelos comandos {\tt hline}) para separar o cabeçalho, i.e., os nomes das colunas, do conteúdo. Observe que a tabela produzida possui as linhas muito próximas, e este espaçemento pode ser melhorarado com a utilização do comando \mintinline{latex}{\\[-0.5em]}. Lembre-se que a instrução \mintinline{latex}{\\} pula uma linha; o argumento desta instrução, i.e., \mintinline{latex}{[-0.5em]} indica que o espaço de uma linha deve ser recuado em {\tt -0.5em}. Na Tabela \ref{tab:medidas} está indicado que a unidade {\tt em} refere-se à altura do caractere ``M'' da fonte em uso, isso garante que o espaçamento será sempre consistente independente do estilo da fonte em uso. Veja o Exemplo \ref{exe_tab2} a seguir:
+Na tabela do Exemplo \ref{exe_tab1}, tem-se apenas duas colunas e algumas linhas. Para separar o conteúdo, utilizou-se apenas linhas horizontais (produzidas pelos comandos {\tt hline}) para separar o cabeçalho, i.e., os nomes das colunas, do conteúdo. Observe que a tabela produzida possui as linhas muito próximas, e este espaçamento pode ser melhorarado com a utilização do comando \mintinline{latex}{\\[-0.5em]}. Lembre-se que a instrução \mintinline{latex}{\\} pula uma linha; o argumento desta instrução, i.e., \mintinline{latex}{[-0.5em]} indica que o espaço de uma linha deve ser recuado em {\tt -0.5em}. Na Tabela \ref{tab:medidas} está indicado que a unidade {\tt em} refere-se à altura do caractere ``M'' da fonte em uso, isso garante que o espaçamento será sempre consistente independente do estilo da fonte em uso. Veja o Exemplo \ref{exe_tab2} a seguir:
 
 \begin{texexptitled}[breakable,center lower,enhanced,middle=2mm]{Exemplo de uma tabela simples com o ambiente {\tt tabular} e linhas mais altas}{exe_tab2}
 \begin{tabular}{l r}
@@ -1657,7 +1654,7 @@ L5C1 & L5C2 \\
 \end{tabular}
 \end{texexptitled}
 
-No Exemplo \ref{exe_tab2}, observe a instrução \mintinline{latex}{{l r}}. Como a tabela do exemplo possui apenas duas colunas, indica-se com um par de colchetes o seu alinhamento, logo após o início do ambiente {\tt tabular}. Neste caso, o conteúdo da coluna da esquerda encontra-se alinhado à esquerda, enquanto que o conteúdo da coluna da direita, encontra-se alinha à direita (por isso {\tt l r}). Isto deve ser feito para a quantidade de colunas que a tabela possuir. Se uma tabela no ambiente {\tt tabular}, possuir 5 colunas, deve-se especificar o alinhamento desejado para as colunas, e.g., \mintinline{latex}{{l r l l c}}. Portanto, para alinhar o conteúdo à esquerda, utilize {\tt l} (do inglês \textit{left}), para alinhar à direita utilize {\tt r} (do inglês \textit{right}) e para centralizar o conteúdo (tal como no Exemplo \ref{exe_tab1}), utilize {\tt c} (do inglês \textit{center}).
+No Exemplo \ref{exe_tab2}, observe a instrução \mintinline{latex}{{l r}}. Como a tabela do exemplo possui apenas duas colunas, indica-se com um par de colchetes o seu alinhamento, logo após o início do ambiente {\tt tabular}. Neste caso, o conteúdo da coluna da esquerda encontra-se alinhado à esquerda, enquanto que o conteúdo da coluna da direita, encontra-se alinhado à direita (por isso {\tt l r}). Isto deve ser feito para a quantidade de colunas que a tabela possuir. Se uma tabela no ambiente {\tt tabular}, possuir 5 colunas, deve-se especificar o alinhamento desejado para as colunas, e.g., \mintinline{latex}{{l r l l c}}. Portanto, para alinhar o conteúdo à esquerda, utilize {\tt l} (do inglês \textit{left}), para alinhar à direita utilize {\tt r} (do inglês \textit{right}) e para centralizar o conteúdo (tal como no Exemplo \ref{exe_tab1}), utilize {\tt c} (do inglês \textit{center}).
 
 Além de alterar o espaçamento vertical dentro de uma tabela, pode-se também alterar a largura das colunas. Para isso, pode-se utilizar o comando \mintinline{latex}{p{u.}}, onde {\tt u.} corresponde a alguma medida. Veja o Exemplo \ref{exe_tab3} a seguir:
 
@@ -1707,7 +1704,7 @@ Assim como as tabelas produzidas em editores WYSIWYG, no \LaTeX{} também é pos
 \end{tabular}
 \end{texexptitled}
 
-Na tabela do Exemplo \ref{exe_tab4}, tem-se uma tabela mais complexa, em que colunas estão mescladas de formas diferentes. Além disso, diferentemente dos exemplos anteriores, a tabela apresentada possui limitadores verticais que são desenhados utilizando-se o símbolo {\tt |} (\textit{pipe})\footnote{Pode-se também utilizar \textit{pipes} duplos.}, como argumento do comando que inicia o ambiente \mintinline{latex}{tabular}: {\tt |p{3cm}|p{3cm}|p{3cm}|p{3cm}|}. Observe também que a tabela desenhada possui um total de quatro colunas, cujas larguras podem ser especificadas (no exemplo, cada uma com {\tt 3cm}). Outro detalhe a ser observado neste exemplo, é a forma como o conteúdo das células individuais é alinhado dentro das células. Neste caso, o alinhamento é dado por um argumento do comando \mintinline{latex}{multicolumn}: \mintinline{latex}{{4}{|c|}}, onde 4 indica a quantidade de células a serem mescladas e \mintinline{latex}{|c|} indica que o conteúdo das células a serem mescladas será centralizado e delimitado por \textit{pipes} nos limites da célula.
+Na tabela do Exemplo \ref{exe_tab4}, tem-se uma tabela mais complexa, em que colunas estão mescladas de formas diferentes. Além disso, diferentemente dos exemplos anteriores, a tabela apresentada possui limitadores verticais que são desenhados utilizando-se o símbolo {\tt |} (\textit{pipe})\footnote{Pode-se também utilizar \textit{pipes} duplos.}, como argumento do comando que inicia o ambiente \mintinline{latex}{tabular}: {\tt |p{3cm}|p{3cm}|p{3cm}|p{3cm}|}. Observe também que a tabela desenhada possui o total de quatro colunas, cujas larguras podem ser especificadas (no exemplo, cada uma com {\tt 3cm}). Outro detalhe a ser observado neste exemplo, é a forma como o conteúdo é alinhado dentro das células. Neste caso, o alinhamento é dado por um argumento do comando \mintinline{latex}{multicolumn}: \mintinline{latex}{{4}{|c|}}, onde 4 indica a quantidade de células a serem mescladas e \mintinline{latex}{|c|} indica que o conteúdo das células a serem mescladas será centralizado e delimitado por \textit{pipes} nos limites laterais da célula.
 
 \subsubsection*{Tabelas ajustáveis}
 \label{sec:amb_tabs}
@@ -1729,7 +1726,7 @@ L2C1 L2C1 L2C1 L2C1 & L2C2 L2C2 L2C2 L2C2 L2C2 L2C2 & L2C3 L2C3 \\
 \end{tabular}
 \end{texexptitled}
 
-No Exemplo \ref{exe_tab5} a quantidade de informação nas células não é suficiente para fazer com que a largura da tabela extrapole os limites da página, mas isto é perfeitamente possível dentro do ambiente {\tt tabular}. Para evitar esta situação, o ambiente {\tt tabularx} é mais apropriado, visto que com ele pode-se definir uma largura fixa (por meio de um valor ou de uma macro) e o conteúdo das células é ajustado dentro destes limites. No Exemplo \ref{exe_tab7} mostra-se o que se obtém com a utilização do ambiente {\tt tabularx}.
+No Exemplo \ref{exe_tab5} a quantidade de informação nas células não é suficiente para fazer com que a largura da tabela extrapole os limites da página, mas isto é perfeitamente possível dentro do ambiente {\tt tabular}. Para evitar esta situação, o ambiente {\tt tabularx} é mais apropriado, visto que com ele pode-se definir uma largura fixa (por meio de um valor ou de uma \textit{macro}) e o conteúdo das células é ajustado dentro destes limites. No Exemplo \ref{exe_tab7} mostra-se o que se obtém com a utilização do ambiente {\tt tabularx}.
 
 %Já no Exemplo \ref{exe_tab6}, a tabela gerada com o ambiente {\tt tabular*} possui largura fixa, e o seu limite é a largura do parágrafo no qual está inserida (por isso o marcador {\tt textwidth}). Observe que o conteúdo da tabela se ajusta à largura fixa. Além disso, no exemplo está indicado o marcador \mintinline{latex}{@{\extracolsep{\fill}}}, o qual permite que o próprio \LaTeX{} decida como o conteúdo das células serão acomodados dentro da largura fixada. Uma aplicação mais clara sobre o funcionamento de uma tabela com largura ajustável (em inglês o termo seria \textit{rubber length}), é mostrado no Exemplo \ref{exe_tab6} a seguir.
 
