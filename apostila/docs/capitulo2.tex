@@ -1713,7 +1713,7 @@ Dependendo da necessidade, ambientes especiais de tabelas podem ser necessários
 
 % REF: https://tex.stackexchange.com/questions/341205/what-is-the-difference-between-tabular-tabular-and-tabularx-environments/341212
 
-Tabelas ajustáveis podem ser necessárias quando se deseja que a largura das colunas sejam automaticamente ajustadas. No caso do ambiente {\tt tabular}, o \LaTeX{} tenta ajustar a largura da tabela de acordo com a quantidade de informações contida nas células. Se as células contiverem muita informação, a tabela poderá ficar com uma largura maior do que a largura do texto ou mesmo da página. Veja no Exemplo \ref{exe_tab5} um exemplo deste efeito.
+Tabelas ajustáveis podem ser necessárias quando se deseja que a largura das colunas sejam automaticamente ajustadas. No caso do ambiente {\tt tabular}, o \LaTeX{} tenta ajustar a largura da tabela de acordo com a quantidade de informações contida nas células. Se as células contiverem muita informação, a tabela poderá ficar com uma largura maior do que a largura do texto ou mesmo da página. Veja no Exemplo \ref{exe_tab5} a utilização básica do ambiente {\tt tabular}.
 
 %Com relação ao ambiente {\tt tabular}, tem-se duas variações do mesmo, os ambientes {\tt tabular*} e o {\tt tabularx}. A diferença entre eles está na forma como a largura da tabela é ajustada com relação ao texto. Observe o Exemplo \ref{exe_tab5} a seguir que a tabela gerada com o ambiente {\tt tabular} não possui largura fixa e ela se ajusta à quantidade de conteúdo, tendo como limite a largura do parágrafo onde estiver inserida.
 
@@ -1786,12 +1786,6 @@ L4C1 & L4C2 & L4C3 \\
 \bottomrule
 \end{tabular}
 \end{texexptitled}
-
-%\begin{marker}
-%  Para utilizar o ambiente {\tt booktabs}, é necessário carregar o pacote {\tt booktabs}. Para isso, digite a linha \mintinline{latex}{\usepackage{booktabs}} no preâmbulo do documento.
-%\end{marker}
-
-% Para inserir uma legenda para a figura, é preciso utilizar o ambiente table.
 
 % Dicas úteis para estilizar tabelas: https://inf.ethz.ch/personal/markusp/teaching/guides/guide-tables.pdf
 
@@ -1881,13 +1875,13 @@ Compare o Exemplo \ref{ltable1} com o Exemplo \ref{ltable2} a seguir, em que a m
 Seguindo o código apresentado no Exemplo \ref{ltable2}, pode-se confeccionar as Tabelas \ref{tab:pacotes} e \ref{tab:pacotes_uteis} do Apêndice \ref{apendiceA}.
 
 \begin{marker}
-Editores \textit{online} podem ser utilizados para construir tabelas simples no \LaTeX{}. Observe que tabelas muito complexas são difíceis de manipular e atualizar. Veja os \textit{sites} \url{https://www.tablesgenerator.com/} e \url{https://www.latex-tables.com} para mais informações.
+Editores \textit{online} podem ser utilizados para construir tabelas simples no \LaTeX{}. Observe que tabelas muito complexas podem ser difíceis de manipular e atualizar. Veja os \textit{sites} \url{https://www.tablesgenerator.com/} e \url{https://www.latex-tables.com} para mais informações.
 \end{marker}
 
 \subsection{Ferramentas de revisão}
 \label{sec:ferrev}
 
-A colaboração entre várias pessoas em um grupo na escrita de um documento, pode mostrar-se como um verdadeiro desafio. Mesmo utilizando editores do tipo WYSIWYG, como o \textit{Microsoft Word}, unificar as diferentes versões de um documento por ser uma tarefa confusa e que certamente irá consumir muito tempo. Para isto, pode-se recorrer a ferramentas mais elaboradas como o \textit{change tracking}, que permite rastrear as modificações feitas em um documento. Mas para a escrita com a linguagem \LaTeX{}, esta tarefa não é exatamente igual. Editores \textit{online}, como o \href{https://www.overleaf.com/}{Overleaf}, são muito úteis e eficientes quanto à revisão, histório do documento e escrita colaborativa. Mas para editores locais, é possível utilizar alguns pacotes que irão habilitar a utilização da linguagem para a revisão, de forma semelhante ao que ocorre com editores WYSIWYG.
+A colaboração entre várias pessoas na escrita de um documento, pode mostrar-se como um verdadeiro desafio. Mesmo utilizando editores do tipo WYSIWYG, como o \textit{Microsoft Word}, unificar as diferentes versões de um documento por ser uma tarefa confusa e que certamente irá consumir muito tempo. Para isto, pode-se recorrer a ferramentas de revisão mais elaboradas como o \textit{track changes}, que permite rastrear as modificações feitas em um documento. Mas para a escrita com a linguagem \LaTeX{}, esta tarefa não é exatamente igual. Editores \textit{online}, como o \href{https://www.overleaf.com/}{Overleaf}, são muito úteis e eficientes quanto à revisão, histório do documento e escrita colaborativa. Mas para editores locais, é possível utilizar alguns pacotes que irão habilitar a utilização da linguagem para a revisão, de forma semelhante ao que ocorre com editores WYSIWYG.
 
 O pacote {\tt todonotes}, pode ser utilizado nesta tarefa. Com ele é possível inserir notas coloridas no documento de forma que se possa chamar a atenção para alguma parte do texto. Veja o Exemplo \ref{todo1} a seguir com a sua utilização.
 
@@ -1940,13 +1934,20 @@ O pacote {\tt todonotes}, pode ser utilizado nesta tarefa. Com ele é possível 
 \usepackage[utf8]{inputenc}
 \usepackage{xargs}
 \usepackage{xcolor-material}
+\usepackage{lipsum}
 
 \usepackage{todonotes}
 
-\newcommandx{\minhanota}[2][1=]{
+\newcommandx{\minhanotaA}[2][1=]{
   \todo[linecolor=MaterialAmber,
   backgroundcolor=MaterialAmber!25,
   bordercolor=MaterialAmber,#1]{#2}
+}
+
+\newcommandx{\minhanotaV}[2][1=]{
+  \todo[linecolor=MaterialGreen,
+  backgroundcolor=MaterialGreen!25,
+  bordercolor=MaterialGreen,#1]{#2}
 }
 
 \title{Meu documento}
@@ -1957,12 +1958,13 @@ O pacote {\tt todonotes}, pode ser utilizado nesta tarefa. Com ele é possível 
 
 \maketitle
 
-Este é um exemplo de texto com notas coloridas.\minhanota{Esta é uma nota colorida.}
+\lipsum[1]\minhanotaA{Esta é uma nota colorida.}
+\lipsum[2]\minhanotaV{Esta é uma outra nota colorida.}
 
 \end{document}
 \end{texexptitled}
 
-No Exemplo \ref{todo1}, observe que, além dos pacotes {\tt inputenc} e {\tt xcolor-material} (os quais fornecem suporte à acentuação e a paleta de cores \textit{Material Design} do Google, respectivamente), foi necessário também carregar os pacotes {\tt xargs} e {\tt todonotes}. O pacote {\tt xargs} permite a definição de comandos utilizando-se múltiplos argumentos. O pacote {\tt todonotes} é o que fornece a interface necessária para a inserção das notas personalizadas. Além disso, observe também que foi definido um comando (uma \textit{macro}) de nome {\tt minhanota}, que recebe um argumento que, de fato, é a nota que será inserida no texto. Na definição do comando {\tt minha nota}, foram ajustadas as seguintes opções: {\tt linecolor}, {\tt backgroundcolor} e {\tt bordercolor}. Estas opções fazem referência ao aspecto que as notas inseridas terão. Neste caso, escolheu-se a cor \textit{MaterialAmber} para a nota (uma variação da cor Ambar), fornecida pelo pacote {\tt xcolor-material}. Observe também que a cor atribuída à opção {\tt backgroundcolor} está definida como \mintinline{latex}{backgroundcolor=MaterialAmber!25}, i.e., da saturação total (100\%) da cor natural, removeu-se 25\%. Logo, o modificador {\tt !25}, indica a transparência de 25\% na aplicação da cor escolhida (mais opções de cores e paletas de cores podem ser encontradas na Seção \ref{sec:pal_cores}).
+No Exemplo \ref{todo1}, observe que, além dos pacotes {\tt inputenc} e {\tt xcolor-material} (os quais fornecem suporte à acentuação e a paleta de cores \textit{Material Design} do Google, respectivamente), foi necessário também carregar os pacotes {\tt xargs} e {\tt todonotes}. O pacote {\tt xargs} permite a definição de comandos utilizando-se múltiplos argumentos. O pacote {\tt todonotes} é o que fornece a interface necessária para a inserção das notas personalizadas. Além disso, observe também que forma definidos dois comandos (duas \textit{macro}) de nomes {\tt minhanotaA} e {\tt minhanotaB}, os quais recebem um argumento que, de fato, é a nota que será inserida no texto. Na definição do comando {\tt minhanota}, foram ajustadas as seguintes opções: {\tt linecolor}, {\tt backgroundcolor} e {\tt bordercolor}. Estas opções fazem referência ao aspecto que as notas inseridas terão. Neste caso, escolheu-se a cor \textit{MaterialAmber} para a nota (uma variação da cor Ambar), fornecida pelo pacote {\tt xcolor-material}. Observe também que a cor atribuída à opção {\tt backgroundcolor} está definida como \mintinline{latex}{backgroundcolor=MaterialAmber!25}, i.e., da saturação total (100\%) da cor natural, removeu-se 25\%. Logo, o modificador {\tt !25}, indica a transparência de 25\% na aplicação da cor escolhida (mais opções de cores e paletas de cores podem ser encontradas na Seção \ref{sec:pal_cores}).
 
 O pacote {\tt todonotes} permite a criação alguns tipos diferentes de notas. Pode-se, por exemplo, inserir notas que ocupam toda a largura do texto ou mesmo notas que não aparecem no texto. Pode-se também inserir um sumário com as notas, o que pode ser especialmente útil quando muitas notas de diferentes tipos são adicionadas. Veja o Exemplo \ref{todo2} a seguir com várias notas diferentes e um sumário de notas (este exemplo é baseado no exemplo encontrado \url{https://tex.stackexchange.com/questions/9796/how-to-add-todo-notes}).
 
@@ -1971,6 +1973,7 @@ O pacote {\tt todonotes} permite a criação alguns tipos diferentes de notas. P
 
 \usepackage[utf8]{inputenc}
 \usepackage{xargs}
+\usepackage{lipsum}
 
 \usepackage{xcolor-material}
 \usepackage[colorinlistoftodos,
@@ -1978,13 +1981,14 @@ O pacote {\tt todonotes} permite a criação alguns tipos diferentes de notas. P
             textsize=tiny]{todonotes}
             
 \newcommandx{\comentario}[2][1=]{
+  \todo[linecolor=MaterialAmber,
+  backgroundcolor=MaterialAmber!25,
+  bordercolor=MaterialAmber,#1]{#2}
+}
+\newcommandx{\remover}[2][1=]{
   \todo[linecolor=MaterialGreen,
   backgroundcolor=MaterialGreen!25,
   bordercolor=MaterialGreen,#1]{#2}
-}
-
-\newcommandx{\remover}[2][1=]{
-  \todo[disable,#1]{#2}
 }
 
 \title{Meu documento}
@@ -1992,22 +1996,21 @@ O pacote {\tt todonotes} permite a criação alguns tipos diferentes de notas. P
 \date{\today}
 
 \begin{document}
-
 \maketitle
-
 \listoftodos[Notas]
-
 \newpage
+\lipsum[1]\comentario[inline]{Este é um comentário em em linha, o qual pode ser útil quando o comentário for muito grande com notas coloridas. Notas podem ser inseridas de formas diferentes. No entando, pode ser um pouco difícil de se acostumar.}
 
-Este é um exemplo de texto\comentario[inline]{Este é um comentário em em linha, o qual pode ser útil quando o comentário for muito grande} com notas coloridas. Notas podem ser inseridas de formas diferentes. No entando, pode ser um pouco difícil de se acostumar.\comentario{Isso é verdade, principalmente quando não se está acostmado com o \LaTeX{}.} Mas esta é uma boa opção, especialmente porque é o \LaTeX{} quem controla a aparição das notas.\remover{Remover esta parte!}
+\lipsum[2]\comentario{Isso é verdade, principalmente quando não se está acostmado com o \LaTeX{}. Mas esta é uma boa opção, especialmente porque é o \LaTeX{} quem controla a aparição das notas.}
 
+\lipsum[3]\remover{Remover esta parte!}
 \end{document}
 \end{texexptitled}
 
 No Exemplo \ref{todo2}, observe que foram passadas opções para o pacote {\tt todonotes}. Estas opções foram fornecidas junto com o comando {\tt usepackage}. A primeira opção, {\tt colorlistoftodos}, permite a criação de uma lista de notas, tal como um sumário; a segunda opção, {\tt textsize=tiny}, ajusta o tamanho do texto dentro da nota para o tamanho {\tt tiny} (veja mais opções de tamanho de fontes na Seção \ref{sec:estilos}). A inserção das notas criadas é simples, bastando digitar o comando definido junto com o texto que será inserido na nota, e.g., \mintinline{latex}{\comentario{Meu comentário.}}. Para inserir uma nota em linha, i.e., uma nota que ocupa toda a largura do texto (especialemnte útil quando o texto da nota ocupar várias linhas), pode-se usar a opção {\tt inline} junto com o comando definido, e.g., \mintinline{latex}{\comentatio[inline]{Meu comentário muito longo escrito em linha.}}. Por fim, uma lista com as notas pode ser inserida com o comando \mintinline{latex}{\listoftodos[Nome da Lista]}. Este comando pode ser inserido em qualquer parte do texto. Conheça mais sobre o pacote {\tt todonotes} no site do CTAN em \url{https://www.ctan.org/pkg/todonotes}.
 
 \begin{marker}
-Veja também o pacote {\tt cooltooltips} no site do CTAN em \url{https://ctan.org/pkg/cooltooltips}. Este fornece uma forma diferente de inserir comentários dentro de um documento \LaTeX{}.
+Veja também o pacote {\tt cooltooltips} no site do CTAN em \url{https://ctan.org/pkg/cooltooltips}. Este pacote fornece uma forma diferente de inserir comentários dentro de um documento \LaTeX{}.
 \end{marker}
 
 \subsection{Outros ambientes}
