@@ -2035,10 +2035,12 @@ Dependendo do tipo de documento escrito e dos elementos textuais utilizados, com
 \lipsum[3]
 \end{texexptitled}
 
+No Exemplo \ref{exe:minipage}, observe que foi inserido um parágrafo dentro do ambiente {\tt minipage} de forma que este parágrafo possuísse apenas 50\% do tamanho da largura total de uma parágrafo da página. 
+
 \subsubsection*{Texto em colunas}
 \label{sec:colunas}
 
-Texto e outros elementos flutuantes do \LaTeX{} podem ser inseridos no corpo do texto em colunas. Para isto, pode-se utilizar o pacote {\tt multicol}, que fornece o ambiente {\tt multicols}. Para iniciar uma seção de texto (e outros elementos) em 2 ou mais colunas, carregue primeiro o pacote {\tt multicol} com o comando \mintinline{latex}{\usepackage{multicol}}. Veja no Exemplo \ref{exe:multicol} um exemplo simples de texto em duas colunas.
+Texto e outros elementos flutuantes do \LaTeX{} podem ser inseridos no corpo do texto em colunas. Para isto, pode-se utilizar o pacote {\tt multicol}, que fornece o ambiente {\tt multicols}. Para iniciar uma seção de texto (e outros elementos) em 2 ou mais colunas, carregue primeiro o pacote {\tt multicol} com o comando \mintinline{latex}{\usepackage{multicol}}. Veja no Exemplo \ref{exe:multicol} a seguir como inserir texto em duas colunas.
 
 \begin{texexptitled}[breakable,enhanced,middle=2mm]{Texto em colunas com o ambiente {\tt multicols}}{exe:multicol}
 \lipsumsentence[1-2]
@@ -2048,20 +2050,20 @@ Texto e outros elementos flutuantes do \LaTeX{} podem ser inseridos no corpo do 
 \lipsumsentence[5-6]
 \end{texexptitled}
 
-No Exemplo \ref{exe:multicol}, observe que o ambiente {\tt multicols} possui um argumento, sendo este o valor que indicará o número de colunas a serem criadas. No ambiente {\tt multicols}, pode-se iniciar uma seção com o texto preenchendo toda a largura da página e então iniciar-se os parágrafos seguintes em colunas. Veja o Exemplo \ref{exe:multicol1} a seguir.
+No Exemplo \ref{exe:multicol}, observe que o ambiente {\tt multicols} possui um argumento, sendo este o valor que indicará o número de colunas a serem criadas. No ambiente {\tt multicols}, pode-se iniciar uma seção com o texto preenchendo toda a largura da página e então inserir os parágrafos seguintes em colunas. Veja o Exemplo \ref{exe:multicol1} a seguir.
 
 \begin{texexptitled}[breakable,enhanced,middle=2mm]{Texto em colunas com o ambiente {\tt multicols} e início de seção diferente}{exe:multicol1}
 \begin{multicols}{3}
 [
     \section*{Lorem ipsum}
-    Nam feugiat lacus vel est. Curabitur consectetue.
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
 ]
     \lipsum[1-2]
 \end{multicols}
 \lipsumsentence[3-4]
 \end{texexptitled}
 
-No ambiente {\tt multicol}, é possível também ajustar o espaçamento entre as colunas, como mostrado no Exemplo \ref{exe:multicol2}. O espaçamento entre as colunas é ajustado com o comando \mintinline{latex}{\setlength{\columnsep}{valor}}, onde valor é a medida a ser utilizada (e.g., {\tt 1cm}).
+No ambiente {\tt multicols}, é possível também ajustar o espaçamento entre as colunas, como mostrado no Exemplo \ref{exe:multicol2}. O espaçamento entre as colunas é ajustado com o comando \mintinline{latex}{\setlength{\columnsep}{valor}}, onde {\tt valor} é a medida a ser utilizada (e.g., {\tt 1cm}).
 
 \begin{texexptitled}[breakable,enhanced,middle=2mm]{Texto em colunas com o ambiente {\tt multicols} e espaçamento diferente}{exe:multicol2}
 \lipsumsentence[1-2]
@@ -2072,19 +2074,19 @@ No ambiente {\tt multicol}, é possível também ajustar o espaçamento entre as
 \lipsumsentence[5-6]
 \end{texexptitled}
 
-Nos Exemplos \ref{exe:multicol}, \ref{exe:multicol1} e \ref{exe:multicol2}, observe que o \LaTeX{} distribui o texto entre as colunas, de forma que elas sejam praticamente todas preenchidas. Entretanto, pode-se evitar isto utilizando o ambiente {\tt multicols*}. Veja o Exemplo \ref{exe:multicol3} e compare-o com o Exemplo \ref{exe:multicol2}.
-
-\begin{texexptitled}[breakable,enhanced,middle=2mm]{Texto em colunas com o ambiente {\tt multicols*}}{exe:multicol3}
-\lipsumsentence[1-2]
-\setlength{\columnsep}{2cm}
-\begin{multicols*}{3}
-    \lipsum[3]
-\end{multicols*}
-\lipsumsentence[5-6]
-\end{texexptitled}
+%Nos Exemplos \ref{exe:multicol}, \ref{exe:multicol1} e \ref{exe:multicol2}, observe que o \LaTeX{} distribui o texto entre as colunas, de forma que elas sejam praticamente todas preenchidas. Entretanto, pode-se evitar isto utilizando o ambiente {\tt multicols*}. Veja o Exemplo \ref{exe:multicol3} e seguir  compare-o com o Exemplo \ref{exe:multicol2}.
+%
+%\begin{texexptitled}[breakable,enhanced,middle=2mm]{Texto em colunas com o ambiente {\tt multicols*}}{exe:multicol3}
+%\lipsumsentence[1-2]
+%\setlength{\columnsep}{2cm}
+%\begin{multicols*}{3}
+%    \lipsum[3]
+%\end{multicols*}
+%\lipsumsentence[5-6]
+%\end{texexptitled}
 
 \begin{marker}
-  Para mais informações sobre as configurações do ambiente {\tt multicols}, tenha como referência a página \url{https://www.overleaf.com/learn/latex/Multiple_columns}.
+Para mais informações sobre as configurações do ambiente {\tt multicols}, tenha como referência a página \url{https://www.overleaf.com/learn/latex/Multiple_columns}.
 \end{marker}
 
 \subsubsection*{Modos retrato e paisagem}
@@ -2094,17 +2096,10 @@ No \LaTeX{} a maioria das classes dos documentos é definida no modo retrato (i.
 
 Para determinar páginas individuais no modo paisagem, é necessário carregar o pacote {\tt lscape} no preâmbulo do documento. Para isto, basta inserir o comando \mintinline{latex}{\usepackage{lscape}} nesta seção. Com o pacote carregado, para iniciar uma página no modo paisagem, basta utilizar o ambiente {\tt landscape}. Veja o Exemplo \ref{exe_paisagem} a seguir:
 
-%\begin{texexptitled}[breakable,center lower,enhanced,middle=2mm]{Página em modo paisagem utilizando o ambiente {\tt landscape}}{exe_paisagem}
-%\lipsum[1]
-%\begin{landscape}
-%\lipsum[2]
-%\end{landscape}
-%\lipsum[3]
-%\end{texexptitled}
-
 \begin{texexptitled}[center lower,enhanced jigsaw,middle=2mm,lower separated=true, listing side comment,righthand width=4cm,compilable listing,run latex,run dvips,run ps2pdf,pdf comment,comment style={raster columns=1}, freeze pdf]{Páginas nos modos retrato e paisagem}{exe_paisagem}
 \documentclass{article}
-%\usepackage[utf8]{inputenc}
+
+\usepackage[utf8]{inputenc}
 
 \usepackage{lipsum}
 \usepackage{lscape}
@@ -2135,19 +2130,9 @@ Para determinar páginas individuais no modo paisagem, é necessário carregar o
 \end{document}
 \end{texexptitled}
 
-%%\begin{texexptitled}[breakable,center lower,enhanced,middle=2mm]{Página em modo paisagem utilizando o ambiente {\tt landscape}}{exe_paisagem}
-%\begin{tcblisting}{colback=red!5!white,colframe=red!75!black,list and comment,
-%righthand width=3cm,lower separated=false,middle=1mm,
-%pdf comment={./docs/figs/lscape.pdf},
-%comment style={raster columns=3,graphics pages={1,2,3},
-%colframe=blue,drop fuzzy shadow}}
-%Um documento simples com páginas no modo retrato e paisagem.
-%\end{tcblisting}
-%%\end{texexptitled}
-
 % REF: https://tex.stackexchange.com/questions/337/how-to-change-certain-pages-into-landscape-portrait-mode
 \begin{marker}
-  Se você estiver utilizando o compilador \textit{Pdf\LaTeX{}}, será necessário utilizar o pacote {\tt pdflscape} ao invés do pacote {\tt lscape}.
+Se você estiver utilizando o compilador \textit{Pdf\LaTeX{}}, será necessário utilizar o pacote {\tt pdflscape} ao invés do pacote {\tt lscape}.
 \end{marker}
 
 \subsubsection*{\textit{Listing}}
@@ -2155,16 +2140,16 @@ Para determinar páginas individuais no modo paisagem, é necessário carregar o
 
 %Fonte: https://pt.overleaf.com/learn/latex/Code_listing
 
-Muitas vezes, dependendo do tipo de documento que se está produzindo, faz-se necessário a inserção de códigos que representam um determinado processo. Um exemplo, é quando se quer mostrar um código escrito em alguma linguagem de programação. O \LaTeX{} possui alguns pacotes que permitem destacar a seção de código inserida, em ambientes específicos. O ambiente {\tt verbatim} é o mais simples de ser utilizado, e poder ser aplicado para destacar algum tipo de texto. Algumas peculiaridades do ambiente, é que ele ``escapa'' os comandos da linguagem. Veja no Exemplo \ref{exe_list1} um exemplo.
+Muitas vezes, dependendo do tipo de documento que se está produzindo, faz-se necessária a inserção de códigos que representam um determinado processo. Um exemplo, é quando se quer mostrar um código escrito em alguma linguagem de programação. O \LaTeX{} possui alguns pacotes que fornecem ambientes específicos para destacar o trecho de código inserido. O ambiente {\tt verbatim} é o mais simples de ser utilizado, e pode ser aplicado para destacar algum tipo de texto. O ambiente {\tt verbatim} possui a propriedade de ``escapa'' os comandos da linguagem \LaTeX{}. Veja no Exemplo \ref{exe_list1} a utilização do ambiente {\tt verbatim}.
 
-\begin{texexptitled}[breakable,center lower,enhanced,middle=2mm]{Exemplo de uso do ambiente {\tt verbatim para destacar texto}}{exe_list1}
+\begin{texexptitled}[breakable,center lower,enhanced,middle=2mm]{Exemplo de uso do ambiente {\tt verbatim} para destacar texto}{exe_list1}
 \begin{verbatim}
 Um texto delimitado pelo ambiente \texttt{verbatim} é renderizado 
 diretamente e os comandos \LaTeX{} são ignorados.
 \end{verbatim}
 \end{texexptitled}
 
-No Exemplo \ref{exe_list2}, utilizou-se o mesmo ambiente do Exemplo \ref{exe_list1}, mas adicionou-se um $\*$ no início do ambiente {\tt verbatim}, de forma que os espaços entre as palavras sejam realçados.
+No Exemplo \ref{exe_list2} abaixo, utiliza-se o mesmo ambiente do anterior, mas com a diferença de um $\*$ no início do ambiente. Nesta forma, o ambiente {\tt verbatim} realça os espaços entre as palavras.
 
 \begin{texexptitled}[breakable,center lower,enhanced,middle=2mm]{Exemplo de uso do ambiente {\tt verbatim} para destacar texto}{exe_list2}
 \begin{verbatim*}
@@ -2173,11 +2158,11 @@ diretamente e os comandos \LaTeX{} são ignorados.
 \end{verbatim*}
 \end{texexptitled}
 
-É possível também utilizar o ambiente {\tt verbatim} \textit{inline}, ou seja, diretamente dentro de um parágrafo, o que pode ser útil quando se necessita destacar algum comando (e.g., quando o contexto requerer isso). Para utilizar o ambiente {\tt verbatim} \textit{inline}, utilize o comando \mintinline{latex}{\verb}{} precedendo o comando desejado: ``o comando \mintinline{latex}{\verbLaTeX} produz \LaTeX{}''.
+É possível também utilizar o ambiente {\tt verbatim} \textit{inline}, ou seja, diretamente dentro de um parágrafo, o que pode ser útil quando se necessita destacar algum comando (e.g., quando o contexto requerer isso). Para utilizar o ambiente {\tt verbatim} \textit{inline}, utilize o comando \mintinline{latex}{\verb}{} precedendo o comando desejado: ``o comando \mintinline{latex}{\verbLaTeX} produz \LaTeX{}''. Outra forma comum que também pode ser utilizada para destacar textos e comandos da linguagem \LaTeX{}, é: ``o comando \mintinline{latex}{{\tt destque}} produz {\tt destaque}'' ou ``o comando \mintinline{latex}{\texttt{destaque}} produz \texttt{destque}''.
 
-O pacote {\tt listings} é o mais simples de ser utilizado, mas aceita diferentes opções, que permitem realçar as palavras reservadas da linguagem, além de mostrar a numeração das linhas e criar uma caixa ao redor do código fonte mostrado. No Exemplo \ref{exe_list3}, é mostrado um exemplo de código-fonte \textit{Python} com algumas opções do pacote {\tt listings}
+O pacote {\tt listings} é o mais simples de ser utilizado, mas aceita diferentes opções, que permitem realçar as palavras reservadas da linguagem, além de mostrar a numeração das linhas e criar uma caixa ao redor do código fonte mostrado. No Exemplo \ref{exe_list3}, é mostrado um \textit{script} escrito em linguagem\textit{Python} com algumas opções do pacote {\tt listings}.
 
-\begin{texexptitled}[breakable,center lower,enhanced,middle=2mm]{Exemplo da apresentação de um código escrito em linguagem \textit{Python} utilizando o pacote {\tt listings}}{exe_list3}
+\begin{texexptitled}[breakable,center lower,enhanced,middle=2mm]{Exemplo da apresentação de um \textit{script} escrito em linguagem \textit{Python} utilizando o pacote {\tt listings}}{exe_list3}
 \begin{lstlisting}
 #! /usr/bin/env python3
 """
@@ -2208,10 +2193,9 @@ print(fibo_seq)
 \end{lstlisting}
 \end{texexptitled}
 
-Outro ambiente que pode ser usado para listar código é o {\tt minted}. Veja o exemplo a seguir:
+Outro ambiente que pode ser usado para listar \textot{scripts} e programas é o {\tt minted}. Veja o exemplo a seguir:
 
-%framesep=2mm
-\begin{texexptitled}[breakable,center lower,enhanced,middle=2mm,leftlower=8mm]{Exemplo da apresentação de um código escrito em linguagem Python utilizando o pacote {\tt minted}}{exe_list4}
+\begin{texexptitled}[breakable,center lower,enhanced,middle=2mm,leftlower=8mm]{Exemplo da apresentação de um \textit{script} escrito em linguagem Python utilizando o pacote {\tt minted}}{exe_list4}
 \begin{minted}[bgcolor=white,
                frame=lines,
                linenos,
@@ -2245,9 +2229,9 @@ print(fibo_seq)
 \end{minted}
 \end{texexptitled}
 
-No Exemplo \ref{exe_list4}, foram utilizadas opções específicas para realçar as palavras reservadas da linguagem \textit{Python}. Outras opções do pacote {\tt minted}, incluem a numeração das linhas e outros esquemas de cores.
+No Exemplo \ref{exe_list4}, foram utilizadas opções específicas para realçar as palavras reservadas da linguagem \textit{Python}. Outras opções do pacote {\tt minted}, incluem a numeração das linhas, esquemas de cores além da configuração da cor de fundo entre outros atributos.
 
-Códigos e outros tipos de inserções podem também ser feitos em linha (\textit{inline}), diretamente no texto. Para isto, pode-se utilizar o comando \verb|\mintinline{}{}| (proveniente do pacote {\tt minted}) ou o comando \verb|\verb|. Veja o Exemplo \ref{exe_inline} a seguir:
+Códigos e outros tipos de inserções podem também ser feitos em linha (\textit{inline}), diretamente no texto com o pacote {\tt minted}. Para isto, pode-se utilizar o comando \verb|\mintinline{}{}| ou o comando \verb|\verb|. Veja o Exemplo \ref{exe_inline} a seguir:
 
 \begin{texexptitled}[breakable,enhanced,middle=2mm]{Inserção de código em linha com os comandos {\tt mintinline} e {\tt verb}}{exe_inline}
 No \LaTeX{}, códigos e comandos podem ser inseridos diretamente no
@@ -2259,7 +2243,7 @@ pode ser utilizado para mostrar como se carrega o pacote {\tt minted}:
 No Exemplo \ref{exe_inline}, observe que o comando \verb|\mintinline{}{}| recebe dois argumentos: o primeiro, indica a linguagem para qual será dado destaque, e o segundo, indica o conteúdo. Neste caso, utilizou-se o comando \verb|\mintinline{latex}{\usepackage{minted}}| para se mostrar como carregar o pacote {\tt minted}.
 
 \begin{marker}
-  Para saber mais sobre o pacote {\tt minted} e suas opções, veja a página \url{https://www.ctan.org/pkg/minted}.
+Para saber mais sobre o pacote {\tt minted} e suas opções, veja a página \url{https://www.ctan.org/pkg/minted}.
 \end{marker}
 
 \subsection{Citações e Referências}
