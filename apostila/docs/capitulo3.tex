@@ -671,6 +671,10 @@ No estilo do INPE, existe um arquivo de nome {\tt referencia.bib} que fica dentr
 
 Neste arquivo, observe que está indicado em um comentário no topo do arquivo, que o usuário insira os acentos de forma explícita, tal como foi explicado na Seção \ref{sec:acentos} do Capítulo \ref{cap:parteII}. Isto se faz necessário porque o Bib\TeX{} não aceita a localização tal como pode-se fazer com o \LaTeX{} quando se utiliza o pacote {\tt inputenc}. No segundo bloco, observe as instruções que se iniciam com a palavra-chave {\tt @string}. Com estas \textit{strings} pode-se criar atalhos (\textit{aliases}) para nomes que podem ser expandidos depois na montagem das referências, feitas pelo Bib\TeX{}. Repare que a \textit{string} que define o \textit{alias} {\tt actaam} foi utilizado no campo {\tt journal} da referência de \citeonline{nobre/2005}. O arquivo {\tt referencia.bib} pode se tornar muito grande. Neste caso, pode ser interessante utilizar algum gerenciador de referências, tal como o \textit{Zotero}, \textit{Mendeley}, \textit{Jabref} entre outros (veja algumas destas opções na Seção \ref{sec:refs} do Capítulo \ref{cap:parteII}). 
 
+\begin{marker}
+Deve-se ter cautela na edição manual do arquivo {\tt referencia.bib} do estilo do INPE. Este arquivo não aceita acentos naturais, i.e., acentos latinos devem ser marcados no estilo do \LaTeX{} (veja mais detalhes na Seção \ref{sec:acentos}. Além disso, é recomendável que o usuário edite a referência, removendo espaços em brancos e remarcando os acentos, quando necessário.
+\end{marker}
+
 As referências bibliográficas, dentro da norma ABNT adotada pelo estilo do INPE, podem ser inseridas no corpo do texto com os marcadores sumarizados na Tabela \ref{tab:estiloscit}. As definições destes marcadores podem ser encontradas em \citeonline{araujo/2018} e também no arquivo {\tt abntcite.sty} do estilo do INPE.
 
 Na Tabela \ref{tab:estiloscit} a seguir, as duas referências utilizadas nos exemplos são as seguintes:

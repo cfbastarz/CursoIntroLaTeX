@@ -1881,7 +1881,7 @@ Editores \textit{online} podem ser utilizados para construir tabelas simples no 
 \subsection{Ferramentas de revisão}
 \label{sec:ferrev}
 
-A colaboração entre várias pessoas na escrita de um documento, pode mostrar-se como um verdadeiro desafio. Mesmo utilizando editores do tipo WYSIWYG, como o \textit{Microsoft Word}, unificar as diferentes versões de um documento por ser uma tarefa confusa e que certamente irá consumir muito tempo. Para isto, pode-se recorrer a ferramentas de revisão mais elaboradas como o \textit{track changes}, que permite rastrear as modificações feitas em um documento. Mas para a escrita com a linguagem \LaTeX{}, esta tarefa não é exatamente igual. Editores \textit{online}, como o \href{https://www.overleaf.com/}{Overleaf}, são muito úteis e eficientes quanto à revisão, histório do documento e escrita colaborativa. Mas para editores locais, é possível utilizar alguns pacotes que irão habilitar a utilização da linguagem para a revisão, de forma semelhante ao que ocorre com editores WYSIWYG.
+A colaboração entre várias pessoas na escrita de um documento, pode mostrar-se como um verdadeiro desafio. Mesmo utilizando editores do tipo WYSIWYG, como o \textit{Microsoft Word}, unificar as diferentes versões de um documento por ser uma tarefa confusa e que certamente irá consumir muito tempo. Para isto, pode-se recorrer a ferramentas de revisão mais elaboradas como o \textit{track changes}, que permite rastrear as modificações feitas em um documento. Mas para a escrita com a linguagem \LaTeX{}, esta tarefa não é exatamente igual. Editores \textit{online}, como o \href{https://www.overleaf.com/}{\textit{Overleaf}}, são muito úteis e eficientes quanto à revisão, histório do documento e escrita colaborativa. Mas para editores locais, é possível utilizar alguns pacotes que irão habilitar a utilização da linguagem para a revisão, de forma semelhante ao que ocorre com editores WYSIWYG.
 
 O pacote {\tt todonotes}, pode ser utilizado nesta tarefa. Com ele é possível inserir notas coloridas no documento de forma que se possa chamar a atenção para alguma parte do texto. Veja o Exemplo \ref{todo1} a seguir com a sua utilização.
 
@@ -2249,16 +2249,16 @@ Para saber mais sobre o pacote {\tt minted} e suas opções, veja a página \url
 \subsection{Citações e Referências}
 \label{sec:refs}
 
-Figuras, tabelas, equações, partes (i.e., capítulos, seções, subseções, etc), além da bibliografia, podem ser citados ao longo do texto. Para os elementos textuais, a forma de se fazer isto é através da utilização da dupla de comandos \mintinline{latex}{label} e \mintinline{latex}{ref}. Veja como citar estes elementos nos exemplos a seguir.
+Figuras, tabelas, equações, partes (i.e., capítulos, seções, subseções, etc), além da bibliografia, podem ser citados ao longo do texto. Para os elementos textuais, a forma de se fazer isto é através da utilização da dupla de comandos \mintinline{latex}{\label{nome}} e \mintinline{latex}{\ref{nome}}. Veja como citar estes elementos nos exemplos a seguir.
 
 \begin{texexptitled}[breakable,enhanced,middle=2mm]{Citação de uma parte do texto}{exe_cite1}
-\section{Uma Seção}
+\section*{Uma Seção}
 \label{sec:minha_secao}
 
 Este é um exemplo de citação de uma parte do texto. Na Seção \ref{sec:minha_secao}, mostra-se como utilizar os comandos {\tt label} e {\tt ref} para a citação. O mesmo procedimento pode ser aplicado para a citação de partes, capítulos, subseções, anexos, apêndices etc.
 \end{texexptitled}
 
-De forma semelhante, figuras também podem ser citadas utilizando-se os comandos \mintinline{latex}{label} e \mintinline{latex}{ref}. Veja o Exemplo \ref{exe_cite2} a seguir.
+No Exemplo \ref{exe_cite1}, observe que foi utilizado \mintinline{latex}{\section*} ao invés de \mintinline{latex}{\section}. Isto foi feito apenas para que o nome da seção do exemplo não apareça no sumário do documento principal. De forma semelhante ao exposto no exemplo anterior, figuras também podem ser citadas utilizando-se os comandos \mintinline{latex}{\label} e \mintinline{latex}{\ref}. Veja o Exemplo \ref{exe_cite2} a seguir.
 
 \begingroup
 \begin{texexptitled}[breakable,enhanced,middle=2mm]{Citação de uma figura}{exe_cite2}
@@ -2273,7 +2273,7 @@ Na Figura \ref{fig:prop_aurea} a seguir, é mostrada a Proporção Áurea:
 \end{texexptitled}
 \endgroup
 
-Tabelas também podem ser referenciadas. Veja no Exemplo \ref{exe_cite3} a seguir:
+Tabelas também podem ser referenciadas da mesma forma como as figuras. Veja no Exemplo \ref{exe_cite3} a seguir:
 
 \begingroup
 \begin{texexptitled}[breakable,enhanced,middle=2mm]{Citação de uma tabela}{exe_cite3}
@@ -2282,7 +2282,7 @@ Na Tabela \ref{tab:umatabela} a seguir, são mostradas linhas e colunas e algum 
 \begin{table}[H]
   \centering
   \caption{Uma tabela com linhas e colunas.}
-  \begin{tabularx}{\textwidth}{X | X}
+  \begin{tabularx}{\textwidth}{X X}
     \toprule
     Coluna 1           & Coluna 2           \\
     \midrule
@@ -2308,7 +2308,7 @@ A Equação \ref{eq:euler} é denominada ``Equação de Euler'' e nela estão re
 
 \end{texexptitled}
 
-Páginas de um documento também podem ser referenciadas utilizando-se o comando {\tt pageref}. Neste caso, o \textit{link} para a referência é o rótulo do próprio elemento que se quer citar. Dessa forma, a página em que o elemento citado será apresentada, ao invés da numeração do elemento. Veja no Exemplo \ref{exe_cite5} a seguir:
+Páginas de um documento também podem ser referenciadas utilizando-se o comando \mintinline{latex}{\pageref{nome}}. Neste caso, o \textit{link} para a referência deverá ser um rótulo (um nome) adicionado à seção ou ambiente em que ocorre o elemento a ser citado (i.e., figura, tabela, equação ou a própria página), desde que ele possa ser numerado. Dessa forma, a página em que o elemento é citado será apresentada, ao invés da numeração do elemento. No Exemplo \ref{exe_cite5} a seguir, foram adicionados dois rótulos (veja os comandos \mininline{latex}{\label} inseridos), um logo após o início do documento e o outro logo após a quebra de página (forçada pelo comando \mintinline{latex}{\clearpage}):
 
 \begin{texexptitled}[breakable,center lower,enhanced jigsaw,middle=2mm,listing side comment,righthand width=6cm,compilable listing,run latex,run dvips,run ps2pdf,pdf comment,comment style={raster columns=1},freeze pdf]{Citação de uma página}{exe_cite5}
 \documentclass[17pt]{extarticle}
@@ -2316,45 +2316,38 @@ Páginas de um documento também podem ser referenciadas utilizando-se o comando
 \usepackage{lipsum}
 \usepackage{extsizes}
 
-\title{Título}
-\author{Nome}
-\date{\today}
-
 \begin{document}
+\label{pag1} % Esta é a primeira página
 
-\maketitle
+\lipsum[1]
 
-A Equação \ref{eq:euler} é denominada ``Equação de Euler'' e nela estão relacionados os números irracionais mais conhecidos: $e$ e $\pi$, além do número imaginário $i$:
-
-\begin{equation}
-  \label{eq:euler}
+A equação a seguir é denominada ``Equação de Euler'' e nela estão relacionados os números irracionais mais conhecidos: $e$ e $\pi$, além do número imaginário $i$:
+\[  
   e^{i\pi} + 1 = 0
-\end{equation}
+\]
 
-A série de MacLaurin para $e^{x}$ é dada por:
-\begin{equation}
-  \label{eq:maclaurin}
+\clearpage % Aqui será criada uma nova página
+\label{pag2}
+
+\lipsum[2]
+
+A série de MacLaurin para $e^{x}$ é dada pela equação abaixo:
+\[  
   e^{x} = \sum_{k=0}^{\infty} \frac{x^{k}}{k!}
-\end{equation}
-
-\newpage
-
-Na página \pageref{eq:euler} foi apresentada uma equação que conjuga os números irreacionais $e$ e $\pi$ e o número imaginário $i$.
-
-A série de MacLaurin para $e^{x}$ está expressa na página \pageref{eq:maclaurin}.
-
+\]
+Na página \pageref{pag1} foi apresentada uma equação que conjuga os números irreacionais $e$ e $\pi$ e o número imaginário $i$. A série de MacLaurin para $e^{x}$ está expressa na página \pageref{pag2}. 
 \end{document}
 \end{texexptitled}
 
 \begin{marker}
-Além da dupla de comandos \mintinline{latex}{label} e \mininline{latex}{ref}, pode-se utilizar também o comando {\tt autoref} (fornecido pelo pacote {\tt autoref}, veja mais sobre este pacote no CTAN em \url{https://ctan.org/pkg/hyperref}) e pelo pacote {\tt cleveref} (veja mais sobre este pacote no CTAN em \url{https://ctan.org/pkg/cleveref}), que facilitam as citações dos elementos do texto e permitem maior controle sobre eles.
+Além da dupla de comandos \mintinline{latex}{\label{nome}} e \mintinline{latex}{\ref{nome}}, pode-se utilizar também o comando \mintinline{latex}{\autoref{nome}} (fornecido pelo pacote {\tt autoref}, veja mais sobre este pacote no CTAN em \url{https://ctan.org/pkg/hyperref}) e pelo pacote {\tt cleveref} (veja mais sobre este pacote no CTAN em \url{https://ctan.org/pkg/cleveref}), que facilitam as citações dos elementos do texto e permitem maior controle sobre eles.
 \end{marker}
 
-Além de citar e referenciar figuras, tabelas, expressões matemáticas e partes de um texto, no \LaTeX{} podem ser citadas também os elementos bibliográficos. Para isto, deve-se utilizar um pacote do \LaTeX{} que seja capaz de gerenciar as referências bibliográficas.
+Além de citar e referenciar figuras, tabelas, expressões matemáticas e partes de um texto, no \LaTeX{} podem ser citados também os elementos bibliográficos. Para isto, deve-se utilizar um pacote do \LaTeX{} que seja capaz de gerenciar as referências bibliográficas.
 
 O Bib\TeX{} é o formato padrão para a manipulação e a inclusão de referências bibliográficas do \LaTeX{}. Outros pacotes como o Bib\LaTeX{} e o \textit{Biber} estão disponíveis também para utilização em conjunto com o Bib\TeX{}.
 
-O Bib\LaTeX{} é uma implementação mais moderna do \textit{software} de gerenciamento de referências, sendo mais flexível do que o Bib\TeX{} por já estar no formato UNICODE, além de permitir a utilização de macros do próprio \LaTeX{} para a criação de novas classes de referências.
+O Bib\LaTeX{} é uma implementação mais moderna do \textit{software} de gerenciamento de referências, sendo mais flexível do que o Bib\TeX{} por já estar no formato UNICODE, além de permitir a utilização de \textit{macros} do próprio \LaTeX{} para a criação de novas classes de referências.
 
 A maioria das revistas científicas indexadas fornecem ferramentas para a exportação das referências de um determinado artigo. Por exemplo, as revistas da \textit{American Meteorological Society}, como a \textit{Monthly Weather Review} permitem que a citação de um artigo seja exportada para o formate Bib\TeX{}. Veja na Figura \ref{fig:exemplo_revista_ams_citacao} a seguir:
 
@@ -2385,34 +2378,32 @@ year     = {2013},
 doi      = {10.1175/MWR-D-13-00016.1},
 URL      = {https://doi.org/10.1175/MWR-D-13-00016.1},
 eprint   = {https://doi.org/10.1175/MWR-D-13-00016.1},
-abstract = {Abstract Very high-resolution spectral transform models are believed to become prohibitively expensive because of the relative increase in computational cost of the Legendre transforms compared to the gridpoint computations. This article describes the implementation of a practical fast spherical harmonics transform into the Integrated Forecast System (IFS) at ECMWF. Details of the accuracy of the computations, of the parallelization, and memory use are discussed. Results are presented that demonstrate the cost effectiveness and accuracy of the fast spherical harmonics transform, successfully mitigating the concern             about the disproportionally growing computational cost. Using the new transforms, the first T7999 global weather forecast (equivalent to \~2.5-km horizontal grid size) using a spectral transform model has been produced.}
+abstract = {Abstract Very high-resolution spectral transform models are believed to become prohibitively expensive because of the relative increase in computational cost of the Legendre transforms compared to the gridpoint computations. This article describes the implementation of a practical fast spherical harmonics transform into the Integrated Forecast System (IFS) at ECMWF. Details of the accuracy of the computations, of the parallelization, and memory use are discussed. Results are presented that demonstrate the cost effectiveness and accuracy of the fast spherical harmonics transform, successfully mitigating the concern about the disproportionally growing computational cost. Using the new transforms, the first T7999 global weather forecast (equivalent to \~2.5-km horizontal grid size) using a spectral transform model has been produced.}
 }
 \end{texexp}
 
-As informações do arquivo de referência baixado, podem ser incorporadas em uma seção apropriada no documento que o usuário estiver editando. No caso do estilo do INPE, o conteúdo do arquivo pode ser copiado para dentro do arquivo {\tt bib/referencias.bib}.
+As informações do arquivo de referência baixado, podem ser incorporadas em uma seção apropriada no documento que o usuário estiver editando. No caso do estilo do INPE, o conteúdo do arquivo pode ser copiado para dentro do arquivo {\tt bib/referencias.bib} (veja mais detalhes na Seção \ref{sec:citerefs} do Capítulo \ref{cap:parteIII}).
 
 Observe que o arquivo de referências possui diversas palavras-chave, como por exemplo, {\tt author}, {\tt title}, {\tt journal}, {\tt volume} e outros. Estas são as informações que o Bib\TeX{} utiliza para formatar a apresentação das referências no estilo desejado.
 
 \begin{marker}
-  É uma boa ideia alterar o nome da citação (a qual será usada no texto) para algo que seja mais fácil de lembrar. Isso facilitará a escrita do texto. Por exemplo, ao invés de utilizar {\tt doi:10.1175/MWR-D-13-00016.1} (como na referência do exemplo acima), utilize algo como {\tt wedietal/2013}, que faz referência literal ao artigo de \citeonline{doi:10.1175/MWR-D-13-00016.1}.
+Recomenda-se a alteração do nome da citação (a qual será usada no texto) para algo que seja mais fácil de lembrar. Isso facilitará a escrita do texto. Por exemplo, ao invés de utilizar {\tt doi:10.1175/MWR-D-13-00016.1} (como na referência do exemplo acima), utilize algo como {\tt wedietal/2013}, que faz referência literal ao artigo de \citeonline{doi:10.1175/MWR-D-13-00016.1}.
 \end{marker}
 
-A utilização das referências no texto deve ser feita com os seguintes comandos: {\tt cite} ou {\tt citeonline}. Veja o Exemplo \ref{exe:ref2} a seguir:
+A utilização das referências no texto deve ser feita com os seguintes comandos: \mintinline{latex}{\cite{referencia}} ou \mintinline{latex}{\citeonline{referencia}}. Veja o Exemplo \ref{exe:ref2} a seguir:
 
 \begin{texexptitled}[breakable,center lower,enhanced,middle=2mm]{Exemplos de citações utilizando os comandos {\tt cite} e {\tt citeonline}}{exe:ref2}
-Segundo \citeonline{wedietal/2013}, a transformada rápida de Legendre torna-se especialmente útil em modelos espectrais cujo número de onda seja maior do que 2047.
+Segundo \citeonline{wedietal/2013}, a transformada rápida de Legendre torna-se especialmente útil em modelos espectrais cujo número de onda é maior do que 2047.
 
-A transformada rápida de Legendre torna-se especialmente útil em modelos espectrais cujo número de onda seja maior do que 2047 \cite{wedietal/2013}.
+A transformada rápida de Legendre torna-se especialmente útil em modelos espectrais cujo número de onda é maior do que 2047 \cite{wedietal/2013}.
 \end{texexptitled}
 
 \begin{marker}
-  Se você estiver utilizando o estilo de publicações específico de alguma revista científica, é possível que exista outro(s) estilo(s) de citação, como exemplo, dado pelo comando {\tt citep}.
+Se você estiver utilizando o estilo de publicações específico de alguma revista científica, é possível que exista outro(s) estilo(s) de citação, como exemplo, dado pelo comando \mininline{latex}{\citep{referencia}}.
 \end{marker}
 
-No Exemplo \ref{exe:ref2}, observe que o comando {\tt cite} marca a citação com a primeira letra em caixa alta, enquanto que com o comando {\tt citeonline}, a citação aparece delimitada por parênteses e com todas as letras em caixa alta. 
-
+No Exemplo \ref{exe:ref2}, observe que o comando \mintinline{latex}{\cite} marca a citação com a primeira letra em caixa alta, enquanto que com o comando \mintinline{latex}{\citeonline}, a citação aparece delimitada por parênteses e com todas as letras em caixa alta. 
 % REF: https://texblog.org/2012/10/22/multiple-bibliographies-with-biblatex/
-
 %\begin{texexptitled}[breakable,center lower,enhanced,middle=2mm]{Exemplos de estilos de referências do BibTeX}{exe_estilos_bib}
 %Segundo \cite{doi:10.1175/MWR-D-13-00016.1}, a transformada rápida de Legendre torna-se especialmente útil em modelos espectrais cujo número de onda seja maior do que 2047.
 %
@@ -2428,37 +2419,14 @@ No Exemplo \ref{exe:ref2}, observe que o comando {\tt cite} marca a citação co
 %\bibliographyNew{./bib/referencia}
 %\end{texexptitled}
 
-\begin{marker}
-  Deve-se ter cautela na edição manual do arquivo {\tt referencia.bib} do estilo do INPE. Este arquivo não aceita acentos naturais, i.e., acentos latinos devem ser marcados no estilo do \LaTeX{} (veja mais detalhes na Seção \ref{sec:acentos}. Além disso, é recomendável que o usuário edite a referência, removendo espaços em brancos e remarcando os acentos, quando necessário.
-\end{marker}
+% A dica a seguir foi movida para o Capítulo 3.
+%\begin{marker}
+%Deve-se ter cautela na edição manual do arquivo {\tt referencia.bib} do estilo do INPE. Este arquivo não aceita acentos naturais, i.e., acentos latinos devem ser marcados no estilo do \LaTeX{} (veja mais detalhes na Seção \ref{sec:acentos}. Além disso, é recomendável que o usuário edite a referência, removendo espaços em brancos e remarcando os acentos, quando necessário.
+%\end{marker}
 
-Grandes bases de referências podem ser gerenciadas com o auxílio de software como o \textit{BibDesk} (apenas para o Mac OS), \textit{JabRef}, \textit{Mendeley} e \textit{Zotero}. Estes \textit{software} são bastante úteis pois permitem a organização das referência e dos seus metadados e é uma boa ideia tê-las sempre organizadas. Um arquivo Bib\TeX{} (com extensão {\tt .bib}) pode ser importado para dentro destes software. Nas Figuras \ref{fig:exe_bibdesk}, \ref{fig:exe_mendeley} e \ref{fig:exe_zotero}, são mostrados como uma base de dados é carregada neste softwares.
+Grandes bases de referências podem ser gerenciadas com o auxílio de software como o \textit{BibDesk} (apenas para o Mac OS), \textit{JabRef}, \textit{Mendeley} e \textit{Zotero}. Estes \textit{softwares} são bastante úteis pois permitem a organização das referência e dos seus metadados e é uma boa ideia tê-las sempre organizadas. Um arquivo Bib\TeX{} (com extensão {\tt .bib}) pode ser importado para dentro destes software. Nas Figuras \ref{fig:exe_bibdesk}, \ref{fig:exe_mendeley} e \ref{fig:exe_zotero}, são mostrados como uma base de dados é carregada neste \textit{softwares}.
 
-No \textit{BibDesk}, clique no menu ``Arquivo > Abrir...'' e selecione o arquivo {\tt .bib} com as referências. Depois de importado o arquivo, todas as referências serão mostradas em lista na janela principal. Se houver alguma referência com algum tipo de problema (e.g., caracteres não permitidos ou codificação não reconhecida), o \textit{BibDesk} irá abrir uma caixa de diálogo perguntando ao usuário se ele quer parar a importação ou continuar importando. Uma outra opção é editar o arquivo antes de concluir a importação.
-
-%\begin{figure}[H]
-%\caption{Base de dados de referências carregada no \textit{software} \textit{BibDesk}.}
-%\vspace{6mm}
-%    \begin{center}
-%        \includegraphics[scale=0.3]{./docs/figs/bibdesk1.pdf}
-%    \end{center}
-%\vspace{4mm}
-%\legenda{\textit{Software} \textit{BibDesk}.}
-%\label{fig:exe_bibdesk2}
-%\FONTE{Produção do autor.}
-%\end{figure}
-%
-%\begin{figure}[H]
-%\caption{Base de dados de referências carregada no \textit{software} \textit{BibDesk}.}
-%\vspace{6mm}
-%    \begin{center}
-%        \includegraphics[scale=0.3]{./docs/figs/bibdesk2.pdf}
-%    \end{center}
-%\vspace{4mm}
-%\legenda{\textit{Software} \textit{BibDesk}.}
-%\label{fig:exe_bibdesk2}
-%\FONTE{Produção do autor.}
-%\end{figure}
+No \textit{BibDesk}, clique no menu ``Arquivo > Abrir...'' e selecione o arquivo {\tt .bib} com as referências. Depois de importado o arquivo, todas as referências serão mostradas em lista na janela principal. Se houver alguma referência com algum tipo de problema (e.g., caracteres não permitidos ou codificação não reconhecida), o \textit{BibDesk} irá abrir uma caixa de diálogo perguntando ao usuário se ele quer parar a importação ou continuar. Uma outra opção é revisar e editar o arquivo antes de iniciar a importação.
 
 \begin{figure}[H]
 \caption{Base de dados de referências carregada no \textit{software} \textit{BibDesk}.}
@@ -2472,6 +2440,8 @@ No \textit{BibDesk}, clique no menu ``Arquivo > Abrir...'' e selecione o arquivo
 \FONTE{Produção do autor.}
 \end{figure}
 
+Com o \textit{software} \textit{Mendeley}, também é possível importar um arquivo de referências {\tt .bib}, a partir do qual é possível inserir e editar entradas existentes ou então remover as entradas que não são mais necessárias. Veja a Figura \ref{fig:exe_mendeley} a seguir.
+ 
 \begin{figure}[H]
 \caption{Base de dados de referências carregada no \textit{software} \textit{Mendeley}.}
 \vspace{6mm}
@@ -2483,6 +2453,8 @@ No \textit{BibDesk}, clique no menu ``Arquivo > Abrir...'' e selecione o arquivo
 \label{fig:exe_mendeley}
 \FONTE{Produção do autor.}
 \end{figure}
+
+Análogo aos \textit{softwares} \textit{BibDesk} e \textit{Mendeley}, pode-se também utilizar o \textit{software} \textit{Zotero} para a mesma finalidade (Figura \ref{fig:exe_zotero}). Note que com excessão do \textit{software} \textit{BibDesk}, os \textit{softwares} \textit{Mendeley} e \textit{Zotero} estão disponíveis para os sistemas operacionais Linux e \textit{Microsoft Windows}.
 
 \begin{figure}[H]
 \caption{Base de dados de referências carregada no \textit{software} \textit{Zotero}.}
@@ -2530,7 +2502,11 @@ A Tabela \ref{tab:refs} a seguir descreve os tipos de referências padrão do Bi
 \FONTE{Produção do autor.}
 \end{table}
 
-No \textit{site} da biblioteca do INPE, todas as referências já se encontram classificadas no tipo correto. Para obtê-las, basta procurar pelo trabalho no \textit{site} e clicar no link ``Bib\TeX{}''. O arquivo aberto na janela \textit{popup} poderá ser copiado para o arquivo de refrências do Bib\TeX{} (arquivo com extensão {\tt .bib}. Veja um exemplo na Figura \ref{fig:bibliotex}.
+\begin{marker}
+Os tipos de referências descritos na Tabela \ref{tab:refs} possuem campos que são obrigatórios e outros que são opcionais. Veja mais detalhes sobre os campos obrigatórios de cada tipo em \url{https://en.wikibooks.org/wiki/LaTeX/Bibliography_Management}.
+\end{marker}
+
+No \textit{site} da biblioteca do INPE, todas as referências já se encontram classificadas no tipo correto. Para obtê-las, basta procurar pelo trabalho no \textit{site} e clicar no link ``Bib\TeX{}''. O arquivo aberto na janela \textit{popup} poderá ser copiado para o arquivo de refrências do Bib\TeX{} (arquivo com extensão {\tt .bib}). Veja um exemplo na Figura \ref{fig:bibliotex} a seguir.
 
 \begin{figure}[H]
 \caption{Obtenção de referências no formato Bib\TeX{} a partir do \textit{site} da biblioteca do INPE.}
@@ -2544,19 +2520,7 @@ No \textit{site} da biblioteca do INPE, todas as referências já se encontram c
 \FONTE{Produção do autor.}
 \end{figure}
 
-\begin{marker}
-Os tipos de referências descritos na Tabela \ref{tab:refs} possuem campos que são obrigatórios e outros que são opcionais. Veja mais detalhes sobre os campos obrigatórios de cada tipo em \url{https://en.wikibooks.org/wiki/LaTeX/Bibliography_Management}.
-\end{marker}
-
 %É possível utilizar diferentes estilos de referências. No estilo do INPE, utiliza-se o modelo da Associação Brasileira de Normas Técnicas (ABNT), que é provido a partir da utilização do pacote {\tt abntex2} (carregado automaticamente com o estilo do INPE). Em um documento livre, o usuário pode escolher outros estilos. Para isto, basta utilizar o comando \mintinline{latex}{\bibliographystyle}, indicando-se o estilo como argumento do marcador.
-
-%\subsubsection*{Citações}
-%\label{sec:cita}
-
-%\subsubsection*{Bibliografia}
-%\label{sec:biblio}
-
-%Atualmente a maioria das revistas científicas fornecem as referências em diferentes formatos. Se houver dificuldade em obter o formato Bib\TeX{} de uma referência, pode-se utilizar o site \href{https://doi2bib.org}{\textit{DOI2Bib}} para se obter a referência com os campos corretos.
 
 \begin{marker}
 Se uma referência de um trabalho no formato Bib\TeX{} não puder ser encontrada nos \textit{sites} das revistas indexadas, pode-se utilizar o serviço do \textit{site} \href{https://doi2bib.org}{\textit{DOI2Bib}} para se obter a referência com os campos corretos.
@@ -2572,38 +2536,34 @@ Se uma referência de um trabalho no formato Bib\TeX{} não puder ser encontrada
 %\label{sec:glossario}
 %http://linorg.usp.br/CTAN/macros/latex/contrib/glossaries/glossaries-user.html#sec:lipsum
 
-\subsection{Macros}% e Comandos}
+\subsection{\textit{Macros}}
 \label{sec:macros}
 
-No \LaTeX{} é possível definir \textit{macros}, que são um conjunto de instruções específicas para facilitar a formatação do documento. Além das \textit{macros}, é possível também redefinir comando do \LaTeX{}, de forma que os comandos originais sejam executados de forma mais simples e customizada.
+No \LaTeX{} é possível definir \textit{macros}, que são um conjunto de instruções específicas que visam facilitar a formatação do documento. Além das \textit{macros}, é possível também redefinir comandos do \LaTeX{}, de forma que os comandos originais sejam executados de forma mais simples e customizada.
 
-O livro de \citeonline{knuth/1996} oferece uma introdução concisa sobre a linguagem \textit{macro} do \LaTeX{}. O leitor já deve ter percebido que todas as ocorrências da palavra ``LaTeX'' são mostradas como \LaTeX{}. Isto é feito através da uma macro que é definida pelo comando \mintinline{latex}{\LaTeX{}}, que produz a grafia estilizada da palavra. Esta \textit{macro} define não apenas o estilo da fonte utilizada, mas também os espaçamentos horizontal e vertical. Aliás, todos os comandos da linguagem que já foram mostrados, são definidos por \textit{macros}. Logo, pode-se entender que as \textit{macros} constituem-se como um conjunto de instruções que permitem manipular a linguagem em si de forma que determinadas ações sejam feitas sem a necessidade de se ter que programá-las sempre que for necessário reutilizá-las. Apesar disso, \textit{macros} são diferentes de \textit{script}, pois \textit{scripts} são códigos independentes que são interpretados e executados linha-a-linha. No \LaTeX{}, as \textit{macros} são incluídas no preâmbulo documentos e são utilizadas para estruturar o documento.
+O livro de \citeonline{knuth/1996} oferece uma introdução concisa sobre a linguagem \textit{macro} do \LaTeX{}. O leitor já deve ter percebido que todas as ocorrências da palavra ``LaTeX'' são mostradas na forma estilizada \LaTeX{}. Isto é feito através da uma \textit{macro} que é definida pelo comando \mintinline{latex}{\LaTeX{}}, que então produz a grafia estilizada da palavra. Esta \textit{macro} define não apenas o estilo da fonte utilizada, mas também os espaçamentos horizontal e vertical. Aliás, todos os comandos da linguagem que já foram mostrados, são definidos por \textit{macros}. Logo, pode-se entender que as \textit{macros} constituem um conjunto de instruções que permitem manipular a linguagem de forma que determinadas ações sejam feitas sem a necessidade de programá-las sempre que for necessário reutilizá-las. Apesar disso, \textit{macros} são diferentes de \textit{scripts}, pois \textit{scripts} são códigos independentes que são interpretados e executados linha-a-linha. No \LaTeX{}, as \textit{macros} são incluídas no preâmbulo documentos e são utilizadas para estruturar o documento.
 
-O leitor perceberá a importância das \textit{macros} quando fizer uso de alguma configuração que fizer mais do uma vez. Um exemplo bastante simples, seria definir um comando (que nada mais é do que uma \textit{macro}) para inserir uma informação que pode ser repetida em diferentes partes de um texto. Suponha que queiramos que a expressão ``por exemplo'' seja inserida sempre que digitarmos o comando \mintinline{latex}{\eg} e que a expressão ``isto é'' seja inserida sempre que digitar o comando \mintinline{latex}{\ie}. No \LaTeX{} os comandos \mintinline{latex}{\eg} e \mintinline{latex}{\ie} não existem, então podemos utilizá-los para este propósito. Veja no Exemplo \ref{exe_macro0} como fazer isso.
+O leitor perceberá a importância das \textit{macros} quando precisar fazer uso de alguma configuração mais do que uma vez. Um exemplo bastante simples, é definir um comando (que nada mais é do que uma \textit{macro}) para inserir uma informação que pode ser repetida em diferentes partes do texto. Suponha que queiramos que a expressão ``por exemplo'' seja inserida sempre que digitarmos o comando \mintinline{latex}{\eg} e que a expressão ``isto é'' seja inserida sempre que digitar o comando \mintinline{latex}{\ie}. No \LaTeX{} os comandos \mintinline{latex}{\eg} e \mintinline{latex}{\ie} não existem, então podemos utilizá-los para este propósito. Veja no Exemplo \ref{exe_macro0} como fazer isso.
 
 \begin{texexptitled}[breakable,center lower,enhanced,middle=2mm]{Definindo um comando simples de substituição}{exe_macro0}
 \newcommand{\eg}{por exemplo}
 \newcommand{\ie}{isto é}
 
 Documentos \LaTeX{}, independente da sua classe (\eg, \textit{book}, 
-\textit{report}, \textit{article} e \textit{letter}), podem ser muito 
-simples ou complexos.
+\textit{report}, \textit{article} e \textit{letter}), podem ser muito simples ou complexos.
 
 \dots
 
-Entretanto, em algumas situações é necessário marcar-se os acentos 
-de forma explícita (\eg, na edição de um arquivo de referências 
-do BibTeX).
+Entretanto, em algumas situações é necessário marcar os acentos de forma explícita (\eg, na edição de um arquivo de referências do BibTeX). 
 
 \dots
 
-No Exemplo \ref{exe_eq0}, observe que os delimitadores dados por 
-colchetes ou parênteses precisar ser ``escapados'', \ie, é necessário 
-adicionar uma \verb|\| (barra invertida) antes deles (\eg, \verb|\[|
-e \verb|\]| ou \verb|\(| e \verb|\)|).
+No Exemplo \ref{exe_eq0}, observe que os delimitadores dados por colchetes ou parênteses precisar ser ``escapados'', \ie, é necessário adicionar uma \verb|\| (barra invertida) antes deles (\eg, \verb|\[| e \verb|\]| ou \verb|\(| e \verb|\)|). 
 \end{texexptitled}
 
+\begin{marker}
 No Exemplo \ref{exe_macro0}, observe ainda que o comando \mintinline{latex}{\dots} é também uma \textit{macro} que produz as reticências (\dots).
+\end{marker}
 
 Considere os Exemplos \ref{exe_tab2} e \ref{exe_tab3} em que o espaçamento \mintinline{latex}{\\[-0.5em]} é utilizado múltiplas vezes para definir a altura das linhas das tabelas mostradas. Este comando pode ser ``empacotado'' através da definição de uma \textit{macro} que simplesmente irá abreviar o seu uso, no sentido de torná-lo mais simples. Para isto, veja o Exemplo \ref{exe_macro1} a seguir.
 
@@ -2631,84 +2591,138 @@ L5C1 & L5C2 \\
 \end{tabular}
 \end{texexptitled}
 
-Muitas vezes será necessário incluir um espaço em branco extra, o que pode ser obtido incluindo-se um par de \verb|{}|'s (chaves) após o comando, e.g., como em \mintinline{latex}{\LaTeX{}} ou \mintinline{latex}{\LaTeX}, que irá produzir \LaTeX{}e \LaTeX, respectivamente. Pode-se também embutir este espaço extra na definição do comando utilizando-se o modificador \verb|xspace|, que é provido pelo pacote {\tt xspace} (será carregá-lo no preâmbulo do documento com o comando \mintinline{latex}{\usepackage{xspace}}). Veja o Exemplo \ref{exe_macro2} a seguir:
+Muitas vezes será necessário incluir um espaço em branco extra, o que pode ser obtido incluindo-se um par de \verb|{}|'s (chaves) após o comando, e.g., como em \mintinline{latex}{\LaTeX{}} ou \mintinline{latex}{\LaTeX}, que irá produzir \LaTeX{} e \LaTeX, respectivamente. Considere os comandos {\tt inpe} e {\tt inpee} do Exemplo \ref{exe_macro2} a seguir e compare os resultados das suas aplicações, com e sem as \verb|{}|'s: 
 
-\begin{texexptitled}[breakable,center lower,enhanced,middle=2mm]{Definindo um comando simples de substituição com espaço extra}{exe_macro2}
+\begin{texexptitled}[breakable,center lower,enhanced jigsaw,middle=2mm]{Definindo um comando simples de substituição com espaço extra}{exe_macro2}
 \newcommand{\inpe}{INPE}
-\newcommand{\inpex}{INPE\xspace}
+\newcommand{\inpee}{INPE }
 
-O \inpe{} desenvolve pesquisas relacionadas às ciências atmosféricas
-e espaciais.
-
-O \inpex desenvolve pesquisas relacionadas às ciências atmosféricas
-e espaciais.
+\begin{enumerate}
+  \item O \inpe desenvolve pesquisas relacionadas às ciências atmosféricas e espaciais.
+  \item Pesquisas relacionadas às ciências atmosféricas e espaciais são desenvolvidas no \inpe.
+  \item O \inpe{} desenvolve pesquisas relacionadas às ciências atmosféricas e espaciais.
+  \item Pesquisas relacionadas às ciências atmosféricas e espaciais são desenvolvidas no \inpe{}.
+  \item O \inpee desenvolve pesquisas relacionadas às ciências atmosféricas e espaciais.
+  \item Pesquisas relacionadas às ciências atmosféricas e espaciais são desenvolvidas no \inpee.
+  \item O \inpee{} desenvolve pesquisas relacionadas às ciências atmosféricas e espaciais.
+  \item Pesquisas relacionadas às ciências atmosféricas e espaciais são desenvolvidas no \inpee{}.
+\end{enumerate}
 \end{texexptitled}
 
-Considere o Exemplo \ref{exe_macro2} em que foi definida uma macro para que ao se digitar o comando \mintinline{latex}{\inpe}, seja inserido o nome do instituto em caixa alta. Uma vez que a \textit{macro} é definida e utilizada em diversas partes de um documento, a sua substituição por um outro valor pode ser rápida e facilmente realizada através do comando \mintinline{latex}{\renewcommand}. Veja o Exemplo \ref{exe_macro3} a seguir:
+No Exemplo \ref{exe_macro2} foram definidas macros que substituem a palavra-chave {\tt inpe} (ou {\tt inpee}) por INPE. Quando uma \textit{macro} é definida e utilizada em diversas partes de um documento, a sua substituição por um outro valor pode ser rápida e facilmente realizada através do comando \mintinline{latex}{\renewcommand}. Veja o Exemplo \ref{exe_macro3} a seguir:
 
 \begin{texexptitled}[breakable,center lower,enhanced,middle=2mm]{Redefinindo um comando simples}{exe_macro3}
 \renewcommand{\inpe}{Instituto Nacional de Pesquisas Espaciais}
 
-O \inpe{} desenvolve pesquisas relacionadas às ciências atmosféricas
-e espaciais.
+O \inpe{} desenvolve pesquisas relacionadas às ciências atmosféricas e espaciais.
+
+Pesquisas relacionadas às ciências atmosféricas e espaciais são desenvolvidas no \inpe{}.
 \end{texexptitled}
 
-A definição de macros a partir do comando \mintinline{latex}{\newcommand{}{}} aceita a utilização de parâmetros (ou argumentos), tal como um \textit{script}. Veja o Exemplo \ref{exe_macro4} a seguir:
+A definição de \textit{macros} a partir do comando \mintinline{latex}{\newcommand{}{}} aceita a utilização de parâmetros (ou argumentos), tal como um \textit{script}. Veja o Exemplo \ref{exe_macro4} a seguir:
 
-\begin{texexptitled}[breakable,center lower,enhanced,middle=2mm]{Passando parâmetros para macros}{exe_macro4}
+\begin{texexptitled}[breakable,center lower,enhanced,middle=2mm]{Passando parâmetros para \textit{macros}}{exe_macro4}
 \newcommand{\meusomatorio}[3]{\ensuremath{\sum_{#1}^{#2}{#3}}}
 
 O somatório de todos os números naturais pode ser expresso por: 
 \meusomatorio{i=1}{\infty}{i}, $\forall i \in \mathbb{N^*}$.
 \end{texexptitled}
 
-No Exemplo \ref{exe_macro4}, observe que utilizou-se o comando \mintinline{latex}{\newcommand{}[]{}} para se definir uma expressão para a soma de todos os números naturais não nulos. Neste caso, \verb|{\meusomatorio}| define o nome do comando, \verb|[3]| indica a quantidade de argumentos que este novo comando deverá receber e \verb|{\ensuremath{\sum_{#1}^{#2}{#3}}}| indica a expressão matemática em si, i.e., $\sum$ sendo que os valores indicados por \verb|#1|, \verb|#2| e \verb|#3|, são os argumentos a serem inseridos na expressão. Além disso, observe também que a expressão definida pelo comando, é precedida pela \textit{macro} \mintinline{latex}{\ensuremath{}}, que tem a função de definir o ambiente de matemática para a expressão. Finalmente, o novo comando (\mintinline{latex}{\meusomatorio{}{}{}}) pode ser utilizado em linha sem a necessidade de se utilizar delimitadores (como indicado no início da Seção \ref{sec:mat_eqs}).
+No Exemplo \ref{exe_macro4}, observe que utilizou-se o comando \mintinline{latex}{\newcommand{}[]{}} para se definir uma expressão para a soma de todos os números naturais não nulos. Neste caso, \verb|{\meusomatorio}| define o nome do comando, \verb|[3]| indica a quantidade de argumentos que este novo comando deverá receber e \verb|{\ensuremath{\sum_{#1}^{#2}{#3}}}| indica a expressão matemática a ser utilizada, i.e., $\sum$ sendo que os valores indicados por \verb|#1|, \verb|#2| e \verb|#3|, são os argumentos a serem inseridos na expressão e na ordem em que devem ser informados. Além disso, observe também que a expressão definida pelo comando, é precedida pela \textit{macro} \mintinline{latex}{\ensuremath{}}, que tem a função de definir o ambiente de matemática para a expressão. Finalmente, o novo comando (\mintinline{latex}{\meusomatorio{}{}{}}) pode ser utilizado em linha sem a necessidade de se utilizar delimitadores (como indicado no início da Seção \ref{sec:mat_eqs}).
 
 \begin{marker}
-  Para conhecer mais sobre a utilização de macros para a definição de comandos e ambientes, veja em \url{https://www.overleaf.com/learn/latex/Defining_your_own_commands}.
+Para conhecer mais sobre a utilização de \textit{macros} para a definição de comandos e ambientes, veja em \url{https://www.overleaf.com/learn/latex/Defining_your_own_commands}.
 \end{marker}
-
-%FALAR SOBRE O renewcommand
 
 % Exemplo: redefinir o comando arraystretch de forma que a distância entre as linhas seja sempre um pouco maior (em comparação com o original): \renewcommand{\arraystretch}{1.2}
 
 \subsection{Editores}
 \label{sec:editores}
 
-Muitos editores podem ser utilizados para editar documentos \LaTeX{}. A escolha de um editor é particular, mas pode ser associada à forma como o usuário está mais habituado a digitar. Por exemplo, se o usuário gosta de utilizar o editor \href{https://www.vim.org}{VIM}, pode escolher instalar algumas extensões para este editor, a fim de torná-lo apto para a edição de documentos \LaTeX{}. Outras escolhas de editores, podem incluir editores locais (como o próprio VIM, disponível para o Windows, Linux e Mac OS X) ou editores online. Editores locais podem variar de acordo com o sistema operacional em uso, embora muitos projetos \textit{open source} tenham executáveis para os sistemas operacionais mais utilizados. Em relação aos editores online, estes podem ser mais vantajosos por não dependerem do tipo de sistema operacional, mas apenas de uma conexão com a internet e um navegador compatível. Outra vantagem dos editores online, é o fato de que estes podem ser integrados a outros serviços, como o \href{https://dropbox.com}{Dropbox}.
+Muitos editores podem ser utilizados para editar documentos \LaTeX{}. A escolha de um editor é particular, mas pode ser associada à forma como o usuário está mais habituado a digitar. Por exemplo, se o usuário gosta de utilizar o editor \href{https://www.vim.org}{VIM} (disponível para os sistemas operacionais Linux, \textit{Microsoft Windows} e Mac OS), pode escolher instalar algumas extensões para este editor, a fim de torná-lo mais eficiente para a edição de documentos \LaTeX{}. Editores locais podem variar de acordo com o sistema operacional em uso, embora muitos projetos \textit{open source} forneçam executáveis para os sistemas operacionais mais utilizados. Em relação aos editores \textit{online}, estes podem ser mais vantajosos por não dependerem do tipo de sistema operacional, mas apenas de uma conexão com a internet e um navegador compatível. Outra vantagem dos editores \textit{online}, é o fato de que estes podem ser integrados a outros serviços, como o \href{https://dropbox.com}{Dropbox} ou o \href{https://github.com}{GitHub}.
 
 Nas duas seções a seguir, são apresentados alguns editores selecionados para a edição de documentos \LaTeX{}.
 
 \subsubsection*{Editores locais}
 \label{sec:ed_local}
 
-Para compilar um documento \LaTeX{} localmente, dependendo do sistema operacional em uso, há várias opções de editores. Por simplicidade, iremos escolher o editor TexMaker, disponível para os sistemas operacional \textit{Windows}, Linux e Mac OS.
+Para compilar um documento \LaTeX{} localmente, dependendo do sistema operacional em uso, há várias opções de editores. Por simplicidade, sugere-se o editor \Tex\textit{Studio}, disponível para os sistemas operacional Linux, \textit{Microsoft Windows}, e Mac OS. A Figura \ref{fig:editortexstudio} a seguir mostra o aspecto do editor \TeX\textit{Studio}.
 
-Se a escolha do usuário for a linha de comando, utilizando um editor como o VIM, os documentos em \LaTeX{} podem ser compilados utilizando uma sequência de comandos como a seguir:
+\begin{figure}[H]
+\caption{O Editor \TeX\textit{Studio}.}
+\vspace{6mm}
+  \begin{center}
+    \includegraphics[width=0.7\textwidth,angle=-90]{./docs/figs/texstudio.pdf}
+  \end{center}
+\vspace{4mm}
+\legenda{Edição local de um documento \LaTeX{} com o editor \TeX\textit{Studio}.}
+\label{fig:editortexstudio}
+\FONTE{Produção do autor.}
+\end{figure}
 
-%No caso do estilo do INPE para teses, dissertações e relatórios (mais detalhes no Capítulo \ref{cap:parteIII}), pode-se utilizar o \textit{script} {\tt execpub.sh} para facilitar o processo de compilação. O que este \textit{script} faz é executar a sequência de comando do exemplo anterior, realizando mais alguns procedimentos para a renderização correta das referências com o estilo do INPE. 
+Se a escolha do usuário for a linha de comando, utilizando um editor como o VIM, os documentos em \LaTeX{} podem ser compilados utilizando a sequência de comandos apresentada na Seção \ref{sec:intro_latex}. Veja na Figura \ref{fig:editorvim} um exemplo do aspecto da edição de um documento \LaTeX{} utilizando o VIM.
 
-No caso do estilo do INPE para teses, dissertações e relatórios (mais detalhes no Capítulo \ref{cap:parteIII}), pode-se utilizar o \textit{script} {\tt execpub.sh} para facilitar o processo de compilação. O que este \textit{script} faz é executar a sequência de comando do exemplo anterior, realizando mais alguns procedimentos para a renderização correta das referências com o estilo do INPE. 
+\begin{figure}[H]
+\caption{O editor VIM (modo texto).}
+\vspace{6mm}
+  \begin{center}
+    \includegraphics[width=0.7\textwidth,angle=-90]{./docs/figs/editorvim.pdf}
+  \end{center}
+\vspace{4mm}
+\legenda{Edição local de um documento \LaTeX{} com o editor VIM.}
+\label{fig:editorvim}
+\FONTE{Produção do autor.}
+\end{figure}
+
+No caso do estilo do INPE para teses e dissertações (mais detalhes no Capítulo \ref{cap:parteIII}), pode-se utilizar o \textit{script} {\tt execpub.sh} para facilitar o processo de compilação. O que este \textit{script} faz é executar a sequência de comandos já apresentados, junto com mais alguns procedimentos para a renderização correta das referências com o estilo do INPE. 
 
 \begin{marker}
-  Veja o \href{http://mtc-m16d.sid.inpe.br/col/sid.inpe.br/mtc-m19@80/2010/03.24.15.12/doc/ambiente_latex_no_linux.pdf}{documento} para mais detalhes sobre a utilização do \textit{script} {\tt execpub.sh}.
+Veja o \href{http://mtc-m16d.sid.inpe.br/col/sid.inpe.br/mtc-m19@80/2010/03.24.15.12/doc/ambiente_latex_no_linux.pdf}{documento} para mais detalhes sobre a utilização do \textit{script} {\tt execpub.sh}.
 \end{marker}
 
-\subsubsection*{Editores online}
+\subsubsection*{Editores \textit{online}}
 \label{sec:ed_online}
 
-O Overleaf é um editor \LaTeX{} online que pode ser utilizado para escrita colaborativa. O estilo do INPE está disponível na plataforma online e pode ser carregado para a escrita de teses e dissertações a partir de endereço \url{https://www.overleaf.com/latex/templates/inpe-thesis-template/scdyfqzhbycc#.Wrj8gH8h2Uk}. Para acessar, é necessário que o usuário crie uma conta para o acesso. Esta é a forma recomendada para a criação de documentos \LaTeX{}, especialmente se o usuário ainda não está familiarizado com documentos mais complexos como o estilo do INPE.
+O \textit{Overleaf} é um editor \LaTeX{} \textit{online} que pode ser utilizado para escrita colaborativa. O estilo do INPE está disponível na plataforma \textit{online} e pode ser carregado para a escrita de teses e dissertações a partir de endereço \url{https://www.overleaf.com/latex/templates/inpe-thesis-template/scdyfqzhbycc#.Wrj8gH8h2Uk}. Para acessar, é necessário que o usuário crie uma conta para o acesso. Esta é a forma recomendada para a criação de documentos \LaTeX{}, especialmente se o usuário ainda não está familiarizado com documentos mais complexos como o estilo do INPE. 
+
+O estilo para teses e dissertações do INPE pode ser aberto para edição \textit{online} com o editor \textit{Overleaf}. Para isso, acesso o \textit{link} \url{https://www.overleaf.com/latex/templates/inpe-thesis-template/scdyfqzhbycc} e abra o estilo como um template para a edição, assim como mostrado na Figura \ref{fig:overleaf1}.
+
+\begin{figure}[H]
+\caption{O editor \textit{Overleaf}.}
+\vspace{6mm}
+  \begin{center}
+    \includegraphics[width=0.7\textwidth,angle=-90]{./docs/figs/overleaf1.pdf}
+  \end{center}
+\vspace{4mm}
+\legenda{Escolha do estilo do INPE para edição \textit{online} com o editor \textit{Overleaf}.}
+\label{fig:overleaf1}
+\FONTE{Produção do autor.}
+\end{figure}
+
+Na Figura \ref{fig:overleaf2} é mostrada a interface principal do editor \textit{Overleaf} com o estilo do INPE carregado para edição.
+
+\begin{figure}[H]
+\caption{O editor \textit{Overleaf}.}
+\vspace{6mm}
+  \begin{center}
+    \includegraphics[width=0.7\textwidth,angle=-90]{./docs/figs/overleaf2.pdf}
+  \end{center}
+\vspace{4mm}
+\legenda{Edição \textit{online} do estilo do INPE com o editor \textit{Overleaf}.}
+\label{fig:overleaf2}
+\FONTE{Produção do autor.}
+\end{figure}
 
 \begin{marker}
-  Ao utilizar o Overleaf, você irá perceber que a compilação do documento pode levar mais tempo quando muitas figuras são incluídas. Experimente comentar as seções do texto que já foram revistas para acelerar a compilação. Outra dica útil é realizar a compilação do documento no modo \textit{FAST}. Desta forma, as figuras são removidas do documento e apenas a marcadação e a estrutura do texto são respeitadas.
+Ao utilizar o editor \textit{Overleaf}, o usuário irá perceber que a compilação do documento pode levar mais tempo quando muitas figuras são incluídas. Recomenda-se comentar as seções do texto que já foram revisadas para acelerar a compilação. Outra dica útil é realizar a compilação do documento no modo \textit{FAST}. Desta forma, as figuras são removidas do documento e apenas a marcadação e a estrutura do texto são compiladas.
 \end{marker}
 
 \section{Exercícios}
 \label{sec:exercicios}
 
-Para colocar em prática os comandos de marcação do \LaTeX{}, realize os exercícios a seguir. As respostas estão no Anexo \ref{anexoA}. Cada exercício contém um link para o anexo, que irá lhe direcionar para a resposta correta. Para fazer os exercícios, você pode utilizar um editor local (instalado em seu computador) ou um editor online, como o \href{https://pt.overleaf.com/project}{Overleaf}.
+Para colocar em prática os comandos de marcação do \LaTeX{}, sugere-se a realização dos exercícios a seguir. As respostas estão no Anexo \ref{anexoA}. Cada exercício contém um link para o Anexo \ref{anexoA}, onde estão as repostas de cada exercício. Para fazer os exercícios, você pode utilizar um editor local (instalado em seu computador) ou um editor \textit{online}, \href{https://pt.overleaf.com/project}{Overleaf}.
 
-Para a realização dos exercícios, utilize os exemplos dados ao longo das seções do Capítulo \ref{cap:parteII}. Utilize também as tabelas do Anexo \ref{anexoB}.
+Para a realização dos exercícios, utilize os exemplos dados ao longo das seções do Capítulo \ref{cap:parteII}. Utilize também as tabelas do Anexo \ref{anexoB} para consultar os símbolos matemáticos pertinentes.
 
 \tcbstartrecording
 
