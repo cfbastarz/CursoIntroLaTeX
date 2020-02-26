@@ -1,7 +1,7 @@
 \chapter{Parte III - Estilo do INPE}
 \label{cap:parteIII}
 
-O INPE desenvolveu um estilo próprio para a publicação de teses, dissertações e relatórios. Este estilo está disponível para edição na linguagem de marcação \LaTeX{}, além dos editores WYSIWYG \textit{Microsoft Word} e \textit{LibreOffice}. Este capítulo trata da aplicação do estilo do INPE no ambiente da linguagem de marcação \LaTeX{}.
+O INPE desenvolveu um estilo próprio para a publicação de teses, dissertações e relatórios. Este estilo está disponível para edição na linguagem de marcação \LaTeX{}, além de possuir também estilos que podem ser utilizados com os editores WYSIWYG \textit{Microsoft Word} e \textit{LibreOffice}. Este capítulo trata da aplicação do estilo do INPE no ambiente da linguagem de marcação \LaTeX{}.
 
 \section{Estilo do INPE para Dissertações e Teses}
 
@@ -34,6 +34,8 @@ O estilo do INPE compreende um conjunto de arquivos que contém instruções e i
 Com o arquivo {\tt archive.zip} no seu computador, descompacte-o em um local apropriado para poder ter acesso aos arquivos que compõem o estilo do INPE.
 
 %\subsection{Conhecendo a estrutura e ambiente (arquivos que compõem o modelo, preenchimento de dados básicos, dicas práticas sobre o que se pode e o que não se pode fazer na hora de utilizar o modelo do INPE)}
+
+A outra forma de se obter o estilo do INPE para a edição de teses e dissertações, é a partir do \textit{site} do editor \textit{Overleaf}, assim como já foi apresentado na Seção \ref{sec:ed_online} do Capítulo \ref{cap:parteII}.
 
 \subsection{Estrutura e Organização}
 \label{sec:estrut}
@@ -70,7 +72,7 @@ Na Figura \ref{fig:estrut}, os arquivos da estrutura do estilo do INPE estão mi
     \end{itemize}
     \textbf{Arquivos do Estilo}
     \begin{itemize}
-        \color{MaterialBlue}{\item leiame
+        \color{blue}{\item leiame
         \item GPLv3.pdf
         \item CCBY.png
         \item CCBYNC.png
@@ -81,7 +83,7 @@ Na Figura \ref{fig:estrut}, os arquivos da estrutura do estilo do INPE estão mi
         \item logoverno.pdf
         \item logoinpe.pdf
         \item tdiinpe.cls}                                                        
-        \color{MaterialRed}{\item abntex-abrev-pt\_BR.def      
+        \color{red}{\item abntex-abrev-pt\_BR.def      
         \item abntex-abrev.sty
         \item nbr10520-2002.def
         \item nbr10522-1988.def
@@ -135,12 +137,12 @@ Na Figura \ref{fig:estrut}, os arquivos da estrutura do estilo do INPE estão mi
     \end{itemize}
 \end{multicols}
 
-Na lista de arquivos acima, observe que a lista ``Arquivos do Estilo'', há arquivos destacados nas cores azul e vermelho. Os arquivos em azul, representam os arquivos do estilo do INPE, enquanto que os arquivos em vermelho, representam os arquivos do estilo de citação da ABNT. O arquivo final gerado é o arquivo {\tt publicacao.pdf}. O documento principal do pacote, também chamado de \textit{master}, é o arquivo {\tt publicacao.tex}; o arquivo que contém as configurações principais do documento (e.g., título, autor, banca e datas) é o arquivo {\tt configuracao.tex} e o arquivo que contém as diretivas do estilo do INPE é o {\tt tdiinpe.cls}. Em geral, não é necessário editar o arquivo de estilo, a não ser que exista algum conflito em relação a pacotes e versões (veja um exemplo na Seção \ref{sec:oriesp}). 
+Na lista de arquivos acima, observe que a lista ``Arquivos do Estilo'', há arquivos destacados nas cores azul e vermelho. Os arquivos destacados na cor azul, representam os arquivos do estilo do INPE, enquanto que os arquivos destacados na cor vermelha, representam os arquivos do estilo de citação da ABNT. O arquivo final gerado é o arquivo {\tt publicacao.pdf}. O documento principal do pacote, também chamado de \textit{master}, é o arquivo {\tt publicacao.tex}; o arquivo que contém as configurações principais do documento (e.g., título, autor, banca e datas) é o arquivo {\tt configuracao.tex} e o arquivo que contém as diretivas do estilo do INPE é o {\tt tdiinpe.cls}. Em geral, não é necessário editar o arquivo de estilo, a não ser que exista algum conflito em relação a pacotes e versões (veja um exemplo na Seção \ref{sec:oriesp}). 
 
 \subsection{Compilação do Documento}
 \label{sec:compilacao}
 
-Para compilar o documento é necessário ter algum compilador o \LaTeX{} instalado localmente ou utilizar algum serviço \textit{online} como o \href{https://www.overleaf.com/}{Overleaf}. No \textit{Overleaf}, o \textit{link} para a edição do estilo em sua versão atual é \url{https://www.overleaf.com/latex/templates/inpe-thesis-template/scdyfqzhbycc#.Wrj8gH8h2Uk}. Para a compilação local, recomenda-se a utilização dos \textit{scripts} que se encontram na distribuição:
+Para compilar o documento é necessário ter algum compilador o \LaTeX{} instalado localmente ou utilizar algum serviço \textit{online} como o \href{https://www.overleaf.com/}{Overleaf}. No \textit{Overleaf}, o \textit{link} para a edição do estilo em sua versão atual é \url{https://www.overleaf.com/latex/templates/inpe-thesis-template/scdyfqzhbycc#.Wrj8gH8h2Uk}. Para a compilação local, recomenda-se a utilização dos \textit{scripts} que se encontram na distribuição do estilo do INPE:
 
 \begin{itemize}
     \item \textbf{criapublicacaozip}: \textit{script} que empacota o documento final ({\tt publicacao.pdf}) para publicação;
@@ -153,7 +155,7 @@ Para compilar o documento é necessário ter algum compilador o \LaTeX{} instala
 
 Para compilar um documento utilizando o estilo do INPE e o conjunto de \textit{scripts} fornecidos, siga os seguintes passos:
 
-\textbf{1.} Abra um terminal\footnote{No sistema operacional \textit{Microsoft Windows 10}, recomenda-se a utilização de qualquer distribuição Linux, instalada através do Subsistema \textit{Windows} para Linux (SWL). Veja como instalar em \url{https://docs.microsoft.com/pt-br/windows/wsl/install-win10}.} e navegue até o diretório onde se encontra o \textit{script} {\tt execpub.sh};
+\textbf{1.} Abra um terminal\footnote{No sistema operacional \textit{Microsoft Windows 10}, recomenda-se a utilização de qualquer distribuição Linux, instalada através do Subsistema \textit{Windows} para Linux (SWL, ou \textit{Windows Subsystem for Linux} WSL, na sigla em inglês). Veja como instalar em \url{https://docs.microsoft.com/pt-br/windows/wsl/install-win10}.} e navegue até o diretório onde se encontra o \textit{script} {\tt execpub.sh};
 
 \textbf{2.} Altere a permissão de execução do \textit{script} {\tt execpub.sh} com o comando:
 
@@ -243,15 +245,7 @@ Para finalmente compilar o documento principal {\tt publicacao.tex}, siga o exem
 ./execpub.sh publicacao pdf
 \end{meucomando}
 
-Muitos exemplos estão disponíveis na internet, assim como arquivos \LaTeX{} escritos há muito tempo e que podem fazer uso de codificações diferentes. Isso pode acarretar na representação incorreta de caracteres especiais, como acentos. Na Figura \ref{fig:leiame} o arquivo {\tt leiame} do estilo do INPE (assim como vários dos outros arquivos), foram criados e salvos na codificação ISO-8859-2 (frequentemente utilizado pelos sistemas operacionais até poucos anos atrás). Com a padronização do sistema \textit{Portable Operating System Interface} (POSIX) para UTF-8, pode tornar-se necessário abrir estes arquivos com algum editor de textos (como o Gedit no Linux ou o Textedit no MacOS) e utilizar a opção ``Salvar como...'' para salvar os arquivos no formato UTF-8. 
-
-%\begin{figure}[H]
-%\centering
-%\subfigure[Renderização errada\label{fig:leiame1}]{\includegraphics[scale=0.35]{./docs/figs/exemplo_iso8859_1.png}}%\\
-%\subfigure[Renderização correta\label{fig:leiame2}]{\includegraphics[scale=0.35]{./docs/figs/exemplo_iso8859_3.png}}
-%\caption{Exemplo da renderização de um arquivo salvo com a codificação ISO-8859-2 em um ambiente UTF-8.}
-%\label{fig:leiame}
-%\end{figure}
+Na \textit{internet} há muitos exemplos de documentos e códigos escritos na linguagem \LaTeX{} que podem ter sido escritos há muito tempo e que podem fazer uso de codificações diferentes. Isso pode acarretar na representação incorreta de caracteres especiais, como acentos. Na Figura \ref{fig:leiame} o arquivo {\tt leiame} do estilo do INPE (assim como vários dos outros arquivos), foram criados e salvos na codificação ISO-8859-2 (frequentemente utilizado pelos sistemas operacionais até poucos anos atrás). Com a padronização do sistema \textit{Portable Operating System Interface} (POSIX) para UTF-8, pode tornar-se necessário abrir estes arquivos com algum editor de textos (como o \textit{Gedit} no Linux ou o \textit{Textedit} no Mac OS) e utilizar a opção ``Salvar como...'' para salvar os arquivos no formato UTF-8. A Figura \ref{fig:leiame} a seguir, mostra as diferenças entre a representação de arquivos salvos com estas codificações, em um sistema POSIX. 
 
 \begin{figure}[H]
 \caption{Exemplo da representação de um arquivo salvo com a codificação ISO-8859-2 em um ambiente UTF-8.}
@@ -268,33 +262,6 @@ Muitos exemplos estão disponíveis na internet, assim como arquivos \LaTeX{} es
 \FONTE{Produção do autor.}
 \end{figure}
 
-%\begin{figure}[H]
-%\centering
-%\begin{subfigure}{.5\textwidth}
-%  \centering
-%  \includegraphics[scale=0.4]{./docs/figs/exemplo_iso88592_1.png}
-%  \caption{A subfigure}
-%  \label{fig:sub1}
-%\end{subfigure}%
-%\begin{subfigure}{.5\textwidth}
-%  \centering
-%  \includegraphics[scale=0.4]{./docs/figs/exemplo_iso88592_2.png}
-%  \caption{A subfigure}
-%  \label{fig:sub2}
-%\end{subfigure}
-%\caption{Exemplo da renderização de um arquivo salvo com a codificação ISO-8859-2 em um ambiente UTF-8.}
-%\label{fig:leiame}
-%\end{figure}
-%
-%\begin{figure}%
-%    \centering
-%    \subfloat[label 1]{{\includegraphics[width=5cm]{img1} }}%
-%    \qquad
-%    \subfloat[label 2]{{\includegraphics[width=5cm]{img2} }}%
-%    \caption{2 Figures side by side}%
-%    \label{fig:example}%
-%\end{figure}
-
 Outra forma de converter um arquivo ISO-8859-2 para o formato de codificação UTF-8, é através da utilização do comando {\tt iconv} do Linux (o qual também pode ser instalado no \textit{Microsoft Windows} através do SWL).Para converter um arquivo salvo na codificação ISO-8859-2 para UTF-8, pode-se utilizar o seguinte comando:
 
 \begin{meucomando}
@@ -302,17 +269,7 @@ iconv -f ISO-8859-9 -t UTF-8 arquivo.tex > novo_arquivo.tex
 \end{meucomando}
 
 \begin{marker}
-%Utilize o comando {\tt iconv} para converter arquivos salvos em codificações diferentes da UTF-8. Para converter um arquivo salvo na codificação ISO-8859-2 para UTF-8, pode-se utilizar o seguinte comando:
-%\medskip
-%\begin{meucomando}
-%iconv -f ISO-8859-9 -t UTF-8 arquivo.tex > novo_arquivo.tex
-%\end{meucomando}
-%\medskip
-Para mais informações sobre como utilizar o comando {\tt iconv}, digite o comando:
-\smallskip
-\begin{meucomando}
-iconv --help
-\end{meucomando}
+Para mais informações sobre como utilizar o comando {\tt iconv}, digite o comando {\tt iconv --help}.
 \end{marker}
 
 \subsection{Arquivos de Configuração}
@@ -320,114 +277,7 @@ iconv --help
 
 No estilo do INPE, há basicamente dois arquivos que devem ser configurados para que o usuário possa definir o nome do(s) autor(es) e o título do documento. São eles: {\tt cofiguracao.tex} e {\tt publicacao.tex}.
 
-%\begin{itemize}
-%    \item {\tt publicacao.tex}
- %   \item {\tt configuracao.tex}
-%\end{itemize}
-
 No arquivo {\tt publicacao.tex}, são definidos o estilo da publicação, i.e., se o documento terá o estilo de dissertação ou tese ({\tt PublicacaoDissOuTese}, é o padrão), artigo ou relatório ({\tt PublicacaoArtigoOuRelatorio}), proposta de tese ou dissertação ({\tt PublicacaoProposta}), livro com ou sem a formatação de capítulos ({\tt PublicacaoLivro}). Além disso, deve-se ajustar também o idioma: se o idioma principal do documento for o Português, então o \textit{abstract} será no idioma Inglês ({\tt english, portuguese}), além do tipo de logo do governo e do tipo de licença \textit{Creative Commons} (CC) a ser utilizada (veja mais informações sobre os diferentes tipos de Licenças \textit{Creative Commons} em \url{https://pt.wikipedia.org/wiki/Licenças_Creative_Commons}). Veja no exerto a seguir, um trecho do arquivo {\tt publicacao.tex}.
-
-%\begin{torntext}[title=Trecho do arquivo {\tt publicacao.tex}]
-%$\backslash$\mintinline{latex}{documentclass[\%}
-%\\
-%\%\%\% PARA ESCOLHER O ESTILO TIRE O SIMBOLO \%(COMENTÁRIO)
-%\\
-%\%SemVinculoColorido,
-%\\
-%\%SemFormatacaoCapitulo,
-%\\
-%\%SemFolhaAprovacao,
-%\\
-%\%SemImagens,
-%\\
-%\%CitacaoNumerica, \%\% o padrão é citação tipo autor-data
-%\\
-%\%PublicacaoDissOuTese, \%\% (é também o "default") com ficha catal. e folha de aprovação em branco. Caso tenha lista de símbolos e lista de siglas e abreviaturas retirar os comentários dos arquivos siglas.tex e abreviaturasesiglas.tex. Retirar também os comentários indicados nesse arquivo, nos includes
-%\\
-%\%PublicacaoArtigoOuRelatorio, \%\% texto sequencial, sem quebra de páginas nem folhas em branco
-%\\
-%\%PublicacaoProposta, \%\% igual tese/dissertação, mas sem ficha catal. e fol. de aprov.
-%\\
-%\%PublicacaoLivro, \%\% com capítulos
-%\\
-%\%PublicacaoLivro,SemFormatacaoCapitulo, \%\% sem capítulos
-%\\
-%english,portuguese \%\% para os documentos em Português com abstract.tex em Inglês
-%\\
-%\%portuguese,english \%\% para os documentos em Inglês com abstract.tex em Português
-%\\
-%,LogoINPE\% comentar essa linha para fazer aparecer o logo do Governo
-%\\
-%,CCBYNC	\% as opções de licença são: CCBY, CCBYSA, CCBYND, CCBYNC, CCBYNCSA, CCBYNCND, GPLv3 e INPECopyright
-%\\
-%]{tdiinpe}
-%\\
-%\%]{../../../../../iconet.com.br/banon/2008/03.25.01.19/doc/tdiinpe}
-%\\
-%\% PARA EXIBIR EM ARIAL TIRAR O COMENTÁRIO DAS DUAS LINHAS SEGUINTES
-%\\
-%\%$\backslash$\mintinline{latex}{renewcommand{\rmdefault}{phv}} \% Arial
-%\\
-%\%$\backslash$\mintinline{latex}{renewcommand{\sfdefault}{phv}} \% Arial
-%\\
-%\\
-%\% PARA PUBLICAÇÕES EM INGLÊS:
-%\\
-%\% renomear o arquivo: abnt-alf.bst para abnt-alfportuguese.bst
-%\\
-%\% renomear o arquivo: abnt-alfenglish.bst para abnt-alf.bst
-%\end{torntext}
-
-%\begin{tcboxedraster}[raster columns=3, raster equal height, size=small,colframe=red!50!black,colback=red!10!white,colbacktitle=red!50!white, title={Box \# \thetcbrasternum}] {colback=yellow!10,fonttitle=\bfseries,title=Trecho do arquivo {\tt publicacao.tex}}
-%$\backslash$\mintinline{latex}{documentclass[\%}
-%\\
-%\%\%\% PARA ESCOLHER O ESTILO TIRE O SIMBOLO \%(COMENTÁRIO)
-%\\
-%\%SemVinculoColorido,
-%\\
-%\%SemFormatacaoCapitulo,
-%\\
-%\%SemFolhaAprovacao,
-%\\
-%\%SemImagens,
-%\\
-%\%CitacaoNumerica, \%\% o padrão é citação tipo autor-data
-%\\
-%\%PublicacaoDissOuTese, \%\% (é também o "default") com ficha catal. e folha de aprovação em branco. Caso tenha lista de símbolos e lista de siglas e abreviaturas retirar os comentários dos arquivos siglas.tex e abreviaturasesiglas.tex. Retirar também os comentários indicados nesse arquivo, nos includes
-%\\
-%\%PublicacaoArtigoOuRelatorio, \%\% texto sequencial, sem quebra de páginas nem folhas em branco
-%\\
-%\%PublicacaoProposta, \%\% igual tese/dissertação, mas sem ficha catal. e fol. de aprov.
-%\\
-%\%PublicacaoLivro, \%\% com capítulos
-%\\
-%\%PublicacaoLivro,SemFormatacaoCapitulo, \%\% sem capítulos
-%\\
-%english,portuguese \%\% para os documentos em Português com abstract.tex em Inglês
-%\\
-%\%portuguese,english \%\% para os documentos em Inglês com abstract.tex em Português
-%\\
-%,LogoINPE\% comentar essa linha para fazer aparecer o logo do Governo
-%\\
-%,CCBYNC	\% as opções de licença são: CCBY, CCBYSA, CCBYND, CCBYNC, CCBYNCSA, CCBYNCND, GPLv3 e INPECopyright
-%\\
-%]{tdiinpe}
-%\\
-%\%]{../../../../../iconet.com.br/banon/2008/03.25.01.19/doc/tdiinpe}
-%\\
-%\% PARA EXIBIR EM ARIAL TIRAR O COMENTÁRIO DAS DUAS LINHAS SEGUINTES
-%\\
-%\%$\backslash$\mintinline{latex}{renewcommand{\rmdefault}{phv}} \% Arial
-%\\
-%\%$\backslash$\mintinline{latex}{renewcommand{\sfdefault}{phv}} \% Arial
-%\\
-%\\
-%\% PARA PUBLICAÇÕES EM INGLÊS:
-%\\
-%\% renomear o arquivo: abnt-alf.bst para abnt-alfportuguese.bst
-%\\
-%\% renomear o arquivo: abnt-alfenglish.bst para abnt-alf.bst
-%\end{tcboxedraster}
 
 \begin{texexp}{listing only}
 documentclass[
@@ -458,7 +308,7 @@ CCBYNC,
 ...
 \end{texexp}
 
-A Tabela \ref{tab:arq_publicacao} sumariza as principais opções encontradas no arquivo {\tt publicacao.tex}.
+A Tabela \ref{tab:arq_publicacao} a seguir, sumariza as principais opções encontradas no arquivo {\tt publicacao.tex}.
 
 \begin{table}[H]
 \centering
@@ -482,33 +332,12 @@ A Tabela \ref{tab:arq_publicacao} sumariza as principais opções encontradas no
     {\tt LogoINPE}                              & Utiliza o logo do INPE ao invés do logo do governo \\
     {\tt CCBYNC}                                & Aplica o tipo de licença \\
     \mintinline{latex}{\renewcommand{\rmdefault}{phv}}& Aplica a fonte Arial (sem serifa) como padrão \\
-%    \\[-0.5em]
-%    {\tt LogoINPE}                              & Utiliza o logo do INPE ao invés do logo do governo \\
-%    \\[-0.5em]
-%    {\tt LogoINPE}                              & Utiliza o logo do INPE ao invés do logo do governo \\
-%    \\[-0.5em]
     \bottomrule
     \end{tabular}
 \FONTE{Produção do autor.}
 \end{table}
 
 \footnotetext[1]{Esta opção pode ser útil quando se tem muitas imagens e o tempo de compilação do documento for muito grande.}
-
-%\begin{leaflet}[underlay={\node[above=5mm,font=\footnotesize] 
-%    at (frame.south) {- \arabic{tcbbreakpart} -};}]
-%     \includegraphics[width=\linewidth]{Basilica_5.png}
-%     \begin{center}
-%     \bfseries\LARGE Example
-%     \end{center}
-%     \section{Introduction}
-%     \lipsum[1]
-%     \section{Main Part A}
-%     \lipsum[2-8]
-%     \section{Main Part B}
-%     \lipsum[9-15]
-%     \section{Conclusion}
-%     \lipsum[16-18]
-%\end{leaflet}
 
 No arquivo {\tt configuracao.tex}, o usuário poderá inserir o título do documento, bem como o(s) nome(s) do(s) autor(es) do documento. Outras configurações, são normalmente revisadas e alteradas oportunamente pelo SESID quando o documento de tese ou dissertação é entregue para revisão do estilo.
 
@@ -554,7 +383,7 @@ As seções a seguir são dedicadas aos detalhes referentes à inserção de con
 \subsection{Inserção de Figuras e Tabelas}
 \label{sec:figtabs}
 
-Na Seção \ref{sec:figuras} do Capítulo \ref{cap:parteII} foram apresentadas diferentes formas de se incluir figuras em um documento \LaTeX{}. Com a utilização do estilo do INPE, entretanto, alguns cuidados deverão ser tomados, pois há alguns detalhes que devem ser respeitados. Uma imagem típica com todos os seus elementos de referência é apresentada no Exemplo \ref{figestinpe}.
+Na Seção \ref{sec:figuras} do Capítulo \ref{cap:parteII} foram apresentadas diferentes formas de se incluir figuras em um documento \LaTeX{}. Com a utilização do estilo do INPE, entretanto, alguns cuidados devem ser tomados, pois há detalhes que devem ser respeitados. Uma imagem típica com todos os seus elementos de referência é apresentada no Exemplo \ref{figestinpe}.
 
 \begin{texexptitled}[breakable,center lower,enhanced,middle=2mm,listing and text]{Inserção de uma figura utilizando o estilo do INPE}{figestinpe}
 \begin{figure}[H]
@@ -592,16 +421,16 @@ Campo 1 & Campo2 & Campo3 & Campo 4 & Campo5 & Campo6 \\
 \end{table}
 \end{texexptitled}
 
-No caso das tabelas, sempre que se utilizar o estilo do INPE, deve-se utilizar o ambiente {\tt table} (veja mais detalhes na Seção \ref{sec:tabs} do Capítulo \ref{cap:parteII}). Recomenda-se também a utilização dos ambientes de posição (para centralizar, alinhar à direita ou esquerda). Da mesma forma como as figuras, as tabelas também devem vir acompanhadas do marcador {\tt FONTE}, sempre que a citação da fonte for permitente. Neste caso, evite a utilização do marcado {\tt centering} e passe a utilizar o ambiente {\tt center}. Mais detalhes sobre a inserção de tabelas utilizando-se o estilo do INPE, podem ser encontradas no Anexo B de \citeonline{estiloinpe}.
+No caso das tabelas, sempre que for utilizado o estilo do INPE, deve-se utilizar o ambiente {\tt table} (veja mais detalhes na Seção \ref{sec:tabs} do Capítulo \ref{cap:parteII}). Recomenda-se também a utilização dos ambientes de posição (para centralizar, alinhar à direita ou esquerda). Da mesma forma como as figuras, as tabelas também devem vir acompanhadas do marcador {\tt FONTE}, sempre que a citação da fonte for permitente. Neste caso, ao invés da utilização do marcador {\tt centering}, deve-se utilizar o ambiente {\tt center}. Mais detalhes sobre a inserção de tabelas utilizando-se o estilo do INPE, podem ser encontradas no Anexo B de \citeonline{estiloinpe}.
 
-Tanto para figuras quanto para tabelas, o posicionamento destes corpos flutuantes é importante. Os ambientes {\tt figure} e {\tt table}, devem ter suas posições relativas ajustadas conforme as opções mostradas na Tabela \ref{tab:ambfig} da Seção \ref{sec:amb_docs/figs} do Capítulo \ref{cap:parteII}.
+Tanto para figuras quanto para tabelas, deve-se ter especial atenção quanto ao posicionamento destes corpos flutuantes. Os ambientes {\tt figure} e {\tt table}, devem ter suas posições relativas ajustadas conforme as opções mostradas na Tabela \ref{tab:ambfig} da Seção \ref{sec:amb_docs/figs} do Capítulo \ref{cap:parteII}.
 
 \subsection{Inserção de Citações e Referências}
 \label{sec:citerefs}
 
-Assim como apresentado na Seção \ref{sec:refs} do Capítulo \ref{cap:parteII}, citações a elementos do texto como figuras, tabelas e equações podem ser feitas com a utilização do par de comandos {\tt label} e {\tt ref}. Referências bibliográficas, dentro do estilo do INPE, são gerenciadas utilizando o Bib\TeX{} e a sua inserção em um documento com o estilo do INPE, é simples. Antes de apresentar os detalhes de como as referências são armazenadas e incluídas no corpo do texto, é necessário antes, voltar à Seção \ref{sec:compilacao} do Capítulo \ref{cap:parteII} e acrescentar alguns passos extras ao processo de compilação. Isso se faz necessário porque as referências bibliográficas precisam também ser interpretadas pelo Bib\TeX{}. Nesse processo, o estilo de referências da ABNT é então aplicado e apresentado da forma correta no corpo do texto.
+Assim como apresentado na Seção \ref{sec:refs} do Capítulo \ref{cap:parteII}, citações a elementos do texto como figuras, tabelas e equações podem ser feitas com a utilização do par de comandos \mintinline{latex}{\label{nome}} e \mintinline{latex}{\ref{nome}}. Referências bibliográficas, dentro do estilo do INPE, são gerenciadas utilizando o Bib\TeX{} e a sua inserção em um documento com o estilo do INPE é simples. Antes de apresentar os detalhes de como as referências são armazenadas e incluídas no corpo do texto, é necessário antes, voltar à Seção \ref{sec:compilacao} do Capítulo \ref{cap:parteII} e acrescentar alguns passos extras ao processo de compilação. Isso se faz necessário porque as referências bibliográficas precisam também ser interpretadas pelo Bib\TeX{}. Nesse processo, o estilo de referências da ABNT é então aplicado e apresentado da forma correta no corpo do texto.
 
-Na Figura \ref{fig:compbibtex} é apresentado um diagrama semelhante aquela apresentada na Figura \ref{fig:complatex}, com a diferença de que os procedimentos necessários para a inclusão do Bib\TeX{} estão adicionados.
+Na Figura \ref{fig:compbibtex} é apresentado um diagrama semelhante aquele apresentada na Figura \ref{fig:complatex}, com a diferença de que os procedimentos necessários para a inclusão do Bib\TeX{} estão adicionados.
 
 \begin{figure}[H]
 	\caption{Etapas envolvidas na compilação de um documento \LaTeX{} com referências Bib\TeX{}.}
@@ -669,10 +498,10 @@ No estilo do INPE, existe um arquivo de nome {\tt referencia.bib} que fica dentr
 ...
 \end{texexp}
 
-Neste arquivo, observe que está indicado em um comentário no topo do arquivo, que o usuário insira os acentos de forma explícita, tal como foi explicado na Seção \ref{sec:acentos} do Capítulo \ref{cap:parteII}. Isto se faz necessário porque o Bib\TeX{} não aceita a localização tal como pode-se fazer com o \LaTeX{} quando se utiliza o pacote {\tt inputenc}. No segundo bloco, observe as instruções que se iniciam com a palavra-chave {\tt @string}. Com estas \textit{strings} pode-se criar atalhos (\textit{aliases}) para nomes que podem ser expandidos depois na montagem das referências, feitas pelo Bib\TeX{}. Repare que a \textit{string} que define o \textit{alias} {\tt actaam} foi utilizado no campo {\tt journal} da referência de \citeonline{nobre/2005}. O arquivo {\tt referencia.bib} pode se tornar muito grande. Neste caso, pode ser interessante utilizar algum gerenciador de referências, tal como o \textit{Zotero}, \textit{Mendeley}, \textit{Jabref} entre outros (veja algumas destas opções na Seção \ref{sec:refs} do Capítulo \ref{cap:parteII}). 
+Neste arquivo, observe que está indicado com um comentário no topo do arquivo, que o usuário deve insirir os acentos de forma explícita, tal como foi explicado na Seção \ref{sec:acentos} do Capítulo \ref{cap:parteII}. Isto se faz necessário porque o Bib\TeX{} não aceita a localização tal como pode-se fazer com o \LaTeX{} quando se utiliza o pacote {\tt inputenc}. No segundo bloco, observe as instruções que se iniciam com a palavra-chave {\tt @string}. Com estas \textit{strings} pode-se criar atalhos (\textit{aliases}) para nomes que podem ser expandidos depois na montagem das referências, feitas pelo Bib\TeX{}. Repare que a \textit{string} que define o \textit{alias} {\tt actaam} foi utilizado no campo {\tt journal} da referência de \citeonline{nobre/2005}. Como o arquivo {\tt referencia.bib} pode se tornar muito grande, pode ser interessante utilizar algum gerenciador de referências, tal como o \textit{BibDesk}, \textit{Mendeley} ou \textit{Zoteroy} (entre outros). Veja algumas destas opções na Seção \ref{sec:refs} do Capítulo \ref{cap:parteII}. 
 
 \begin{marker}
-Deve-se ter cautela na edição manual do arquivo {\tt referencia.bib} do estilo do INPE. Este arquivo não aceita acentos naturais, i.e., acentos latinos devem ser marcados no estilo do \LaTeX{} (veja mais detalhes na Seção \ref{sec:acentos}. Além disso, é recomendável que o usuário edite a referência, removendo espaços em brancos e remarcando os acentos, quando necessário.
+Deve-se ter cautela na edição manual do arquivo {\tt referencia.bib} do estilo do INPE. Este arquivo não aceita acentos naturais, i.e., acentos latinos devem ser marcados no estilo do \LaTeX{} (veja mais detalhes na Seção \ref{sec:acentos}). Além disso, é recomendável que o usuário edite a referência, removendo espaços em branco e remarcando os acentos, quando necessário.
 \end{marker}
 
 As referências bibliográficas, dentro da norma ABNT adotada pelo estilo do INPE, podem ser inseridas no corpo do texto com os marcadores sumarizados na Tabela \ref{tab:estiloscit}. As definições destes marcadores podem ser encontradas em \citeonline{araujo/2018} e também no arquivo {\tt abntcite.sty} do estilo do INPE.
@@ -741,7 +570,7 @@ Na Tabela \ref{tab:estiloscit} a seguir, as duas referências utilizadas nos exe
 \clearpage
 \newpage
 
-A aplicação dos estilos mostrados na Tabela \ref{tab:estiloscit}, deve ser feita em ocasiões específicas. Os marcadores {\tt cite} e {\tt citeonline} são mais frequentemente utilizados, mas observe que dependendo do estilo de escrita do autor, pode ser necessário apenas citar-se ou o ano (com o marcador {\tt citeyear}), ou apenas o autor (com os marcadores {\tt citeauthor} ou {\tt citeauthoronline}). Os marcadores {\tt apud} e {\tt apudonline} devem ser utilizados para citar referências que são encontradas em outras referências. Neste caso, a utilização do \textit{apud} (uma expressão latina que indica uma intermediação) pode não ser muito elegante, pois pode passar a impressão de que o autor não leu ou não teve acesso à referência original. Citações com os marcadores {\tt Idem} e {\tt Ibidem} indicam, respectivamente, ``mesmo autor'' e ``mesma obra'', e seu uso parece ser mais claro. O marcador {\tt opcit}, representa a expressão latina \textit{opus citatum}, que significa ``obra citada'', ao passo que o marcador {\tt cfcite}, representa a expressão latina \textit{confira}, o marcador {\tt passim}, representa a expressão latina \textit{passim}, equivalente a ``aqui e ali'', enquanto que o marcador {\tt etseq} representa a expressão latina \textit{et sequentia}, equivalente a ``e sequência''.
+A aplicação dos estilos mostrados na Tabela \ref{tab:estiloscit}, deve ser feita em ocasiões específicas. Os marcadores {\tt cite} e {\tt citeonline} são mais frequentemente utilizados, mas observe que dependendo do estilo de escrita do autor, pode ser necessário apenas citar ou o ano (com o marcador {\tt citeyear}), ou apenas o autor (com os marcadores {\tt citeauthor} ou {\tt citeauthoronline}). Os marcadores {\tt apud} e {\tt apudonline} devem ser utilizados para citar referências que são encontradas em outras referências. Neste caso, a utilização do \textit{apud} (uma expressão latina que indica uma intermediação) pode não ser muito elegante, pois pode passar a impressão de que o autor ou não leu, ou não teve acesso à referência original. Citações com os marcadores {\tt Idem} e {\tt Ibidem} indicam, respectivamente, ``mesmo autor'' e ``mesma obra'', e seu uso parece ser mais claro. O marcador {\tt opcit}, representa a expressão latina \textit{opus citatum}, que significa ``obra citada'', ao passo que o marcador {\tt cfcite}, representa a expressão latina \textit{confira}, o marcador {\tt passim}, representa a expressão latina \textit{passim}, equivalente a ``aqui e ali'', enquanto que o marcador {\tt etseq} representa a expressão latina \textit{et sequentia}, equivalente a ``e sequência''.
 
 De forma geral, as referências em um documento \LaTeX{} escrito com o estilo do INPE, devem seguir as mesmas orientações indicadas na Seção \ref{sec:citerefs} do Capítulo \ref{cap:parteII}. Para mais informações sobre a elaboração de referências bibliográficas seguindo as normas ABNT, consulte \citeonline{barbedo/2018a,barbedo/2018b}.
 
@@ -750,7 +579,7 @@ De forma geral, as referências em um documento \LaTeX{} escrito com o estilo do
 
 O estilo de teses e dissertações do INPE possui uma série de pacotes pré-carregados, os quais podem ser verificados no arquivo do estilo {\tt tdiinpe.cls}. Além da informação sobre os pacotes, há também uma extensa lista de mudanças que foram realizadas.
 
-Dependendo das necessidade do usuário, pode-se fazer necessária a inclusão de outros pacotes, os quais podem ser facilmente adicionados ao arquivo {\tt publicacao.tex} ou ao final do arquivo {\tt configuracao.tex}. Porém, uma orientação é criar um novo arquivo, e.g., {\tt meus\_pacotes.tex} e incluir a sua leitura no arquivo {\tt publicacao.tex}. Isso pode ser feito da seguinte maneira:
+Dependendo das necessidade do usuário, pode ser necessária a inclusão de outros pacotes, os quais podem ser facilmente adicionados ao arquivo {\tt publicacao.tex} ou ao final do arquivo {\tt configuracao.tex}. Porém, uma orientação é criar um novo arquivo, e.g., {\tt meus\_pacotes.tex} e incluir a sua leitura no arquivo {\tt publicacao.tex}. Isso pode ser feito da seguinte maneira:
 
 \begingroup
 \renewcommand{\labelenumi}{\arabic{enumi}.}
@@ -763,15 +592,16 @@ Dependendo das necessidade do usuário, pode-se fazer necessária a inclusão de
 
 Observe que o caminho para o arquivo {\tt meus\_pacotes.tex} deve ser indicado. Dessa forma, o ``{\tt ./}'' indica que o arquivo encontra-se na raiz do documento, i.e., no local onde o arquivo {\tt publicacao.tex} está. Além disso, observe que não é necessário indicar a extensão do arquivo dentro do comando \mintinline{latex}{\input}.
 
-Uma situação um pouco diferente pode ocorrer quando um pacote pré-carregado é incompatível com o pacote que o usuário deseja carregar. Um exemplo, assim como foi apontado na Seção \ref{sec:figuras} do Capítulo \ref{cap:parteII}, está relacionado aos pacotes {\tt subfigure}, que é pré-carregado no estilo do INPE e o pacote {\tt subfig}. O pacote {\tt subfig} é mais moderno e possui suporte, e por isso o usuário poderá achar útil a sua utilização. Para corretamente carregar o pacote {\tt subfig} e evitar conflitos e mensagens de erro durante a compilação do documento, é necessário, antes comentar a linha que carrega o pacote {\tt subfigure} no arquivo de estilo {\tt tdiinpe.cls}. Para isto, basta seguir os passos a seguir:
+Uma situação um pouco diferente pode ocorrer quando um pacote pré-carregado é incompatível com o pacote que o usuário deseja carregar. Um exemplo, assim como foi apontado na Seção \ref{sec:figuras} do Capítulo \ref{cap:parteII}, está relacionado aos pacotes {\tt subfigure} (que é pré-carregado no estilo do INPE) e o pacote {\tt subfig}. O pacote {\tt subfig} é mais moderno e está em pleno desenvolvimento, e por isso o usuário poderá achar útil a sua utilização. Para corretamente carregar o pacote {\tt subfig} e evitar conflitos e mensagens de erro durante a compilação do documento, é necessário, antes comentar a linha que carrega o pacote {\tt subfigure} no arquivo de estilo {\tt tdiinpe.cls}. Para isto, basta realizar as seguintes etapas:
 
 \begingroup
 \renewcommand{\labelenumi}{\arabic{enumi}.}
 \begin{enumerate}
-	\item Abrir o arquivo {\tt tdiinpe.cls} com o seu editor de textos favorito;
+	\item Abrir o arquivo {\tt tdiinpe.cls} com o seu editor de textos preferido;
 	\item Procurar pela linha \mintinline{latex}{\RequirePackage{subfigure}} e inserir um comentário no início desta linha;
 	\item Procurar pela linha \mintinline{latex}{\RequirePackage[subfigure]{tocloft}} e inserir um comentário no início desta linha;
 	\item Salvar o arquivo {\tt tdiinpe.cls};
+  \item Certificar-se de que o pacote {\tt subfig} está carregado no arquivo {\tt publicacao.tex} ou {\tt configuracao.tex} (ou ainda no arquivo {\tt meus\_pacotes.tex});
 	\item Recompilar o documento.
 \end{enumerate}
 \endgroup
@@ -817,4 +647,24 @@ O aspecto do arquivo {\tt publicacao.tex} será:
 Ressalta-se, entretanto, que este tipo de modificação pode acarretar em resultados indesejáveis e deve ser feito com cautela. 
 \end{marker}
 
-%%% inserir informações sobre como utilizar o xelatex com o estilo do INPE, o que deve ser comentado (pacotes) etc
+Outra orientação especial, está relacionada com a utilização do compilador \XeLaTeX{} e o estilo do INPE. No arquivo de estilo {\tt tdiinpe.cls} é carregado por padrão o pacote {\tt inputenc}, que em conjunto com o compilador \XeLaTeX{}, pode acerretar em alguns problemas e inconsistências relacionadas à forma como caracteres especiais são apresentados. Isso ocorre, porque o compilador \XeLaTeX{} (que é um compilador moderno baseado no formato UTF-8) já carrega o pacote {\tt inputenc} internamente, e a utilização de ambos pode acarretar em mensagens de aviso desnecessárias, o que é bastante inconveniente. Para compilar o estilo do INPE utilizando o compilador \XeLaTeX{}, é necessário comentar a seguinte linha no arquivo de estilo {\tt tdiinpe.cls}:
+
+\begin{meucomando}
+\RequirePackage[latin1]{inputenc}
+\end{meucomando}
+
+Após a modificação, o arquivo de estilo {\tt tdiinpe.cls} terá o seguinte aspecto:
+
+\begin{texexp}{listing only}
+...
+\RequirePackage{color} %% essencial %% aplicar cores no texto
+
+%\RequirePackage[latin1]{inputenc} %% essencial
+
+\RequirePackage{float} %% acrescentado por gjfb em 2012-10-19 seguindo recomendação do Fabio Dall Cortivo
+...
+\end{texexp}
+
+\begin{marker}
+Ressalta-se, entretanto, que esta modificação pode acarretar em resultados indesejados, sendo a sua utilização experimental com o estilo do INPE na sua versão atual.
+\end{marker}
