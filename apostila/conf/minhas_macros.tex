@@ -1,20 +1,32 @@
 % COMANDOS PESSOAIS
 %\newcommand{\vetor}[1]{\mathit{\mathbf{#1}}}
 
+\definecolor{preto}{HTML}{515151}
+
 % Caixas das Dicas (pacote tcolorbox)
 % Material Colors
+%\newtcolorbox{marker}[1][]{enhanced,
+%  before skip=10mm,after skip=10mm,
+%  boxrule=0.4pt,left=5mm,right=2mm,top=1mm,bottom=1mm,
+%  colback=MaterialAmberA100,
+%  colupper=preto,
+%  colframe=MaterialGrey900,
+%  sharp corners,rounded corners=southeast,arc is angular,arc=3mm,
+%  underlay={%
+%    \path[fill=tcbcol@back!80!black] ([yshift=3mm]interior.south east)--++(-0.4,-0.1)--++(0.1,-0.2);
+%    \path[draw=tcbcol@frame,shorten <=-0.05mm,shorten >=-0.05mm] ([yshift=3mm]interior.south east)--++(-0.4,-0.1)--++(0.1,-0.2);
+%    \path[fill=MaterialYellow100!50!black,draw=none] (interior.south west) rectangle node[white]{\Huge\bfseries !} ([xshift=4mm]interior.north west);
+%    },
+%  drop fuzzy shadow,#1}
 \newtcolorbox{marker}[1][]{enhanced,
   before skip=10mm,after skip=10mm,
-  boxrule=0.4pt,left=5mm,right=2mm,top=1mm,bottom=1mm,
-  colback=MaterialAmberA100,
-  colframe=MaterialGrey900,
-  sharp corners,rounded corners=southeast,arc is angular,arc=3mm,
+  boxrule=1.4pt,left=6mm,right=3mm,top=2mm,bottom=2mm,
+  colback=MaterialAmberA100!75,
+  colupper=black,
+  colframe=preto,
   underlay={%
-    \path[fill=tcbcol@back!80!black] ([yshift=3mm]interior.south east)--++(-0.4,-0.1)--++(0.1,-0.2);
-    \path[draw=tcbcol@frame,shorten <=-0.05mm,shorten >=-0.05mm] ([yshift=3mm]interior.south east)--++(-0.4,-0.1)--++(0.1,-0.2);
-    \path[fill=MaterialYellow100!50!black,draw=none] (interior.south west) rectangle node[white]{\Huge\bfseries !} ([xshift=4mm]interior.north west);
-    },
-  drop fuzzy shadow,#1}
+    \path[fill=none] (frame.south west) rectangle node[preto]{\huge\bfseries !} ([xshift=7mm]frame.north west);
+    }}
   
 % Caixas dos Exemplos (pacote tcolorbox)
 % Material Colors
@@ -97,14 +109,24 @@
 \newtcblisting{commandshell}{colback=MaterialBlueGrey900,colupper=MaterialBlueGrey50,colframe=MaterialBlueGrey900!75!MaterialBlueGrey900,listing only,listing options={style=tcblatex,language=sh},
     every listing line={\textcolor{MaterialRed500}{\small\ttfamily\bfseries \$ }}}
 
+%\newtcblisting{meucomando}{listing engine=minted,
+%	minted style=colorful,
+%	minted language=bash,
+%	minted options={fontsize=\small,breaklines,autogobble,linenos,numbersep=3mm},
+%	colback=MaterialAmber50,colframe=MaterialBlueGrey900,listing only,
+%	left=5mm,enhanced,
+%	overlay={\begin{tcbclipinterior}\fill[MaterialAmber600] (frame.south west)
+%			rectangle ([xshift=5mm]frame.north west);\end{tcbclipinterior}}}
+
 \newtcblisting{meucomando}{listing engine=minted,
 	minted style=colorful,
 	minted language=bash,
 	minted options={fontsize=\small,breaklines,autogobble,linenos,numbersep=3mm},
-	colback=MaterialAmber50,colframe=MaterialBlueGrey900,listing only,
+	colback=blue!5!white,colupper=preto,colframe=preto,listing only,
 	left=5mm,enhanced,
-	overlay={\begin{tcbclipinterior}\fill[MaterialAmber600] (frame.south west)
+	overlay={\begin{tcbclipinterior}\fill[red!20!blue!20!white] (frame.south west)
 			rectangle ([xshift=5mm]frame.north west);\end{tcbclipinterior}}}
+
 
 % Sentenças individuais Loren Lipsum (pacote lipsum)
 % REF: https://tex.stackexchange.com/questions/254901/one-sentence-of-dummy-text
