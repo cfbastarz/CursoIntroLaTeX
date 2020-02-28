@@ -1,6 +1,4 @@
-% COMANDOS PESSOAIS
-%\newcommand{\vetor}[1]{\mathit{\mathbf{#1}}}
-
+% Macros extras
 \definecolor{preto}{HTML}{515151}
 
 % Caixas das Dicas (pacote tcolorbox)
@@ -127,7 +125,6 @@
 	overlay={\begin{tcbclipinterior}\fill[red!20!blue!20!white] (frame.south west)
 			rectangle ([xshift=5mm]frame.north west);\end{tcbclipinterior}}}
 
-
 % Sentenças individuais Loren Lipsum (pacote lipsum)
 % REF: https://tex.stackexchange.com/questions/254901/one-sentence-of-dummy-text
 % store a big set of sentences
@@ -156,48 +153,3 @@
    }
  }
 \ExplSyntaxOff
-
-%\newcommand{\recuo}{\\[-0.5em]}
-%
-%\newcommand{\eg}{por exemplo}
-%\newcommand{\ie}{isto é}
-%
-%\newcommand{\inpe}{INPE}
-%\newcommand{\inpex}{INPE\xspace}
-%\newcommand{\ninpe}{Instituto Nacional de Pesquisas Espaciais}
-%\newcommand{\ninpex}{Instituto Nacional de Pesquisas Espaciais\xspace}
-
-% Reinsere um ponto (.) depois do número em listas ordenadas
-%\renewenvironment{enumerate}%
-%{\begin{list}{\arabic{enumi}.}%
-%		{\setlength{\leftmargin}{2.5em}%
-%			\setlength{\itemsep}{-\parsep}%
-%			\setlength{\topsep}{-\parskip}%%
-%			\usecounter{enumi}}%
-%}{\end{list}}
-
-% Força a redefinição do estilo das listas ordenadas (utilize o begingroup/endgroup para alterar localmente)
-%\renewcommand{\labelenumi}{\arabic{enumi}.}
-%\renewcommand{\labelenumii}{(\alph{enumii})}
-%\renewcommand{\labelenumiii}{\roman{enumiii}.}
-%\renewcommand{\labelenumiv}{\Alph{enumiv}.}
-
-%% Notas (pacote todonotes)
-%\newcommandx{\reescrever}[2][1=]{
-%  \todo[linecolor=MaterialRed,
-%  backgroundcolor=MaterialRed!25,
-%  bordercolor=MaterialRed,#1]{#2}
-%}
-%\newcommandx{\verificar}[2][1=]{
-%  \todo[linecolor=MaterialBlue,
-%  backgroundcolor=MaterialBlue!25,
-%  bordercolor=MaterialBlue,#1]{#2}
-%}
-%\newcommandx{\comentario}[2][1=]{
-%  \todo[linecolor=MaterialGreen,
-%  backgroundcolor=MaterialGreen!25,
-%  bordercolor=MaterialGreen,#1]{#2}
-%}
-%\newcommandx{\remover}[2][1=]{
-%  \todo[disable,#1]{#2}
-%}

@@ -60,7 +60,7 @@ No Exemplo \ref{exe_doc}, apresenta-se um trecho de código no qual é mostrado 
 \end{document}
 \end{texexptitled}
 
-No Exemplo \ref{exe_doc} acima, observe que um documento \LaTeX{} possui uma estrutura específica. Esta estrutura é iniciada com uma descrição do tipo de documento dado pelo comando \mintinline{latex}{documentclass} (no Exemplo \ref{exe_doc} indicando que o documento tem o formato de \textit{article}, i.e., um artigo). Tudo o que é escrito entre esta instrução e a próxima ({\tt document}), é chamada de ``preâmbulo''. Nesta seção podem ser carregados pacotes específicos da linguagem que permitem o uso de diferentes ambientes além de outros tipos de \textit{macros} (veja na Tabela \ref{tab:pacotes} do Apêndice \ref{apendiceA} os pacotes utilizados neste documento). Entre as palavras reservadas \mintinline{latex}{begin} e \mintinline{latex}{end}, o documento em si é escrito. Além disso, observe também que dois comentários estão inseridos no documento, os quais não aparecem na versão compilada. Um comentário na linguagem \TeX{} ou \LaTeX{} é iniciado pelo caracter especial \%. Recomenda-se aos usuários a utilização de comentários para a organização dos seus documentos, seja para explicar \textit{macros}, separar as seções, ou mesmo remover temporariamente partes do texto. Documentos \LaTeX{}, independente da sua classe (e.g., \textit{book}, \textit{report}, \textit{article} e \textit{letter}), podem ser muito simples ou complexos. O estilo para Teses e Dissertações do INPE (apresentado no Capítulo \ref{cap:parteIV}), é um exemplo de documento complexo que inclui estilo e formatação próprios, que tornam a sua visualização bastante distinta.
+No Exemplo \ref{exe_doc} acima, observe que um documento \LaTeX{} possui uma estrutura específica. Esta estrutura é iniciada com uma descrição do tipo de documento dado pelo comando \mintinline{latex}{documentclass} (no Exemplo \ref{exe_doc} indicando que o documento tem o formato de \textit{article}, i.e., um artigo). Tudo o que é escrito entre esta instrução e a próxima ({\tt document}), é chamada de ``preâmbulo''. Nesta seção podem ser carregados pacotes específicos da linguagem que permitem o uso de diferentes ambientes além de outros tipos de \textit{macros} (veja na Tabela \ref{tab:pacotes} do Apêndice A os pacotes utilizados neste documento). Entre as palavras reservadas \mintinline{latex}{begin} e \mintinline{latex}{end}, o documento em si é escrito. Além disso, observe também que dois comentários estão inseridos no documento, os quais não aparecem na versão compilada. Um comentário na linguagem \TeX{} ou \LaTeX{} é iniciado pelo caracter especial \%. Recomenda-se aos usuários a utilização de comentários para a organização dos seus documentos, seja para explicar \textit{macros}, separar as seções, ou mesmo remover temporariamente partes do texto. Documentos \LaTeX{}, independente da sua classe (e.g., \textit{book}, \textit{report}, \textit{article} e \textit{letter}), podem ser muito simples ou complexos. O estilo para Teses e Dissertações do INPE (apresentado no Capítulo \ref{cap:parteIV}), é um exemplo de documento complexo que inclui estilo e formatação próprios, que tornam a sua visualização bastante distinta.
 
 Durante o aprendizado da linguagem, é bastante frequente a busca por informações na \textit{internet}. A \textit{internet} está repleta de \textit{sites} que trazem exemplos de códigos prontos que mostram como obter determinado resultado. No Exemplo \ref{exe_doc}, foi mostrado um documento mínimo e este tipo de documento serve como base para se testar pacotes diferentes, ambientes novos e outros tipos de \textit{macros}.
 
@@ -68,7 +68,7 @@ Durante o aprendizado da linguagem, é bastante frequente a busca por informaç�
   Na \textit{internet} é muito comum encontrar exemplos simplificados de documentos. Ao procurar por estes exemplos em inglês, utilize as palavras-chave ``Latex \textit{Minimal Working Example}'' ou ``Latex MWE''.
 \end{marker}
 
-Pacotes no \LaTeX{} são extensões da linguagem que permitem que novos marcadores e comandos sejam utilizados. Há muitos pacotes que são populares por suas funcionalidades. Por exemplo, caso seja necessário utilizar páginas nos modos retrato e paisagem no mesmo documento, pode-se utilizar o pacote {\tt rotating}. Neste caso, deve-se incluir o comando \mintinline{latex}{\usepackage{rotating}} no preâmbulo do documento. O pacote {\tt xcolor} é utilizado quando se deseja utilizar cores diferentes no documento. Outro pacote útil, é o {\tt minted}, que permite listar códigos e destacar as palavras-chave de uma determinada linguagem, além de inserir numeração nas linhas de um código. Para a inserção de imagens vetoriais, pode-se utilizar os pacotes {\tt tickz} ou {\tt pstricks}, os quais provêm ambientes específicos para esta finalidade. Há também pacotes específicos para a confecção de tabelas, como o {\tt tabular}. Neste documento, uma série de pacotes são carregados (veja a Tabela \ref{tab:pacotes} do Apêndice \ref{apendiceA}), a partir dos quais são mostrados os exemplos da linguagem \LaTeX{}. Especificamente para este propósito, utiliza-se o pacote {\tt tcolorbox}. Com este pacote, são construídas as caixas com as dicas, os exemplos e os exercícios. No estilo do INPE, apresentado em detalhes no Capítulo \ref{cap:parteIII}, muitos pacotes já são carregados por padrão, de forma que o usuário não precisa se preocupar em descobrir qual pacote precisa ser carregado quando, por exemplo, precisar inserir legendas nas figuras que inserir. Para esta finalidade, pode-se utilizar os pacotes {\tt caption} e {\tt subcaption}.
+Pacotes no \LaTeX{} são extensões da linguagem que permitem que novos marcadores e comandos sejam utilizados. Há muitos pacotes que são populares por suas funcionalidades. Por exemplo, caso seja necessário utilizar páginas nos modos retrato e paisagem no mesmo documento, pode-se utilizar o pacote {\tt rotating}. Neste caso, deve-se incluir o comando \mintinline{latex}{\usepackage{rotating}} no preâmbulo do documento. O pacote {\tt xcolor} é utilizado quando se deseja utilizar cores diferentes no documento. Outro pacote útil, é o {\tt minted}, que permite listar códigos e destacar as palavras-chave de uma determinada linguagem, além de inserir numeração nas linhas de um código. Para a inserção de imagens vetoriais, pode-se utilizar os pacotes {\tt tickz} ou {\tt pstricks}, os quais provêm ambientes específicos para esta finalidade. Há também pacotes específicos para a confecção de tabelas, como o {\tt tabular}. Neste documento, uma série de pacotes são carregados (veja a Tabela \ref{tab:pacotes} do Apêndice A), a partir dos quais são mostrados os exemplos da linguagem \LaTeX{}. Especificamente para este propósito, utiliza-se o pacote {\tt tcolorbox}. Com este pacote, são construídas as caixas com as dicas, os exemplos e os exercícios. No estilo do INPE, apresentado em detalhes no Capítulo \ref{cap:parteIII}, muitos pacotes já são carregados por padrão, de forma que o usuário não precisa se preocupar em descobrir qual pacote precisa ser carregado quando, por exemplo, precisar inserir legendas nas figuras que inserir. Para esta finalidade, pode-se utilizar os pacotes {\tt caption} e {\tt subcaption}.
 
 Entretanto, para quem está iniciando na utilização da linguagem \LaTeX{}, certamente encontrará dificuldades nesse entendimento. Há uma diversidade de pacotes e encontrar informações sobre eles é pode ser confuso. Orienta-se, portanto, sempre ter como referência o \textit{site} do \textit{Comprehensive TeX Archive Network} (CTAN), o qual pode ser acessado pelo endereço \url{https://www.ctan.org/}. No CTAN podem ser encontradas as referências e documentações de todos os pacotes do \LaTeX{}. Se algum pacote não estiver disponível na distribuição em uso do \LaTeX{}, pode-se baixar o arquivo referente ao pacote e adicioná-lo no local apropriado no computador. Por exemplo, durante a escrita deste documento, decidiu-se utilizar o pacote {\tt material-colors} (veja a Seção \ref{sec:pal_cores}). Este pacote não está disponível nativamente no compilador \LaTeX{} do editor \textit{online} do \textit{Overleaf}, mas foi possível obtê-lo a partir da página do projeto no CTAN (\url{https://www.ctan.org/pkg/xcolor-material}) e adicioná-lo facilmente ao projeto deste documento.
 
@@ -99,7 +99,7 @@ Com o comando {\tt dvips} acima, será gerado o arquivo {\tt exe\_doc.ps}. Por f
 ps2pdf exe_doc
 \end{meucomando}
 
-Assim como é moistrado no diagrama da Figura \ref{fig:complatex}, é possível utilizar o comando {\tt pdflatex} para gerar o arquivo final {\tt exe\_doc.pdf} em uma única etapa, a partir do arquivo original {\tt exe\_doc.tex}. Utilizando a linha de comando para a compilação manual de documentos \LaTeX{}, é possível também emular o mesmo comportamente de alguns editores WYSIWYG. No Apêndice \ref{}, são apresentadas algumas opções possíveis com o comando {\tt latexmk}.
+Assim como é moistrado no diagrama da Figura \ref{fig:complatex}, é possível utilizar o comando {\tt pdflatex} para gerar o arquivo final {\tt exe\_doc.pdf} em uma única etapa, a partir do arquivo original {\tt exe\_doc.tex}. Utilizando a linha de comando para a compilação manual de documentos \LaTeX{}, é possível também emular o mesmo comportamente de alguns editores WYSIWYG. No Apêndice B, são apresentadas algumas opções possíveis com o comando {\tt latexmk}.
 
 Se o leitor estiver utilizando algum editor WYSIWYG, certamente achará mais fácil pressionar o botão ``compile'' ou ``build and view'' (como no caso do editor \TeX \textit{Studio}). Independente da forma como o documento é compilado, os resultados serão os mesmos.
 
@@ -1427,7 +1427,7 @@ Para facilitar o desenho de diagramas, recomenda-se a utilização do programa \
 \vspace{4mm}
 \legenda{Um diagrama complexo com elementos geométricos e equações.}
 \label{fig:ciclo}
-\FONTE{\citeonline{bastarz/2017}.}
+\FONTE{Adaptado de \citeonline{bastarz/2017}.}
 \end{figure}
 
 \begin{marker}
@@ -1499,7 +1499,7 @@ No Exemplo \ref{exe_eq0}, observe que os delimitadores dados por colchetes ou pa
 Uma equação do segundo grau tem a forma geral, $$ax^2 + bx + c =0$$. Suas raízes são calculadas por, $$x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$.
 \end{texexptitled}
 
-No \LaTeX{} é possível inserir todos os símbolos relacionados às ciências. No Anexo \ref{anexoB} há uma lista destes símbolos, os quais podem ser utilizados para a realização dos exercícios da Seção \ref{sec:exercicios}.
+No \LaTeX{} é possível inserir todos os símbolos relacionados às ciências. No Anexo B há uma lista destes símbolos, os quais podem ser utilizados para a realização dos exercícios da Seção \ref{sec:exercicios}.
 
 Para digitar equações em blocos, há ambientes próprios para casos variados, os quais são mostrados a seguir.
 
@@ -1607,7 +1607,7 @@ Equações podem ser alinhadas utilizando-se o ambiente {\tt gather}. Este alinh
 \end{gather}
 \end{texexptitled}
 
-Com o ambiente {\tt gather}, as equações são alinhadas em relação ao parágrafo, e não com relação a um elemento. Outros elementos matemáticos como sinais e símbolos em geral podem ser encontrados nas tabelas do Anexo \ref{anexoB}.
+Com o ambiente {\tt gather}, as equações são alinhadas em relação ao parágrafo, e não com relação a um elemento. Outros elementos matemáticos como sinais e símbolos em geral podem ser encontrados nas tabelas do Anexo B.
 
 \subsection{Tabelas}
 \label{sec:tabs}
@@ -1872,7 +1872,7 @@ Compare o Exemplo \ref{ltable1} com o Exemplo \ref{ltable2} a seguir, em que a m
 \end{document}
 \end{texexptitled}
 
-Seguindo o código apresentado no Exemplo \ref{ltable2}, pode-se confeccionar as Tabelas \ref{tab:pacotes} e \ref{tab:pacotes_uteis} do Apêndice \ref{apendiceA}.
+Seguindo o código apresentado no Exemplo \ref{ltable2}, pode-se confeccionar as Tabelas \ref{tab:pacotes} e \ref{tab:pacotes_uteis} do Apêndice A.
 
 \begin{marker}
 Editores \textit{online} podem ser utilizados para construir tabelas simples no \LaTeX{}. Observe que tabelas muito complexas podem ser difíceis de manipular e atualizar. Veja os \textit{sites} \url{https://www.tablesgenerator.com/} e \url{https://www.latex-tables.com} para mais informações.
@@ -2308,7 +2308,7 @@ A Equação \ref{eq:euler} é denominada ``Equação de Euler'' e nela estão re
 
 \end{texexptitled}
 
-Páginas de um documento também podem ser referenciadas utilizando-se o comando \mintinline{latex}{\pageref{nome}}. Neste caso, o \textit{link} para a referência deverá ser um rótulo (um nome) adicionado à seção ou ambiente em que ocorre o elemento a ser citado (i.e., figura, tabela, equação ou a própria página), desde que ele possa ser numerado. Dessa forma, a página em que o elemento é citado será apresentada, ao invés da numeração do elemento. No Exemplo \ref{exe_cite5} a seguir, foram adicionados dois rótulos (veja os comandos \mininline{latex}{\label} inseridos), um logo após o início do documento e o outro logo após a quebra de página (forçada pelo comando \mintinline{latex}{\clearpage}):
+Páginas de um documento também podem ser referenciadas utilizando-se o comando \mintinline{latex}{\pageref{nome}}. Neste caso, o \textit{link} para a referência deverá ser um rótulo (um nome) adicionado à seção ou ambiente em que ocorre o elemento a ser citado (i.e., figura, tabela, equação ou a própria página), desde que ele possa ser numerado. Dessa forma, a página em que o elemento é citado será apresentada, ao invés da numeração do elemento. No Exemplo \ref{exe_cite5} a seguir, foram adicionados dois rótulos (veja os comandos \mintinline{latex}{\label} inseridos), um logo após o início do documento e o outro logo após a quebra de página (forçada pelo comando \mintinline{latex}{\clearpage}):
 
 \begin{texexptitled}[breakable,center lower,enhanced jigsaw,middle=2mm,listing side comment,righthand width=6cm,compilable listing,run latex,run dvips,run ps2pdf,pdf comment,comment style={raster columns=1},freeze pdf]{Citação de uma página}{exe_cite5}
 \documentclass[17pt]{extarticle}
@@ -2399,7 +2399,7 @@ A transformada rápida de Legendre torna-se especialmente útil em modelos espec
 \end{texexptitled}
 
 \begin{marker}
-Se você estiver utilizando o estilo de publicações específico de alguma revista científica, é possível que exista outro(s) estilo(s) de citação, como exemplo, dado pelo comando \mininline{latex}{\citep{referencia}}.
+Se você estiver utilizando o estilo de publicações específico de alguma revista científica, é possível que exista outro(s) estilo(s) de citação, como exemplo, dado pelo comando \mintinline{latex}{\citep{referencia}}.
 \end{marker}
 
 No Exemplo \ref{exe:ref2}, observe que o comando \mintinline{latex}{\cite} marca a citação com a primeira letra em caixa alta, enquanto que com o comando \mintinline{latex}{\citeonline}, a citação aparece delimitada por parênteses e com todas as letras em caixa alta. 
@@ -2720,9 +2720,9 @@ Ao utilizar o editor \textit{Overleaf}, o usuário irá perceber que a compilaç
 \section{Exercícios}
 \label{sec:exercicios}
 
-Para colocar em prática os comandos de marcação do \LaTeX{}, sugere-se a realização dos exercícios a seguir. As respostas estão no Anexo \ref{anexoA}. Cada exercício contém um link para o Anexo \ref{anexoA}, onde estão as repostas de cada exercício. Para fazer os exercícios, você pode utilizar um editor local (instalado em seu computador) ou um editor \textit{online}, \href{https://pt.overleaf.com/project}{Overleaf}.
+Para colocar em prática os comandos de marcação do \LaTeX{}, sugere-se a realização dos exercícios a seguir. Cada exercício contém um link para o Anexo A, onde estão as repostas de cada exercício. Para fazer os exercícios, você pode utilizar um editor local (instalado em seu computador) ou um editor \textit{online}, \href{https://pt.overleaf.com/project}{Overleaf}.
 
-Para a realização dos exercícios, utilize os exemplos dados ao longo das seções do Capítulo \ref{cap:parteII}. Utilize também as tabelas do Anexo \ref{anexoB} para consultar os símbolos matemáticos pertinentes.
+Para a realização dos exercícios, utilize os exemplos dados ao longo das seções do Capítulo \ref{cap:parteII}. Utilize também as tabelas do Anexo B para consultar os símbolos matemáticos pertinentes.
 
 \tcbstartrecording
 
@@ -2997,7 +2997,7 @@ L4C1 & L4C2 & L4C3 \\
 \subsection*{Matemática e Equações}
 \label{sec:exec_mat_eqs}
 
-Nos seguintes exercícios, utilize os exemplos apresentados na Seção \ref{sec:mat_eqs} e as tabelas do Anexo \ref{anexoA}.
+Nos seguintes exercícios, utilize os exemplos apresentados na Seção \ref{sec:mat_eqs} e as tabelas do Anexo A.
 
 \begin{texercise}{Ex_Eq1}{Matrizes sem delimitadores}\textit{Uma matriz sem delimitadores ({\tt matrix})}:\par\smallskip%
 \begin{tcboutputlisting}

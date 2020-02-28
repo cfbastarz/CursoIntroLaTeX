@@ -77,7 +77,7 @@ pdf comment]
 \end{tcbitemize}
 \end{texexptitled}
 
-Para cada um dos temas apresentados no Exemplo \ref{exe:beamer2}, é possível alterar o esquema de cores. Para isso, além de se utilizar o comando {\tt usetheme}, deve-se utilizar o comando \mininline{latex}{\usecolortheme{esquema}}. Os esquemas de cores disponíveis para cada uma dos temas são os seguintes:
+Para cada um dos temas apresentados no Exemplo \ref{exe:beamer2}, é possível alterar o esquema de cores. Para isso, além de se utilizar o comando {\tt usetheme}, deve-se utilizar o comando \mintinline{latex}{\usecolortheme{esquema}}. Os esquemas de cores disponíveis para cada uma dos temas são os seguintes:
 
 \begingroup
 \renewcommand{\labelenumi}{\arabic{enumi})}
@@ -133,7 +133,7 @@ No Exemplo \ref{exe:beamer2_tema} é mostrado o tema ``AnnArbor'' com o esquema 
 Veja mais opções de temas e as variações dos esquemas de cores do \textit{Beamer} em \url{https://hartwork.org/beamer-theme-matrix/}.
 \end{marker}
 
-Além da escolha do tema e do esquema de cores, é possível também alterar as cores e estilos de fontes de diferentes elementos visuais dos temas, de forma individual. O comando \mininline{latex}{\setbeamercolor{tema}{elemento(s)}} define o esquema de cores que será utilizado e quais elementos do tema escolhido deverão ser alterados. O comando \mininline{latex}{\setbeamerfont{tema}{elemento(s)}}, da mesma forma, permite alterar o estilo das fontes do tema escolhido. São muitos os elementos que podem ser alterados dentro de um \textit{frame} do \textit{Beamer} e, portanto, a apresentação deles foge ao escopo deste material.
+Além da escolha do tema e do esquema de cores, é possível também alterar as cores e estilos de fontes de diferentes elementos visuais dos temas, de forma individual. O comando \mintinline{latex}{\setbeamercolor{tema}{elemento(s)}} define o esquema de cores que será utilizado e quais elementos do tema escolhido deverão ser alterados. O comando \mintinline{latex}{\setbeamerfont{tema}{elemento(s)}}, da mesma forma, permite alterar o estilo das fontes do tema escolhido. São muitos os elementos que podem ser alterados dentro de um \textit{frame} do \textit{Beamer} e, portanto, a apresentação deles foge ao escopo deste material.
 
 \begin{marker}
 Para conhecer mais sobre as possibilidades de customização dos diversos elementos de um \textit{frame} do \textit{Beamer}, recomenda-se a leitura da documentação do pacote em \url{http://linorg.usp.br/CTAN/macros/latex/contrib/beamer/doc/beameruserguide.pdf}.
@@ -228,9 +228,7 @@ Como em toda apresentação, é comum o primeiro \textit{frame} ou \textit{slide
 \institute{Meu Instituto}
 \date{September 2019}
 
-\titlegraphic{
-  \includegraphics[scale=0.25]{docs/figs/logo.eps}
-}
+\titlegraphic{\includegraphics[scale=0.25]{docs/figs/logo.eps}}
 
 \begin{document}
 
@@ -261,7 +259,7 @@ Assim como em documentos \LaTeX{}, as apresentações escritas com a classe \tex
 
 \maketitle
 
-\begin{frame}{Sumário}
+\begin{frame}[c]{Sumário}
 \tableofcontents
 \end{frame}
 
@@ -293,7 +291,7 @@ Dependendo da forma como a apresentação é organizada, e dependendo também do
 
 \maketitle
 
-\begin{frame}{Sumário}
+\begin{frame}[c]{Sumário}
 \tableofcontents[hideallsubsections]
 \end{frame}
 
@@ -323,7 +321,7 @@ Para alterar o comportamento do sumário em um documento \textit{Beamer}, de for
 
 \begin{document}
 
-\begin{frame}{Sumário}
+\begin{frame}[c]{Sumário}
   \tableofcontents
 \end{frame}
 
@@ -343,7 +341,7 @@ Para alterar o comportamento do sumário em um documento \textit{Beamer}, de for
 
 \subsection{Uma Outra Subseção}
 
-\begin{frame}{Sumário}
+\begin{frame}[c]{Sumário}
   \tableofcontents[currentsection]
 \end{frame}
 
@@ -373,11 +371,6 @@ Outro elemento que aparece na capa (e também dos demais \textit{frames}), é a 
 
 Para desabilitar a barra de navegação, basta utilizar um dos comandos a seguir: \mintinline{latex}{\beamertemplatenavigationsymbolsempty} ou \mintinline{latex}{\setbeamertemplate{navigation symbols}{}}.
 
-%\begin{itemize}
-%  \item \mintinline{latex}{\beamertemplatenavigationsymbolsempty}
-%  \item \mintinline{latex}{\setbeamertemplate{navigation symbols}{}}
-%\end{itemize}
-
 Veja no Exemplo \ref{exe:navbar} a seguir o efeito do uso de um destes comandos:
 
 \begin{texexptitled}[breakable,center lower,enhanced jigsaw,middle=2mm,listing side comment,righthand width=5.5cm,compilable listing,run latex,run dvips,run ps2pdf,pdf comment,comment style={raster columns=1},freeze pdf]{Desabilitando a barra de navegação do \textit{Beamer}}{exe:navbar}
@@ -406,6 +399,39 @@ Veja no Exemplo \ref{exe:navbar} a seguir o efeito do uso de um destes comandos:
 
 \end{document}
 \end{texexptitled}
+
+%\subsection{Numeração dos \textit{frames}}
+%\label{sec:framenum}
+%
+%Os \textit{frames} do \textit{Beamer} podem ser numerados utilizando algumas \textit{macros} especiais que alteram o \textit{template} do tema escolhido. Alguns temas possuem um rodapé diferente do outro (de fato, alguns possuem, e outros não). Logo, a forma de introduzir a numeração dos \textit{frames} pode variar e, de forma geral, o usuário pode experimentar incluir o seguinte comando no preâmbulo do seu documento \textit{Beamer}: \mintinline{latex}{\setbeamertemplate{caption}[numbered]}. 
+%
+%\begin{texexptitled}[breakable,center lower,enhanced jigsaw,middle=2mm,listing side comment,righthand width=5.5cm,compilable listing,run latex,run dvips,run ps2pdf,pdf comment,comment style={raster columns=1},freeze pdf]{Controlando itens em uma lista no \textit{Beamer} com o comando {\tt onslide}}{exe:beamer_numeracao}
+%\documentclass{beamer}
+%\usepackage[utf8]{inputenc}
+%
+%\usetheme{Singapore}
+%\beamertemplatenavigationsymbolsempty
+%\setbeamertemplate{caption}[numbered]
+%
+%\title{Título}
+%\author{Nome}
+%\date{September 2019}
+%
+%\begin{document}
+%
+%\begin{frame}{Meu Frame}
+%Minha lista:
+%\onslide<1->
+%\begin{enumerate}
+%  \item\onslide<3> Item 1
+%  \item\onslide<2-> Item 2
+%  \item\onslide<4-> Item 3
+%\end{enumerate}
+%\onslide<2> Uma frase
+%\end{frame}
+%
+%\end{document}
+%\end{texexptitled}
 
 \subsection{Transições e Animações}
 \label{sec:trans_anima}

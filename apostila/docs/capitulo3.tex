@@ -12,13 +12,6 @@ O estilo do INPE compreende um conjunto de arquivos que contém instruções e i
 
 É possível obter uma cópia do estilo do INPE a partir de duas formas distintas. A primeira, é entrar no \textit{site} da biblioteca do INPE, a partir do endereço \url{http://www.inpe.br/biblioteca/}. Na página, no menu lateral, clique em ``Como Publicar?'' e depois em ``em \LaTeX{}'' (Figura \ref{fig:biblio_pub_latex}). Na página, no \textit{frame} da direita, uma outra página irá se abrir com as instruções ``Publicar usando estilo em \LaTeX{}''. A página contém instruções sobre todo o processo de publicação de documentos submetidos à revisão pelo SESID. Para obter uma cópia \textit{offline} do pacote com o estilo do INPE em \LaTeX{}, clique no \textit{link} \href{http://mtc-m16c.sid.inpe.br/archive.cgi/sid.inpe.br/iris@1905/2005/08.25.14.01}{``download do estilo baixando o arquivo archive.zip''} que está na ``OPÇÃO 3 (compilação no próprio computador)''. Na mesma página, há instruções sobre a instalação de um compilador \LaTeX{}, que também podem ser encontradas no Capítulo \ref{cap:parteI} deste documento.
 
-%\begin{figure}[H]
-%    \centering
-%    \includegraphics[scale=0.5]{./docs/figs/biblio_pub_latex.png}
-%    \caption{Obtenção do estilo \LaTeX{} do INPE a partir do \textit{site} da Biblioteca do INPE.}
-%    \label{fig:biblio_pub_latex}
-%\end{figure}
-
 \begin{figure}[H]
 \caption{Obtenção do estilo \LaTeX{} do INPE a partir do \textit{site} da Biblioteca do INPE.}
 \vspace{6mm}
@@ -33,21 +26,12 @@ O estilo do INPE compreende um conjunto de arquivos que contém instruções e i
 
 Com o arquivo {\tt archive.zip} no seu computador, descompacte-o em um local apropriado para poder ter acesso aos arquivos que compõem o estilo do INPE.
 
-%\subsection{Conhecendo a estrutura e ambiente (arquivos que compõem o modelo, preenchimento de dados básicos, dicas práticas sobre o que se pode e o que não se pode fazer na hora de utilizar o modelo do INPE)}
-
 A outra forma de se obter o estilo do INPE para a edição de teses e dissertações, é a partir do \textit{site} do editor \textit{Overleaf}, assim como já foi apresentado na Seção \ref{sec:ed_online} do Capítulo \ref{cap:parteII}.
 
 \subsection{Estrutura e Organização}
 \label{sec:estrut}
 
 O estilo do INPE é fornecido pelo arquivo principal {\tt tdiinpe.cls}. Dentro deste arquivo há uma série de instruções da linguagem \LaTeX{} que determinam o estilo das referências, dos capítulos, dos títulos, tabelas, imagens etc (Figura \ref{fig:estrut}).
-
-%\begin{figure}[H]
-%    \centering
-%    \includegraphics[scale=0.4]{./docs/figs/estrutura_estilo_inpe.png}
-%    \caption{Estrutura e organização do estilo \LaTeX{} do INPE.}
-%    \label{fig:estrut}
-%\end{figure}
 
 \begin{figure}[H]
 \caption{Estrutura e organização do estilo \LaTeX{} do INPE.}
@@ -66,9 +50,9 @@ Na Figura \ref{fig:estrut}, os arquivos da estrutura do estilo do INPE estão mi
 \begin{multicols}{2}
     \textbf{Diretórios}
     \begin{itemize}
-        \item bib/
-        \item Figuras/
-        \item docs/
+        \item \textbf{bib/}
+        \item \textbf{Figuras/}
+        \item \textbf{docs/}
     \end{itemize}
     \textbf{Arquivos do Estilo}
     \begin{itemize}
@@ -165,13 +149,6 @@ chmod +x execpub.sh
 
 \textbf{3.} Execute o \textit{script} {\tt execpub.sh} sem argumentos. Na Figura \ref{fig:execpub} são mostrados as opções do \textit{script} {\tt execpub.sh}: 
 
-%\begin{figure}[H]
-%    \centering
-%    \includegraphics[scale=0.4]{./docs/figs/saida_execpub.png}
-%    \caption{Exemplo de execução do \textit{script} {\tt execpub.sh} sem argumentos.}
-%    \label{fig:execpub}
-%\end{figure}
-
 \begin{figure}[H]
 \caption{Exemplo de execução do \textit{script} {\tt execpub.sh} sem argumentos.}
 \vspace{6mm}
@@ -183,53 +160,6 @@ chmod +x execpub.sh
 \label{fig:execpub}
 \FONTE{Produção do autor.}
 \end{figure}
-
-%\begin{commandshell}
-%./execpub.sh
-%GERANDO A SAÍDA LATEX -> PDF (INPE)
-%-----------------------------------
-%Gera o documento de saída via PDFLaTeX
-%Para ser usado em ambiente UNIX/LINUX/CYGWIN
-%
-%Há duas formas de se fazer isto:
-%
-%1) Usando o comando 'make'
-%Uso:
-%    make _opção_
-%
-%OBS: É necessário abrir o arquivo Makefile e configurá-lo,
-%alterarando-se a variável BASENAME para seu documento principal
-%
-%2) Usando o script 'execpub.sh'
-%Uso:
-%    ./execpub.sh _input_ _opção_
-%
-%Entrada _input_: arquivo principal em LaTeX (mas sem extensao), p. ex.:
-%       publicacao[.tex] (ou equivalente)
-%
-%Opçõess:
-%
-%    help	Esta ajuda.
-%
-%    pdf		Criação do documento PDF.
-%
-%    pdf1	Executa apenas uma vez o PDFLATEX.
-%
-%    clean	Remove arquivos utilizados durante a criação
-%		do documento PDF.
-%
-%    all		Limpa e cria o documento PDF.
-%
-%    ps	  	gera documento PS (PostScript)
-%
-%    dvi		gera documento DVI
-%
-%--------------------------------------------------
-%Bruno A.F. Roth (roth@lit.inpe.br) [10/04/2002] v1.0
-%Bruno A.F. Roth (roth@lit.inpe.br) [05/04/2005] v1.1 +55(12)39456836
-%Mantido por Alan Wilter S .da Silva [29/07/2005] v1.3a +55(12)3945-6911
-%alan@sid.inpe.br
-%\end{commandshell}
 
 \textbf{4.} Execute o \textit{script} {\tt execpub.sh}, com dois argumentos:
 \begin{meucomando}
@@ -363,20 +293,6 @@ de aaaa.}
 \begin{marker}
 Recomenda-se atenção especial para os caracteres que são inseridos no arquivo {\tt configuracao.tex}. Neste arquivo, os acentos devem ser marcados, e.g., a palavra ``{\tt publicação}'', deve ser marcada como ``\mintinline{latex}{publicaç\~{a}o}.''
 \end{marker}
-
-%\subsection{Estrutura dos diretórios e arquivos de configuração}
-%\subsection{Inclusão de pacotes e suas funções}
-%\subsection{Como são divididas as seções}
-%\subsection{Introduzindo figuras e gráficos}
-%\subsection{Inserindo tabelas e equações}
-%\subsection{Citações, Referências Cruzadas e Referências (bibtex, abntex)}
-%
-%\section{Utilização de Editores}
-%\subsection{Linha de comando, editores locais, editor online (Overleaf)}
-%
-%\section{Ferramentas Úteis}
-%\subsection{Construção de tabelas}
-%\subsection{Gerenciadores de referências (Mendeley, Zotero)}
 
 As seções a seguir são dedicadas aos detalhes referentes à inserção de conteúdo nos documentos que farão uso do estilo do INPE.
 
