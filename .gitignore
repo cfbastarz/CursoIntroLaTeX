@@ -5,5 +5,5 @@
 *.dvi
 *.toc
 *.bbl
-*.DS_Store
+.DS_Store
 exercicios/*
