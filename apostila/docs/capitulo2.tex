@@ -87,6 +87,10 @@ Com o comando {\tt latex} acima, serão gerados os seguintes arquivos, sendo o p
   \item {\tt exe\_doc.aux}
 \end{itemize}
 
+\begin{marker}
+Se o documento a ser compilado possuir título e partes, como capítulos, seções, subseções etc, será nacessário executar o comando {\tt latex exe\_doc.tex} duas vezes. Dependendo da estrutura do documento, e.g., se ele contém um sumário, outros arquivos intermediários poderão ser criados.
+\end{marker}
+
 Em seguida, executar o programa {\tt dvips}:
 
 \begin{meucomando}
@@ -148,20 +152,21 @@ Outro caractere especial, são as `' (aspas). No \LaTeX{}, aspas simples são ma
 
 No Exemplo \ref{exe_caracesp}, observe que a barra invertida é produzida pelo comando \mintinline{latex}{\textbackslash} ou pelo comando \mintinline{latex}{$\backslash$}, quando em modo matemático (veja mais detalhes sobre o modo matemático na Seção \ref{sec:mat_eqs}).
 
-\subsection{Acentos}
+\subsection{Acentos e Localização}
 \label{sec:acentos}
 
 No \LaTeX{}, os acentos podem ser escritos de forma literal, i.e., acentuando-se diretamente as vogais sem a necessidade de marcadores especiais, desde que os pacotes necessários estejam carregados. O {\tt inputenc} é um pacote do \LaTeX{} que fornece os formatos de marcação e linguagem adequados para a acentuação de, por exemplo, caracteres latinos acentuados. Além disso, para que as estruturas do texto que fazem referências à figuras e tabelas fiquem corretamente grafadas no idioma da escrita, é necessário utilizar-se o pacote {\tt babel} indicando o dialeto no qual se está escrevendo. Outro pacote importante é o {\tt fontenc} que trata da apresentação correta dos caracteres especiais, i.e., aqueles que são acentuados.
 
-Para digitar acentos de forma natural, é necessário carregar os pacotes a seguir, no preâmbulo do documento:
+Nas versões mais recentes do \LaTeX{}, é possível digitar palavras latinas acentuais sem a necessidade de carregar pacotes extras. No entanto, dependendo da instalação do \LaTeX{}, pode ser necessário carregar pacotes extras.  Para digitar acentos de forma natural, é necessário carregar os pacotes a seguir, no preâmbulo do documento:
 
 \begin{itemize}
-    \item \mintinline{latex}{\usepackage[brazilian]{babel}}
+    \item \mintinline{latex}{\usepackage[brazilian]{babel}}\footnotemark[1]
     \item \mintinline{latex}{\usepackage[T1]{fontenc}}
-    \item \mintinline{latex}{\usepackage[utf8]{inputenc}}\footnotemark[1]
+    \item \mintinline{latex}{\usepackage[utf8]{inputenc}}\footnotemark[2]
 \end{itemize}
 
-\footnotetext[1]{Pode-se utilizar também o pacote {\tt latin1}, com o comando \mintinline{latex}{\usepackage[latin1]{inputenc}}. Ambos os pacotes, {\tt utf-8} e {\tt latin1} fornecem o suporte ao UNICODE. Se o usuário quiser utilizar o formato \textit{OpenType}, evite utilizar estes pacotes e utilize compiladores mais modernos como o \XeLaTeX{} ou o \LuaTeX{}.}
+\footnotetext[1]{Este pacote é apenas necessário para traduzir alguns elementos textuais, como as palavras \text     it{Table}, \textit{Figure}, o formato da data etc.}
+\footnotetext[2]{Pode-se utilizar também o pacote {\tt latin1}, com o comando \mintinline{latex}{\usepackage[latin1]{inputenc}}. Ambos os pacotes, {\tt utf-8} e {\tt latin1} fornecem o suporte ao UNICODE. Se o usuário quiser utilizar o formato \textit{OpenType}, evite utilizar estes pacotes e utilize compiladores mais modernos como o \XeLaTeX{} ou o \LuaTeX{}.}
 
 \begin{marker}
   No estilo do INPE, os pacotes relacionados acima são pré-carregados. Porém, se o usuário utilizar os compiladores \XeLaTeX{} ou \LuaTeX{}, o usuário encontrará erros enquanto o pacote {\tt inputenc} estiver carregado. Veja mais informações na Seção \ref{sec:oriesp} do Capítulo \ref{cap:parteIII}.
@@ -1108,7 +1113,7 @@ Uma figura pode ser incluída de forma simples utilizando o comando \mintinline{
 No Exemplo \ref{exe_fig1}, observe que o marcador \mintinline{latex}{\includegraphics} aceita algumas opções que são delimitadas por um par de \mintinline{latex}{[]}'s (conchetes). Pode-se especificar, por exemplo, o tamanho da figura com as opções \mintinline{latex}{width}, \mintinline{latex}{height} ou \mintinline{latex}{scale}. Além disso, pode-se também utilizar as macros da Tabela \ref{tab:meds_padrao}. Para isto, veja o Exemplo \ref{exe_meds1}.
 
 \begin{marker}
-  As imagens do Exemplo \ref{exe_fig1} acima foram incluídas com o pacote \mintinline{latex}{graphicsx} que possui diversas imagens de exemplos. Veja mais sobre este pacote em \url{https://www.ctan.org/pkg/graphicx}.
+  As imagens do Exemplo \ref{exe_fig1} acima foram incluídas com o pacote \mintinline{latex}{graphicx} que possui diversas imagens de exemplos. Veja mais sobre este pacote em \url{https://www.ctan.org/pkg/graphicx}.
 \end{marker}
 
 \subsubsection*{Ambientes de figuras}
@@ -2018,7 +2023,7 @@ Veja também o pacote {\tt cooltooltips} no site do CTAN em \url{https://ctan.or
 
 O \LaTeX{} possui uma série de outros ambientes com os quais é possível apresentar e posicionar diferentes elementos textuais. É possível criar elementos flutuantes e posicioná-los em diferentes partes de uma página, bem como subdividir parágrafos em colunas, além de destacar as palavras reservadas de uma determinada linguagem de programação, incluindo os próprios comandos do \LaTeX{}. Nas subseções a seguir, serão apresentados alguns destes ambientes.
 
-\subsubsection*{Minipage}
+\subsubsection*{\textit{Minipage}}
 \label{sec:minipage}
 
 Dependendo do tipo de documento escrito e dos elementos textuais utilizados, como imagens e tabelas, pode-se fazer necessário alocar tais elementos em posições específicas dentro da página. Para isto, pode-se utilizar o ambiente {\tt minipage}. Veja o Exemplo \ref{exe:minipage} a seguir sobre a sua utilização.
@@ -2193,7 +2198,7 @@ print(fibo_seq)
 \end{lstlisting}
 \end{texexptitled}
 
-Outro ambiente que pode ser usado para listar \textot{scripts} e programas é o {\tt minted}. Veja o exemplo a seguir:
+Outro ambiente que pode ser usado para listar \textit{scripts} e programas é o {\tt minted}. Veja o exemplo a seguir:
 
 \begin{texexptitled}[breakable,center lower,enhanced,middle=2mm,leftlower=8mm]{Exemplo da apresentação de um \textit{script} escrito em linguagem Python utilizando o pacote {\tt minted}}{exe_list4}
 \begin{minted}[bgcolor=white,
@@ -2266,7 +2271,7 @@ Na Figura \ref{fig:prop_aurea} a seguir, é mostrada a Proporção Áurea:
 
 \begin{figure}[H]
     \centering
-    \includegraphics[0.5\textwidth]{example-image-golden}
+    \includegraphics[width=0.5\textwidth]{example-image-golden}
     \caption{A Proporção Áurea.}
     \label{fig:prop_aurea}
 \end{figure}
@@ -2646,7 +2651,7 @@ Nas duas seções a seguir, são apresentados alguns editores selecionados para 
 \subsubsection*{Editores locais}
 \label{sec:ed_local}
 
-Para compilar um documento \LaTeX{} localmente, dependendo do sistema operacional em uso, há várias opções de editores. Por simplicidade, sugere-se o editor \Tex\textit{Studio}, disponível para os sistemas operacional Linux, \textit{Microsoft Windows}, e Mac OS. A Figura \ref{fig:editortexstudio} a seguir mostra o aspecto do editor \TeX\textit{Studio}.
+Para compilar um documento \LaTeX{} localmente, dependendo do sistema operacional em uso, há várias opções de editores. Por simplicidade, sugere-se o editor \TeX\textit{Studio}, disponível para os sistemas operacional Linux, \textit{Microsoft Windows}, e Mac OS. A Figura \ref{fig:editortexstudio} a seguir mostra o aspecto do editor \TeX\textit{Studio}.
 
 \begin{figure}[H]
 \caption{O Editor \TeX\textit{Studio}.}
