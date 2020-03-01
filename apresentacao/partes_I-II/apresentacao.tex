@@ -1,23 +1,23 @@
 \documentclass[10pt]{beamer}
 
-\usetheme{metropolis}
-%\usecolortheme{crane}
+\input{./meus_pacotes}
+\input{./minhas_macros}
 
-%\usefonttheme{professionalfonts}
+\usetheme{metropolis}
+
 \usefonttheme[onlymath]{serif}
 \usefonttheme{professionalfonts}
+\usepackage{mathspec} 
+\metroset{titleformat=allsmallcaps} % smallcaps
 
-\usepackage[T1]{fontenc}
+\setbeamercolor{alerted text}{fg=InpeLaranja}
+\setbeamercolor{frametitle}{bg=InpeAzul}
+\setbeamercolor{normal text}{fg=black}
+\setbeamercolor{progress bar}{bg=InpeLaranja,fg=InpeAzul}
+\setbeamercolor{title separator}{bg=InpeLaranja,fg=InpeLaranja}
+\setbeamercolor{background canvas}{bg=white}
 
-% Numeração das figuras e tabelas
 \setbeamertemplate{caption}[numbered]
-
-% Força fundo branco em todos os slides
-%\setbeamercolor{background canvas}{bg=white}
-
-% Engana o pacote tcolorbox no carregamento do inputenc
-% (https://tex.stackexchange.com/questions/370262/how-to-adapt-tcolorbox-with-xelatex)
-%\makeatletter\@namedef{ver@inputenc.sty}{}\makeatother
 
 \AtBeginSubsection[
   {\frame<beamer>{\frametitle{Sumário}   
@@ -32,49 +32,25 @@
     }
 }
 
-\input{./meus_pacotes}
-\input{./minhas_macros}
-
 \title{Introdução ao \LaTeX}
 \subtitle{Partes I e II}
-\date{23 e 24 de Setembro de 2019}
+\date{02 e 03 de Março de 2020}
 \author{Carlos Frederico Bastarz (CPTEC/INPE)}
 \institute{Instituto Nacional de Pesquisas Espaciais (INPE)}
-%\titlegraphic{\hfill\includegraphics[height=0.5cm]{figs/layout/logonome.pdf}}
-\titlegraphic{\hfill\includegraphics[height=1.25cm]{figs/layout/inpe_logo.png}}
+\titlegraphic{\hfill\includegraphics[height=1.5cm]{figs/layout/inpe_logo.png}}
 
 \makeatletter
 \patchcmd{\beamer@sectionintoc}{\vskip1.5em}{\vskip0.75em}{}{}
 \makeatother
 
 \begin{document}
-
 \maketitle
-
-%\begin{frame}[c]{Sumário}
-%  \vspace{0.75cm}
-%  \setbeamertemplate{section in toc}[sections numbered]
-%  \tableofcontents[hideallsubsections]
-%\end{frame}
-
-%\begin{frame}[c]{Sumário}
-%    \begin{flushleft}
-%        \begin{minipage}{5cm}
-%            \setbeamertemplate{section in toc}[sections numbered]
-%            \tableofcontents[hideallsubsections]
-%        \end{minipage}
-%    \end{flushleft}
-%    \begin{flushright}
-%        \begin{minipage}{5cm}
-%            \includegraphics[width=\textwidth]{./figs/ctan_lion_350x350.pdf}
-%        \end{minipage}
-%    \end{flushright}
-%\end{frame}
 
 \begin{frame}[c]{Sumário}
     \vspace{2em}
     \begin{multicols}{2}
         \begin{minipage}{0.49\textwidth}
+           \vspace{12mm}
            \setbeamertemplate{section in toc}[sections numbered]
            \tableofcontents[hideallsubsections]
         \end{minipage}
@@ -116,7 +92,7 @@
 \begin{frame}{O \LaTeX{}}
 	\begin{block}{Que tipo de coisas bonitas pode-se fazer com o \LaTeX{}?}
 		\begin{itemize}
-			\item \onslide<2-> Esta apresentação {\Large\Cooley}\footnotemark[1]
+			\item \onslide<2-> Esta apresentação {\large\Cooley}\footnotemark[1]
 			\item \onslide<3-> Equações;
 			\item \onslide<4-> Tabelas;
 			\item \onslide<5-> Figuras em alta resolução (PDF!);
@@ -173,9 +149,9 @@
 
 \begin{frame}{O \LaTeX{}}
 	\begin{block}{E as figuras\footnote{{\scriptsize Este diagrama foi incorporado a partir de um arquivo PDF com o ambiente {\tt figure} e o comando {\tt includegraphics}.}} no \LaTeX{}?}
-	    \vspace{-1em}
+    \vspace{-0.5em}
 		\begin{figure}
-				\includegraphics[width=\textwidth]{./figs/diagrama_hibrido_novo_pt-tempos.pdf}
+				\includegraphics[scale=0.5]{./figs/diagrama_hibrido_novo_pt-tempos.pdf}
 				\caption{Exemplo de um diagrama produzido no programa \LaTeX\textit{Draw}.}
 		\end{figure}
 	\end{block}
@@ -190,59 +166,65 @@ O \LaTeX{} é uma linguagem de marcação que é interpretada por um \textbf{com
     \pause
 	\begin{block}{Compiladores}
 		\begin{itemize}
-			\item Linux: TeXLive
-			\item \textit{Microsoft Windows}: TeXLive
-			\item MacOS: MacTeX
+			\item Linux: \TeX{}\textit{Live}
+			\item \textit{Microsoft Windows}: \TeX{}\textit{Live}
+			\item Mac OS: Mac\TeX{}
 		\end{itemize}
 	\end{block}
 \end{frame}
 
 \begin{frame}[fragile]{Linux}
 \begin{block}{Linux}
+\vspace{0.5em}
 No Linux, o \LaTeX{} pode ser facilmente instalado.
-\begin{tcblisting}{colback=yellow!5,colframe=yellow!50!black,listing only,title=Debian e derivados,fonttitle=\bfseries,listing engine=minted,minted language=bash}
+\begin{meucomandot}{Debian e derivados}
 sudo apt install texlive-full
-\end{tcblisting}
-
-\begin{tcblisting}{colback=yellow!5,colframe=yellow!50!black,listing only,title=Redhat e derivados,fonttitle=\bfseries,listing engine=minted,minted language=bash}
+\end{meucomandot}
+ou
+\begin{meucomandot}{Red Hat e derivados}
 sudo dnf install texlive-scheme=full
-\end{tcblisting}
+\end{meucomandot}
 \end{block}
 \end{frame}
 
 \begin{frame}[fragile]{\textit{Microsoft Windows} e MacOS}
 \begin{block}{\textit{Microsoft Windows}}
+\vspace{0.5em}
 No \textit{Microsoft Windows}, basta baixar e instalar o pacote \url{http://mirror.ctan.org/systems/texlive/tlnet/install-tl-windows.exe}
 \end{block}
 
-\begin{block}{MacOS}
-No MacOS, basta baixar e instalar o pacote \url{http://tug.org/cgi-bin/mactex-download/MacTeX.pkg} 
+\begin{block}{Mac OS}
+\vspace{0.5em}
+No Mac OS, basta baixar e instalar o pacote \url{http://tug.org/cgi-bin/mactex-download/MacTeX.pkg} 
 Pode-se também instalar pela linha de comando:
-\begin{tcblisting}{colback=yellow!5,colframe=yellow!50!black,listing only,title=Homebrew,fonttitle=\bfseries,listing engine=minted,minted language=bash}
+\begin{meucomandot}{Mac OS}
 brew install caskroom/cask/brew-cask
 brew cask install mactex
-\end{tcblisting}
+\end{meucomandot}
 \end{block}
 \end{frame}
 
 \section{Parte II - Entendendo o \LaTeX{}}
 
 \begingroup
-\setbeamercolor{background canvas}{bg=white}
+\setbeamercolor{background canvas}{bg=InpeLaranja!90}
 \begin{frame}[plain,fragile]{}
-%\begin{frame}[fragile]{O que é um documento do \LaTeX{}?}
-\begin{texexptitled}[breakable,center lower,enhanced jigsaw,middle=2mm,listing side comment,righthand width=3.5cm,compilable listing,run latex,run dvips,run ps2pdf,pdf comment,comment style={raster columns=1},freeze pdf]{Um documento \LaTeX{} mínimo}{exe_doc}
+\begin{texexptitled}[center, enhanced jigsaw, width=0.99\paperwidth, height=0.99\paperheight, middle=2mm, listing side comment, righthand width=5cm, compilable listing, run latex, run dvips, run ps2pdf, pdf comment, comment style={raster columns=1},freeze pdf]{Um documento \LaTeX{} mínimo}{exe_doc}
 \documentclass[10pt]{article}
 % Este é o preâmbulo
 \usepackage[utf8]{inputenc}
 \usepackage{lipsum}
+
 \title{Título}
 \author{Nome}
 \date{\today}
+
 % A partir daqui inicia-se o documento
 \begin{document}
 \maketitle
+
 \section{Seção}
+
 \lipsum[1-3]
 \end{document}
 \end{texexptitled}
@@ -280,8 +262,10 @@ brew cask install mactex
 \end{frame}
 
 \begin{frame}{Compilação de um documento \LaTeX{}}
+\vspace{1em}
 \begin{table}
 \caption{Alguns tipos de compiladores \LaTeX{}.}
+\vspace{-0.5em}
 \begin{center}
     \begin{tabular}{p{2cm}p{8cm}}
     \toprule
@@ -307,24 +291,26 @@ Na linha de comando (eg., Linux, MacOS ou \textit{Microsoft Windows}\footnote{Co
 \end{frame}
 
 \begin{frame}[fragile]{Compilação de um documento \LaTeX{}}
-    \begin{block}{Linha de comando\footnote{Se for utilizado o compilador \XeLaTeX{}, o arquivo PDF será criado automaticamente}. Além disso, estes comandos aceitam opções.}
-        \begin{tcblisting}{colback=yellow!5,colframe=yellow!50!black,listing only,title=Documento simples,fonttitle=\bfseries,listing engine=minted,minted language=bash}
+    \begin{block}{Linha de comando\footnote{Se for utilizado o compilador \XeLaTeX{}, o arquivo PDF será criado automaticamente. Além disso, estes comandos aceitam opções.}}
+        \vspace{0.5em}
+        \begin{meucomandot}{Documento simples}
             latex documento.tex
             dvips documento.dvi
             ps2pdf documento.ps
-        \end{tcblisting}
+        \end{meucomandot}
     
-        \begin{tcblisting}{colback=yellow!5,colframe=yellow!50!black,listing only,title=Documento com referência Bib\TeX{},fonttitle=\bfseries,listing engine=minted,minted language=bash}
+        \begin{meucomandot}{Documento com referência Bib\TeX{}}
             latex documento.tex
             bibtex documento
             latex documento
             latex documento
-        \end{tcblisting}
+        \end{meucomandot}
     \end{block}
 \end{frame}
 
 \begin{frame}{Compilação de um documento \LaTeX{}}
     \begin{block}{Exercício}
+        \vspace{0.5em}
         Abra um editor de textos no seu computador e digite um documento mínimo com a classe {\tt article} e fonte de {\tt 10pt}. Utilize o pacote {\tt lipsum} para gerar alguns parágrafos de texto. Compile o documento com o {\tt latex}, {\tt pdflatex} e {\tt xelatex} e gere a saída em PDF. 
         Experimente também:
         \begingroup
@@ -340,8 +326,9 @@ Na linha de comando (eg., Linux, MacOS ou \textit{Microsoft Windows}\footnote{Co
 \end{frame}
 
 \begin{frame}{Compilação de um documento \LaTeX{}}
+    \vspace{1.5em}
     \begin{block}{Editor local \TeX\textit{Studio}}
-        \vspace{-3em}
+      \vspace{-3em}
 	    \begin{figure}
 		    \includegraphics[width=0.65\textwidth,angle=-90]{./figs/texstudio.pdf}
 		    \vspace{-2.5em}
@@ -351,8 +338,9 @@ Na linha de comando (eg., Linux, MacOS ou \textit{Microsoft Windows}\footnote{Co
 \end{frame}
 
 \begin{frame}{Compilação de um documento \LaTeX{}}
+    \vspace{1.5em}
     \begin{block}{Editor \textit{online} Overleaf}
-        \vspace{-3em}
+      \vspace{-3em}
 	    \begin{figure}
 		    \includegraphics[width=0.65\textwidth,angle=-90]{./figs/overleaf.pdf}
 		    \vspace{-2.5em}
@@ -395,7 +383,7 @@ Na linha de comando (eg., Linux, MacOS ou \textit{Microsoft Windows}\footnote{Co
     \end{enumerate}
 \end{multicols}
 \end{block}
-    \begin{texexptitled}[breakable,center lower,enhanced,middle=2mm,listing side text]{Marcação para caracteres especiais}{exe_caracesp}
+    \begin{texexptitled}[center lower,enhanced,middle=2mm,listing side text]{Marcação para caracteres especiais}{exe_caracesp}
         $\backslash$
         \\  
         \^{}
@@ -405,7 +393,7 @@ Na linha de comando (eg., Linux, MacOS ou \textit{Microsoft Windows}\footnote{Co
 \end{frame}
 
 \begin{frame}[fragile]{Localização e acentos}
-\begin{texexptitled}[breakable,center lower,enhanced,middle=2mm,listing side text,righthand width=2.5cm]{Uso de acentos latinos no \LaTeX{}}{exe_acentos}
+\begin{texexptitled}[center lower,enhanced,middle=2mm,listing side text,righthand width=2.5cm]{Uso de acentos latinos no \LaTeX{}}{exe_acentos}
 \'A \'E \'I \'O \'U
 
 \'a \'e \'i \'o \'u
@@ -423,7 +411,7 @@ Na linha de comando (eg., Linux, MacOS ou \textit{Microsoft Windows}\footnote{Co
 \subsection{Tipos, tamanhos e estilos de letras}
 
 \begin{frame}[fragile]{Tipos, tamanhos e estilos de letras}
-\begin{texexptitled}[breakable,center lower,enhanced,middle=2mm,listing side text,righthand width=2cm]{Marcações mais mais comuns em fontes}{exe_estilos}
+\begin{texexptitled}[center lower, enhanced, middle=2mm, listing side text, righthand width=2cm]{Marcações mais mais comuns em fontes}{exe_estilos}
 \textit{itálico}       \\
 \textsl{inclinado}     \\
 \underline{sublinhado} \\
@@ -434,40 +422,40 @@ H\textsubscript{2}O
 \end{frame}
 
 \begin{frame}[fragile]{Tipos, tamanhos e estilos de letras}
-\begin{texexptitled}[breakable,center lower,enhanced,middle=2mm,listing side text,righthand width=2cm]{Tamanhos de fontes}{exe_tamfonte}
-{\Huge Huge}                 \\
-{\huge huge}                 \\
-{\LARGE LARGE}               \\
-{\Large Large}               \\
-{\large large}               \\
-{\normalsize normalsize}     \\
-{\small small}               \\
+\begin{texexptitled}[center lower, enhanced, middle=2mm, listing side text, righthand width=2cm]{Tamanhos de fontes}{exe_tamfonte}
+{\Huge Huge} \\
+{\huge huge} \\
+{\LARGE LARGE} \\
+{\Large Large} \\
+{\large large} \\
+{\normalsize normalsize} \\
+{\small small} \\
 {\footnotesize footnotesize} \\
-{\scriptsize scriptsize}     \\
+{\scriptsize scriptsize} \\
 {\tiny tiny}
 \end{texexptitled}
 \end{frame}
 
 \begin{frame}[fragile]{Tipos, tamanhos e estilos de letras}
-\begin{texexptitled}[breakable,center lower,enhanced,middle=2mm]{Texto com diferentes tamanhos de fontes}{exe_tamfontefrase}
+\begin{texexptitled}[center lower,enhanced,middle=2mm]{Texto com diferentes tamanhos de fontes}{exe_tamfontefrase}
 À noite, vovô {\large Kowalsky} vê o {\huge ímã} cair no {\small pé} do pinguim {\Huge queixoso} e vovó põe açúcar no {\footnotesize chá} de {\tiny tâmaras} do jabuti feliz. 
 \end{texexptitled}
 \end{frame}
 
 \begin{frame}[fragile]{Tipos, tamanhos e estilos de letras}
-\begin{texexptitled}[breakable,center lower,enhanced,middle=2mm]{Estilos de fontes, máquina de escrever ({\tt texttt})}{exe_font}
+\begin{texexptitled}[center lower,enhanced,middle=2mm]{Estilos de fontes, máquina de escrever ({\tt texttt})}{exe_font}
 \texttt{Máquina de Escrever} | \texttt{\textit{Máquina de Escrever, em itálico}} | \texttt{\textsl{Máquina de Escrever, inclinado}}
 \end{texexptitled}
 \end{frame}
 
 \begin{frame}[fragile]{Tipos, tamanhos e estilos de letras}
-\begin{texexptitled}[breakable,center lower,enhanced,middle=2mm]{Estilos de fontes, sem serifa ({\tt textsf})}{exe_font}
+\begin{texexptitled}[center lower,enhanced,middle=2mm]{Estilos de fontes, sem serifa ({\tt textsf})}{exe_font}
 \textsf{Sem Serifa} | \textsf{\textit{Sem Serifa, em itálico}} | \textsf{\textsl{Sem Serifa, inclinado}}
 \end{texexptitled}
 \end{frame}
 
 \begin{frame}[fragile]{Tipos, tamanhos e estilos de letras}
-\begin{texexptitled}[breakable,center lower,enhanced,middle=2mm]{Estilos de fontes, com serifa ({\tt textrm})}{exe_font}
+\begin{texexptitled}[center lower,enhanced,middle=2mm]{Estilos de fontes, com serifa ({\tt textrm})}{exe_font}
 \textrm{Com Serifa, estilo Romano} | \textrm{\textit{Com Serifa, estilo Romano itálico}} | \textrm{\textsl{Com Serifa, estilo Romano inclinado}}
 \end{texexptitled}
 \end{frame}
@@ -545,13 +533,13 @@ H\textsubscript{2}O
 \end{frame}
 
 %\begin{frame}[fragile]{Cores e Paletas de Cores}
-%\begin{texexptitled}[breakable,center lower,enhanced,middle=2mm]{Texto com fonte colorida, paleta padrão}{exe_cor1}
+%\begin{texexptitled}[center lower,enhanced,middle=2mm]{Texto com fonte colorida, paleta padrão}{exe_cor1}
 %\textit{\color{pink}{Quem} \color{cyan}{traz} \color{green}{CD}, \color{olive}{LP}, \color{violet}{fax}, \color{blue}{engov} \color{red}{e} \color{lime}{whisky} \color{orange}{JB?}}
 %\end{texexptitled}
 %\end{frame}
 
 \begin{frame}[fragile]{Cores e Paletas de Cores}
-\begin{texexptitled}[breakable,center lower,enhanced,middle=2mm]{Texto com fundo colorido, paleta padrão}{exe_cor3}
+\begin{texexptitled}[center lower,enhanced,middle=2mm]{Texto com fundo colorido, paleta padrão}{exe_cor3}
 \textit{\colorbox{pink}{Quem} \colorbox{cyan}{traz} \colorbox{green}{CD}, \colorbox{olive}{LP}, \colorbox{violet}{\color{white}{fax}}, \colorbox{blue}{\color{white}{engov}} \colorbox{red}{e} \colorbox{lime}{whisky} \colorbox{orange}{JB?}}
 \end{texexptitled}
 \end{frame}
@@ -601,7 +589,7 @@ H\textsubscript{2}O
 %\end{frame}
 
 %\begin{frame}[fragile]{Cores e Paletas de Cores}
-%\begin{texexptitled}[breakable,center lower,enhanced,middle=2mm]{Texto com fundo colorido, paleta \textit{Solarized}}{exe_corsol}
+%\begin{texexptitled}[center lower,enhanced,middle=2mm]{Texto com fundo colorido, paleta \textit{Solarized}}{exe_corsol}
 %\textit{\colorbox{solarized-magenta}{Quem} \colorbox{solarized-cyan}{traz} \colorbox{solarized-green}{CD}, \colorbox{solarized-red}{LP}, \colorbox{solarized-violet}{fax}, \colorbox{solarized-base1}{engov} \colorbox{solarized-red}{e} \colorbox{solarized-yellow}{whisky} \colorbox{solarized-orange}{JB?}}
 %\end{texexptitled}
 %\end{frame}
@@ -655,13 +643,13 @@ H\textsubscript{2}O
 %\end{frame}
 %
 %\begin{frame}[fragile]{Cores e Paletas de Cores}
-%\begin{texexptitled}[breakable,center lower,enhanced,middle=2mm]{Texto com fundo colorido, paleta \textit{Material Design}}{exe_cormaterial}
+%\begin{texexptitled}[center lower,enhanced,middle=2mm]{Texto com fundo colorido, paleta \textit{Material Design}}{exe_cormaterial}
 %\textit{\colorbox{MaterialRed}{Quem} \colorbox{MaterialPink}{traz} \colorbox{MaterialPurple}{CD}, \colorbox{MaterialDeepPurple}{LP}, \colorbox{MaterialIndigo}{\color{white}{fax}}, \colorbox{MaterialLightBlue}{\color{white}{engov}} \colorbox{MaterialTeal}{e} \colorbox{MaterialGreen}{whisky} \colorbox{MaterialLightGreen}{JB?}}
 %\end{texexptitled}
 %\end{frame}
 
 \begin{frame}[fragile]{Cores e Paletas de Cores}
-\begin{texexptitled}[breakable,center lower,enhanced,middle=2mm]{Definindo cores personalizadas}{exe_cor4}
+\begin{texexptitled}[center lower,enhanced,middle=2mm]{Definindo cores personalizadas}{exe_cor4}
 \definecolor{meuazul1}{HTML}{0066ff}
 \definecolor{meuazul2}{rgb}{0.2,0.6,1}
 \definecolor{meuazul3}{RGB}{0,204,255}
@@ -681,11 +669,11 @@ H\textsubscript{2}O
     \toprule
     \textbf{Unidade} & \textbf{Abreviação} & \textbf{Valor em Pontos}              \\
     \midrule
-    Ponto            & {\tt pt}.           & 1 {\tt pt} = 1 {\tt pt}               \\
+    Ponto            & {\tt pt}.           & 1 {\tt pt}                            \\
     Milímetro        & {\tt mm}.           & 1 {\tt mm} = 2,84 {\tt pts}           \\
     Centímetro       & {\tt cm}.           & 1 {\tt cm} = 28,4 {\tt pts}           \\
     Polegada         & {\tt in}.           & 1 {\tt in} = 72,27 {\tt pts}          \\
-    Paica             & {\tt pc}.           & 1 {\tt pc} = 12 {\tt pts}             \\
+    Paica             & {\tt pc}.           & 1 {\tt pc} = 12 {\tt pts}            \\
     Altura de ``x''  & {\tt ex}.           & \textit{Depende da fonte utilizada}   \\
     Altura de ``M''  & {\tt em}.           & \textit{Depende da fonte utilizada}   \\
     \bottomrule
@@ -719,9 +707,9 @@ H\textsubscript{2}O
 \end{frame}
 
 \begingroup
-\setbeamercolor{background canvas}{bg=white}
+\setbeamercolor{background canvas}{bg=InpeLaranja!90}
 \begin{frame}[plain,fragile]{}
-\begin{texexptitled}[breakable,center lower,enhanced jigsaw,middle=2mm,listing side comment,righthand width=2cm,compilable listing,run latex,run dvips,run ps2pdf,pdf comment,comment style={raster columns=1},freeze pdf]{Largura relativa com a \textit{macro} {\tt textwidth}}{exe_meds1}
+\begin{texexptitled}[center, width=0.99\paperwidth, height=0.99\paperheight, enhanced jigsaw, middle=2mm, listing side comment, righthand width=3.25cm, compilable listing, run latex, run dvips, run ps2pdf, pdf comment, comment style={raster columns=1}, freeze pdf]{Largura relativa com a \textit{macro} {\tt textwidth}}{exe_meds1}
 \documentclass{article}
 \usepackage[utf8]{inputenc}
 \usepackage{lipsum}
@@ -744,7 +732,7 @@ H\textsubscript{2}O
 \endgroup
 
 \begin{frame}{Medidas}
-\vspace{-1em}
+\vspace{0.75em}
 \begin{table}
 \centering
 \caption{Algumas Macros de Espaçamento do \LaTeX{}.}
@@ -753,11 +741,11 @@ H\textsubscript{2}O
     \toprule
     \textbf{Macro} & \textbf{Descrição} \\
     \midrule
-    \mintinline{latex}{\hspace}          & Adiciona espaço horizontal (pode utilizar qualquer unidade da Tabela \ref{tab:medidas}, incluindo valores negativos) \\
-    \mintinline{latex}{\vspace}          & Adiciona espaço vertical (pode utilizar qualquer unidade da Tabela \ref{tab:medidas}, incluindo valores negativos)\\
-    \mintinline{latex}{\smallskip}       & Equivalente a \mintinline{latex}{\vspace{smallskipamount}}, onde {\tt smallskipamount} é relativo ao estilo do documento \\
-    \mintinline{latex}{\medskip}         & Equivalente a \mintinline{latex}{\vspace{medskipamount}}, onde {\tt medskipamount} é relativo ao estilo do documento \\
-    \mintinline{latex}{\bigskip}         & Equivalente a \mintinline{latex}{\vspace{bigskipamount}}, onde {\tt bigskipamount} é relativo ao estilo do documento \\
+    \mintinline{latex}{\hspace}    & Adiciona espaço horizontal (pode utilizar qualquer unidade da Tabela \ref{tab:medidas}, incluindo valores negativos)     \\
+    \mintinline{latex}{\vspace}    & Adiciona espaço vertical (pode utilizar qualquer unidade da Tabela \ref{tab:medidas}, incluindo valores negativos)       \\
+    \mintinline{latex}{\smallskip} & Equivalente a \mintinline{latex}{\vspace{smallskipamount}}, onde {\tt smallskipamount} é relativo ao estilo do documento \\
+    \mintinline{latex}{\medskip}   & Equivalente a \mintinline{latex}{\vspace{medskipamount}}, onde {\tt medskipamount} é relativo ao estilo do documento     \\
+    \mintinline{latex}{\bigskip}   & Equivalente a \mintinline{latex}{\vspace{bigskipamount}}, onde {\tt bigskipamount} é relativo ao estilo do documento     \\
     \bottomrule
     \end{tabular}
 \end{table}
@@ -766,14 +754,14 @@ H\textsubscript{2}O
 \subsection{Parágrafos}
 
 \begin{frame}[fragile]{Parágrafos}
-\begin{texexptitled}[breakable,enhanced,middle=2mm]{Parágrafos sem quebra de linha}{exe_par1}
+\begin{texexptitled}[enhanced,middle=2mm]{Parágrafos sem quebra de linha}{exe_par1}
 \lipsumsentence[1-4] 
 \lipsumsentence[5-8]
 \end{texexptitled}
 \end{frame}
 
 \begin{frame}[fragile]{Parágrafos}
-\begin{texexptitled}[breakable,enhanced,middle=2mm]{Parágrafos com quebra de linha, separados por uma linha em branco}{exe_par2}
+\begin{texexptitled}[enhanced,middle=2mm]{Parágrafos com quebra de linha, separados por uma linha em branco}{exe_par2}
 \lipsumsentence[1-4]
 
 \lipsumsentence[5-8]
@@ -781,14 +769,14 @@ H\textsubscript{2}O
 \end{frame}
 
 \begin{frame}[fragile]{Parágrafos}
-\begin{texexptitled}[breakable,enhanced,middle=2mm]{Parágrafos com quebra de linha, separados por duas barras invertidas (\mintinline{latex}{\\})}{exe_par3}
+\begin{texexptitled}[enhanced,middle=2mm]{Parágrafos com quebra de linha, separados por duas barras invertidas (\mintinline{latex}{\\})}{exe_par3}
 \lipsumsentence[1-4] \\
 \lipsumsentence[5-8]
 \end{texexptitled}
 \end{frame}
 
 \begin{frame}[fragile]{Parágrafos}
-\begin{texexptitled}[breakable,enhanced,middle=2mm]{Parágrafos separados pelo comando {\tt newline}}{exe_par4}
+\begin{texexptitled}[enhanced,middle=2mm]{Parágrafos separados pelo comando {\tt newline}}{exe_par4}
 \lipsumsentence[1-4]
 \newline
 \lipsumsentence[5-8]
@@ -796,14 +784,14 @@ H\textsubscript{2}O
 \end{frame}
 
 \begin{frame}[fragile]{Parágrafos}
-\begin{texexptitled}[breakable,enhanced,middle=2mm]{Novo parágrafo iniciado pelo comando {\tt par}}{exe_par5}
+\begin{texexptitled}[enhanced,middle=2mm]{Novo parágrafo iniciado pelo comando {\tt par}}{exe_par5}
 \lipsumsentence[1-4] \par
 \lipsumsentence[5-8]
 \end{texexptitled}
 \end{frame}
 
 \begin{frame}[fragile]{Parágrafos}
-\begin{texexptitled}[breakable,enhanced,middle=2mm]{Novo parágrafo iniciado pelo comando {\tt par}, com recuo especial}{exe_par6}
+\begin{texexptitled}[enhanced,middle=2mm]{Novo parágrafo iniciado pelo comando {\tt par}, com recuo especial}{exe_par6}
 \setlength{\parindent}{3em}
 
 \lipsumsentence[1-4] \par
@@ -811,8 +799,8 @@ H\textsubscript{2}O
 \end{texexptitled}
 \end{frame}
 
-\begin{frame}[fragile]{Parágrafos}
-\begin{texexptitled}[breakable,enhanced,middle=2mm]{Novo parágrafo iniciado pelo comando {\tt par}, com recuo ({\tt parindent}) e espaçamento ({\tt parskip}) especiais}{exe_par7}
+\begin{frame}[fragile,plain]{}
+\begin{texexptitled}[enhanced,middle=2mm]{Novo parágrafo iniciado pelo comando {\tt par}, com recuo ({\tt parindent}) e espaçamento ({\tt parskip}) especiais}{exe_par7}
 \setlength{\parindent}{3em}
 \setlength{\parskip}{1em}
 
@@ -822,7 +810,7 @@ H\textsubscript{2}O
 \end{frame}
 
 %\begin{frame}[fragile,plain]{}
-%\begin{texexptitled}[breakable,enhanced,middle=2mm]{Novo parágrafo iniciado pelo comando {\tt par}, com recuo ({\tt parindent}), espaçamento entre parágrafos ({\tt parskip}) e altura de linha ({\tt baselinestretch}) especiais}{exe_par8}
+%\begin{texexptitled}[enhanced,middle=2mm]{Novo parágrafo iniciado pelo comando {\tt par}, com recuo ({\tt parindent}), espaçamento entre parágrafos ({\tt parskip}) e altura de linha ({\tt baselinestretch}) especiais}{exe_par8}
 %\setlength{\parindent}{3em}
 %\setlength{\parskip}{1em}
 %\renewcommand{\baselinestretch}{1.6em}
@@ -833,9 +821,9 @@ H\textsubscript{2}O
 %\end{frame}
 
 \begingroup
-\setbeamercolor{background canvas}{bg=white}
+\setbeamercolor{background canvas}{bg=InpeLaranja!90}
 \begin{frame}[plain,fragile]{}
-\begin{texexptitled}[breakable,center lower,enhanced jigsaw,middle=2mm,listing side comment,righthand width=4cm,compilable listing,run latex,run dvips,run ps2pdf,pdf comment,comment style={raster columns=1},freeze pdf]{Espaçamento de linha simples ({\tt baselinestretch, 1.0})}{exe_par8}
+\begin{texexptitled}[center,width=0.99\paperwidth,height=0.99\paperheight,enhanced jigsaw,middle=2mm,listing side comment,righthand width=4cm,compilable listing,run latex,run dvips,run ps2pdf,pdf comment,comment style={raster columns=1},freeze pdf]{Espaçamento de linha simples ({\tt baselinestretch, 1.0})}{exe_par8}
 \documentclass{article}
 \usepackage[utf8]{inputenc}
 \usepackage{lipsum}
@@ -856,9 +844,9 @@ H\textsubscript{2}O
 \endgroup
 
 \begingroup
-\setbeamercolor{background canvas}{bg=white}
+\setbeamercolor{background canvas}{bg=InpeLaranja!90}
 \begin{frame}[plain,fragile]{}
-\begin{texexptitled}[breakable,center lower,enhanced jigsaw,middle=2mm,listing side comment,righthand width=4cm,compilable listing,run latex,run dvips,run ps2pdf,pdf comment,comment style={raster columns=1},freeze pdf]{Espaçamento de linha médio ({\tt baselinestretch, 1.3})}{exe_par9}
+\begin{texexptitled}[center,width=0.99\paperwidth,height=0.99\paperheight,enhanced jigsaw,middle=2mm,listing side comment,righthand width=4cm,compilable listing,run latex,run dvips,run ps2pdf,pdf comment,comment style={raster columns=1},freeze pdf]{Espaçamento de linha médio ({\tt baselinestretch, 1.3})}{exe_par9}
 \documentclass{article}
 \usepackage[utf8]{inputenc}
 \usepackage{lipsum}
@@ -879,9 +867,9 @@ H\textsubscript{2}O
 \endgroup
 
 \begingroup
-\setbeamercolor{background canvas}{bg=white}
+\setbeamercolor{background canvas}{bg=InpeLaranja!90}
 \begin{frame}[plain,fragile]{}
-\begin{texexptitled}[breakable,center lower,enhanced jigsaw,middle=2mm,listing side comment,righthand width=4cm,compilable listing,run latex,run dvips,run ps2pdf,pdf comment,comment style={raster columns=1},freeze pdf]{Espaçamento de linha duplo ({\tt baselinestretch, 1.6})}{exe_par10}
+\begin{texexptitled}[center,width=0.99\paperwidth,height=0.99\paperheight,enhanced jigsaw,middle=2mm,listing side comment,righthand width=4cm,compilable listing,run latex,run dvips,run ps2pdf,pdf comment,comment style={raster columns=1},freeze pdf]{Espaçamento de linha duplo ({\tt baselinestretch, 1.6})}{exe_par10}
 \documentclass{article}
 \usepackage[utf8]{inputenc}
 \usepackage{lipsum}
@@ -902,7 +890,7 @@ H\textsubscript{2}O
 \endgroup
 
 \begin{frame}[fragile]{Parágrafos}
-\begin{texexptitled}[breakable,enhanced,middle=2mm]{Parágrafos centralizados, utilizando o ambiente \mintinline{latex}{center}}{exe_par5}
+\begin{texexptitled}[enhanced,middle=2mm]{Parágrafos centralizados, utilizando o ambiente \mintinline{latex}{center}}{exe_par5}
 \begin{center}
 \lipsumsentence[9-10] \\ 
 \lipsumsentence[11-12]
@@ -911,7 +899,7 @@ H\textsubscript{2}O
 \end{frame}
 
 %\begin{frame}[fragile]{Parágrafos}
-%\begin{texexptitled}[breakable,enhanced,middle=2mm]{Parágrafos centralizados, utilizando o marcador {\tt centering}}{exe_par6}
+%\begin{texexptitled}[enhanced,middle=2mm]{Parágrafos centralizados, utilizando o marcador {\tt centering}}{exe_par6}
 %\centering
 %\lipsumsentence[9-10] \\ 
 %\lipsumsentence[11-12]
@@ -919,7 +907,7 @@ H\textsubscript{2}O
 %\end{frame}
 
 \begin{frame}[fragile]{Parágrafos}
-\begin{texexptitled}[breakable,enhanced,middle=2mm]{Parágrafos alinhados à esquerda, utilizando o ambiente {\tt flushleft}}{exe_par7}
+\begin{texexptitled}[enhanced,middle=2mm]{Parágrafos alinhados à esquerda, utilizando o ambiente {\tt flushleft}}{exe_par7}
 \begin{flushleft}
 \lipsumsentence[9-10] \\ 
 \lipsumsentence[11-12]
@@ -928,7 +916,7 @@ H\textsubscript{2}O
 \end{frame}
 
 \begin{frame}[fragile]{Parágrafos}
-\begin{texexptitled}[breakable,enhanced,middle=2mm]{Parágrafos alinhados à direita, utilizando o ambiente  {\tt flushright}}{exe_par8}
+\begin{texexptitled}[enhanced,middle=2mm]{Parágrafos alinhados à direita, utilizando o ambiente {\tt flushright}}{exe_par8}
 \begin{flushright}
 \lipsumsentence[9-10] \\ 
 \lipsumsentence[11-12]
@@ -937,7 +925,7 @@ H\textsubscript{2}O
 \end{frame}
 
 %\begin{frame}[fragile]{Parágrafos}
-%\begin{texexptitled}[breakable,enhanced,middle=2mm]{Parágrafos justificado, utilizando o ambiente  {\tt justify}}{exe_just}
+%\begin{texexptitled}[enhanced,middle=2mm]{Parágrafos justificado, utilizando o ambiente  {\tt justify}}{exe_just}
 %\begin{justify}
 %\lipsumsentence[9-10] \\ 
 %\lipsumsentence[11-12]
@@ -948,7 +936,7 @@ H\textsubscript{2}O
 %\subsection{Posição e espaçamento}
 %
 %\begin{frame}[fragile]{Posição e espaçamento}
-%\begin{texexptitled}[breakable,enhanced,middle=2mm]{Espaçamento vertical, utilizando o comando {\tt vspace}}{exe_par9}
+%\begin{texexptitled}[enhanced,middle=2mm]{Espaçamento vertical, utilizando o comando {\tt vspace}}{exe_par9}
 %\lipsumsentence[32-33]
 %\vspace{1cm}
 %\lipsumsentence[34-35]
@@ -956,7 +944,7 @@ H\textsubscript{2}O
 %\end{frame}
 %
 %\begin{frame}[fragile]{Posição e espaçamento}
-%\begin{texexptitled}[breakable,enhanced,middle=2mm]{Espaçamento horizontal, utilizando o comando {\tt hspace}}{exe_par10}
+%\begin{texexptitled}[enhanced,middle=2mm]{Espaçamento horizontal, utilizando o comando {\tt hspace}}{exe_par10}
 %\hspace{2cm}\lipsumsentence[36-37] \\ 
 %\lipsumsentence[38-39]
 %\end{texexptitled}
@@ -965,7 +953,7 @@ H\textsubscript{2}O
 \subsection{Notas de rodapé}
 
 \begin{frame}[fragile]{Notas de rodapé}
-\begin{texexptitled}[breakable,enhanced,middle=2mm]{Nota de rodapé, utilizando o marcador {\tt footnote}}{exe_rodape1}
+\begin{texexptitled}[enhanced,middle=2mm]{Nota de rodapé, utilizando o marcador {\tt footnote}}{exe_rodape1}
 À noite, vovô Kowalsky\footnote{Esta é uma nota de rodapé.} vê o ímã cair no pé do pinguim queixoso e vovó põe açúcar no chá de tâmaras do jabuti feliz\footnote{Este é uma outra nota de rodapé.}.
 \end{texexptitled}
 \end{frame}
@@ -973,7 +961,7 @@ H\textsubscript{2}O
 \begin{frame}[fragile]{Notas de rodapé}
 \begingroup
 \renewcommand*{\thefootnote}{\alph{footnote}}
-\begin{texexptitled}[breakable,enhanced,middle=2mm]{Nota de rodapé, utilizando os marcadores {\tt footnotemark} e {\tt footnotetext}}{exe_rodape2}
+\begin{texexptitled}[enhanced,middle=2mm]{Nota de rodapé, utilizando os marcadores {\tt footnotemark} e {\tt footnotetext}}{exe_rodape2}
 À noite, vovô Kowalsky vê o ímã\footnotemark[1] cair no pé do pinguim queixoso\footnotemark[2] e vovó põe açúcar no chá de tâmaras do jabuti feliz.
 
 \footnotetext[1]{Esta é uma nota de rodapé.}
@@ -1006,7 +994,7 @@ H\textsubscript{2}O
 %\begin{frame}[fragile,plain]{}
 %\begingroup
 %\renewcommand*{\thempfootnote}{\Roman{mpfootnote}}
-%\begin{texexptitled}[breakable,enhanced,middle=2mm]{Nota de rodapé com referência em algarismos romanos}{exe_rodape4}
+%\begin{texexptitled}[enhanced,middle=2mm]{Nota de rodapé com referência em algarismos romanos}{exe_rodape4}
 %\renewcommand{\thefootnote}{\Roman{footnote}}
 %
 %À noite, vovô Kowalsky vê o ímã\footnote{Esta é uma nota de rodapé.} cair no pé do pinguim queixoso\footnote{Esta é mais uma nota de rodapé.} e vovó põe açúcar no chá de tâmaras do jabuti feliz.
@@ -1017,7 +1005,7 @@ H\textsubscript{2}O
 %\begin{frame}[fragile,plain]{}
 %\begingroup
 %\renewcommand{\thempfootnote}{\arabic{mpfootnote}}
-%\begin{texexptitled}[breakable,enhanced,middle=2mm]{Nota de rodapé com referência algarismos arábicos}{exe_rodape5}
+%\begin{texexptitled}[enhanced,middle=2mm]{Nota de rodapé com referência algarismos arábicos}{exe_rodape5}
 %\renewcommand{\thefootnote}{\arabic{footnote}}
 %
 %À noite, vovô Kowalsky vê o ímã\footnotemark[1] cair no pé do pinguim queixoso\footnotemark[2] e vovó põe açúcar no chá de tâmaras do jabuti feliz.
@@ -1031,7 +1019,7 @@ H\textsubscript{2}O
 \subsection{Listas}
 
 \begin{frame}[fragile]{Listas}
-\begin{texexptitled}[breakable,enhanced,middle=2mm]{Lista não ordenada utilizando o ambiente \mintinline{latex}{itemize}}{exe_lista1}
+\begin{texexptitled}[enhanced, listing side text, righthand width=4cm]{Lista não ordenada utilizando o ambiente \mintinline{latex}{itemize}}{exe_lista1}
 \begin{itemize}
     \item Item 1
     \item Item 2
@@ -1041,7 +1029,7 @@ H\textsubscript{2}O
 \end{frame}
 
 %\begin{frame}[fragile,plain]{}
-%\begin{texexptitled}[breakable,enhanced,middle=2mm]{Lista não ordenada aninhada utilizando o ambiente \mintinline{latex}{itemize}}{exe_lista2}
+%\begin{texexptitled}[enhanced,middle=2mm]{Lista não ordenada aninhada utilizando o ambiente \mintinline{latex}{itemize}}{exe_lista2}
 %\begin{itemize}
 %    \item Item 1
 %    \begin{itemize}
@@ -1054,7 +1042,7 @@ H\textsubscript{2}O
 %\end{frame}
 
 \begin{frame}[fragile]{Listas}
-\begin{texexptitled}[breakable,enhanced,middle=2mm]{Lista não ordenada utilizando o ambiente \mintinline{latex}{itemize} com símbolos diferentes}{exe_lista_simb1}
+\begin{texexptitled}[enhanced, listing side text, righthand width=4cm]{Lista não ordenada utilizando o ambiente \mintinline{latex}{itemize} com símbolos diferentes}{exe_lista_simb1}
     \begin{itemize}
         \item[\#]    Item 1
         \item[--]    Item 2
@@ -1065,7 +1053,7 @@ H\textsubscript{2}O
 \end{frame}
 
 %\begin{frame}[fragile]{Listas}
-%\begin{texexptitled}[breakable,enhanced,middle=2mm]{Lista não ordenada utilizando o ambiente \mintinline{latex}{itemize} com símbolos diferentes}{exe_lista_simb2}
+%\begin{texexptitled}[enhanced,middle=2mm]{Lista não ordenada utilizando o ambiente \mintinline{latex}{itemize} com símbolos diferentes}{exe_lista_simb2}
 %    \begin{itemize}[label=$\to$]
 %        \item Item 1
 %        \item Item 2
@@ -1077,8 +1065,8 @@ H\textsubscript{2}O
 
 \begin{frame}[fragile]{Listas}
 \begingroup
-\renewcommand{\labelenumi}{\arabic{enumi}.}
-\begin{texexptitled}[breakable,enhanced,middle=2mm]{Lista ordenada utilizando o ambiente \mintinline{latex}{enumerate}}{exe_lista3}
+%\renewcommand{\labelenumi}{\arabic{enumi}.}
+\begin{texexptitled}[enhanced, listing side text, righthand width=4cm]{Lista ordenada utilizando o ambiente \mintinline{latex}{enumerate}}{exe_lista3}
 \begin{enumerate}
     \item Item 1
     \item Item 2
@@ -1094,7 +1082,7 @@ H\textsubscript{2}O
 %\renewcommand{\labelenumii}{(\alph{enumii})}
 %\renewcommand{\labelenumiii}{\roman{enumiii}.}
 %\renewcommand{\labelenumiv}{\Alph{enumiv}.}
-%\begin{texexptitled}[breakable,enhanced,middle=2mm]{Lista ordenada aninhada utilizando o ambiente \mintinline{latex}{enumerate}}{exe_lista4}
+%\begin{texexptitled}[enhanced,middle=2mm]{Lista ordenada aninhada utilizando o ambiente \mintinline{latex}{enumerate}}{exe_lista4}
 %\begin{enumerate}
 %    \item Item 1
 %    \begin{enumerate}
@@ -1111,19 +1099,22 @@ H\textsubscript{2}O
 \subsection{Figuras e Ambientes de Figuras}
 
 %\begin{frame}[fragile]{Figuras e Ambientes de Figuras}
-%\begin{texexptitled}[breakable,enhanced,middle=2mm]{Incluindo figura com o comando {\tt includegraphics}}{exe_fig1}
+%\begin{texexptitled}[enhanced,middle=2mm]{Incluindo figura com o comando {\tt includegraphics}}{exe_fig1}
 %\includegraphics[width=3cm]{example-image-a} 
 %\end{texexptitled}
 %\end{frame}
 
+%\begingroup
+%\setbeamercolor{background canvas}{bg=InpeLaranja!90}
 \begin{frame}[fragile,plain]{}
-\begin{texexptitled}[breakable,enhanced,middle=2mm]{Incorporando uma figura com o comando {\tt includegraphics} dentro do ambiente {\tt figure}}{exe_ambfig}
+\begin{texexptitled}[center, enhanced, middle=2mm]{Incorporando uma figura com o comando {\tt includegraphics} dentro do ambiente {\tt figure}}{exe_ambfig}
 \begin{figure}[H]
     \caption{Uma figura dentro do ambiente {\tt figure}.}
     \includegraphics[width=3cm]{example-image-a}
 \end{figure}
 \end{texexptitled}
 \end{frame}
+%\endgroup
 
 \begin{frame}[fragile]{Figuras e Ambientes de Figuras}
 \begin{table}
@@ -1147,7 +1138,7 @@ H\textsubscript{2}O
 \end{frame}
 
 %\begin{frame}[fragile,plain]{}
-%\begin{texexptitled}[breakable,enhanced,middle=2mm]{Citando uma figura}{exe_ambfig}
+%\begin{texexptitled}[enhanced,middle=2mm]{Citando uma figura}{exe_ambfig}
 %\begin{figure}[H]
 %    \label{fig:exe_img_a}
 %    \caption{Uma figura.}
@@ -1158,7 +1149,7 @@ H\textsubscript{2}O
 %\end{frame}
 
 %\begin{frame}[fragile,plain]{}
-%\begin{texexptitled}[breakable,enhanced,middle=2mm]{Inserindo uma ou mais figuras lado-a-lado com o comando {\tt subfigure}}{exe:subfigure1}
+%\begin{texexptitled}[enhanced,middle=2mm]{Inserindo uma ou mais figuras lado-a-lado com o comando {\tt subfigure}}{exe:subfigure1}
 %\begin{figure}[H]
 %    \begin{center}
 %        \subfigure[Figura ``A'']
@@ -1171,7 +1162,7 @@ H\textsubscript{2}O
 %\end{frame}
 
 %\begin{frame}[fragile,plain]{}
-%\begin{texexptitled}[breakable,enhanced,middle=2mm]{Inserindo uma ou mais figuras lado-a-lado com o comando {\tt subfigure}}{exe:subfigure1}
+%\begin{texexptitled}[enhanced,middle=2mm]{Inserindo uma ou mais figuras lado-a-lado com o comando {\tt subfigure}}{exe:subfigure1}
 %\begin{figure}[H]
 %    \centering
 %        \begin{subfigure}[b]{0.3\textwidth}
@@ -1191,13 +1182,13 @@ H\textsubscript{2}O
 \subsection{Matemática e ambientes de equações}
 
 \begin{frame}[fragile]{Matemática e ambientes de equações}
-\begin{texexptitled}[breakable,center lower,enhanced,middle=2mm]{Inserindo equações em linha (\textit{inline})}{exe_eq0}
+\begin{texexptitled}[center lower,enhanced,middle=2mm]{Inserindo equações em linha (\textit{inline})}{exe_eq0}
 Uma equação do segundo grau tem a forma geral, $ax^2 + bx + c =0$. Suas raízes são calculadas por, $x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$.
 \end{texexptitled}
 \end{frame}
 
 \begin{frame}[fragile,plain]{}
-\begin{texexptitled}[breakable,center lower,enhanced,middle=2mm]{Ambientes {\tt equation} e {\tt equation*}}{exe_eq1}
+\begin{texexptitled}[center lower,enhanced,middle=2mm]{Ambientes {\tt equation} e {\tt equation*}}{exe_eq1}
 \begin{equation*}
 x = \frac{-b \pm \sqrt{b^{2} - 4ac}}{2a}
 \end{equation*}
@@ -1210,7 +1201,7 @@ x = \frac{-b \pm \sqrt{b^{2} - 4ac}}{2a}
 \end{frame}
 
 \begin{frame}[fragile]{Matemática e ambientes de equações}
-\begin{texexptitled}[breakable,center lower,enhanced,middle=2mm]{Ambientes {\tt equation} e {\tt split}}{exe_eq2}
+\begin{texexptitled}[center lower,enhanced,middle=2mm]{Ambientes {\tt equation} e {\tt split}}{exe_eq2}
 \begin{equation*}
 \begin{split}
 f(x) & = x^{-\frac{1}{2}}   \\
@@ -1221,7 +1212,7 @@ f(x) & = x^{-\frac{1}{2}}   \\
 \end{frame}
 
 \begin{frame}[fragile,plain]{}
-\begin{texexptitled}[breakable,center,enhanced,middle=2mm,width=0.92\paperwidth]{Ambiente {\tt multline}}{exe_eq3}
+\begin{texexptitled}[center,enhanced,middle=2mm,width=0.92\paperwidth]{Ambiente {\tt multline}}{exe_eq3}
 \begin{multline*}
 A(x,y)\frac{\partial^2{\Psi}}{\partial{x^2}} + B(x,y)\frac{\partial^2{\Psi}}{\partial{x}\partial{y}} + C(x,y)\frac{\partial^2{\Psi}}{\partial{y^2}} + D(x,y)\frac{\partial{\Psi}}{\partial{x}} + \\ + E(x,y)\frac{\partial{\Psi}}{\partial{y}} + F(x,y)\Psi = G(x,y)
 \end{multline*}
@@ -1229,7 +1220,7 @@ A(x,y)\frac{\partial^2{\Psi}}{\partial{x^2}} + B(x,y)\frac{\partial^2{\Psi}}{\pa
 \end{frame}
 
 \begin{frame}[fragile]{Matemática e ambientes de equações}
-\begin{texexptitled}[breakable,center lower,enhanced,middle=2mm]{Ambiente {\tt align}}{exe_eq4}
+\begin{texexptitled}[center lower,enhanced,middle=2mm]{Ambiente {\tt align}}{exe_eq4}
 \begin{align*}
 e^{i\pi} + 1 & = 0 \\ 
            e & = \lim_{n \to \infty}{\Bigg(1 + \frac{1}{n}\Bigg)^{n}}  
@@ -1238,7 +1229,7 @@ e^{i\pi} + 1 & = 0 \\
 \end{frame}
 
 \begin{frame}[fragile]{Matemática e ambientes de equações}
-\begin{texexptitled}[breakable,center lower,enhanced,middle=2mm]{Ambiente {\tt gather}}{exe_eq5}
+\begin{texexptitled}[center lower,enhanced,middle=2mm]{Ambiente {\tt gather}}{exe_eq5}
 \begin{gather*}
  x           = 1 + 2y + 3z \\ 
 3x -  y + 2z = 0           \\
@@ -1249,8 +1240,8 @@ e^{i\pi} + 1 & = 0 \\
 
 \subsection{Tabelas}
 
-\begin{frame}[fragile,plain]{}
-\begin{texexptitled}[breakable,center lower,enhanced,middle=2mm]{Exemplo de uma tabela simples com o ambiente {\tt tabular}}{exe_tab1}
+\begin{frame}[fragile]{Tabelas}
+\begin{texexptitled}[center, width=0.9\paperwidth, enhanced, listing side text, righthand width=3cm, middle=2mm]{Exemplo de uma tabela simples com o ambiente {\tt tabular}}{exe_tab1}
 \begin{tabular}{c c}
 \toprule
 \textbf{L0C1} & \textbf{L0C2} \\
@@ -1263,8 +1254,10 @@ L3C1 & L3C2 \\
 \end{texexptitled}
 \end{frame}
 
+%\begingroup
+%\setbeamercolor{background canvas}{bg=InpeLaranja!90}
 \begin{frame}[fragile,plain]{}
-\begin{texexptitled}[breakable,center lower,enhanced,middle=2mm]{Exemplo de uma tabela simples com o ambiente {\tt tabular} e colunas mais largas}{exe_tab3}
+\begin{texexptitled}[center, enhanced, middle=2mm]{Exemplo de uma tabela simples com o ambiente {\tt tabular} e colunas mais largas}{exe_tab3}
 \begin{tabular}{p{3cm}  p{5cm}}
 \toprule 
 \textbf{L0C1} & \textbf{L0C2} \\
@@ -1278,24 +1271,17 @@ L3C1 & L3C2 \\
 \end{frame}
 
 \begin{frame}[fragile,plain]{}
-\begin{texexptitled}[breakable,center lower,enhanced,middle=2mm]{Exemplo de uma tabela simples utilizando o ambiente {\tt tabularx}}{exe_tab7}
+\begin{texexptitled}[center, enhanced, middle=2mm]{Exemplo de uma tabela simples utilizando o ambiente {\tt tabularx}}{exe_tab7}
 \begin{tabularx}{\textwidth}{X | X | X}
 \toprule
 L0C1 & L0C2 & L0C3 \\
 \midrule
-L1C1 L1C1 & L1C2 L1C2 L1C2 L1C2 L1C2 L1C2 & L1C3      \\
+L1C1 L1C1 & L1C2 L1C2 L1C2 L1C2 L1C2 L1C2 & L1C3 \\
 L2C1 L2C1 & L2C2 L2C2 L2C2 L2C2 & L2C3 L2C3 \\
 \bottomrule
 \end{tabularx}
 \end{texexptitled}
 \end{frame}
-
-%\subsection{Citações e Referências}
-%
-%\begin{frame}[fragile]{Citações e Referências}
-%\end{frame}
-%
-%\begin{frame}[fragile]{Citações e Referências}
-%\end{frame}
+%\endgroup
 
 \end{document}

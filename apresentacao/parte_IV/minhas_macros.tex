@@ -1,47 +1,39 @@
-% COMANDOS PESSOAIS
-%\newcommand{\vetor}[1]{\mathit{\mathbf{#1}}}
+% Macros extras
+\definecolor{InpePreto}{HTML}{515151}
+\definecolor{InpeAzul}{HTML}{017DBD}
+\definecolor{InpeLaranja}{HTML}{F8931D}
 
 % Caixas das Dicas (pacote tcolorbox)
 % Material Colors
 \newtcolorbox{marker}[1][]{enhanced,
   before skip=10mm,after skip=10mm,
-  boxrule=0.4pt,left=5mm,right=2mm,top=1mm,bottom=1mm,
-  colback=MaterialAmberA100,
-  colframe=MaterialGrey900,
-  sharp corners,rounded corners=southeast,arc is angular,arc=3mm,
+  boxrule=1.4pt,left=6mm,right=3mm,top=2mm,bottom=2mm,
+  colback=MaterialAmberA100!75,
+  colupper=black,
+  colframe=InpePreto,
   underlay={%
-    \path[fill=tcbcol@back!80!black] ([yshift=3mm]interior.south east)--++(-0.4,-0.1)--++(0.1,-0.2);
-    \path[draw=tcbcol@frame,shorten <=-0.05mm,shorten >=-0.05mm] ([yshift=3mm]interior.south east)--++(-0.4,-0.1)--++(0.1,-0.2);
-    \path[fill=MaterialYellow100!50!black,draw=none] (interior.south west) rectangle node[white]{\Huge\bfseries !} ([xshift=4mm]interior.north west);
-    },
-  drop fuzzy shadow,#1}
+    \path[fill=none] (frame.south west) rectangle node[InpePreto]{\huge\bfseries !} ([xshift=7mm]frame.north west);
+    }}
   
 % Caixas dos Exemplos (pacote tcolorbox)
 % Material Colors
 \tcbset{
     texexp/.style={
-        colframe=MaterialBlue900,
+        colframe=InpeLaranja!90,
         colback=white,
-        coltitle=white,
+        coltitle=black,
         fonttitle=\small\sffamily\bfseries,
         fontupper=\small, 
-        fontlower=\small},
+        fontlower=\small,
+        arc=0pt, outer arc=0pt, box align=center, halign=center, valign=center},
         example/.style 2 args={texexp,
-        title={Exemplo \thetcbcounter: #1},label={#2}},
+        title={\hspace{-4mm}Exemplo \thetcbcounter: #1},label={#2}},
     }
     \newtcblisting{texexp}[1]{texexp,#1}
     \newtcblisting[auto counter,number within=section]{texexptitled}[3][]{%
         example={#2}{#3},#1}
     \newtcolorbox[use counter from=texexptitled]{texexptitledspec}[3][]{%
         example={#2}{#3},#1}
-
-%\newtcolorbox[auto counter,number within=section,list inside=exam]{texercise}[4][]{%
-%    texercisestyle,
-%    listing file={respostas/texercise\thetcbcounter.tex},
-%    label={exe:#2},
-%    record={\string\processsol{respostas/texercise\thetcbcounter.tex}{#2}},
-%    title={Exercício \thetcbcounter\hfill\mdseries Resposta na página \pageref{sol:#2}},
-%    list text={\vspace{-1em}\hspace{1mm} #3 (Resposta na página \pageref{sol:#2}}), #1)}
 
 % Caixas dos Exercícios e Soluções (pacote tcolorbox)  
 % Material Colors
@@ -93,18 +85,106 @@
 }
 
 % Caixa dos Comandos (pacote tcolorbox)
-% Material Colors
-\newtcblisting{commandshell}{colback=MaterialBlueGrey900,colupper=MaterialBlueGrey50,colframe=MaterialBlueGrey900!75!MaterialBlueGrey900,listing only,listing options={style=tcblatex,language=sh},
-    every listing line={\textcolor{MaterialRed500}{\small\ttfamily\bfseries \$ }}}
-
 \newtcblisting{meucomando}{listing engine=minted,
 	minted style=colorful,
 	minted language=bash,
 	minted options={fontsize=\small,breaklines,autogobble,linenos,numbersep=3mm},
-	colback=MaterialAmber50,colframe=MaterialBlueGrey900,listing only,
+	colback=blue!5!white,colupper=black,colframe=InpePreto,listing only,
 	left=5mm,enhanced,
-	overlay={\begin{tcbclipinterior}\fill[MaterialAmber600] (frame.south west)
+	overlay={\begin{tcbclipinterior}\fill[red!20!blue!20!white] (frame.south west)
 			rectangle ([xshift=5mm]frame.north west);\end{tcbclipinterior}}}
+
+\newtcblisting{meucomandol}[1]{
+	colback=blue!5!white,colupper=InpePreto,coltitle=black,colframe=InpeLaranja!90,listing only,
+  title={\hspace{-5mm}#1},
+  fonttitle=\small\sffamily\bfseries,
+  arc=0pt, outer arc=0pt, box align=center, halign=center, valign=center, center,
+  listing engine=minted,
+	minted style=colorful,
+	minted language=latex,
+	minted options={fontsize=\small,breaklines,autogobble,linenos,numbersep=3mm},
+	left=5mm,enhanced,
+  overlay={ \begin{tcbclipinterior}\fill[red!20!blue!20!white] (frame.south west) rectangle ([xshift=5mm]frame.north west); \end{tcbclipinterior} }
+  }
+
+\newtcblisting{meucomandolf}[1]{
+	colback=blue!5!white,colupper=InpePreto,coltitle=black,colframe=InpeLaranja!90,listing only,
+  title={\hspace{-5mm}#1},
+  fonttitle=\small\sffamily\bfseries,
+  arc=0pt, outer arc=0pt, box align=center, halign=center, valign=center, center,
+  width=0.99\paperwidth, height=0.99\paperheight,
+  listing engine=minted,
+	minted style=colorful,
+	minted language=latex,
+	minted options={fontsize=\small,breaklines,autogobble,linenos,numbersep=3mm},
+	left=5mm,enhanced,
+  overlay={ \begin{tcbclipinterior}\fill[red!20!blue!20!white] (frame.south west) rectangle ([xshift=5mm]frame.north west); \end{tcbclipinterior} }
+  }
+
+\newtcblisting{meucomandot}[1]{
+	colback=blue!5!white,colupper=InpePreto,coltitle=black,colframe=InpeLaranja!90,listing only,
+  title={\hspace{-5mm}#1},
+  fonttitle=\small\sffamily\bfseries,
+  arc=0pt, outer arc=0pt, box align=center, halign=center, valign=center, center,
+  listing engine=minted,
+	minted style=colorful,
+	minted language=bash,
+	minted options={fontsize=\small,breaklines,autogobble,linenos,numbersep=3mm},
+	left=5mm,enhanced,
+  overlay={ \begin{tcbclipinterior}\fill[red!20!blue!20!white] (frame.south west) rectangle ([xshift=5mm]frame.north west); \end{tcbclipinterior} }
+  }
+        
+\newtcblisting{meucomandotf}[1]{
+	colback=blue!5!white,colupper=InpePreto,coltitle=black,colframe=InpeLaranja!90,listing only,
+  title={\hspace{-5mm}#1},
+  fonttitle=\small\sffamily\bfseries,
+  arc=0pt, outer arc=0pt, box align=center, halign=center, valign=center, center,
+  width=0.99\paperwidth, height=0.99\paperheight,
+  listing engine=minted,
+	minted style=colorful,
+	minted language=bash,
+	minted options={fontsize=\small,breaklines,autogobble,linenos,numbersep=3mm},
+	left=5mm,enhanced,
+  overlay={ \begin{tcbclipinterior}\fill[red!20!blue!20!white] (frame.south west) rectangle ([xshift=5mm]frame.north west); \end{tcbclipinterior} }
+  }
+
+\DeclareTCBInputListing[]{\mylisting}{ m }{% m é um argumento mandatório (veja a documentação do pacote xparse)
+  colback=blue!5!white,colupper=InpePreto,coltitle=black,colframe=InpeLaranja!90,listing only,
+  title={\hspace{-5mm}#1},
+  fonttitle=\small\sffamily\bfseries,
+  arc=0pt, outer arc=0pt, box align=center, halign=center, valign=center, center,
+  listing engine=minted,
+	minted style=colorful,
+  minted language=latex,
+	minted options={fontsize=\small,breaklines,autogobble,linenos,numbersep=3mm},
+	left=5mm,enhanced,
+  } 
+
+\DeclareTCBInputListing[]{\mylistingf}{ m }{% m é um argumento mandatório (veja a documentação do pacote xparse)
+  colback=blue!5!white,colupper=InpePreto,coltitle=black,colframe=InpeLaranja!90,listing only,
+  title={\hspace{-5mm}#1},
+  fonttitle=\small\sffamily\bfseries,
+  arc=0pt, outer arc=0pt, box align=center, halign=center, valign=center, center,
+  width=0.99\paperwidth, height=0.99\paperheight,
+  listing engine=minted,
+	minted style=colorful,
+  minted language=latex,
+	minted options={fontsize=\small,breaklines,autogobble,linenos,numbersep=3mm},
+	left=5mm,enhanced,
+  } 
+
+\DeclareTCBInputListing[]{\mylistingfs}{ m }{% m é um argumento mandatório (veja a documentação do pacote xparse)
+  colback=blue!5!white,colupper=InpePreto,coltitle=black,colframe=InpeLaranja!90,listing only,
+  title={\hspace{-5mm}#1},
+  fonttitle=\small\sffamily\bfseries,
+  arc=0pt, outer arc=0pt, box align=center, halign=center, valign=center, center,
+  width=0.99\paperwidth, height=0.99\paperheight,
+  listing engine=minted,
+	minted style=colorful,
+  minted language=latex,
+	minted options={fontsize=\footnotesize,breaklines,autogobble,linenos,numbersep=3mm},
+	left=5mm,enhanced,
+  } 
 
 % Sentenças individuais Loren Lipsum (pacote lipsum)
 % REF: https://tex.stackexchange.com/questions/254901/one-sentence-of-dummy-text
@@ -134,28 +214,3 @@
    }
  }
 \ExplSyntaxOff
-
-%\newcommand{\recuo}{\\[-0.5em]}
-%
-%\newcommand{\eg}{por exemplo}
-%\newcommand{\ie}{isto é}
-%
-%\newcommand{\inpe}{INPE}
-%\newcommand{\inpex}{INPE\xspace}
-%\newcommand{\ninpe}{Instituto Nacional de Pesquisas Espaciais}
-%\newcommand{\ninpex}{Instituto Nacional de Pesquisas Espaciais\xspace}
-
-% Reinsere um ponto (.) depois do número em listas ordenadas
-%\renewenvironment{enumerate}%
-%{\begin{list}{\arabic{enumi}.}%
-%		{\setlength{\leftmargin}{2.5em}%
-%			\setlength{\itemsep}{-\parsep}%
-%			\setlength{\topsep}{-\parskip}%%
-%			\usecounter{enumi}}%
-%}{\end{list}}
-
-% Força a redefinição do estilo das listas ordenadas (utilize o begingroup/endgroup para alterar localmente)
-%\renewcommand{\labelenumi}{\arabic{enumi}.}
-%\renewcommand{\labelenumii}{(\alph{enumii})}
-%\renewcommand{\labelenumiii}{\roman{enumiii}.}
-%\renewcommand{\labelenumiv}{\Alph{enumiv}.}

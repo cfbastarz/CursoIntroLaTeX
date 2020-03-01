@@ -1,23 +1,26 @@
 \documentclass[10pt]{beamer}
 
-\usetheme{metropolis}
-%\usecolortheme{crane}
+\input{./meus_pacotes}
+\input{./minhas_macros}
 
-%\usefonttheme{professionalfonts}
+\usepackage[alf]{abntex2cite}
+\usepackage{bibentry}
+
+\usetheme{metropolis}
+
 \usefonttheme[onlymath]{serif}
 \usefonttheme{professionalfonts}
+\usepackage{mathspec} 
+\metroset{titleformat=allsmallcaps} % smallcaps
 
-%https://tex.stackexchange.com/questions/146132/tcolorbox-listing-error-using-beamers-beginframe
-
-% Numeração das figuras e tabelas
-\setbeamertemplate{caption}[numbered]
-
-% Força fundo branco em todos os slides
+\setbeamercolor{alerted text}{fg=InpeLaranja}
+\setbeamercolor{frametitle}{bg=InpeAzul}
+\setbeamercolor{normal text}{fg=black}
+\setbeamercolor{progress bar}{bg=InpeLaranja,fg=InpeAzul}
+\setbeamercolor{title separator}{bg=InpeLaranja,fg=InpeLaranja}
 \setbeamercolor{background canvas}{bg=white}
 
-% Engana o pacote tcolorbox no carregamento do inputenc
-% (https://tex.stackexchange.com/questions/370262/how-to-adapt-tcolorbox-with-xelatex)
-%\makeatletter\@namedef{ver@inputenc.sty}{}\makeatother
+\setbeamertemplate{caption}[numbered]
 
 \AtBeginSubsection[
   {\frame<beamer>{\frametitle{Sumário}   
@@ -32,16 +35,12 @@
     }
 }
 
-\input{./meus_pacotes}
-\input{./minhas_macros}
-
 \title{Introdução ao \LaTeX}
 \subtitle{Parte IV}
-\date{4 de Outubro de 2019}
+\date{05 de Março de 2020}
 \author{Carlos Frederico Bastarz (CPTEC/INPE)}
 \institute{Instituto Nacional de Pesquisas Espaciais (INPE)}
-%\titlegraphic{\hfill\includegraphics[height=0.5cm]{figs/layout/logonome.pdf}}
-\titlegraphic{\hfill\includegraphics[height=1.25cm]{figs/layout/inpe_logo.png}}
+\titlegraphic{\hfill\includegraphics[height=1.5cm]{figs/layout/inpe_logo.png}}
 
 \makeatletter
 \patchcmd{\beamer@sectionintoc}{\vskip1.5em}{\vskip0.75em}{}{}
@@ -51,32 +50,12 @@
 
 \maketitle
 
-%\begin{frame}[c]{Sumário}
-%  \vspace{0.75cm}
-%  \setbeamertemplate{section in toc}[sections numbered]
-%  \tableofcontents[hideallsubsections]
-%\end{frame}
-
-%\begin{frame}[c]{Sumário}
-%    \begin{flushleft}
-%        \begin{minipage}{5cm}
-%            \setbeamertemplate{section in toc}[sections numbered]
-%            \tableofcontents[hideallsubsections]
-%        \end{minipage}
-%    \end{flushleft}
-%    \begin{flushright}
-%        \begin{minipage}{5cm}
-%            \includegraphics[width=\textwidth]{./figs/ctan_lion_350x350.pdf}
-%        \end{minipage}
-%    \end{flushright}
-%\end{frame}
-
 \begin{frame}[c]{Sumário}
     \vspace{2em}
     \begin{multicols}{2}
         \begin{minipage}{0.49\textwidth}
-           %\setbeamertemplate{section in toc}[sections numbered]
-           %\tableofcontents[hideallsubsections]
+           \vspace{8mm}
+           \setbeamertemplate{section in toc}[sections numbered]
            \tableofcontents
         \end{minipage}
         \begin{minipage}{0.49\textwidth}
@@ -85,9 +64,9 @@
     \end{multicols}
 \end{frame}
 
-\section{Parte IV - Apresentações}
+\section{Parte IV - Pacote \textit{Beamer}}
 
-\begin{frame}{Pacote Beamer}
+\begin{frame}{Pacote \textit{Beamer}}
 	\begin{block}{É possível fazer apresentações com o \LaTeX{}?}
 		\begin{itemize}
 			\pause
@@ -97,23 +76,23 @@
 			\pause
 			\item A ideia é a mesma, mas a lógica é um pouco diferente;
 			\pause
-			\item Beamer é o pacote mais utilizado.
+			\item \textit{Beamer} é o pacote mais utilizado.
 		\end{itemize}
 	\end{block}
 \end{frame}
 
-\begin{frame}{Pacote Beamer}
-	\begin{block}{Quando é conveniente fazer apresentações com o Beamer?}
+\begin{frame}{Pacote \textit{Beamer}}
+	\begin{block}{Quando é conveniente fazer apresentações com o \textit{Beamer?}}
 		\begin{itemize}
 			\pause
 			\item Embora seja uma classe do \LaTeX{}, como sempre, é necessário tempo;
 			\pause
-			\item Os mesmos pacotes utilizados com as classes mais comuns do \LaTeX{}, também podem ser utilizados com a classe do Beamer;
+			\item Os mesmos pacotes utilizados com as classes mais comuns do \LaTeX{}, também podem ser utilizados com a classe do \textit{Beamer};
 			\pause
-			\item Pense no Beamer como o \LaTeX{} no modo paisagem:
+			\item Pense no \textit{Beamer} como o \LaTeX{} no modo paisagem:
 			\begin{itemize}
 			    \pause
-			    \item Suas tabelas longas e imagens grandes podem não caber no documento Beamer;
+			    \item Suas tabelas longas e imagens grandes podem não caber no documento \textit{Beamer};
 			    \pause
 			    \item Adaptações podem ser necessárias.
 			\end{itemize}
@@ -121,70 +100,54 @@
 	\end{block}
 \end{frame}
 
-%\begin{frame}{Pacote Beamer}
-%	\begin{block}{Quando é conveniente fazer apresentações com o Beamer?}
-%		\begin{itemize}
-%			\pause
-%			\item Embora seja uma classe do \LaTeX{}, como sempre, é necessário tempo;
-%			\pause
-%			\item Os mesmos pacotes utilizados com as classes mais comuns do \LaTeX{}, também podem ser utilizados com a classe do Beamer;
-%			\pause
-%			\item Pense no Beamer como o \LaTeX{} no modo paisagem:
-%			\begin{itemize}
-%			    \pause
-%			    \item Suas tabelas longas e imagens grandes podem não caber no documento Beamer;
-%			    \pause
-%			    \item Adaptações podem ser necessárias.
-%			\end{itemize}
-%		\end{itemize}
-%	\end{block}
-%\end{frame}
-
 \begingroup
-\setbeamercolor{background canvas}{bg=white}
+\setbeamercolor{background canvas}{bg=InpeLaranja}
 \begin{frame}[plain,fragile]{}
-%\begin{frame}[fragile]{O que é um documento do \LaTeX{}?}
-\begin{texexptitled}[breakable,center lower,enhanced jigsaw,middle=2mm,listing side comment,righthand width=3.5cm,compilable listing,run latex,run dvips,run ps2pdf,pdf comment,comment style={raster columns=1},freeze pdf]{Um documento \LaTeX{} mínimo}{exe_doc1}
+\begin{texexptitled}[center, enhanced jigsaw, width=0.99\paperwidth, height=0.99\paperheight, middle=2mm, listing side comment, righthand width=5cm, compilable listing, run latex, run dvips, run ps2pdf, pdf comment, comment style={raster columns=1},freeze pdf]{Um documento \LaTeX{} mínimo}{exe_doc1}
 \documentclass[10pt]{article}
 % Este é o preâmbulo
 \usepackage[utf8]{inputenc}
 \usepackage{lipsum}
+
 \title{Título}
 \author{Nome}
 \date{\today}
+
 % A partir daqui inicia-se o documento
 \begin{document}
 \maketitle
+
 \section{Seção}
+
 \lipsum[1-2]
 \end{document}
 \end{texexptitled}
 \end{frame}
-\endgroup
 
-\begingroup
-\setbeamercolor{background canvas}{bg=white}
 \begin{frame}[plain,fragile]{}
-%\begin{frame}[fragile]{O que é um documento do \LaTeX{}?}
-\begin{texexptitled}[breakable,center lower,enhanced jigsaw,middle=2mm,listing side comment,righthand width=3.5cm,compilable listing,run latex,run dvips,run ps2pdf,pdf comment,comment style={raster columns=1},freeze pdf]{Um documento \textit{Beamer} mínimo}{exe_doc2}
+\begin{texexptitled}[center, enhanced jigsaw, width=0.99\paperwidth, height=0.99\paperheight, middle=2mm, listing side comment, righthand width=5cm, compilable listing, run latex, run dvips, run ps2pdf, pdf comment, comment style={raster columns=1},freeze pdf]{Um documento \textit{Beamer} mínimo}{exe_doc2}
 \documentclass[10pt]{beamer}
 % Este é o preâmbulo
 \usepackage[utf8]{inputenc}
 \usepackage{lipsum}
+
 \title{Título}
 \author{Nome}
 \date{\today}
+
 % A partir daqui inicia-se o documento
 \begin{document}
 \maketitle
+
 \section{Seção}
+
 \lipsum[1-2]
 \end{document}
 \end{texexptitled}
 \end{frame}
 \endgroup
 
-\begin{frame}[fragile]{Pacote Beamer}
+\begin{frame}[fragile]{Pacote \textit{Beamer}}
     \begin{block}{Diferença principal entre os documentos:}
         \begin{itemize}
             \pause
@@ -194,15 +157,14 @@
         \end{itemize}
     \end{block}
     \pause
-    \begin{alertblock}{O Exemplo \ref{exe_doc2} não está completo/correto!}
+    \begin{block}{O Exemplo \ref{exe_doc2} não está completo/correto!}
         \begin{itemize}
             \pause
-            \item No Beamer, os blocos de texto são delimitados por um ambiente especial, o {\tt frame};
+            \item No \textit{Beamer}, os blocos de texto são delimitados por um ambiente especial, o {\tt frame};
             \pause
-            \item \textit{Frames} são, portanto, os \textit{slides}\footnotemark[2] do \textit{Beamer}.
+            \item \textit{Frames} são, portanto, os \textit{slides}\footnote{No sentido \textit{PowerPoint} das coisas.} do \textit{Beamer}.
         \end{itemize}
-    \end{alertblock}
-    \only<6->\footnotetext[2]{No sentido \textit{PowerPoint} das coisas.}
+    \end{block}
 \end{frame}
 
 \subsection{Preâmbulo}
@@ -223,24 +185,11 @@
         \vspace{1em}
         Assim como em um documento do \LaTeX{}, podemos carregar os pacotes que se fizerem necessários no preâmbulo do documento.
         \vspace{1em}
-        \tcbinputlisting{
-            listing only,
-            title=Pacotes e Macros no Preâmbulo,
-            fonttitle=\small\bfseries,
-            center,%width=0.92\paperwidth,
-            colback=yellow!5,colframe=yellow!50!black,
-            listing engine=minted,
-            minted language=latex,
-            minted options={%
-            linenos,
-            breaklines,
-            autogobble,
-            fontsize=\small,
-            numbersep=2mm,
-            baselinestretch=1}
-            }
+        \mylisting{Pacotes e Macros no Preâmbulo}
     \end{block}
 \end{frame}
+
+\subsection{Determinação da Capa}
 
 \begin{frame}{Determinação da Capa}
     \begin{block}{Informações da Capa:}
@@ -268,7 +217,6 @@
 
 \begin{tcboutputlisting}
 \documentclass{beamer}
-
 \usepackage[utf8]{inputenc}
 
 \usetheme{Warsaw}
@@ -278,7 +226,9 @@
 \date{4 de Outubro de 2019}
 \author{Carlos Frederico Bastarz (CPTEC/INPE)}
 \institute{Instituto Nacional de Pesquisas Espaciais (INPE)}
-\titlegraphic{\hfill\includegraphics[height=1.25cm]{inpe_logo.png}}
+\titlegraphic{\hfill
+  \includegraphics[height=1.25cm]{inpe_logo.png}
+}
 
 \begin{document}
 
@@ -287,57 +237,12 @@
 \end{document}
 \end{tcboutputlisting}
 
+\begingroup
+\setbeamercolor{background canvas}{bg=InpeLaranja}
 \begin{frame}[plain]{}
-    \tcbinputlisting{
-        listing only,
-        title=Código do \textit{Frame} anterior,
-        fonttitle=\small\bfseries,
-        center,width=0.92\paperwidth,
-        colback=yellow!5,colframe=yellow!50!black,
-        listing engine=minted,
-        minted language=latex,
-        minted options={%
-        linenos,
-        breaklines,
-        autogobble,
-        fontsize=\scriptsize,
-        numbersep=2mm,
-        baselinestretch=1}
-        }
+  \mylistingf{Código do \textit{frame} anterior}
 \end{frame}
-
-%\tcbset{listing file=\jobname-listing-myslide}% <-- Use a unique name
-%
-%\begin{tcboutputlisting}
-%\documentclass{beamer}
-%\begin{document}
-%\usepackage[utf8]{inputenc}
-%\usepackage[brazilian]{babel}
-%
-%\title{Minha Apresentação}
-%\author{Meu Nome}
-%\affiliation{Minha Instituição}
-%\date{\today}
-%
-%\maketitle
-%\end{document}
-%\end{tcboutputlisting}
-%
-%\begin{frame}[fragile]{Capa}
-%\tcbinputlisting{
-%  listing and comment,pdf comment,run pdflatex,% <-- These options do the trick
-%  % the rest is just to be colorful and nice:
-%  enhanced,oversize,
-%  lower separated=false,
-%  colframe=red!50!black,colback=yellow!10!white,
-%  interior style={top color=yellow!5!white,bottom color=yellow!20!white},
-%  listing options={style=tcblatex,texcsstyle=*\color{red!70!black}},
-%  comment style={drop lifted shadow},
-%  sidebyside,sidebyside gap=1mm,raster columns=1
-%}
-%\end{frame}
-%
-%\tcbset{listing file=\jobname.listing}% <-- reset to default
+\endgroup
 
 \subsection{\textit{Frames}}
 
@@ -372,24 +277,12 @@
     ...
 \end{tcboutputlisting}
 
+\begingroup
+\setbeamercolor{background canvas}{bg=InpeLaranja}
 \begin{frame}[fragile,plain]{}
-    \tcbinputlisting{
-        listing only,
-        title=Ao invés de fazer... (Exemplo \ref{exe_doc1}),
-        fonttitle=\small\bfseries,
-        center,%width=0.92\paperwidth,
-        colback=yellow!5,colframe=yellow!50!black,
-        listing engine=minted,
-        minted language=latex,
-        minted options={%
-        linenos,
-        breaklines,
-        autogobble,
-        fontsize=\small,
-        numbersep=2mm,
-        baselinestretch=1}
-        }
+  \mylistingf{Ao invés de fazer... (Exemplo \ref{exe_doc1})}
 \end{frame}
+\endgroup
 
 \begin{tcboutputlisting}
     ...
@@ -411,52 +304,12 @@
     ...
 \end{tcboutputlisting}
 
+\begingroup
+\setbeamercolor{background canvas}{bg=InpeLaranja}
 \begin{frame}[fragile,plain]{}
-    \tcbinputlisting{
-        listing only,
-        title=... Faça (Exemplo \ref{exe_doc2}):,
-        fonttitle=\small\bfseries,
-        center,%width=0.92\paperwidth,
-        colback=yellow!5,colframe=yellow!50!black,
-        listing engine=minted,
-        minted language=latex,
-        minted options={%
-        linenos,
-        breaklines,
-        autogobble,
-        fontsize=\small,
-        numbersep=2mm,
-        baselinestretch=1}
-        }
+  \mylistingf{... Faça (Exemplo \ref{exe_doc2}):}
 \end{frame}
-
-%\begin{tcboutputlisting}
-%    \begin{frame}{Nome do \textit{Frame}}
-%        ...
-%    \end{frame}
-%\end{tcboutputlisting}
-%
-%\begin{frame}{\textit{Frames}}
-%    \begin{block}{Um \textit{frame} pode possuir um nome:}
-%        \vspace{1em}
-%        \tcbinputlisting{
-%            listing only,
-%            title=Uma forma de nomear um \textit{Frame},
-%            fonttitle=\small\bfseries,
-%            center,%width=0.92\paperwidth,
-%            colback=yellow!5,colframe=yellow!50!black,
-%            listing engine=minted,
-%            minted language=latex,
-%            minted options={%
-%            linenos,
-%            breaklines,
-%            autogobble,
-%            fontsize=\small,
-%            numbersep=2mm,
-%            baselinestretch=1}
-%            }
-%    \end{block}
-%\end{frame}
+\endgroup
 
 \begin{tcboutputlisting}
     ...
@@ -475,31 +328,16 @@
     \vspace{1em}
     \begin{block}{Um \textit{frame} pode possuir um nome:}
         \vspace{1em}
-        \tcbinputlisting{
-            listing only,
-            title=Como nomear um \textit{Frame},
-            fonttitle=\small\bfseries,
-            center,%width=0.92\paperwidth,
-            colback=yellow!5,colframe=yellow!50!black,
-            listing engine=minted,
-            minted language=latex,
-            minted options={%
-            linenos,
-            breaklines,
-            autogobble,
-            fontsize=\small,
-            numbersep=2mm,
-            baselinestretch=1}
-            }
+        \mylisting{Como nomear um \textit{Frame}}
     \end{block}
-    \pause
-    \vspace{-1.5em}
-    \begin{marker}
-        \vspace{0.25em}
-        \centering
-        O nome do \textit{frame} é o nome do \textit{slide}!
-        \vspace{0.25em}
-    \end{marker}
+%    \pause
+%    \vspace{-1.5em}
+%    \begin{marker}
+%        \vspace{0.25em}
+%        \centering
+%        O nome do \textit{frame} é o nome do \textit{slide}!
+%        \vspace{0.25em}
+%    \end{marker}
 \end{frame}
 
 \begin{frame}{\textit{Frames}}
@@ -554,24 +392,12 @@
 \end{frame}   
 \end{tcboutputlisting}
 
+\begingroup
+\setbeamercolor{background canvas}{bg=InpeLaranja}
 \begin{frame}[plain]{}
-    \tcbinputlisting{
-        listing only,
-        title=Código do \textit{Frame} anterior,
-        fonttitle=\small\bfseries,
-        center,width=0.92\paperwidth,
-        colback=yellow!5,colframe=yellow!50!black,
-        listing engine=minted,
-        minted language=latex,
-        minted options={%
-        linenos,
-        breaklines,
-        autogobble,
-        fontsize=\small,
-        numbersep=2mm,
-        baselinestretch=1}
-        }    
+  \mylistingf{Código do \textit{Frame} anterior}
 \end{frame}
+\endgroup
 
 \begin{frame}{\textit{Frames}}
     \begin{block}{Uma tabela com o ambiente {\tt table}:}
@@ -594,7 +420,6 @@
 
 \begin{tcboutputlisting}
 \begin{frame}{\textit{Frames}}
-
     \begin{block}{Uma tabela com os ambientes {\tt table} e {\tt tabularx}:}
         \centering
         \begin{table}
@@ -611,28 +436,15 @@
             \end{tabularx}
         \end{table}
     \end{block}
-
 \end{frame}
 \end{tcboutputlisting}
 
+\begingroup
+\setbeamercolor{background canvas}{bg=InpeLaranja}
 \begin{frame}[plain]{}
-    \tcbinputlisting{
-        listing only,
-        title=Código do \textit{Frame} anterior,
-        fonttitle=\small\bfseries,
-        center,width=0.92\paperwidth,
-        colback=yellow!5,colframe=yellow!50!black,
-        listing engine=minted,
-        minted language=latex,
-        minted options={%
-        linenos,
-        breaklines,
-        autogobble,
-        fontsize=\scriptsize,
-        numbersep=2mm,
-        baselinestretch=1}
-        }    
+  \mylistingfs{Código do \textit{Frame} anterior}
 \end{frame}
+\endgroup
 
 \begin{frame}{\textit{Frames}}
     \vspace{1em}
@@ -652,7 +464,7 @@
     \begin{block}{Uma figura com o ambiente {\tt figure}:}
     
     \begin{figure}
-        \includegraphics[width=\textwidth]{diagrama.pdf}
+        \includegraphics[scale=0.01]{diagrama.pdf}
         \caption{Exemplo de um diagrama produzido no programa \LaTeX\textit{Draw}.}
     \end{figure}
     
@@ -661,24 +473,12 @@
 \end{frame}
 \end{tcboutputlisting}
 
+\begingroup
+\setbeamercolor{background canvas}{bg=InpeLaranja}
 \begin{frame}[plain]{}
-    \tcbinputlisting{
-        listing only,
-        title=Código do \textit{Frame} anterior,
-        fonttitle=\small\bfseries,
-        center,width=0.92\paperwidth,
-        colback=yellow!5,colframe=yellow!50!black,
-        listing engine=minted,
-        minted language=latex,
-        minted options={%
-        linenos,
-        breaklines,
-        autogobble,
-        fontsize=\small,
-        numbersep=2mm,
-        baselinestretch=1}
-        }    
+  \mylistingf{Código do \textit{Frame} anterior}
 \end{frame}
+\endgroup
 
 \begin{frame}{\textit{Frames}}
     \begin{block}{Posicionamento dos elementos:}
@@ -755,22 +555,7 @@
             \end{enumerate}
         \end{multicols}
         \vspace{1em}
-        \tcbinputlisting{
-            listing only,
-            title=Inlcuir no preâmbulo,
-            fonttitle=\small\bfseries,
-            center,%width=0.92\paperwidth,
-            colback=yellow!5,colframe=yellow!50!black,
-            listing engine=minted,
-            minted language=latex,
-            minted options={%
-            linenos,
-            breaklines,
-            autogobble,
-            fontsize=\small,
-            numbersep=2mm,
-            baselinestretch=1}
-            }
+        \mylisting{Inlcuir no preâmbulo}
     \end{block}
 \end{frame}
 
@@ -778,258 +563,6 @@
 \setbeamercolor{background canvas}{bg=}
 \includepdf[pages=1-56]{./figs/temas-beamer.pdf}
 }
-
-%\begin{frame}{Tema \textit{AnnArbor}}
-%    \begin{figure}
-%    \centering
-%    \subfloat{\includegraphics[page=1, width=5cm]{./figs/temas-beamer.pdf}}
-%    \subfloat{\includegraphics[page=2, width=5cm]{./figs/temas-beamer.pdf}}
-%    %\caption{Tema ``AnnArbor''.}
-%    \end{figure}
-%\end{frame}
-%
-%\begin{frame}{Tema \textit{Darmstadt}}
-%    \begin{figure}
-%    \centering
-%    \subfloat{\includegraphics[page=3, width=5cm]{./figs/temas-beamer.pdf}}
-%    \subfloat{\includegraphics[page=4, width=5cm]{./figs/temas-beamer.pdf}}
-%    %\caption{Tema ``Darmstadt''.}
-%    \end{figure}
-%\end{frame}
-%
-%\begin{frame}{Tema \textit{default}}
-%    \begin{figure}
-%    \centering
-%    \subfloat{\includegraphics[page=5, width=5cm]{./figs/temas-beamer.pdf}}
-%    \subfloat{\includegraphics[page=6, width=5cm]{./figs/temas-beamer.pdf}}
-%    %\caption{Tema ``default''.}
-%    \end{figure}
-%\end{frame}
-%
-%\begin{frame}{Tema \textit{Dresden}}
-%    \begin{figure}
-%    \centering
-%    \subfloat{\includegraphics[page=7, width=5cm]{./figs/temas-beamer.pdf}}
-%    \subfloat{\includegraphics[page=8, width=5cm]{./figs/temas-beamer.pdf}}
-%    %\caption{Tema ``Dresden''.}
-%    \end{figure}
-%\end{frame}
-%
-%\begin{frame}{Tema \textit{Frankfurt}}
-%    \begin{figure}
-%    \centering
-%    \subfloat{\includegraphics[page=9, width=5cm]{./figs/temas-beamer.pdf}}
-%    \subfloat{\includegraphics[page=10, width=5cm]{./figs/temas-beamer.pdf}}
-%    %\caption{Tema ``Frankfurt''.}
-%    \end{figure}
-%\end{frame}
-%
-%\begin{frame}{Tema \textit{Goettingen}}
-%    \begin{figure}
-%    \centering
-%    \subfloat{\includegraphics[page=11, width=5cm]{./figs/temas-beamer.pdf}}
-%    \subfloat{\includegraphics[page=12, width=5cm]{./figs/temas-beamer.pdf}}
-%    %\caption{Tema ``Goettingen''.}
-%    \end{figure}
-%\end{frame}
-%
-%\begin{frame}{Tema \textit{Hannover}}
-%    \begin{figure}
-%    \centering
-%    \subfloat{\includegraphics[page=13, width=5cm]{./figs/temas-beamer.pdf}}
-%    \subfloat{\includegraphics[page=14, width=5cm]{./figs/temas-beamer.pdf}}
-%    %\caption{Tema ``Hannover''.}
-%    \end{figure}
-%\end{frame}
-%
-%\begin{frame}{Tema \textit{Ilmenau}}
-%    \begin{figure}
-%    \centering
-%    \subfloat{\includegraphics[page=15, width=5cm]{./figs/temas-beamer.pdf}}
-%    \subfloat{\includegraphics[page=16, width=5cm]{./figs/temas-beamer.pdf}}
-%    %\caption{Tema ``Ilmenau''.}
-%    \end{figure}
-%\end{frame}
-%
-%\begin{frame}{Tema \textit{JuanLesPins}}
-%    \begin{figure}
-%    \centering
-%    \subfloat{\includegraphics[page=17, width=5cm]{./figs/temas-beamer.pdf}}
-%    \subfloat{\includegraphics[page=18, width=5cm]{./figs/temas-beamer.pdf}}
-%    %\caption{Tema ``JuanLesPins''.}
-%    \end{figure}
-%\end{frame}
-%
-%\begin{frame}{Tema \textit{Lueback}}
-%    \begin{figure}
-%    \centering
-%    \subfloat{\includegraphics[page=19, width=5cm]{./figs/temas-beamer.pdf}}
-%    \subfloat{\includegraphics[page=20, width=5cm]{./figs/temas-beamer.pdf}}
-%    %\caption{Tema ``Lueback''.}
-%    \end{figure}
-%\end{frame}
-%
-%\begin{frame}{Tema \textit{Madrid}}
-%    \begin{figure}
-%    \centering
-%    \subfloat{\includegraphics[page=21, width=5cm]{./figs/temas-beamer.pdf}}
-%    \subfloat{\includegraphics[page=22, width=5cm]{./figs/temas-beamer.pdf}}
-%    %\caption{Tema ``Madrid''.}
-%    \end{figure}
-%\end{frame}
-%
-%\begin{frame}{Tema \textit{Antibes}}
-%    \begin{figure}
-%    \centering
-%    \subfloat{\includegraphics[page=23, width=5cm]{./figs/temas-beamer.pdf}}
-%    \subfloat{\includegraphics[page=24, width=5cm]{./figs/temas-beamer.pdf}}
-%    %\caption{Tema ``Antibes''.}
-%    \end{figure}
-%\end{frame}
-%
-%\begin{frame}{Tema \textit{Malmoe}}
-%    \begin{figure}
-%    \centering
-%    \subfloat{\includegraphics[page=25, width=5cm]{./figs/temas-beamer.pdf}}
-%    \subfloat{\includegraphics[page=26, width=5cm]{./figs/temas-beamer.pdf}}
-%    %\caption{Tema ``Malmoe''.}
-%    \end{figure}
-%\end{frame}
-%
-%\begin{frame}{Tema \textit{Marburg}}
-%    \begin{figure}
-%    \centering
-%    \subfloat{\includegraphics[page=27, width=5cm]{./figs/temas-beamer.pdf}}
-%    \subfloat{\includegraphics[page=28, width=5cm]{./figs/temas-beamer.pdf}}
-%    %\caption{Tema ``Marburg''.}
-%    \end{figure}
-%\end{frame}
-%
-%\begin{frame}{Tema \textit{Montpellier}}
-%    \begin{figure}
-%    \centering
-%    \subfloat{\includegraphics[page=29, width=5cm]{./figs/temas-beamer.pdf}}
-%    \subfloat{\includegraphics[page=30, width=5cm]{./figs/temas-beamer.pdf}}
-%    %\caption{Tema ``Montpellier''.}
-%    \end{figure}
-%\end{frame}
-%
-%\begin{frame}{Tema \textit{PaloAlto}}
-%    \begin{figure}
-%    \centering
-%    \subfloat{\includegraphics[page=31, width=5cm]{./figs/temas-beamer.pdf}}
-%    \subfloat{\includegraphics[page=32, width=5cm]{./figs/temas-beamer.pdf}}
-%    %\caption{Tema ``PaloAlto''.}
-%    \end{figure}
-%\end{frame}
-%
-%\begin{frame}{Tema \textit{Pittsburgh}}
-%    \begin{figure}
-%    \centering
-%    \subfloat{\includegraphics[page=33, width=5cm]{./figs/temas-beamer.pdf}}
-%    \subfloat{\includegraphics[page=34, width=5cm]{./figs/temas-beamer.pdf}}
-%    %\caption{Tema ``Pittsburgh''.}
-%    \end{figure}
-%\end{frame}
-%
-%\begin{frame}{Tema \textit{Rochester}}
-%    \begin{figure}
-%    \centering
-%    \subfloat{\includegraphics[page=35, width=5cm]{./figs/temas-beamer.pdf}}
-%    \subfloat{\includegraphics[page=36, width=5cm]{./figs/temas-beamer.pdf}}
-%    %\caption{Tema ``Rochester''.}
-%    \end{figure}
-%\end{frame}
-%
-%\begin{frame}{Tema \textit{Singapore}}
-%    \begin{figure}
-%    \centering
-%    \subfloat{\includegraphics[page=37, width=5cm]{./figs/temas-beamer.pdf}}
-%    \subfloat{\includegraphics[page=38, width=5cm]{./figs/temas-beamer.pdf}}
-%    %\caption{Tema ``Singapore''.}
-%    \end{figure}
-%\end{frame}
-%
-%\begin{frame}{Tema \textit{Szeged}}
-%    \begin{figure}
-%    \centering
-%    \subfloat{\includegraphics[page=39, width=5cm]{./figs/temas-beamer.pdf}}
-%    \subfloat{\includegraphics[page=40, width=5cm]{./figs/temas-beamer.pdf}}
-%    %\caption{Tema ``Szeged''.}
-%    \end{figure}
-%\end{frame}
-%
-%\begin{frame}{Tema \textit{Warsaw}}
-%    \begin{figure}
-%    \centering
-%    \subfloat{\includegraphics[page=41, width=5cm]{./figs/temas-beamer.pdf}}
-%    \subfloat{\includegraphics[page=42, width=5cm]{./figs/temas-beamer.pdf}}
-%    %\caption{Tema ``Warsaw''.}
-%    \end{figure}
-%\end{frame}
-%
-%\begin{frame}{Tema \textit{Bergen}}
-%    \begin{figure}
-%    \centering
-%    \subfloat{\includegraphics[page=43, width=5cm]{./figs/temas-beamer.pdf}}
-%    \subfloat{\includegraphics[page=44, width=5cm]{./figs/temas-beamer.pdf}}
-%    %\caption{Tema ``Bergen''.}
-%    \end{figure}
-%\end{frame}
-%
-%\begin{frame}{Tema \textit{Berkeley}}
-%    \begin{figure}
-%    \centering
-%    \subfloat{\includegraphics[page=45, width=5cm]{./figs/temas-beamer.pdf}}
-%    \subfloat{\includegraphics[page=46, width=5cm]{./figs/temas-beamer.pdf}}
-%    %\caption{Tema ``Berkeley''.}
-%    \end{figure}
-%\end{frame}
-%
-%\begin{frame}{Tema \textit{Berlin}}
-%    \begin{figure}
-%    \centering
-%    \subfloat{\includegraphics[page=47, width=5cm]{./figs/temas-beamer.pdf}}
-%    \subfloat{\includegraphics[page=48, width=5cm]{./figs/temas-beamer.pdf}}
-%    %\caption{Tema ``Berlin''.}
-%    \end{figure}
-%\end{frame}
-%
-%\begin{frame}{Tema \textit{Boadilla}}
-%    \begin{figure}
-%    \centering
-%    \subfloat{\includegraphics[page=49, width=5cm]{./figs/temas-beamer.pdf}}
-%    \subfloat{\includegraphics[page=50, width=5cm]{./figs/temas-beamer.pdf}}
-%    %\caption{Tema ``Boadilla''.}
-%    \end{figure}
-%\end{frame}
-%
-%\begin{frame}{Tema \textit{boxes}}
-%    \begin{figure}
-%    \centering
-%    \subfloat{\includegraphics[page=51, width=5cm]{./figs/temas-beamer.pdf}}
-%    \subfloat{\includegraphics[page=52, width=5cm]{./figs/temas-beamer.pdf}}
-%    %\caption{Tema ``boxes''.}
-%    \end{figure}
-%\end{frame}
-%
-%\begin{frame}{Tema \textit{CambridgeUS}}
-%    \begin{figure}
-%    \centering
-%    \subfloat{\includegraphics[page=53, width=5cm]{./figs/temas-beamer.pdf}}
-%    \subfloat{\includegraphics[page=54, width=5cm]{./figs/temas-beamer.pdf}}
-%    %\caption{Tema ``CambridgeUS''.}
-%    \end{figure}
-%\end{frame}
-%
-%\begin{frame}{Tema \textit{Copenhagen}}
-%    \begin{figure}
-%    \centering
-%    \subfloat{\includegraphics[page=55, width=5cm]{./figs/temas-beamer.pdf}}
-%    \subfloat{\includegraphics[page=56, width=5cm]{./figs/temas-beamer.pdf}}
-%    %\caption{Tema ``Copenhagen''.}
-%    \end{figure}
-%\end{frame}
 
 \begin{tcboutputlisting}
 \beamertemplatenavigationsymbolsempty
@@ -1050,22 +583,7 @@ ou
     \end{block}
     %\vspace{1em}
     %\begin{alertblock}{Para removê-la, basta adicionar ao preâmbulo:}
-    \tcbinputlisting{
-        listing only,
-        title=Para removê-la basta adicionar ao preâmbulo,
-        fonttitle=\small\bfseries,
-        center,%width=0.92\paperwidth,
-        colback=yellow!5,colframe=yellow!50!black,
-        listing engine=minted,
-        minted language=latex,
-        minted options={%
-        linenos,
-        breaklines,
-        autogobble,
-        fontsize=\small,
-        numbersep=2mm,
-        baselinestretch=1}
-        }         
+    \mylisting{Para removê-la basta adicionar ao preâmbulo}
     %\end{alertblock}
 \end{frame}
 
@@ -1074,7 +592,6 @@ ou
 \begin{frame}{Efeitos}
     \begin{block}{Comando {\tt pause}:}
         \vspace{1em}
-        \pause
         O Comando {\tt pause} insere um passo entre os elementos dentro de um \textit{frame}. Por exemplo:
         \begin{enumerate}
             \pause
@@ -1106,27 +623,14 @@ ou
 \end{frame}
 \end{tcboutputlisting}
 
+\begingroup
+\setbeamercolor{background canvas}{bg=InpeLaranja}
 \begin{frame}[plain]{}
-    \tcbinputlisting{
-        listing only,
-        title=Código do \textit{frame} anterior,
-        fonttitle=\small\bfseries,
-        center,%width=0.92\paperwidth,
-        colback=yellow!5,colframe=yellow!50!black,
-        listing engine=minted,
-        minted language=latex,
-        minted options={%
-        linenos,
-        breaklines,
-        autogobble,
-        fontsize=\small,
-        numbersep=2mm,
-        baselinestretch=1}
-        }         
+    \mylistingf{Código do \textit{frame} anterior}
 \end{frame}
+\endgroup
 
 \begin{frame}{Efeitos}
-    \pause
     \begin{block}{Comando {\tt pause}:}
         \vspace{1em}
         O Comando {\tt pause} pode ser utilizado antes de tabelas, blocos, equações, listas, figuras etc. Mais um exemplo:
@@ -1159,24 +663,12 @@ ou
 \end{frame}
 \end{tcboutputlisting}
 
+\begingroup
+\setbeamercolor{background canvas}{bg=InpeLaranja}
 \begin{frame}[plain]{}
-    \tcbinputlisting{
-        listing only,
-        title=Código do \textit{frame} anterior,
-        fonttitle=\small\bfseries,
-        center,%width=0.92\paperwidth,
-        colback=yellow!5,colframe=yellow!50!black,
-        listing engine=minted,
-        minted language=latex,
-        minted options={%
-        linenos,
-        breaklines,
-        autogobble,
-        fontsize=\small,
-        numbersep=2mm,
-        baselinestretch=1}
-        }         
+  \mylistingf{Código do \textit{frame} anterior}
 \end{frame}
+\endgroup
 
 \begin{frame}{Efeitos}
     \begin{block}{Controlando itens:}
@@ -1209,24 +701,12 @@ ou
 \end{frame}
 \end{tcboutputlisting}
 
+\begingroup
+\setbeamercolor{background canvas}{bg=InpeLaranja}
 \begin{frame}[plain]{}
-    \tcbinputlisting{
-        listing only,
-        title=Código do \textit{frame} anterior,
-        fonttitle=\small\bfseries,
-        center,%width=0.92\paperwidth,
-        colback=yellow!5,colframe=yellow!50!black,
-        listing engine=minted,
-        minted language=latex,
-        minted options={%
-        linenos,
-        breaklines,
-        autogobble,
-        fontsize=\small,
-        numbersep=2mm,
-        baselinestretch=1}
-        }         
+  \mylistingf{Código do \textit{frame} anterior}
 \end{frame}
+\endgroup
 
 \begin{frame}{Efeitos}
     \begin{block}{Comando {\tt onslide}:}
@@ -1261,24 +741,12 @@ ou
 \end{frame}
 \end{tcboutputlisting}
 
+\begingroup
+\setbeamercolor{background canvas}{bg=InpeLaranja}
 \begin{frame}[plain]{}
-    \tcbinputlisting{
-        listing only,
-        title=Código do \textit{frame} anterior,
-        fonttitle=\small\bfseries,
-        center,%width=0.92\paperwidth,
-        colback=yellow!5,colframe=yellow!50!black,
-        listing engine=minted,
-        minted language=latex,
-        minted options={%
-        linenos,
-        breaklines,
-        autogobble,
-        fontsize=\small,
-        numbersep=2mm,
-        baselinestretch=1}
-        }         
+  \mylistingf{Código do \textit{frame} anterior}
 \end{frame}
+\endgroup
 
 \subsection{Compilação}
 
@@ -1322,9 +790,21 @@ ou
 \end{block}
 \end{frame}
 
-\begin{frame}[standout]
-   Obrigado! \\ \adfclosedflourishleft \\ {\small\href{mailto:carlos.bastarz@inpe.br}{carlos.bastarz@inpe.br}}
-%   Assimilação de Dados Híbrida Ensemble-Variacional Global no CPTEC \\ Obrigado!
+\begingroup
+\setbeamercolor{background canvas}{bg=white}
+\begin{frame}[plain]
+  \centering
+  {\Large
+  OBRIGADO!
+  \\ 
+  \color{InpeLaranja}{\adfclosedflourishleft}
+  \\ 
+  \color{InpeAzul}{
+  {\small \href{mailto:carlos.bastarz@inpe.br}{carlos.bastarz@inpe.br}}}
+  \\
+  {\small \href{https://github.com/cfbastarz}{github.com/cfbastarz}}
+  }
 \end{frame}
+\endgroup
 
 \end{document}

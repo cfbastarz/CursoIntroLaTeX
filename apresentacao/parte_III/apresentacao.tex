@@ -1,28 +1,26 @@
 \documentclass[10pt]{beamer}
 
-\usetheme{metropolis}
-%\usecolortheme{crane}
-
-%\usefonttheme{professionalfonts}
-\usefonttheme[onlymath]{serif}
-\usefonttheme{professionalfonts}
-
-\usepackage[T1]{fontenc}
+\input{./meus_pacotes}
+\input{./minhas_macros}
 
 \usepackage[alf]{abntex2cite}
 \usepackage{bibentry}
 
-% Numeração das figuras e tabelas
-\setbeamertemplate{caption}[numbered]
+\usetheme{metropolis}
 
-% Força fundo branco em todos os slides
+\usefonttheme[onlymath]{serif}
+\usefonttheme{professionalfonts}
+\usepackage{mathspec} 
+\metroset{titleformat=allsmallcaps} % smallcaps
+
+\setbeamercolor{alerted text}{fg=InpeLaranja}
+\setbeamercolor{frametitle}{bg=InpeAzul}
+\setbeamercolor{normal text}{fg=black}
+\setbeamercolor{progress bar}{bg=InpeLaranja,fg=InpeAzul}
+\setbeamercolor{title separator}{bg=InpeLaranja,fg=InpeLaranja}
 \setbeamercolor{background canvas}{bg=white}
 
-% Engana o pacote tcolorbox no carregamento do inputenc
-% (https://tex.stackexchange.com/questions/370262/how-to-adapt-tcolorbox-with-xelatex)
-%\makeatletter\@namedef{ver@inputenc.sty}{}\makeatother
-
-%\AtBeginEnvironment{tcblisting}{\tiny}
+\setbeamertemplate{caption}[numbered]
 
 \AtBeginSubsection[
   {\frame<beamer>{\frametitle{Sumário}   
@@ -37,49 +35,25 @@
     }
 }
 
-\input{./meus_pacotes}
-\input{./minhas_macros}
-
 \title{Introdução ao \LaTeX}
 \subtitle{Parte III}
-\date{2 de Outubro de 2019}
+\date{04 de Março de 2020}
 \author{Carlos Frederico Bastarz (CPTEC/INPE)}
 \institute{Instituto Nacional de Pesquisas Espaciais (INPE)}
-%\titlegraphic{\hfill\includegraphics[height=0.5cm]{figs/layout/logonome.pdf}}
-\titlegraphic{\hfill\includegraphics[height=1.25cm]{figs/layout/inpe_logo.png}}
+\titlegraphic{\hfill\includegraphics[height=1.5cm]{figs/layout/inpe_logo.png}}
 
 \makeatletter
 \patchcmd{\beamer@sectionintoc}{\vskip1.5em}{\vskip0.75em}{}{}
 \makeatother
 
 \begin{document}
-
 \maketitle
-
-%\begin{frame}[c]{Sumário}
-%  \vspace{0.75cm}
-%  \setbeamertemplate{section in toc}[sections numbered]
-%  \tableofcontents[hideallsubsections]
-%\end{frame}
-
-%\begin{frame}[c]{Sumário}
-%    \begin{flushleft}
-%        \begin{minipage}{5cm}
-%            \setbeamertemplate{section in toc}[sections numbered]
-%            \tableofcontents[hideallsubsections]
-%        \end{minipage}
-%    \end{flushleft}
-%    \begin{flushright}
-%        \begin{minipage}{5cm}
-%            \includegraphics[width=\textwidth]{./figs/ctan_lion_350x350.pdf}
-%        \end{minipage}
-%    \end{flushright}
-%\end{frame}
 
 \begin{frame}[c]{Sumário}
     \vspace{2em}
     \begin{multicols}{2}
         \begin{minipage}{0.49\textwidth}
+           \vspace{12mm}
            \setbeamertemplate{section in toc}[sections numbered]
            \tableofcontents[hideallsubsections]
         \end{minipage}
@@ -89,9 +63,9 @@
     \end{multicols}
 \end{frame}
 
-\section{Introdução}
+\section{Resumo das Partes I e II}
 
-\begin{frame}{Introdução}
+\begin{frame}{Resumo das Partes I e II}
 \begin{block}{Nas duas primeiras etapas do Curso de Introdução ao \LaTeX{}}
 \begin{itemize}[label=\textbullet]
     \pause
@@ -108,7 +82,7 @@
 \end{block}
 \end{frame}
 
-\begin{frame}{Introdução}
+\begin{frame}{Resumo das Partes I e II}
 \begin{block}{Nestas duas últimas etapas do Curso de Introdução ao \LaTeX{}}
 \begin{itemize}[label=\textbullet]
     \pause
@@ -130,12 +104,12 @@
 \begin{frame}{Obtendo o Estilo}
 \vspace{1em}
 \begin{block}{Entrar no \textit{site} \url{http://www.inpe.br/biblioteca/}}
-\begin{figure}[H]
+  \begin{figure}[H]
     \begin{center}
         \includegraphics[scale=0.25]{./figs/biblio_pub_latex.pdf}
     \end{center}
-\caption{Obtenção do estilo \LaTeX{} do INPE a partir do \textit{site} da Biblioteca do INPE.}
-\end{figure}
+    \caption{Obtenção do estilo \LaTeX{} do INPE a partir do \textit{site} da Biblioteca do INPE.}
+  \end{figure}
 \end{block}
 \end{frame}
 
@@ -144,9 +118,9 @@
 \begin{frame}[fragile]{Estrutura e Organização}
     \begin{block}{Arquivo {\tt archive.zip}}
         \vspace{1em}
-        \begin{tcblisting}{colback=yellow!5,colframe=yellow!50!black,listing only,title=Descompactar o arquivo (Linux/MacOS),fonttitle=\small\bfseries,listing engine=minted,minted language=bash}
+        \begin{meucomandot}{Descompactar o arquivo (Linux/Mac OS)}
             unzip archive.zip
-        \end{tcblisting}
+        \end{meucomandot}
         No \textit{Microsoft Windows}, basta clicar com o botão direito e clicar em ``Descompactar...''.
     \end{block}
 \end{frame}
@@ -174,7 +148,7 @@
         \pause
         \textbf{Arquivos do Estilo}
         \begin{itemize}[leftmargin=0pt, itemindent=0pt,labelwidth=15pt,labelsep=0pt, listparindent=0cm,align=left]
-            \color{blue}{\item leiame
+            \color{InpeAzul}{\item leiame
             \item GPLv3.pdf
             \item CCBY.png
             \item CCBYNC.png
@@ -186,7 +160,7 @@
             \item logoinpe.pdf
             \item tdiinpe.cls}                                                        
             \pause
-            \color{red}{\item abntex-abrev-pt\_BR.def      
+            \color{InpeLaranja}{\item abntex-abrev-pt\_BR.def      
             \item abntex-abrev.sty
             \item nbr10520-2002.def
             \item nbr10522-1988.def
@@ -277,168 +251,75 @@
     \end{block}
 \end{frame}
 
-%\begin{frame}[plain,fragile]{}
-%    \begin{tcblisting}{colback=yellow!5,colframe=yellow!50!black,listing only,title=Arquivo {\tt publicacao.tex},fonttitle=\bfseries,listing engine=minted,minted language=latex}
-%        documentclass[
-%        % PARA ESCOLHER O ESTILO TIRE O SIMBOLO (COMENTÁRIO)
-%        ...
-%        %PublicacaoDissOuTese,
-%        %PublicacaoArtigoOuRelatorio,
-%        %PublicacaoProposta, 
-%        %PublicacaoLivro, 
-%        %PublicacaoLivro,SemFormatacaoCapitulo,
-%        english,portuguese, 
-%        %portuguese,english, 
-%        LogoINPE,
-%        CCBYNC,
-%        ]{tdiinpe}
-%        ...
-%    \end{tcblisting}  
-%\end{frame}
-
+\begingroup
+\setbeamercolor{background canvas}{bg=InpeLaranja!90}
 \begin{frame}[plain,fragile]{}
-    \begin{tcblisting}{
-        theorem={Listing}{listings}{Arquivo {\tt publicacao.tex}}{lst:example1},
-        title=Arquivo {\tt publicacao.tex},
-        fonttitle=\small\bfseries,
-        center,width=0.92\paperwidth,
-        colback=yellow!5,colframe=yellow!50!black
-        listing engine=minted,
-        minted language=latex,
-        minted options={%
-            linenos,
-            breaklines,
-            autogobble,
-            fontsize=\small,
-            numbersep=2mm,
-            baselinestretch=1},
-        overlay={%
-        \begin{tcbclipinterior}
-            \fill[gray!25] (frame.south west) rectangle ([xshift=4mm]frame.north west);
-        \end{tcbclipinterior}},
-        breakable, enhanced, listing only}
-        documentclass[
-        % PARA ESCOLHER O ESTILO TIRE O SIMBOLO (COMENTÁRIO)
-        %SemVinculoColorido,
-        %SemFormatacaoCapitulo,
-        %SemFolhaAprovacao,
-        %SemImagens,
-        %CitacaoNumerica, 
-        %PublicacaoDissOuTese,
-        %PublicacaoArtigoOuRelatorio,
-        %PublicacaoProposta, 
-        %PublicacaoLivro, 
-        %PublicacaoLivro,SemFormatacaoCapitulo,
-        english,portuguese, 
-        %portuguese,english, 
-        LogoINPE,
-        CCBYNC,
-        ]{tdiinpe}
-        ...
-    \end{tcblisting}
+  \begin{meucomandolf}{Arquivo {\tt publicacao.tex}}
+    \documentclass[
+    % PARA ESCOLHER O ESTILO TIRE O SIMBOLO (COMENTÁRIO)
+    %SemVinculoColorido,
+    %SemFormatacaoCapitulo,
+    %SemFolhaAprovacao,
+    %SemImagens,
+    %CitacaoNumerica, 
+    %PublicacaoDissOuTese,
+    %PublicacaoArtigoOuRelatorio,
+    %PublicacaoProposta, 
+    %PublicacaoLivro, 
+    %PublicacaoLivro,SemFormatacaoCapitulo,
+    english,portuguese, 
+    %portuguese,english, 
+    LogoINPE,
+    CCBYNC,
+    ]{tdiinpe}
+    ...
+  \end{meucomandolf}
 \end{frame}
 
 \begin{frame}[plain,fragile]{}
-    \begin{tcblisting}{
-        theorem={Listing}{listings}{Arquivo {\tt publicacao.tex} (Continuação)}{lst:example1},
-        title=Arquivo {\tt publicacao.tex} (Continuação),
-        fonttitle=\small\bfseries,
-        center,width=0.92\paperwidth,
-        colback=yellow!5,colframe=yellow!50!black
-        listing engine=minted,
-        minted language=latex,
-        minted options={%
-            linenos,
-            breaklines,
-            autogobble,
-            fontsize=\small,
-            numbersep=2mm,
-            baselinestretch=1},
-        overlay={%
-        \begin{tcbclipinterior}
-            \fill[gray!25] (frame.south west) rectangle ([xshift=4mm]frame.north west);
-        \end{tcbclipinterior}},
-        breakable, enhanced, listing only}
-        ...
-        %\watermark{Revisão No. ##} 
-        \usepackage{rotating}
-        \usepackage{dsfont}
-        \usepackage{comment}
-        
-        \input{./configuracao} 
-        
-        \makeindex  
-        ... 
-        \marcaRegistrada{Informar aqui sobre marca registrada (a modificação desta linha deve ser feita no arquivo publicacao.tex).}
-        \financiamento{Informar aqui sobre fontes financiadoras (a modificação desta linha deve ser feita no arquivo publicacao.tex).}
-         
-        \maketitle  
-        ...
-    \end{tcblisting}
+  \begin{meucomandolf}{Arquivo {\tt publicacao.tex} (Continuação)}
+    ...
+    %\watermark{Revisão No. ##} 
+    \usepackage{rotating}
+    \usepackage{dsfont}
+    \usepackage{comment}
+    
+    \input{./configuracao} 
+    
+    \makeindex  
+    ... 
+    \marcaRegistrada{Informar aqui sobre marca registrada (a modificação desta linha deve ser feita no arquivo publicacao.tex).}
+    \financiamento{Informar aqui sobre fontes financiadoras (a modificação desta linha deve ser feita no arquivo publicacao.tex).}
+     
+    \maketitle  
+    ...
+  \end{meucomandolf}
 \end{frame}
 
 \begin{frame}[plain,fragile]{}
-    \begin{tcblisting}{
-        theorem={Listing}{listings}{Arquivo {\tt publicacao.tex} (Continuação)}{lst:example1},
-        title=Arquivo {\tt publicacao.tex} (Continuação),
-        fonttitle=\small\bfseries,
-        center,width=0.92\paperwidth,
-        colback=yellow!5,colframe=yellow!50!black
-        listing engine=minted,
-        minted language=latex,
-        minted options={%
-            linenos,
-            breaklines,
-            autogobble,
-            fontsize=\small,
-            numbersep=2mm,
-            baselinestretch=1},
-        overlay={%
-        \begin{tcbclipinterior}
-            \fill[gray!25] (frame.south west) rectangle ([xshift=4mm]frame.north west);
-        \end{tcbclipinterior}},
-        breakable, enhanced, listing only}
-        ...
-        % Comente as linhas opcionais abaixo caso não as deseje
-        \include{./docs/epigrafe} % Opcional
-        \include{./docs/dedicatoria} % Opcional
-        \include{./docs/agradecimentos} % Opcional
-        \include{./docs/resumo} % Obrigatório
-        \include{./docs/abstract} % Obrigatório
-        
-        \includeListaFiguras % Obrigatório (mais de 3 figuras)
-        \includeListaTabelas % Obrigatório (mais de 3 tabelas)
-        
-        \include{./docs/abreviaturasesiglas} % Opcional
-        \include{./docs/simbolos} % Opcional
-        
-        \includeSumario % Obrigatório
-        \inicioIntroducao % Não altere este comando
-        ...
-    \end{tcblisting}
+  \begin{meucomandolf}{Arquivo {\tt publicacao.tex} (Continuação)}
+    ...
+    % Comente as linhas opcionais abaixo caso não as deseje
+    \include{./docs/epigrafe} % Opcional
+    \include{./docs/dedicatoria} % Opcional
+    \include{./docs/agradecimentos} % Opcional
+    \include{./docs/resumo} % Obrigatório
+    \include{./docs/abstract} % Obrigatório
+    
+    \includeListaFiguras % Obrigatório (mais de 3 figuras)
+    \includeListaTabelas % Obrigatório (mais de 3 tabelas)
+    
+    \include{./docs/abreviaturasesiglas} % Opcional
+    \include{./docs/simbolos} % Opcional
+    
+    \includeSumario % Obrigatório
+    \inicioIntroducao % Não altere este comando
+    ...
+  \end{meucomandolf}
 \end{frame}
 
 \begin{frame}[plain,fragile]{}
-    \begin{tcblisting}{
-        theorem={Listing}{listings}{Arquivo {\tt publicacao.tex} (Continuação)}{lst:example1},
-        title=Arquivo {\tt publicacao.tex} (Continuação),
-        fonttitle=\small\bfseries,
-        center,width=0.92\paperwidth,
-        colback=yellow!5,colframe=yellow!50!black
-        listing engine=minted,
-        minted language=latex,
-        minted options={%
-            linenos,
-            breaklines,
-            autogobble,
-            fontsize=\small,
-            numbersep=2mm,
-            baselinestretch=1},
-        overlay={%
-        \begin{tcbclipinterior}
-            \fill[gray!25] (frame.south west) rectangle ([xshift=4mm]frame.north west);
-        \end{tcbclipinterior}},
-        breakable, enhanced, listing only}
+  \begin{meucomandolf}{Arquivo {\tt publicacao.tex} (Continuação)}
     ...
     \include{./docs/introducao_corr3} % 1o capítulo
     %\include{./docs/turbulencia_e_caos_st_corr6} % 2o capítulo
@@ -447,30 +328,11 @@
     \include{./docs/analise_e_resultados_corr7} % 5o capítulo
     \include{./docs/conclusoes3} % 6o capítulo
     ...
-    \end{tcblisting}
+  \end{meucomandolf}
 \end{frame}
 
 \begin{frame}[plain,fragile]{}
-    \begin{tcblisting}{
-        theorem={Listing}{listings}{Arquivo {\tt publicacao.tex} (Continuação)}{lst:example1},
-        title=Arquivo {\tt publicacao.tex} (Continuação),
-        fonttitle=\small\bfseries,
-        center,width=0.92\paperwidth,
-        colback=yellow!5,colframe=yellow!50!black
-        listing engine=minted,
-        minted language=latex,
-        minted options={%
-            linenos,
-            breaklines,
-            autogobble,
-            fontsize=\small,
-            numbersep=2mm,
-            baselinestretch=1},
-        overlay={%
-        \begin{tcbclipinterior}
-            \fill[gray!25] (frame.south west) rectangle ([xshift=4mm]frame.north west);
-        \end{tcbclipinterior}},
-        breakable, enhanced, listing only}
+  \begin{meucomandolf}{Arquivo {\tt publicacao.tex} (Continuação)}
     ...
     % Bibliografia (obrigatório) 
     \bibliography{./bib/referencia} 
@@ -488,9 +350,9 @@
     \inicioIndice
     \include{./docs/contracapa}
     ...
-    \end{tcblisting}
+  \end{meucomandolf}
 \end{frame}
-
+\endgroup
 
 \begin{frame}{Arquivos de Configuração}
 \begin{table}[H]
@@ -522,111 +384,50 @@
 \end{table}
 \end{frame}
 
-%\begin{frame}[plain,fragile]{}
-%    \begin{tcblisting}{colback=yellow!5,colframe=yellow!50!black,listing only,title=Arquivo {\tt publicacao.tex},fonttitle=\bfseries,listing engine=minted,minted language=latex}
-%        % CAPA
-%        \titulo{Escrever o t\'{i}tulo no idioma em que foi escrito a publicaç\~{a}o}
-%        \title{Escrever o t\'{i}tulo em Ingl\^{e}s para publicaç\~{o}es escritas em Portugu\^{e}s e em Portugu\^{e}s para publicaç\~{o}es escritas em Ingl\^{e}s} 
-%        \author{Nome Completo do Autor}
-%        \descriccao{Tese de Doutorado ou Dissertaç\~{a}o de Mestrado do Curso de P\'{o}s-Graduaç\~{a}o em Nome do Curso, orientada pelo(a)  Dr(a). Nome do Orientador(a), aprovada em dd de m\^{e}s por extenso
-%        de aaaa.}
-%        ...    
-%    \end{tcblisting}  
-%\end{frame}
-
+\begingroup
+\setbeamercolor{background canvas}{bg=InpeLaranja!90}
 \begin{frame}[plain,fragile]{}
-    \begin{tcblisting}{
-        theorem={Listing}{listings}{Arquivo {\tt configuracao.tex}}{lst:example2},
-                title=Arquivo {\tt configuracao.tex},
-        title=Arquivo {\tt configuracao.tex},
-        fonttitle=\small\bfseries,
-        center,width=0.92\paperwidth,
-        colback=yellow!5,colframe=yellow!50!black
-        listing engine=minted,
-        minted language=latex,
-        minted options={%
-            linenos,
-            breaklines,
-            autogobble,
-            fontsize=\small,
-            numbersep=2mm,
-            baselinestretch=1},
-        overlay={%
-        \begin{tcbclipinterior}
-            \fill[gray!25] (frame.south west) rectangle ([xshift=4mm]frame.north west);
-        \end{tcbclipinterior}},
-        breakable, enhanced, listing only}
-        % CAPA
-        \titulo{Escrever o t\'{i}tulo no idioma em que foi escrito a publicaç\~{a}o}
-        \title{Escrever o t\'{i}tulo em Ingl\^{e}s para publicaç\~{o}es escritas em Portugu\^{e}s e em Portugu\^{e}s para publicaç\~{o}es escritas em Ingl\^{e}s} 
-        \author{Nome Completo do Autor}
-        \descriccao{Tese de Doutorado ou Dissertaç\~{a}o de Mestrado do Curso de P\'{o}s-Graduaç\~{a}o em Nome do Curso, orientada pelo(a) Dr(a). Nome do Orientador(a), aprovada em dd de m\^{e}s por extenso de aaaa.}
-        \repositorio{aa/bb/cc/dd}
-        \tipoDaPublicacao{TDI}
-        \IBI{xx/yy} 
-        \date{AAAA}
-        ... 
-    \end{tcblisting}
+  \begin{meucomandolf}{Arquivo {\tt configuracao.tex}}
+    % CAPA
+    \titulo{Escrever o t\'{i}tulo no idioma em que foi escrito a publicaç\~{a}o}
+    \title{Escrever o t\'{i}tulo em Ingl\^{e}s para publicaç\~{o}es escritas em Portugu\^{e}s e em Portugu\^{e}s para publicaç\~{o}es escritas em Ingl\^{e}s} 
+    \author{Nome Completo do Autor}
+    \descriccao{Tese de Doutorado ou Dissertaç\~{a}o de Mestrado do Curso de P\'{o}s-Graduaç\~{a}o em Nome do Curso, orientada pelo(a) Dr(a). Nome do Orientador(a), aprovada em dd de m\^{e}s por extenso de aaaa.}
+    \repositorio{aa/bb/cc/dd}
+    \tipoDaPublicacao{TDI}
+    \IBI{xx/yy} 
+    \date{AAAA}
+    ... 
+  \end{meucomandolf}
 \end{frame}
+\endgroup
 
-\begin{frame}[plain]{}
-    \begin{marker}
-        Recomenda-se atenção especial para os caracteres que são inseridos no arquivo {\tt configuracao.tex}. Neste arquivo, os acentos devem ser marcados, e.g., a palavra ``{\tt publicação}'', deve ser marcada como ``\mintinline{latex}{publicaç\~{a}o}.''
-    \end{marker}
+\begin{frame}{Arquivos de Configuração}
+  \begin{marker}
+  Recomenda-se atenção especial para os caracteres que são inseridos no arquivo {\tt configuracao.tex}. Neste arquivo, os acentos devem ser marcados, e.g., a palavra ``{\tt publicação}'', deve ser marcada como ``\mintinline{latex}{publicaç\~{a}o}.''
+  \end{marker}
 \end{frame}
 
 \subsection{Inserção de Figuras e Tabelas}
 
-%\begin{frame}[plain,fragile]{}
-%    \begin{tcblisting}{colback=yellow!5,colframe=yellow!50!black,listing only,title=Inserção de uma figura utilizando o estilo do INPE,fonttitle=\bfseries,listing engine=minted,minted language=latex}
-%        \begin{figure}[H]
-%          \caption{Exemplo de figura com título curto.}
-%          \vspace{6mm} % acrescentar o espaçamento vertical apropriado entre o título e a borda superior da figura
-%          \begin{center}
-%            \includegraphics[width=12cm]{./figs/gpa.pdf}  
-%          \end{center}
-%          \vspace{4mm} % acrescentar o espaçamento vertical apropriado entre a borda inferior da figura e a legenda ou a fonte quando não há legenda (o valor pode ser negativo para subir)
-%          \legenda{Exemplo de legenda curta.} % legenda - opcional
-%          \label{figgpa1}
-%          \FONTE{\citeonline{lba/06}.} % fonte consultada (elemento obrigatório, mesmo que seja produção do próprio autor)
-%        \end{figure}
-%    \end{tcblisting}    
-%\end{frame}
-
+\begingroup
+\setbeamercolor{background canvas}{bg=InpeLaranja!90}
 \begin{frame}[plain,fragile]{}
-    \begin{tcblisting}{
-        theorem={Listing}{listings}{Inserção de uma figura utilizando o estilo do INPE}{lst:example3},
-        title=Inserção de uma figura utilizando o estilo do INPE,
-        fonttitle=\small\bfseries,
-        center,width=0.92\paperwidth,
-        colback=yellow!5,colframe=yellow!50!black
-        listing engine=minted,
-        minted language=latex,
-        minted options={%
-            linenos,
-            breaklines,
-            autogobble,
-            fontsize=\small,
-            numbersep=2mm,
-            baselinestretch=1},
-        overlay={%
-        \begin{tcbclipinterior}
-            \fill[gray!25] (frame.south west) rectangle ([xshift=4mm]frame.north west);
-        \end{tcbclipinterior}},
-        breakable, enhanced, listing only}
-        \begin{figure}[H]
-          \caption{Exemplo de figura com título curto.}
-          \vspace{6mm} % acrescentar o espaçamento vertical apropriado entre o título e a borda superior da figura
-          \begin{center}
-            \includegraphics[width=12cm]{./figs/gpa.pdf}  
-          \end{center}
-          \vspace{4mm} % acrescentar o espaçamento vertical apropriado entre a borda inferior da figura e a legenda ou a fonte quando não há legenda (o valor pode ser negativo para subir)
-          \legenda{Exemplo de legenda curta.} % legenda - opcional
-          \label{figgpa1}
-          \FONTE{\citeonline{lba/06}.} % fonte consultada (elemento obrigatório, mesmo que seja produção do próprio autor)
-        \end{figure}
-    \end{tcblisting}
+  \begin{meucomandolf}{Inserção de uma figura utilizando o estilo do INPE}
+    \begin{figure}[H]
+      \caption{Exemplo de figura com título curto.}
+      \vspace{6mm} % acrescentar o espaçamento vertical apropriado entre o título e a borda superior da figura
+      \begin{center}
+        \includegraphics[width=12cm]{./figs/gpa.pdf}  
+      \end{center}
+      \vspace{4mm} % acrescentar o espaçamento vertical apropriado entre a borda inferior da figura e a legenda ou a fonte quando não há legenda (o valor pode ser negativo para subir)
+      \legenda{Exemplo de legenda curta.} % legenda - opcional
+      \label{figgpa1}
+      \FONTE{\citeonline{lba/06}.} % fonte consultada (elemento obrigatório, mesmo que seja produção do próprio autor)
+    \end{figure}
+    \end{meucomandolf}
 \end{frame}
+\endgroup
 
 \begin{frame}{Inserção de Figuras e Tabelas}
     \begin{block}{Figura no Estilo do INPE}
@@ -658,27 +459,10 @@
 %    \end{tcblisting}    
 %\end{frame}
 
+\begingroup
+\setbeamercolor{background canvas}{bg=InpeLaranja!90}
 \begin{frame}[plain,fragile]{}
-    \begin{tcblisting}{
-        theorem={Listing}{listings}{Inserção de uma tabela utilizando o estilo do INPE}{lst:example4},
-        title=Inserção de uma tabela utilizando o estilo do INPE,
-        fonttitle=\small\bfseries,
-        center,width=0.92\paperwidth,
-        colback=yellow!5,colframe=yellow!50!black
-        listing engine=minted,
-        minted language=latex,
-        minted options={%
-            linenos,
-            breaklines,
-            autogobble,
-            fontsize=\footnotesize,
-            numbersep=2mm,
-            baselinestretch=1},
-        overlay={%
-        \begin{tcbclipinterior}
-            \fill[gray!25] (frame.south west) rectangle ([xshift=4mm]frame.north west);
-        \end{tcbclipinterior}},
-        breakable, enhanced, listing only}
+    \begin{meucomandolf}{Inserção de uma tabela utilizando o estilo do INPE}
         \begin{table}[H] % [htbp] opções de posicionamento da tabela no texto
             \begin{center} % use sempre um ambiente para as tabelas
             % (opções: center (recomendado), flushright, flushleft)
@@ -694,8 +478,9 @@
             \end{center}
             \FONTE{Coloque a fonte de referência aqui, se houver.}
         \end{table}
-    \end{tcblisting}
+    \end{meucomandolf}
 \end{frame}
+\endgroup
 
 \begin{frame}{Inserção de Figuras e Tabelas}
     \begin{block}{Tabela no Estilo do INPE}
@@ -707,11 +492,13 @@
     \end{block}
 \end{frame}
 
-\begin{frame}[plain]{}
+\begin{frame}{Inserção de Figuras e Tabelas}
     \begin{marker}
         Vários outros exemplos de figuras e tabelas podem ser encontrados em ``MANUAL PARA ELABORAÇÃO, FORMATAÇÃO E SUBMISSÃO DE TESES, DISSERTAÇÕES E OUTRAS PUBLICAÇÕES DO INPE (CEPPII, 2019)'' (\url{http://urlib.net/sid.inpe.br/iris@1916/2005/05.19.15.27}).
     \end{marker}
 \end{frame}
+
+\section{Referências}
 
 \subsection{Inserção de Citações e Referências}
 
@@ -769,59 +556,33 @@
 
 \begin{frame}[fragile]{Inserção de Citações e Referências}
     \begin{block}{Compilação de um documento \LaTeX{} com referências Bib\TeX{}}
-        \vspace{1em}
-%        \begin{tcblisting}{colback=yellow!5,colframe=yellow!50!black,listing only,title=Compilação Manual,fonttitle=\bfseries,listing engine=minted,minted language=bash}
-%            latex documento.tex
-%            bibtex documento
-%            latex documento
-%            latex documento
-%            dvips documento.dvi
-%            ps2pdf documento.ps
-%        \end{tcblisting}
-    \begin{tcblisting}{
-        theorem={Listing}{listings}{Compilação Manual}{lst:example5},
-        title=Compilação Manual,
-        fonttitle=\small\bfseries,
-        center,width=0.92\paperwidth,
-        colback=yellow!5,colframe=yellow!50!black
-        listing engine=minted,
-        minted language=latex,
-        minted options={%
-            linenos,
-            breaklines,
-            autogobble,
-            fontsize=\small,
-            numbersep=2mm,
-            baselinestretch=1},
-        overlay={%
-        \begin{tcbclipinterior}
-            \fill[gray!25] (frame.south west) rectangle ([xshift=4mm]frame.north west);
-        \end{tcbclipinterior}},
-        breakable, enhanced, listing only}
+    \vspace{1em}
+    \begin{meucomandot}{Compilação Manual}
             latex documento.tex
             bibtex documento
             latex documento
             latex documento
             dvips documento.dvi
             ps2pdf documento.ps
-    \end{tcblisting}        
+    \end{meucomandot}        
     \end{block}
 \end{frame}
 
 \begin{frame}[fragile]{Inserção de Citações e Referências}
     \begin{block}{\textit{Script} {\tt execpub.sh} do estilo do INPE}
         \vspace{1em}
-        \begin{tcblisting}{colback=yellow!5,colframe=yellow!50!black,listing only,title=Permissão de execução (Linux/MacOS),fonttitle=\small\bfseries,listing engine=minted,minted language=bash}
-            chmod +x execpub.sh
-        \end{tcblisting}
-        
-        \begin{tcblisting}{colback=yellow!5,colframe=yellow!50!black,listing only,title=Uso (Linux/MacOS),fonttitle=\small\bfseries,listing engine=minted,minted language=bash}
-            ./execpub.sh <arquivo> <opcao>
-        \end{tcblisting}    
-        
-        \begin{tcblisting}{colback=yellow!5,colframe=yellow!50!black,listing only,title=Exemplo (Linux/MacOS),fonttitle=\small\bfseries,listing engine=minted,minted language=bash}
-            ./execpub.sh publicacao pdf
-        \end{tcblisting}        
+        \pause
+        \begin{meucomandot}{Permissão para executar}
+        chmod +x execpub.sh
+        \end{meucomandot}
+        \pause
+        \begin{meucomandot}{Uso do comando}
+        ./execpub.sh <arquivo> <opcao>
+        \end{meucomandot}    
+        \pause
+        \begin{meucomandot}{Exemplo}
+        ./execpub.sh publicacao pdf
+        \end{meucomandot}        
     \end{block}
 \end{frame}
 
@@ -840,26 +601,7 @@
 %\end{frame}
 
 \begin{frame}[plain,fragile]{}
-    \begin{tcblisting}{
-        theorem={Listing}{listings}{Exemplo de uma referência no formato Bib\TeX{}}{lst:example6},
-        title=Exemplo de uma referência no formato Bib\TeX{},
-        fonttitle=\small\bfseries,
-        center,width=0.92\paperwidth,
-        colback=yellow!5,colframe=yellow!50!black
-        listing engine=minted,
-        minted language=latex,
-        minted options={%
-            linenos,
-            breaklines,
-            autogobble,
-            fontsize=\small,
-            numbersep=2mm,
-            baselinestretch=1},
-        overlay={%
-        \begin{tcbclipinterior}
-            \fill[gray!25] (frame.south west) rectangle ([xshift=4mm]frame.north west);
-        \end{tcbclipinterior}},
-        breakable, enhanced, listing only}
+    \begin{meucomandol}{Exemplo de uma referência no formato Bib\TeX{}}
         @ARTICLE{nobre/2005,
           author    = {Luizao, F. J. and Nobre, C. A. and Manzi, A. O.},
           title     = {Projeto LBA: Estudando as Complexas Intera{\c c}\~oes da Biosfera com a Atmosfera na Amaz\^onia},
@@ -869,15 +611,17 @@
           number    = {1-2},
           pages     = {109--110},
         }
-    \end{tcblisting}
+    \end{meucomandol}
 \end{frame}
 
 \begin{frame}{Inserção de Citações e Referências}
+    \vspace{-0.5em}
     \begin{table}[H]
     \centering
     \caption{Tipos de referências padrão do Bib\TeX{}.}
-    {\scriptsize
-        \begin{tabular}{p{3cm}p{6cm}}
+    \vspace{-0.5em}
+    {\footnotesize
+        \begin{tabular}{p{2.5cm}p{7cm}}
         \toprule
         \textbf{Tipo} & \textbf{Descrição} \\
         \midrule
@@ -901,32 +645,33 @@
     \end{table}
 \end{frame}
 
-\begin{frame}{Inserção de Citações e Referências}
-    \begin{block}{Estilos de referência mais comuns}
-        \begin{itemize}[label=\textbullet]
-            \item {\tt cite}:
-            \item {\tt citeonline}:
-            \item {\tt citeyear}:
-            \item {\tt citeauthor}:
-            \item {\tt citeauthoronline}:
-        \end{itemize}
-    \end{block}
-\end{frame}
+%\begin{frame}{Inserção de Citações e Referências}
+%    \begin{block}{Estilos de referência mais comuns}
+%        \begin{itemize}[label=\textbullet]
+%            \item {\tt cite}: \cite{fulano/1964}
+%            \item {\tt citeonline}: \citeonline{fulano/1964}
+%            \item {\tt citeyear}: \citeyear{fulano/1964}
+%            \item {\tt citeauthor}: \citeauthor{fulano/1964}
+%            \item {\tt citeauthoronline}: \citeauthoronline{fulano/1964}
+%        \end{itemize}
+%    \end{block}
+%\end{frame}
 
-\begin{frame}{Inserção de Citações e Referências}
+\begin{frame}[plain]{}
     \begin{table}[htb]
         \centering
-        \vspace{-1em}
+        \vspace{-0.5em}
         \caption{Estilos de citação segundo as normas ABNT no estilo do INPE.}
-        {\tiny
-        \begin{tabular}{p{5.5cm} p{4cm}}
+        \vspace{-1em}
+        {\scriptsize
+        \begin{tabular}{p{7.5cm} p{3cm}}
 	        \toprule
             \textbf{Uso}                                                            & \textbf{Exemplo}                                    \\
 	        \midrule                                                                                                                                    
             \mintinline{latex}{\cite{fulano/1964}}                                  & \cite{fulano/1964}                                  \\
             \mintinline{latex}{\citeonline{fulano/1964}}                            & \citeonline{fulano/1964}                            \\
             \mintinline{latex}{\citeyear{fulano/1964}}                              & \citeyear{fulano/1964}                              \\
-            \mintinline{latex}{\citeauthor{ciclanoetal/1975}}                       & \citeauthor{ciclanoetal/1975}                            \\
+            \mintinline{latex}{\citeauthor{ciclanoetal/1975}}                       & \citeauthor{ciclanoetal/1975}                       \\
             \mintinline{latex}{\citeauthoronline{fulano/1964}}                      & \citeauthoronline{fulano/1964}                      \\
             \midrule
             \mintinline{latex}{\apud[p.~2--3]{fulano/1964}{ciclanoetal/1975}}       & \apud[p.~2--3]{fulano/1964}{ciclanoetal/1975}       \\
@@ -935,7 +680,7 @@
             \mintinline{latex}{\Ibidem[p.~2--3]{ciclanoetal/1975}}                  & \Ibidem[p.~2--3]{ciclanoetal/1975}                  \\
             \mintinline{latex}{\opcit[p.~2--3]{ciclanoetal/1975}}                   & \opcit[p.~2--3]{ciclanoetal/1975}                   \\
             \mintinline{latex}{\passim{ciclanoetal/1975}}                           & \passim{ciclanoetal/1975}                           \\
-            \mintinline{latex}{\loccit{ciclanoetal/1975}}                           & \loccit{ciclanoetal/1975}                          \\
+            \mintinline{latex}{\loccit{ciclanoetal/1975}}                           & \loccit{ciclanoetal/1975}                           \\
             \mintinline{latex}{\cfcite[p.~2--3]{ciclanoetal/1975}}                  & \cfcite[p.~2--3]{ciclanoetal/1975}                  \\
             \mintinline{latex}{\etseq{fulano/1964}}                                 & \etseq{fulano/1964}                                 \\
 	        \bottomrule                                                                                            
@@ -943,14 +688,6 @@
         }
     \end{table}
 \end{frame}
-
-%\section{Parte IV - Apresentações e Pôsteres}
-%
-%\begin{frame}{Apresentações com o Beamer}
-%
-%\end{frame}
-
-\section{Referências}
 
 \begin{frame}{Referências Bibliográficas}
 %\bibliographystyle{amsalpha}
