@@ -1,0 +1,93 @@
+site_name: Curso de Introução ao LaTeX
+site_author: Carlos Frederico Bastarz
+site_description: Site do Curso de Introdução ao LaTeX
+
+repo_name: cfbastarz/CursoIntroLaTeX
+repo_url: https://github.com/cfbastarz/CursoIntroLaTeX
+edit_uri: edit/master/docs/
+
+nav:
+  - Início: index.md
+  - 1. Preparação: preparacao.md
+  - 2. Entendendo o LaTeX:
+    - 2.1 Introdução ao LaTeX: intro_latex.md
+    - 2.2 Caracteres e Símbolos Especiais: carac_simb_esp.md
+    - 2.3 Acentos e Localização: acentos_local.md
+    - 2.4 Tipos, Tamanhos e Estilos de Letras: tipos_letras.md
+    - 2.5 Títulos e Seções: titulos_secoes.md
+    - 2.6 Cores e Paletas de Cores: cores.md
+    - 2.7 Medidas: medidas.md
+    - 2.8 Parágrafos: paragrafos.md
+    - 2.9 Posição e Espaçamento: posicao_espac.md
+    - 2.10 Notas de Rodapé: notas_rodape.md
+    - 2.11 Listas: listas.md
+    - 2.12 Figuras: figuras.md
+    - 2.13 Matemática e Equações: matematica.md
+    - 2.14 Tabelas: tabelas.md
+    - 2.15 Ferramentas de Revisão: fer_revisao.md
+    - 2.16 Outros Ambientes: outros_ambientes.md
+    - 2.17 Citações e Referências: citacoes_referencias.md
+    - 2.18 Macros: macros.md
+    - 2.19 Editores: editores.md
+    - 2.20 Exercícios: exercicios.md
+  - 3. Estilo do INPE: estilo_inpe.md
+  - 4. Apresentações com o Beamer: beamer.md
+  - 5. Pacotes Utilizados: pacotes.md
+  - 6. Opções de Compilação: op_comp.md
+#  - 7. Outros Símbolos: simbolos.md
+
+theme: 
+  name: material
+  language: pt-BR
+
+extra:
+    social:
+      - icon: fontawesome/brands/youtube
+        link: https://www.youtube.com/channel/UCYl-EgRTESHnSLlpKUxWrrg
+      - icon: fontawesome/brands/github
+        link: https://github.com/cfbastarz
+      - icon: fontawesome/solid/paper-plane
+        link: mailto:cfbastarz@gmail.com
+
+# Extensions
+markdown_extensions:
+  - footnotes
+  - tables
+  - admonition
+  - abbr
+  - pymdownx.snippets
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - attr_list
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - toc:
+      permalink: true
+  - pymdownx.tabbed:
+      alternate_style: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - pymdownx.arithmatex:
+      generic: true
+
+# Plugins
+plugins:
+  - mkdocs-video
+  - search
+#  - pdf-export
+#  - mkpdfs
+
+extra_javascript:
+#  - https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML
+#  - javascripts/mathjaxhelper.js
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js

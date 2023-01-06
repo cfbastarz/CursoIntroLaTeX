@@ -30,6 +30,8 @@ ou
 
     sudo apt-get install python-pygments
 
+**Nota:** no Mac OS X, pode-se instalar o pacote `pygments` utilizando o gerenciador de pacotes `brew`: `brew install pygments`.
+
 Após a instalação do Pygmenyts, utilize a seguinte sequência de comandos para compilar o documento:
 
     xelatex -interaction=nonstopmode -shell-escape publicacao.tex
