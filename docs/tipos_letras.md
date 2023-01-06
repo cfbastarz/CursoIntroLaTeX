@@ -4,7 +4,7 @@
 
 O texto básico pode ser marcado em estilos comuns, como o *itálico*, o sublinhado, o *negrito*, o texto <sup>sobrescrito</sup> e o texto <sub>subscrito</sub>. Veja no [Exemplo 1](#exe_estilos) a seguir:
 
-!!! exemple "<a id="exe_estilos"></a>Exemplo 1: Marcações mais comuns em fontes"
+!!! example "<a id="exe_estilos"></a>Exemplo 1: Marcações mais comuns em fontes"
 
     === "Código"
 
@@ -31,7 +31,7 @@ Outros estilos também podem ser utilizados, mas podem depender de outros pacote
 
 Com o pacote `ulem`, pode-se riscar as palavras (forma mais comum). Veja no [Exemplo 2](#exe_ulem):
 
-!!! exemple "<a id="exe_ulem"></a>Exemplo 2: Marcação em texto com o pacote `ulem`"
+!!! example "<a id="exe_ulem"></a>Exemplo 2: Marcação em texto com o pacote `ulem`"
 
     === "Código"
 
@@ -45,7 +45,7 @@ Com o pacote `ulem`, pode-se riscar as palavras (forma mais comum). Veja no [Exe
 
 Diferente do que se obtém com o pacote `ulem`, com o pacote `cancel` pode-se riscar expressões matemáticas. Veja o [Exemplo 3](#exe_cancel) a seguir (mais exemplos de expressões matemáticas e ambientes específicos são apresentados na [Seção ](../matematica/#213-matematica-e-equacoes)):
 
-!!! exemple "<a id="exe_cancel"></a>Exemplo 3: Marcação em expressões matemáticas com o pacote `cancel`"
+!!! example "<a id="exe_cancel"></a>Exemplo 3: Marcação em expressões matemáticas com o pacote `cancel`"
 
     === "Código"
 
@@ -67,7 +67,7 @@ Diferente do que se obtém com o pacote `ulem`, com o pacote `cancel` pode-se ri
 
 No LaTeX, ao longo de um parágrafo, é possível alterar o tamanho da fonte. O padrão do LaTeX compreende 10 tamanhos diferentes, os quais são mostrados no [Exemplo 4](#exe_tamfonte).
 
-!!! exemple "<a id="exe_tamfonte"></a>Exemplo 4: Tamanhos de fontes"
+!!! example "<a id="exe_tamfonte"></a>Exemplo 4: Tamanhos de fontes"
 
     === "Código"
 
@@ -90,7 +90,7 @@ No LaTeX, ao longo de um parágrafo, é possível alterar o tamanho da fonte. O 
 
 Para alterar o tamanho de uma fonte localmente, basta utilizar os marcadores do [Exemplo 4](#exe_tamfonte) como `\large palavra`. Veja no [Exemplo 5](#exe_tamfontefrase) como misturar diferentes tamanhos de fonte em uma mesma frase:
 
-!!! exemple "<a id="exe_tamfontefrase"></a>Exemplo 5: Texto com diferentes tamanhos de fontes"
+!!! example "<a id="exe_tamfontefrase"></a>Exemplo 5: Texto com diferentes tamanhos de fontes"
 
     === "Código"
 
@@ -104,7 +104,7 @@ Para alterar o tamanho de uma fonte localmente, basta utilizar os marcadores do 
 
 No LaTeX é possível também alterar o tipo da fonte. Alguns estilos incluem fontes no estilo máquina de escrever, sem serifa e com serifa. No [Exemplo 6](#exe_font) é mostrado como alterar o estilo das fontes.
 
-!!! exemple "<a id="exe_font"></a>Exemplo 6: Estilos de fontes"
+!!! example "<a id="exe_font"></a>Exemplo 6: Estilos de fontes"
 
     === "Código"
 

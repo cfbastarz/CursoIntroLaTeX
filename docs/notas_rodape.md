@@ -4,7 +4,7 @@
 
 Notas de rodapé podem ser inseridas com o marcador `\footnote{}` após a palavra a qual se quer referir. Nos exemplos a seguir, utiliza-se o pangrama[^1] "*À noite, vovô Kowalsky vê o ímã cair no pé do pinguim queixoso e vovó põe açúcar no chá de tâmaras do jabuti feliz*"[^2]. O [Exemplo 1](#exe_rodape1) mostra como utilizar o marcador `\footnote{}`:
 
-!!! exemple "<a id="exe_rodape1"></a>Exemplo 1: Nota de rodapé, utilizando o marcador `footnote`"
+!!! example "<a id="exe_rodape1"></a>Exemplo 1: Nota de rodapé, utilizando o marcador `footnote`"
 
 	=== "Código"
 
@@ -23,7 +23,7 @@ No [Exemplo 1](#exe_rodape1), foram incluídas duas notas de rodapé. Elas são 
 
 Outra forma de incluir notas de rodapé, é a partir da utilização dos marcadores `footnotemark` e `footnotetext`. O primeiro, insere o marcador na posição desejada, e o segundo, insere o texto referente àquele marcador. Esta forma é mais clara, pois destacam-se os comandos e marcadores fora do parágrafo que se está escrevendo, deixando-o mais limpo. Outra aplicação útil destes marcadores é dentro do ambiente de tabelas (apresentado na [Seção 2.14](../tabelas/#214-tabelas)). Por outro lado, este par de marcadores não necessariamente utiliza um contador automático, visto que é possível indicar manualmente o índice da nota de rodapé. Veja o [Exemplo 2](#exe_rodape2) a seguir:
 
-!!! exemple "<a id="exe_rodape2"></a>Exemplo 2: Nota de rodapé, utilizando os marcadores `footnotemark` e `footnotetext`"
+!!! example "<a id="exe_rodape2"></a>Exemplo 2: Nota de rodapé, utilizando os marcadores `footnotemark` e `footnotetext`"
 
 	=== "Código"
 
@@ -42,7 +42,7 @@ Observe no [Exemplo 2](#exe_rodape2) que os índices 1 e 2 são indicados como a
 
 Nos Exemplos [1](#exe_rodape1) e [2](#exe_rodape2), observe que o estilo aplicado à nota de rodapé é alfabético. É possível alterar o estilo de numeração renovando o marcador `footnote`, e.g, `\renewcommand{\thefootnote}{\roman{footnote}}`. Neste caso, a opção `Roman` indica que o estilo de numeração dos índices será dado em algarismos romanos. Este é o caso ilustrado no [Exemplo 3](#exe_rodape4) a seguir.
 
-!!! exemple "<a id="exe_rodape4"></a>Exemplo 3: Nota de rodapé com referência em algarismos romanos"
+!!! example "<a id="exe_rodape4"></a>Exemplo 3: Nota de rodapé com referência em algarismos romanos"
 
 	=== "Código"
 
@@ -58,7 +58,7 @@ Nos Exemplos [1](#exe_rodape1) e [2](#exe_rodape2), observe que o estilo aplicad
 
 No [Exemplo 4](#exe_rodape5), mostra-se como alterar o estilo das notas de rodapé para algarismos arábicos utilizando a opção `arabic`.
 
-!!! exemple "<a id="exe_rodape5"></a>Exemplo 4: Nota de rodapé com referência algarismos arábicos"
+!!! example "<a id="exe_rodape5"></a>Exemplo 4: Nota de rodapé com referência algarismos arábicos"
 
 	=== "Código"
 

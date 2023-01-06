@@ -8,7 +8,7 @@ O livro de [Knuth (1996)](#knuth/1996) oferece uma introdução concisa sobre a 
 
 O leitor perceberá a importância das *macros* quando precisar fazer uso de alguma configuração mais do que uma vez. Um exemplo bastante simples, é definir um comando (que nada mais é do que uma *macro*) para inserir uma informação que pode ser repetida em diferentes partes do texto. Suponha que queiramos que a expressão "por exemplo" seja inserida sempre que digitarmos o comando `\eg` e que a expressão "isto é" seja inserida sempre que digitar o comando `\ie`. No LaTeX os comandos `\eg` e `\ie` não existem, então podemos utilizá-los para este propósito. Veja no [Exemplo 1](#exe_macro0) como fazer isso.
 
-!!! exemple "<a id="exe_macro0"></a>Exemplo 1: Definindo um comando simples de substituição"
+!!! example "<a id="exe_macro0"></a>Exemplo 1: Definindo um comando simples de substituição"
 
     === "Código"
 
@@ -38,7 +38,7 @@ O leitor perceberá a importância das *macros* quando precisar fazer uso de alg
 
 Considere os Exemplos [2](./tabelas.md#exe_tab2) e [3](./tabelas.md#exe_tab3} em que o espaçamento `\\[-0.5em]` é utilizado múltiplas vezes para definir a altura das linhas das tabelas mostradas. Este comando pode ser "empacotado" através da definição de uma *macro* que simplesmente irá abreviar o seu uso, no sentido de torná-lo mais simples. Para isto, veja o [Exemplo 2](#exe_macro1) a seguir.
 
-!!! exemple "<a id="exe_macro1"></a>Exemplo 2: Definindo um simples comando de espaçamento"
+!!! example "<a id="exe_macro1"></a>Exemplo 2: Definindo um simples comando de espaçamento"
 
     === "Código"
 
@@ -72,7 +72,7 @@ Considere os Exemplos [2](./tabelas.md#exe_tab2) e [3](./tabelas.md#exe_tab3} em
 
 Muitas vezes será necessário incluir um espaço em branco extra, o que pode ser obtido incluindo-se um par de `{}`'s (chaves) após o comando, e.g., como em `$\LaTeX{}$` ou `\LaTeX`, que irá produzir $\LaTeX{}$ e $\LaTeX$, respectivamente. Considere os comandos `inpe` e `inpee` do [Exemplo 3](#exe_macro2) a seguir e compare os resultados das suas aplicações, com e sem as `{}`'s: 
 
-!!! exemple "<a id="exe_macro2"></a>Exemplo 3: Definindo um comando simples de substituição com espaço extra"
+!!! example "<a id="exe_macro2"></a>Exemplo 3: Definindo um comando simples de substituição com espaço extra"
 
     === "Código"
 
@@ -98,7 +98,7 @@ Muitas vezes será necessário incluir um espaço em branco extra, o que pode se
 
 No [Exemplo 3](#exe_macro2) foram definidas macros que substituem a palavra-chave `inpe` (ou `inpee`) por INPE. Quando uma *macro* é definida e utilizada em diversas partes de um documento, a sua substituição por um outro valor pode ser rápida e facilmente realizada através do comando `\renewcommand`. Veja o [Exemplo 4](#exe_macro3) a seguir:
 
-!!! exemple "<a id="exe_macro3"></a>Exemplo 4: Redefinindo um comando simples"
+!!! example "<a id="exe_macro3"></a>Exemplo 4: Redefinindo um comando simples"
 
     === "Código"
 
@@ -116,7 +116,7 @@ No [Exemplo 3](#exe_macro2) foram definidas macros que substituem a palavra-chav
 
 A definição de *macros* a partir do comando `\newcommand{}{}` aceita a utilização de parâmetros (ou argumentos), tal como um *script*. Veja o [Exemplo 5](#exe_macro4) a seguir:
 
-!!! exemple "<a id="exe_macro4"></a>Exemplo 5: Passando parâmetros para `macros`"
+!!! example "<a id="exe_macro4"></a>Exemplo 5: Passando parâmetros para `macros`"
 
     === "Código"
 

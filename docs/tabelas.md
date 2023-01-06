@@ -6,7 +6,7 @@ Tabelas são os elementos do texto que resumem e organizam informações. No LaT
 
 O ambiente `tabular` é um ambiente simples para a construção de tabelas. A sua utilização é apresentada no [Exemplo 1](#exe_tab1).
 
-!!! exemple "<a id="exe_tab1"></a>Exemplo 1: "
+!!! example "<a id="exe_tab1"></a>Exemplo 1: "
 
     === "Código"
 
@@ -30,7 +30,7 @@ O ambiente `tabular` é um ambiente simples para a construção de tabelas. A su
 
 Na tabela do [Exemplo 1](#exe_tab1), tem-se apenas duas colunas e algumas linhas. Para separar o conteúdo, utilizou-se apenas linhas horizontais (produzidas pelos comandos `hline`) para separar o cabeçalho, i.e., os nomes das colunas, do conteúdo. Observe que a tabela produzida possui as linhas muito próximas, e este espaçamento pode ser melhorarado com a utilização do comando `\\[-0.5em]`. Lembre-se que a instrução `\\` pula uma linha; o argumento desta instrução, i.e., `[-0.5em]` indica que o espaço de uma linha deve ser recuado em `-0.5em`. Na [Tabela 1](../medidas/#tab:medidas) está indicado que a unidade `em` refere-se à altura do caractere "M" da fonte em uso, isso garante que o espaçamento será sempre consistente independente do estilo da fonte em uso. Veja o [Exemplo 2](#exe_tab2) a seguir:
 
-!!! exemple "<a id="exe_tab2"></a>Exemplo 2: Exemplo de uma tabela simples com o ambiente `tabular` e linhas mais altas"
+!!! example "<a id="exe_tab2"></a>Exemplo 2: Exemplo de uma tabela simples com o ambiente `tabular` e linhas mais altas"
 
     === "Código"
 
@@ -64,7 +64,7 @@ No [Exemplo 2](#exe_tab2), observe a instrução `{l r}`. Como a tabela do exemp
 
 Além de alterar o espaçamento vertical dentro de uma tabela, pode-se também alterar a largura das colunas. Para isso, pode-se utilizar o comando `p{u.}`, onde `u.` corresponde a alguma medida. Veja o [Exemplo 3](#exe_tab3) a seguir:
 
-!!! exemple "<a id="exe_tab3"></a>Exemplo 3: Exemplo de uma tabela simples com o ambiente `tabular` e colunas mais largas"
+!!! example "<a id="exe_tab3"></a>Exemplo 3: Exemplo de uma tabela simples com o ambiente `tabular` e colunas mais largas"
 
     === "Código"
 
@@ -100,7 +100,7 @@ Além de alterar o espaçamento vertical dentro de uma tabela, pode-se também a
 
 Assim como as tabelas produzidas em editores WYSIWYG, no LaTeX também é possível mesclar células (na direção das colunas ou das linhas). Para isso, utilizam-se os comandos `\multicolumn` para mesclar colunas e `\multirow` para mesclar linhas. Veja o [Exemplo 4](#exe_tab4) a seguir:
 
-!!! exemple "<a id="exe_tab4"></a>Exemplo 4: Exemplo de uma tabela simples com o ambiente `tabular` e células mescladas com o comando `multirow`"
+!!! example "<a id="exe_tab4"></a>Exemplo 4: Exemplo de uma tabela simples com o ambiente `tabular` e células mescladas com o comando `multirow`"
 
     === "Código"
 
@@ -136,7 +136,7 @@ Dependendo da necessidade, ambientes especiais de tabelas podem ser necessários
 
 Tabelas ajustáveis podem ser necessárias quando se deseja que a largura das colunas sejam automaticamente ajustadas. No caso do ambiente `tabular`, o LaTeX tenta ajustar a largura da tabela de acordo com a quantidade de informações contida nas células. Se as células contiverem muita informação, a tabela poderá ficar com uma largura maior do que a largura do texto ou mesmo da página. Veja no [Exemplo 5](#exe_tab5) a utilização básica do ambiente `tabular`.
 
-!!! exemple "<a id="exe_tab5"></a>Exemplo 5: Exemplo de uma tabela simples utilizando o ambiente `tabular`"
+!!! example "<a id="exe_tab5"></a>Exemplo 5: Exemplo de uma tabela simples utilizando o ambiente `tabular`"
 
     === "Código"
 
@@ -155,7 +155,7 @@ Tabelas ajustáveis podem ser necessárias quando se deseja que a largura das co
 
 No [Exemplo 5](#exe_tab5) a quantidade de informação nas células não é suficiente para fazer com que a largura da tabela extrapole os limites da página, mas isto é perfeitamente possível dentro do ambiente `tabular`. Para evitar esta situação, o ambiente `tabularx` é mais apropriado, visto que com ele pode-se definir uma largura fixa (por meio de um valor ou de uma *macro*) e o conteúdo das células é ajustado dentro destes limites. No [Exemplo 6](#exe_tab7) mostra-se o que se obtém com a utilização do ambiente `tabularx`.
 
-!!! exemple "<a id="exe_tab7"></a>Exemplo 6: Exemplo de uma tabela simples utilizando o ambiente `tabularx`"
+!!! example "<a id="exe_tab7"></a>Exemplo 6: Exemplo de uma tabela simples utilizando o ambiente `tabularx`"
 
     === "Código"
 
@@ -176,7 +176,7 @@ No [Exemplo 6](#exe_tab7), as colunas da tabela estão ajustadas com a mesma lar
 
 O pacote `booktabs` permite utilizar linhas mais grossas através dos marcadores `\toprule`, `\midrule` e `\bottomrule`. Para utilizar o pacote, é necessário carregá-lo no preâmbulo do documento com o comando `\usepackage{booktabs}`. Veja o [Exemplo 7](#exe_tab8) a seguir e compare o resultado com as tabelas dos exemplos anteriores que utilizaram o marcador `\hline` para separar as linhas das tabelas:
 
-!!! exemple "<a id="exe_tab8"></a>Exemplo 7: Exemplo de uma tabela simples utilizando o ambiente `tabular` e os marcadores `toprule`, `midrule` e `bottomrule`"
+!!! example "<a id="exe_tab8"></a>Exemplo 7: Exemplo de uma tabela simples utilizando o ambiente `tabular` e os marcadores `toprule`, `midrule` e `bottomrule`"
 
     === "Código"
 
@@ -198,7 +198,7 @@ O pacote `booktabs` permite utilizar linhas mais grossas através dos marcadores
 
 Os ambientes `tabular` e `tabularx` possuem algum controle sobre a largura da tabela de acordo com a quantidade de informação dentro das células. Por outro lado, tabelas muito longas, e.g., que podem ocupar várias páginas, podem não ser adequadamente acomodadas com estes ambientes. Para isso, recomenda-se a utilização do pacote `longtable` que permite o LaTeX realizar a quebra automática de linha dentro de uma tabela. Considere o [Exemplo 8](#ltable1) a seguir, em que uma tabela longa é inserida dentro de um ambiente `tabularx`:
 
-!!! exemple "<a id="ltable1"></a>Exemplo 8: Uma tabela longa utilizando o ambiente `tabularx`"
+!!! example "<a id="ltable1"></a>Exemplo 8: Uma tabela longa utilizando o ambiente `tabularx`"
 
     === "Código"
 
@@ -241,7 +241,7 @@ Os ambientes `tabular` e `tabularx` possuem algum controle sobre a largura da ta
 
 Compare o [Exemplo 8](#ltable1) com o [Exemplo 9](#ltable2) a seguir, em que a mesma tabela longa é apresentada, porém com o auxílio do pacote `longtable`.
 
-!!! exemple "<a id="ltable2"></a>Exemplo 9: Uma tabela longa utilizando o ambiente `longtable`"
+!!! example "<a id="ltable2"></a>Exemplo 9: Uma tabela longa utilizando o ambiente `longtable`"
 
     === "Código"
 

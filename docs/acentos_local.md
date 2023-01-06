@@ -21,7 +21,7 @@ Entretanto, em algumas situações é necessário marcar os acentos de forma exp
 
 No [Exemplo 1](#exe_acentos) a seguir, são mostrados os acentos mais comuns.
 
-!!! exemple "<a id="exe_acentos"></a>Exemplo 1: Use de acentos latinos no LaTeX"
+!!! example "<a id="exe_acentos"></a>Exemplo 1: Use de acentos latinos no LaTeX"
 
     === "Código"
 

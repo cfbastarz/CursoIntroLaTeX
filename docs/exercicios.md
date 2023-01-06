@@ -10,7 +10,7 @@ Para a realização dos exercícios, utilize os exemplos dados ao longo das seç
 
 Os exercícios desta seção utilizam as marcações de texto mais comuns apresentadas na [Seção 2.4](../tipos_letras/#24-tipos-tamanhos-e-estilos-de-letras).
 
-!!! exemple "Exercício 1: Formate a frase abaixo utilizando os estilos `\underline`, `\textit` e `\sout`"
+!!! example "Exercício 1: Formate a frase abaixo utilizando os estilos `\underline`, `\textit` e `\sout`"
 
     === "Resultado"
 
@@ -24,7 +24,7 @@ Os exercícios desta seção utilizam as marcações de texto mais comuns aprese
         filme da \textit{Wehrmacht} \sout{xexelenta}.
         ```
 
-!!! exemple "Exercício 2: Formate a frase abaixo utilizando as cores *blue*, *green*, *red* e *magenta*"
+!!! example "Exercício 2: Formate a frase abaixo utilizando as cores *blue*, *green*, *red* e *magenta*"
 
     === "Resultado"
 
@@ -40,7 +40,7 @@ Os exercícios desta seção utilizam as marcações de texto mais comuns aprese
         \color{red}{xexelenta}.
         ```
 
-!!! exemple "Exercício 3: Formate a frase abaixo utilizando as cores de fundo *blue*, *green*, *red* e *magenta*. Observe quando a cor do texto for diferente também"
+!!! example "Exercício 3: Formate a frase abaixo utilizando as cores de fundo *blue*, *green*, *red* e *magenta*. Observe quando a cor do texto for diferente também"
 
     === "Resultado"
 
@@ -61,7 +61,7 @@ Os exercícios desta seção utilizam as marcações de texto mais comuns aprese
 
 Nos exercícios a seguir, utilize os exemplos mostrados na [Seção 2.11](../listas/#211-listas).
 
-!!! exemple "Exercício 4: Crie a lista a seguir utilizando o ambiente `itemize`"
+!!! example "Exercício 4: Crie a lista a seguir utilizando o ambiente `itemize`"
 
     === "Resultado"
 
@@ -86,7 +86,7 @@ Nos exercícios a seguir, utilize os exemplos mostrados na [Seção 2.11](../lis
         \end{itemize}
         ```
 
-!!! exemple "Exercício 5: Criando listas simples}\textit{Crie a lista a seguir utilizando o ambiente `enumerate`"
+!!! example "Exercício 5: Criando listas simples}\textit{Crie a lista a seguir utilizando o ambiente `enumerate`"
 
     === "Resultado"
 
@@ -102,7 +102,7 @@ Nos exercícios a seguir, utilize os exemplos mostrados na [Seção 2.11](../lis
         \end{enumerate}
         ```
 
-!!! exemple "Exercício 6: Criando listas compostas}\textit{Crie a lista a seguir utilizando os ambientes `enumerate` e `itemize`"
+!!! example "Exercício 6: Criando listas compostas}\textit{Crie a lista a seguir utilizando os ambientes `enumerate` e `itemize`"
 
     === "Resultado"
 
@@ -128,7 +128,7 @@ Nos exercícios a seguir, utilize os exemplos mostrados na [Seção 2.11](../lis
         \end{enumerate}
         ```
 
-!!! exemple "Exercício 7: Criando listas compostas com estilo}\textit{Crie a lista a seguir utilizando os ambientes `enumerate` e `itemize` e os estilos `arabic`, `alph`, `roman` e `Alph`"
+!!! example "Exercício 7: Criando listas compostas com estilo}\textit{Crie a lista a seguir utilizando os ambientes `enumerate` e `itemize` e os estilos `arabic`, `alph`, `roman` e `Alph`"
 
     === "Resultado"
 
@@ -172,7 +172,7 @@ Nos exercícios a seguir, utilize os exemplos mostrados na [Seção 2.11](../lis
 
 Nos exercícios a seguir, utilize os exemplos apresentados na [Seção 2.14](../tabelas/#214-tabelas).
 
-!!! exemple "Exercício 8: Crie a seguinte tabela utilizando o ambiente `tabular`"
+!!! example "Exercício 8: Crie a seguinte tabela utilizando o ambiente `tabular`"
 
     === "Resultado"
 
@@ -194,7 +194,7 @@ Nos exercícios a seguir, utilize os exemplos apresentados na [Seção 2.14](../
         \end{tabular}
         ```
 
-!!! exemple "Exercício 9: Criando tabelas simples}\textit{Crie a seguinte tabela utilizando o ambiente `tabular` e o pacote `lipsum`"
+!!! example "Exercício 9: Criando tabelas simples}\textit{Crie a seguinte tabela utilizando o ambiente `tabular` e o pacote `lipsum`"
 
     === "Resultado"
 
@@ -220,7 +220,7 @@ Nos exercícios a seguir, utilize os exemplos apresentados na [Seção 2.14](../
         \end{tabular}
         ```
 
-!!! exemple "Exercício 10: Crie a seguinte tabela utilizando o ambiente `tabular`"
+!!! example "Exercício 10: Crie a seguinte tabela utilizando o ambiente `tabular`"
 
     === "Resultado"
 
@@ -237,7 +237,7 @@ Nos exercícios a seguir, utilize os exemplos apresentados na [Seção 2.14](../
         \end{tabular}
         ```
 
-!!! exemple "Exercício 11: Crie a seguinte tabela utilizando o ambiente `tabular*` e a macro `textwidth`"
+!!! example "Exercício 11: Crie a seguinte tabela utilizando o ambiente `tabular*` e a macro `textwidth`"
 
     === "Resultado"
 
@@ -254,7 +254,7 @@ Nos exercícios a seguir, utilize os exemplos apresentados na [Seção 2.14](../
         \end{tabular*}
         ```
 
-!!! exemple "Exercício 12: Crie a seguinte tabela utilizando o ambiente `tabular` e os separadores especiais `toprule`, `midrule` e `bottomrule`"
+!!! example "Exercício 12: Crie a seguinte tabela utilizando o ambiente `tabular` e os separadores especiais `toprule`, `midrule` e `bottomrule`"
 
     === "Resultado"
 
@@ -278,7 +278,7 @@ Nos exercícios a seguir, utilize os exemplos apresentados na [Seção 2.14](../
 
 Nos seguintes exercícios, utilize os exemplos apresentados na [Seção 2.13](../matematica/#213-matematica-e-equacoes) e as tabelas da [Parte 7](../simbolos/#7-outros-simbolos).
 
-!!! exemple "Exercício 13: Uma matriz sem delimitadores (`matrix`)"
+!!! example "Exercício 13: Uma matriz sem delimitadores (`matrix`)"
 
     === "Resultado"
 
@@ -297,7 +297,7 @@ Nos seguintes exercícios, utilize os exemplos apresentados na [Seção 2.13](..
         \end{equation*}
         ```
 
-!!! exemple "Exercício 14: Uma matriz com delimitadores quadrados (`bmatrix`)"
+!!! example "Exercício 14: Uma matriz com delimitadores quadrados (`bmatrix`)"
 
     === "Resultado"
 
@@ -316,7 +316,7 @@ Nos seguintes exercícios, utilize os exemplos apresentados na [Seção 2.13](..
         \end{equation*}
         ```
 
-!!! exemple "Exercício 15: Uma matriz com delimitadores curvos (`pmatrix`)"
+!!! example "Exercício 15: Uma matriz com delimitadores curvos (`pmatrix`)"
 
     === "Resultado"
 
@@ -335,7 +335,7 @@ Nos seguintes exercícios, utilize os exemplos apresentados na [Seção 2.13](..
         \end{equation*}
         ```
 
-!!! exemple "Exercício 16: Uma matriz com delimitadores verticais simples (`vmatrix`)"
+!!! example "Exercício 16: Uma matriz com delimitadores verticais simples (`vmatrix`)"
 
     === "Resultado"
 
@@ -354,7 +354,7 @@ Nos seguintes exercícios, utilize os exemplos apresentados na [Seção 2.13](..
         \end{equation*}
         ```
 
-!!! exemple "Exercício 17: Uma matriz com delimitadores verticais duplos (`Vmatrix`)"
+!!! example "Exercício 17: Uma matriz com delimitadores verticais duplos (`Vmatrix`)"
 
     === "Resultado"
 
@@ -373,7 +373,7 @@ Nos seguintes exercícios, utilize os exemplos apresentados na [Seção 2.13](..
         \end{equation*}
         ```
 
-!!! exemple "Exercício 18: Uma matriz delimitada por chaves (`Bmatrix`)"
+!!! example "Exercício 18: Uma matriz delimitada por chaves (`Bmatrix`)"
 
     === "Resultado"
 
@@ -392,7 +392,7 @@ Nos seguintes exercícios, utilize os exemplos apresentados na [Seção 2.13](..
         \end{equation*}
         ```
 
-!!! exemple "Exercício 19: A derivada $f'(a)$ da função $f(x)$ no ponto $x=a$ é o limite"
+!!! example "Exercício 19: A derivada $f'(a)$ da função $f(x)$ no ponto $x=a$ é o limite"
 
     === "Resultado"
 
@@ -406,7 +406,7 @@ Nos seguintes exercícios, utilize os exemplos apresentados na [Seção 2.13](..
         \end{equation*}
         ```
 
-!!! exemple "Exercício 20: A função $f(x)$ é contínua no ponto $x=a$ se"
+!!! example "Exercício 20: A função $f(x)$ é contínua no ponto $x=a$ se"
 
     === "Resultado"
 
@@ -420,7 +420,7 @@ Nos seguintes exercícios, utilize os exemplos apresentados na [Seção 2.13](..
         \end{equation*}
         ```
 
-!!! exemple "Exercício 21: A série de MacLaurin para $e^{x}$ é"
+!!! example "Exercício 21: A série de MacLaurin para $e^{x}$ é"
 
     === "Resultado"
 
@@ -434,7 +434,7 @@ Nos seguintes exercícios, utilize os exemplos apresentados na [Seção 2.13](..
         \end{equation*}
         ```
 
-!!! exemple "Exercício 22: Identidade da soma de dois ângulos é"
+!!! example "Exercício 22: Identidade da soma de dois ângulos é"
 
     === "Resultado"
 
@@ -450,7 +450,7 @@ Nos seguintes exercícios, utilize os exemplos apresentados na [Seção 2.13](..
         \end{equation*}
         ```
 
-!!! exemple "Exercício 23: A integral indefinida de $\frac{1}{a+x^{2}}$ é"
+!!! example "Exercício 23: A integral indefinida de $\frac{1}{a+x^{2}}$ é"
 
     === "Resultado"
 
@@ -464,7 +464,7 @@ Nos seguintes exercícios, utilize os exemplos apresentados na [Seção 2.13](..
         \end{equation*}
         ```
 
-!!! exemple "Exercício 24: Equação de Navier-Stokes para um fluxo incompressível é"
+!!! example "Exercício 24: Equação de Navier-Stokes para um fluxo incompressível é"
 
     === "Resultado"
 
@@ -480,7 +480,7 @@ Nos seguintes exercícios, utilize os exemplos apresentados na [Seção 2.13](..
         \end{equation*}
         ```
 
-!!! exemple "Exercício 25: O Teorema de Green é dado por"
+!!! example "Exercício 25: O Teorema de Green é dado por"
 
     === "Resultado"
 
@@ -495,7 +495,7 @@ Nos seguintes exercícios, utilize os exemplos apresentados na [Seção 2.13](..
         \end{equation*}
         ```
 
-!!! exemple "Exercício 26: A Equação de Poisson é"
+!!! example "Exercício 26: A Equação de Poisson é"
 
     === "Resultado"
 
@@ -510,7 +510,7 @@ Nos seguintes exercícios, utilize os exemplos apresentados na [Seção 2.13](..
         \end{equation*}
         ```
 
-!!! exemple "Exercício 27: A Equação de Laplace é"
+!!! example "Exercício 27: A Equação de Laplace é"
 
     === "Resultado"
 
@@ -525,7 +525,7 @@ Nos seguintes exercícios, utilize os exemplos apresentados na [Seção 2.13](..
         \end{equation*}
         ```
 
-!!! exemple "Exercício 28: A Equação de Fourier (ou da condução do calor) é"
+!!! example "Exercício 28: A Equação de Fourier (ou da condução do calor) é"
 
     === "Resultado"
 
@@ -540,7 +540,7 @@ Nos seguintes exercícios, utilize os exemplos apresentados na [Seção 2.13](..
         \end{equation*}
         ```
 
-!!! exemple "Exercício 29: A Equação de D'Alembert (ou da onda) é"
+!!! example "Exercício 29: A Equação de D'Alembert (ou da onda) é"
 
     === "Resultado"
 
@@ -555,7 +555,7 @@ Nos seguintes exercícios, utilize os exemplos apresentados na [Seção 2.13](..
         \end{equation*}
         ```
 
-!!! exemple "Exercício 30: O Teorema dos Números Primos é dado por"
+!!! example "Exercício 30: O Teorema dos Números Primos é dado por"
 
     === "Resultado"
 
@@ -570,7 +570,7 @@ Nos seguintes exercícios, utilize os exemplos apresentados na [Seção 2.13](..
         \end{equation*}
         ```
 
-!!! exemple "Exercício 31: A fórmula geral da série de Taylor é"
+!!! example "Exercício 31: A fórmula geral da série de Taylor é"
 
     === "Resultado"
 
@@ -584,7 +584,7 @@ Nos seguintes exercícios, utilize os exemplos apresentados na [Seção 2.13](..
         \end{equation*}
         ```
 
-!!! exemple "Exercício 32: O Teorema de Stokes é dado por"
+!!! example "Exercício 32: O Teorema de Stokes é dado por"
 
     === "Resultado"
 
@@ -598,7 +598,7 @@ Nos seguintes exercícios, utilize os exemplos apresentados na [Seção 2.13](..
         \end{equation*}
         ```
 
-!!! exemple "Exercício 33: A propriedade adjunta do produto tensorial é"
+!!! example "Exercício 33: A propriedade adjunta do produto tensorial é"
 
     === "Resultado"
 
@@ -613,7 +613,7 @@ Nos seguintes exercícios, utilize os exemplos apresentados na [Seção 2.13](..
         \end{equation*}
         ```
 
-!!! exemple "Exercício 34: A definição da transformada de Laplace é dada por"
+!!! example "Exercício 34: A definição da transformada de Laplace é dada por"
 
     === "Resultado"
 
@@ -628,7 +628,7 @@ Nos seguintes exercícios, utilize os exemplos apresentados na [Seção 2.13](..
         \end{equation*}
         ```
   
-!!! exemple "Exercício 35: A fórmula da inversa de uma matriz é"
+!!! example "Exercício 35: A fórmula da inversa de uma matriz é"
 
     === "Resultado"
 
@@ -650,7 +650,7 @@ Nos seguintes exercícios, utilize os exemplos apresentados na [Seção 2.13](..
         \end{equation*}
         ```
   
-!!! exemple "Exercício 36: A fórmula do produto infinito pode ser escrita como"
+!!! example "Exercício 36: A fórmula do produto infinito pode ser escrita como"
 
     === "Resultado"
 

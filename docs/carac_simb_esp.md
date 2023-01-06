@@ -19,7 +19,7 @@ No LaTeX há 10 tipos de caracteres especiais. São eles:
 
 Na primeira forma, basta utilizar a `$\backslash$` (barra invertida). Na segunda, utilizam-se comandos específicos do LaTeX. Veja o [Exemplo 1](#exe_caracesp) a seguir:
 
-!!! exemple "<a id="exe_caracesp"></a>Exemplo 1: Marcação para caracteres especiais"
+!!! example "<a id="exe_caracesp"></a>Exemplo 1: Marcação para caracteres especiais"
 
     === "Código" 
 

@@ -6,7 +6,7 @@ Figuras podem ser incluídas em um documento LaTeX de formas variadas. Dependend
 
 Uma figura pode ser incluída de forma simples utilizando o comando `\includegraphics[]{}`.
 
-!!! exemple "<a id="exe_fig1"></a>Exemplo 1: Incluindo figura com o comando `includegraphics`"
+!!! example "<a id="exe_fig1"></a>Exemplo 1: Incluindo figura com o comando `includegraphics`"
 
     === "Código"
 
@@ -33,7 +33,7 @@ No [Exemplo 1](#exe_fig1), observe que o marcador `\includegraphics` aceita algu
 
 Assim como mostrado no [Exemplo 1](#exe_fig1), a forma mais simples de incluir figuras em um documento LaTeX, é a partir do comando `\includegraphics[]{}`. Observe que este comando (assim como a maioria dos comandos e marcadores da linguagem) possui uma seção de opções (ou argumentos) que são indicados entre os colchetes e o caminho para a imagem em si, que é informada entre as chaves. Veja o [Exemplo 2](#exe_incgraphs) a seguir:
 
-!!! exemple "<a id="exe_incgraphs"></a>Exemplo 2: Incorporando uma figura com o comando `includegraphics`"
+!!! example "<a id="exe_incgraphs"></a>Exemplo 2: Incorporando uma figura com o comando `includegraphics`"
 
     === "Código"
 
@@ -47,7 +47,7 @@ Assim como mostrado no [Exemplo 1](#exe_fig1), a forma mais simples de incluir f
 
 Entretanto, observe que apenas inserimos uma figura, mas não definimos uma posição relativa ao parágrafo ou à página e que também não há uma legenda atribuída à figura. Para isso, é necessário incorporar o comando `\includegraphics[]{}` dentro de um ambiente específico que permita o seu posicionamento relativo, além da edição de outros atributos referentes à figura. Este ambiente, é o ambiente `figure`. O [Exemplo 3](#exe_ambfig) a seguir, mostra como o ambiente `figure` é utilizado:
 
-!!! exemple "<a id="exe_ambfig"></a>Exemplo 3: Incorporando uma figura com o comando `includegraphics` dentro do ambiente `figure`"
+!!! example "<a id="exe_ambfig"></a>Exemplo 3: Incorporando uma figura com o comando `includegraphics` dentro do ambiente `figure`"
 
     === "Código"
 
@@ -81,7 +81,7 @@ O ambiente `figure` deve ser configurado para possuir uma das seguintes posiçõ
 
 As opções de posicionamento relativo apresentados na [Tabela 1](#tab:ambfig), também servem para o posicionamento de ambientes de tabelas, como apresentado na [Seção ](../tabelas/#214-tabelas). No [Exemplo 4](#exe_ambfig_H) é mostrado o posicionamento de uma figura utilizando a posição relativa `H`:
 
-!!! exemple "<a id="exe_ambfig_H"></a>Exemplo 4: Incorporando uma figura com o comando `includegraphics` dentro do ambiente `figure` com a posição relativa `H`"
+!!! example "<a id="exe_ambfig_H"></a>Exemplo 4: Incorporando uma figura com o comando `includegraphics` dentro do ambiente `figure` com a posição relativa `H`"
 
     === "Código"
 
@@ -104,7 +104,7 @@ As opções de posicionamento relativo apresentados na [Tabela 1](#tab:ambfig), 
 
 Uma vez definido o posicionamento relativo (i.e., relativo ao parágrafo ou página), pode-se centralizar a figura utilizando-se o marcador `\centering` ou o ambiente `center`. O [Exemplo 5](#exe_ambfig_center) mostra estas duas opções:
 
-!!! exemple "<a id="exe_ambfig_center"></a>Exemplo 5: Centralizando figuras dentro do ambiente `figure`"
+!!! example "<a id="exe_ambfig_center"></a>Exemplo 5: Centralizando figuras dentro do ambiente `figure`"
 
     === "Código"
 
@@ -132,7 +132,7 @@ No [Exemplo 5](#exe_ambfig_center), observe que ambos, o marcador `centering` e 
 
 O ambiente `figure` permite também que figuras sejam posicionadas lado-a-lado. Para isso, pode-se utilizar o comando `subfigure`. O comando `subfigure` tem a sintaxe `\subfigure[]{}`. Veja o [Exemplo 6](#exe:subfigure1) a seguir:
 
-!!! exemple "<a id="exe:subfigure1"></a>Exemplo 6: Inserindo uma ou mais figuras lado-a-lado com o comando `subfigure`"
+!!! example "<a id="exe:subfigure1"></a>Exemplo 6: Inserindo uma ou mais figuras lado-a-lado com o comando `subfigure`"
 
     === "Código"
 
@@ -156,7 +156,7 @@ No [Exemplo 6](#exe:subfigure1), observe que o comando `caption` foi inserido co
 
 Dependendo do tamanho ajustado para cada figura dentro do ambiente `subfigure`, o LaTeX tentará posicionar as figuras ou lado-a-lado, ou empilhadas. Veja no [Exemplo 7](#exe:subfigure2) a seguir e compare com o anterior:
 
-!!! exemple "<a id="exe:subfigure2"></a>Exemplo 7: Inserindo uma ou mais figuras empilhadas com o comando `subfigure`"
+!!! example "<a id="exe:subfigure2"></a>Exemplo 7: Inserindo uma ou mais figuras empilhadas com o comando `subfigure`"
 
     === "Código"
 

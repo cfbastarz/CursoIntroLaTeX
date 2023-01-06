@@ -20,7 +20,7 @@ No LaTeX, é possível organizar o texto utilizando seções em até 7 níveis, 
 
 Na [Seção 2.1](../intro_latex/#21-introducao-ao-latex) foram mostradas as classes mais comuns disponíveis para documentos LaTeX. Observe que as partes de conteúdo marcadas como `part` e `chapter` estão disponíveis apenas para as classes `report` e `book`. Uma das vantagens da edição de documento na linguagem LaTeX é que a numeração de partes, figuras, tabelas, equações etc é automática. Isto significa que sempre que se iniciar um novo capítulo ou seção, a numeração é automaticamente incrementada. Se o texto for reorganizado, de forma que uma seção ou capítulo é transferido para outra posição no texto, eles são automaticamente renumerados, respeitando a ordem em que são apresentados. Entretanto, é possível omitir a numeração destes elementos textuais através da inserção de um * (asterisco). Veja o efeito disto no [Exemplo 1](#exe_secsnum) a seguir.
 
-!!! exemple "<a id="exe_secsnum"></a>Exemplo 1: Numeração automática dos elementos textuais"
+!!! example "<a id="exe_secsnum"></a>Exemplo 1: Numeração automática dos elementos textuais"
 
     === "Código"
 

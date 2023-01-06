@@ -4,7 +4,7 @@
 
 Figuras, tabelas, equações, partes (i.e., capítulos, seções, subseções, etc), além da bibliografia, podem ser citados ao longo do texto. Para os elementos textuais, a forma de se fazer isto é através da utilização da dupla de comandos `\label{nome}` e `\ref{nome}`. Veja como citar estes elementos nos exemplos a seguir.
 
-!!! exemple "<a id="exe_cite1"></a>Exemplo 1: Citação de uma parte do texto"
+!!! example "<a id="exe_cite1"></a>Exemplo 1: Citação de uma parte do texto"
 
     === "Código"
 
@@ -21,7 +21,7 @@ Figuras, tabelas, equações, partes (i.e., capítulos, seções, subseções, e
 
 No [Exemplo 1](#exe_cite1), observe que foi utilizado `\section*` ao invés de `\section`. Isto foi feito apenas para que o nome da seção do exemplo não apareça no sumário do documento principal. De forma semelhante ao exposto no exemplo anterior, figuras também podem ser citadas utilizando-se os comandos `\label` e `\ref`. Veja o [Exemplo 2](#exe_cite2) a seguir.
 
-!!! exemple "<a id="exe_cite2"></a>Exemplo 2: Citação de uma figura"
+!!! example "<a id="exe_cite2"></a>Exemplo 2: Citação de uma figura"
 
     === "Código"
 
@@ -42,7 +42,7 @@ No [Exemplo 1](#exe_cite1), observe que foi utilizado `\section*` ao invés de `
 
 Tabelas também podem ser referenciadas da mesma forma como as figuras. Veja no [Exemplo 3](#exe_cite3) a seguir:
 
-!!! exemple "<a id="exe_cite3"></a>Exemplo 3: Citação de uma tabela"
+!!! example "<a id="exe_cite3"></a>Exemplo 3: Citação de uma tabela"
 
     === "Código"
 
@@ -71,7 +71,7 @@ Tabelas também podem ser referenciadas da mesma forma como as figuras. Veja no 
 
 Da mesma forma, equações também podem ser citadas ao longo do texto. Veja o [Exemplo 4](#exe_cite4) a seguir:
 
-!!! exemple "<a id="exe_cite4"></a>Exemplo 4: A Equação `\ref{eq:euler}` é denominada "Equação de Euler" e nela estão relacionados os números irracionais mais conhecidos: $e$ e $\pi$, além do número imaginário $i$"
+!!! example "<a id="exe_cite4"></a>Exemplo 4: A Equação `\ref{eq:euler}` é denominada "Equação de Euler" e nela estão relacionados os números irracionais mais conhecidos: $e$ e $\pi$, além do número imaginário $i$"
 
     === "Código"
 
@@ -88,7 +88,7 @@ Da mesma forma, equações também podem ser citadas ao longo do texto. Veja o [
 
 Páginas de um documento também podem ser referenciadas utilizando-se o comando `\pageref{nome}`. Neste caso, o *link* para a referência deverá ser um rótulo (um nome) adicionado à seção ou ambiente em que ocorre o elemento a ser citado (i.e., figura, tabela, equação ou a própria página), desde que ele possa ser numerado. Dessa forma, a página em que o elemento é citado será apresentada, ao invés da numeração do elemento. No [Exemplo 5](#exe_cite5) a seguir, foram adicionados dois rótulos (veja os comandos `\label` inseridos), um logo após o início do documento e o outro logo após a quebra de página (forçada pelo comando `\clearpage`):
 
-!!! exemple "<a id="exe_cite5"></a>Exemplo 5: Citação de uma página"
+!!! example "<a id="exe_cite5"></a>Exemplo 5: Citação de uma página"
 
     === "Código"
 
@@ -172,7 +172,7 @@ Observe que o arquivo de referências possui diversas palavras-chave, como por e
 
 A utilização das referências no texto deve ser feita com os seguintes comandos: `\cite{referencia}` ou `\citeonline{referencia}`. Veja o [Exemplo 6](#exe:ref2) a seguir:
 
-!!! exemple "<a id="exe:ref2"></a>Exemplo 6: Exemplos de citações utilizando os comandos `cite` e `citeonline`"
+!!! example "<a id="exe:ref2"></a>Exemplo 6: Exemplos de citações utilizando os comandos `cite` e `citeonline`"
 
     === "Código"
 

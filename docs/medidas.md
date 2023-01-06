@@ -45,7 +45,7 @@ Em documentos escritos na linguagem LaTeX, é possível especificar as medidas r
 
 No [Exemplo 1](#exe_meds1) é mostrado como definir a largura de uma figura com base na largura do texto, utilizando-se a *macro* `\textwidth`.
 
-!!! exemple "<a id="exe_meds1"></a>Exemplo 1: Largura relativa de uma figura com a *macro* `textwidth`"
+!!! example "<a id="exe_meds1"></a>Exemplo 1: Largura relativa de uma figura com a *macro* `textwidth`"
 
     === "Código"
 

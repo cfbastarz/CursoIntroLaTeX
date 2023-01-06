@@ -8,7 +8,7 @@ O LaTeX possui uma série de outros ambientes com os quais é possível apresent
 
 Dependendo do tipo de documento escrito e dos elementos textuais utilizados, como imagens e tabelas, pode-se fazer necessário alocar tais elementos em posições específicas dentro da página. Para isto, pode-se utilizar o ambiente `minipage`. Veja o [Exemplo 1](#exe:minipage) a seguir sobre a sua utilização.
 
-!!! exemple "<a id="exe:minipage"></a>Exemplo 1: Texto em um ambiente `minipage`"
+!!! example "<a id="exe:minipage"></a>Exemplo 1: Texto em um ambiente `minipage`"
 
     === "Código"
 
@@ -34,7 +34,7 @@ No [Exemplo 1](#exe:minipage), observe que foi inserido um parágrafo dentro do 
 
 Texto e outros elementos flutuantes do LaTeX podem ser inseridos no corpo do texto em colunas. Para isto, pode-se utilizar o pacote `multicol`, que fornece o ambiente `multicols`. Para iniciar uma seção de texto (e outros elementos) em 2 ou mais colunas, carregue primeiro o pacote `multicol` com o comando `\usepackage{multicol}`. Veja no [Exemplo 2](#exe:multicol) a seguir como inserir texto em duas colunas.
 
-!!! exemple "<a id="exe:multicol"></a>Exemplo 2: Texto em colunas com o ambiente `multicols`"
+!!! example "<a id="exe:multicol"></a>Exemplo 2: Texto em colunas com o ambiente `multicols`"
 
     === "Código"
 
@@ -52,7 +52,7 @@ Texto e outros elementos flutuantes do LaTeX podem ser inseridos no corpo do tex
 
 No [Exemplo 2](#exe:multicol), observe que o ambiente `multicols` possui um argumento, sendo este o valor que indicará o número de colunas a serem criadas. No ambiente `multicols`, pode-se iniciar uma seção com o texto preenchendo toda a largura da página e então inserir os parágrafos seguintes em colunas. Veja o [Exemplo 3](#exe:multicol1) a seguir.
 
-!!! exemple "<a id="exe:multicol1"></a>Exemplo 3: Texto em colunas com o ambiente `multicols` e início de seção diferente"
+!!! example "<a id="exe:multicol1"></a>Exemplo 3: Texto em colunas com o ambiente `multicols` e início de seção diferente"
 
     === "Código"
 
@@ -73,7 +73,7 @@ No [Exemplo 2](#exe:multicol), observe que o ambiente `multicols` possui um argu
 
 No ambiente `multicols`, é possível também ajustar o espaçamento entre as colunas, como mostrado no [Exemplo 4](#exe:multicol2). O espaçamento entre as colunas é ajustado com o comando `\setlength{\columnsep}{valor}`, onde `valor` é a medida a ser utilizada (e.g., `1cm`).
 
-!!! exemple "<a id="exe:multicol2"></a>Exemplo 4: Texto em colunas com o ambiente `multicols` e espaçamento diferente"
+!!! example "<a id="exe:multicol2"></a>Exemplo 4: Texto em colunas com o ambiente `multicols` e espaçamento diferente"
 
     === "Código"
 
@@ -100,7 +100,7 @@ No LaTeX a maioria das classes dos documentos é definida no modo retrato (i.e.,
 
 Para determinar páginas individuais no modo paisagem, é necessário carregar o pacote `lscape` no preâmbulo do documento. Para isto, basta inserir o comando `\usepackage{lscape}` nesta seção. Com o pacote carregado, para iniciar uma página no modo paisagem, basta utilizar o ambiente `landscape`. Veja o [Exemplo 5](#exe_paisagem) a seguir:
 
-!!! exemple "<a id="exe_paisagem"></a>Exemplo 5: Páginas nos modos retrato e paisagem"
+!!! example "<a id="exe_paisagem"></a>Exemplo 5: Páginas nos modos retrato e paisagem"
 
     === "Código"
 
@@ -150,7 +150,7 @@ Para determinar páginas individuais no modo paisagem, é necessário carregar o
 
 Muitas vezes, dependendo do tipo de documento que se está produzindo, faz-se necessária a inserção de códigos que representam um determinado processo. Um exemplo, é quando se quer mostrar um código escrito em alguma linguagem de programação. O `LaTeX` possui alguns pacotes que fornecem ambientes específicos para destacar o trecho de código inserido. O ambiente `verbatim` é o mais simples de ser utilizado, e pode ser aplicado para destacar algum tipo de texto. O ambiente `verbatim` possui a propriedade de "escapar" os comandos da linguagem LaTeX. Veja no [Exemplo 6](#exe_list1) a utilização do ambiente `verbatim`.
 
-!!! exemple "<a id="exe_list1"></a>Exemplo 6: Texto em colunas com o ambiente `multicols` e espaçamento diferente"
+!!! example "<a id="exe_list1"></a>Exemplo 6: Texto em colunas com o ambiente `multicols` e espaçamento diferente"
 
     === "Código"
 
@@ -168,7 +168,7 @@ Muitas vezes, dependendo do tipo de documento que se está produzindo, faz-se ne
 
 No [Exemplo 7](#exe_list2) abaixo, utiliza-se o mesmo ambiente do anterior, mas com a diferença de um "\*" no início do ambiente. Nesta forma, o ambiente `verbatim` realça os espaços entre as palavras.
 
-!!! exemple "<a id="exe_list2"></a>Exemplo 7: Exemplo de uso do ambiente `verbatim` para destacar texto"
+!!! example "<a id="exe_list2"></a>Exemplo 7: Exemplo de uso do ambiente `verbatim` para destacar texto"
 
     === "Código"
 
@@ -187,7 +187,7 @@ No [Exemplo 7](#exe_list2) abaixo, utiliza-se o mesmo ambiente do anterior, mas 
 
 O pacote `listings` é o mais simples de ser utilizado, mas aceita diferentes opções, que permitem realçar as palavras reservadas da linguagem, além de mostrar a numeração das linhas e criar uma caixa ao redor do código fonte mostrado. No [Exemplo 8](#exe_list3), é mostrado um *script* escrito em linguagem *Python* com algumas opções do pacote `listings`.
 
-!!! exemple "<a id="exe_list3"></a>Exemplo 8: Exemplo da apresentação de um *script* escrito em linguagem *Python* utilizando o pacote `listings`"
+!!! example "<a id="exe_list3"></a>Exemplo 8: Exemplo da apresentação de um *script* escrito em linguagem *Python* utilizando o pacote `listings`"
 
     === "Código"
 
@@ -228,7 +228,7 @@ O pacote `listings` é o mais simples de ser utilizado, mas aceita diferentes op
 
 Outro ambiente que pode ser usado para listar *scripts* e programas é o `minted`. Veja o [Exemplo 9](#exe_list4) a seguir:
 
-!!! exemple "<a id="exe_list4"></a>Exemplo 9: Exemplo da apresentação de um *script* escrito em linguagem Python utilizando o pacote `minted`"
+!!! example "<a id="exe_list4"></a>Exemplo 9: Exemplo da apresentação de um *script* escrito em linguagem Python utilizando o pacote `minted`"
 
     === "Código"
 
@@ -274,7 +274,7 @@ No [Exemplo 9](#exe_list4), foram utilizadas opções específicas para realçar
 
 Códigos e outros tipos de inserções podem também ser feitos em linha (*inline*), diretamente no texto com o pacote `minted`. Para isto, pode-se utilizar o comando `\mintinline{}{}` ou o comando `\verb`. Veja o [Exemplo 10](#exe_inline) a seguir:
 
-!!! exemple "<a id="exe_inline"></a>Exemplo 10: Inserção de código em linha com os comandos `mintinline` e `verb`"
+!!! example "<a id="exe_inline"></a>Exemplo 10: Inserção de código em linha com os comandos `mintinline` e `verb`"
 
     === "Código"
 

@@ -4,7 +4,7 @@
 
 Boa parte dos elementos de um texto podem ser posicionados à esquerda, ao centro, à direita ou de forma justificada (que é o padrão). O LaTeX possui marcadores especiais para estes posicionamentos, que podem ser utilizados não apenas nos parágrafos, mas também com figuras e tabelas. O [Exemplo 1](#exe_par5) mostra o posicionamento de um parágrafo ao centro.
 
-!!! exemple "<a id="exe_par5"></a>Exemplo 1: Parágrafos centralizados, utilizando o ambiente `center`"
+!!! example "<a id="exe_par5"></a>Exemplo 1: Parágrafos centralizados, utilizando o ambiente `center`"
 
     === "Código"
 
@@ -21,7 +21,7 @@ Boa parte dos elementos de um texto podem ser posicionados à esquerda, ao centr
 
 Ao invés de utilizar o ambiente `center`, é possível utilizar também o marcador `centering`. Veja como utilizá-lo no [Exemplo 2](#exe_par6), e compare com o resultado do [Exemplo 1](#exe_par5). 
 
-!!! exemple "<a id="exe_par6"></a>Exemplo 2: Parágrafos centralizados, utilizando o marcador `centering`"
+!!! example "<a id="exe_par6"></a>Exemplo 2: Parágrafos centralizados, utilizando o marcador `centering`"
 
     === "Código"
 
@@ -37,7 +37,7 @@ Ao invés de utilizar o ambiente `center`, é possível utilizar também o marca
 
 Para alinhar o parágrafo à esquerda, utiliza-se o ambiente `flushleft`. Veja o [Exemplo 3](#exe_par7) a seguir:
 
-!!! exemple "<a id="exe_par7"></a>Exemplo 3: Parágrafos alinhados à esquerda, utilizando o ambiente `flushleft`"
+!!! example "<a id="exe_par7"></a>Exemplo 3: Parágrafos alinhados à esquerda, utilizando o ambiente `flushleft`"
 
     === "Código"
 
@@ -54,7 +54,7 @@ Para alinhar o parágrafo à esquerda, utiliza-se o ambiente `flushleft`. Veja o
 
 Semelhante ao [Exemplo 3](#exe_par7), o alinhamento à direita, é feito com o ambiente `flushright`. Veja o Exemplo \ref{exe_par8} a seguir:
 
-!!! exemple "<a id="exe_par8"></a>Exemplo 4: Parágrafos alinhados à direita, utilizando o ambiente `flushright`"
+!!! example "<a id="exe_par8"></a>Exemplo 4: Parágrafos alinhados à direita, utilizando o ambiente `flushright`"
 
     === "Código"
 
@@ -77,7 +77,7 @@ No LaTeX, espaçamentos horizontais e verticais são dados pelos marcadores `\vs
 
 No [Exemplo 5](#exe_par9), mostra-se como aumentar a distância entre dois parágrafos em `1cm` com o marcador `vspace`:
 
-!!! exemple "<a id="exe_par9"></a>Exemplo 5: Espaçamento vertical, utilizando o comando `vspace`"
+!!! example "<a id="exe_par9"></a>Exemplo 5: Espaçamento vertical, utilizando o comando `vspace`"
 
     === "Código"
 
@@ -93,7 +93,7 @@ No [Exemplo 5](#exe_par9), mostra-se como aumentar a distância entre dois pará
 
 De forma semelhante, o [Exemplo 6](#exe_par10) mostra como aumentar o recuo do parágrafo em `2cm` com o marcador `hspace`:
 
-!!! exemple "<a id="exe_par10"></a>Exemplo 6: Espaçamento horizontal, utilizando o comando `hspace`"
+!!! example "<a id="exe_par10"></a>Exemplo 6: Espaçamento horizontal, utilizando o comando `hspace`"
 
     === "Código"
 

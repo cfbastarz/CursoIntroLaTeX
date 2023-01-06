@@ -6,7 +6,7 @@ A colaboração entre várias pessoas na escrita de um documento, pode mostrar-s
 
 O pacote `todonotes`, pode ser utilizado nesta tarefa. Com ele é possível inserir notas coloridas no documento de forma que se possa chamar a atenção para alguma parte do texto. Veja o [Exemplo 1](#todo1) a seguir com a sua utilização.
 
-!!! exemple "<a id="todo1"></a>Exemplo 1: Inserindo notas coloridas no texto com o pacote `todonotes`"
+!!! example "<a id="todo1"></a>Exemplo 1: Inserindo notas coloridas no texto com o pacote `todonotes`"
 
     === "Código"
 
@@ -54,7 +54,7 @@ No [Exemplo 1](#todo1), observe que, além dos pacotes `inputenc` e `xcolor-mate
 
 O pacote `todonotes` permite a criação alguns tipos diferentes de notas. Pode-se, por exemplo, inserir notas que ocupam toda a largura do texto ou mesmo notas que não aparecem no texto. Pode-se também inserir um sumário com as notas, o que pode ser especialmente útil quando muitas notas de diferentes tipos são adicionadas. Veja o [Exemplo 2](#todo2) a seguir com várias notas diferentes e um sumário de notas (este exemplo é baseado no exemplo encontrado [https://tex.stackexchange.com/questions/9796/how-to-add-todo-notes](https://tex.stackexchange.com/questions/9796/how-to-add-todo-notes)).
 
-!!! exemple "<a id="todo2"></a>Exemplo 2: Inserindo notas coloridas no texto com o pacote `todonotes`"
+!!! example "<a id="todo2"></a>Exemplo 2: Inserindo notas coloridas no texto com o pacote `todonotes`"
 
     === "Código"
 

@@ -4,7 +4,7 @@
 
 O modo matemático do LaTeX representa uma forma bastante conveniente de se inserir equações e símbolos matemáticos em um documento. Equações podem ser digitadas diretamente em parágrafos (em linha ou *inline*) utilizando uma dupla de `$$`'s (cifrões), `[] `'s (colchetes) ou `()`'s (parênteses) como delimitadores. Por exemplo, equação $ax^2 + bx + c = 0$ pode ser digitada como `$ax^2 + bx + c = 0$` no meio de uma frase ou parágrafo. Veja no [Exemplo 1](#exe_eq0) formas diferentes de digitar equações em linha.
 
-!!! exemple "<a id="exe_eq0"></a>Exemplo 1: Inserindo equações em linha (`inline`)"
+!!! example "<a id="exe_eq0"></a>Exemplo 1: Inserindo equações em linha (`inline`)"
 
     === "Código"
 
@@ -22,7 +22,7 @@ O modo matemático do LaTeX representa uma forma bastante conveniente de se inse
 
 No [Exemplo 1](#exe_eq0), observe que os delimitadores dados por colchetes ou parênteses precisam ser "escapados", i.e., é necessário adicionar uma `\` (barra invertida) antes deles (e.g., `\[` e `\]` ou `\(` e `\)`). Além disso, quando são utilizados os colchetes, as equações em linha são escritas em uma linha própria e centralizada com o texto. O resultado obtido com a digitação de equações em linha utilizando os delimitadores indicados, apresenta as equações dentro da definição de altura da linha do texto. Para fazer com que esta limitação seja contornada e dar mais espaço ao ambiente de equações em linha, utiliza-se um par de delimitadores duplos `$$`'s (dólar duplo). Veja o [Exemplo 2](#exe_eq00) a seguir:
 
-!!! exemple "<a id="exe_eq00"></a>Exemplo 2: Inserindo equações em linha (`inline`)"
+!!! example "<a id="exe_eq00"></a>Exemplo 2: Inserindo equações em linha (`inline`)"
 
     === "Código"
 
@@ -44,7 +44,7 @@ Equações podem ter aspectos muito variados. Podem ser longas, ocupando uma ou 
 
 Uma simples equação pode ser inserida utilizando-se o ambiente `equation`. No [Exemplo 3](#exe_eq1), observe a diferença entre os resultados obtidos com os ambientes `equation` e `equation*`.
 
-!!! exemple "<a id="exe_eq1"></a>Exemplo 3: Ambientes `equation` e `equation*`"
+!!! example "<a id="exe_eq1"></a>Exemplo 3: Ambientes `equation` e `equation*`"
 
     === "Código"
 
@@ -66,7 +66,7 @@ No [Exemplo 3](#exe_eq1), o ambiente `equation*` evita que as equações sejam n
 
 Equações podem ser alinhadas pelo sinal de "=" (ou qualquer outro sinal) dentro do ambiente `split`. Veja no [Exemplo 4](#exe_eq2) como aplicar o ambiente `split`: 
 
-!!! exemple "<a id="exe_eq2"></a>Exemplo 4: Ambientes `equation` e `split`"
+!!! example "<a id="exe_eq2"></a>Exemplo 4: Ambientes `equation` e `split`"
 
     === "Código"
 
@@ -94,7 +94,7 @@ No exemplo anterior, além do modo matemático puro, foram inseridos também mod
 
 No [Exemplo 5](#exe_eq3), o ambiente `multiline` é utilizado para inserir equações muito longas. Neste ambiente, pode-se escolher em que parte a equação deverá ser truncada utilizando-se um par de `\\`'s (barras invertidas):
 
-!!! exemple "<a id="exe_eq3"></a>Exemplo 5: Ambiente `multline`"
+!!! example "<a id="exe_eq3"></a>Exemplo 5: Ambiente `multline`"
 
     === "Código"
 
@@ -126,7 +126,7 @@ Nos Exemplos [4](#exe_eq2) e [5](#exe_eq3), observe que os ambientes `split` e `
 
 Para alinhar equações ou grupos de equações, pode-se utilizar o ambiente `align`. Veja os grupos de equações do [Exemplo 6](#exe_eq4):
 
-!!! exemple "<a id="exe_eq4"></a>Exemplo 6: Ambiente `align`"
+!!! example "<a id="exe_eq4"></a>Exemplo 6: Ambiente `align`"
 
     === "Código"
 
@@ -156,7 +156,7 @@ No [Exemplo 6](#exe_eq4), observe também que foi utilizado o marcador `Bigg` an
 
 Equações podem ser alinhadas utilizando-se o ambiente `gather`. Este alinhamento produz um resultado diferente daquele obtido com o ambiente `align`. Veja no [Exemplo 7](#exe_eq5) a seguir como utilizar o ambiente `gather`:
 
-!!! exemple "<a id="exe_eq5"></a>Exemplo 7: Ambiente `gather`"
+!!! example "<a id="exe_eq5"></a>Exemplo 7: Ambiente `gather`"
 
     === "Código"
 

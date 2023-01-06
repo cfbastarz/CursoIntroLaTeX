@@ -272,7 +272,7 @@ As seções a seguir são dedicadas aos detalhes referentes à inserção de con
 
 Na [Seção 2.12](../figuras/#212-figuras) da [Parte 2](.../intro_latex/#2-entendendo-o-latex) foram apresentadas diferentes formas de se incluir figuras em um documento LaTeX. Com a utilização do estilo do INPE, entretanto, alguns cuidados devem ser tomados, pois há detalhes que devem ser respeitados. Uma imagem típica com todos os seus elementos de referência é apresentada no [Exemplo 1](#figestinpe).
 
-!!! exemple "<a id="figestinpe"></a>Exemplo 1: Inserção de uma figura no estilo do INPE"
+!!! example "<a id="figestinpe"></a>Exemplo 1: Inserção de uma figura no estilo do INPE"
 
     === "Código"
 
@@ -298,7 +298,7 @@ No [Exemplo 2](#figestinpe), observe que espaçamentos especiais são aplicados 
 
 Tabelas também devem seguir a formatação estipulada pelo estilo do INPE. Veja o [Exemplo 2](#tabestinpe) a seguir.
 
-!!! exemple "<a id="tabestinpe"></a>Exemplo 2: Inserção de uma tabela no estilo do INPE"
+!!! example "<a id="tabestinpe"></a>Exemplo 2: Inserção de uma tabela no estilo do INPE"
 
     === "Código"
 

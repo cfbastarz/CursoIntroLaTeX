@@ -8,7 +8,7 @@ Em um documento LaTeX, é possível utilizar cores predefinidas ou definir cores
 
 Cores podem ser utilizadas de formas diferentes em um documento LaTeX. Mas assim como em qualquer editor de textos WYSIWYG, as cores do texto podem ser aplicadas em palavras individuais, frases ou parágrafos. Veja o [Exemplo 1](#exe_cor1) a seguir.
 
-!!! exemple "<a id="exe_cor1"></a>Exemplo 1: Texto com fonte colorida, paleta padrão"
+!!! example "<a id="exe_cor1"></a>Exemplo 1: Texto com fonte colorida, paleta padrão"
 
     === "Código"
 
@@ -22,7 +22,7 @@ Cores podem ser utilizadas de formas diferentes em um documento LaTeX. Mas assim
 
 Além de modificar a cor das fontes, é possível também marcá-las de forma que o fundo fique colorido, como mostrado no [Exemplo 2](#exe_cor3).
 
-!!! exemple "<a id="exe_cor3"></a>Exemplo 2: Texto com fundo colorido, paleta padrão"
+!!! example "<a id="exe_cor3"></a>Exemplo 2: Texto com fundo colorido, paleta padrão"
 
     === "Código"
 
@@ -40,7 +40,7 @@ Além de modificar a cor das fontes, é possível também marcá-las de forma qu
 
 Para utilizar as novas cores, basta utilizar um dos nomes definidos pela paleta, precedido por `solarized-nome-da-cor`. Veja o [Exemplo 3](#exe_corsol) a seguir.
 
-!!! exemple "<a id="exe_corsol"></a>Exemplo 3: Texto com fundo colorido, paleta *Solarized*"
+!!! example "<a id="exe_corsol"></a>Exemplo 3: Texto com fundo colorido, paleta *Solarized*"
 
     === "Código"
 
@@ -64,7 +64,7 @@ As cores básicas do pacote `xcolor-material` são as seguintes (além do branco
 
 Na paleta de cores mostrada acima, "d." foi utilizado para abreviar a palavra *deep* (como em *deep purple*) e "l." foi utilizada para abreviar a palavra *light* (como em *light green*). Para utilizar as cores do pacote `xcolor-material`, deve-se referenciar as cores da seguinte forma: a cor \textit{Deep Purple} deve ser referenciada como "MaterialDeepPurple", ou seja, a palavra reservada "Material" deve preceder o nome da cor, que por sua vez, deve ser indicada com a primeira letra em caixa alta. Veja no [Exemplo 4](#exe_cormaterial) como utilizar as cores deste pacote.
 
-!!! exemple "<a id="exe_cormaterial"></a>Exemplo 4: Texto com fundo colorido, paleta *Material Design*"
+!!! example "<a id="exe_cormaterial"></a>Exemplo 4: Texto com fundo colorido, paleta *Material Design*"
 
     === "Código"
 
@@ -82,7 +82,7 @@ Na paleta de cores mostrada acima, "d." foi utilizado para abreviar a palavra *d
 
 Além da utilização de paletas de cores pré-definidas, é possível também definir qualquer cor utilizando códigos *Hypertext Markup Language* (HTML), *Red Green Blue* (RGB) ou *Cyan Magenta Yellow Black* (CMYK) utilizando o comando `\definecolor`. Veja no [Exemplo 5](#exe_cor4) como definir cores personalizadas.
 
-!!! exemple "<a id="exe_cor4"></a>Exemplo 5: Definindo cores personalizadas"
+!!! example "<a id="exe_cor4"></a>Exemplo 5: Definindo cores personalizadas"
 
     === "Código"
 

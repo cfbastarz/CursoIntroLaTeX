@@ -24,7 +24,7 @@ O compilador `pdflatex` é o compilador mais popular. Apesar disso, ele não sup
 
 [^2]: Um formato de fontes escalável, tal como uma imagem vetorial.
 
-!!! exemple "<a id="exe_doc"></a>Exemplo 1: Um documento LaTeX mínimo"
+!!! example "<a id="exe_doc"></a>Exemplo 1: Um documento LaTeX mínimo"
 
     === "Código"
 

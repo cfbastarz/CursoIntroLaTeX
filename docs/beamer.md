@@ -6,7 +6,7 @@ O *Beamer* é o pacote padrão do LaTeX para a produção de apresentações no 
 
 Um documento do *Beamer* é tão simples quanto um documento do LaTeX. O `beamer` é uma classe de documentos, essim como o `article`, `report`, `book` etc. Para criar um documento *Beamer*, basta utilizar esta classe. Veja no [Exemplo 1](#exe:beamer1) a seguir, um exemplo mínimo.
 
-!!! exemple "<a id="exe:beamer1"></a>Exemplo 1: Um documento *Beamer* mínimo"
+!!! example "<a id="exe:beamer1"></a>Exemplo 1: Um documento *Beamer* mínimo"
 
     === "Código"
 
@@ -90,7 +90,7 @@ Para cada um dos temas apresentados no [Exemplo 2](#exe:beamer2_tema), é possí
 
 No [Exemplo 2](#exe:beamer2_tema) é mostrado o tema ``AnnArbor'' com o esquema de cores ``beaver''. Observe que este exemplo possui o mesmo código do [Exemplo 1](#exe:beamer1), com a diferença de que foram adicionados os comandos `usetheme` e `usecolortheme`.
 
-!!! exemple "<a id="exe:beamer2_tema"></a>Exemplo 2: Um documento *Beamer* mínimo com o tema `AnnArbor` e o esquema de cores `beaver`"
+!!! example "<a id="exe:beamer2_tema"></a>Exemplo 2: Um documento *Beamer* mínimo com o tema `AnnArbor` e o esquema de cores `beaver`"
 
     === "Código"
 
@@ -135,7 +135,7 @@ Além da escolha do tema e do esquema de cores, é possível também alterar as 
 
 Em um *frame* do *Beamer*, podem ser inseridas listas, tabelas, imagens, equações e outros ambientes que já foram mostrados na [Parte 2](../intro_latex/#2-entendendo-o-latex). Além destes ambientes, o *Beamer* suporta também ambientes especiais que podem ser utilizados para destacar as informações inseridas. Um destes ambientes especiais, é o ambiente `block`. Veja no [Exemplo 3](#exe:beamer_block) a seguir como inserí-lo em um *frame* do *Beamer*:
 
-!!! exemple "<a id="exe:beamer_block"></a>Exemplo 3: Ambiente `block` em um *frame* do *Beamer*"
+!!! example "<a id="exe:beamer_block"></a>Exemplo 3: Ambiente `block` em um *frame* do *Beamer*"
 
     === "Código"
 
@@ -168,7 +168,7 @@ Em um *frame* do *Beamer*, podem ser inseridas listas, tabelas, imagens, equaç�
 
 Além do ambiente `block`, há também os ambientes `exampleblock` e `alertblock`. Cada um deles pode ser utilizado em situações distintas, dando importância ou chamando a atenção para determinadas partes da apresentação. Veja no [Exemplo 4](#exe:beamer_blocks) a seguir, um exemplo do uso destes ambientes.
 
-!!! exemple "<a id="exe:beamer_blocks"></a>Exemplo 4: Ambiente `block` em um *frame* do *Beamer*"
+!!! example "<a id="exe:beamer_blocks"></a>Exemplo 4: Ambiente `block` em um *frame* do *Beamer*"
 
     === "Código"
 
@@ -209,7 +209,7 @@ Além do ambiente `block`, há também os ambientes `exampleblock` e `alertblock
 
 Como em toda apresentação, é comum o primeiro *frame* ou *slide* possuir informações como título (`\title{}`), subtítulo (`\subtitle{}`), autor (`\author{}`), afiliação (`\institute{}`), data (`\date{}`), local e, eventualmente, alguma figura com o logo do evento ou da instituição (`\titlegraphic{}`). O [Exemplo 5](#exe:beamer_capa1) mostra o uso destas macros para incluir as informações mais comuns na capa de uma apresentação confeccionada com o *Beamer*. 
 
-!!! exemple "<a id="exe:beamer_capa1"></a>Exemplo 5: Informações da Capa em uma apresentação do *Beamer*"
+!!! example "<a id="exe:beamer_capa1"></a>Exemplo 5: Informações da Capa em uma apresentação do *Beamer*"
 
     === "Código"
 
@@ -246,7 +246,7 @@ Assim como em documentos LaTeX, as apresentações escritas com a classe *Beamer
 
 [^1]: Quando o sumário é adicionado ao documento *Beamer*, pode ser necessário compilar o documento mais de uma vez.
 
-!!! exemple "<a id="exe:beamer_sumario1"></a>Exemplo 6: Sumário em um documento *Beamer*"
+!!! example "<a id="exe:beamer_sumario1"></a>Exemplo 6: Sumário em um documento *Beamer*"
 
     === "Código"
 
@@ -286,7 +286,7 @@ Assim como em documentos LaTeX, as apresentações escritas com a classe *Beamer
 
 Dependendo da forma como a apresentação é organizada, e dependendo também do tema escolhido, pode ser conveniente alterar a aparência ou o comportamento do sumário. Isto significa que é possível omitir alguns elementos (e.g., subseções) do sumário ou mesmo fazer com que ele se repita toda vez que uma nova seção da apresentação é iniciada. Veja no [Exemplo 7](#exe:beamer_sumario2) como omitir as subseções do sumário, utilizando uma opção `hideallsubsections` da *macro* `\tableofcontents`.
 
-!!! exemple "<a id="exe:beamer_sumario2"></a>Exemplo 7: Sumário em um documento *Beamer*, omitindo as subseções"
+!!! example "<a id="exe:beamer_sumario2"></a>Exemplo 7: Sumário em um documento *Beamer*, omitindo as subseções"
 
     === "Código"
 
@@ -326,7 +326,7 @@ Dependendo da forma como a apresentação é organizada, e dependendo também do
 
 Para alterar o comportamento do sumário em um documento *Beamer*, de forma que ele apareça sempre que uma nova seção for iniciada, pode-se incluir um novo *frame* logo após o início da seção, incluindo a *macro* `\tableofcontents` com a opção `currentsection` e/ou a opção `currentsubsection`. Veja no [Exemplo 8](#exe:beamer_sumario3) a seguir:
 
-!!! exemple "<a id="exe:beamer_sumario3"></a>Exemplo 8: Alterando o comportamento do sumário em um documento *Beamer*"
+!!! example "<a id="exe:beamer_sumario3"></a>Exemplo 8: Alterando o comportamento do sumário em um documento *Beamer*"
 
     === "Código"
 
@@ -392,7 +392,7 @@ Para desabilitar a barra de navegação, basta utilizar um dos comandos a seguir
 
 Veja no [Exemplo 9](#exe:navbar) a seguir o efeito do uso de um destes comandos:
 
-!!! exemple "<a id="exe:navbar"></a>Exemplo 9: Desabilitando a barra de navegação do *Beamer*"
+!!! example "<a id="exe:navbar"></a>Exemplo 9: Desabilitando a barra de navegação do *Beamer*"
 
     === "Código"
 
@@ -431,7 +431,7 @@ Veja no [Exemplo 9](#exe:navbar) a seguir o efeito do uso de um destes comandos:
 
 Efeitos de transição e animações também podem ser utilizadas em um documento *Beamer*. Entretanto, observe que, diferentemente do *Microsoft PowerPoint*, estes efeitos e animações são como as animações feitas em *flipboards*, i.e., animações quadro-a-quadro. Isso significa que vários *frames* (ou *slides*) são produzidos até que a animação ou o efeito final seja alcançado. Veja no [Exemplo 10](#exe:beamer3) como os itens de uma lista são apresentados de forma que apenas o item atual esteja realçado. Este efeito é muito comum e recebe o nome de pausa e ele é obtido a partir do comando `\pause`.
 
-!!! exemple "<a id="exe:beamer3"></a>Exemplo 10: Adicionando pausas no *Beamer* com o comando `pause`"
+!!! example "<a id="exe:beamer3"></a>Exemplo 10: Adicionando pausas no *Beamer* com o comando `pause`"
 
     === "Código"
 
@@ -470,7 +470,7 @@ Efeitos de transição e animações também podem ser utilizadas em um document
 
 Observe no [Exemplo 10](#exe:beamer3) que os itens da lista são adicionados um após o outro de forma sequencial. Este comportamento pode ser alterado de forma que a ordem em que os itens aparecem possa ser controlada. Compare o [Exemplo 10](#exe:beamer3) com o [Exemplo 11](#exe:beamer4) a seguir:
 
-!!! exemple "<a id="exe:beamer4"></a>Exemplo 11: Controlando itens em uma lista no *Beamer*"
+!!! example "<a id="exe:beamer4"></a>Exemplo 11: Controlando itens em uma lista no *Beamer*"
 
     === "Código"
 
@@ -520,7 +520,7 @@ No [Exemplo 11](#exe:beamer4), não foi utilizado o comando `\pause` e, ao invé
 
 Outra *macro* do *Beamer* que permite controlar as ações dos efeitos de pausa e transição, é o `\onslide`. Este comando permite indicar em qual *slide* um determinado item deverá ocorrer. Veja no [Exemplo 12](#exe:beamer_onslide) o seu funcionamento. No exemplo, observe que a capa da apresentação foi suprimida com a exclusão da *maxcro* `maketitle`, Além disso, note quando os itens e elementos permanecem ou não nos *frames* produzidos.
 
-!!! exemple "<a id="exe:beamer_onslide"></a>Exemplo 12: Controlando itens em uma lista no *Beamer* com o comando `onslide`"
+!!! example "<a id="exe:beamer_onslide"></a>Exemplo 12: Controlando itens em uma lista no *Beamer* com o comando `onslide`"
 
     === "Código"
 
