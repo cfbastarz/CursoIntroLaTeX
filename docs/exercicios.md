@@ -16,7 +16,7 @@ Os exercícios desta seção utilizam as marcações de texto mais comuns aprese
 
         ![ex1](./figs/ex1.png)
 
-    === "Resposta"
+    === "Código"
 
         ```Latex linenums="1"
         A \textbf{famosa} \underline{Kelly} comeu \textit{pão infestado}
@@ -31,7 +31,7 @@ Os exercícios desta seção utilizam as marcações de texto mais comuns aprese
         ![ex2](./figs/ex2.png)
 
 
-    === "Resposta"
+    === "Código"
 
         ```Latex linenums="1"
         A \color{blue}{famosa} \color{green}{Kelly} comeu 
@@ -46,7 +46,7 @@ Os exercícios desta seção utilizam as marcações de texto mais comuns aprese
 
         ![ex3](./figs/ex3.png)
 
-    === "Resposta"
+    === "Código"
 
         ```Latex linenums="1"
         A \colorbox{blue}{\color{white}{famosa}} \colorbox{green}{Kelly}
@@ -67,7 +67,7 @@ Nos exercícios a seguir, utilize os exemplos mostrados na [Seção 2.11](../lis
 
         ![ex4](./figs/ex4.png)
 
-    === "Resposta"
+    === "Código"
 
         ```Latex linenums="1"
         \begin{itemize}
@@ -92,7 +92,7 @@ Nos exercícios a seguir, utilize os exemplos mostrados na [Seção 2.11](../lis
 
         ![ex5](./figs/ex5.png)
 
-    === "Resposta"
+    === "Código"
 
         ```Latex linenums="1"
         \begin{enumerate}
@@ -108,7 +108,7 @@ Nos exercícios a seguir, utilize os exemplos mostrados na [Seção 2.11](../lis
 
         ![ex6](./figs/ex6.png)
 
-    === "Resposta"
+    === "Código"
 
         ```Latex linenums="1"
         \begin{enumerate}
@@ -134,7 +134,7 @@ Nos exercícios a seguir, utilize os exemplos mostrados na [Seção 2.11](../lis
 
         ![ex7](./figs/ex7.png)    
 
-    === "Resposta"
+    === "Código"
 
         ```Latex linenums="1"
         \renewcommand{\labelenumi}{\arabic{enumi}}
@@ -178,7 +178,7 @@ Nos exercícios a seguir, utilize os exemplos apresentados na [Seção 2.14](../
 
         ![ex8](./figs/ex8.png)
 
-    === "Resposta"
+    === "Código"
 
         ```Latex linenums="1"
         \begin{tabular}{c c}
@@ -200,7 +200,7 @@ Nos exercícios a seguir, utilize os exemplos apresentados na [Seção 2.14](../
 
         ![ex9](./figs/ex9.png)
 
-    === "Resposta"
+    === "Código"
 
         ```Latex linenums="1"
         \begin{tabular}{|p{3cm}|p{3cm}|p{3cm}|p{3cm}|}
@@ -226,7 +226,7 @@ Nos exercícios a seguir, utilize os exemplos apresentados na [Seção 2.14](../
 
         ![ex10](./figs/ex10.png)
 
-    === "Resposta"
+    === "Código"
 
         ```Latex linenums="1"
         \begin{tabular}{|l|c|r|}
@@ -243,7 +243,7 @@ Nos exercícios a seguir, utilize os exemplos apresentados na [Seção 2.14](../
 
         ![ex11](./figs/ex11.png)
 
-    === "Resposta"
+    === "Código"
 
         ```Latex linenums="1"
         \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}|l|c|r|}
@@ -260,7 +260,7 @@ Nos exercícios a seguir, utilize os exemplos apresentados na [Seção 2.14](../
 
         ![ex12](./figs/ex12.png)
 
-    === "Resposta"
+    === "Código"
 
         ```Latex linenums="1"
         \begin{tabular}[t]{lcc}
@@ -284,7 +284,7 @@ Nos seguintes exercícios, utilize os exemplos apresentados na [Seção 2.13](..
 
         ![ex13](./figs/ex13.png)
 
-    === "Resposta"
+    === "Código"
 
         ```Latex linenums="1"
         \begin{equation*}
@@ -303,7 +303,7 @@ Nos seguintes exercícios, utilize os exemplos apresentados na [Seção 2.13](..
 
         ![ex14](./figs/ex14.png)
 
-    === "Resposta"
+    === "Código"
 
         ```Latex linenums="1"
         \begin{equation*}
@@ -322,7 +322,7 @@ Nos seguintes exercícios, utilize os exemplos apresentados na [Seção 2.13](..
 
         ![ex15](./figs/ex15.png)
 
-    === "Resposta"
+    === "Código"
 
         ```Latex linenums="1"
         \begin{equation*}
@@ -341,7 +341,7 @@ Nos seguintes exercícios, utilize os exemplos apresentados na [Seção 2.13](..
 
         ![ex16](./figs/ex16.png)
 
-    === "Resposta"
+    === "Código"
 
         ```Latex linenums="1"
         \begin{equation*}
@@ -360,7 +360,7 @@ Nos seguintes exercícios, utilize os exemplos apresentados na [Seção 2.13](..
 
         ![ex17](./figs/ex17.png)
 
-    === "Resposta"
+    === "Código"
 
         ```Latex linenums="1"
         \begin{equation*}
@@ -379,7 +379,7 @@ Nos seguintes exercícios, utilize os exemplos apresentados na [Seção 2.13](..
 
         ![ex18](./figs/ex18.png)
 
-    === "Resposta"
+    === "Código"
 
         ```Latex linenums="1"
         \begin{equation*}
@@ -398,7 +398,7 @@ Nos seguintes exercícios, utilize os exemplos apresentados na [Seção 2.13](..
 
         ![ex19](./figs/ex19.png)
 
-    === "Resposta"
+    === "Código"
 
         ```Latex linenums="1"
         \begin{equation*}
@@ -412,7 +412,7 @@ Nos seguintes exercícios, utilize os exemplos apresentados na [Seção 2.13](..
 
         ![ex20](./figs/ex20.png)
 
-    === "Resposta"
+    === "Código"
 
         ```Latex linenums="1"
         \begin{equation*}
@@ -426,7 +426,7 @@ Nos seguintes exercícios, utilize os exemplos apresentados na [Seção 2.13](..
 
         ![ex21](./figs/ex21.png)
 
-    === "Resposta"
+    === "Código"
 
         ```Latex linenums="1"
         \begin{equation*}
@@ -440,7 +440,7 @@ Nos seguintes exercícios, utilize os exemplos apresentados na [Seção 2.13](..
 
         ![ex22](./figs/ex22.png)
 
-    === "Resposta"
+    === "Código"
 
         ```Latex linenums="1"
         \begin{equation*}
@@ -456,7 +456,7 @@ Nos seguintes exercícios, utilize os exemplos apresentados na [Seção 2.13](..
 
         ![ex23](./figs/ex23.png)
 
-    === "Resposta"
+    === "Código"
 
         ```Latex linenums="1"
         \begin{equation*}
@@ -470,7 +470,7 @@ Nos seguintes exercícios, utilize os exemplos apresentados na [Seção 2.13](..
 
         ![ex24](./figs/ex24.png)
 
-    === "Resposta"
+    === "Código"
 
         ```Latex linenums="1"
         \begin{equation*}
@@ -486,7 +486,7 @@ Nos seguintes exercícios, utilize os exemplos apresentados na [Seção 2.13](..
 
         ![ex25](./figs/ex25.png)
 
-    === "Resposta"
+    === "Código"
 
         ```Latex linenums="1"
         \begin{equation*}
@@ -501,7 +501,7 @@ Nos seguintes exercícios, utilize os exemplos apresentados na [Seção 2.13](..
 
         ![ex26](./figs/ex26.png)
 
-    === "Resposta"
+    === "Código"
 
         ```Latex linenums="1"
         \begin{equation*}
@@ -516,7 +516,7 @@ Nos seguintes exercícios, utilize os exemplos apresentados na [Seção 2.13](..
 
         ![ex27](./figs/ex27.png)    
 
-    === "Resposta"
+    === "Código"
 
         ```Latex linenums="1"
         \begin{equation*}
@@ -531,7 +531,7 @@ Nos seguintes exercícios, utilize os exemplos apresentados na [Seção 2.13](..
 
         ![ex28](./figs/ex28.png)
 
-    === "Resposta"
+    === "Código"
 
         ```Latex linenums="1"
         \begin{equation*}
@@ -546,7 +546,7 @@ Nos seguintes exercícios, utilize os exemplos apresentados na [Seção 2.13](..
 
         ![ex29](./figs/ex29.png)
 
-    === "Resposta"
+    === "Código"
 
         ```Latex linenums="1"
         \begin{equation*}
@@ -561,7 +561,7 @@ Nos seguintes exercícios, utilize os exemplos apresentados na [Seção 2.13](..
 
         ![ex30](./figs/ex30.png)
 
-    === "Resposta"
+    === "Código"
 
         ```Latex linenums="1"
         \begin{equation*}
@@ -576,7 +576,7 @@ Nos seguintes exercícios, utilize os exemplos apresentados na [Seção 2.13](..
 
         ![ex31](./figs/ex31.png)
 
-    === "Resposta"
+    === "Código"
 
         ```Latex linenums="1"
         \begin{equation*}
@@ -590,7 +590,7 @@ Nos seguintes exercícios, utilize os exemplos apresentados na [Seção 2.13](..
 
         ![ex32](./figs/ex32.png)
 
-    === "Resposta"
+    === "Código"
 
         ```Latex linenums="1"
         \begin{equation*}
@@ -604,7 +604,7 @@ Nos seguintes exercícios, utilize os exemplos apresentados na [Seção 2.13](..
 
         ![ex33](./figs/ex33.png)
 
-    === "Resposta"
+    === "Código"
 
         ```Latex linenums="1"
         \begin{equation*}
@@ -619,7 +619,7 @@ Nos seguintes exercícios, utilize os exemplos apresentados na [Seção 2.13](..
 
         ![ex34](./figs/ex34.png)
 
-    === "Resposta"
+    === "Código"
 
         ```Latex linenums="1"
         \begin{equation*}
@@ -634,7 +634,7 @@ Nos seguintes exercícios, utilize os exemplos apresentados na [Seção 2.13](..
 
         ![ex35](./figs/ex35.png)
 
-    === "Resposta"  
+    === "Código"  
 
         ```Latex linenums="1"
         \begin{equation*}
@@ -656,7 +656,7 @@ Nos seguintes exercícios, utilize os exemplos apresentados na [Seção 2.13](..
 
         ![ex36](./figs/ex36.png)
 
-    === "Resposta"
+    === "Código"
 
         ```Latex linenums="1"
         \begin{equation*}
