@@ -48,7 +48,7 @@ Entretando, ao invés de utilizar a sequência de comandos acima, pode-se utiliz
     pdflatex arquivo.tex
     ```
 
-Outros compiladores, como o $\XeLaTeX{}$ escrevem o arquivo PDF de forma direta, bastando, para isso, utilizar o seguinte comando:
+Outros compiladores, como o XeLaTeX escrevem o arquivo PDF de forma direta, bastando, para isso, utilizar o seguinte comando:
 
 === "Comando"
 
