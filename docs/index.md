@@ -4,7 +4,7 @@ Este material apresenta a linguagem de marcação LaTeX para a confecção de te
 
 !!! note "Nota"
 
-	O conteúdo deste site foi escrito em linguagem Mardkdow. Em comparação com o texto da apostila, algumas diferenças podem ser encontradas na sua representação.
+	O conteúdo deste site foi escrito em linguagem Markdown. Em comparação com o texto da apostila, algumas diferenças podem ser encontradas na sua representação.
 
 |[Apostila do Curso de Introdução ao LaTeX :fontawesome-solid-book:](https://github.com/cfbastarz/CursoIntroLaTeX/blob/2a42d0891beb81e6ddfcb1c859724cd49388c350/apostila/publicacao.pdf){ .md-button }|[Site da Biblioteca do INPE :fontawesome-solid-link:](https://www.gov.br/inpe/pt-br/area-conhecimento/biblioteca/editoracao/templates){ .md-button }|
 |:---:|:---:|

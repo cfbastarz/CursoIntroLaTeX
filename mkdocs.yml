@@ -42,8 +42,6 @@ theme:
 
 extra:
     social:
-      - icon: fontawesome/brands/youtube
-        link: https://www.youtube.com/channel/UCYl-EgRTESHnSLlpKUxWrrg
       - icon: fontawesome/brands/github
         link: https://github.com/cfbastarz
       - icon: fontawesome/solid/paper-plane
