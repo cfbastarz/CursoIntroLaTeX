@@ -15,7 +15,7 @@ Nas versões mais recentes do LaTeX, é possível digitar palavras latinas acent
 
 !!! note "Nota"
 
-    No estilo do INPE, os pacotes relacionados acima são pré-carregados. Porém, se o usuário utilizar os compiladores XeLaTeX ou LuaTeX, o usuário encontrará erros enquanto o pacote `inputenc` estiver carregado. Veja mais informações na [Seção ](#orientacoes-especiais) da [Parte 3](../estilo_inpe/#3-estilo-do-inpe).
+    No estilo do INPE, os pacotes relacionados acima são pré-carregados. Porém, se o usuário utilizar os compiladores XeLaTeX ou LuaTeX, o usuário encontrará erros enquanto o pacote `inputenc` estiver carregado. Veja mais informações na [Seção 3.8](../estilo_inpe/#38-orientacoes-especiais) da [Parte 3](../estilo_inpe/#3-estilo-do-inpe).
 
 Entretanto, em algumas situações é necessário marcar os acentos de forma explícita (e.g., na edição de um arquivo de referências do BibTeX, cujo formato é apresentado na [Seção 2.17](../citacoes_referencias/#217-citacoes-e-referencias).
 
