@@ -1,4 +1,4 @@
-# Curso de Introdução à Linguagem LaTeX
+# Curso de Introdução ao LaTeX
 
 Este material apresenta a linguagem de marcação LaTeX para a confecção de textos científicos, tendo como foco o estilo de publicações do INPE. São apresentados os aspectos históricos de formulação da linguagem e as motivações para a sua introdução no ambiente acadêmico. O objetivo principal do uso da linguagem é permitir que o usuário concentre-se na escrita do texto, no desenvolvimento das suas ideias sem ter que se preocupar com a determinação e o posicionamento dos diversos elementos estruturais de um documento. Não se trata, porém, de um curso de escrita científica, mas sim de um manual objetivo para a aplicação da linguagem de marcação LaTeX utilizando, especialmente, o estilo de publicações do INPE. Ao consultar o conteúdo deste material, o usuário encontrará uma série de de exemplos e exercícios que o auxiliarão a aplicar a linguagem na elaboração e desenvolvimento dos seus trabalhos acadêmicos e científicos.
 
