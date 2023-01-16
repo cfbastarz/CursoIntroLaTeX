@@ -12,6 +12,6 @@ Utilize os links a seguir para acessar a aportila do curso, os estilos para tese
 |:---:|:---:|
 |[Estilo de Teses e Dissertações do INPE........:fontawesome-solid-file-zipper:](http://mtc-m21d.sid.inpe.br/zip/8JMKD3MGP3W34T/47HLFT8){ .md-button }|[Estilo Beamer do INPE.........................:fontawesome-solid-file-zipper:](https://github.com/cfbastarz/EstiloBeamerINPE){ .md-button }|
 
-!!! note "Nota"
+!!! warning "Aviso"
 
 	O conteúdo deste site foi escrito em linguagem Markdown. Em comparação com o texto da apostila, algumas diferenças podem ser encontradas na sua representação.
