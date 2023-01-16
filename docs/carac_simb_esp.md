@@ -33,7 +33,9 @@ Na primeira forma, basta utilizar a `$\backslash$` (barra invertida). Na segunda
 
     === "Resultado"
 
-        ![](./figs/ex_2.2-1.png)
+        <figure markdown>
+          ![](./figs/ex_2.2-1.png){ width="15" }
+        </figure>
 
 Outro caractere especial, são as `'` (aspas). No LaTeX, aspas simples são marcadas como `'`, enquanto que aspas duplas são marcadas como `""`. Portanto, palavras e expressões grafadas entre aspas simples ou duplas, devem aparecer como `aspas simples` e "aspas duplas", ao invés de 'aspas simples' ou "aspas duplas"  (como acontece quando se utiliza o acento trema " do teclado).
 

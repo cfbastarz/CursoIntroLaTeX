@@ -17,7 +17,9 @@ Figuras, tabelas, equações, partes (i.e., capítulos, seções, subseções, e
 
     === "Resultado"
 
-        ![](./figs/ex_2.17-1.png)
+        <figure markdown>
+        ![](./figs/ex_2.17-1.png){ width="500" }
+        </figure>
 
 No [Exemplo 1](#exe_cite1), observe que foi utilizado `\section*` ao invés de `\section`. Isto foi feito apenas para que o nome da seção do exemplo não apareça no sumário do documento principal. De forma semelhante ao exposto no exemplo anterior, figuras também podem ser citadas utilizando-se os comandos `\label` e `\ref`. Veja o [Exemplo 2](#exe_cite2) a seguir.
 
@@ -38,7 +40,9 @@ No [Exemplo 1](#exe_cite1), observe que foi utilizado `\section*` ao invés de `
 
     === "Resultado"
 
-        ![](./figs/ex_2.17-2.png)
+        <figure markdown>
+        ![](./figs/ex_2.17-2.png){ width="500" }
+        </figure>
 
 Tabelas também podem ser referenciadas da mesma forma como as figuras. Veja no [Exemplo 3](#exe_cite3) a seguir:
 
@@ -67,7 +71,9 @@ Tabelas também podem ser referenciadas da mesma forma como as figuras. Veja no 
 
     === "Resultado"
 
-        ![](./figs/ex_2.17-3.png)
+        <figure markdown>
+        ![](./figs/ex_2.17-3.png){ width="500" }
+        </figure>
 
 Da mesma forma, equações também podem ser citadas ao longo do texto. Veja o [Exemplo 4](#exe_cite4) a seguir:
 
@@ -84,7 +90,9 @@ Da mesma forma, equações também podem ser citadas ao longo do texto. Veja o [
 
     === "Resultado"
 
-        ![](./figs/ex_2.17-4.png)
+        <figure markdown>
+        ![](./figs/ex_2.17-4.png){ width="500" }
+        </figure>
 
 Páginas de um documento também podem ser referenciadas utilizando-se o comando `\pageref{nome}`. Neste caso, o *link* para a referência deverá ser um rótulo (um nome) adicionado à seção ou ambiente em que ocorre o elemento a ser citado (i.e., figura, tabela, equação ou a própria página), desde que ele possa ser numerado. Dessa forma, a página em que o elemento é citado será apresentada, ao invés da numeração do elemento. No [Exemplo 5](#exe_cite5) a seguir, foram adicionados dois rótulos (veja os comandos `\label` inseridos), um logo após o início do documento e o outro logo após a quebra de página (forçada pelo comando `\clearpage`):
 
@@ -123,7 +131,9 @@ Páginas de um documento também podem ser referenciadas utilizando-se o comando
 
     === "Resultado"
 
-        ![](./figs/ex_2.17-5.png)
+        <figure markdown>
+        ![](./figs/ex_2.17-5.png){ width="500" }
+        </figure>
 
 !!! note "Nota"
 
@@ -139,9 +149,10 @@ A maioria das revistas científicas indexadas fornecem ferramentas para a export
 
 <a id="fig:exemplo_revista_ams_citacao"></a>
 
-![Download do arquivo de referência no formato BibTeX a partir da revista *Monthly Weather Review* da *American Meteorological Society*. \label{fig:exemplo_revista_ams_citacao}](./figs/exemplo_revista_ams_citacao.png)
-
-**Figura 1:** *Site* da revista *Monthly Weather Review*.
+<figure markdown>
+![Download do arquivo de referência no formato BibTeX a partir da revista *Monthly Weather Review* da *American Meteorological Society*. \label{fig:exemplo_revista_ams_citacao}](./figs/exemplo_revista_ams_citacao.png){ width="650" }
+<figcaption>Figura 1: Site da revista Monthly Weather Review.</figcaption>
+</figure>
 
 No exemplo da [Figura 1](#fig:exemplo_revista_ams_citacao), o conteúdo do arquivo com a referência é mostrado a seguir:
 
@@ -184,7 +195,9 @@ A utilização das referências no texto deve ser feita com os seguintes comando
 
     === "Resultado"
 
-        ![](./figs/ex_2.17-6.png)
+        <figure markdown>
+        ![](./figs/ex_2.17-6.png){ width="500" }
+        </figure>
 
 !!! tip "Dica"
 
@@ -198,25 +211,28 @@ No *BibDesk*, clique no menu "Arquivo > Abrir..." e selecione o arquivo `.bib` c
 
 <a id="fig:exe_bibdesk"></a>
 
-![Base de dados de referências carregada no *software BibDesk*.](./figs/bibdesk-crop.png)
-
-**Figura 2:** *Software BibDesk*.
+<figure markdown>
+![Base de dados de referências carregada no *software BibDesk*.](./figs/bibdesk-crop.png){ width="650" }
+<figcaption>Figura 2: Software BibDesk.</figcaption>
+</figure>
 
 Com o *software* *Mendeley*, também é possível importar um arquivo de referências `.bib`, a partir do qual é possível inserir e editar entradas existentes ou então remover as entradas que não são mais necessárias. Veja a [Figura 3](#fig:exe_mendeley) a seguir.
 
 <a id="fig:exe_mendeley"></a>
 
-![Base de dados de referências carregada no *software Mendeley*.](./figs/mendeley.png)
-
-**Figura 3:** *Software Mendeley*.
+<figure markdown>
+![Base de dados de referências carregada no *software Mendeley*.](./figs/mendeley.png){width="650"}
+<figcaption>Figura 3: Software Mendeley.</figcaption>
+</figure>
 
 Análogo aos *softwares* *BibDesk* e *Mendeley*, pode-se também utilizar o *software* *Zotero* para a mesma finalidade ([Figura 4](#fig:exe_zotero)). Note que com excessão do *software* *BibDesk*, os *softwares* *Mendeley* e *Zotero* estão disponíveis para os sistemas operacionais Linux e \textit{Microsoft Windows}.
 
 <a id="fig:exe_zotero"></a>
 
-![Base de dados de referências carregada no *software Zotero*.](./figs/zotero.png)
-
-**Figura 4:** *Software Zotero*.
+<figure markdown>
+![Base de dados de referências carregada no *software Zotero*.](./figs/zotero.png){width="650"}
+<figcaption>Figura 4: Software Zotero.</figcaption>
+</figure>
 
 ### 2.17.1 Tipos de Referências
 
@@ -253,9 +269,10 @@ No *site* da biblioteca do INPE, todas as referências já se encontram classifi
 
 <a id="fig:bibliotex"></a>
 
-![Obtenção de referências no formato BibTeX a partir do *site* da biblioteca do INPE.](./figs/bibliotex.png)
-
-**Figura 5:** Site da biblioteca do INPE.
+<figure markdown>
+![Obtenção de referências no formato BibTeX a partir do *site* da biblioteca do INPE.](./figs/bibliotex.png){width="650"}
+<figcaption>Figura 5: Site da biblioteca do INPE.</figcaption>
+</figure>
 
 !!! tip "Dica"
 

@@ -19,7 +19,9 @@ O texto básico pode ser marcado em estilos comuns, como o *itálico*, o sublinh
 
     === "Resultado"
 
-        ![](./figs/ex_2.4-1.png)
+        <figure markdown>
+          ![](./figs/ex_2.4-1.png){ width="100" }
+        </figure>
 
 No [Exemplo 1](#exe_estilos), observe as diferenças entre o texto itálico produzido com o marcador `\textit` e o texto inclinado produzido pelo marcador `\textsl`. No primeiro caso, as fontes produzidas são naturais, ou seja, há uma variação em itálico do tipo de fonte em uso. No segundo caso, a fonte em uso é renderizada a partir da inclinação da fonte natural. 
 
@@ -41,7 +43,9 @@ Com o pacote `ulem`, pode-se riscar as palavras (forma mais comum). Veja no [Exe
 
     === "Resultado"
 
-        ![](./figs/ex_2.4-2.png)
+        <figure markdown>
+          ![](./figs/ex_2.4-2.png){ width="150" }
+        </figure>
 
 Diferente do que se obtém com o pacote `ulem`, com o pacote `cancel` pode-se riscar expressões matemáticas. Veja o [Exemplo 3](#exe_cancel) a seguir (mais exemplos de expressões matemáticas e ambientes específicos são apresentados na [Seção ](../matematica/#213-matematica-e-equacoes)):
 
@@ -63,7 +67,9 @@ Diferente do que se obtém com o pacote `ulem`, com o pacote `cancel` pode-se ri
 
     === "Resultado"
 
-        ![](./figs/ex_2.4-3.png)
+        <figure markdown>
+        ![](./figs/ex_2.4-3.png){ width="200" }
+        </figure>
 
 No LaTeX, ao longo de um parágrafo, é possível alterar o tamanho da fonte. O padrão do LaTeX compreende 10 tamanhos diferentes, os quais são mostrados no [Exemplo 4](#exe_tamfonte).
 
@@ -86,7 +92,9 @@ No LaTeX, ao longo de um parágrafo, é possível alterar o tamanho da fonte. O 
 
     === "Resultado"
 
-        ![](./figs/ex_2.4-4.png)
+        <figure markdown>
+        ![](./figs/ex_2.4-4.png){ width="100" }
+        </figure>
 
 Para alterar o tamanho de uma fonte localmente, basta utilizar os marcadores do [Exemplo 4](#exe_tamfonte) como `\large palavra`. Veja no [Exemplo 5](#exe_tamfontefrase) como misturar diferentes tamanhos de fonte em uma mesma frase:
 
@@ -100,7 +108,9 @@ Para alterar o tamanho de uma fonte localmente, basta utilizar os marcadores do 
 
     === "Resultado"
 
-        ![](./figs/ex_2.4-5.png)
+        <figure markdown>
+        ![](./figs/ex_2.4-5.png){ width="500" }
+        </figure>
 
 No LaTeX é possível também alterar o tipo da fonte. Alguns estilos incluem fontes no estilo máquina de escrever, sem serifa e com serifa. No [Exemplo 6](#exe_font) é mostrado como alterar o estilo das fontes.
 
@@ -118,4 +128,6 @@ No LaTeX é possível também alterar o tipo da fonte. Alguns estilos incluem fo
 
     === "Resultado"
 
-        ![](./figs/ex_2.4-6.png)
+        <figure markdown>
+        ![](./figs/ex_2.4-6.png){ width="500" }
+        </figure>

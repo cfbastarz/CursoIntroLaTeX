@@ -36,7 +36,9 @@ Um documento do *Beamer* é tão simples quanto um documento do LaTeX. O `beamer
 
     === "Resultado"
 
-        ![](./figs/ex_4.1-1.png)
+        <figure markdown>
+        ![](./figs/ex_4.1-1.png){width="600"}
+        </figure>
 
 Diferente de um documento LaTeX mínimo, como aquele mostrado no [Exemplo 1](./intro_latex.md#exe_doc), um documento do *Beamer* contém *frames*, que são inseridos com o ambiente padrão `frame`. Um *frame* é um como um *slide* do *Microsoft PowerPoint* e dentro dele é possível inserir quaisquer ambientes que normalmente são inseridos dentro de um documento LaTeX comum, e.g., listas, figuras, tabelas, texto, textos em colunas, ambientes especiais como o *minipages*, *listings* e outros.
 
@@ -119,7 +121,9 @@ No [Exemplo 2](#exe:beamer2_tema) é mostrado o tema ``AnnArbor'' com o esquema 
 
     === "Resultado"
 
-        ![](./figs/ex_4.2-2.png)
+        <figure markdown>
+        ![](./figs/ex_4.2-2.png){width="600"}
+        </figure>
 
 !!! tip "Dica"
 
@@ -164,7 +168,9 @@ Em um *frame* do *Beamer*, podem ser inseridas listas, tabelas, imagens, equaç�
 
     === "Resultado"
 
-        ![](./figs/ex_4.3-3.png)
+        <figure markdown>
+        ![](./figs/ex_4.3-3.png){width="600"}
+        </figure>
 
 Além do ambiente `block`, há também os ambientes `exampleblock` e `alertblock`. Cada um deles pode ser utilizado em situações distintas, dando importância ou chamando a atenção para determinadas partes da apresentação. Veja no [Exemplo 4](#exe:beamer_blocks) a seguir, um exemplo do uso destes ambientes.
 
@@ -203,7 +209,9 @@ Além do ambiente `block`, há também os ambientes `exampleblock` e `alertblock
 
     === "Resultado"
 
-        ![](./figs/ex_4.3-4.png)
+        <figure markdown>
+        ![](./figs/ex_4.3-4.png){width="600"}
+        </figure>
 
 ## 4.4 Informações da Capa
 
@@ -236,7 +244,9 @@ Como em toda apresentação, é comum o primeiro *frame* ou *slide* possuir info
 
     === "Resultado"
 
-        ![](./figs/ex_4.4-5.png)
+        <figure markdown>
+        ![](./figs/ex_4.4-5.png){width="300"}
+        </figure>
 
 Caso seja do interesse do usuário, este poderá manter a data sempre atualizada a partir da utilização da *macro* `\today`, que sempre irá incorpoerar a data do dia em que a apresentação foi compilada. Logo, ao invés de inserir `\date{September 2019}`, insira `\date{\today}`.
 
@@ -282,7 +292,9 @@ Assim como em documentos LaTeX, as apresentações escritas com a classe *Beamer
 
     === "Resultado"
 
-        ![](./figs/ex_4.5-6.png)
+        <figure markdown>
+        ![](./figs/ex_4.5-6.png){width="600"}
+        </figure>
 
 Dependendo da forma como a apresentação é organizada, e dependendo também do tema escolhido, pode ser conveniente alterar a aparência ou o comportamento do sumário. Isto significa que é possível omitir alguns elementos (e.g., subseções) do sumário ou mesmo fazer com que ele se repita toda vez que uma nova seção da apresentação é iniciada. Veja no [Exemplo 7](#exe:beamer_sumario2) como omitir as subseções do sumário, utilizando uma opção `hideallsubsections` da *macro* `\tableofcontents`.
 
@@ -322,7 +334,9 @@ Dependendo da forma como a apresentação é organizada, e dependendo também do
 
     === "Resultado"
 
-        ![](./figs/ex_4.5-7.png)
+        <figure markdown>
+        ![](./figs/ex_4.5-7.png){width="600"}
+        </figure>
 
 Para alterar o comportamento do sumário em um documento *Beamer*, de forma que ele apareça sempre que uma nova seção for iniciada, pode-se incluir um novo *frame* logo após o início da seção, incluindo a *macro* `\tableofcontents` com a opção `currentsection` e/ou a opção `currentsubsection`. Veja no [Exemplo 8](#exe:beamer_sumario3) a seguir:
 
@@ -376,7 +390,9 @@ Para alterar o comportamento do sumário em um documento *Beamer*, de forma que 
 
     === "Resultado"
 
-        ![](./figs/ex_4.5-8.png)
+        <figure markdown>
+        ![](./figs/ex_4.5-8.png){width="700"}
+        </figure>
 
 ## 4.6 Barra de Navegação
 
@@ -384,9 +400,10 @@ Outro elemento que aparece na capa (e também dos demais *frames*), é a barra d
 
 <a id="fig:navbar"></a>
 
-![A barra de navegação do *Beamer*.](./figs/beamer-capa.png)
-
-**Figura 1:** A barra de navegação do *Beamer* sempre aparece em uso com os temas padrão do *Beamer*. Entretanto, é possível desabilitá-la.
+<figure markdown>
+![A barra de navegação do *Beamer*.](./figs/beamer-capa.png){width="450"}
+<figcaption>Figura 1: A barra de navegação do Beamer sempre aparece em uso com os temas padrão do Beamer. Entretanto, é possível desabilitá-la.</figcaption>
+</figure>
 
 Para desabilitar a barra de navegação, basta utilizar um dos comandos a seguir: `\beamertemplatenavigationsymbolsempty` ou `\setbeamertemplate{navigation symbols}{}`.
 
@@ -425,7 +442,9 @@ Veja no [Exemplo 9](#exe:navbar) a seguir o efeito do uso de um destes comandos:
 
     === "Resultado"
 
-        ![](./figs/ex_4.6-9.png)
+        <figure markdown>
+        ![](./figs/ex_4.6-9.png){width="600"}
+        </figure>
 
 ## 4.7 Transições e Animações
 
@@ -466,7 +485,9 @@ Efeitos de transição e animações também podem ser utilizadas em um document
 
     === "Resultado"
 
-        ![](./figs/ex_4.7-10.png)
+        <figure markdown>
+        ![](./figs/ex_4.7-10.png){width="700"}
+        </figure>
 
 Observe no [Exemplo 10](#exe:beamer3) que os itens da lista são adicionados um após o outro de forma sequencial. Este comportamento pode ser alterado de forma que a ordem em que os itens aparecem possa ser controlada. Compare o [Exemplo 10](#exe:beamer3) com o [Exemplo 11](#exe:beamer4) a seguir:
 
@@ -503,7 +524,9 @@ Observe no [Exemplo 10](#exe:beamer3) que os itens da lista são adicionados um 
 
     === "Resultado"
 
-        ![](./figs/ex_4.7-11.png)
+        <figure markdown>
+        ![](./figs/ex_4.7-11.png){width="700"}
+        </figure>
 
 No [Exemplo 11](#exe:beamer4), não foi utilizado o comando `\pause` e, ao invés dele, foram adicionados parâmetros ao comando `\item` de forma que fosse especificado em qual *slide* aquela informação da lista deve aparecer. Dessa forma, o comando `\item<2-> Item 1` deve aparecer apenas no *slide* número 2, o item descrito pelo comando `\item<3-> Item 2` deve aparecer apenas no slide número 3 e assim por diante. Além disso, observe que há um sinal de `-` (menos) após o número do *slide*, indicando que aquele item irá aparecer a partir do número do *slide* indicado em diante. Na [Tabela 1](#tab:beamer1) estão listados alguns dos comandos de controle dos elementos de um *slide* do *Beamer*.
 
@@ -552,7 +575,9 @@ Outra *macro* do *Beamer* que permite controlar as ações dos efeitos de pausa 
 
     === "Resultado"
 
-        ![](./figs/ex_4.7-12.png)
+        <figure markdown>
+        ![](./figs/ex_4.7-12.png){width="600"}
+        </figure>
 
 !!! note "Nota"
 

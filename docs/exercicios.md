@@ -14,7 +14,9 @@ Os exercícios desta seção utilizam as marcações de texto mais comuns aprese
 
     === "Resultado"
 
+        <figure markdown>
         ![ex1](./figs/ex1.png)
+        </figure>
 
     === "Código"
 
@@ -28,7 +30,9 @@ Os exercícios desta seção utilizam as marcações de texto mais comuns aprese
 
     === "Resultado"
 
+        <figure markdown>
         ![ex2](./figs/ex2.png)
+        </figure>
 
 
     === "Código"
@@ -44,7 +48,9 @@ Os exercícios desta seção utilizam as marcações de texto mais comuns aprese
 
     === "Resultado"
 
+        <figure markdown>
         ![ex3](./figs/ex3.png)
+        </figure>
 
     === "Código"
 
@@ -65,7 +71,9 @@ Nos exercícios a seguir, utilize os exemplos mostrados na [Seção 2.11](../lis
 
     === "Resultado"
 
+        <figure markdown>
         ![ex4](./figs/ex4.png)
+        </figure>
 
     === "Código"
 
@@ -90,7 +98,9 @@ Nos exercícios a seguir, utilize os exemplos mostrados na [Seção 2.11](../lis
 
     === "Resultado"
 
+        <figure markdown>
         ![ex5](./figs/ex5.png)
+        </figure>
 
     === "Código"
 
@@ -106,7 +116,9 @@ Nos exercícios a seguir, utilize os exemplos mostrados na [Seção 2.11](../lis
 
     === "Resultado"
 
+        <figure markdown>
         ![ex6](./figs/ex6.png)
+        </figure>
 
     === "Código"
 
@@ -132,7 +144,9 @@ Nos exercícios a seguir, utilize os exemplos mostrados na [Seção 2.11](../lis
 
     === "Resultado"
 
+        <figure markdown>
         ![ex7](./figs/ex7.png)    
+        </figure>
 
     === "Código"
 
@@ -176,7 +190,9 @@ Nos exercícios a seguir, utilize os exemplos apresentados na [Seção 2.14](../
 
     === "Resultado"
 
+        <figure markdown>
         ![ex8](./figs/ex8.png)
+        </figure>
 
     === "Código"
 
@@ -198,7 +214,9 @@ Nos exercícios a seguir, utilize os exemplos apresentados na [Seção 2.14](../
 
     === "Resultado"
 
+        <figure markdown>
         ![ex9](./figs/ex9.png)
+        </figure>
 
     === "Código"
 
@@ -224,7 +242,9 @@ Nos exercícios a seguir, utilize os exemplos apresentados na [Seção 2.14](../
 
     === "Resultado"
 
+        <figure markdown>
         ![ex10](./figs/ex10.png)
+        </figure>
 
     === "Código"
 
@@ -241,7 +261,9 @@ Nos exercícios a seguir, utilize os exemplos apresentados na [Seção 2.14](../
 
     === "Resultado"
 
+        <figure markdown>
         ![ex11](./figs/ex11.png)
+        </figure>
 
     === "Código"
 
@@ -258,7 +280,9 @@ Nos exercícios a seguir, utilize os exemplos apresentados na [Seção 2.14](../
 
     === "Resultado"
 
+        <figure markdown>
         ![ex12](./figs/ex12.png)
+        </figure>
 
     === "Código"
 
@@ -282,7 +306,9 @@ Nos seguintes exercícios, utilize os exemplos apresentados na [Seção 2.13](..
 
     === "Resultado"
 
+        <figure markdown>
         ![ex13](./figs/ex13.png)
+        </figure>
 
     === "Código"
 
@@ -301,7 +327,9 @@ Nos seguintes exercícios, utilize os exemplos apresentados na [Seção 2.13](..
 
     === "Resultado"
 
+        <figure markdown>
         ![ex14](./figs/ex14.png)
+        </figure>
 
     === "Código"
 
@@ -320,7 +348,9 @@ Nos seguintes exercícios, utilize os exemplos apresentados na [Seção 2.13](..
 
     === "Resultado"
 
+        <figure markdown>
         ![ex15](./figs/ex15.png)
+        </figure>
 
     === "Código"
 
@@ -339,7 +369,9 @@ Nos seguintes exercícios, utilize os exemplos apresentados na [Seção 2.13](..
 
     === "Resultado"
 
+        <figure markdown>
         ![ex16](./figs/ex16.png)
+        </figure>
 
     === "Código"
 
@@ -358,7 +390,9 @@ Nos seguintes exercícios, utilize os exemplos apresentados na [Seção 2.13](..
 
     === "Resultado"
 
+        <figure markdown>
         ![ex17](./figs/ex17.png)
+        </figure>
 
     === "Código"
 
@@ -377,7 +411,9 @@ Nos seguintes exercícios, utilize os exemplos apresentados na [Seção 2.13](..
 
     === "Resultado"
 
+        <figure markdown>
         ![ex18](./figs/ex18.png)
+        </figure>
 
     === "Código"
 
@@ -396,7 +432,9 @@ Nos seguintes exercícios, utilize os exemplos apresentados na [Seção 2.13](..
 
     === "Resultado"
 
+        <figure markdown>
         ![ex19](./figs/ex19.png)
+        </figure>
 
     === "Código"
 
@@ -410,7 +448,9 @@ Nos seguintes exercícios, utilize os exemplos apresentados na [Seção 2.13](..
 
     === "Resultado"
 
+        <figure markdown>
         ![ex20](./figs/ex20.png)
+        </figure>
 
     === "Código"
 
@@ -424,7 +464,9 @@ Nos seguintes exercícios, utilize os exemplos apresentados na [Seção 2.13](..
 
     === "Resultado"
 
+        <figure markdown>
         ![ex21](./figs/ex21.png)
+        </figure>
 
     === "Código"
 
@@ -438,7 +480,9 @@ Nos seguintes exercícios, utilize os exemplos apresentados na [Seção 2.13](..
 
     === "Resultado"
 
+        <figure markdown>
         ![ex22](./figs/ex22.png)
+        </figure>
 
     === "Código"
 
@@ -454,7 +498,9 @@ Nos seguintes exercícios, utilize os exemplos apresentados na [Seção 2.13](..
 
     === "Resultado"
 
+        <figure markdown>
         ![ex23](./figs/ex23.png)
+        </figure>
 
     === "Código"
 
@@ -468,7 +514,9 @@ Nos seguintes exercícios, utilize os exemplos apresentados na [Seção 2.13](..
 
     === "Resultado"
 
+        <figure markdown>
         ![ex24](./figs/ex24.png)
+        </figure>
 
     === "Código"
 
@@ -484,7 +532,9 @@ Nos seguintes exercícios, utilize os exemplos apresentados na [Seção 2.13](..
 
     === "Resultado"
 
+        <figure markdown>
         ![ex25](./figs/ex25.png)
+        </figure>
 
     === "Código"
 
@@ -499,7 +549,9 @@ Nos seguintes exercícios, utilize os exemplos apresentados na [Seção 2.13](..
 
     === "Resultado"
 
+        <figure markdown>
         ![ex26](./figs/ex26.png)
+        </figure>
 
     === "Código"
 
@@ -514,7 +566,9 @@ Nos seguintes exercícios, utilize os exemplos apresentados na [Seção 2.13](..
 
     === "Resultado"
 
+        <figure markdown>
         ![ex27](./figs/ex27.png)    
+        </figure>
 
     === "Código"
 
@@ -529,7 +583,9 @@ Nos seguintes exercícios, utilize os exemplos apresentados na [Seção 2.13](..
 
     === "Resultado"
 
+        <figure markdown>
         ![ex28](./figs/ex28.png)
+        </figure>
 
     === "Código"
 
@@ -544,7 +600,9 @@ Nos seguintes exercícios, utilize os exemplos apresentados na [Seção 2.13](..
 
     === "Resultado"
 
+        <figure markdown>
         ![ex29](./figs/ex29.png)
+        </figure>
 
     === "Código"
 
@@ -559,7 +617,9 @@ Nos seguintes exercícios, utilize os exemplos apresentados na [Seção 2.13](..
 
     === "Resultado"
 
+        <figure markdown>
         ![ex30](./figs/ex30.png)
+        </figure>
 
     === "Código"
 
@@ -574,7 +634,9 @@ Nos seguintes exercícios, utilize os exemplos apresentados na [Seção 2.13](..
 
     === "Resultado"
 
+        <figure markdown>
         ![ex31](./figs/ex31.png)
+        </figure>
 
     === "Código"
 
@@ -588,7 +650,9 @@ Nos seguintes exercícios, utilize os exemplos apresentados na [Seção 2.13](..
 
     === "Resultado"
 
+        <figure markdown>
         ![ex32](./figs/ex32.png)
+        </figure>
 
     === "Código"
 
@@ -602,7 +666,9 @@ Nos seguintes exercícios, utilize os exemplos apresentados na [Seção 2.13](..
 
     === "Resultado"
 
+        <figure markdown>
         ![ex33](./figs/ex33.png)
+        </figure>
 
     === "Código"
 
@@ -617,7 +683,9 @@ Nos seguintes exercícios, utilize os exemplos apresentados na [Seção 2.13](..
 
     === "Resultado"
 
+        <figure markdown>
         ![ex34](./figs/ex34.png)
+        </figure>
 
     === "Código"
 
@@ -632,7 +700,9 @@ Nos seguintes exercícios, utilize os exemplos apresentados na [Seção 2.13](..
 
     === "Resultado"
 
-        ![ex35](./figs/ex35.png)
+        <figure markdown>
+        ![ex35](./figs/ex35.png){width="500"}
+        </figure>
 
     === "Código"  
 
@@ -654,7 +724,9 @@ Nos seguintes exercícios, utilize os exemplos apresentados na [Seção 2.13](..
 
     === "Resultado"
 
-        ![ex36](./figs/ex36.png)
+        <figure markdown>
+        ![ex36](./figs/ex36.png){width="500"}
+        </figure>
 
     === "Código"
 

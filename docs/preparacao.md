@@ -41,9 +41,10 @@ A década de 2010 foi marcada por uma revolução na forma como as ferramentas *
 
 <a id="fig:leao_ctan"></a>
 
-![O mascote do *Comprehensive TeX Archive Network* (CTAN).](./figs/ctanlion.png)
-
-**Figura 1:** O mascote do *Comprehensive TeX Archive Network* (CTAN).
+<figure markdown>
+  ![O mascote do *Comprehensive TeX Archive Network* (CTAN).](./figs/ctanlion.png){ width="500" }
+  <figcaption>Figura 1: O mascote do Comprehensive TeX Archive Network (CTAN).</figcaption>
+</figure>
 
 Este material foi escrito com base na experiência pessoal do autor e com base nas necessidades dos alunos da pós-graduação do Instituto Nacional de Pesquisas Espaciais (INPE), compiladas pelo Serviço de Informação e Documentação (SESID) do instituto. A maioria dos exemplos, quando não explicitamente indicada a fonte, é baseada em exemplos pessoais, outros tutoriais sobre a linguagem, *sites* diversos e fóruns como o TeX *Stack Exchange*, além dos manuais e tutoriais do *Overleaf*. Durante a escrita do material, procurou-se organizar as informações de forma que fosse possível ao leitor encontrar o máximo de informações, através dos exemplos e dos resultados em anexo, os quais são mostrados sempre juntos. Uma lista de exercícios também foi incluída para que o leitor possa treinar e adquirir fluência na escrita com a linguagem LaTeX. Devido à grande quantidade de elementos coloridos inseridos ao longo do documento, não recomenda-se a sua impressão. Ao invés disso, orienta-se a utilização desta apostila no computador, de forma que se possa tirar vantagem das ferramentas de busca do visualizador de documentos. 
 

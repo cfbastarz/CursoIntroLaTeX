@@ -18,7 +18,9 @@ O modo matemático do LaTeX representa uma forma bastante conveniente de se inse
 
     === "Resultado"
 
-        ![](./figs/ex_2.13-1.png)
+        <figure markdown>
+        ![](./figs/ex_2.13-1.png){ width="500" }
+        </figure>
 
 No [Exemplo 1](#exe_eq0), observe que os delimitadores dados por colchetes ou parênteses precisam ser "escapados", i.e., é necessário adicionar uma `\` (barra invertida) antes deles (e.g., `\[` e `\]` ou `\(` e `\)`). Além disso, quando são utilizados os colchetes, as equações em linha são escritas em uma linha própria e centralizada com o texto. O resultado obtido com a digitação de equações em linha utilizando os delimitadores indicados, apresenta as equações dentro da definição de altura da linha do texto. Para fazer com que esta limitação seja contornada e dar mais espaço ao ambiente de equações em linha, utiliza-se um par de delimitadores duplos `$$`'s (dólar duplo). Veja o [Exemplo 2](#exe_eq00) a seguir:
 
@@ -32,7 +34,9 @@ No [Exemplo 1](#exe_eq0), observe que os delimitadores dados por colchetes ou pa
 
     === "Resultado"
 
-        ![](./figs/ex_2.13-2.png)
+        <figure markdown>
+        ![](./figs/ex_2.13-2.png){ width="500" }
+        </figure>
 
 No LaTeX é possível inserir todos os símbolos relacionados às ciências. No Anexo B há uma lista destes símbolos, os quais podem ser utilizados para a realização dos exercícios da [Seção 2.20](../exercicios/#220-exercicios).
 
@@ -60,7 +64,9 @@ Uma simples equação pode ser inserida utilizando-se o ambiente `equation`. No 
 
     === "Resultado"
 
-        ![](./figs/ex_2.13-3.png)
+        <figure markdown>
+        ![](./figs/ex_2.13-3.png){ width="500" }
+        </figure>
 
 No [Exemplo 3](#exe_eq1), o ambiente `equation*` evita que as equações sejam numeradas. Além disso, as equações são numeradas de acordo com a numeração da seção em que elas estiverem inseridas. 
 
@@ -88,7 +94,9 @@ Equações podem ser alinhadas pelo sinal de "=" (ou qualquer outro sinal) dentr
 
     === "Resultado"
 
-        ![](./figs/ex_2.13-4.png)
+        <figure markdown>
+        ![](./figs/ex_2.13-4.png){ width="500" }
+        </figure>
 
 No exemplo anterior, além do modo matemático puro, foram inseridos também modos de texto com o marcador `text`. Este marcador serve para digitar texto dentro do ambiente `equation` (neste caso foi digitada uma vírgula acrescida de um espaço em branco, i.e., `\text{, }`).
 
@@ -120,7 +128,9 @@ No [Exemplo 5](#exe_eq3), o ambiente `multiline` é utilizado para inserir equa�
 
     === "Resultado"
 
-        ![](./figs/ex_2.13-5.png)
+        <figure markdown>
+        ![](./figs/ex_2.13-5.png){ width="500" }
+        </figure>
 
 Nos Exemplos [4](#exe_eq2) e [5](#exe_eq3), observe que os ambientes `split` e `multline` funcionam de forma semelhante, com a diferença de que o ambiente `split` deve ser utilizado dentro do ambiente `equation`. Além disso, o ambiente `split` alinha as equações como em uma tabela, i.e., com o símbolo `&` (*ampersand*) separando as colunas ou partes da equação.
 
@@ -146,7 +156,9 @@ Para alinhar equações ou grupos de equações, pode-se utilizar o ambiente `al
 
     === "Resultado"
 
-        ![](./figs/ex_2.13-6.png)
+        <figure markdown>
+        ![](./figs/ex_2.13-6.png){ width="500" }
+        </figure>
 
 No [Exemplo 6](#exe_eq4), observe também que foi utilizado o marcador `Bigg` antes dos parênteses. Este marcador, no modo matemático, permite que parênteses, colchetes e chaves sejam ampliados de forma que se ajustem à altura dos símbolos das equações que estão sendo digitadas. Outros marcadores podem ser utilizados para ampliar estes sinais matemáticos na escala correta. Pode-se utilizar `big` para produzir $x=\big(\frac{1}{25}\big)^{\frac{1}{2}}$, ou `bigg` para produzir $x=\bigg(\frac{1}{25}\bigg)^{\frac{1}{2}}$, ou ainda `Big` para produzir $x=\Big(\frac{1}{25}\Big)^{\frac{1}{2}}$ e `Bigg` para se obter $x=\Bigg(\frac{1}{25}\Bigg)^{\frac{1}{2}}$.
 
@@ -176,6 +188,8 @@ Equações podem ser alinhadas utilizando-se o ambiente `gather`. Este alinhamen
 
     === "Resultado"
 
-        ![](./figs/ex_2.13-7.png)
+        <figure markdown>
+        ![](./figs/ex_2.13-7.png){ width="500" }
+        </figure>
 
 Com o ambiente `gather`, as equações são alinhadas em relação ao parágrafo, e não com relação a um elemento. Outros elementos matemáticos como sinais e símbolos em geral podem ser encontrados nas tabelas do Anexo B.

@@ -30,13 +30,15 @@ O leitor perceberá a importância das *macros* quando precisar fazer uso de alg
 
     === "Resultado"
 
-        ![](./figs/ex_2.18-1.png)
+        <figure markdown>
+        ![](./figs/ex_2.18-1.png){ width="500"}
+        </figure>
 
 !!! tip "Dica"
 
     No [Exemplo 1](#exe_macro0), observe ainda que o comando `\dots` é também uma *macro* que produz as reticências (\dots).
 
-Considere os Exemplos [2](./tabelas.md#exe_tab2) e [3](./tabelas.md#exe_tab3} em que o espaçamento `\\[-0.5em]` é utilizado múltiplas vezes para definir a altura das linhas das tabelas mostradas. Este comando pode ser "empacotado" através da definição de uma *macro* que simplesmente irá abreviar o seu uso, no sentido de torná-lo mais simples. Para isto, veja o [Exemplo 2](#exe_macro1) a seguir.
+Considere os Exemplos [2](./tabelas.md#exe_tab2) e [3](./tabelas.md#exe_tab3) em que o espaçamento `\\[-0.5em]` é utilizado múltiplas vezes para definir a altura das linhas das tabelas mostradas. Este comando pode ser "empacotado" através da definição de uma *macro* que simplesmente irá abreviar o seu uso, no sentido de torná-lo mais simples. Para isto, veja o [Exemplo 2](#exe_macro1) a seguir.
 
 !!! example "<a id="exe_macro1"></a>Exemplo 2: Definindo um simples comando de espaçamento"
 
@@ -68,7 +70,9 @@ Considere os Exemplos [2](./tabelas.md#exe_tab2) e [3](./tabelas.md#exe_tab3} em
 
     === "Resultado"
 
-        ![](./figs/ex_2.18-2.png)
+        <figure markdown>
+        ![](./figs/ex_2.18-2.png){ width="100"}
+        </figure>
 
 Muitas vezes será necessário incluir um espaço em branco extra, o que pode ser obtido incluindo-se um par de `{}`'s (chaves) após o comando, e.g., como em `$\LaTeX{}$` ou `\LaTeX`, que irá produzir $\LaTeX{}$ e $\LaTeX$, respectivamente. Considere os comandos `inpe` e `inpee` do [Exemplo 3](#exe_macro2) a seguir e compare os resultados das suas aplicações, com e sem as `{}`'s: 
 
@@ -94,7 +98,9 @@ Muitas vezes será necessário incluir um espaço em branco extra, o que pode se
 
     === "Resultado"
 
-        ![](./figs/ex_2.18-3.png)
+        <figure markdown>
+        ![](./figs/ex_2.18-3.png){ width="500"}
+        </figure>
 
 No [Exemplo 3](#exe_macro2) foram definidas macros que substituem a palavra-chave `inpe` (ou `inpee`) por INPE. Quando uma *macro* é definida e utilizada em diversas partes de um documento, a sua substituição por um outro valor pode ser rápida e facilmente realizada através do comando `\renewcommand`. Veja o [Exemplo 4](#exe_macro3) a seguir:
 
@@ -112,7 +118,9 @@ No [Exemplo 3](#exe_macro2) foram definidas macros que substituem a palavra-chav
 
     === "Resultado"
 
-        ![](./figs/ex_2.18-4.png)
+        <figure markdown>
+        ![](./figs/ex_2.18-4.png){ width="500"}
+        </figure>
 
 A definição de *macros* a partir do comando `\newcommand{}{}` aceita a utilização de parâmetros (ou argumentos), tal como um *script*. Veja o [Exemplo 5](#exe_macro4) a seguir:
 
@@ -129,7 +137,9 @@ A definição de *macros* a partir do comando `\newcommand{}{}` aceita a utiliza
 
     === "Resultado"
 
-        ![](./figs/ex_2.18-5.png)
+        <figure markdown>
+        ![](./figs/ex_2.18-5.png){ width="500"}
+        </figure>
 
 No [Exemplo 5](#exe_macro4), observe que utilizou-se o comando `\newcommand{}[]{}` para se definir uma expressão para a soma de todos os números naturais não nulos. Neste caso, `\meusomatorio` define o nome do comando, `3` indica a quantidade de argumentos que este novo comando deverá receber e `\ensuremath{\sum_{#1}^{#2}{#3}}}` indica a expressão matemática a ser utilizada, i.e., `\sum`, sendo que os valores indicados por `#1`, `#2` e `#3`, são os argumentos a serem inseridos na expressão e na ordem em que devem ser informados. Além disso, observe também que a expressão definida pelo comando, é precedida pela *macro* `\ensuremath{}`, que tem a função de definir o ambiente de matemática para a expressão. Finalmente, o novo comando (`\meusomatorio{}{}{}`) pode ser utilizado em linha sem a necessidade de se utilizar delimitadores (como indicado no início da [Seção 2.13](../matematica/#213-matematica-e-equacoes)).
 

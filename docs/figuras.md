@@ -21,7 +21,9 @@ Uma figura pode ser incluída de forma simples utilizando o comando `\includegra
 
     === "Resultado"
 
-        ![](./figs/ex_2.12-1.png)
+        <figure markdown>
+        ![](./figs/ex_2.12-1.png){ width="400" }
+        </figure>
 
 No [Exemplo 1](#exe_fig1), observe que o marcador `\includegraphics` aceita algumas opções que são delimitadas por um par de `[]`'s (conchetes). Pode-se especificar, por exemplo, o tamanho da figura com as opções `width`, `height` ou `scale`. Além disso, pode-se também utilizar as macros da [Tabela 2](./medidas.md#tab:meds_padrao). Para isto, veja o [Exemplo 1](./medidas.md#exe_meds1).
 
@@ -43,7 +45,9 @@ Assim como mostrado no [Exemplo 1](#exe_fig1), a forma mais simples de incluir f
 
     === "Resultado"
 
-        ![](./figs/ex_2.12-2.png)
+        <figure markdown>
+        ![](./figs/ex_2.12-2.png){ width="200" }
+        </figure>
 
 Entretanto, observe que apenas inserimos uma figura, mas não definimos uma posição relativa ao parágrafo ou à página e que também não há uma legenda atribuída à figura. Para isso, é necessário incorporar o comando `\includegraphics[]{}` dentro de um ambiente específico que permita o seu posicionamento relativo, além da edição de outros atributos referentes à figura. Este ambiente, é o ambiente `figure`. O [Exemplo 3](#exe_ambfig) a seguir, mostra como o ambiente `figure` é utilizado:
 
@@ -60,7 +64,9 @@ Entretanto, observe que apenas inserimos uma figura, mas não definimos uma posi
 
     === "Resultado"
 
-        ![](./figs/ex_2.12-3.png)
+        <figure markdown>
+        ![](./figs/ex_2.12-3.png){ width="400" }
+        </figure>
 
 No [Exemplo 3](#exe_ambfig), note que foi utilizado também o comando `caption`, utilizado para inserir a legenda da figura.
 
@@ -96,7 +102,9 @@ As opções de posicionamento relativo apresentados na [Tabela 1](#tab:ambfig), 
 
     === "Resultado"
 
-        ![](./figs/ex_2.12-4.png)
+        <figure markdown>
+        ![](./figs/ex_2.12-4.png){ width="400" }
+        </figure>
 
 !!! note "Nota"
 
@@ -126,7 +134,9 @@ Uma vez definido o posicionamento relativo (i.e., relativo ao parágrafo ou pág
 
     === "Resultado"
 
-        ![](./figs/ex_2.12-5.png)
+        <figure markdown>
+        ![](./figs/ex_2.12-5.png){ width="400" }
+        </figure>
 
 No [Exemplo 5](#exe_ambfig_center), observe que ambos, o marcador `centering` e o ambiente `center`, devem ser colocados dentro do ambiente `figure`.
 
@@ -150,7 +160,9 @@ O ambiente `figure` permite também que figuras sejam posicionadas lado-a-lado. 
 
     === "Resultado"
 
-        ![](./figs/ex_2.12-6.png)
+        <figure markdown>
+        ![](./figs/ex_2.12-6.png){ width="400" }
+        </figure>
 
 No [Exemplo 6](#exe:subfigure1), observe que o comando `caption` foi inserido como legenda da figura, enquanto que as imagens "A" e "B" possuem legendas separadas.
 
@@ -174,7 +186,9 @@ Dependendo do tamanho ajustado para cada figura dentro do ambiente `subfigure`, 
 
     === "Resultado"
 
-        ![](./figs/ex_2.12-7.png)
+        <figure markdown>
+        ![](./figs/ex_2.12-7.png){ width="300" }
+        </figure>
 
 Nos Exemplos [6](#exe:subfigure1) e [7](#exe:subfigure2), observe que para cada figura inserida dentro do ambiente `figure`, uma legenda foi inserida. Esta legenda é informada como um parâmetro do comando `subfigure`, sendo este inserido dentro dos colchetes (como em `subfigure[Figura "A"]`). 
 
@@ -250,9 +264,10 @@ Para facilitar o desenho de diagramas, recomenda-se a utilização do programa [
 
 <a id="fig:ciclo"></a>
 
-![Exemplo de um diagrama construído no programa $LaTeX$*Draw*](figs/diagrama_hibrido_novo_pt-tempos.png)
-
-**Figura 1:** Um diagrama complexo com elementos geométricos e equações. **Fonte:** Adaptado de \citeonline{bastarz/2017}.
+<figure markdown>
+![Exemplo de um diagrama construído no programa $LaTeX$*Draw*](figs/diagrama_hibrido_novo_pt-tempos.png){ width="500"}
+<figcaption>Figura 1: Um diagrama complexo com elementos geométricos e equações. Fonte: Adaptado de Bastarz (2017).</figcaption>
+</figure>
 
 !!! tip "Dica"
 
@@ -262,26 +277,33 @@ A utilização do programa LaTeX*Draw* é bastante simples. Na [Figura 2](#fig:i
 
 <a id="fig:interld"></a>
 
-![Interface gráfica do programa LaTeX*Draw*](./figs/ldraw1-crop.png)
-
-**Figura 2:** Um programa para criação e diagramas e figuras simples.
+<figure markdown>
+![Interface gráfica do programa LaTeX*Draw*](./figs/ldraw1-crop.png){ width="500" } 
+<figcaption>Figura 2: Um programa para criação e diagramas e figuras simples.</figcaption>
+</figure>
 
 Na [Figura 2](#fig:interld), observe que há duas abas: *Drawing* e "PST". Na aba *Drawing*, é onde são feitos os desenhos. Utilizam-se as ferramentas de desenho disponíveis na barra de ferramentas, onde podem ser utilizadas as ferramentas de inserção de figuras geométricas e texto, incluindo equações (modo matemático do LaTeX).
 
 <a id="fig:ldraw2"></a>
 
-![Código PS*Tricks* gerado pelo do programa LaTeX*Draw*.](./figs/ldraw2-crop.png)
-
-**Figura 3:** Aba "PST".
+<figure markdown>
+![Código PS*Tricks* gerado pelo do programa LaTeX*Draw*.](./figs/ldraw2-crop.png){ width="500" }
+<figcaption>Figura 3: Aba "PST".</figcaption>
+</figure>
 
 Na aba "PST", uma vez que algum desenho é inserido na aba *Drawing*, pode-se obter o código PS*Tricks* que gera o desenho inserido. Este código pode ser copiado para um arquivo LaTeX (dentro de um ambiente apropriado), que pode então ser utilizado como fonte. A compilação do documento LaTeX irá compilar e apresentar o desenho também dentro do corpo do texto. De forma convencional, pode-se exportar o desenho para um formato apropriado (e.g., PDF, PNG etc) e então inserir o desenho utilizando os ambientes apresentados na [Seção 2.12](../figuras/#212-figuras).
 
 <a id="fig:ldraw3"></a>
 
-![Interface de exportação do programa LaTeX*Draw*.](./figs/ldraw3-crop.png)
-
-**Figura 4:** Exportando uma figura para o formato PDF.
+<figure markdown>
+![Interface de exportação do programa LaTeX*Draw*.](./figs/ldraw3-crop.png){ width="500" }
+<figcaption>Figura 4: Exportando uma figura para o formato PDF.</figcaption>
+</figure>
 
 !!! tip "Dica"
 
     Outro programa que também pode ser utilizado para a construção de figuras e diagramas é o Dia. Este programa também permite exportar os desenhos para os formatos PNG, PDF, EPS entre outros, além do próprio LaTeX (como uma figura *PSTricks*). Veja mais informações sobre o Dia em [http://dia-installer.de/](http://dia-installer.de/).
+
+## Referências
+
+* <a id="bastarz/2017"></a>Bastarz, C. F.: **Assimilação de dados global híbrida por conjunto-variacional no CPTEC**, *Instituto Nacional de Pesquisas Espaciais*, 2017.

@@ -53,7 +53,9 @@ Na [Seção 2.1](../intro_latex/#21-introducao-ao-latex) foram mostradas as clas
 
     === "Resultado"
 
-        ![](./figs/ex_2.5-1.png)
+        <figure markdown>
+          ![](./figs/ex_2.5-1.png){ width="400" }
+        </figure>
 
 No [Exemplo 1](#exe_secsnum) observe que o sumário foi inserido no corpo do texto utilizando-se o comando `\tableofcontents`. Este comando é responsável por adicionar os capítulos, seções, subseções e outras partes do texto ao sumário. Observe também que a subseção marcada por `\subsection*{Uma subseção}` não foi adicionada ao sumário porque ela foi marcada com `\subsection*` ou invés de `\subsection`. O asterisco pode ser utilizado com a mesma finalidade em outros ambientes, como figuras, tabelas e equações. Além disso, note que o comando `\maketitle` é responsável por posicionar o título, o nome do autor e a data no início do documento. Dependendo da classe de documentos utilizada, o aspecto e a posição do título e do sumário (e de outras listas que se fizerem necessárias) poderão ser diferentes.
 

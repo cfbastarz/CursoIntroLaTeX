@@ -14,9 +14,10 @@ Um documento LaTeX contém, portanto, as instruções que marcam e formatam o te
 
 <a id="fig:complatex"></a>
 
-![Etapas envolvidas na compilação de um documento LaTeX](./figs/diagramacomp2-crop.png)
-
-**Figura 1:** Compilação de um documento LaTeX. **Fonte:** Adaptado de [http://www.texample.net/tikz/examples/tex-workflow/](http://www.texample.net/tikz/examples/tex-workflow/).
+<figure markdown>
+  ![Etapas envolvidas na compilação de um documento LaTeX](./figs/diagramacomp2-crop.png){ width="500" }
+  <figcaption>Figura 1: Compilação de um documento LaTeX. Fonte: Adaptado de http://www.texample.net/tikz/examples/tex-workflow/.</figcaption>
+</figure>
 
 Na [Figura 1](#fig:complatex), observe que o compilador puro `latex` da linguagem, cria um documento na extensão `.dvi`. Esta extensão, *Device Independent Format* (DVI), é o formato original dos documentos compilados pela linguagem e faz parte apenas do ecossistema do LaTeX/LaTeX. Por outro lado, é muito comum obter documentos no formato *Portable Document Format* (PDF), o qual suporta mais cores, permite melhores níveis de compressão e é formato padrão de documento eletrônicos. Para isto, a partir do compilador `latex`, pode-se utilizar algum tipo de conversor (e.g., `dvi2ps`) e então, converter para o formato PDF a partir do documento *PostScript* (PS). Nesta etapa, também pode-se utilizar outro conversor (eg., `ps2pdf`) para então se obter o documento PDF final. Por outro lado, o compilador `pdflatex` realiza estas etapas intermediárias de forma direta, i.e., a partir de um documento LaTeX (`.tex`), pode-se obter o documento PDF (`.pdf`) diretamente. 
 
@@ -58,7 +59,9 @@ O compilador `pdflatex` é o compilador mais popular. Apesar disso, ele não sup
 
     === "Resultado"
 
-        ![](./figs/ex_2.1-1.png)
+        <figure markdown>
+          ![](./figs/ex_2.1-1.png){ width="250"}
+        </figure>
 
 No [Exemplo 1](#exe_doc) acima, observe que um documento LaTeX possui uma estrutura específica. Esta estrutura é iniciada com uma descrição do tipo de documento dado pelo comando `documentclass` (no [Exemplo 1](#exe_doc) indicando que o documento tem o formato de *article*, i.e., um artigo). Tudo o que é escrito entre esta instrução e a próxima (`document`), é chamada de "preâmbulo". Nesta seção podem ser carregados pacotes específicos da linguagem que permitem o uso de diferentes ambientes além de outros tipos de *macros* (veja na [Tabela 1](../pacotes/#tab:pacotes) da [Parte 5](../pacotes) os pacotes utilizados neste documento). Entre as palavras reservadas `begin` e `end`, o documento em si é escrito. Além disso, observe também que dois comentários estão inseridos no documento, os quais não aparecem na versão compilada. Um comentário na linguagem LaTeX ou LaTeX é iniciado pelo caracter especial `%`. Recomenda-se aos usuários a utilização de comentários para a organização dos seus documentos, seja para explicar *macros*, separar as seções, ou mesmo remover temporariamente partes do texto. Documentos LaTeX, independente da sua classe (e.g., *book*, *report*, *article* e *letter*), podem ser muito simples ou complexos. O estilo para Teses e Dissertações do INPE (apresentado na [Parte 4](../beamer/#4-apresentacoes-com-o-beamer), é um exemplo de documento complexo que inclui estilo e formatação próprios, que tornam a sua visualização bastante distinta.
 

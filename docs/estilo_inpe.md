@@ -12,9 +12,10 @@ O estilo do INPE compreende um conjunto de arquivos que contém instruções e i
 
 <a id="fig:biblio_pub_latex"></a>
 
-![Obtenção do estilo \LaTeX{} do INPE a partir do *site* da Biblioteca do INPE.](./figs/biblio_pub_latex.png)
-
-**Figura 1:** *Site* do biblioteca do INPE.
+<figure markdown>
+![Obtenção do estilo \LaTeX{} do INPE a partir do *site* da Biblioteca do INPE.](./figs/biblio_pub_latex.png){width="650"}
+<figcaption>Figura 1: Site do biblioteca do INPE.</figcaption>
+</figure>
 
 Com o arquivo `archive.zip` no seu computador, descompacte-o em um local apropriado para poder ter acesso aos arquivos que compõem o estilo do INPE.
 
@@ -26,9 +27,10 @@ O estilo do INPE é fornecido pelo arquivo principal `tdiinpe.cls`. Dentro deste
 
 <a id="fig:estrut"></a>
 
-![Estrutura e organização do estilo LaTeX do INPE.](./figs/estrutura_estilo_inpe.png)
-
-**Figura 2:** Arquivos do estilo LaTeX do INPE.
+<figure markdown>
+![Estrutura e organização do estilo LaTeX do INPE.](./figs/estrutura_estilo_inpe.png){width="650"}
+<figcaption>Figura 2: Arquivos do estilo LaTeX do INPE.</figcaption>
+</figure>
 
 Na [Figura 2](#fig:estrut), os arquivos da estrutura do estilo do INPE estão misturados aos arquivos do documento em si. Outros arquivos são resultados do processo de compilação do documento principal. 
 
@@ -129,9 +131,10 @@ Para compilar um documento utilizando o estilo do INPE e o conjunto de *scripts*
 
     <a id="fig:execpub"></a>
 
-    ![Exemplo de execução do *script* `execpub.sh` sem argumentos.](./figs/saida_execpub.png)
-
-    **Figura 3:** O *script* `execpub.sh`.
+    <figure markdown>
+    ![Exemplo de execução do *script* `execpub.sh` sem argumentos.](./figs/saida_execpub.png){width="650"}
+    <figcaption>Figura 3: O script execpub.sh.</figcaption>
+    </figure>
 
 1. Execute o *script* `execpub.sh`, com dois argumentos:
 
@@ -159,15 +162,17 @@ Na *internet* há muitos exemplos de documentos e códigos escritos na linguagem
 
 <a id="fig:leiame1"></a>
 
-![Exemplo da representação de um arquivo salvo com a codificação ISO-8859-2 em um ambiente UTF-8.](./figs/exemplo_iso8859_1.png)
-
-**Figura 4:** Exemplo das codificação ISO8859-2.
+<figure markdown>
+![Exemplo da representação de um arquivo salvo com a codificação ISO-8859-2 em um ambiente UTF-8.](./figs/exemplo_iso8859_1.png){width="650"}
+<figcaption>Figura 4: Exemplo das codificação ISO8859-2.</figcaption>
+</figure>
 
 <a id="fig:leiame2"></a>
 
-![Exemplo da representação de um arquivo salvo com a codificação ISO-8859-2 em um ambiente UTF-8.](./figs/exemplo_iso8859_3.png)
-
-**Figura 5:** Exemplo da codificação UTF-8.
+<figure markdown>
+![Exemplo da representação de um arquivo salvo com a codificação ISO-8859-2 em um ambiente UTF-8.](./figs/exemplo_iso8859_3.png){width="650"}
+<figcaption>Figura 5: Exemplo da codificação UTF-8.</figcaption>
+</figure>
 
 Outra forma de converter um arquivo ISO-8859-2 para o formato de codificação UTF-8, é através da utilização do comando `iconv` do Linux (o qual também pode ser instalado no *Microsoft Windows* através do SWL).Para converter um arquivo salvo na codificação ISO-8859-2 para UTF-8, pode-se utilizar o seguinte comando:
 
@@ -292,7 +297,9 @@ Na [Seção 2.12](../figuras/#212-figuras) da [Parte 2](.../intro_latex/#2-enten
 
     === "Resultado"
 
-        ![](./figs/ex_3.6-1.png)
+        <figure markdown>
+        ![](./figs/ex_3.6-1.png){width="500"}
+        </figure>
 
 No [Exemplo 2](#figestinpe), observe que espaçamentos especiais são aplicados utilizando-se os comandos `vspace` que aplicam um espaçamento de `6mm` entre o *caption* (que fica em cima da figura) da figura e um espaçamento de `4mm` entre a figura e a legenda (que fica embaixo da figura). Esta segunda legenda é opcional e geralmente se constitui de uma frase curta sobre a imagem mostrada. Um elemento obrigatório é a incorporação do marcador `FONTE` (em caixa alta), o qual deve conter a fonte consultada ou, se a produção for do autor, deve conter a frase "Produção do autor". Para mais exemplos de inserção de figuras de estilos diferentes, verifique o Anexo B de \citeonline{estiloinpe}.
 
@@ -322,7 +329,9 @@ Tabelas também devem seguir a formatação estipulada pelo estilo do INPE. Veja
 
     === "Resultado"
 
-        ![](./figs/ex_3.6-2.png)
+        <figure markdown>
+        ![](./figs/ex_3.6-2.png){width="650"}
+        </figure>
 
 No caso das tabelas, sempre que for utilizado o estilo do INPE, deve-se utilizar o ambiente `table` (veja mais detalhes na [Seção 2.14](../tabelas/#214-tabelas) da [Parte 2](../intro_latex/#2-entendendo-o-latex)). Recomenda-se também a utilização dos ambientes de posição (para centralizar, alinhar à direita ou esquerda). Da mesma forma como as figuras, as tabelas também devem vir acompanhadas do marcador `FONTE`, sempre que a citação da fonte for permitente. Neste caso, ao invés da utilização do marcador `centering`, deve-se utilizar o ambiente `center`. Mais detalhes sobre a inserção de tabelas utilizando-se o estilo do INPE, podem ser encontradas no Anexo B de \citeonline{estiloinpe}.
 
@@ -336,9 +345,10 @@ Na [Figura 6](#fig:compbibtex) é apresentado um diagrama semelhante aquele apre
 
 <a id="fig:compbibtex"></a>
 
-![Etapas envolvidas na compilação de um documento LaTeX com referências BibTeX.](./figs/diagramacompbib.png)
-
-**Figura 6:** Compilação de um documento LaTeX. **Fonte:** Adaptado de [http://www.texample.net/tikz/examples/tex-workflow/](http://www.texample.net/tikz/examples/tex-workflow/).
+<figure markdown>
+![Etapas envolvidas na compilação de um documento LaTeX com referências BibTeX.](./figs/diagramacompbib_crop.png){width="650"}
+<figcaption>Figura 6: Compilação de um documento LaTeX. Fonte: Adaptado de http://www.texample.net/tikz/examples/tex-workflow/.
+</figure>
 
 O processo de compilação de um documento LaTeX com referências BibTeX, inclui a utilização do programa `bibtex`. Em sequência, uma compilação manual completa (i.e., gerando o arquivo PDF no final), tem a seguinte ordem:
 

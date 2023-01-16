@@ -20,7 +20,9 @@ No [Exemplo 1](#exe_lista1), tem-se uma lista simples não ordenada.
 
     === "Resultado"
 
-        ![](./figs/ex_2.11-1.png)
+        <figure markdown>
+          ![](./figs/ex_2.11-1.png){ width="75" }
+        </figure>
 
 Listas podem ser aninhadas, de forma que subitens possam ser inseridos. Observe no [Exemplo 2](#exe_lista2) que o estilo dos subitens é alterado automaticamente:
 
@@ -47,7 +49,9 @@ Listas podem ser aninhadas, de forma que subitens possam ser inseridos. Observe 
 
     === "Resultado"
 
-        ![](./figs/ex_2.11-2.png)
+        <figure markdown>
+        ![](./figs/ex_2.11-2.png){ width="75" }
+        </figure>
 
 Os símbolos dos itens em uma lista ordenada podem ser facilmente modificados. No [Exemplo 3](#exe_lista_simb1), os símbolos são alterados de forma individual. Observe que é possível inserir expressões matemáticas também, as quais são apresentadas na [Seção 2.13](../matematica/#213-matematica-e-equacoes):
 
@@ -66,7 +70,9 @@ Os símbolos dos itens em uma lista ordenada podem ser facilmente modificados. N
 
     === "Resultado"
 
-        ![](./figs/ex_2.11-3.png)
+        <figure markdown>
+        ![](./figs/ex_2.11-3.png){ width="75" }
+        </figure>
 
 Para alterar o estilo dos símbolos de uma lista de uma só vez, basta seguir o [Exemplo 4](#exe_lista_simb2) a seguir:
 
@@ -85,7 +91,9 @@ Para alterar o estilo dos símbolos de uma lista de uma só vez, basta seguir o 
 
     === "Resultado"
 
-        ![](./figs/ex_2.11-4.png)
+        <figure markdown>
+        ![](./figs/ex_2.11-4.png){ width="75" }
+        </figure>
 
 No [Exemplo 5](#exe_lista3) a seguir, tem-se uma lista simples ordenada. Compare com o [Exemplo 1](#exe_lista1) e observe que a única diferença entre eles está apenas no tipo de ambiente utilizado (`itemize` e `enumerate`, respectivamente).
 
@@ -103,7 +111,9 @@ No [Exemplo 5](#exe_lista3) a seguir, tem-se uma lista simples ordenada. Compare
 
     === "Resultado"
 
-        ![](./figs/ex_2.11-5.png)
+        <figure markdown>
+        ![](./figs/ex_2.11-5.png){ width="75" }
+        </figure>
 
 Assim como nas listas não ordenadas, listas ordenadas também podem ser aninhadas. Neste caso, observe que a ordem e a numeração dos subitens é incrementada automaticamente:
 
@@ -141,7 +151,9 @@ Assim como nas listas não ordenadas, listas ordenadas também podem ser aninhad
 
     === "Resultado"
 
-        ![](./figs/ex_2.11-6.png)
+        <figure markdown>
+        ![](./figs/ex_2.11-6.png){ width="150" }
+        </figure>
 
 Listas ordenadas podem ser organizadas de formas diferentes. Pode-se ordená-las de forma numérica, alfabética ou de forma alfanumérica. Para alterar a forma como as listas são ordenadas, é necessário definir o estilo de ordenamento com o comando `\labelenum<nível>{<estilo>}`, onde `<nível>` pode ser `i`, `ii`, `iii` ou `vi`. O estilo, dado pelo modificador `<estilo>`, pode assumir as seguintes opções:
 
@@ -198,4 +210,6 @@ No [Exemplo 7](#exe_lista5) a seguir, altera-se o estilo dos ordenamentos dos n�
 
     === "Resultado"
 
-        ![](./figs/ex_2.11-7.png)
+        <figure markdown>
+        ![](./figs/ex_2.11-7.png){ width="150" }
+        </figure>

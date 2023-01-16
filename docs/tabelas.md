@@ -6,7 +6,7 @@ Tabelas são os elementos do texto que resumem e organizam informações. No LaT
 
 O ambiente `tabular` é um ambiente simples para a construção de tabelas. A sua utilização é apresentada no [Exemplo 1](#exe_tab1).
 
-!!! example "<a id="exe_tab1"></a>Exemplo 1: "
+!!! example "<a id="exe_tab1"></a>Exemplo 1: Exemplo de uma tabela com o ambiente `tabular`"
 
     === "Código"
 
@@ -26,7 +26,9 @@ O ambiente `tabular` é um ambiente simples para a construção de tabelas. A su
 
     === "Resultado"
 
-        ![](./figs/ex_2.14-1.png)
+        <figure markdown>
+        ![](./figs/ex_2.14-1.png){ width="150" }
+        </figure>
 
 Na tabela do [Exemplo 1](#exe_tab1), tem-se apenas duas colunas e algumas linhas. Para separar o conteúdo, utilizou-se apenas linhas horizontais (produzidas pelos comandos `hline`) para separar o cabeçalho, i.e., os nomes das colunas, do conteúdo. Observe que a tabela produzida possui as linhas muito próximas, e este espaçamento pode ser melhorarado com a utilização do comando `\\[-0.5em]`. Lembre-se que a instrução `\\` pula uma linha; o argumento desta instrução, i.e., `[-0.5em]` indica que o espaço de uma linha deve ser recuado em `-0.5em`. Na [Tabela 1](../medidas/#tab:medidas) está indicado que a unidade `em` refere-se à altura do caractere "M" da fonte em uso, isso garante que o espaçamento será sempre consistente independente do estilo da fonte em uso. Veja o [Exemplo 2](#exe_tab2) a seguir:
 
@@ -58,7 +60,9 @@ Na tabela do [Exemplo 1](#exe_tab1), tem-se apenas duas colunas e algumas linhas
 
     === "Resultado"
 
-        ![](./figs/ex_2.14-2.png)
+        <figure markdown>
+        ![](./figs/ex_2.14-2.png){ width="150" }
+        </figure>
 
 No [Exemplo 2](#exe_tab2), observe a instrução `{l r}`. Como a tabela do exemplo possui apenas duas colunas, indica-se com um par de colchetes o seu alinhamento, logo após o início do ambiente `tabular`. Neste caso, o conteúdo da coluna da esquerda encontra-se alinhado à esquerda, enquanto que o conteúdo da coluna da direita, encontra-se alinhado à direita (por isso `l r`). Isto deve ser feito para a quantidade de colunas que a tabela possuir. Se uma tabela no ambiente `tabular`, possuir 5 colunas, deve-se especificar o alinhamento desejado para as colunas, e.g., `{l r l l c}`. Portanto, para alinhar o conteúdo à esquerda, utilize `l` (do inglês *left*), para alinhar à direita utilize `r` (do inglês *right*) e para centralizar o conteúdo (tal como no [Exemplo 1](#exe_tab1)), utilize `c` (do inglês *center*).
 
@@ -92,7 +96,9 @@ Além de alterar o espaçamento vertical dentro de uma tabela, pode-se também a
 
     === "Resultado"
 
-        ![](./figs/ex_2.14-3.png)
+        <figure markdown>
+        ![](./figs/ex_2.14-3.png){ width="450" }
+        </figure>
 
 !!! note "Nota"
 
@@ -124,7 +130,9 @@ Assim como as tabelas produzidas em editores WYSIWYG, no LaTeX também é possí
 
     === "Resultado"
 
-        ![](./figs/ex_2.14-4.png)
+        <figure markdown>
+        ![](./figs/ex_2.14-4.png){ width="500" }
+        </figure>
 
 Na tabela do [Exemplo 4](#exe_tab4), tem-se uma tabela mais complexa, em que colunas estão mescladas de formas diferentes. Além disso, diferentemente dos exemplos anteriores, a tabela apresentada possui limitadores verticais que são desenhados utilizando-se o símbolo `|` (*pipe*)[^6], como argumento do comando que inicia o ambiente `tabular`: `|p{3cm}|p{3cm}|p{3cm}|p{3cm}|`. Observe também que a tabela desenhada possui o total de quatro colunas, cujas larguras podem ser especificadas (no exemplo, cada uma com `3cm`). Outro detalhe a ser observado neste exemplo, é a forma como o conteúdo é alinhado dentro das células. Neste caso, o alinhamento é dado por um argumento do comando `multicolumn`: `{4}{|c|}`, onde 4 indica a quantidade de células a serem mescladas e `|c|` indica que o conteúdo das células a serem mescladas será centralizado e delimitado por *pipes* nos limites laterais da célula.
 
@@ -151,7 +159,9 @@ Tabelas ajustáveis podem ser necessárias quando se deseja que a largura das co
 
     === "Resultado"
 
-        ![](./figs/ex_2.14-5.png)
+        <figure markdown>
+        ![](./figs/ex_2.14-5.png){ width="500" }
+        </figure>
 
 No [Exemplo 5](#exe_tab5) a quantidade de informação nas células não é suficiente para fazer com que a largura da tabela extrapole os limites da página, mas isto é perfeitamente possível dentro do ambiente `tabular`. Para evitar esta situação, o ambiente `tabularx` é mais apropriado, visto que com ele pode-se definir uma largura fixa (por meio de um valor ou de uma *macro*) e o conteúdo das células é ajustado dentro destes limites. No [Exemplo 6](#exe_tab7) mostra-se o que se obtém com a utilização do ambiente `tabularx`.
 
@@ -170,7 +180,9 @@ No [Exemplo 5](#exe_tab5) a quantidade de informação nas células não é sufi
 
     === "Resultado"
 
-        ![](./figs/ex_2.14-6.png)
+        <figure markdown>
+        ![](./figs/ex_2.14-6.png){ width="500" }
+        </figure>
 
 No [Exemplo 6](#exe_tab7), as colunas da tabela estão ajustadas com a mesma largura. Isso é possível através da opção `X`, utilizada como opção do comando `tabularx`, como em `\begin{tabularx}{\textwidth}{|X|X|X|}`.
 
@@ -194,7 +206,9 @@ O pacote `booktabs` permite utilizar linhas mais grossas através dos marcadores
 
     === "Resultado"
 
-        ![](./figs/ex_2.14-7.png)
+        <figure markdown>
+        ![](./figs/ex_2.14-7.png){ width="150" }
+        </figure>
 
 Os ambientes `tabular` e `tabularx` possuem algum controle sobre a largura da tabela de acordo com a quantidade de informação dentro das células. Por outro lado, tabelas muito longas, e.g., que podem ocupar várias páginas, podem não ser adequadamente acomodadas com estes ambientes. Para isso, recomenda-se a utilização do pacote `longtable` que permite o LaTeX realizar a quebra automática de linha dentro de uma tabela. Considere o [Exemplo 8](#ltable1) a seguir, em que uma tabela longa é inserida dentro de um ambiente `tabularx`:
 
@@ -237,7 +251,9 @@ Os ambientes `tabular` e `tabularx` possuem algum controle sobre a largura da ta
 
     === "Resultado"
 
-        ![](./figs/ex_2.14-8.png)
+        <figure markdown>
+        ![](./figs/ex_2.14-8.png){ width="500" }
+        </figure>
 
 Compare o [Exemplo 8](#ltable1) com o [Exemplo 9](#ltable2) a seguir, em que a mesma tabela longa é apresentada, porém com o auxílio do pacote `longtable`.
 
@@ -293,7 +309,9 @@ Compare o [Exemplo 8](#ltable1) com o [Exemplo 9](#ltable2) a seguir, em que a m
 
     === "Resultado"
 
-        ![](./figs/ex_2.14-9.png)
+        <figure markdown>
+        ![](./figs/ex_2.14-9.png){ width="500" }
+        </figure>
 
 Seguindo o código apresentado no [Exemplo 9](#ltable2), pode-se confeccionar as Tabelas [1](./pacotes.md#tab:pacotes) e [2](./pacotes.md#tab:pacotes_uteis) do Apêndice A.
 

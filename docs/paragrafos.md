@@ -15,7 +15,9 @@ Os parágrafos no LaTeX são blocos de texto separados por um determinado espaç
 
     === "Resultado"
 
-        ![](./figs/ex_2.8-1.png)
+        <figure markdown>
+          ![](./figs/ex_2.8-1.png){ width="500" }
+        </figure>
 
 No [Exemplo 1](#exe_par1), as sentenças inseridas pelo comando `\lipsumsentence` são apresentadas em forma de bloco, formando um parágrafo contínuo, i.e., sem quebra de linha. Para separar as sentenças geradas pelos comandos, pode-se simplesmente pular uma linha. Veja no [Exemplo 2](#exe_par2) a seguir:
 
@@ -31,7 +33,9 @@ No [Exemplo 1](#exe_par1), as sentenças inseridas pelo comando `\lipsumsentence
 
     === "Resultado"
 
-        ![](./figs/ex_2.8-2.png)
+        <figure markdown>
+        ![](./figs/ex_2.8-2.png){ width="500" }
+        </figure>
 
 Semelhante ao [Exemplo 2](#exe_par2), em que foi utilizado um espaço em branco para separar as sentenças no parágrafo, pode-se utilizar uma dupla de barras invertidas (`\textbackslash\textbackslash`). Veja no [Exemplo 3](#exe_par3) a seguir:
 
@@ -46,7 +50,9 @@ Semelhante ao [Exemplo 2](#exe_par2), em que foi utilizado um espaço em branco 
 
     === "Resultado"
 
-        ![](./figs/ex_2.8-3.png)
+        <figure markdown>
+        ![](./figs/ex_2.8-3.png){ width="500" }
+        </figure>
 
 Outra forma de se pular linhas, é através a utilização do comando `\newline`. Veja o [Exemplo 4](#exe_par4) e compare com os dois exemplos anteriores:
 
@@ -62,7 +68,9 @@ Outra forma de se pular linhas, é através a utilização do comando `\newline`
 
     === "Resultado"
 
-        ![](./figs/ex_2.8-4.png)
+        <figure markdown>
+        ![](./figs/ex_2.8-4.png){ width="500" }
+        </figure>
 
 Outros aspectos importantes no tratamento de parágrafos, inclui o recuo e a distância entre os parágrafos, além do espaçamento entre as linhas. O recuo dos parágrafos e o espaçamento entre eles é ajustado através dos comandos `\parindent` e `\parskip`, respectivamente. Veja o [Exemplo 5](#par:recuo) a seguir sobre como utilizar o comando `\parindent`:
 
@@ -79,7 +87,9 @@ Outros aspectos importantes no tratamento de parágrafos, inclui o recuo e a dis
 
     === "Resultado"
 
-        ![](./figs/ex_2.8-5.png)
+        <figure markdown>
+        ![](./figs/ex_2.8-5.png){ width="500" }
+        </figure>
 
 No [Exemplo 6](#par:espac), mostra-se como aumentar o espaçamento entre os parágrafos. Compare o resultado deste exemplo com o [Exemplo 5](#par:recuo) anterior.
 
@@ -97,7 +107,9 @@ No [Exemplo 6](#par:espac), mostra-se como aumentar o espaçamento entre os par�
 
     === "Resultado"
 
-        ![](./figs/ex_2.8-6.png)        
+        <figure markdown>
+        ![](./figs/ex_2.8-6.png){ width="500" }
+        </figure>
 
 Em editores WYSIWYG, pode-se ajustar a altura das linhas em um parágrafo com espaçamentos diferentes. No LaTeX isto pode ser feito com o ajuste do comando `\baselinestretch`. Por padrão, a altura das linhas em um documento LaTeX é de {1pt}, que corresponde ao espaçamento simples. Outros valores de espaçamentos podem também ser utilizados. Os Exemplos [7](#par:simples), [8](#par:meio), [9](#par:duplo) a seguir, mostram como ajustar o espaçamento das linhas com o comando `\baselinestretch`.
 
@@ -126,7 +138,9 @@ Em editores WYSIWYG, pode-se ajustar a altura das linhas em um parágrafo com es
 
     === "Resultado"
 
-        ![](./figs/ex_2.8-7.png)        
+        <figure markdown>
+        ![](./figs/ex_2.8-7.png){ width="200" }         
+        </figure>
 
 No [Exemplo 8](#par:meio), o espaçamento entre linhas equivalente ao espaçamento médio (ou linha 1,5), pode ser obtido utilizando-se o comando `\renewcommand{\baselinestretch}{1.3}`:
 
@@ -155,7 +169,9 @@ No [Exemplo 8](#par:meio), o espaçamento entre linhas equivalente ao espaçamen
 
     === "Resultado"
 
-        ![](./figs/ex_2.8-8.png)        
+        <figure markdown>
+        ![](./figs/ex_2.8-8.png){ width="500" }        
+        </figure>
 
 No [Exemplo 9](#par:duplo), o espaçamento entre linhas equivalente ao espaçamento duplo, pode ser obtido utilizando-se o comando `\renewcommand{\baselinestretch}{1.6}`:
 
@@ -184,7 +200,9 @@ No [Exemplo 9](#par:duplo), o espaçamento entre linhas equivalente ao espaçame
 
     === "Resultado"
 
-        ![](./figs/ex_2.8-9.png)        
+        <figure markdown>
+        ![](./figs/ex_2.8-9.png){ width="500" }       
+        </figure>
 
 !!! note "Nota"
  

@@ -80,7 +80,9 @@ No [Exemplo 1](#exe_meds1) é mostrado como definir a largura de uma figura com 
 
     === "Resultado"
 
-        ![](./figs/ex_2.7-1.png)
+        <figure markdown>
+          ![](./figs/ex_2.7-1.png){ width="400" }
+        </figure>
 
 No [Exemplo 1](#exe_meds1), observe que duas figuras foram inseridas após dois parágrafos. Na primeira figura, ajustou-se a sua largura para a largura do texto (por isso a opção `width=1.0\textwidth` no comando `\includegraphics`). Na segunda figura, ajustou-se a sua largura como 50% da largura do texto na página (por isso utilizou-se a opção `width=0.5\textwidth`).
 

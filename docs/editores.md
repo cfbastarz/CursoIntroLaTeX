@@ -8,21 +8,23 @@ Nas duas seções a seguir, são apresentados alguns editores selecionados para 
 
 ### 2.19.1 Editores locais
 
-Para compilar um documento LaTeX localmente, dependendo do sistema operacional em uso, há várias opções de editores. Por simplicidade, sugere-se o editor $\TeX$*Studio*, disponível para os sistemas operacional Linux, *Microsoft Windows*, e Mac OS. A [Figura 1](#fig:editortexstudio) a seguir mostra o aspecto do editor $\TeX$*Studio*.
+Para compilar um documento LaTeX localmente, dependendo do sistema operacional em uso, há várias opções de editores. Por simplicidade, sugere-se o editor TeX*Studio*, disponível para os sistemas operacional Linux, *Microsoft Windows*, e Mac OS. A [Figura 1](#fig:editortexstudio) a seguir mostra o aspecto do editor TeX*Studio*.
 
 <a id="fig:editortexstudio"></a>
 
-![O Editor $\TeX$*Studio*.](./figs/texstudio.png)
-
-**Figura 1:** Edição local de um documento LaTeX com o editor $\TeX$*Studio*.
+<figure markdown>
+![O Editor $\TeX$*Studio*.](./figs/texstudio.png){width="650"}
+<figcaption>Figura 1: Edição local de um documento LaTeX com o editor TeXStudio.</figcaption>
+</figure>
 
 Se a escolha do usuário for a linha de comando, utilizando um editor como o VIM, os documentos em LaTeX podem ser compilados utilizando a sequência de comandos apresentada na [Seção 2.1](../intro_latex/#21-introducao-ao-latex). Veja na [Figura 2](#fig:editorvim) um exemplo do aspecto da edição de um documento LaTeX utilizando o VIM.
 
 <a id="fig:editorvim"></a>
 
-![O editor VIM (modo texto).](./figs/editorvim.png)
-
-**Figura 2:** Edição local de um documento LaTeX com o editor VIM.
+<figure markdown>
+![O editor VIM (modo texto).](./figs/editorvim.png){width="650"}
+<figcaption>Figura 2: Edição local de um documento LaTeX com o editor VIM.</figcaption>
+</figure>
 
 No caso do estilo do INPE para teses e dissertações (mais detalhes na [Parte 3](../estilo_inpe/#3-estilo-do-inpe)), pode-se utilizar o *script* `execpub.sh` para facilitar o processo de compilação. O que este *script* faz é executar a sequência de comandos já apresentados, junto com mais alguns procedimentos para a renderização correta das referências com o estilo do INPE. 
 
@@ -38,17 +40,19 @@ O estilo para teses e dissertações do INPE pode ser aberto para edição *onli
 
 <a id="fig:overleaf1"></a>
 
-![O editor *Overleaf*.](./figs/overleaf1.png)
-
-**Figura 3:** Escolha do estilo do INPE para edição *online* com o editor *Overleaf*.
+<figure markdown>
+![O editor *Overleaf*.](./figs/overleaf1.png){width="650"}
+<figcaption>Figura 3: Escolha do estilo do INPE para edição online com o editor Overleaf.</figcaption>
+</figure>
 
 Na [Figura 4](#fig:overleaf2) é mostrada a interface principal do editor *Overleaf* com o estilo do INPE carregado para edição.
 
 <a id="fig:overleaf2"></a>
 
-![O editor *Overleaf*.](./figs/overleaf2.png)
-
-**Figura 4:** Edição *online* do estilo do INPE com o editor *Overleaf*.
+<figure markdown>
+![O editor *Overleaf*.](./figs/overleaf2.png){width="650"}
+<figcaption>Figura 4: Edição online do estilo do INPE com o editor Overleaf.</figcaption>
+</figure>
 
 !!! tip "Dica"
 

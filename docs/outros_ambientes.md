@@ -26,7 +26,9 @@ Dependendo do tipo de documento escrito e dos elementos textuais utilizados, com
 
     === "Resultado"
 
-        ![](./figs/ex_2.16-1.png)
+        <figure markdown>
+        ![](./figs/ex_2.16-1.png){ width="400" }
+        </figure>
 
 No [Exemplo 1](#exe:minipage), observe que foi inserido um parágrafo dentro do ambiente `minipage` de forma que este parágrafo possuísse apenas 50% do tamanho da largura total de uma parágrafo da página. 
 
@@ -48,7 +50,9 @@ Texto e outros elementos flutuantes do LaTeX podem ser inseridos no corpo do tex
 
     === "Resultado"
 
-        ![](./figs/ex_2.16-2.png)
+        <figure markdown>
+        ![](./figs/ex_2.16-2.png){ width="400" }
+        </figure>
 
 No [Exemplo 2](#exe:multicol), observe que o ambiente `multicols` possui um argumento, sendo este o valor que indicará o número de colunas a serem criadas. No ambiente `multicols`, pode-se iniciar uma seção com o texto preenchendo toda a largura da página e então inserir os parágrafos seguintes em colunas. Veja o [Exemplo 3](#exe:multicol1) a seguir.
 
@@ -69,7 +73,9 @@ No [Exemplo 2](#exe:multicol), observe que o ambiente `multicols` possui um argu
 
     === "Resultado"
 
-        ![](./figs/ex_2.16-3.png)
+        <figure markdown>
+        ![](./figs/ex_2.16-3.png){ width="400" }
+        </figure>
 
 No ambiente `multicols`, é possível também ajustar o espaçamento entre as colunas, como mostrado no [Exemplo 4](#exe:multicol2). O espaçamento entre as colunas é ajustado com o comando `\setlength{\columnsep}{valor}`, onde `valor` é a medida a ser utilizada (e.g., `1cm`).
 
@@ -88,7 +94,9 @@ No ambiente `multicols`, é possível também ajustar o espaçamento entre as co
 
     === "Resultado"
 
-        ![](./figs/ex_2.16-4.png)
+        <figure markdown>
+        ![](./figs/ex_2.16-4.png){ width="400" }
+        </figure>
 
 !!! note "Nota"
 
@@ -140,7 +148,9 @@ Para determinar páginas individuais no modo paisagem, é necessário carregar o
 
     === "Resultado"
 
-        ![](./figs/ex_2.16-5.png)
+        <figure markdown>
+        ![](./figs/ex_2.16-5.png){ width="650" }
+        </figure>
 
 !!! tip "Dica"
 
@@ -163,7 +173,9 @@ Muitas vezes, dependendo do tipo de documento que se está produzindo, faz-se ne
 
     === "Resultado"
 
-        ![](./figs/ex_2.16-6.png)
+        <figure markdown>
+        ![](./figs/ex_2.16-6.png){ width="550" }
+        </figure>
 
 
 No [Exemplo 7](#exe_list2) abaixo, utiliza-se o mesmo ambiente do anterior, mas com a diferença de um "\*" no início do ambiente. Nesta forma, o ambiente `verbatim` realça os espaços entre as palavras.
@@ -181,7 +193,9 @@ No [Exemplo 7](#exe_list2) abaixo, utiliza-se o mesmo ambiente do anterior, mas 
 
     === "Resultado"
 
-        ![](./figs/ex_2.16-7.png)
+        <figure markdown>
+        ![](./figs/ex_2.16-7.png){ width="550" }
+        </figure>
 
 É possível também utilizar o ambiente `verbatim` *inline*, ou seja, diretamente dentro de um parágrafo, o que pode ser útil quando se necessita destacar algum comando (e.g., quando o contexto requerer isso). Para utilizar o ambiente `verbatim` *inline*, utilize o comando `\verb{}` precedendo o comando desejado: o comando `\verbLaTeX` produz `\LaTeX{}`. Outra forma comum que também pode ser utilizada para destacar textos e comandos da linguagem LaTeX, é: o comando `\mintinline{latex}{{\tt destque}}` produz `{\tt destaque}` ou o comando `\mintinline{latex}{\texttt{destaque}}` produz `\texttt{destque}`.
 
@@ -224,7 +238,9 @@ O pacote `listings` é o mais simples de ser utilizado, mas aceita diferentes op
 
     === "Resultado"
 
-        ![](./figs/ex_2.16-8.png)
+        <figure markdown>
+        ![](./figs/ex_2.16-8.png){ width="400" }
+        </figure>
 
 Outro ambiente que pode ser usado para listar *scripts* e programas é o `minted`. Veja o [Exemplo 9](#exe_list4) a seguir:
 
@@ -268,7 +284,9 @@ Outro ambiente que pode ser usado para listar *scripts* e programas é o `minted
 
     === "Resultado"
 
-        ![](./figs/ex_2.16-9.png)
+        <figure markdown>
+        ![](./figs/ex_2.16-9.png){ width="400" }
+        </figure>
 
 No [Exemplo 9](#exe_list4), foram utilizadas opções específicas para realçar as palavras reservadas da linguagem *Python*. Outras opções do pacote `minted`, incluem a numeração das linhas, esquemas de cores além da configuração da cor de fundo entre outros atributos.
 
@@ -287,7 +305,9 @@ Códigos e outros tipos de inserções podem também ser feitos em linha (*inlin
 
     === "Resultado"
 
-        ![](./figs/ex_2.16-10.png)
+        <figure markdown>
+        ![](./figs/ex_2.16-10.png){ width="550" }
+        </figure>
 
 No [Exemplo 10](#exe_inline), observe que o comando `\mintinline{}{}` recebe dois argumentos: o primeiro, indica a linguagem para qual será dado destaque, e o segundo, indica o conteúdo. Neste caso, utilizou-se o comando `\mintinline{latex}{\usepackage{minted}}` para se mostrar como carregar o pacote `minted`.
 

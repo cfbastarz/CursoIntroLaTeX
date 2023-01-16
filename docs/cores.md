@@ -4,7 +4,9 @@
 
 Em um documento LaTeX, é possível utilizar cores predefinidas ou definir cores seguindo um determinado padrão. As cores padrão que geralmente são utilizadas em um documento LaTeX, i.e., aquelas que não dependem de pacotes extras, são apresentadas a seguir, com os nomes das cores anotadas abaixo das suas respectivas caixas.
 
-![](./figs/ex_2.6-a.png)
+<figure markdown>
+  ![](./figs/ex_2.6-a.png){ width="100%" }
+</figure>
 
 Cores podem ser utilizadas de formas diferentes em um documento LaTeX. Mas assim como em qualquer editor de textos WYSIWYG, as cores do texto podem ser aplicadas em palavras individuais, frases ou parágrafos. Veja o [Exemplo 1](#exe_cor1) a seguir.
 
@@ -18,7 +20,9 @@ Cores podem ser utilizadas de formas diferentes em um documento LaTeX. Mas assim
 
     === "Resultado"
 
-        ![](./figs/ex_2.6-1.png)
+        <figure markdown>
+          ![](./figs/ex_2.6-1.png){ width="100%" }
+        </figure>
 
 Além de modificar a cor das fontes, é possível também marcá-las de forma que o fundo fique colorido, como mostrado no [Exemplo 2](#exe_cor3).
 
@@ -32,11 +36,15 @@ Além de modificar a cor das fontes, é possível também marcá-las de forma qu
 
     === "Resultado"
 
-        ![](./figs/ex_2.6-2.png)
+        <figure markdown>
+          ![](./figs/ex_2.6-2.png){ width="100%" }
+        </figure>
 
 É possível também escolher uma paleta de cores diferente, e.g., a patela de cores do projeto [*Solarized*](https://ethanschoonover.com/solarized/). Para utilizá-la, basta carregar o pacote `\usepackage{solarized}` no preâmbulo do documento e aplicar as cores conforme o [Exemplo 3](#exe_corsol) adiante. A paleta de cores do "Solarized" possui as seguintes cores básicas:
 
-![](./figs/ex_2.6-b.png)
+<figure markdown>
+  ![](./figs/ex_2.6-b.png){ width="100%" }
+</figure>
 
 Para utilizar as novas cores, basta utilizar um dos nomes definidos pela paleta, precedido por `solarized-nome-da-cor`. Veja o [Exemplo 3](#exe_corsol) a seguir.
 
@@ -50,17 +58,21 @@ Para utilizar as novas cores, basta utilizar um dos nomes definidos pela paleta,
 
     === "Resultado"
 
-        ![](./figs/ex_2.6-3.png)
+        <figure markdown>
+          ![](./figs/ex_2.6-3.png){ width="100%" }
+        </figure>
 
 !!! tip "Dica"
 
     Mais informações sobre o pacote `xcolor-solarized` podem ser encontradas em [https://www.ctan.org/pkg/xcolor-solarized](https://www.ctan.org/pkg/xcolor-solarized).
 
-Outra paleta de cores harmoniosa, é provida pelo pacote `xcolor-material`. Esta é a paleta de cores do [Material Design* do Google](https://material.io/). Para utilizá-la, basta carregar o pacote `\usepackage{xcolor-material}` no preâmbulo do documento. 
+Outra paleta de cores harmoniosa, é provida pelo pacote `xcolor-material`. Esta é a paleta de cores do [*Material Design* do Google](https://material.io/). Para utilizá-la, basta carregar o pacote `\usepackage{xcolor-material}` no preâmbulo do documento. 
 
 As cores básicas do pacote `xcolor-material` são as seguintes (além do branco e preto):
 
-![](./figs/ex_2.6-c.png)
+<figure markdown>
+  ![](./figs/ex_2.6-c.png){ width="100%" }
+</figure>
 
 Na paleta de cores mostrada acima, "d." foi utilizado para abreviar a palavra *deep* (como em *deep purple*) e "l." foi utilizada para abreviar a palavra *light* (como em *light green*). Para utilizar as cores do pacote `xcolor-material`, deve-se referenciar as cores da seguinte forma: a cor \textit{Deep Purple} deve ser referenciada como "MaterialDeepPurple", ou seja, a palavra reservada "Material" deve preceder o nome da cor, que por sua vez, deve ser indicada com a primeira letra em caixa alta. Veja no [Exemplo 4](#exe_cormaterial) como utilizar as cores deste pacote.
 
@@ -74,7 +86,9 @@ Na paleta de cores mostrada acima, "d." foi utilizado para abreviar a palavra *d
 
     === "Resultado"
 
-        ![](./figs/ex_2.6-4.png)
+        <figure markdown>
+          ![](./figs/ex_2.6-4.png){ width="100%" }
+        </figure>
 
 !!! note "Nota"
 
@@ -106,7 +120,9 @@ Além da utilização de paletas de cores pré-definidas, é possível também d
 
     === "Resultado"
 
-        ![](./figs/ex_2.6-5.png)
+        <figure markdown>
+          ![](./figs/ex_2.6-5.png){ width="500" }
+        </figure>
 
 !!! tip "Dica"
 

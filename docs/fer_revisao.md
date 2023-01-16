@@ -48,7 +48,9 @@ O pacote `todonotes`, pode ser utilizado nesta tarefa. Com ele é possível inse
 
     === "Resultado"
 
-        ![](./figs/ex_2.15-1.png)        
+        <figure markdown>
+        ![](./figs/ex_2.15-1.png){ width="300" }
+        </figure>
 
 No [Exemplo 1](#todo1), observe que, além dos pacotes `inputenc` e `xcolor-material` (os quais fornecem suporte à acentuação e a paleta de cores *Material Design* do Google, respectivamente), foi necessário também carregar os pacotes `xargs` e `todonotes`. O pacote `xargs` permite a definição de comandos utilizando-se múltiplos argumentos. O pacote `todonotes` é o que fornece a interface necessária para a inserção das notas personalizadas. Além disso, observe também que forma definidos dois comandos (duas *macros*) de nomes `minhanotaA` e `minhanotaB`, os quais recebem um argumento que, de fato, é a nota que será inserida no texto. Na definição do comando `minhanota`, foram ajustadas as seguintes opções: `linecolor`, `backgroundcolor` e `bordercolor`. Estas opções fazem referência ao aspecto que as notas inseridas terão. Neste caso, escolheu-se a cor *MaterialAmber* para a nota (uma variação da cor Ambar), fornecida pelo pacote `xcolor-material`. Observe também que a cor atribuída à opção `backgroundcolor` está definida como `backgroundcolor=MaterialAmber!25`, i.e., da saturação total (100%) da cor natural, removeu-se 25%. Logo, o modificador `!25`, indica a transparência de 25% na aplicação da cor escolhida (mais opções de cores e paletas de cores podem ser encontradas na [Seção 2.6](../cores/#26-cores-e-paletas-de-cores)).
 
@@ -99,7 +101,9 @@ O pacote `todonotes` permite a criação alguns tipos diferentes de notas. Pode-
 
     === "Resultado"
 
-        ![](./figs/ex_2.15-2.png)
+        <figure markdown>
+        ![](./figs/ex_2.15-2.png){ width="550" }
+        </figure>
 
 No [Exemplo 2](#todo2), observe que foram passadas opções para o pacote `todonotes`. Estas opções foram fornecidas junto com o comando `usepackage`. A primeira opção, `colorlistoftodos`, permite a criação de uma lista de notas, tal como um sumário; a segunda opção, `textsize=tiny`, ajusta o tamanho do texto dentro da nota para o tamanho `tiny` (veja mais opções de tamanho de fontes na [Seção 2.4](../tipos_letras/#24-tipos-tamanhos-e-estilos-de-letras)). A inserção das notas criadas é simples, bastando digitar o comando definido junto com o texto que será inserido na nota, e.g., `\comentario{Meu comentário.}`. Para inserir uma nota em linha, i.e., uma nota que ocupa toda a largura do texto (especialemnte útil quando o texto da nota ocupar várias linhas), pode-se usar a opção `inline` junto com o comando definido, e.g., `\comentatio[inline]{Meu comentário muito longo escrito em linha.}`. Por fim, uma lista com as notas pode ser inserida com o comando `\listoftodos[Nome da Lista]`. Este comando pode ser inserido em qualquer parte do texto. Conheça mais sobre o pacote `todonotes` no site do CTAN em [https://www.ctan.org/pkg/todonotes](https://www.ctan.org/pkg/todonotes).
 

@@ -36,7 +36,9 @@ No [Exemplo 1](#exe_acentos) a seguir, são mostrados os acentos mais comuns.
 
     === "Resultado"
 
-        ![](./figs/ex_2.3-1.png)
+        <figure markdown>
+          ![](./figs/ex_2.3-1.png){ width="150" }
+        </figure>
 
 !!! note "Nota"
 

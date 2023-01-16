@@ -17,7 +17,9 @@ Boa parte dos elementos de um texto podem ser posicionados à esquerda, ao centr
 
     === "Resultado"
 
-        ![](./figs/ex_2.9-1.png)
+        <figure markdown>
+          ![](./figs/ex_2.9-1.png){ width="500" }
+        </figure>
 
 Ao invés de utilizar o ambiente `center`, é possível utilizar também o marcador `centering`. Veja como utilizá-lo no [Exemplo 2](#exe_par6), e compare com o resultado do [Exemplo 1](#exe_par5). 
 
@@ -33,7 +35,9 @@ Ao invés de utilizar o ambiente `center`, é possível utilizar também o marca
 
     === "Resultado"
 
-        ![](./figs/ex_2.9-2.png)
+        <figure markdown>
+        ![](./figs/ex_2.9-2.png){ width="500" }
+        </figure>
 
 Para alinhar o parágrafo à esquerda, utiliza-se o ambiente `flushleft`. Veja o [Exemplo 3](#exe_par7) a seguir:
 
@@ -50,9 +54,11 @@ Para alinhar o parágrafo à esquerda, utiliza-se o ambiente `flushleft`. Veja o
 
     === "Resultado"
 
-        ![](./figs/ex_2.9-3.png)
+        <figure markdown>
+        ![](./figs/ex_2.9-3.png){ width="500" }
+        </figure>
 
-Semelhante ao [Exemplo 3](#exe_par7), o alinhamento à direita, é feito com o ambiente `flushright`. Veja o Exemplo \ref{exe_par8} a seguir:
+Semelhante ao [Exemplo 3](#exe_par7), o alinhamento à direita, é feito com o ambiente `flushright`. Veja o [Exemplo 4](#exe_par8) a seguir:
 
 !!! example "<a id="exe_par8"></a>Exemplo 4: Parágrafos alinhados à direita, utilizando o ambiente `flushright`"
 
@@ -67,7 +73,9 @@ Semelhante ao [Exemplo 3](#exe_par7), o alinhamento à direita, é feito com o a
 
     === "Resultado"
 
-        ![](./figs/ex_2.9-4.png)
+        <figure markdown>
+        ![](./figs/ex_2.9-4.png){ width="500" }
+        </figure>
 
 !!! tip "Dica"
 
@@ -89,7 +97,9 @@ No [Exemplo 5](#exe_par9), mostra-se como aumentar a distância entre dois pará
 
     === "Resultado"
 
-        ![](./figs/ex_2.9-5.png)
+        <figure markdown>
+        ![](./figs/ex_2.9-5.png){ width="500" }
+        </figure>
 
 De forma semelhante, o [Exemplo 6](#exe_par10) mostra como aumentar o recuo do parágrafo em `2cm` com o marcador `hspace`:
 
@@ -104,6 +114,8 @@ De forma semelhante, o [Exemplo 6](#exe_par10) mostra como aumentar o recuo do p
 
     === "Resultado"
 
-        ![](./figs/ex_2.9-6.png)
+        <figure markdown>
+        ![](./figs/ex_2.9-6.png){ width="500" }
+        </figure>
 
 Embora as *macros* `vspace` e `hspace` possam ser utilizadas para aumentar o espaçamento e o recuo dos parágrafos, prefira utilizá-los no espaçamento entre corpos flutuantes ou entre imagens e entre elementos de tabela, dentro de ambientes. Para parágrafos, utilize os comandos `\parskip` ([Exemplo 5](./paragrafos.md#par:recuo)) e `\parindent` ([Exemplo 6](./paragrafos.md#par:espac)).
