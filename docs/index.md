@@ -10,7 +10,7 @@ Utilize os links a seguir para acessar a apostila do curso, os estilos para tese
 
 |[Apostila do Curso de Introdução ao LaTeX....:fontawesome-solid-book:](https://github.com/cfbastarz/CursoIntroLaTeX/blob/2a42d0891beb81e6ddfcb1c859724cd49388c350/apostila/publicacao.pdf){ .md-button }|[Site da Biblioteca do INPE...................:fontawesome-solid-link:](https://www.gov.br/inpe/pt-br/area-conhecimento/biblioteca/editoracao/templates){ .md-button }|
 |:---:|:---:|
-|[Estilo de Teses e Dissertações do INPE........:fontawesome-solid-file-zipper:](http://mtc-m21d.sid.inpe.br/zip/8JMKD3MGP3W34T/47HLFT8){ .md-button }|[Estilo Beamer do INPE.........................:fontawesome-solid-file-zipper:](https://github.com/cfbastarz/EstiloBeamerINPE){ .md-button }|
+|[Estilo de Teses e Dissertações do INPE........:fontawesome-solid-file-zipper:](http://urlib.net/ibi/8JMKD3MGP3W34T/47HLFT8){ .md-button }|[Estilo Beamer do INPE.........................:fontawesome-solid-file-zipper:](https://github.com/cfbastarz/EstiloBeamerINPE){ .md-button }|
 
 !!! warning "Aviso"
 
