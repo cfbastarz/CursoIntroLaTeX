@@ -6,7 +6,7 @@ Apresentação do Curso de Introdução à Linguagem LaTeX na 2a. Semana de Imer
 
 ![type:video](https://youtube.com/embed/GoK21C26pbQ)
 
-Utilize os links a seguir para acessar a aportila do curso, os estilos para teses e dissertações e o site da biblioteca do INPE:
+Utilize os links a seguir para acessar a apostila do curso, os estilos para teses e dissertações e o site da biblioteca do INPE:
 
 |[Apostila do Curso de Introdução ao LaTeX....:fontawesome-solid-book:](https://github.com/cfbastarz/CursoIntroLaTeX/blob/2a42d0891beb81e6ddfcb1c859724cd49388c350/apostila/publicacao.pdf){ .md-button }|[Site da Biblioteca do INPE...................:fontawesome-solid-link:](https://www.gov.br/inpe/pt-br/area-conhecimento/biblioteca/editoracao/templates){ .md-button }|
 |:---:|:---:|
