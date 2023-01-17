@@ -8,12 +8,12 @@ O estilo do INPE compreende um conjunto de arquivos que contém instruções e i
 
 ## 3.2 Obtendo o Estilo
 
-É possível obter uma cópia do estilo do INPE a partir de duas formas distintas. A primeira, é entrar no *site* da biblioteca do INPE, a partir do endereço [http://www.inpe.br/biblioteca/](http://www.inpe.br/biblioteca/). Na página, no menu lateral, clique em "Como Publicar?" e depois em "em LaTeX" ([Figura 1](#fig:biblio_pub_latex)). Na página, no *frame* da direita, uma outra página irá se abrir com as instruções "Publicar usando estilo em LaTeX". A página contém instruções sobre todo o processo de publicação de documentos submetidos à revisão pelo SESID. Para obter uma cópia *offline* do pacote com o estilo do INPE em LaTeX, clique no *link* [download](http://mtc-m16c.sid.inpe.br/archive.cgi/sid.inpe.br/iris@1905/2005/08.25.14.01) do estilo baixando o arquivo archive.zip"} que está na "OPÇÃO 3 (compilação no próprio computador)". Na mesma página, há instruções sobre a instalação de um compilador LaTeX, que também podem ser encontradas na [Parte 1](../preparacao/#1-preparacao).
+É possível obter uma cópia do estilo do INPE a partir de duas formas distintas. A primeira, é entrar no *site* da biblioteca do INPE, a partir do endereço [http://www.inpe.br/biblioteca/](http://www.inpe.br/biblioteca/). Na página, mais abaixo, clique no link ["Editoração"](https://www.gov.br/inpe/pt-br/area-conhecimento/biblioteca/editoracao) e, na página seguinte, no link ["Templates - MS-Word e LaTeX"](https://www.gov.br/inpe/pt-br/area-conhecimento/biblioteca/editoracao/templates) ([Figura 1](#fig:biblio_pub_latex)). A página contém instruções sobre todo o processo de publicação de documentos submetidos à revisão pelo SESID. Para obter uma cópia *offline* do pacote com o estilo do INPE em LaTeX, clique no *link* ["download do estilo baixando o arquivo archive.zip"](http://urlib.net/ibi/8JMKD3MGP3W34T/47HLFT8) para obter o arquivo `archive.zip`. Na mesma página, há instruções sobre o processo de submissão do documento de tese ou dissertação à biblioteca do INPE. As intruções sobre a instalação de um compilador LaTeX e o uso deste template LaTeX podem ser encontradas na presente seção e na [Parte 1](../preparacao/#1-preparacao) deste site.
 
 <a id="fig:biblio_pub_latex"></a>
 
 <figure markdown>
-![Obtenção do estilo \LaTeX{} do INPE a partir do *site* da Biblioteca do INPE.](./figs/biblio_pub_latex.png){width="650"}
+![Obtenção do estilo \LaTeX{} do INPE a partir do *site* da Biblioteca do INPE.](./figs/biblio.png){width="650"}
 <figcaption>Figura 1: Site do biblioteca do INPE.</figcaption>
 </figure>
 
