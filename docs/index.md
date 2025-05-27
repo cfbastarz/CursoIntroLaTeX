@@ -15,3 +15,5 @@ Utilize os links a seguir para acessar a apostila do curso, os estilos para tese
 !!! warning "Aviso"
 
 	O conteúdo deste site foi escrito em linguagem Markdown. Em comparação com o texto da apostila, algumas diferenças podem ser encontradas na sua representação.
+
+[![Hits](https://hits.sh/github.com/cfbastarz.svg?view=today-total&label=Visitas%20(hoje/total)&color=4051b4&labelColor=151515)](https://hits.sh/github.com/cfbastarz/)
