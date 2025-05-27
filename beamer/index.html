@@ -1,0 +1,2133 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Site do Curso de Introdução ao LaTeX">
+      
+      
+        <meta name="author" content="Carlos Frederico Bastarz">
+      
+      
+      
+        <link rel="prev" href="../estilo_inpe/">
+      
+      
+        <link rel="next" href="../pacotes/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>4. Apresentações com o Beamer - Curso de Introução ao LaTeX</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#4-apresentacoes-com-o-beamer" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href=".." title="Curso de Introução ao LaTeX" class="md-header__button md-logo" aria-label="Curso de Introução ao LaTeX" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Curso de Introução ao LaTeX
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              4. Apresentações com o Beamer
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/cfbastarz/CursoIntroLaTeX" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    cfbastarz/CursoIntroLaTeX
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Curso de Introução ao LaTeX" class="md-nav__button md-logo" aria-label="Curso de Introução ao LaTeX" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Curso de Introução ao LaTeX
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/cfbastarz/CursoIntroLaTeX" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    cfbastarz/CursoIntroLaTeX
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Início
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../preparacao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1. Preparação
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    2. Entendendo o LaTeX
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            2. Entendendo o LaTeX
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../intro_latex/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.1 Introdução ao LaTeX
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../carac_simb_esp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.2 Caracteres e Símbolos Especiais
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../acentos_local/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.3 Acentos e Localização
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tipos_letras/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.4 Tipos, Tamanhos e Estilos de Letras
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../titulos_secoes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.5 Títulos e Seções
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cores/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.6 Cores e Paletas de Cores
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../medidas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.7 Medidas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../paragrafos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.8 Parágrafos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../posicao_espac/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.9 Posição e Espaçamento
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notas_rodape/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.10 Notas de Rodapé
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../listas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.11 Listas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../figuras/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.12 Figuras
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../matematica/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.13 Matemática e Equações
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tabelas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.14 Tabelas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fer_revisao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.15 Ferramentas de Revisão
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../outros_ambientes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.16 Outros Ambientes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../citacoes_referencias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.17 Citações e Referências
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../macros/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.18 Macros
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../editores/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.19 Editores
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exercicios/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.20 Exercícios
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../estilo_inpe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3. Estilo do INPE
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    4. Apresentações com o Beamer
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    4. Apresentações com o Beamer
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#41-pacote-beamer" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1 Pacote Beamer
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#42-estilos" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2 Estilos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#43-ambientes-especiais" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.3 Ambientes especiais
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#44-informacoes-da-capa" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.4 Informações da Capa
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#45-sumario" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.5 Sumário
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#46-barra-de-navegacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.6 Barra de Navegação
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#47-transicoes-e-animacoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.7 Transições e Animações
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pacotes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    5. Pacotes Utilizados
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../op_comp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    6. Opções de Compilação
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#41-pacote-beamer" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1 Pacote Beamer
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#42-estilos" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2 Estilos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#43-ambientes-especiais" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.3 Ambientes especiais
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#44-informacoes-da-capa" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.4 Informações da Capa
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#45-sumario" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.5 Sumário
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#46-barra-de-navegacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.6 Barra de Navegação
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#47-transicoes-e-animacoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.7 Transições e Animações
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<div><h1 id="4-apresentacoes-com-o-beamer">4. Apresentações com o <em>Beamer</em><a class="headerlink" href="#4-apresentacoes-com-o-beamer" title="Permanent link">¶</a></h1>
+<h2 id="41-pacote-beamer">4.1 Pacote <em>Beamer</em><a class="headerlink" href="#41-pacote-beamer" title="Permanent link">¶</a></h2>
+<p>O <em>Beamer</em> é o pacote padrão do LaTeX para a produção de apresentações no estilo do <em>Microsoft PowerPoint</em>. Assim como os documentos do LaTeX, é possível reconhecer os documentos de apresentações produzidos pelo <em>Beamer</em> pela sua qualidade gráfica e pelos seus estilos pré-definidos (embora seja possível criar estilos a partir do zero, esta tarefa não será abordada aqui).</p>
+<p>Um documento do <em>Beamer</em> é tão simples quanto um documento do LaTeX. O <code>beamer</code> é uma classe de documentos, essim como o <code>article</code>, <code>report</code>, <code>book</code> etc. Para criar um documento <em>Beamer</em>, basta utilizar esta classe. Veja no <a href="#exe:beamer1">Exemplo 1</a> a seguir, um exemplo mínimo.</p>
+<div class="admonition example">
+<p class="admonition-title"><a id="exe:beamer1"></a>Exemplo 1: Um documento <em>Beamer</em> mínimo</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked id="código" name="__tabbed_1" type="radio"><input id="resultado" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="código">Código</label><label for="resultado">Resultado</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">\documentclass</span><span class="nb">{</span>beamer<span class="nb">}</span>
+<span class="k">\usepackage</span><span class="na">[utf8]</span><span class="nb">{</span>inputenc<span class="nb">}</span>
+<span class="k">\usepackage</span><span class="nb">{</span>lipsum<span class="nb">}</span>
+
+<span class="k">\title</span><span class="nb">{</span>Título<span class="nb">}</span>
+<span class="k">\author</span><span class="nb">{</span>Nome<span class="nb">}</span>
+<span class="k">\date</span><span class="nb">{</span>September 2019<span class="nb">}</span>
+
+<span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+
+<span class="k">\maketitle</span>
+
+<span class="k">\section</span><span class="nb">{</span>Seção<span class="nb">}</span>
+
+<span class="k">\subsection</span><span class="nb">{</span>Subseção<span class="nb">}</span>
+
+<span class="k">\begin</span><span class="nb">{</span>frame<span class="nb">}{</span>Frame<span class="nb">}</span>
+<span class="k">\lipsum</span><span class="na">[1]</span>
+<span class="k">\end</span><span class="nb">{</span>frame<span class="nb">}</span>
+
+<span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
+</code></pre></div></td></tr></table></div>
+</div>
+<div class="tabbed-block">
+<p><figure markdown>
+<a class="glightbox" href="../figs/ex_4.1-1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../figs/ex_4.1-1.png" width="600"></a>
+</figure></p>
+</div>
+</div>
+</div>
+</div>
+<p>Diferente de um documento LaTeX mínimo, como aquele mostrado no <a href="../intro_latex/#exe_doc">Exemplo 1</a>, um documento do <em>Beamer</em> contém <em>frames</em>, que são inseridos com o ambiente padrão <code>frame</code>. Um <em>frame</em> é um como um <em>slide</em> do <em>Microsoft PowerPoint</em> e dentro dele é possível inserir quaisquer ambientes que normalmente são inseridos dentro de um documento LaTeX comum, e.g., listas, figuras, tabelas, texto, textos em colunas, ambientes especiais como o <em>minipages</em>, <em>listings</em> e outros.</p>
+<p>Nas seções a seguir, são mostrados alguns detalhes de alguns dos elementos principais de um documento <em>Beamer</em>.</p>
+<h2 id="42-estilos">4.2 Estilos<a class="headerlink" href="#42-estilos" title="Permanent link">¶</a></h2>
+<p>Assim como qualquer outro editor de apresentações, no <em>Beamer</em> também é possível utilizar temas e aplicar diferentes estilos e cores nas fontes e elementos da estrutura do documento. O estilo de um documento <em>Beamer</em> pode ser definido através do tema, esquema de cores e estilo das fontes. Para isto, utiliza-se o comando <code>\usetheme{tema}</code> no preâmbulo de um documento <em>Beamer</em> de forma que seja definido um dos 28 temas padrão do <em>Beamer</em>. Os nomes dos temas e os seus respectivos esquema de cores, são mostrados no <a href="#exe:beamer2_tema">Exemplo 2</a> a seguir.</p>
+<table>
+<thead>
+<tr>
+<th>default</th>
+<th>AnnArbor</th>
+<th>Antibes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="glightbox" href="../figs/beamer-26.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../figs/beamer-26.png"></a></td>
+<td><a class="glightbox" href="../figs/beamer-10.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../figs/beamer-10.png"></a></td>
+<td><a class="glightbox" href="../figs/beamer-19.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../figs/beamer-19.png"></a></td>
+</tr>
+<tr>
+<td><strong>Bergen</strong></td>
+<td><strong>Berkeley</strong></td>
+<td><strong>Berlin</strong></td>
+</tr>
+<tr>
+<td><a class="glightbox" href="../figs/beamer-20.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../figs/beamer-20.png"></a></td>
+<td><a class="glightbox" href="../figs/beamer-21.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../figs/beamer-21.png"></a></td>
+<td><a class="glightbox" href="../figs/beamer-22.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../figs/beamer-22.png"></a></td>
+</tr>
+<tr>
+<td><strong>Boadilla</strong></td>
+<td><strong>CambridgeUS</strong></td>
+<td><strong>Copenhagen</strong></td>
+</tr>
+<tr>
+<td><a class="glightbox" href="../figs/beamer-23.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../figs/beamer-23.png"></a></td>
+<td><a class="glightbox" href="../figs/beamer-24.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../figs/beamer-24.png"></a></td>
+<td><a class="glightbox" href="../figs/beamer-25.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../figs/beamer-25.png"></a></td>
+</tr>
+<tr>
+<td><strong>Darmstadt</strong></td>
+<td><strong>Dresden</strong></td>
+<td><strong>EastLansing</strong></td>
+</tr>
+<tr>
+<td><a class="glightbox" href="../figs/beamer-0.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../figs/beamer-0.png"></a></td>
+<td><a class="glightbox" href="../figs/beamer-1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../figs/beamer-1.png"></a></td>
+<td><a class="glightbox" href="../figs/beamer-27.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../figs/beamer-27.png"></a></td>
+</tr>
+<tr>
+<td><strong>Frankfurt</strong></td>
+<td><strong>Goettingen</strong></td>
+<td><strong>Hannover</strong></td>
+</tr>
+<tr>
+<td><a class="glightbox" href="../figs/beamer-2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../figs/beamer-2.png"></a></td>
+<td><a class="glightbox" href="../figs/beamer-3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../figs/beamer-3.png"></a></td>
+<td><a class="glightbox" href="../figs/beamer-4.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../figs/beamer-4.png"></a></td>
+</tr>
+<tr>
+<td><strong>Ilmenau</strong></td>
+<td><strong>JuanLesPins</strong></td>
+<td><strong>Luebeck</strong></td>
+</tr>
+<tr>
+<td><a class="glightbox" href="../figs/beamer-5.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../figs/beamer-5.png"></a></td>
+<td><a class="glightbox" href="../figs/beamer-6.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../figs/beamer-6.png"></a></td>
+<td><a class="glightbox" href="../figs/beamer-7.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../figs/beamer-7.png"></a></td>
+</tr>
+<tr>
+<td><strong>Madrid</strong></td>
+<td><strong>Malmoe</strong></td>
+<td><strong>Marburg</strong></td>
+</tr>
+<tr>
+<td><a class="glightbox" href="../figs/beamer-8.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../figs/beamer-8.png"></a></td>
+<td><a class="glightbox" href="../figs/beamer-9.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../figs/beamer-9.png"></a></td>
+<td><a class="glightbox" href="../figs/beamer-11.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../figs/beamer-11.png"></a></td>
+</tr>
+<tr>
+<td><strong>Montpellier</strong></td>
+<td><strong>PaloAlto</strong></td>
+<td><strong>Pittsburg</strong></td>
+</tr>
+<tr>
+<td><a class="glightbox" href="../figs/beamer-12.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../figs/beamer-12.png"></a></td>
+<td><a class="glightbox" href="../figs/beamer-13.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../figs/beamer-13.png"></a></td>
+<td><a class="glightbox" href="../figs/beamer-14.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../figs/beamer-14.png"></a></td>
+</tr>
+<tr>
+<td><strong>Rochester</strong></td>
+<td><strong>Singapore</strong></td>
+<td><strong>Szeged</strong></td>
+</tr>
+<tr>
+<td><a class="glightbox" href="../figs/beamer-15.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../figs/beamer-15.png"></a></td>
+<td><a class="glightbox" href="../figs/beamer-16.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../figs/beamer-16.png"></a></td>
+<td><a class="glightbox" href="../figs/beamer-17.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../figs/beamer-17.png"></a></td>
+</tr>
+<tr>
+<td><strong>Warsaw</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a class="glightbox" href="../figs/beamer-18.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../figs/beamer-18.png"></a></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Para cada um dos temas apresentados no <a href="#exe:beamer2_tema">Exemplo 2</a>, é possível alterar o esquema de cores. Para isso, além de se utilizar o comando <code>usetheme</code>, deve-se utilizar o comando <code>\usecolortheme{esquema}</code>. Os esquemas de cores disponíveis para cada uma dos temas são os seguintes:</p>
+<ul>
+<li><code>default</code></li>
+<li><code>albatross</code></li>
+<li><code>beaver</code></li>
+<li><code>beetle</code></li>
+<li><code>crane</code></li>
+<li><code>dolphin</code></li>
+<li><code>dove</code></li>
+<li><code>fly</code></li>
+<li><code>lily</code></li>
+<li><code>monarca</code></li>
+<li><code>orchid</code></li>
+<li><code>rose</code></li>
+<li><code>seagull</code></li>
+<li><code>seahorse</code></li>
+<li><code>spruce</code></li>
+<li><code>whale</code></li>
+<li><code>wolverine</code></li>
+</ul>
+<p>No <a href="#exe:beamer2_tema">Exemplo 2</a> é mostrado o tema <code>AnnArbor'' com o esquema de cores</code>beaver''. Observe que este exemplo possui o mesmo código do <a href="#exe:beamer1">Exemplo 1</a>, com a diferença de que foram adicionados os comandos <code>usetheme</code> e <code>usecolortheme</code>.</p>
+<div class="admonition example">
+<p class="admonition-title"><a id="exe:beamer2_tema"></a>Exemplo 2: Um documento <em>Beamer</em> mínimo com o tema <code>AnnArbor</code> e o esquema de cores <code>beaver</code></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked id="código_1" name="__tabbed_2" type="radio"><input id="resultado_1" name="__tabbed_2" type="radio"><div class="tabbed-labels"><label for="código_1">Código</label><label for="resultado_1">Resultado</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">\documentclass</span><span class="nb">{</span>beamer<span class="nb">}</span>
+<span class="k">\usepackage</span><span class="na">[utf8]</span><span class="nb">{</span>inputenc<span class="nb">}</span>
+<span class="k">\usepackage</span><span class="nb">{</span>lipsum<span class="nb">}</span>
+
+<span class="k">\usetheme</span><span class="nb">{</span>AnnArbor<span class="nb">}</span>
+<span class="k">\usecolortheme</span><span class="nb">{</span>beaver<span class="nb">}</span>
+
+<span class="k">\title</span><span class="nb">{</span>Título<span class="nb">}</span>
+<span class="k">\author</span><span class="nb">{</span>Nome<span class="nb">}</span>
+<span class="k">\date</span><span class="nb">{</span>September 2019<span class="nb">}</span>
+
+<span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+
+<span class="k">\maketitle</span>
+
+<span class="k">\begin</span><span class="nb">{</span>frame<span class="nb">}{</span>Frame<span class="nb">}</span>
+<span class="k">\lipsum</span><span class="na">[1]</span>
+<span class="k">\end</span><span class="nb">{</span>frame<span class="nb">}</span>
+
+<span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
+</code></pre></div></td></tr></table></div>
+</div>
+<div class="tabbed-block">
+<p><figure markdown>
+<a class="glightbox" href="../figs/ex_4.2-2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../figs/ex_4.2-2.png" width="600"></a>
+</figure></p>
+</div>
+</div>
+</div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Dica</p>
+<p>Veja mais opções de temas e as variações dos esquemas de cores do <em>Beamer</em> em <a href="https://hartwork.org/beamer-theme-matrix/">https://hartwork.org/beamer-theme-matrix/</a>.</p>
+</div>
+<p>Além da escolha do tema e do esquema de cores, é possível também alterar as cores e estilos de fontes de diferentes elementos visuais dos temas, de forma individual. O comando <code>\setbeamercolor{tema}{elemento(s)}</code> define o esquema de cores que será utilizado e quais elementos do tema escolhido deverão ser alterados. O comando <code>\setbeamerfont{tema}{elemento(s)}</code>, da mesma forma, permite alterar o estilo das fontes do tema escolhido. São muitos os elementos que podem ser alterados dentro de um <em>frame</em> do <em>Beamer</em> e, portanto, a apresentação deles foge ao escopo deste material.</p>
+<div class="admonition tip">
+<p class="admonition-title">Dica</p>
+<p>Para conhecer mais sobre as possibilidades de customização dos diversos elementos de um <em>frame</em> do <em>Beamer</em>, recomenda-se a leitura da documentação do pacote em <a href="http://linorg.usp.br/CTAN/macros/latex/contrib/beamer/doc/beameruserguide.pdf">http://linorg.usp.br/CTAN/macros/latex/contrib/beamer/doc/beameruserguide.pdf</a>.</p>
+</div>
+<h2 id="43-ambientes-especiais">4.3 Ambientes especiais<a class="headerlink" href="#43-ambientes-especiais" title="Permanent link">¶</a></h2>
+<p>Em um <em>frame</em> do <em>Beamer</em>, podem ser inseridas listas, tabelas, imagens, equações e outros ambientes que já foram mostrados na <a href="../intro_latex/#2-entendendo-o-latex">Parte 2</a>. Além destes ambientes, o <em>Beamer</em> suporta também ambientes especiais que podem ser utilizados para destacar as informações inseridas. Um destes ambientes especiais, é o ambiente <code>block</code>. Veja no <a href="#exe:beamer_block">Exemplo 3</a> a seguir como inserí-lo em um <em>frame</em> do <em>Beamer</em>:</p>
+<div class="admonition example">
+<p class="admonition-title"><a id="exe:beamer_block"></a>Exemplo 3: Ambiente <code>block</code> em um <em>frame</em> do <em>Beamer</em></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked id="código_2" name="__tabbed_3" type="radio"><input id="resultado_2" name="__tabbed_3" type="radio"><div class="tabbed-labels"><label for="código_2">Código</label><label for="resultado_2">Resultado</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">\documentclass</span><span class="nb">{</span>beamer<span class="nb">}</span>
+<span class="k">\usepackage</span><span class="na">[utf8]</span><span class="nb">{</span>inputenc<span class="nb">}</span>
+
+<span class="k">\usetheme</span><span class="nb">{</span>Bergen<span class="nb">}</span>
+
+<span class="k">\title</span><span class="nb">{</span>Título<span class="nb">}</span>
+<span class="k">\author</span><span class="nb">{</span>Nome<span class="nb">}</span>
+<span class="k">\date</span><span class="nb">{</span>September 2019<span class="nb">}</span>
+
+<span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+
+<span class="k">\maketitle</span>
+
+<span class="k">\begin</span><span class="nb">{</span>frame<span class="nb">}{</span>Meu Frame<span class="nb">}</span>
+  <span class="k">\begin</span><span class="nb">{</span>block<span class="nb">}{</span>Meu block<span class="nb">}</span>
+    À noite, vovô Kowalsky vê o ímã cair no pé do pinguim queixoso e vovó põe açúcar no chá de tâmaras do jabuti feliz. 
+  <span class="k">\end</span><span class="nb">{</span>block<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>frame<span class="nb">}</span>
+
+<span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
+</code></pre></div></td></tr></table></div>
+</div>
+<div class="tabbed-block">
+<p><figure markdown>
+<a class="glightbox" href="../figs/ex_4.3-3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../figs/ex_4.3-3.png" width="600"></a>
+</figure></p>
+</div>
+</div>
+</div>
+</div>
+<p>Além do ambiente <code>block</code>, há também os ambientes <code>exampleblock</code> e <code>alertblock</code>. Cada um deles pode ser utilizado em situações distintas, dando importância ou chamando a atenção para determinadas partes da apresentação. Veja no <a href="#exe:beamer_blocks">Exemplo 4</a> a seguir, um exemplo do uso destes ambientes.</p>
+<div class="admonition example">
+<p class="admonition-title"><a id="exe:beamer_blocks"></a>Exemplo 4: Ambiente <code>block</code> em um <em>frame</em> do <em>Beamer</em></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked id="código_3" name="__tabbed_4" type="radio"><input id="resultado_3" name="__tabbed_4" type="radio"><div class="tabbed-labels"><label for="código_3">Código</label><label for="resultado_3">Resultado</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">\documentclass</span><span class="nb">{</span>beamer<span class="nb">}</span>
+<span class="k">\usepackage</span><span class="na">[utf8]</span><span class="nb">{</span>inputenc<span class="nb">}</span>
+
+<span class="k">\usetheme</span><span class="nb">{</span>Warsaw<span class="nb">}</span>
+
+<span class="k">\title</span><span class="nb">{</span>Título<span class="nb">}</span>
+<span class="k">\author</span><span class="nb">{</span>Nome<span class="nb">}</span>
+<span class="k">\date</span><span class="nb">{</span>September 2019<span class="nb">}</span>
+
+<span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+
+<span class="k">\maketitle</span>
+
+<span class="k">\begin</span><span class="nb">{</span>frame<span class="nb">}{</span>Meu fFrame<span class="nb">}</span>
+  <span class="k">\begin</span><span class="nb">{</span>block<span class="nb">}{</span>Bloco <span class="nb">{</span><span class="k">\tt</span> block<span class="nb">}}</span>
+    À noite, vovô Kowalsky vê o ímã cair no pé do pinguim queixoso e vovó põe açúcar no chá de tâmaras do jabuti feliz. 
+  <span class="k">\end</span><span class="nb">{</span>block<span class="nb">}</span>
+  <span class="k">\begin</span><span class="nb">{</span>exampleblock<span class="nb">}{</span>Bloco <span class="nb">{</span><span class="k">\tt</span> exampleblock<span class="nb">}}</span>
+    Quem traz CD, LP, fax, engov e whisky JB?
+  <span class="k">\end</span><span class="nb">{</span>exampleblock<span class="nb">}</span>
+  <span class="k">\begin</span><span class="nb">{</span>alertblock<span class="nb">}{</span>Bloco <span class="nb">{</span><span class="k">\tt</span> alertblock<span class="nb">}}</span>
+    Jane quer LP, fax, CD, giz, TV e bom whisky.
+  <span class="k">\end</span><span class="nb">{</span>alertblock<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>frame<span class="nb">}</span>
+
+<span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
+</code></pre></div></td></tr></table></div>
+</div>
+<div class="tabbed-block">
+<p><figure markdown>
+<a class="glightbox" href="../figs/ex_4.3-4.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../figs/ex_4.3-4.png" width="600"></a>
+</figure></p>
+</div>
+</div>
+</div>
+</div>
+<h2 id="44-informacoes-da-capa">4.4 Informações da Capa<a class="headerlink" href="#44-informacoes-da-capa" title="Permanent link">¶</a></h2>
+<p>Como em toda apresentação, é comum o primeiro <em>frame</em> ou <em>slide</em> possuir informações como título (<code>\title{}</code>), subtítulo (<code>\subtitle{}</code>), autor (<code>\author{}</code>), afiliação (<code>\institute{}</code>), data (<code>\date{}</code>), local e, eventualmente, alguma figura com o logo do evento ou da instituição (<code>\titlegraphic{}</code>). O <a href="#exe:beamer_capa1">Exemplo 5</a> mostra o uso destas macros para incluir as informações mais comuns na capa de uma apresentação confeccionada com o <em>Beamer</em>. </p>
+<div class="admonition example">
+<p class="admonition-title"><a id="exe:beamer_capa1"></a>Exemplo 5: Informações da Capa em uma apresentação do <em>Beamer</em></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="5:2"><input checked id="código_4" name="__tabbed_5" type="radio"><input id="resultado_4" name="__tabbed_5" type="radio"><div class="tabbed-labels"><label for="código_4">Código</label><label for="resultado_4">Resultado</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">\documentclass</span><span class="nb">{</span>beamer<span class="nb">}</span>
+<span class="k">\usepackage</span><span class="na">[utf8]</span><span class="nb">{</span>inputenc<span class="nb">}</span>
+
+<span class="k">\usetheme</span><span class="nb">{</span>Luebeck<span class="nb">}</span>
+
+<span class="k">\title</span><span class="nb">{</span>Título<span class="nb">}</span>
+<span class="k">\subtitle</span><span class="nb">{</span>Subtítulo<span class="nb">}</span>
+<span class="k">\author</span><span class="nb">{</span>Nome<span class="nb">}</span>
+<span class="k">\institute</span><span class="nb">{</span>Meu Instituto<span class="nb">}</span>
+<span class="k">\date</span><span class="nb">{</span>September 2019<span class="nb">}</span>
+
+<span class="k">\titlegraphic</span><span class="nb">{</span><span class="k">\includegraphics</span><span class="na">[scale=0.25]</span><span class="nb">{</span>docs/figs/logo.eps<span class="nb">}}</span>
+
+<span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+
+<span class="k">\maketitle</span>
+
+<span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
+</code></pre></div></td></tr></table></div>
+</div>
+<div class="tabbed-block">
+<p><figure markdown>
+<a class="glightbox" href="../figs/ex_4.4-5.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../figs/ex_4.4-5.png" width="300"></a>
+</figure></p>
+</div>
+</div>
+</div>
+</div>
+<p>Caso seja do interesse do usuário, este poderá manter a data sempre atualizada a partir da utilização da <em>macro</em> <code>\today</code>, que sempre irá incorpoerar a data do dia em que a apresentação foi compilada. Logo, ao invés de inserir <code>\date{September 2019}</code>, insira <code>\date{\today}</code>.</p>
+<h2 id="45-sumario">4.5 Sumário<a class="headerlink" href="#45-sumario" title="Permanent link">¶</a></h2>
+<p>Assim como em documentos LaTeX, as apresentações escritas com a classe <em>Beamer</em> também podem conter um sumário com as seções e subseções. No <a href="#exe:beamer1">Exemplo 1</a>, o código inclui uma seção e uma subseção e os <em>frames</em> da apresentação podem ser organizados utilizando estas partições. Para inserir um sumário em uma apresentação <em>Beamer</em>, basta inserir a <em>macro</em> <code>\tableofcontents</code><sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> no primeiro <em>frame</em> da apresentação. O <a href="#exe:beamer_sumario1">Exemplo 6</a> mostra como inserir um Sumário na apresentação <em>Beamer</em>.</p>
+<div class="admonition example">
+<p class="admonition-title"><a id="exe:beamer_sumario1"></a>Exemplo 6: Sumário em um documento <em>Beamer</em></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="6:2"><input checked id="código_5" name="__tabbed_6" type="radio"><input id="resultado_5" name="__tabbed_6" type="radio"><div class="tabbed-labels"><label for="código_5">Código</label><label for="resultado_5">Resultado</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">\documentclass</span><span class="nb">{</span>beamer<span class="nb">}</span>
+<span class="k">\usepackage</span><span class="na">[utf8]</span><span class="nb">{</span>inputenc<span class="nb">}</span>
+<span class="k">\usepackage</span><span class="nb">{</span>lipsum<span class="nb">}</span>
+
+<span class="k">\usetheme</span><span class="nb">{</span>Madrid<span class="nb">}</span>
+
+<span class="k">\title</span><span class="nb">{</span>Título<span class="nb">}</span>
+<span class="k">\author</span><span class="nb">{</span>Nome<span class="nb">}</span>
+<span class="k">\date</span><span class="nb">{</span>September 2019<span class="nb">}</span>
+
+<span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+
+<span class="k">\maketitle</span>
+
+<span class="k">\begin</span><span class="nb">{</span>frame<span class="nb">}</span>[c]<span class="nb">{</span>Sumário<span class="nb">}</span>
+<span class="k">\tableofcontents</span>
+<span class="k">\end</span><span class="nb">{</span>frame<span class="nb">}</span>
+
+<span class="k">\section</span><span class="nb">{</span>Uma Seção<span class="nb">}</span>
+
+<span class="k">\subsection</span><span class="nb">{</span>Uma Subseção<span class="nb">}</span>
+
+<span class="k">\begin</span><span class="nb">{</span>frame<span class="nb">}{</span>Frame 1<span class="nb">}</span>
+  <span class="k">\lipsum</span><span class="na">[1]</span>
+<span class="k">\end</span><span class="nb">{</span>frame<span class="nb">}</span>
+
+<span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
+</code></pre></div></td></tr></table></div>
+</div>
+<div class="tabbed-block">
+<p><figure markdown>
+<a class="glightbox" href="../figs/ex_4.5-6.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../figs/ex_4.5-6.png" width="600"></a>
+</figure></p>
+</div>
+</div>
+</div>
+</div>
+<p>Dependendo da forma como a apresentação é organizada, e dependendo também do tema escolhido, pode ser conveniente alterar a aparência ou o comportamento do sumário. Isto significa que é possível omitir alguns elementos (e.g., subseções) do sumário ou mesmo fazer com que ele se repita toda vez que uma nova seção da apresentação é iniciada. Veja no <a href="#exe:beamer_sumario2">Exemplo 7</a> como omitir as subseções do sumário, utilizando uma opção <code>hideallsubsections</code> da <em>macro</em> <code>\tableofcontents</code>.</p>
+<div class="admonition example">
+<p class="admonition-title"><a id="exe:beamer_sumario2"></a>Exemplo 7: Sumário em um documento <em>Beamer</em>, omitindo as subseções</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="7:2"><input checked id="código_6" name="__tabbed_7" type="radio"><input id="resultado_6" name="__tabbed_7" type="radio"><div class="tabbed-labels"><label for="código_6">Código</label><label for="resultado_6">Resultado</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">\documentclass</span><span class="nb">{</span>beamer<span class="nb">}</span>
+<span class="k">\usepackage</span><span class="na">[utf8]</span><span class="nb">{</span>inputenc<span class="nb">}</span>
+<span class="k">\usepackage</span><span class="nb">{</span>lipsum<span class="nb">}</span>
+
+<span class="k">\usetheme</span><span class="nb">{</span>Singapore<span class="nb">}</span>
+
+<span class="k">\title</span><span class="nb">{</span>Título<span class="nb">}</span>
+<span class="k">\author</span><span class="nb">{</span>Nome<span class="nb">}</span>
+<span class="k">\date</span><span class="nb">{</span>September 2019<span class="nb">}</span>
+
+<span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+
+<span class="k">\maketitle</span>
+
+<span class="k">\begin</span><span class="nb">{</span>frame<span class="nb">}</span>[c]<span class="nb">{</span>Sumário<span class="nb">}</span>
+<span class="k">\tableofcontents</span><span class="na">[hideallsubsections]</span>
+<span class="k">\end</span><span class="nb">{</span>frame<span class="nb">}</span>
+
+<span class="k">\section</span><span class="nb">{</span>Uma Seção<span class="nb">}</span>
+
+<span class="k">\subsection</span><span class="nb">{</span>Uma Subseção<span class="nb">}</span>
+
+<span class="k">\begin</span><span class="nb">{</span>frame<span class="nb">}{</span>Frame 1<span class="nb">}</span>
+  <span class="k">\lipsum</span><span class="na">[1]</span>
+<span class="k">\end</span><span class="nb">{</span>frame<span class="nb">}</span>
+
+<span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
+</code></pre></div></td></tr></table></div>
+</div>
+<div class="tabbed-block">
+<p><figure markdown>
+<a class="glightbox" href="../figs/ex_4.5-7.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../figs/ex_4.5-7.png" width="600"></a>
+</figure></p>
+</div>
+</div>
+</div>
+</div>
+<p>Para alterar o comportamento do sumário em um documento <em>Beamer</em>, de forma que ele apareça sempre que uma nova seção for iniciada, pode-se incluir um novo <em>frame</em> logo após o início da seção, incluindo a <em>macro</em> <code>\tableofcontents</code> com a opção <code>currentsection</code> e/ou a opção <code>currentsubsection</code>. Veja no <a href="#exe:beamer_sumario3">Exemplo 8</a> a seguir:</p>
+<div class="admonition example">
+<p class="admonition-title"><a id="exe:beamer_sumario3"></a>Exemplo 8: Alterando o comportamento do sumário em um documento <em>Beamer</em></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="8:2"><input checked id="código_7" name="__tabbed_8" type="radio"><input id="resultado_7" name="__tabbed_8" type="radio"><div class="tabbed-labels"><label for="código_7">Código</label><label for="resultado_7">Resultado</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">\documentclass</span><span class="nb">{</span>beamer<span class="nb">}</span>
+<span class="k">\usepackage</span><span class="na">[utf8]</span><span class="nb">{</span>inputenc<span class="nb">}</span>
+<span class="k">\usepackage</span><span class="nb">{</span>lipsum<span class="nb">}</span>
+
+<span class="k">\usetheme</span><span class="nb">{</span>Szeged<span class="nb">}</span>
+
+<span class="k">\title</span><span class="nb">{</span>Título<span class="nb">}</span>
+<span class="k">\author</span><span class="nb">{</span>Nome<span class="nb">}</span>
+<span class="k">\date</span><span class="nb">{</span>September 2019<span class="nb">}</span>
+
+<span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+
+<span class="k">\begin</span><span class="nb">{</span>frame<span class="nb">}</span>[c]<span class="nb">{</span>Sumário<span class="nb">}</span>
+  <span class="k">\tableofcontents</span>
+<span class="k">\end</span><span class="nb">{</span>frame<span class="nb">}</span>
+
+<span class="k">\section</span><span class="nb">{</span>Uma Seção<span class="nb">}</span>
+
+<span class="k">\subsection</span><span class="nb">{</span>Uma Subseção<span class="nb">}</span>
+
+<span class="k">\begin</span><span class="nb">{</span>frame<span class="nb">}{</span>Sumário<span class="nb">}</span>
+  <span class="k">\tableofcontents</span><span class="na">[currentsection]</span>
+<span class="k">\end</span><span class="nb">{</span>frame<span class="nb">}</span>
+
+<span class="k">\begin</span><span class="nb">{</span>frame<span class="nb">}{</span>Frame 1<span class="nb">}</span>
+  <span class="k">\lipsum</span><span class="na">[1]</span>
+<span class="k">\end</span><span class="nb">{</span>frame<span class="nb">}</span>
+
+<span class="k">\section</span><span class="nb">{</span>Uma Outra Seção<span class="nb">}</span>
+
+<span class="k">\subsection</span><span class="nb">{</span>Uma Outra Subseção<span class="nb">}</span>
+
+<span class="k">\begin</span><span class="nb">{</span>frame<span class="nb">}</span>[c]<span class="nb">{</span>Sumário<span class="nb">}</span>
+  <span class="k">\tableofcontents</span><span class="na">[currentsection]</span>
+<span class="k">\end</span><span class="nb">{</span>frame<span class="nb">}</span>
+
+<span class="k">\begin</span><span class="nb">{</span>frame<span class="nb">}{</span>Frame 2<span class="nb">}</span>
+  <span class="k">\lipsum</span><span class="na">[2]</span>
+<span class="k">\end</span><span class="nb">{</span>frame<span class="nb">}</span>
+
+<span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
+</code></pre></div></td></tr></table></div>
+</div>
+<div class="tabbed-block">
+<p><figure markdown>
+<a class="glightbox" href="../figs/ex_4.5-8.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../figs/ex_4.5-8.png" width="700"></a>
+</figure></p>
+</div>
+</div>
+</div>
+</div>
+<h2 id="46-barra-de-navegacao">4.6 Barra de Navegação<a class="headerlink" href="#46-barra-de-navegacao" title="Permanent link">¶</a></h2>
+<p>Outro elemento que aparece na capa (e também dos demais <em>frames</em>), é a barra de navegação. Essa barra serve para facilitar a navegação entre os <em>slides</em> da apresentação, mas requer a utilização do <em>mouse</em>, o que pode não ser muito prático. Nos temas pré-definidos do <em>Beamer</em>, há uma barra de navegação persistente que é mostrada em detalhes na <a href="#fig:navbar">Figura 1</a>:</p>
+<p><a id="fig:navbar"></a></p>
+<figure>
+<p><a class="glightbox" href="../figs/beamer-capa.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="A barra de navegação do *Beamer*." src="../figs/beamer-capa.png" width="450"></a></p>
+<figcaption>Figura 1: A barra de navegação do Beamer sempre aparece em uso com os temas padrão do Beamer. Entretanto, é possível desabilitá-la.</figcaption>
+</figure>
+<p>Para desabilitar a barra de navegação, basta utilizar um dos comandos a seguir: <code>\beamertemplatenavigationsymbolsempty</code> ou <code>\setbeamertemplate{navigation symbols}{}</code>.</p>
+<p>Veja no <a href="#exe:navbar">Exemplo 9</a> a seguir o efeito do uso de um destes comandos:</p>
+<div class="admonition example">
+<p class="admonition-title"><a id="exe:navbar"></a>Exemplo 9: Desabilitando a barra de navegação do <em>Beamer</em></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="9:2"><input checked id="código_8" name="__tabbed_9" type="radio"><input id="resultado_8" name="__tabbed_9" type="radio"><div class="tabbed-labels"><label for="código_8">Código</label><label for="resultado_8">Resultado</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">\documentclass</span><span class="nb">{</span>beamer<span class="nb">}</span>
+<span class="k">\usepackage</span><span class="na">[utf8]</span><span class="nb">{</span>inputenc<span class="nb">}</span>
+
+<span class="k">\usepackage</span><span class="nb">{</span>lipsum<span class="nb">}</span>
+
+<span class="k">\usetheme</span><span class="nb">{</span>PaloAlto<span class="nb">}</span>
+
+<span class="k">\beamertemplatenavigationsymbolsempty</span>
+
+<span class="k">\title</span><span class="nb">{</span>Título<span class="nb">}</span>
+<span class="k">\author</span><span class="nb">{</span>Nome<span class="nb">}</span>
+<span class="k">\date</span><span class="nb">{</span>September 2019<span class="nb">}</span>
+
+<span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+
+<span class="k">\maketitle</span>
+
+<span class="k">\begin</span><span class="nb">{</span>frame<span class="nb">}{</span>Meu frame<span class="nb">}</span>
+
+<span class="k">\lipsum</span><span class="na">[1]</span>
+
+<span class="k">\end</span><span class="nb">{</span>frame<span class="nb">}</span>
+
+<span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
+</code></pre></div></td></tr></table></div>
+</div>
+<div class="tabbed-block">
+<p><figure markdown>
+<a class="glightbox" href="../figs/ex_4.6-9.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../figs/ex_4.6-9.png" width="600"></a>
+</figure></p>
+</div>
+</div>
+</div>
+</div>
+<h2 id="47-transicoes-e-animacoes">4.7 Transições e Animações<a class="headerlink" href="#47-transicoes-e-animacoes" title="Permanent link">¶</a></h2>
+<p>Efeitos de transição e animações também podem ser utilizadas em um documento <em>Beamer</em>. Entretanto, observe que, diferentemente do <em>Microsoft PowerPoint</em>, estes efeitos e animações são como as animações feitas em <em>flipboards</em>, i.e., animações quadro-a-quadro. Isso significa que vários <em>frames</em> (ou <em>slides</em>) são produzidos até que a animação ou o efeito final seja alcançado. Veja no <a href="#exe:beamer3">Exemplo 10</a> como os itens de uma lista são apresentados de forma que apenas o item atual esteja realçado. Este efeito é muito comum e recebe o nome de pausa e ele é obtido a partir do comando <code>\pause</code>.</p>
+<div class="admonition example">
+<p class="admonition-title"><a id="exe:beamer3"></a>Exemplo 10: Adicionando pausas no <em>Beamer</em> com o comando <code>pause</code></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="10:2"><input checked id="código_9" name="__tabbed_10" type="radio"><input id="resultado_9" name="__tabbed_10" type="radio"><div class="tabbed-labels"><label for="código_9">Código</label><label for="resultado_9">Resultado</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">\documentclass</span><span class="nb">{</span>beamer<span class="nb">}</span>
+<span class="k">\usepackage</span><span class="na">[utf8]</span><span class="nb">{</span>inputenc<span class="nb">}</span>
+
+<span class="k">\usetheme</span><span class="nb">{</span>CambridgeUS<span class="nb">}</span>
+
+<span class="k">\title</span><span class="nb">{</span>Título<span class="nb">}</span>
+<span class="k">\author</span><span class="nb">{</span>Nome<span class="nb">}</span>
+<span class="k">\date</span><span class="nb">{</span>September 2019<span class="nb">}</span>
+
+<span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+
+<span class="k">\maketitle</span>
+
+<span class="k">\begin</span><span class="nb">{</span>frame<span class="nb">}{</span>Meu Frame<span class="nb">}</span>
+Minha Lista:
+<span class="k">\begin</span><span class="nb">{</span>itemize<span class="nb">}</span>
+    <span class="k">\pause</span>
+    <span class="k">\item</span> Item 1
+    <span class="k">\pause</span>
+    <span class="k">\item</span> Item 2
+    <span class="k">\pause</span>
+    <span class="k">\item</span> Item 3
+<span class="k">\end</span><span class="nb">{</span>itemize<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>frame<span class="nb">}</span>
+
+<span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
+</code></pre></div></td></tr></table></div>
+</div>
+<div class="tabbed-block">
+<p><figure markdown>
+<a class="glightbox" href="../figs/ex_4.7-10.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../figs/ex_4.7-10.png" width="700"></a>
+</figure></p>
+</div>
+</div>
+</div>
+</div>
+<p>Observe no <a href="#exe:beamer3">Exemplo 10</a> que os itens da lista são adicionados um após o outro de forma sequencial. Este comportamento pode ser alterado de forma que a ordem em que os itens aparecem possa ser controlada. Compare o <a href="#exe:beamer3">Exemplo 10</a> com o <a href="#exe:beamer4">Exemplo 11</a> a seguir:</p>
+<div class="admonition example">
+<p class="admonition-title"><a id="exe:beamer4"></a>Exemplo 11: Controlando itens em uma lista no <em>Beamer</em></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="11:2"><input checked id="código_10" name="__tabbed_11" type="radio"><input id="resultado_10" name="__tabbed_11" type="radio"><div class="tabbed-labels"><label for="código_10">Código</label><label for="resultado_10">Resultado</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">\documentclass</span><span class="nb">{</span>beamer<span class="nb">}</span>
+<span class="k">\usepackage</span><span class="na">[utf8]</span><span class="nb">{</span>inputenc<span class="nb">}</span>
+
+<span class="k">\usetheme</span><span class="nb">{</span>EastLansing<span class="nb">}</span>
+
+<span class="k">\title</span><span class="nb">{</span>Título<span class="nb">}</span>
+<span class="k">\author</span><span class="nb">{</span>Nome<span class="nb">}</span>
+<span class="k">\date</span><span class="nb">{</span>September 2019<span class="nb">}</span>
+
+<span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+
+<span class="k">\maketitle</span>
+
+<span class="k">\begin</span><span class="nb">{</span>frame<span class="nb">}{</span>Meu Frame<span class="nb">}</span>
+Minha Lista:
+<span class="k">\pause</span>
+<span class="k">\begin</span><span class="nb">{</span>itemize<span class="nb">}</span>
+    <span class="k">\item</span>&lt;2-&gt; Item 1
+    <span class="k">\item</span>&lt;3-&gt; Item 2
+    <span class="k">\item</span>&lt;4-&gt; Item 3
+<span class="k">\end</span><span class="nb">{</span>itemize<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>frame<span class="nb">}</span>
+
+<span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
+</code></pre></div></td></tr></table></div>
+</div>
+<div class="tabbed-block">
+<p><figure markdown>
+<a class="glightbox" href="../figs/ex_4.7-11.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../figs/ex_4.7-11.png" width="700"></a>
+</figure></p>
+</div>
+</div>
+</div>
+</div>
+<p>No <a href="#exe:beamer4">Exemplo 11</a>, não foi utilizado o comando <code>\pause</code> e, ao invés dele, foram adicionados parâmetros ao comando <code>\item</code> de forma que fosse especificado em qual <em>slide</em> aquela informação da lista deve aparecer. Dessa forma, o comando <code>\item&lt;2-&gt; Item 1</code> deve aparecer apenas no <em>slide</em> número 2, o item descrito pelo comando <code>\item&lt;3-&gt; Item 2</code> deve aparecer apenas no slide número 3 e assim por diante. Além disso, observe que há um sinal de <code>-</code> (menos) após o número do <em>slide</em>, indicando que aquele item irá aparecer a partir do número do <em>slide</em> indicado em diante. Na <a href="#tab:beamer1">Tabela 1</a> estão listados alguns dos comandos de controle dos elementos de um <em>slide</em> do <em>Beamer</em>.</p>
+<p><a id="tab:beamer1"></a></p>
+<p><strong>Tabela 1:</strong> Alguns comandos de controle dos elementos de um <em>slide</em> do <em>Beamer</em>.</p>
+<table>
+<thead>
+<tr>
+<th>Comando</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>\textbf&lt;&gt;{}</code></td>
+<td>Controla quando um texto deverá ocorrer em negrito</td>
+</tr>
+<tr>
+<td><code>\textit&lt;&gt;{}</code></td>
+<td>Controle quando um texto deverá ocorrer em itálico</td>
+</tr>
+<tr>
+<td><code>\color&lt;&gt;{}</code></td>
+<td>Controla quando um texto deverá ocorrer em uma cor diferente</td>
+</tr>
+<tr>
+<td><code>\alert&lt;&gt;{}</code></td>
+<td>Controla quando um texto deverá ocorrer destacadamente</td>
+</tr>
+</tbody>
+</table>
+<p>Outra <em>macro</em> do <em>Beamer</em> que permite controlar as ações dos efeitos de pausa e transição, é o <code>\onslide</code>. Este comando permite indicar em qual <em>slide</em> um determinado item deverá ocorrer. Veja no <a href="#exe:beamer_onslide">Exemplo 12</a> o seu funcionamento. No exemplo, observe que a capa da apresentação foi suprimida com a exclusão da <em>maxcro</em> <code>maketitle</code>, Além disso, note quando os itens e elementos permanecem ou não nos <em>frames</em> produzidos.</p>
+<div class="admonition example">
+<p class="admonition-title"><a id="exe:beamer_onslide"></a>Exemplo 12: Controlando itens em uma lista no <em>Beamer</em> com o comando <code>onslide</code></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="12:2"><input checked id="código_11" name="__tabbed_12" type="radio"><input id="resultado_11" name="__tabbed_12" type="radio"><div class="tabbed-labels"><label for="código_11">Código</label><label for="resultado_11">Resultado</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">\documentclass</span><span class="nb">{</span>beamer<span class="nb">}</span>
+<span class="k">\usepackage</span><span class="na">[utf8]</span><span class="nb">{</span>inputenc<span class="nb">}</span>
+
+<span class="k">\usetheme</span><span class="nb">{</span>Marburg<span class="nb">}</span>
+
+<span class="k">\title</span><span class="nb">{</span>Título<span class="nb">}</span>
+<span class="k">\author</span><span class="nb">{</span>Nome<span class="nb">}</span>
+<span class="k">\date</span><span class="nb">{</span>September 2019<span class="nb">}</span>
+
+<span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+
+<span class="k">\begin</span><span class="nb">{</span>frame<span class="nb">}{</span>Meu Frame<span class="nb">}</span>
+Minha lista:
+<span class="k">\onslide</span>&lt;1-&gt;
+<span class="k">\begin</span><span class="nb">{</span>enumerate<span class="nb">}</span>
+  <span class="k">\item\onslide</span>&lt;3&gt; Item 1
+  <span class="k">\item\onslide</span>&lt;2-&gt; Item 2
+  <span class="k">\item\onslide</span>&lt;4-&gt; Item 3
+<span class="k">\end</span><span class="nb">{</span>enumerate<span class="nb">}</span>
+<span class="k">\onslide</span>&lt;2&gt; Uma frase
+<span class="k">\end</span><span class="nb">{</span>frame<span class="nb">}</span>
+
+<span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
+</code></pre></div></td></tr></table></div>
+</div>
+<div class="tabbed-block">
+<p><figure markdown>
+<a class="glightbox" href="../figs/ex_4.7-12.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../figs/ex_4.7-12.png" width="600"></a>
+</figure></p>
+</div>
+</div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>No LaTeX há outros pacotes que também podem ser utilizados para a confecção de apresentações e pôsteres no estilo do <em>Microsoft PowerPoint</em>. Entre eles, destacam-se a classe <a href="https://www.ctan.org/pkg/powerdot"><code>powerdot</code></a> que fornece estilos muito semelhantes àqueles que podem ser encontrados no <em>Microsoft PowerPoint</em> e o pacote <a href="https://www.ctan.org/pkg/tcolorbox"><code>tcolorbox</code></a>.</p>
+</div>
+<div class="footnote">
+<hr>
+<ol>
+<li id="fn:1">
+<p>Quando o sumário é adicionado ao documento <em>Beamer</em>, pode ser necessário compilar o documento mais de uma vez. <a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">↩</a></p>
+</li>
+</ol>
+</div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/cfbastarz" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="mailto:cfbastarz@gmail.com" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480v-83.6c0-4 1.5-7.8 4.2-10.8l167.6-182.8c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8l-88.3-44.2C7.1 311.3.3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+        <script src="../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>

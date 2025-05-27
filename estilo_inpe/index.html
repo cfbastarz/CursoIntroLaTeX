@@ -1,0 +1,1986 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Site do Curso de Introdução ao LaTeX">
+      
+      
+        <meta name="author" content="Carlos Frederico Bastarz">
+      
+      
+      
+        <link rel="prev" href="../exercicios/">
+      
+      
+        <link rel="next" href="../beamer/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>3. Estilo do INPE - Curso de Introução ao LaTeX</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#3-estilo-do-inpe" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href=".." title="Curso de Introução ao LaTeX" class="md-header__button md-logo" aria-label="Curso de Introução ao LaTeX" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Curso de Introução ao LaTeX
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              3. Estilo do INPE
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/cfbastarz/CursoIntroLaTeX" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    cfbastarz/CursoIntroLaTeX
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Curso de Introução ao LaTeX" class="md-nav__button md-logo" aria-label="Curso de Introução ao LaTeX" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Curso de Introução ao LaTeX
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/cfbastarz/CursoIntroLaTeX" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    cfbastarz/CursoIntroLaTeX
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Início
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../preparacao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1. Preparação
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    2. Entendendo o LaTeX
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            2. Entendendo o LaTeX
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../intro_latex/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.1 Introdução ao LaTeX
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../carac_simb_esp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.2 Caracteres e Símbolos Especiais
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../acentos_local/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.3 Acentos e Localização
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tipos_letras/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.4 Tipos, Tamanhos e Estilos de Letras
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../titulos_secoes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.5 Títulos e Seções
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cores/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.6 Cores e Paletas de Cores
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../medidas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.7 Medidas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../paragrafos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.8 Parágrafos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../posicao_espac/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.9 Posição e Espaçamento
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notas_rodape/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.10 Notas de Rodapé
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../listas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.11 Listas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../figuras/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.12 Figuras
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../matematica/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.13 Matemática e Equações
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tabelas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.14 Tabelas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fer_revisao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.15 Ferramentas de Revisão
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../outros_ambientes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.16 Outros Ambientes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../citacoes_referencias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.17 Citações e Referências
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../macros/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.18 Macros
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../editores/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.19 Editores
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exercicios/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.20 Exercícios
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    3. Estilo do INPE
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    3. Estilo do INPE
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#31-estilo-do-inpe-para-dissertacoes-e-teses" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 Estilo do INPE para Dissertações e Teses
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#32-obtendo-o-estilo" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 Obtendo o Estilo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#33-estrutura-e-organizacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.3 Estrutura e Organização
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#34-compilacao-do-documento" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.4 Compilação do Documento
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#35-arquivos-de-configuracao" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.5 Arquivos de Configuração
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#36-insercao-de-figuras-e-tabelas" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.6 Inserção de Figuras e Tabelas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#37-insercao-de-citacoes-e-referencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.7 Inserção de Citações e Referências
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#38-orientacoes-especiais" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.8 Orientações Especiais
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      Referências
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../beamer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    4. Apresentações com o Beamer
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pacotes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    5. Pacotes Utilizados
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../op_comp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    6. Opções de Compilação
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#31-estilo-do-inpe-para-dissertacoes-e-teses" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 Estilo do INPE para Dissertações e Teses
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#32-obtendo-o-estilo" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 Obtendo o Estilo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#33-estrutura-e-organizacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.3 Estrutura e Organização
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#34-compilacao-do-documento" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.4 Compilação do Documento
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#35-arquivos-de-configuracao" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.5 Arquivos de Configuração
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#36-insercao-de-figuras-e-tabelas" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.6 Inserção de Figuras e Tabelas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#37-insercao-de-citacoes-e-referencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.7 Inserção de Citações e Referências
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#38-orientacoes-especiais" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.8 Orientações Especiais
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      Referências
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<div><h1 id="3-estilo-do-inpe">3. Estilo do INPE<a class="headerlink" href="#3-estilo-do-inpe" title="Permanent link">¶</a></h1>
+<p>O INPE desenvolveu um estilo próprio para a publicação de teses, dissertações e relatórios. Este estilo está disponível para edição na linguagem de marcação LaTeX, além de possuir também estilos que podem ser utilizados com os editores WYSIWYG <em>Microsoft Word</em> e <em>LibreOffice</em>. Este capítulo trata da aplicação do estilo do INPE no ambiente da linguagem de marcação LaTeX.</p>
+<h2 id="31-estilo-do-inpe-para-dissertacoes-e-teses">3.1 Estilo do INPE para Dissertações e Teses<a class="headerlink" href="#31-estilo-do-inpe-para-dissertacoes-e-teses" title="Permanent link">¶</a></h2>
+<p>O estilo do INPE compreende um conjunto de arquivos que contém instruções e imagens, que permitem que os documentos escritos dentro do seu escopo, sejam montados segundo as normas de publicação do Serviço de Informação e Documentação (SESID) do INPE. O estilo do INPE foi originalmente criado por <a href="#roth/2002">Roth (2002)</a>, e tem sido mantido e atualizado desde 2002 por diversos colaboradores do INPE. Veja na seção a seguir como obter uma cópia do estilo do INPE.</p>
+<h2 id="32-obtendo-o-estilo">3.2 Obtendo o Estilo<a class="headerlink" href="#32-obtendo-o-estilo" title="Permanent link">¶</a></h2>
+<p>É possível obter uma cópia do estilo do INPE a partir de duas formas distintas. A primeira, é entrar no <em>site</em> da biblioteca do INPE, a partir do endereço <a href="http://www.inpe.br/biblioteca/">http://www.inpe.br/biblioteca/</a>. Na página, mais abaixo, clique no link <a href="https://www.gov.br/inpe/pt-br/area-conhecimento/biblioteca/editoracao">"Editoração"</a> e, na página seguinte, no link <a href="https://www.gov.br/inpe/pt-br/area-conhecimento/biblioteca/editoracao/templates">"Templates - MS-Word e LaTeX"</a> (<a href="#fig:biblio_pub_latex">Figura 1</a>). A página contém instruções sobre todo o processo de publicação de documentos submetidos à revisão pelo SESID. Para obter uma cópia <em>offline</em> do pacote com o estilo do INPE em LaTeX, clique no <em>link</em> <a href="http://urlib.net/ibi/8JMKD3MGP3W34T/47HLFT8">"download do estilo baixando o arquivo archive.zip"</a> para obter o arquivo <code>archive.zip</code>. Na mesma página, há instruções sobre o processo de submissão do documento de tese ou dissertação à biblioteca do INPE. As intruções sobre a instalação de um compilador LaTeX e o uso deste template LaTeX podem ser encontradas na presente seção e na <a href="../preparacao/#1-preparacao">Parte 1</a> deste site.</p>
+<p><a id="fig:biblio_pub_latex"></a></p>
+<figure>
+<p><a class="glightbox" href="../figs/biblio.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Obtenção do estilo \LaTeX{} do INPE a partir do *site* da Biblioteca do INPE." src="../figs/biblio.png" width="650"></a></p>
+<figcaption>Figura 1: Site do biblioteca do INPE.</figcaption>
+</figure>
+<p>Com o arquivo <code>archive.zip</code> no seu computador, descompacte-o em um local apropriado para poder ter acesso aos arquivos que compõem o estilo do INPE.</p>
+<p>A outra forma de se obter o estilo do INPE para a edição de teses e dissertações, é a partir do <em>site</em> do editor <em>Overleaf</em>, assim como já foi apresentado na <a href="../editores/#2192-editores-online">Seção 2.19.2</a> da <a href="../editores/#219-editores">Parte 2</a>.</p>
+<h2 id="33-estrutura-e-organizacao">3.3 Estrutura e Organização<a class="headerlink" href="#33-estrutura-e-organizacao" title="Permanent link">¶</a></h2>
+<p>O estilo do INPE é fornecido pelo arquivo principal <code>tdiinpe.cls</code>. Dentro deste arquivo há uma série de instruções da linguagem LaTeX que determinam o estilo das referências, dos capítulos, dos títulos, tabelas, imagens etc (<a href="#fig:estrut">Figura 2</a>).</p>
+<p><a id="fig:estrut"></a></p>
+<figure>
+<p><a class="glightbox" href="../figs/estrutura_estilo_inpe.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Estrutura e organização do estilo LaTeX do INPE." src="../figs/estrutura_estilo_inpe.png" width="650"></a></p>
+<figcaption>Figura 2: Arquivos do estilo LaTeX do INPE.</figcaption>
+</figure>
+<p>Na <a href="#fig:estrut">Figura 2</a>, os arquivos da estrutura do estilo do INPE estão misturados aos arquivos do documento em si. Outros arquivos são resultados do processo de compilação do documento principal. </p>
+<ul>
+<li><strong>Diretórios</strong></li>
+<li><code>bib/</code></li>
+<li><code>Figuras/</code></li>
+<li>
+<p><code>docs/</code></p>
+</li>
+<li>
+<p><strong>Arquivos do Estilo</strong></p>
+</li>
+<li><code>leiame</code></li>
+<li><code>GPLv3.pdf</code></li>
+<li><code>CCBY.png</code></li>
+<li><code>CCBYNC.png</code></li>
+<li><code>CCBYNCND.png</code></li>
+<li><code>CCBYNCSA.png</code></li>
+<li><code>CCBYND.png</code></li>
+<li><code>CCBYSA.png</code></li>
+<li><code>logoverno.pdf</code></li>
+<li><code>logoinpe.pdf</code></li>
+<li><code>tdiinpe.cls</code></li>
+<li><code>abntex-abrev-pt_BR.def</code></li>
+<li><code>abntex-abrev.sty</code></li>
+<li><code>nbr10520-2002.def</code></li>
+<li><code>nbr10522-1988.def</code></li>
+<li><code>abnt-alf.bst</code></li>
+<li><code>abnt-alfenglish.bst</code></li>
+<li><code>bibinpe.bst</code></li>
+<li><code>eso-pic.sty</code></li>
+<li><code>abnt-num.bst</code></li>
+<li><code>abnt-options.bib</code></li>
+<li>
+<p><code>abntcite.sty</code></p>
+</li>
+<li>
+<p><strong>Outros Pacotes Fornecidos</strong></p>
+</li>
+<li><code>caption2.sty</code></li>
+<li><code>calligra.sty</code></li>
+<li><code>caption3.sty</code></li>
+<li><code>hyphenat.sty</code></li>
+<li><code>multirow.sty</code>   </li>
+<li><code>dsfont.sty</code></li>
+<li><code>supertabular.sty</code></li>
+<li><code>tocloft.sty</code></li>
+<li><code>setspace.sty</code></li>
+<li><code>titlesec.sty</code>   </li>
+<li><code>textcase.sty</code></li>
+<li><code>lastpage.sty</code>     </li>
+<li><code>bigdelim.sty</code></li>
+<li><code>everyshi.sty</code></li>
+<li><code>subfigure.sty</code></li>
+<li>
+<p><code>titletoc.sty</code></p>
+</li>
+<li>
+<p><strong>Arquivos de Configuração</strong></p>
+</li>
+<li>
+<p><code>configuracao.tex</code></p>
+</li>
+<li>
+<p><strong>Arquivos de Documentos</strong></p>
+</li>
+<li>
+<p><code>publicacao.tex</code></p>
+</li>
+<li>
+<p><strong>Scripts</strong></p>
+</li>
+<li><code>tex2latin.sh</code></li>
+<li><code>criapublicacaozip</code></li>
+<li><code>latin2tex.sh</code></li>
+<li><code>pdftohtmlB</code></li>
+<li><code>livreto4.sh</code></li>
+<li>
+<p><code>execpub.sh</code></p>
+</li>
+<li>
+<p><strong>Documento Final</strong></p>
+</li>
+<li><code>publicacao.pdf</code></li>
+</ul>
+<p>Na lista de arquivos acima, observe que a lista "Arquivos do Estilo", há arquivos destacados nas cores azul e vermelho. Os arquivos destacados na cor azul, representam os arquivos do estilo do INPE, enquanto que os arquivos destacados na cor vermelha, representam os arquivos do estilo de citação da ABNT. O arquivo final gerado é o arquivo <code>publicacao.pdf</code>. O documento principal do pacote, também chamado de <em>master</em>, é o arquivo <code>publicacao.tex</code>; o arquivo que contém as configurações principais do documento (e.g., título, autor, banca e datas) é o arquivo <code>configuracao.tex</code> e o arquivo que contém as diretivas do estilo do INPE é o <code>tdiinpe.cls</code>. Em geral, não é necessário editar o arquivo de estilo, a não ser que exista algum conflito em relação a pacotes e versões (veja um exemplo na <a href="../estilo_inpe/#38-orientacoes-especiais">Seção 3.8</a>). </p>
+<h2 id="34-compilacao-do-documento">3.4 Compilação do Documento<a class="headerlink" href="#34-compilacao-do-documento" title="Permanent link">¶</a></h2>
+<p>Para compilar o documento é necessário ter algum compilador o LaTeX instalado localmente ou utilizar algum serviço <em>online</em> como o <a href="https://www.overleaf.com/"><em>Overleaf</em></a>. No <em>Overleaf</em>, o <em>link</em> para a edição do estilo em sua versão atual é <a href="https://www.overleaf.com/latex/templates/inpe-thesis-template/scdyfqzhbycc#.Wrj8gH8h2Uk">https://www.overleaf.com/latex/templates/inpe-thesis-template/scdyfqzhbycc#.Wrj8gH8h2Uk</a>. Para a compilação local, recomenda-se a utilização dos <em>scripts</em> que se encontram na distribuição do estilo do INPE:</p>
+<ul>
+<li><code>criapublicacaozip</code>: <em>script</em> que empacota o documento final (<code>publicacao.pdf</code>) para publicação;</li>
+<li><code>latin2tex.sh</code>: <em>script</em> que converte acentos latinos para a marcação da linguagem LaTeX<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>;</li>
+<li><code>tex2latin.sh</code>: <em>script</em> que converte acentos com marcação LaTeX para acentos latinos<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>;</li>
+<li><code>pdftohtmlB</code>: converte um documento PDF em HTML;</li>
+<li><code>livreto4.sh</code>: gera um livreto de quatro folhas no formato A4<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup>;</li>
+<li><code>execpub.sh</code>: gera o documento de saída (<code>publicacao.pdf</code>) utilizando o compilador LaTeX<sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup>. </li>
+</ul>
+<p>Para compilar um documento utilizando o estilo do INPE e o conjunto de <em>scripts</em> fornecidos, siga os seguintes passos:</p>
+<ol>
+<li>Abra um terminal<sup id="fnref:5"><a class="footnote-ref" href="#fn:5">5</a></sup>, recomenda-se a utilização de qualquer distribuição Linux, instalada através do Subsistema <em>Windows</em> para Linux (SWL, ou <em>Windows Subsystem for Linux</em> WSL, na sigla em inglês). Veja como instalar em <a href="https://docs.microsoft.com/pt-br/windows/wsl/install-win10">https://docs.microsoft.com/pt-br/windows/wsl/install-win10</a>.} e navegue até o diretório onde se encontra o <em>script</em> <code>execpub.sh</code>;</li>
+<li>
+<p>Altere a permissão de execução do <em>script</em> <code>execpub.sh</code> com o comando:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked id="comando" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="comando">Comando</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>chmod<span class="w"> </span>+x<span class="w"> </span>execpub.sh
+</code></pre></div></td></tr></table></div>
+</div>
+</div>
+</div>
+</li>
+<li>
+<p>Execute o <em>script</em> <code>execpub.sh</code> sem argumentos. Na <a href="#fig:execpub">Figura 3</a> são mostrados as opções do <em>script</em> <code>execpub.sh</code>: </p>
+<p><a id="fig:execpub"></a></p>
+<p><figure markdown>
+<a class="glightbox" href="../figs/saida_execpub.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Exemplo de execução do *script* execpub.sh sem argumentos." src="../figs/saida_execpub.png" width="650"></a>
+<figcaption>Figura 3: O script execpub.sh.</figcaption>
+</figure></p>
+</li>
+<li>
+<p>Execute o <em>script</em> <code>execpub.sh</code>, com dois argumentos:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:1"><input checked id="comando_1" name="__tabbed_2" type="radio"><div class="tabbed-labels"><label for="comando_1">Comando</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>./execpub.sh<span class="w"> </span>&lt;arquivo&gt;<span class="w"> </span>&lt;opcao&gt;
+</code></pre></div></td></tr></table></div>
+</div>
+</div>
+</div>
+<p>No comando acima, observe que o nome do arquivo a ser compilado deve ser informado sem a extensão <code>.tex</code>.</p>
+<p>Para finalmente compilar o documento principal <code>publicacao.tex</code>, siga o exemplo abaixo. Observe que apenas este comando é necessário para gerar o arquivo PDF final (<code>publicacao.pdf</code>).</p>
+</li>
+<li>
+<p>Execute o <em>script</em> <code>execpub.sh</code>, com dois argumentos:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:1"><input checked id="comando_2" name="__tabbed_3" type="radio"><div class="tabbed-labels"><label for="comando_2">Comando</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>./execpub.sh<span class="w"> </span>publicacao<span class="w"> </span>pdf
+</code></pre></div></td></tr></table></div>
+</div>
+</div>
+</div>
+</li>
+</ol>
+<p>Na <em>internet</em> há muitos exemplos de documentos e códigos escritos na linguagem LaTeX que podem ter sido escritos há muito tempo e que podem fazer uso de codificações diferentes. Isso pode acarretar na representação incorreta de caracteres especiais, como acentos. Na <a href="#fig:leiame1">Figura 4</a> o arquivo <code>leiame</code> do estilo do INPE (assim como vários dos outros arquivos), foram criados e salvos na codificação ISO-8859-2 (frequentemente utilizado pelos sistemas operacionais até poucos anos atrás). Com a padronização do sistema \textit{Portable Operating System Interface} (POSIX) para UTF-8, pode tornar-se necessário abrir estes arquivos com algum editor de textos (como o <em>Gedit</em> no Linux ou o <em>Textedit</em> no Mac OS) e utilizar a opção "Salvar como..." para salvar os arquivos no formato UTF-8. A <a href="#fig:leiame2">Figura 5</a> a seguir, mostra as diferenças entre a representação de arquivos salvos com estas codificações, em um sistema POSIX. </p>
+<p><a id="fig:leiame1"></a></p>
+<figure>
+<p><a class="glightbox" href="../figs/exemplo_iso8859_1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Exemplo da representação de um arquivo salvo com a codificação ISO-8859-2 em um ambiente UTF-8." src="../figs/exemplo_iso8859_1.png" width="650"></a></p>
+<figcaption>Figura 4: Exemplo das codificação ISO8859-2.</figcaption>
+</figure>
+<p><a id="fig:leiame2"></a></p>
+<figure>
+<p><a class="glightbox" href="../figs/exemplo_iso8859_3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Exemplo da representação de um arquivo salvo com a codificação ISO-8859-2 em um ambiente UTF-8." src="../figs/exemplo_iso8859_3.png" width="650"></a></p>
+<figcaption>Figura 5: Exemplo da codificação UTF-8.</figcaption>
+</figure>
+<p>Outra forma de converter um arquivo ISO-8859-2 para o formato de codificação UTF-8, é através da utilização do comando <code>iconv</code> do Linux (o qual também pode ser instalado no <em>Microsoft Windows</em> através do SWL).Para converter um arquivo salvo na codificação ISO-8859-2 para UTF-8, pode-se utilizar o seguinte comando:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:1"><input checked id="comando_3" name="__tabbed_4" type="radio"><div class="tabbed-labels"><label for="comando_3">Comando</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>iconv<span class="w"> </span>-f<span class="w"> </span>ISO-8859-9<span class="w"> </span>-t<span class="w"> </span>UTF-8<span class="w"> </span>arquivo.tex<span class="w"> </span>&gt;<span class="w"> </span>novo_arquivo.tex
+</code></pre></div></td></tr></table></div>
+</div>
+</div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Dica</p>
+<p>Para mais informações sobre como utilizar o comando <code>iconv</code>, digite o comando <code>iconv --help</code>.</p>
+</div>
+<h2 id="35-arquivos-de-configuracao">3.5 Arquivos de Configuração<a class="headerlink" href="#35-arquivos-de-configuracao" title="Permanent link">¶</a></h2>
+<p>No estilo do INPE, há basicamente dois arquivos que devem ser configurados para que o usuário possa definir o nome do(s) autor(es) e o título do documento. São eles: <code>cofiguracao.tex</code> e <code>publicacao.tex</code>.</p>
+<p>No arquivo <code>publicacao.tex</code>, são definidos o estilo da publicação, i.e., se o documento terá o estilo de dissertação ou tese (<code>PublicacaoDissOuTese</code>, é o padrão), artigo ou relatório (<code>PublicacaoArtigoOuRelatorio</code>), proposta de tese ou dissertação (<code>PublicacaoProposta</code>), livro com ou sem a formatação de capítulos (<code>PublicacaoLivro</code>). Além disso, deve-se ajustar também o idioma: se o idioma principal do documento for o Português, então o <em>abstract</em> será no idioma Inglês (<code>english, portuguese</code>), além do tipo de logo do governo e do tipo de licença <em>Creative Commons</em> (CC) a ser utilizada (veja mais informações sobre os diferentes tipos de Licenças <em>Creative Commons</em> em <a href="https://pt.wikipedia.org/wiki/Licen%C3%A7as_Creative_Commons">https://pt.wikipedia.org/wiki/Licenças_Creative_Commons</a>. Veja no exerto a seguir, um trecho do arquivo <code>publicacao.tex</code>.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span></pre></div></td><td class="code"><div><pre><span></span><code>documentclass[
+<span class="c">% PARA ESCOLHER O ESTILO TIRE O SIMBOLO (COMENTÁRIO)</span>
+<span class="c">%SemVinculoColorido,</span>
+<span class="c">%SemFormatacaoCapitulo,</span>
+<span class="c">%SemFolhaAprovacao,</span>
+<span class="c">%SemImagens,</span>
+<span class="c">%CitacaoNumerica, </span>
+<span class="c">%PublicacaoDissOuTese,</span>
+<span class="c">%PublicacaoArtigoOuRelatorio,</span>
+<span class="c">%PublicacaoProposta, </span>
+<span class="c">%PublicacaoLivro, </span>
+<span class="c">%PublicacaoLivro,SemFormatacaoCapitulo,</span>
+english,portuguese, 
+<span class="c">%portuguese,english, </span>
+LogoINPE,
+CCBYNC,
+]<span class="nb">{</span>tdiinpe<span class="nb">}</span>
+
+<span class="c">% PARA EXIBIR EM ARIAL TIRAR O COMENTÁRIO DAS DUAS LINHAS SEGUINTES</span>
+<span class="c">%\renewcommand{\rmdefault}{phv}} % Arial</span>
+<span class="c">%\renewcommand{\sfdefault}{phv}} % Arial</span>
+
+<span class="c">% PARA PUBLICAÇÕES EM INGLÊS:</span>
+<span class="c">%renomear o arquivo: abnt-alf.bst para abnt-alfportuguese.bst</span>
+<span class="c">%renomear o arquivo: abnt-alfenglish.bst para abnt-alf.bst</span>
+...
+</code></pre></div></td></tr></table></div>
+<p>A <a href="#tab:arq_publicacao">Tabela 1</a> a seguir, sumariza as principais opções encontradas no arquivo <code>publicacao.tex</code>.</p>
+<p><a id="tab:arq_publicacao"></a></p>
+<p><strong>Tabela 1:</strong> Configurações principais do arquivo <code>publicacao.tex</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Opção</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>SemVinculoColorido</code></td>
+<td>Remove o realce das referências e <em>links</em></td>
+</tr>
+<tr>
+<td><code>SemFormatacaoCapitulo</code></td>
+<td>Não aplica a formatação de capítulos</td>
+</tr>
+<tr>
+<td><code>SemImagens</code></td>
+<td>Compila o documento sem as imagens<sup id="fnref:6"><a class="footnote-ref" href="#fn:6">6</a></sup></td>
+</tr>
+<tr>
+<td><code>CitacaoNumerica</code></td>
+<td>Altera o estilo das citações</td>
+</tr>
+<tr>
+<td><code>PublicacaoDissOuTese</code></td>
+<td>Aplica o estilo de Dissertação ou Tese</td>
+</tr>
+<tr>
+<td><code>PublicacaoArtigoOuRelatorio</code></td>
+<td>Aplica o estilo de Artigo ou Relatório</td>
+</tr>
+<tr>
+<td><code>PublicacaoProposta</code></td>
+<td>Aplica o estilo de Proposta (Tese ou Dissertação)</td>
+</tr>
+<tr>
+<td><code>PublicacaoLivro</code></td>
+<td>Aplica o estilo de Livro</td>
+</tr>
+<tr>
+<td><code>PublicacaoLivro</code>, <code>SemFormatacaoCapitulo</code></td>
+<td>Idem anterior, mas sem a formatação de capítulos</td>
+</tr>
+<tr>
+<td><code>english,portuguese</code></td>
+<td>Texto em Português, <em>Abstract</em> em Inglês</td>
+</tr>
+<tr>
+<td><code>portuguese,english</code></td>
+<td>Texto em Inglês, Resumo em Português</td>
+</tr>
+<tr>
+<td><code>LogoINPE</code></td>
+<td>Utiliza o logo do INPE ao invés do logo do governo</td>
+</tr>
+<tr>
+<td><code>CCBYNC</code></td>
+<td>Aplica o tipo de licença</td>
+</tr>
+<tr>
+<td><code>\renewcommand{\rmdefault}{phv}</code></td>
+<td>Aplica a fonte Arial (sem serifa) como padrão</td>
+</tr>
+</tbody>
+</table>
+<p>No arquivo <code>configuracao.tex</code>, o usuário poderá inserir o título do documento, bem como o(s) nome(s) do(s) autor(es) do documento. Outras configurações, são normalmente revisadas e alteradas oportunamente pelo SESID quando o documento de tese ou dissertação é entregue para revisão do estilo.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c">% CAPA</span>
+<span class="k">\titulo</span><span class="nb">{</span>Escrever o t<span class="k">\'</span><span class="nb">{</span>i<span class="nb">}</span>tulo no idioma em que foi escrito a
+publicaç<span class="k">\~</span><span class="nb">{</span>a<span class="nb">}</span>o<span class="nb">}</span>
+<span class="k">\title</span><span class="nb">{</span>Escrever o t<span class="k">\'</span><span class="nb">{</span>i<span class="nb">}</span>tulo em Ingl<span class="k">\^</span><span class="nb">{</span>e<span class="nb">}</span>s para publicaç<span class="k">\~</span><span class="nb">{</span>o<span class="nb">}</span>es
+escritas em Portugu<span class="k">\^</span><span class="nb">{</span>e<span class="nb">}</span>s e em Portugu<span class="k">\^</span><span class="nb">{</span>e<span class="nb">}</span>s para publicaç<span class="k">\~</span><span class="nb">{</span>o<span class="nb">}</span>es
+escritas em Ingl<span class="k">\^</span><span class="nb">{</span>e<span class="nb">}</span>s<span class="nb">}</span> 
+<span class="k">\author</span><span class="nb">{</span>Nome Completo do Autor<span class="nb">}</span>
+<span class="k">\descriccao</span><span class="nb">{</span>Tese de Doutorado ou Dissertaç<span class="k">\~</span><span class="nb">{</span>a<span class="nb">}</span>o de Mestrado do
+Curso de P<span class="k">\'</span><span class="nb">{</span>o<span class="nb">}</span>s-Graduaç<span class="k">\~</span><span class="nb">{</span>a<span class="nb">}</span>o em Nome do Curso, orientada pelo(a)
+Dr(a). Nome do Orientador(a), aprovada em dd de m<span class="k">\^</span><span class="nb">{</span>e<span class="nb">}</span>s por extenso
+de aaaa.<span class="nb">}</span>
+<span class="k">\repositorio</span><span class="nb">{</span>aa/bb/cc/dd<span class="nb">}</span>
+<span class="k">\tipoDaPublicacao</span><span class="nb">{</span>TDI<span class="nb">}</span>
+<span class="k">\IBI</span><span class="nb">{</span>xx/yy<span class="nb">}</span> 
+<span class="k">\date</span><span class="nb">{</span>AAAA<span class="nb">}</span>
+...
+</code></pre></div></td></tr></table></div>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>Recomenda-se atenção especial para os caracteres que são inseridos no arquivo <code>configuracao.tex</code>. Neste arquivo, os acentos devem ser marcados, e.g., a palavra <code>publicação</code>, deve ser marcada como <code>publicaç\~{a}o}</code>.</p>
+</div>
+<p>As seções a seguir são dedicadas aos detalhes referentes à inserção de conteúdo nos documentos que farão uso do estilo do INPE.</p>
+<h2 id="36-insercao-de-figuras-e-tabelas">3.6 Inserção de Figuras e Tabelas<a class="headerlink" href="#36-insercao-de-figuras-e-tabelas" title="Permanent link">¶</a></h2>
+<p>Na <a href="../figuras/#212-figuras">Seção 2.12</a> da <a href=".../intro_latex/#2-entendendo-o-latex">Parte 2</a> foram apresentadas diferentes formas de se incluir figuras em um documento LaTeX. Com a utilização do estilo do INPE, entretanto, alguns cuidados devem ser tomados, pois há detalhes que devem ser respeitados. Uma imagem típica com todos os seus elementos de referência é apresentada no <a href="#figestinpe">Exemplo 1</a>.</p>
+<div class="admonition example">
+<p class="admonition-title"><a id="figestinpe"></a>Exemplo 1: Inserção de uma figura no estilo do INPE</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="5:2"><input checked id="código" name="__tabbed_5" type="radio"><input id="resultado" name="__tabbed_5" type="radio"><div class="tabbed-labels"><label for="código">Código</label><label for="resultado">Resultado</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">\begin</span><span class="nb">{</span>figure<span class="nb">}</span>[H]
+<span class="k">\caption</span><span class="nb">{</span>Exemplo de figura com título curto.<span class="nb">}</span>
+<span class="k">\vspace</span><span class="nb">{</span>6mm<span class="nb">}</span> <span class="c">% acrescentar o espaçamento vertical apropriado entre o título e a borda superior da figura</span>
+<span class="k">\begin</span><span class="nb">{</span>center<span class="nb">}</span>
+    <span class="k">\includegraphics</span><span class="na">[width=12cm]</span><span class="nb">{</span>./docs/figs/gpa.pdf<span class="nb">}</span>  
+<span class="k">\end</span><span class="nb">{</span>center<span class="nb">}</span>
+<span class="k">\vspace</span><span class="nb">{</span>4mm<span class="nb">}</span> <span class="c">% acrescentar o espaçamento vertical apropriado entre a borda inferior da figura e a legenda ou a fonte quando não há legenda (o valor pode ser negativo para subir)</span>
+<span class="k">\legenda</span><span class="nb">{</span>Exemplo de legenda curta.<span class="nb">}</span> <span class="c">% legenda - opcional</span>
+<span class="k">\label</span><span class="nb">{</span>figgpa1<span class="nb">}</span>
+<span class="k">\FONTE</span><span class="nb">{</span><span class="k">\citeonline</span><span class="nb">{</span>lba/06<span class="nb">}</span>.<span class="nb">}</span> <span class="c">% fonte consultada (elemento obrigatório, mesmo que seja produção do próprio autor)</span>
+<span class="k">\end</span><span class="nb">{</span>figure<span class="nb">}</span>
+</code></pre></div></td></tr></table></div>
+</div>
+<div class="tabbed-block">
+<p><figure markdown>
+<a class="glightbox" href="../figs/ex_3.6-1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../figs/ex_3.6-1.png" width="500"></a>
+</figure></p>
+</div>
+</div>
+</div>
+</div>
+<p>No <a href="#figestinpe">Exemplo 2</a>, observe que espaçamentos especiais são aplicados utilizando-se os comandos <code>vspace</code> que aplicam um espaçamento de <code>6mm</code> entre o <em>caption</em> (que fica em cima da figura) da figura e um espaçamento de <code>4mm</code> entre a figura e a legenda (que fica embaixo da figura). Esta segunda legenda é opcional e geralmente se constitui de uma frase curta sobre a imagem mostrada. Um elemento obrigatório é a incorporação do marcador <code>FONTE</code> (em caixa alta), o qual deve conter a fonte consultada ou, se a produção for do autor, deve conter a frase "Produção do autor". Para mais exemplos de inserção de figuras de estilos diferentes, verifique o Anexo B de \citeonline{estiloinpe}.</p>
+<p>Tabelas também devem seguir a formatação estipulada pelo estilo do INPE. Veja o <a href="#tabestinpe">Exemplo 2</a> a seguir.</p>
+<div class="admonition example">
+<p class="admonition-title"><a id="tabestinpe"></a>Exemplo 2: Inserção de uma tabela no estilo do INPE</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="6:2"><input checked id="código_1" name="__tabbed_6" type="radio"><input id="resultado_1" name="__tabbed_6" type="radio"><div class="tabbed-labels"><label for="código_1">Código</label><label for="resultado_1">Resultado</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">\begin</span><span class="nb">{</span>table<span class="nb">}</span>[H] <span class="c">% [htbp] opções de posicionamento da tabela no texto</span>
+<span class="k">\begin</span><span class="nb">{</span>center<span class="nb">}</span> <span class="c">% use sempre um ambiente para as tabelas</span>
+<span class="c">% (opções: center (recomendado), flushright, flushleft)</span>
+<span class="c">% NÃO USE \centering com TABELAS se houver \FONTE!  </span>
+<span class="k">\caption</span><span class="nb">{</span>Exemplo de tabela, com fonte.<span class="nb">}</span>
+<span class="k">\begin</span><span class="nb">{</span>tabular<span class="nb">}{</span>l|l|c|c|r|r<span class="nb">}</span>
+<span class="k">\hline</span> <span class="c">% desenha uma linha horizontal</span>
+Campo 1 <span class="nb">&amp;</span> Campo2 <span class="nb">&amp;</span> Campo3 <span class="nb">&amp;</span> Campo 4 <span class="nb">&amp;</span> Campo5 <span class="nb">&amp;</span> Campo6 <span class="k">\\</span>
+Campo 1 <span class="nb">&amp;</span> Campo2 <span class="nb">&amp;</span> Campo3 <span class="nb">&amp;</span> Campo 4 <span class="nb">&amp;</span> Campo5 <span class="nb">&amp;</span> Campo6 <span class="k">\\</span>
+Campo 1 <span class="nb">&amp;</span> Campo2 <span class="nb">&amp;</span> Campo3 <span class="nb">&amp;</span> Campo 4 <span class="nb">&amp;</span> Campo5 <span class="nb">&amp;</span> Campo6 <span class="k">\\</span>
+<span class="k">\hline</span> <span class="c">% desenha uma linha horizontal</span>
+<span class="k">\end</span><span class="nb">{</span>tabular<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>center<span class="nb">}</span>
+<span class="k">\FONTE</span><span class="nb">{</span>Coloque a fonte de referência aqui, se houver.<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>table<span class="nb">}</span>
+</code></pre></div></td></tr></table></div>
+</div>
+<div class="tabbed-block">
+<p><figure markdown>
+<a class="glightbox" href="../figs/ex_3.6-2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../figs/ex_3.6-2.png" width="650"></a>
+</figure></p>
+</div>
+</div>
+</div>
+</div>
+<p>No caso das tabelas, sempre que for utilizado o estilo do INPE, deve-se utilizar o ambiente <code>table</code> (veja mais detalhes na <a href="../tabelas/#214-tabelas">Seção 2.14</a> da <a href="../intro_latex/#2-entendendo-o-latex">Parte 2</a>). Recomenda-se também a utilização dos ambientes de posição (para centralizar, alinhar à direita ou esquerda). Da mesma forma como as figuras, as tabelas também devem vir acompanhadas do marcador <code>FONTE</code>, sempre que a citação da fonte for permitente. Neste caso, ao invés da utilização do marcador <code>centering</code>, deve-se utilizar o ambiente <code>center</code>. Mais detalhes sobre a inserção de tabelas utilizando-se o estilo do INPE, podem ser encontradas no Anexo B de \citeonline{estiloinpe}.</p>
+<p>Tanto para figuras quanto para tabelas, deve-se ter especial atenção quanto ao posicionamento destes corpos flutuantes. Os ambientes <code>figure</code> e <code>table</code>, devem ter suas posições relativas ajustadas conforme as opções mostradas na <a href="../figuras/#tab:ambfig">Tabela 1</a> da <a href="../figuras/#212-figuras">Seção 2.12</a> da <a href="../intro_latex/#2-entendendo-o-latex">Parte 2</a>.</p>
+<h2 id="37-insercao-de-citacoes-e-referencias">3.7 Inserção de Citações e Referências<a class="headerlink" href="#37-insercao-de-citacoes-e-referencias" title="Permanent link">¶</a></h2>
+<p>Assim como apresentado na <a href="../citacoes_referencias/#217-citacoes-e-referencias">Seção 2.17</a> da <a href="../intro_latex/#2-entendendo-o-latex">Parte 2</a>, citações a elementos do texto como figuras, tabelas e equações podem ser feitas com a utilização do par de comandos <code>\label{nome}</code> e <code>\ref{nome}</code>. Referências bibliográficas, dentro do estilo do INPE, são gerenciadas utilizando o BibTeX e a sua inserção em um documento com o estilo do INPE é simples. Antes de apresentar os detalhes de como as referências são armazenadas e incluídas no corpo do texto, é necessário antes, voltar à <a href="../intro_latex/#21-introducao-ao-latex">Seção 2.1</a> da <a href="../intro_latex/#2-entendendo-o-latex">Parte 2</a> e acrescentar alguns passos extras ao processo de compilação. Isso se faz necessário porque as referências bibliográficas precisam também ser interpretadas pelo BibTeX. Nesse processo, o estilo de referências da ABNT é então aplicado e apresentado da forma correta no corpo do texto.</p>
+<p>Na <a href="#fig:compbibtex">Figura 6</a> é apresentado um diagrama semelhante aquele apresentada na <a href="../intro_latex/#fig:complatex">Figura 1</a>, com a diferença de que os procedimentos necessários para a inclusão do BibTeX estão adicionados.</p>
+<p><a id="fig:compbibtex"></a></p>
+<figure>
+<p><a class="glightbox" href="../figs/diagramacompbib_crop.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Etapas envolvidas na compilação de um documento LaTeX com referências BibTeX." src="../figs/diagramacompbib_crop.png" width="650"></a></p>
+<figcaption>Figura 6: Compilação de um documento LaTeX. Fonte: Adaptado de http://www.texample.net/tikz/examples/tex-workflow/.
+</figcaption>
+</figure>
+<p>O processo de compilação de um documento LaTeX com referências BibTeX, inclui a utilização do programa <code>bibtex</code>. Em sequência, uma compilação manual completa (i.e., gerando o arquivo PDF no final), tem a seguinte ordem:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="7:1"><input checked id="comando_4" name="__tabbed_7" type="radio"><div class="tabbed-labels"><label for="comando_4">Comando</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code>latex documento.tex
+bibtex documento
+latex documento
+latex documento
+dvips documento.dvi
+ps2pdf documento.ps
+</code></pre></div></td></tr></table></div>
+</div>
+</div>
+</div>
+<p>Na sequência de comandos acima, observe que foram utilizados o comando <code>latex documento</code> duas vezes seguida após o comando <code>bibtex documento</code>. Isso se faz necessário porque o BibTeX processa as informações de referências e escreve algumas informações em disco, em arquivos auxiliares. Depois, o LaTeX lê esta informação e formata as referências, que são incorporadas finalmente ao documento, apenas após a segunda vez em que o comando é executado.</p>
+<p>No estilo do INPE, existe um arquivo de nome <code>referencia.bib</code> que fica dentro do diretório <code>bib/</code>. Este arquivo possui uma estrutura específica e tem o seguinte aspecto:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c">%% NOTA: em vez de usar as letras e vogais com acento ou sinais gr\'aficos (como o c cedilhado -- \c c), algo normal agora no texto em LaTeX, use aqui suas formas no padrão LaTeX, p. ex.:</span>
+<span class="c">%% \'a = a agudo (mesmo para outras vogais)</span>
+<span class="c">%% \^a = a circunflexo  </span>
+<span class="c">%% \`a = a craseado</span>
+<span class="c">%% \"a = a tremado</span>
+<span class="c">%% {\c c} = c cedilhado</span>
+<span class="c">%% Isto ainda é necessário para evitar inconsistências na geração da lista de referências bibliográficas.</span>
+
+@string<span class="nb">{</span>cs =      "Complex Systems"<span class="nb">}</span>
+@string<span class="nb">{</span>pl =      "Physics Letters"<span class="nb">}</span>
+@string<span class="nb">{</span>prl =     "Physical Review Letters"<span class="nb">}</span>
+@string<span class="nb">{</span>pra =     "Physical Review A"<span class="nb">}</span> 
+@string<span class="nb">{</span>pla =     "Physics Letters A"<span class="nb">}</span> 
+@string<span class="nb">{</span>pre =     "Physical Review E"<span class="nb">}</span> 
+@string<span class="nb">{</span>pd =      "Physica D"<span class="nb">}</span> 
+@string<span class="nb">{</span>jcsc =    "Journal of Circuits, Systems and Computers"<span class="nb">}</span>
+@string<span class="nb">{</span>jsv =     "Journal of Sound and Vibration"<span class="nb">}</span>
+@string<span class="nb">{</span>ijbc =    "International Journal of Bifurcation and Chaos"<span class="nb">}</span>
+@string<span class="nb">{</span>ijc =     "International Journal of Control"<span class="nb">}</span>
+@string<span class="nb">{</span>ieeecas = "IEEE Transactions on Circuits and Systems"<span class="nb">}</span>
+@string<span class="nb">{</span>jrssb =   "Journal of the Royal Statistical Society B"<span class="nb">}</span> 
+@string<span class="nb">{</span>n =       "Nature"<span class="nb">}</span>
+@string<span class="nb">{</span>zn =      "Z. Naturforsch"<span class="nb">}</span>
+@string<span class="nb">{</span>jfi =     "Zeitschrift fuer Naturforschung A"<span class="nb">}</span> 
+@string<span class="nb">{</span>actaam =  "ACTA Amaz<span class="k">\^</span>onica"<span class="nb">}</span>
+
+@ARTICLE<span class="nb">{</span>nobre/2005,
+  author    = <span class="nb">{</span>Luizao, F. J. and Nobre, C. A. and Manzi, A. O.<span class="nb">}</span>,
+  title     = <span class="nb">{</span>Projeto LBA: Estudando as Complexas Intera<span class="nb">{</span><span class="k">\c</span> c<span class="nb">}</span><span class="k">\~</span>oes da Biosfera com a Atmosfera na Amaz<span class="k">\^</span>onia<span class="nb">}</span>,
+  journal   = actaam,
+  year      = <span class="nb">{</span>2005<span class="nb">}</span>,
+  volume    = <span class="nb">{</span>35<span class="nb">}</span>,
+  number    = <span class="nb">{</span>1-2<span class="nb">}</span>,
+  pages     = <span class="nb">{</span>109--110<span class="nb">}</span>,
+<span class="nb">}</span>
+...
+</code></pre></div></td></tr></table></div>
+<p>Neste arquivo, observe que está indicado com um comentário no topo do arquivo, que o usuário deve insirir os acentos de forma explícita, tal como foi explicado na <a href="../acentos_local/#23-acentos-e-localizacao">Seção 2.3</a> da <a href="../intro_latex/#2-entendendo-o-latex">Parte 2</a>. Isto se faz necessário porque o BibTeX não aceita a localização tal como pode-se fazer com o LaTeX quando se utiliza o pacote <code>inputenc</code>. No segundo bloco, observe as instruções que se iniciam com a palavra-chave <code>@string</code>. Com estas <em>strings</em> pode-se criar atalhos (<em>aliases</em>) para nomes que podem ser expandidos depois na montagem das referências, feitas pelo BibTeX. Repare que a <em>string</em> que define o <em>alias</em> <code>actaam</code> foi utilizado no campo <code>journal</code> da referência de <code>\citeonline{nobre/2005}</code>. Como o arquivo <code>referencia.bib</code> pode se tornar muito grande, pode ser interessante utilizar algum gerenciador de referências, tal como o <em>BibDesk</em>, <em>Mendeley</em> ou <em>Zoteroy</em> (entre outros). Veja algumas destas opções na <a href="../citacoes_referencias/#217-citacoes-e-referencias">Seção 2.17</a> da <a href="../intro_latex/#2-entendendo-o-latex">Parte 2</a>. </p>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>Deve-se ter cautela na edição manual do arquivo <code>referencia.bib</code> do estilo do INPE. Este arquivo não aceita acentos naturais, i.e., acentos latinos devem ser marcados no estilo do LaTeX (veja mais detalhes na <a href="../acentos_local/#23-acentos-e-localizacao">Seção 2.3</a>). Além disso, é recomendável que o usuário edite a referência, removendo espaços em branco e remarcando os acentos, quando necessário.</p>
+</div>
+<p>As referências bibliográficas, dentro da norma ABNT adotada pelo estilo do INPE, podem ser inseridas no corpo do texto com os marcadores sumarizados na <a href="#tab:estiloscit">Tabela 1</a>. As definições destes marcadores podem ser encontradas em [Araujo (2018)][#araujo/2018] e também no arquivo <code>abntcite.sty</code> do estilo do INPE.</p>
+<p>Na <a href="#tab:estiloscit">Tabela 1</a> a seguir, as duas referências utilizadas nos exemplos são as seguintes:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span></pre></div></td><td class="code"><div><pre><span></span><code>@article<span class="nb">{</span>fulano/1964,
+  author = <span class="nb">{</span>Fulano, Sicrano<span class="nb">}</span>,
+  title = <span class="nb">{</span>Um Exemplo de Refer<span class="nb">{</span><span class="k">\^</span>e<span class="nb">}</span>ncia Bibliogr<span class="nb">{</span><span class="k">\'</span>a<span class="nb">}</span>fica do tipo article.<span class="nb">}</span>,
+  journal = <span class="nb">{</span>Revista Mensal de Ci<span class="nb">{</span><span class="k">\^</span>e<span class="nb">}</span>ncia<span class="nb">}</span>,
+  volume = <span class="nb">{</span>12<span class="nb">}</span>,
+  number = <span class="nb">{</span>11<span class="nb">}</span>,
+  pages = <span class="nb">{</span>340-346<span class="nb">}</span>,
+  year = <span class="nb">{</span>1964<span class="nb">}</span>,
+<span class="nb">}</span>
+
+@article<span class="nb">{</span>ciclanoetal/1975,
+  author = <span class="nb">{</span>Ciclano, Beltrano and Fulano, Sicrano<span class="nb">}</span>,
+  title = <span class="nb">{</span>Mais um exemplo de Refer<span class="nb">{</span><span class="k">\^</span>e<span class="nb">}</span>ncia Bibliogr<span class="nb">{</span><span class="k">\'</span>a<span class="nb">}</span>fica do tipo article.<span class="nb">}</span>,
+  journal = <span class="nb">{</span>Revista Mensal de Ci<span class="nb">{</span><span class="k">\^</span>e<span class="nb">}</span>ncia<span class="nb">}</span>,
+  volume = <span class="nb">{</span>2<span class="nb">}</span>,
+  number = <span class="nb">{</span>21<span class="nb">}</span>,
+  pages = <span class="nb">{</span>430-436<span class="nb">}</span>,
+  year = <span class="nb">{</span>1975<span class="nb">}</span>,
+<span class="nb">}</span>
+</code></pre></div></td></tr></table></div>
+<p><a id="tab:estiloscit"></a></p>
+<p><strong>Tabela 2:</strong> Estilos de citação segundo as normas ABNT no estilo do INPE.</p>
+<table>
+<thead>
+<tr>
+<th>Opção</th>
+<th>Uso</th>
+<th>Exemplo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>cite</code></td>
+<td><code>\cite{fulano/1964}</code></td>
+<td>(FULANO, 1964)</td>
+</tr>
+<tr>
+<td><code>citeonline</code></td>
+<td><code>\citeonline{fulano/1964}</code></td>
+<td>Fulano (1964)</td>
+</tr>
+<tr>
+<td><code>citeyear</code></td>
+<td><code>\citeyear{fulano/1964}</code></td>
+<td>1964</td>
+</tr>
+<tr>
+<td><code>citeauthor</code></td>
+<td><code>\citeauthor{ciclanoetal/1975}</code></td>
+<td>CICLANO; FULANO</td>
+</tr>
+<tr>
+<td><code>citeauthoronline</code></td>
+<td><code>\citeauthoronline{fulano/1964}</code></td>
+<td>Fulano</td>
+</tr>
+<tr>
+<td><code>apud</code></td>
+<td><code>\apud[p.~2--3]{fulano/1964}{ciclanoetal/1975}</code></td>
+<td>(FULANO, 1964 apud CICLANO; FULANO, 1975, p. 2-3)</td>
+</tr>
+<tr>
+<td><code>apudonline</code></td>
+<td><code>\apudonline[p.~2--3]{fulano/1964}{ciclanoetal/1975}</code></td>
+<td>Fulano (apud CICLANO; FULANO, 1975, p. 2-3)</td>
+</tr>
+<tr>
+<td><code>Idem</code></td>
+<td><code>\Idem[p.~2--3]{ciclanoetal/1975}</code></td>
+<td>Id., 1975, p. 2-3</td>
+</tr>
+<tr>
+<td><code>Ibidem</code></td>
+<td><code>\Ibidem[p.~2--3]{ciclanoetal/1975}</code></td>
+<td>Ibid., p. 2-3</td>
+</tr>
+<tr>
+<td><code>opcit</code></td>
+<td><code>\opcit[p.~2--3]{ciclanoetal/1975}</code></td>
+<td>CICLANO; FULANO, op. cit., p. 2-3</td>
+</tr>
+<tr>
+<td><code>passim</code></td>
+<td><code>\passim{ciclanoetal/1975}</code></td>
+<td>CICLANO; FULANO, 1975, passim</td>
+</tr>
+<tr>
+<td><code>loccit</code></td>
+<td><code>\loccit{ciclanoetal/1975}</code></td>
+<td>CICLANO; FULANO, 1975, loc. cit.</td>
+</tr>
+<tr>
+<td><code>cfcite</code></td>
+<td><code>\cfcite[p.~2--3]{ciclanoetal/1975}</code></td>
+<td>Cf. CICLANO; FULANO, 1975, p. 2-3</td>
+</tr>
+<tr>
+<td><code>etseq</code></td>
+<td><code>\etseq{fulano/1964}</code></td>
+<td>FULANO, 1964, et seq.</td>
+</tr>
+</tbody>
+</table>
+<p>A aplicação dos estilos mostrados na <a href="#tab:estiloscit">Tabela 2</a>, deve ser feita em ocasiões específicas. Os marcadores <code>cite</code> e <code>citeonline</code> são mais frequentemente utilizados, mas observe que dependendo do estilo de escrita do autor, pode ser necessário apenas citar ou o ano (com o marcador <code>citeyear</code>), ou apenas o autor (com os marcadores <code>citeauthor</code> ou <code>citeauthoronline</code>). Os marcadores <code>apud</code> e <code>apudonline</code> devem ser utilizados para citar referências que são encontradas em outras referências. Neste caso, a utilização do <em>apud</em> (uma expressão latina que indica uma intermediação) pode não ser muito elegante, pois pode passar a impressão de que o autor ou não leu, ou não teve acesso à referência original. Citações com os marcadores <code>Idem</code> e <code>Ibidem</code> indicam, respectivamente, "mesmo autor" e "mesma obra", e seu uso parece ser mais claro. O marcador <code>opcit</code>, representa a expressão latina <em>opus citatum</em>, que significa "obra citada", ao passo que o marcador <code>cfcite</code>, representa a expressão latina <em>confira</em>, o marcador <code>passim</code>, representa a expressão latina <em>passim</em>, equivalente a "aqui e ali", enquanto que o marcador <code>etseq</code> representa a expressão latina <em>et sequentia</em>, equivalente a "e sequência".</p>
+<p>De forma geral, as referências em um documento LaTeX escrito com o estilo do INPE, devem seguir as mesmas orientações indicadas na <a href="../citacoes_referencias/#217-citacoes-e-referencias">Seção 2.17</a> da <a href="../intro_latex/#2-entendendo-o-latex">Parte 2</a>. Para mais informações sobre a elaboração de referências bibliográficas seguindo as normas ABNT, consulte <a href="#barbedo/2018a">Barbedo e Fernandes (2018a)</a>, <a href="#barbedo/2018b">Barbedo e Fernandes (2018b)</a>.</p>
+<h2 id="38-orientacoes-especiais">3.8 Orientações Especiais<a class="headerlink" href="#38-orientacoes-especiais" title="Permanent link">¶</a></h2>
+<p>O estilo de teses e dissertações do INPE possui uma série de pacotes pré-carregados, os quais podem ser verificados no arquivo do estilo <code>tdiinpe.cls</code>. Além da informação sobre os pacotes, há também uma extensa lista de mudanças que foram realizadas.</p>
+<p>Dependendo das necessidade do usuário, pode ser necessária a inclusão de outros pacotes, os quais podem ser facilmente adicionados ao arquivo <code>publicacao.tex</code> ou ao final do arquivo <code>configuracao.tex</code>. Porém, uma orientação é criar um novo arquivo, e.g., <code>meus_pacotes.tex</code> e incluir a sua leitura no arquivo <code>publicacao.tex</code>. Isso pode ser feito da seguinte maneira:</p>
+<ol>
+<li>Crie um arquivo de nome <code>meus_pacotes.tex</code>;</li>
+<li>Dentro deste arquivo, inclua os pacotes que forem necessários, e.g., <code>\usepackage[most]{tcolorbox}</code>;</li>
+<li>No arquivo <code>publicacao.tex</code>, inclua o comando <code>\input{./meus_pacotes}</code> antes do comando <code>makeindex</code>.</li>
+</ol>
+<p>Observe que o caminho para o arquivo <code>meus_pacotes.tex</code> deve ser indicado. Dessa forma, o <code>./</code> indica que o arquivo encontra-se na raiz do documento, i.e., no local onde o arquivo <code>publicacao.tex</code> está. Além disso, observe que não é necessário indicar a extensão do arquivo dentro do comando <code>\input</code>.</p>
+<p>Uma situação um pouco diferente pode ocorrer quando um pacote pré-carregado é incompatível com o pacote que o usuário deseja carregar. Um exemplo, assim como foi apontado na <a href="../figuras/#212-figuras">Seção 2.12</a> da <a href="../intro_latex/#2-entendendo-o-latex">Parte 2</a>, está relacionado aos pacotes <code>subfigure</code> (que é pré-carregado no estilo do INPE) e o pacote <code>subfig</code>. O pacote <code>subfig</code> é mais moderno e está em pleno desenvolvimento, e por isso o usuário poderá achar útil a sua utilização. Para corretamente carregar o pacote <code>subfig</code> e evitar conflitos e mensagens de erro durante a compilação do documento, é necessário, antes comentar a linha que carrega o pacote <code>subfigure</code> no arquivo de estilo <code>tdiinpe.cls</code>. Para isto, basta realizar as seguintes etapas:</p>
+<ol>
+<li>Abrir o arquivo <code>tdiinpe.cls</code> com o seu editor de textos preferido;</li>
+<li>Procurar pela linha <code>\RequirePackage{subfigure}</code> e inserir um comentário no início desta linha;</li>
+<li>Procurar pela linha <code>\RequirePackage[subfigure]{tocloft}</code> e inserir um comentário no início desta linha;</li>
+<li>Salvar o arquivo <code>tdiinpe.cls</code>;</li>
+<li>Certificar-se de que o pacote <code>subfig</code> está carregado no arquivo <code>publicacao.tex</code> ou <code>configuracao.tex</code> (ou ainda no arquivo <code>meus_pacotes.tex</code>);</li>
+<li>Recompilar o documento.</li>
+</ol>
+<p>Após estas modificações o arquivo <code>tdiinpe.cls</code> terá o seguinte aspecto:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code>...
+<span class="k">\RequirePackage</span><span class="na">[hang,small]</span><span class="nb">{</span>caption2<span class="nb">}</span>
+<span class="k">\RequirePackage</span><span class="nb">{</span>amsmath,amssymb,amsthm<span class="nb">}</span> <span class="c">%% essencial %% para linguagem matemática</span>
+<span class="c">%\RequirePackage{subfigure} %% essencial %% fazer subfiguras</span>
+<span class="c">%\RequirePackage[subfigure]{tocloft} %% faz sumários e listas - needed for \cftchapindent</span>
+<span class="k">\RequirePackage</span><span class="nb">{</span>makeidx<span class="nb">}</span> <span class="c">%% essencial %% faz o ÍNDICE</span>
+<span class="k">\RequirePackage</span><span class="nb">{</span>eso-pic<span class="nb">}</span>
+...
+</code></pre></div></td></tr></table></div>
+<p>O aspecto do arquivo <code>meus_pacotes.tex</code> será:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>...
+<span class="k">\usepackage</span><span class="nb">{</span>subfig<span class="nb">}</span>
+...
+</code></pre></div></td></tr></table></div>
+<p>O aspecto do arquivo <code>publicacao.tex</code> será:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code>...
+<span class="k">\input</span><span class="nb">{</span>./meus<span class="nb">_</span>pacotes<span class="nb">}</span>
+
+<span class="k">\input</span><span class="nb">{</span>./configuracao<span class="nb">}</span> 
+
+<span class="k">\input</span><span class="nb">{</span>./minhas<span class="nb">_</span>macros<span class="nb">}</span>
+
+<span class="k">\makeindex</span>  
+
+<span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span> 
+...
+</code></pre></div></td></tr></table></div>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>Ressalta-se, entretanto, que este tipo de modificação pode acarretar em resultados indesejáveis e deve ser feito com cautela. </p>
+</div>
+<p>Outra orientação especial, está relacionada com a utilização do compilador XeLaTeX e o estilo do INPE. No arquivo de estilo <code>tdiinpe.cls</code> é carregado por padrão o pacote <code>inputenc</code>, que em conjunto com o compilador XeLaTeX, pode acerretar em alguns problemas e inconsistências relacionadas à forma como caracteres especiais são apresentados. Isso ocorre, porque o compilador XeLaTeX (que é um compilador moderno baseado no formato UTF-8) já carrega o pacote <code>inputenc</code> internamente, e a utilização de ambos pode acarretar em mensagens de aviso desnecessárias, o que é bastante inconveniente. Para compilar o estilo do INPE utilizando o compilador XeLaTeX, é necessário comentar a seguinte linha no arquivo de estilo <code>tdiinpe.cls</code>:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">\RequirePackage</span><span class="na">[latin1]</span><span class="nb">{</span>inputenc<span class="nb">}</span>
+</code></pre></div></td></tr></table></div>
+<p>Após a modificação, o arquivo de estilo <code>tdiinpe.cls</code> terá o seguinte aspecto:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code>...
+<span class="k">\RequirePackage</span><span class="nb">{</span>color<span class="nb">}</span> <span class="c">%% essencial %% aplicar cores no texto</span>
+
+<span class="c">%\RequirePackage[latin1]{inputenc} %% essencial</span>
+
+<span class="k">\RequirePackage</span><span class="nb">{</span>float<span class="nb">}</span> <span class="c">%% acrescentado por gjfb em 2012-10-19 seguindo recomendação do Fabio Dall Cortivo</span>
+...
+</code></pre></div></td></tr></table></div>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>Ressalta-se, entretanto, que esta modificação pode acarretar em resultados indesejados, sendo a sua utilização experimental com o estilo do INPE na sua versão atual.</p>
+</div>
+<h2 id="referencias">Referências<a class="headerlink" href="#referencias" title="Permanent link">¶</a></h2>
+<ul>
+<li><a id="araujo/2018"></a>Araujo, L. C.: <strong>O pacote abntex2cite: tópicos específicos da ABNT NBR 105020:2002 e o estilo bibliográfico alfabético (sistema autor-data)</strong>, <em>Instituto Nacional de Pesquisas Espaciais (INPE)</em>, 2018.</li>
+<li><a id="barbedo/2018a"></a>Barbedo, S. A. D. D. e Fernandes, A. L. D.: <strong>Como elaborar referências bibliográficas em ABNT</strong>, <em>Instituto Nacional de Pesquisas Espaciais (INPE)</em>, 2018.</li>
+<li><a id="barbedo/2018b"></a>Barbedo, S. A. D. D. e Fernandes, A. L. D.: <strong>Como formatar teses e dissertações do INPE</strong>, <em>Instituto Nacional de Pesquisas Espaciais (INPE)</em>, 2018.</li>
+<li><a id="roth/2002"></a>Roth, B. A. F.: <strong>Modelo para submissão de teses/dissertações e outras publicações preparadas em LaTeX</strong>, <em>Instituto Nacional de Pesquisas Espaciais (INPE)</em>, 2002.</li>
+</ul>
+<div class="footnote">
+<hr>
+<ol>
+<li id="fn:1">
+<p>Não obrigatório dependendo da opção do pacote <code>inputenc</code>. <a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">↩</a></p>
+</li>
+<li id="fn:2">
+<p>Idem comentário anterior. <a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">↩</a></p>
+</li>
+<li id="fn:3">
+<p>O formato livreto pode ser útil para prova de impressão. <a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">↩</a></p>
+</li>
+<li id="fn:4">
+<p>Veja mais detalhes sobre o processo de compilação de um documento LaTeX na <a href="../intro_latex/#21-introducao-ao-latex">Seção 2.1</a> da <a href="../intro_latex/#2-entendendo-o-latex">Parte 2</a>. <a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text">↩</a></p>
+</li>
+<li id="fn:5">
+<p>No sistema operacional <em>Microsoft Windows</em> 10. <a class="footnote-backref" href="#fnref:5" title="Jump back to footnote 5 in the text">↩</a></p>
+</li>
+<li id="fn:6">
+<p>Esta opção pode ser útil quando se tem muitas imagens e o tempo de compilação do documento for muito grande. <a class="footnote-backref" href="#fnref:6" title="Jump back to footnote 6 in the text">↩</a></p>
+</li>
+</ol>
+</div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/cfbastarz" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="mailto:cfbastarz@gmail.com" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480v-83.6c0-4 1.5-7.8 4.2-10.8l167.6-182.8c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8l-88.3-44.2C7.1 311.3.3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+        <script src="../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>

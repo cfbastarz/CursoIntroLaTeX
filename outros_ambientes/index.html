@@ -1,0 +1,1575 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Site do Curso de Introdução ao LaTeX">
+      
+      
+        <meta name="author" content="Carlos Frederico Bastarz">
+      
+      
+      
+        <link rel="prev" href="../fer_revisao/">
+      
+      
+        <link rel="next" href="../citacoes_referencias/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>2.16 Outros Ambientes - Curso de Introução ao LaTeX</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#2-entendendo-o-latex" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href=".." title="Curso de Introução ao LaTeX" class="md-header__button md-logo" aria-label="Curso de Introução ao LaTeX" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Curso de Introução ao LaTeX
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              2.16 Outros Ambientes
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/cfbastarz/CursoIntroLaTeX" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    cfbastarz/CursoIntroLaTeX
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Curso de Introução ao LaTeX" class="md-nav__button md-logo" aria-label="Curso de Introução ao LaTeX" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Curso de Introução ao LaTeX
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/cfbastarz/CursoIntroLaTeX" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    cfbastarz/CursoIntroLaTeX
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Início
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../preparacao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1. Preparação
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    2. Entendendo o LaTeX
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            2. Entendendo o LaTeX
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../intro_latex/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.1 Introdução ao LaTeX
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../carac_simb_esp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.2 Caracteres e Símbolos Especiais
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../acentos_local/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.3 Acentos e Localização
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tipos_letras/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.4 Tipos, Tamanhos e Estilos de Letras
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../titulos_secoes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.5 Títulos e Seções
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cores/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.6 Cores e Paletas de Cores
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../medidas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.7 Medidas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../paragrafos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.8 Parágrafos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../posicao_espac/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.9 Posição e Espaçamento
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notas_rodape/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.10 Notas de Rodapé
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../listas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.11 Listas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../figuras/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.12 Figuras
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../matematica/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.13 Matemática e Equações
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tabelas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.14 Tabelas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fer_revisao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.15 Ferramentas de Revisão
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    2.16 Outros Ambientes
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.16 Outros Ambientes
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#216-outros-ambientes" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.16 Outros ambientes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.16 Outros ambientes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2161-minipage" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.16.1 Minipage
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2162-texto-em-colunas" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.16.2 Texto em colunas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modos-retrato-e-paisagem" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modos retrato e paisagem
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Listing
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../citacoes_referencias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.17 Citações e Referências
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../macros/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.18 Macros
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../editores/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.19 Editores
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exercicios/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.20 Exercícios
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../estilo_inpe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3. Estilo do INPE
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../beamer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    4. Apresentações com o Beamer
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pacotes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    5. Pacotes Utilizados
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../op_comp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    6. Opções de Compilação
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#216-outros-ambientes" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.16 Outros ambientes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.16 Outros ambientes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2161-minipage" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.16.1 Minipage
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2162-texto-em-colunas" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.16.2 Texto em colunas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modos-retrato-e-paisagem" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modos retrato e paisagem
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Listing
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<div><h1 id="2-entendendo-o-latex">2. Entendendo o LaTeX<a class="headerlink" href="#2-entendendo-o-latex" title="Permanent link">¶</a></h1>
+<h2 id="216-outros-ambientes">2.16 Outros ambientes<a class="headerlink" href="#216-outros-ambientes" title="Permanent link">¶</a></h2>
+<p>O LaTeX possui uma série de outros ambientes com os quais é possível apresentar e posicionar diferentes elementos textuais. É possível criar elementos flutuantes e posicioná-los em diferentes partes de uma página, bem como subdividir parágrafos em colunas, além de destacar as palavras reservadas de uma determinada linguagem de programação, incluindo os próprios comandos do LaTeX. Nas subseções a seguir, serão apresentados alguns destes ambientes.</p>
+<h3 id="2161-minipage">2.16.1 Minipage<a class="headerlink" href="#2161-minipage" title="Permanent link">¶</a></h3>
+<p>Dependendo do tipo de documento escrito e dos elementos textuais utilizados, como imagens e tabelas, pode-se fazer necessário alocar tais elementos em posições específicas dentro da página. Para isto, pode-se utilizar o ambiente <code>minipage</code>. Veja o <a href="#exe:minipage">Exemplo 1</a> a seguir sobre a sua utilização.</p>
+<div class="admonition example">
+<p class="admonition-title"><a id="exe:minipage"></a>Exemplo 1: Texto em um ambiente <code>minipage</code></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked id="código" name="__tabbed_1" type="radio"><input id="resultado" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="código">Código</label><label for="resultado">Resultado</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">\lipsum</span><span class="na">[1]</span>
+
+<span class="k">\begin</span><span class="nb">{</span>minipage<span class="nb">}{</span>0.5<span class="k">\textwidth</span><span class="nb">}</span>
+
+<span class="k">\lipsum</span><span class="na">[2]</span>
+
+<span class="k">\end</span><span class="nb">{</span>minipage<span class="nb">}</span>
+
+<span class="k">\lipsum</span><span class="na">[3]</span>
+</code></pre></div></td></tr></table></div>
+</div>
+<div class="tabbed-block">
+<p><figure markdown>
+<a class="glightbox" href="../figs/ex_2.16-1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../figs/ex_2.16-1.png" width="400"></a>
+</figure></p>
+</div>
+</div>
+</div>
+</div>
+<p>No <a href="#exe:minipage">Exemplo 1</a>, observe que foi inserido um parágrafo dentro do ambiente <code>minipage</code> de forma que este parágrafo possuísse apenas 50% do tamanho da largura total de uma parágrafo da página. </p>
+<h3 id="2162-texto-em-colunas">2.16.2 Texto em colunas<a class="headerlink" href="#2162-texto-em-colunas" title="Permanent link">¶</a></h3>
+<p>Texto e outros elementos flutuantes do LaTeX podem ser inseridos no corpo do texto em colunas. Para isto, pode-se utilizar o pacote <code>multicol</code>, que fornece o ambiente <code>multicols</code>. Para iniciar uma seção de texto (e outros elementos) em 2 ou mais colunas, carregue primeiro o pacote <code>multicol</code> com o comando <code>\usepackage{multicol}</code>. Veja no <a href="#exe:multicol">Exemplo 2</a> a seguir como inserir texto em duas colunas.</p>
+<div class="admonition example">
+<p class="admonition-title"><a id="exe:multicol"></a>Exemplo 2: Texto em colunas com o ambiente <code>multicols</code></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked id="código_1" name="__tabbed_2" type="radio"><input id="resultado_1" name="__tabbed_2" type="radio"><div class="tabbed-labels"><label for="código_1">Código</label><label for="resultado_1">Resultado</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">\lipsumsentence</span><span class="na">[1-2]</span>
+<span class="k">\begin</span><span class="nb">{</span>multicols<span class="nb">}{</span>2<span class="nb">}</span>
+    <span class="k">\lipsum</span><span class="na">[3-4]</span>
+<span class="k">\end</span><span class="nb">{</span>multicols<span class="nb">}</span>
+<span class="k">\lipsumsentence</span><span class="na">[5-6]</span>
+</code></pre></div></td></tr></table></div>
+</div>
+<div class="tabbed-block">
+<p><figure markdown>
+<a class="glightbox" href="../figs/ex_2.16-2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../figs/ex_2.16-2.png" width="400"></a>
+</figure></p>
+</div>
+</div>
+</div>
+</div>
+<p>No <a href="#exe:multicol">Exemplo 2</a>, observe que o ambiente <code>multicols</code> possui um argumento, sendo este o valor que indicará o número de colunas a serem criadas. No ambiente <code>multicols</code>, pode-se iniciar uma seção com o texto preenchendo toda a largura da página e então inserir os parágrafos seguintes em colunas. Veja o <a href="#exe:multicol1">Exemplo 3</a> a seguir.</p>
+<div class="admonition example">
+<p class="admonition-title"><a id="exe:multicol1"></a>Exemplo 3: Texto em colunas com o ambiente <code>multicols</code> e início de seção diferente</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked id="código_2" name="__tabbed_3" type="radio"><input id="resultado_2" name="__tabbed_3" type="radio"><div class="tabbed-labels"><label for="código_2">Código</label><label for="resultado_2">Resultado</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">\begin</span><span class="nb">{</span>multicols<span class="nb">}{</span>3<span class="nb">}</span>
+[
+    <span class="k">\section*</span><span class="nb">{</span>Lorem ipsum<span class="nb">}</span>
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
+]
+    <span class="k">\lipsum</span><span class="na">[1-2]</span>
+<span class="k">\end</span><span class="nb">{</span>multicols<span class="nb">}</span>
+<span class="k">\lipsumsentence</span><span class="na">[3-4]</span>
+</code></pre></div></td></tr></table></div>
+</div>
+<div class="tabbed-block">
+<p><figure markdown>
+<a class="glightbox" href="../figs/ex_2.16-3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../figs/ex_2.16-3.png" width="400"></a>
+</figure></p>
+</div>
+</div>
+</div>
+</div>
+<p>No ambiente <code>multicols</code>, é possível também ajustar o espaçamento entre as colunas, como mostrado no <a href="#exe:multicol2">Exemplo 4</a>. O espaçamento entre as colunas é ajustado com o comando <code>\setlength{\columnsep}{valor}</code>, onde <code>valor</code> é a medida a ser utilizada (e.g., <code>1cm</code>).</p>
+<div class="admonition example">
+<p class="admonition-title"><a id="exe:multicol2"></a>Exemplo 4: Texto em colunas com o ambiente <code>multicols</code> e espaçamento diferente</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked id="código_3" name="__tabbed_4" type="radio"><input id="resultado_3" name="__tabbed_4" type="radio"><div class="tabbed-labels"><label for="código_3">Código</label><label for="resultado_3">Resultado</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">\lipsumsentence</span><span class="na">[1-2]</span>
+<span class="k">\setlength</span><span class="nb">{</span><span class="k">\columnsep</span><span class="nb">}{</span>2cm<span class="nb">}</span>
+<span class="k">\begin</span><span class="nb">{</span>multicols<span class="nb">}{</span>3<span class="nb">}</span>
+    <span class="k">\lipsum</span><span class="na">[3]</span>
+<span class="k">\end</span><span class="nb">{</span>multicols<span class="nb">}</span>
+<span class="k">\lipsumsentence</span><span class="na">[5-6]</span>
+</code></pre></div></td></tr></table></div>
+</div>
+<div class="tabbed-block">
+<p><figure markdown>
+<a class="glightbox" href="../figs/ex_2.16-4.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../figs/ex_2.16-4.png" width="400"></a>
+</figure></p>
+</div>
+</div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>Para mais informações sobre as configurações do ambiente <code>multicols</code>, tenha como referência a página <a href="https://www.overleaf.com/learn/latex/Multiple_columns">https://www.overleaf.com/learn/latex/Multiple_columns</a>.</p>
+</div>
+<h3 id="modos-retrato-e-paisagem">Modos retrato e paisagem<a class="headerlink" href="#modos-retrato-e-paisagem" title="Permanent link">¶</a></h3>
+<p>No LaTeX a maioria das classes dos documentos é definida no modo retrato (i.e., com a dimensão da altura maior do que a dimensão da largura). É possível definir páginas independentes no modo paisagem (i.e., com a dimensão da largura maior do que a dimensão da altura). Isto pode ser especialmente útil para se alocar diagramas ou tabelas largas no corpo do texto.</p>
+<p>Para determinar páginas individuais no modo paisagem, é necessário carregar o pacote <code>lscape</code> no preâmbulo do documento. Para isto, basta inserir o comando <code>\usepackage{lscape}</code> nesta seção. Com o pacote carregado, para iniciar uma página no modo paisagem, basta utilizar o ambiente <code>landscape</code>. Veja o <a href="#exe_paisagem">Exemplo 5</a> a seguir:</p>
+<div class="admonition example">
+<p class="admonition-title"><a id="exe_paisagem"></a>Exemplo 5: Páginas nos modos retrato e paisagem</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="5:2"><input checked id="código_4" name="__tabbed_5" type="radio"><input id="resultado_4" name="__tabbed_5" type="radio"><div class="tabbed-labels"><label for="código_4">Código</label><label for="resultado_4">Resultado</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">\documentclass</span><span class="nb">{</span>article<span class="nb">}</span>
+
+<span class="k">\usepackage</span><span class="na">[utf8]</span><span class="nb">{</span>inputenc<span class="nb">}</span>
+
+<span class="k">\usepackage</span><span class="nb">{</span>lipsum<span class="nb">}</span>
+<span class="k">\usepackage</span><span class="nb">{</span>lscape<span class="nb">}</span>
+
+<span class="k">\title</span><span class="nb">{</span>Título<span class="nb">}</span>
+<span class="k">\author</span><span class="nb">{</span>Nome<span class="nb">}</span>
+<span class="k">\date</span><span class="nb">{</span><span class="k">\today</span><span class="nb">}</span>
+
+<span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+
+<span class="k">\maketitle</span>
+
+<span class="k">\section</span><span class="nb">{</span>Seção<span class="nb">}</span>
+
+<span class="k">\lipsum</span><span class="na">[1]</span>
+
+<span class="k">\newpage</span>
+
+<span class="k">\begin</span><span class="nb">{</span>landscape<span class="nb">}</span>
+<span class="k">\subsection</span><span class="nb">{</span>Subseção<span class="nb">}</span>
+<span class="k">\lipsum</span><span class="na">[2]</span>
+<span class="k">\end</span><span class="nb">{</span>landscape<span class="nb">}</span>
+
+<span class="k">\newpage</span>
+
+<span class="k">\lipsum</span><span class="na">[3]</span>
+
+<span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
+</code></pre></div></td></tr></table></div>
+</div>
+<div class="tabbed-block">
+<p><figure markdown>
+<a class="glightbox" href="../figs/ex_2.16-5.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../figs/ex_2.16-5.png" width="650"></a>
+</figure></p>
+</div>
+</div>
+</div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Dica</p>
+<p>Se você estiver utilizando o compilador PdfLaTeX, será necessário utilizar o pacote <code>pdflscape</code> ao invés do pacote <code>lscape</code>.</p>
+</div>
+<h3 id="listing">Listing<a class="headerlink" href="#listing" title="Permanent link">¶</a></h3>
+<p>Muitas vezes, dependendo do tipo de documento que se está produzindo, faz-se necessária a inserção de códigos que representam um determinado processo. Um exemplo, é quando se quer mostrar um código escrito em alguma linguagem de programação. O <code>LaTeX</code> possui alguns pacotes que fornecem ambientes específicos para destacar o trecho de código inserido. O ambiente <code>verbatim</code> é o mais simples de ser utilizado, e pode ser aplicado para destacar algum tipo de texto. O ambiente <code>verbatim</code> possui a propriedade de "escapar" os comandos da linguagem LaTeX. Veja no <a href="#exe_list1">Exemplo 6</a> a utilização do ambiente <code>verbatim</code>.</p>
+<div class="admonition example">
+<p class="admonition-title"><a id="exe_list1"></a>Exemplo 6: Texto em colunas com o ambiente <code>multicols</code> e espaçamento diferente</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="6:2"><input checked id="código_5" name="__tabbed_6" type="radio"><input id="resultado_5" name="__tabbed_6" type="radio"><div class="tabbed-labels"><label for="código_5">Código</label><label for="resultado_5">Resultado</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">\begin</span><span class="nb">{</span>verbatim<span class="nb">}</span>
+Um texto delimitado pelo ambiente <span class="k">\texttt</span><span class="nb">{</span>verbatim<span class="nb">}</span> é renderizado 
+diretamente e os comandos <span class="k">\LaTeX</span><span class="nb">{}</span> são ignorados.
+<span class="k">\end</span><span class="nb">{</span>verbatim<span class="nb">}</span>
+</code></pre></div></td></tr></table></div>
+</div>
+<div class="tabbed-block">
+<p><figure markdown>
+<a class="glightbox" href="../figs/ex_2.16-6.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../figs/ex_2.16-6.png" width="550"></a>
+</figure></p>
+</div>
+</div>
+</div>
+</div>
+<p>No <a href="#exe_list2">Exemplo 7</a> abaixo, utiliza-se o mesmo ambiente do anterior, mas com a diferença de um "*" no início do ambiente. Nesta forma, o ambiente <code>verbatim</code> realça os espaços entre as palavras.</p>
+<div class="admonition example">
+<p class="admonition-title"><a id="exe_list2"></a>Exemplo 7: Exemplo de uso do ambiente <code>verbatim</code> para destacar texto</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="7:2"><input checked id="código_6" name="__tabbed_7" type="radio"><input id="resultado_6" name="__tabbed_7" type="radio"><div class="tabbed-labels"><label for="código_6">Código</label><label for="resultado_6">Resultado</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">\begin</span><span class="nb">{</span>verbatim*<span class="nb">}</span>
+Um texto delimitado pelo ambiente <span class="k">\texttt</span><span class="nb">{</span>verbatim<span class="nb">}</span> é renderizado 
+diretamente e os comandos <span class="k">\LaTeX</span><span class="nb">{}</span> são ignorados.
+<span class="k">\end</span><span class="nb">{</span>verbatim*<span class="nb">}</span>
+</code></pre></div></td></tr></table></div>
+</div>
+<div class="tabbed-block">
+<p><figure markdown>
+<a class="glightbox" href="../figs/ex_2.16-7.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../figs/ex_2.16-7.png" width="550"></a>
+</figure></p>
+</div>
+</div>
+</div>
+</div>
+<p>É possível também utilizar o ambiente <code>verbatim</code> <em>inline</em>, ou seja, diretamente dentro de um parágrafo, o que pode ser útil quando se necessita destacar algum comando (e.g., quando o contexto requerer isso). Para utilizar o ambiente <code>verbatim</code> <em>inline</em>, utilize o comando <code>\verb{}</code> precedendo o comando desejado: o comando <code>\verbLaTeX</code> produz <code>\LaTeX{}</code>. Outra forma comum que também pode ser utilizada para destacar textos e comandos da linguagem LaTeX, é: o comando <code>\mintinline{latex}{{\tt destque}}</code> produz <code>{\tt destaque}</code> ou o comando <code>\mintinline{latex}{\texttt{destaque}}</code> produz <code>\texttt{destque}</code>.</p>
+<p>O pacote <code>listings</code> é o mais simples de ser utilizado, mas aceita diferentes opções, que permitem realçar as palavras reservadas da linguagem, além de mostrar a numeração das linhas e criar uma caixa ao redor do código fonte mostrado. No <a href="#exe_list3">Exemplo 8</a>, é mostrado um <em>script</em> escrito em linguagem <em>Python</em> com algumas opções do pacote <code>listings</code>.</p>
+<div class="admonition example">
+<p class="admonition-title"><a id="exe_list3"></a>Exemplo 8: Exemplo da apresentação de um <em>script</em> escrito em linguagem <em>Python</em> utilizando o pacote <code>listings</code></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="8:2"><input checked id="código_7" name="__tabbed_8" type="radio"><input id="resultado_7" name="__tabbed_8" type="radio"><div class="tabbed-labels"><label for="código_7">Código</label><label for="resultado_7">Resultado</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">\begin</span><span class="nb">{</span>lstlisting<span class="nb">}</span>
+#! /usr/bin/env python3
+"""
+Este simples script calcula os n primeiros elementos
+da sequência de Fibonacci.
+"""
+
+def fibonacci(n):
+
+    fibo = []
+    for i in range(n):
+        # Na sequência, o primeiro elemento é 0...
+        if i == 0:
+            fibo.append(0)
+            #... e o segundo elemento é o 1.
+        elif i == 1:
+            fibo.append(1)
+        else:
+            # Os demais elementos são calculados como sendo a soma
+            # entre dois antecessores imediatos
+            fibo.append(fibo[i-1] + fibo[i-2])
+
+    return fibo
+
+fibo<span class="nb">_</span>seq = fibonacci(n=20)
+
+print(fibo<span class="nb">_</span>seq)
+<span class="k">\end</span><span class="nb">{</span>lstlisting<span class="nb">}</span>
+</code></pre></div></td></tr></table></div>
+</div>
+<div class="tabbed-block">
+<p><figure markdown>
+<a class="glightbox" href="../figs/ex_2.16-8.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../figs/ex_2.16-8.png" width="400"></a>
+</figure></p>
+</div>
+</div>
+</div>
+</div>
+<p>Outro ambiente que pode ser usado para listar <em>scripts</em> e programas é o <code>minted</code>. Veja o <a href="#exe_list4">Exemplo 9</a> a seguir:</p>
+<div class="admonition example">
+<p class="admonition-title"><a id="exe_list4"></a>Exemplo 9: Exemplo da apresentação de um <em>script</em> escrito em linguagem Python utilizando o pacote <code>minted</code></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="9:2"><input checked id="código_8" name="__tabbed_9" type="radio"><input id="resultado_8" name="__tabbed_9" type="radio"><div class="tabbed-labels"><label for="código_8">Código</label><label for="resultado_8">Resultado</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">\begin</span><span class="nb">{</span>minted<span class="nb">}</span>[bgcolor=white,
+               frame=lines,
+               linenos,
+               bgcolor=MaterialBlack]<span class="nb">{</span>python<span class="nb">}</span>
+#! /usr/bin/env python3
+"""
+Este simples script calcula os n primeiros elementos
+da sequência de Fibonacci.
+"""
+
+def fibonacci(n):
+
+    fibo = []
+    for i in range(n):
+        # Na sequência, o primeiro elemento é 0...
+        if i == 0:
+            fibo.append(0)
+            #... e o segundo elemento é o 1.
+        elif i == 1:
+            fibo.append(1)
+        else:
+            # Os demais elementos são calculados como sendo a soma
+            # entre dois antecessores imediatos
+            fibo.append(fibo[i-1] + fibo[i-2])
+
+    return fibo
+
+    fibo<span class="nb">_</span>seq = fibonacci(n=20)
+
+    print(fibo<span class="nb">_</span>seq)
+<span class="k">\end</span><span class="nb">{</span>minted<span class="nb">}</span>
+</code></pre></div></td></tr></table></div>
+</div>
+<div class="tabbed-block">
+<p><figure markdown>
+<a class="glightbox" href="../figs/ex_2.16-9.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../figs/ex_2.16-9.png" width="400"></a>
+</figure></p>
+</div>
+</div>
+</div>
+</div>
+<p>No <a href="#exe_list4">Exemplo 9</a>, foram utilizadas opções específicas para realçar as palavras reservadas da linguagem <em>Python</em>. Outras opções do pacote <code>minted</code>, incluem a numeração das linhas, esquemas de cores além da configuração da cor de fundo entre outros atributos.</p>
+<p>Códigos e outros tipos de inserções podem também ser feitos em linha (<em>inline</em>), diretamente no texto com o pacote <code>minted</code>. Para isto, pode-se utilizar o comando <code>\mintinline{}{}</code> ou o comando <code>\verb</code>. Veja o <a href="#exe_inline">Exemplo 10</a> a seguir:</p>
+<div class="admonition example">
+<p class="admonition-title"><a id="exe_inline"></a>Exemplo 10: Inserção de código em linha com os comandos <code>mintinline</code> e <code>verb</code></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="10:2"><input checked id="código_9" name="__tabbed_10" type="radio"><input id="resultado_9" name="__tabbed_10" type="radio"><div class="tabbed-labels"><label for="código_9">Código</label><label for="resultado_9">Resultado</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>No <span class="k">\LaTeX</span><span class="nb">{}</span>, códigos e comandos podem ser inseridos diretamente no
+texto, como por exemplo, o comando <span class="k">\verb</span>|<span class="k">\mintinline</span><span class="nb">{}{}</span>|, que 
+pode ser utilizado para mostrar como se carrega o pacote <span class="nb">{</span><span class="k">\tt</span> minted<span class="nb">}</span>:
+<span class="k">\mintinline</span><span class="nb">{</span>latex<span class="nb">}{</span><span class="k">\usepackage</span><span class="nb">{</span>minted<span class="nb">}}</span>.
+</code></pre></div></td></tr></table></div>
+</div>
+<div class="tabbed-block">
+<p><figure markdown>
+<a class="glightbox" href="../figs/ex_2.16-10.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../figs/ex_2.16-10.png" width="550"></a>
+</figure></p>
+</div>
+</div>
+</div>
+</div>
+<p>No <a href="#exe_inline">Exemplo 10</a>, observe que o comando <code>\mintinline{}{}</code> recebe dois argumentos: o primeiro, indica a linguagem para qual será dado destaque, e o segundo, indica o conteúdo. Neste caso, utilizou-se o comando <code>\mintinline{latex}{\usepackage{minted}}</code> para se mostrar como carregar o pacote <code>minted</code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>Para saber mais sobre o pacote <code>minted</code> e suas opções, veja a página <a href="https://www.ctan.org/pkg/minted">https://www.ctan.org/pkg/minted</a>.</p>
+</div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/cfbastarz" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="mailto:cfbastarz@gmail.com" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480v-83.6c0-4 1.5-7.8 4.2-10.8l167.6-182.8c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8l-88.3-44.2C7.1 311.3.3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+        <script src="../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>
