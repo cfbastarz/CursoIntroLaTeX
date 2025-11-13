@@ -17,3 +17,5 @@ Utilize os links a seguir para acessar a apostila do curso, os estilos para tese
 	O conteúdo deste site foi escrito em linguagem Markdown. Em comparação com o texto da apostila, algumas diferenças podem ser encontradas na sua representação.
 
 [![Hits](https://hits.sh/github.com/cfbastarz.svg?view=today-total&label=Visitas%20(hoje/total)&color=4051b4&labelColor=151515)](https://hits.sh/github.com/cfbastarz/)
+
+This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
